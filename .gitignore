@@ -1,0 +1,28 @@
+# Lua runtime (development tool, not part of the addon)
+lua-5.1.5/
+
+# Python cache
+Tools/__pycache__/
+Tools/cache/
+*.pyc
+
+# OS junk
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# MPQ patches (too large for git, distribute separately)
+Data/*.MPQ
+Data/*.mpq
+
+# Misc stray files
+*.bak
+*.orig
