@@ -8,9 +8,9 @@ from urllib.parse import urljoin
 from urllib.request import Request, urlopen
 
 
-ROOT = Path(r"D:\1927\Ascension Launcher\resources\epoch-live")
-ADDON = ROOT / "Interface" / "AddOns" / "EpochCN"
+ADDON = Path(__file__).resolve().parents[1]
 OBJECTIVE_NAMES = ADDON / "Data" / "ObjectiveNameData.lua"
+ITEM_NAME_MAP = ADDON / "Data" / "ItemNameMap.lua"
 OUT = ADDON / "Tools" / "EPOCHHEAD_ITEM_GAPS.md"
 
 
@@ -31,11 +31,12 @@ def fetch(url: str) -> str:
 
 def load_known_names() -> set[str]:
     known: set[str] = set()
-    if not OBJECTIVE_NAMES.exists():
-        return known
-    text = OBJECTIVE_NAMES.read_text(encoding="utf-8", errors="replace")
-    for match in LUA_NAME_RE.finditer(text):
-        known.add(match.group(1))
+    for path in (OBJECTIVE_NAMES, ITEM_NAME_MAP):
+        if not path.exists():
+            continue
+        text = path.read_text(encoding="utf-8", errors="replace")
+        for match in LUA_NAME_RE.finditer(text):
+            known.add(match.group(1))
     return known
 
 

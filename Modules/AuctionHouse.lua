@@ -419,6 +419,15 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
     end
   end
 
+  local function AddSearchAlias(chinese, english)
+    chinese = NormalizeText(chinese)
+    english = NormalizeText(english)
+    if chinese == "" or english == "" or chinese == english then return end
+    if not itemReverseMap[chinese] then
+      itemReverseMap[chinese] = english
+    end
+  end
+
   local function BuildItemNameMap()
     if itemNameBuilt then return end
     itemNameBuilt = true
@@ -428,6 +437,14 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
     if EpochCN_ItemNameMap then
       for english, chinese in pairs(EpochCN_ItemNameMap) do
         AddItemName(english, chinese)
+      end
+    end
+
+    -- Search-only aliases cover Chinese wording differences between ItemData,
+    -- pfQuest, Questie and EpochHead while keeping result display names stable.
+    if EpochCN_ItemSearchAliases then
+      for chinese, english in pairs(EpochCN_ItemSearchAliases) do
+        AddSearchAlias(chinese, english)
       end
     end
 
@@ -715,6 +732,19 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
     end
   end
 
+  local function PatchEnterSearchBox(editBox)
+    if not editBox or editBox.EpochCNEnterSearchPatched or not editBox.GetScript or not editBox.SetScript then return end
+    editBox.EpochCNEnterSearchPatched = true
+    local oldScript = editBox:GetScript("OnEnterPressed")
+    editBox:SetScript("OnEnterPressed", function(self, ...)
+      TranslateSearchBox(self)
+      if oldScript then
+        oldScript(self, ...)
+      end
+      RestoreSearchBox(self)
+    end)
+  end
+
   local function PatchSearchControls()
     PatchQueryAuctionItems()
 
@@ -730,10 +760,7 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
 
     if BrowseName and not BrowseName.EpochCNSearchPatched then
       BrowseName.EpochCNSearchPatched = true
-      BrowseName:HookScript("OnEnterPressed", function(self)
-        TranslateSearchBox(self)
-        RestoreSearchBox(self)
-      end)
+      PatchEnterSearchBox(BrowseName)
     end
 
     if Atr_Search_Button and not Atr_Search_Button.EpochCNSearchPatched then
@@ -748,10 +775,7 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
 
     if Atr_Search_Box and not Atr_Search_Box.EpochCNSearchPatched then
       Atr_Search_Box.EpochCNSearchPatched = true
-      Atr_Search_Box:HookScript("OnEnterPressed", function(self)
-        TranslateSearchBox(self)
-        RestoreSearchBox(self)
-      end)
+      PatchEnterSearchBox(Atr_Search_Box)
     end
   end
 

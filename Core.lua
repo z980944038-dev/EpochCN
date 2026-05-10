@@ -3,7 +3,7 @@ local E = EpochCN or {}
 EpochCN = E
 
 E.name = addonName or "EpochCN"
-E.version = "0.4.39"
+E.version = "0.4.40"
 E.designLabel = "汉化组"
 E.modules = E.modules or {}
 E.moduleOrder = E.moduleOrder or {}
@@ -167,6 +167,7 @@ function E:LoadSeedData()
   if LoadTPCNItemData then LoadTPCNItemData() end
   if LoadEpochCNItemNameMap then LoadEpochCNItemNameMap() end
   if LoadEpochCNConsumableData then LoadEpochCNConsumableData() end
+  if LoadEpochCNTooltipLineData then LoadEpochCNTooltipLineData() end
   if LoadTPCNUnitData then LoadTPCNUnitData() end
   if LoadEpochCNObjectiveNameData then LoadEpochCNObjectiveNameData() end
   if LoadEpochCNQuestData then LoadEpochCNQuestData() end

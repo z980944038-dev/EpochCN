@@ -59,6 +59,16 @@ EpochCN:RegisterModule("Tooltip", function(E)
     Physical = "物理",
   }
 
+  local damageSchoolLowerMap = {
+    fire = "火焰",
+    nature = "自然",
+    frost = "冰霜",
+    shadow = "暗影",
+    arcane = "奥术",
+    holy = "神圣",
+    physical = "物理",
+  }
+
   local itemEffectNameMap = {
     ["Flaming Cannonball"] = "烈焰炮弹",
     ["Keeper's Sting"] = "守护者之刺",
@@ -137,6 +147,59 @@ EpochCN:RegisterModule("Tooltip", function(E)
     return itemEffectNameMap[name] or (EpochCN_ObjectiveNameData and EpochCN_ObjectiveNameData[name]) or name
   end
 
+  local function TranslateKnownObjectName(name)
+    name = NormalizeTooltipText(name)
+    return (EpochCN_ItemNameMap and EpochCN_ItemNameMap[name])
+      or (EpochCN_ObjectiveNameData and EpochCN_ObjectiveNameData[name])
+      or itemEffectNameMap[name]
+      or name
+  end
+
+  local function TranslateDurationText(duration)
+    duration = NormalizeTooltipText(duration)
+    local value = string.match(duration, "^(%d+) hrs?$")
+    if value then return value .. "小时" end
+    value = string.match(duration, "^(%d+) hours?$")
+    if value then return value .. "小时" end
+    value = string.match(duration, "^(%d+) mins?$")
+    if value then return value .. "分钟" end
+    value = string.match(duration, "^(%d+) minutes?$")
+    if value then return value .. "分钟" end
+    value = string.match(duration, "^(%d+) sec$")
+    if value then return value .. "秒" end
+    value = string.match(duration, "^(%d+) seconds?$")
+    if value then return value .. "秒" end
+    return duration
+  end
+
+  local function TranslateCooldownText(cooldown)
+    cooldown = NormalizeTooltipText(cooldown)
+    local value = string.match(cooldown, "^%((%d+) Sec Cooldown%)$")
+    if value then return "（" .. value .. "秒冷却）" end
+    value = string.match(cooldown, "^%((%d+) Min Cooldown%)$")
+    if value then return "（" .. value .. "分钟冷却）" end
+    value = string.match(cooldown, "^%((%d+) Hr Cooldown%)$")
+    if value then return "（" .. value .. "小时冷却）" end
+    return cooldown
+  end
+
+  local professionNameMap = {
+    Alchemy = "炼金术",
+    Blacksmithing = "锻造",
+    Cooking = "烹饪",
+    Enchanting = "附魔",
+    Engineering = "工程学",
+    FirstAid = "急救",
+    ["First Aid"] = "急救",
+    Fishing = "钓鱼",
+    Herbalism = "草药学",
+    Jewelcrafting = "珠宝加工",
+    Leatherworking = "制皮",
+    Mining = "采矿",
+    Skinning = "剥皮",
+    Tailoring = "裁缝",
+  }
+
   local function TranslateSetName(name)
     name = NormalizeTooltipText(name)
     return setNameMap[name] or (EpochCN_ObjectiveNameData and EpochCN_ObjectiveNameData[name]) or name
@@ -172,6 +235,11 @@ EpochCN:RegisterModule("Tooltip", function(E)
 
     label, number = string.match(text, "^(Requires Level)%s+(%d+)$")
     if label and number then return staticTooltipLineMap[label] .. " " .. number end
+
+    local profession, professionRank = string.match(text, "^Requires ([%a%s]+) %((%d+)%)$")
+    if profession and professionRank then
+      return "需要 " .. (professionNameMap[profession] or profession) .. " (" .. professionRank .. ")"
+    end
 
     -- ========== 基础属性 ==========
     local value = string.match(text, "%+(%d+) Strength")
@@ -319,11 +387,58 @@ EpochCN:RegisterModule("Tooltip", function(E)
     value = string.match(text, "Increases healing done by spells and effects by up to (%d+)")
     if value then return "法术和效果的治疗量最多提高 " .. value .. " 点。" end
 
-    value = string.match(text, "Increases damage and healing done by magical spells and effects by up to (%d+)")
+    value = string.match(text, "^Increases damage and healing done by magical spells and effects by up to (%d+)%.?$")
     if value then return "魔法法术和效果造成的伤害与治疗量最多提高 " .. value .. " 点。" end
 
-    value = string.match(text, "Increases damage done by magical spells and effects by up to (%d+)")
+    value = string.match(text, "^Increases damage done by magical spells and effects by up to (%d+)%.?$")
     if value then return "魔法法术和效果造成的伤害最多提高 " .. value .. " 点。" end
+
+    local spellDamage, healing = string.match(text, "^[Ss]pell damage done by up to (%d+) and healing done by up to (%d+) for all magical spells and effects%.?$")
+    if not spellDamage then
+      spellDamage, healing = string.match(text, "^Strengthening done by up to (%d+) and healing done by up to (%d+) for all magical spells and effects%.?$")
+    end
+    if spellDamage and healing then
+      return "所有魔法法术和效果造成的伤害最多提高" .. spellDamage .. "点，治疗效果最多提高" .. healing .. "点。"
+    end
+
+    local attackPowerBonus, flaskDuration, cooldownSuffix = string.match(text, "^Increases melee and ranged attack power by (%d+) for (.-)%. Counts as both a Battle and Guardian elixir%. This effect persists through death%.%s*(%b())$")
+    if not attackPowerBonus then
+      attackPowerBonus, flaskDuration = string.match(text, "^Increases melee and ranged attack power by (%d+) for (.-)%. Counts as both a Battle and Guardian elixir%. This effect persists through death%.$")
+    end
+    if attackPowerBonus and flaskDuration then
+      return "近战和远程攻击强度提高" .. attackPowerBonus .. "点，持续" .. TranslateDurationText(flaskDuration) .. "。算作战斗和守护药剂。此效果在死亡后仍然存在。" .. (cooldownSuffix and TranslateCooldownText(cooldownSuffix) or "")
+    end
+
+    local flaskSpellPower
+    flaskSpellPower, flaskDuration, cooldownSuffix = string.match(text, "^Increases damage done by magical spells and effects by up to (%d+) for (.-)%. Counts as both a Battle and Guardian elixir%. This effect persists through death%.%s*(%b())$")
+    if not flaskSpellPower then
+      flaskSpellPower, flaskDuration, cooldownSuffix = string.match(text, "^Increases damage done by magical spells effects by up to (%d+) for (.-)%. Counts as both a Battle and Guardian elixir%. This effect persists through death%.%s*(%b())$")
+    end
+    if not flaskSpellPower then
+      flaskSpellPower, flaskDuration = string.match(text, "^Increases damage done by magical spells and effects by up to (%d+) for (.-)%. Counts as both a Battle and Guardian elixir%. This effect persists through death%.$")
+    end
+    if not flaskSpellPower then
+      flaskSpellPower, flaskDuration = string.match(text, "^Increases damage done by magical spells effects by up to (%d+) for (.-)%. Counts as both a Battle and Guardian elixir%. This effect persists through death%.$")
+    end
+    if flaskSpellPower and flaskDuration then
+      return "魔法法术和效果造成的伤害最多提高" .. flaskSpellPower .. "点，持续" .. TranslateDurationText(flaskDuration) .. "。算作战斗和守护药剂。此效果在死亡后仍然存在。" .. (cooldownSuffix and TranslateCooldownText(cooldownSuffix) or "")
+    end
+
+    local spellSchool, schoolBonus, elixirDuration, elixirCooldown = string.match(text, "^Increases spell (%a+) damage by up to (%d+) for (.-)%.? Battle Elixir%.?%s*(%b())$")
+    if not spellSchool then
+      spellSchool, schoolBonus, elixirDuration = string.match(text, "^Increases spell (%a+) damage by up to (%d+) for (.-)%.? Battle Elixir%.?$")
+    end
+    if spellSchool and schoolBonus and elixirDuration then
+      return (damageSchoolLowerMap[spellSchool] or spellSchool) .. "法术伤害最多提高" .. schoolBonus .. "点，持续" .. TranslateDurationText(elixirDuration) .. "。战斗药剂。" .. (elixirCooldown and TranslateCooldownText(elixirCooldown) or "")
+    end
+
+    local spellPower, sizeDuration, sizeCooldown = string.match(text, "^Increases spell power by (%d+) and decreases size for (.-)%. Battle Elixir%.%s*(%b())$")
+    if not spellPower then
+      spellPower, sizeDuration = string.match(text, "^Increases spell power by (%d+) and decreases size for (.-)%. Battle Elixir%.$")
+    end
+    if spellPower and sizeDuration then
+      return "法术强度提高" .. spellPower .. "点并缩小体型，持续" .. TranslateDurationText(sizeDuration) .. "。战斗药剂。" .. (sizeCooldown and TranslateCooldownText(sizeCooldown) or "")
+    end
 
     -- 法术学派增益
     for school, cn in pairs(damageSchoolMap) do
@@ -534,8 +649,13 @@ EpochCN:RegisterModule("Tooltip", function(E)
     local recipeTarget = string.match(text, "^Teaches you how to make (.+)%.$")
     if not recipeTarget then recipeTarget = string.match(text, "^Teaches you how to make (.+)$") end
     if recipeTarget then
-      local cn = (EpochCN_ObjectiveNameData and EpochCN_ObjectiveNameData[recipeTarget]) or recipeTarget
+      local cn = TranslateKnownObjectName(recipeTarget)
       return "教你制作" .. cn .. "。"
+    end
+
+    local bindingCooldown = string.match(text, "^Call forth a terrible force, binding it to an elemental form%. %((%d+) Min Cooldown%)$")
+    if bindingCooldown then
+      return "召唤一股可怕的力量，将其束缚为元素形态。（" .. bindingCooldown .. "分钟冷却）"
     end
 
     -- ========== 其他常见静态文本 ==========
@@ -692,8 +812,15 @@ EpochCN:RegisterModule("Tooltip", function(E)
     if not text or text == "" then return end
 
     local clean = NormalizeTooltipText(text)
+    local pendingExact
     if itemData and itemData[5] then
       local exact = itemData[5][clean]
+      if exact and not HasAsciiLetters(exact) then return exact end
+      pendingExact = exact
+    end
+
+    if EpochCN_TooltipLineData then
+      local exact = EpochCN_TooltipLineData[clean]
       if exact then return exact end
     end
 
@@ -706,6 +833,13 @@ EpochCN:RegisterModule("Tooltip", function(E)
     end
 
     local result = TranslateItemEffectTextImpl(clean)
+    if result then
+      if pendingExact and HasAsciiLetters(result) and not HasAsciiLetters(pendingExact) then
+        result = pendingExact
+      end
+    elseif pendingExact then
+      result = pendingExact
+    end
     CacheSetEffect(text, result)
     return result
   end

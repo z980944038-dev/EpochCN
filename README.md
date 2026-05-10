@@ -106,6 +106,16 @@ git clone https://github.com/z980944038-dev/EpochCN.git
 
 ## 🏷️ 版本记录 / Changelog
 
+### v0.4.40
+- **补强物品与装备绿字描述汉化**，新增全局绿字精确翻译表 `Data/TooltipLineData.lua`
+  - 覆盖 Project Epoch 自定义装备效果、合剂说明、配方学习、专业需求与风味文本等常见英文残留
+  - 修复消耗品旧精确数据半中文半英文时优先级过高的问题，让更完整的通用规则接管
+  - 补充合剂“战斗/守护药剂、死亡后保留、持续时间、冷却”等长句规则
+- **继续完善拍卖行中文搜索与物品名数据**
+  - `Data/ItemNameMap.lua` 扩展到 **28506 条**物品名映射，并生成 **13815 条**中文搜索别名
+  - `EpochHeadData.lua` 补入 234 条 EpochHead 物品译名/ID 覆盖
+  - `Tools/EPOCHHEAD_ITEM_GAPS.md` 前 25 页 EpochHead 物品审计已无英文名映射缺口
+
 ### v0.4.39
 - **彻底重构拍卖行中文搜索**，解决"很多物品搜索不到或乱"的问题
   - 新增权威物品名映射数据 `Data/ItemNameMap.lua`（**28275 条**），来源：pfQuest classic enUS×zhCN + pfQuest TBC + Questie-Epoch WotLK × 本地 ItemData 按 ID 对齐
