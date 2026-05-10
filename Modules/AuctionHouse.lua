@@ -286,6 +286,8 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
 
   local itemNameMap = {}
   local itemReverseMap = {}
+  local itemSearchBuckets = {}
+  local itemSearchEntrySeen = {}
   local auctionSearchCache = {}
   local itemNameBuilt = false
   local randomAffixMap = {
@@ -386,6 +388,48 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
     return text
   end
 
+  local function ForEachUTF8Char(text, callback)
+    local i = 1
+    local n = string.len(text or "")
+    while i <= n do
+      local byte = string.byte(text, i)
+      if not byte then break end
+
+      local charLen = 1
+      if byte >= 240 then
+        charLen = 4
+      elseif byte >= 224 then
+        charLen = 3
+      elseif byte >= 192 then
+        charLen = 2
+      end
+
+      callback(string.sub(text, i, i + charLen - 1))
+      i = i + charLen
+    end
+  end
+
+  local function AddSearchEntry(chinese, english)
+    if chinese == "" or english == "" then return end
+
+    local entryKey = chinese .. "\001" .. english
+    if itemSearchEntrySeen[entryKey] then return end
+    itemSearchEntrySeen[entryKey] = true
+
+    local perEntryChars = {}
+    ForEachUTF8Char(chinese, function(char)
+      if char ~= "" and not perEntryChars[char] then
+        perEntryChars[char] = true
+        local bucket = itemSearchBuckets[char]
+        if not bucket then
+          bucket = {}
+          itemSearchBuckets[char] = bucket
+        end
+        table.insert(bucket, { english, chinese })
+      end
+    end)
+  end
+
   local function AddItemName(english, chinese)
     english = NormalizeText(english)
     chinese = NormalizeText(chinese)
@@ -417,6 +461,7 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
     if not itemReverseMap[chinese] then
       itemReverseMap[chinese] = english
     end
+    AddSearchEntry(chinese, english)
   end
 
   local function AddSearchAlias(chinese, english)
@@ -426,6 +471,7 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
     if not itemReverseMap[chinese] then
       itemReverseMap[chinese] = english
     end
+    AddSearchEntry(chinese, english)
   end
 
   local function BuildItemNameMap()
@@ -455,13 +501,8 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
       end
     end
 
-    -- 3) ObjectiveNameData：任务目标+通用翻译（4.8 万条，但含很多非物品名）
-    --    作为兜底最后加载，避免污染物品词典的精确性
-    if EpochCN_ObjectiveNameData then
-      for english, chinese in pairs(EpochCN_ObjectiveNameData) do
-        AddItemName(english, chinese)
-      end
-    end
+    -- 不在拍卖行加载 ObjectiveNameData。那张表包含大量任务目标/通用文本，
+    -- 会让第一次搜索在游戏主线程上构建和扫描过多无关数据。
   end
 
   local function TokenizeEnglish(text, counts)
@@ -485,14 +526,47 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
   -- 4) 候选太多 (>100) → 原样返回中文（搜索词过于宽泛，让服务器空搜比乱搜好）
   -- 5) 少量候选无共同词 → 返回最短候选英文名
   -- 6) 完全找不到 → 原样返回
+  local function GetSearchBucketForQuery(query)
+    local bestBucket = nil
+    local bestSize = nil
+    local seen = {}
+
+    ForEachUTF8Char(query, function(char)
+      if not seen[char] then
+        seen[char] = true
+        local bucket = itemSearchBuckets[char]
+        if bucket then
+          local size = table.getn(bucket)
+          if not bestSize or size < bestSize then
+            bestBucket = bucket
+            bestSize = size
+          end
+        end
+      end
+    end)
+
+    return bestBucket
+  end
+
   local MAX_CANDIDATES_FOR_FALLBACK = 80
 
   local function FindEnglishSearchTerm(chinese)
     chinese = NormalizeText(chinese)
     if chinese == "" or not HasCN(chinese) then return chinese end
 
-    BuildItemNameMap()
     if auctionSearchCache[chinese] then return auctionSearchCache[chinese] end
+
+    -- Generated exact aliases cover the common path and avoid building the
+    -- larger fallback index on the first search click.
+    if EpochCN_ItemSearchAliases then
+      local directAlias = NormalizeText(EpochCN_ItemSearchAliases[chinese])
+      if directAlias ~= "" then
+        auctionSearchCache[chinese] = directAlias
+        return directAlias
+      end
+    end
+
+    BuildItemNameMap()
 
     -- 1) 精确反向匹配
     local exact = itemReverseMap[chinese]
@@ -501,10 +575,18 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
       return exact
     end
 
-    -- 2) 全表线性扫描找候选。带早停防止搜索词过于宽泛时卡顿。
+    -- 2) 从最小中文字符桶里找候选，避免每次中文模糊搜索全表扫描。
     local candidateList = {}
     local scanCap = MAX_CANDIDATES_FOR_FALLBACK * 3  -- 240
-    for english, localized in pairs(itemNameMap) do
+    local candidateBucket = GetSearchBucketForQuery(chinese)
+    if not candidateBucket then
+      auctionSearchCache[chinese] = chinese
+      return chinese
+    end
+
+    for _, entry in ipairs(candidateBucket) do
+      local english = entry[1]
+      local localized = entry[2]
       if string.find(localized, chinese, 1, true) then
         table.insert(candidateList, english)
         if table.getn(candidateList) > scanCap then

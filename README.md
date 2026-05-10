@@ -106,6 +106,12 @@ git clone https://github.com/z980944038-dev/EpochCN.git
 
 ## 🏷️ 版本记录 / Changelog
 
+### v0.4.44
+- **优化拍卖行中文搜索首次卡顿**
+  - 拍卖行搜索不再加载 `ObjectiveNameData` 任务目标大表，避免第一次搜索构建大量无关数据
+  - 中文模糊搜索改为按中文字符分桶查候选，不再每次对完整物品名表做线性扫描
+  - 精确中文搜索优先使用已生成的 `EpochCN_ItemSearchAliases`，命中时不触发完整 fallback 索引构建
+
 ### v0.4.43
 - **修复游戏内更新提示链接仍指向旧版本锚点的问题**
   - 更新提醒现在直接输出对应版本的 Release 链接和 README 更新说明锚点

@@ -3,7 +3,7 @@ local E = EpochCN or {}
 EpochCN = E
 
 E.name = addonName or "EpochCN"
-E.version = "0.4.43"
+E.version = "0.4.44"
 E.designLabel = "汉化组"
 E.modules = E.modules or {}
 E.moduleOrder = E.moduleOrder or {}
