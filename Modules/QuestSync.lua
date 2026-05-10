@@ -11,6 +11,11 @@ EpochCN:RegisterModule("QuestSync", function(E)
   local syncTimer = 0
   local initializedState = false
 
+  -- 注册 addon 消息前缀（3.3.5 后期客户端需要预注册才能保证收发）
+  if RegisterAddonMessagePrefix then
+    pcall(RegisterAddonMessagePrefix, prefix)
+  end
+
   local function Trim(text)
     if not text then return text end
     return (string.gsub(string.gsub(text, "^%s+", ""), "%s+$", ""))

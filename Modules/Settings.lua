@@ -405,7 +405,7 @@ EpochCN:RegisterModule("Settings", function(E)
       CloseDropDownMenus()
       EpochCNDB.minimapButtonHide = true
       if minimapButton then minimapButton:Hide() end
-      E:Print("小地图按钒已隐藏。/ecn icon 可重新显示。")
+      E:Print("小地图按钮已隐藏。/ecn icon 可重新显示。")
     end
     UIDropDownMenu_AddButton(info)
   end

@@ -153,12 +153,16 @@ EpochCN:RegisterModule("UI", function(E)
     "MainMenuBar",
   }
   -- 已扫描过的安全 frame name 缓存
+  local unsafeFrameNames = {
+    WorldMapButton = true,
+  }
   local safeFrameCache = {}
   local unsafeFrameCache = {}
 
   local function IsUnsafeFrame(frame)
     local name = frame and frame.GetName and frame:GetName()
     if not name then return false end
+    if unsafeFrameNames[name] then return true end
     if safeFrameCache[name] then return false end
     if unsafeFrameCache[name] then return true end
 
@@ -175,9 +179,13 @@ EpochCN:RegisterModule("UI", function(E)
   -- ============================================================
   -- TranslateFontStrings：只扫描**可见**frame，减少无效遍历
   -- ============================================================
-  local function TranslateFontStrings(frame, depth)
+  local function TranslateFontStrings(frame, depth, visited)
     if not frame then return end
     if depth and depth > 6 then return end  -- 降低深度限制
+    visited = visited or {}
+    if visited[frame] then return end
+    visited[frame] = true
+
     if IsUnsafeFrame(frame) then return end
     -- 跳过不可见的 frame（大幅减少无效遍历）
     if frame.IsVisible and not frame:IsVisible() then return end
@@ -204,7 +212,7 @@ EpochCN:RegisterModule("UI", function(E)
 
     if frame.GetChildren then
       for _, child in pairs({ frame:GetChildren() }) do
-        TranslateFontStrings(child, depth + 1)
+        TranslateFontStrings(child, depth + 1, visited)
       end
     end
   end
@@ -297,7 +305,8 @@ EpochCN:RegisterModule("UI", function(E)
   frame:RegisterEvent("PLAYER_EQUIPMENT_CHANGED")
   frame:RegisterEvent("SKILL_LINES_CHANGED")
   frame:RegisterEvent("SPELLS_CHANGED")
-  frame:RegisterEvent("UPDATE_FACTION")
+  -- 已移除 UPDATE_FACTION：声望变化在战斗中过于频繁，依赖 ReputationFrame
+  -- 的 OnShow hook 做按需扫描即可
   -- 已移除高频战斗事件：UNIT_DAMAGE, UNIT_RANGEDDAMAGE, UNIT_RESISTANCES, UNIT_STATS, COMBAT_RATING_UPDATE
   frame:SetScript("OnEvent", function()
     ScheduleLocalize()

@@ -3,7 +3,7 @@ local E = EpochCN or {}
 EpochCN = E
 
 E.name = addonName or "EpochCN"
-E.version = "0.4.36"
+E.version = "0.4.39"
 E.designLabel = "汉化组"
 E.modules = E.modules or {}
 E.moduleOrder = E.moduleOrder or {}
@@ -165,6 +165,7 @@ function E:LoadSeedData()
   if LoadTPCNGlobalData then LoadTPCNGlobalData() end
   if LoadTPCNCallBoardData then LoadTPCNCallBoardData() end
   if LoadTPCNItemData then LoadTPCNItemData() end
+  if LoadEpochCNItemNameMap then LoadEpochCNItemNameMap() end
   if LoadEpochCNConsumableData then LoadEpochCNConsumableData() end
   if LoadTPCNUnitData then LoadTPCNUnitData() end
   if LoadEpochCNObjectiveNameData then LoadEpochCNObjectiveNameData() end
@@ -177,6 +178,59 @@ function E:BuildLookupTables()
   self.localizedTextByRaw = self.localizedTextByRaw or {}
   self.spellTextByName = self.spellTextByName or {}
   self.questIDByTitle = self.questIDByTitle or {}
+
+  -- ============================================================
+  -- 清洗法术数据中未解析的 DBC 公式/占位符 token
+  -- 避免 Tooltip、角色面板、技能书等任何位置都显示残留
+  -- ============================================================
+  local function SanitizeDBCTokens(text)
+    if type(text) ~= "string" or text == "" then return text end
+    -- 移除 法术ID前缀+m/除数 组合，如 "54928m1/1000"、"1144440m2/-1000.2"
+    text = string.gsub(text, "%d%d%d%d+m%d+/[%-%d%.]*", "")
+    -- 移除独立的 mX/除数 公式，如 "m1/1000"、"m2/1000.1"
+    text = string.gsub(text, "m%d+/[%-%d%.]+", "")
+    -- 移除 /除数;sX 条件引用，如 "/1000;s1"、"/1000;s2"
+    text = string.gsub(text, "/%d*%.?%d*;s%d+", "")
+    -- 移除 0-mX/除数 范围公式，如 "0-m1/1000.2"
+    text = string.gsub(text, "0%-m%d+/[%d%.]+", "")
+    -- 移除 5位以上法术ID+sX 法术引用
+    text = string.gsub(text, "%d%d%d%d%d+s%d+", "")
+    -- 移除 dX 持续时间引用 token
+    text = string.gsub(text, "%d%d%d%d%d+d", "")
+    -- 移除 aX 范围引用
+    text = string.gsub(text, "%d%d%d%d+a%d+", "")
+    -- 移除独立的 @req:xxx@ 前置条件标记
+    text = string.gsub(text, "@req:%d+@%s*\n?", "")
+    text = string.gsub(text, "@req:[^@]+@%s*\n?", "")
+    -- 移除孤立的小写 s/S/h/d 百分号，如 "h%"、"S2%" 在无对应数字时
+    text = string.gsub(text, "([^%a%d])[hHsSdDaAm][%d]?%%", "%1")
+    -- 修复 token 被清除后留下的"孤立单位"残留：
+    --   "冷却时间秒。" -> "冷却时间。"
+    --   "获得%的法术" -> "获得?的法术"
+    --   "提高%。" -> "提高。"
+    text = string.gsub(text, "(%S)%%(的)", "%1%2")
+    text = string.gsub(text, "%%(的)", "%1")
+    text = string.gsub(text, "(%S)%%(，)", "%1%2")
+    text = string.gsub(text, "(%S)%%%s*。", "%1。")
+    -- 清理多余空格
+    text = string.gsub(text, "[ \t]+", " ")
+    text = string.gsub(text, "^[ \t]+", "")
+    text = string.gsub(text, "[ \t]+$", "")
+    return text
+  end
+
+  local function SanitizeSpellTable(tbl)
+    if type(tbl) ~= "table" then return end
+    for _, entry in pairs(tbl) do
+      if type(entry) == "table" and entry[2] then
+        entry[2] = SanitizeDBCTokens(entry[2])
+      end
+    end
+  end
+
+  SanitizeSpellTable(TPCN_SpellData_52)
+  SanitizeSpellTable(TPCN_SpellData_Season)
+  SanitizeSpellTable(TPCN_SpellData_Epoch)
 
   local function RegisterQuestTitle(id, title)
     id = tonumber(id)

@@ -11,7 +11,7 @@
 
 > 社区驱动开源整合插件 · Community-driven open-source localization
 >
-> 数据来源：[epochhead.com](https://epochhead.com/) · 社区贡献
+> 数据来源：[epochhead.com](https://epochhead.com/) · 社区贡献-天涯路漫
 
 只安装 **EpochCN**，就能获得任务、界面、Tooltip、天赋、技能、物品绿字全面汉化，以及内置 pfQuest 风格世界地图任务标记能力。无需额外安装 `pfQuest-epoch`、`QuestCN` 或 `Tooltips_Chinese`。
 
@@ -63,7 +63,7 @@
 
 ### 方法一：直接下载（推荐）
 
-1. 前往 [Releases 页面](https://github.com/EpochCN/EpochCN/releases) 下载最新版本的 `.zip` 文件
+1. 前往 [Releases 页面](https://github.com/z980944038-dev/EpochCN/releases) 下载最新版本的 `.zip` 文件
 2. 解压到 `Interface/AddOns/` 目录
 3. 确保目录结构为 `Interface/AddOns/EpochCN/EpochCN.toc`
 4. 启用 `EpochCN`，重新进入游戏
@@ -72,7 +72,7 @@
 
 ```bash
 cd "你的WoW目录/Interface/AddOns"
-git clone https://github.com/EpochCN/EpochCN.git
+git clone https://github.com/z980944038-dev/EpochCN.git
 ```
 
 ### ⚠️ 注意事项
@@ -105,6 +105,40 @@ git clone https://github.com/EpochCN/EpochCN.git
 ---
 
 ## 🏷️ 版本记录 / Changelog
+
+### v0.4.39
+- **彻底重构拍卖行中文搜索**，解决"很多物品搜索不到或乱"的问题
+  - 新增权威物品名映射数据 `Data/ItemNameMap.lua`（**28275 条**），来源：pfQuest classic enUS×zhCN + pfQuest TBC + Questie-Epoch WotLK × 本地 ItemData 按 ID 对齐
+  - 重写 `FindEnglishSearchTerm` 搜索算法：
+    - 精确中文 → 直接返回对应英文全名（例："雷霆之怒，逐风者的祝福之剑" → 精准搜到）
+    - 模糊中文 → 找所有候选英文的**最长公共词**（例："奥金" → `Arcanite`，覆盖全系列）
+    - 候选过多或无共同词 → 不再瞎翻成某个无关英文（避免误导），原样发送让服务器返回空
+  - 过滤 `DEPRECATED` / `[UNUSED]` / `(old)` / `(TEST)` / `Placeholder` 等占位条目（之前"雷霆之怒"会误返回带 DEPRECATED 后缀的版本）
+  - 物品名翻译加 LRU 缓存（2048 条），随机词缀扫描优化到只对含 ` of ` 的名字做匹配，列表滑动不再卡顿
+  - `NormalizeText` 不再删除反斜杠（会破坏带引号的物品名，如 `"Mage-Eye" Blunderbuss`）
+- 新增 `Tools/build_auction_itemname_map.py`（数据构建脚本）
+- 新增 `Tools/test_auction_search.lua`（算法端到端测试，含 13 个用例全通过）
+
+### v0.4.38
+- **大规模数据扩充（基于 pfQuest-epoch × shagu/pfQuest 双源同步）**
+  - 往 `UnitData.lua` 注册 **2173** 条 Project Epoch 专属 NPC（Blackstone Pirate 系列、海盗船剧情角色、Epoch 新城镇 NPC 等），即使暂为英文也可按 ID 精确命中
+  - 往 `ItemData.lua` 注册 **5522** 条 Project Epoch 专属物品 ID
+  - 往 `EpochHeadData.lua` 新增 **58** 条高可信度翻译（经过 classic enUS == Epoch enUS 双重校验，不会误继承重用 ID）
+  - 往 `EpochQuestData.lua` 校对英文任务标题字段，确保 Core 反查表能命中英文对话框
+- 新增数据同步工具链 `Tools/sync_from_pfquest.py`、`Tools/translate_epoch_units.py`、`Tools/register_epoch_units.py`、`Tools/enrich_quest_english_titles.py`、`Tools/audit_coverage.py`、`Tools/sync_objective_names.py`（用于长期维护）
+- 新增 `Tools/test_load.lua` 集成测试（模拟 WoW 环境端到端校验所有数据可加载）
+
+### v0.4.37
+- 修复十余处地图/地区译名错误（尘泥沼泽、贫瘠之地、赤脊山、杜隆塔尔、逆风小径、悲伤沼泽、荒芜之地、费伍德森林等）
+- 统一 `Band of the Endless` 译名（Overrides 与 EpochHeadData 一致为"无尽指环"）
+- 修复 `Settings.lua` 中"小地图按钒"错别字
+- `SpellData_52` 启动时一次性清洗所有 DBC token，不再依赖 Tooltip 单点过滤，角色面板/技能书也得到干净文本
+- 补充外域、诺森德、副本入口、Epoch 常见城镇 NPC/UI 翻译
+- 移除 `UI.lua` 的 `UPDATE_FACTION` 高频事件订阅，战斗中声望变化不再触发全量 UI 扫描
+- `Names.lua` 安全检查 `TargetFrameNameBackground.Text`（该字段在 3.3.5 不存在）
+- `QuestSync.lua` 注册 addon 消息前缀，保证消息不被过滤
+- 移除 `UpdateChecker.lua` 多余的 `C_Timer = C_Timer or nil` 赋值
+- 修正 README 中 GitHub 仓库链接
 
 ### v0.4.36
 - 迁入今日 UI/任务/Tooltip 修正：角色面板、技能、声望与自定义法术书动态文本可再次汉化
@@ -240,7 +274,7 @@ Translation corrections, missing translations, and code improvements are welcome
 ## 📬 联系方式 / Contact
 
 - **数据源**：[epochhead.com](https://epochhead.com/)
-- **GitHub Issues**：[提交反馈](https://github.com/EpochCN/EpochCN/issues)
+- **GitHub Issues**：[提交反馈](https://github.com/z980944038-dev/EpochCN/issues)
 - **游戏内**：`/ecn` 打开设置面板
 
 > 如有翻译错误、缺失或建议，欢迎反馈！

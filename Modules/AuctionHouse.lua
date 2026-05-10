@@ -378,9 +378,9 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
     if type(text) ~= "string" then return "" end
     text = string.gsub(text, "|c%x%x%x%x%x%x%x%x", "")
     text = string.gsub(text, "|r", "")
+    -- 仅反转义 lua 内常见引号，不要贸然删除所有反斜杠（会破坏文件路径和重音符号）
     text = string.gsub(text, '\\"', '"')
     text = string.gsub(text, "\\'", "'")
-    text = string.gsub(text, "\\", "")
     text = string.gsub(text, "^%s+", "")
     text = string.gsub(text, "%s+$", "")
     return text
@@ -390,34 +390,85 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
     english = NormalizeText(english)
     chinese = NormalizeText(chinese)
     if english == "" or chinese == "" or english == chinese then return end
-    itemNameMap[english] = chinese
-    itemReverseMap[chinese] = english
+    -- 过滤明显的占位/废弃/测试条目，避免污染反向映射
+    --（用户输入"雷霆之怒"不应返回 "Thunderfury ... DEPRECATED"）
+    if string.find(english, "DEPRECATED", 1, true)
+      or string.find(english, "deprecated", 1, true)
+      or string.find(english, "[UNUSED]", 1, true)
+      or string.find(english, "(TEST)", 1, true)
+      or string.find(english, "<TEST>", 1, true)
+      or string.find(english, "<NYI>", 1, true)
+      or string.find(english, "<TXT>", 1, true)
+      or string.find(english, "OLDDwarven", 1, true)
+      or string.sub(english, 1, 4) == "OLD "
+      or string.find(english, "PLACEHOLDER", 1, true)
+      or string.find(english, "Placeholder", 1, true)
+      or string.find(english, "(old)", 1, true)
+      or string.find(english, "(DEPRECATED)", 1, true)
+    then
+      return
+    end
+    -- 首次出现优先：不覆盖已有映射（避免多对一场景中后加载的覆盖先加载的）
+    if not itemNameMap[english] then
+      itemNameMap[english] = chinese
+    end
+    -- 反向映射：中文→英文。同一中文可能对应多个英文（例如重名物品），
+    -- 只保留第一个，其余靠子串索引兜底
+    if not itemReverseMap[chinese] then
+      itemReverseMap[chinese] = english
+    end
   end
 
   local function BuildItemNameMap()
     if itemNameBuilt then return end
     itemNameBuilt = true
 
-    if EpochCN_ObjectiveNameData then
-      for english, chinese in pairs(EpochCN_ObjectiveNameData) do
+    -- 1) ItemNameMap：最权威的 ID 对齐映射（1.5 万条）
+    --    这是 classic pfQuest enUS × zhCN 双向对齐，质量最高
+    if EpochCN_ItemNameMap then
+      for english, chinese in pairs(EpochCN_ItemNameMap) do
         AddItemName(english, chinese)
       end
     end
 
+    -- 2) Overrides.englishItems：人工维护的 Epoch 专属物品映射
     if EpochCN_Overrides and EpochCN_Overrides.englishItems then
       for english, chinese in pairs(EpochCN_Overrides.englishItems) do
+        AddItemName(english, chinese)
+      end
+    end
+
+    -- 3) ObjectiveNameData：任务目标+通用翻译（4.8 万条，但含很多非物品名）
+    --    作为兜底最后加载，避免污染物品词典的精确性
+    if EpochCN_ObjectiveNameData then
+      for english, chinese in pairs(EpochCN_ObjectiveNameData) do
         AddItemName(english, chinese)
       end
     end
   end
 
   local function TokenizeEnglish(text, counts)
+    -- 保留以向后兼容；当前搜索逻辑不再使用它，但其他代码可能依赖
     for token in string.gmatch(text or "", "[A-Za-z][A-Za-z%-']+") do
       if string.len(token) > 2 then
         counts[token] = (counts[token] or 0) + 1
       end
     end
   end
+
+  -- 中文 → 服务端搜索关键词
+  -- 拍卖行服务端的 QueryAuctionItems 支持对英文物品名做子串匹配：
+  -- 例如搜索 "Sword" 会返回所有名字含 "Sword" 的物品。
+  -- 因此我们需要找出"所有含用户输入中文的物品的共同英文关键词"。
+  --
+  -- 策略（按优先级）：
+  -- 1) 完整中文精确匹配 → 返回对应英文名
+  -- 2) 只有 1 个候选 → 返回该英文名
+  -- 3) 多个候选有共同英文单词 → 返回最长公共词
+  -- 4) 候选太多 (>100) → 原样返回中文（搜索词过于宽泛，让服务器空搜比乱搜好）
+  -- 5) 少量候选无共同词 → 返回最短候选英文名
+  -- 6) 完全找不到 → 原样返回
+  local MAX_CANDIDATES_FOR_FALLBACK = 80
 
   local function FindEnglishSearchTerm(chinese)
     chinese = NormalizeText(chinese)
@@ -426,64 +477,146 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
     BuildItemNameMap()
     if auctionSearchCache[chinese] then return auctionSearchCache[chinese] end
 
+    -- 1) 精确反向匹配
     local exact = itemReverseMap[chinese]
     if exact then
       auctionSearchCache[chinese] = exact
       return exact
     end
 
-    local counts = {}
-    local firstMatch
-    local matchCount = 0
+    -- 2) 全表线性扫描找候选。带早停防止搜索词过于宽泛时卡顿。
+    local candidateList = {}
+    local scanCap = MAX_CANDIDATES_FOR_FALLBACK * 3  -- 240
     for english, localized in pairs(itemNameMap) do
       if string.find(localized, chinese, 1, true) then
-        firstMatch = firstMatch or english
-        matchCount = matchCount + 1
-        TokenizeEnglish(english, counts)
+        table.insert(candidateList, english)
+        if table.getn(candidateList) > scanCap then
+          break
+        end
       end
     end
 
-    local bestToken, bestCount
-    for token, count in pairs(counts) do
-      if not bestCount or count > bestCount or (count == bestCount and string.len(token) < string.len(bestToken)) then
-        bestToken, bestCount = token, count
+    local n = table.getn(candidateList)
+    if n == 0 then
+      -- 找不到任何候选，原样返回中文。服务器会返回空结果，但至少
+      -- 不会把中文错误翻成某个无关英文词，误导用户。
+      auctionSearchCache[chinese] = chinese
+      return chinese
+    end
+
+    if n == 1 then
+      auctionSearchCache[chinese] = candidateList[1]
+      return candidateList[1]
+    end
+
+    -- 3) 多个候选：找出所有候选英文中最长的公共单词
+    --    例：候选 {"Thunderfury, Blessed Blade of the Windseeker",
+    --            "Thunderfury Hilt", "Thunderfury Blade"}
+    --    公共词：Thunderfury （服务器用它做子串搜索，所有 3 个都能命中）
+    local wordCounts = {}
+    for _, english in ipairs(candidateList) do
+      local seen = {}
+      for token in string.gmatch(english, "[A-Za-z][A-Za-z%-']+") do
+        if string.len(token) >= 4 and not seen[token] then
+          seen[token] = true
+          wordCounts[token] = (wordCounts[token] or 0) + 1
+        end
       end
     end
 
-    local result = bestToken or firstMatch or chinese
-    auctionSearchCache[chinese] = result
-    return result
+    -- 优先：出现次数 = 候选数 的公共词（全命中）
+    -- 次选：出现次数最高的词（部分命中，至少命中多数）
+    local bestCommon, bestCnt, bestLen = nil, 0, 0
+    for token, cnt in pairs(wordCounts) do
+      local tokenLen = string.len(token)
+      -- 更好的候选：
+      -- 1) 覆盖更多候选
+      -- 2) 覆盖数相同时，选更长（更具区分性）
+      if cnt > bestCnt or (cnt == bestCnt and tokenLen > bestLen) then
+        bestCommon = token
+        bestCnt = cnt
+        bestLen = tokenLen
+      end
+    end
+
+    -- 如果最佳词覆盖了至少一半候选，就认为它足够好
+    if bestCommon and bestCnt * 2 >= n then
+      auctionSearchCache[chinese] = bestCommon
+      return bestCommon
+    end
+
+    -- 4) 候选太多且无共同词 → 搜索太宽泛，保持中文原样
+    --    （服务器会返回无结果，但不会误导用户去看无关物品）
+    if n > MAX_CANDIDATES_FOR_FALLBACK then
+      auctionSearchCache[chinese] = chinese
+      return chinese
+    end
+
+    -- 5) 少量候选无共同词：返回最短的候选英文名（让服务器用该名搜索，
+    --    至少会命中其中一个物品，用户可以据此调整搜索词）
+    local shortest = candidateList[1]
+    for i = 2, n do
+      if string.len(candidateList[i]) < string.len(shortest) then
+        shortest = candidateList[i]
+      end
+    end
+    auctionSearchCache[chinese] = shortest
+    return shortest
   end
+
+  -- 物品名翻译缓存，避免同一英文名反复扫描随机词缀
+  local itemNameTranslateCache = {}
+  local itemNameTranslateCacheSize = 0
+  local ITEM_NAME_TRANSLATE_CACHE_MAX = 2048
 
   local function TranslateItemNameText(text)
     text = NormalizeText(text)
     if text == "" or HasCN(text) then return end
+
+    local cached = itemNameTranslateCache[text]
+    if cached ~= nil then
+      return cached or nil  -- false 表示"无翻译"
+    end
+
     BuildItemNameMap()
 
-    local exact = itemNameMap[text]
-    if exact then return exact end
+    local result = itemNameMap[text]
+    if not result then
+      -- 随机词缀扫描：优化 —— 只对包含 " of " 的英文名做扫描
+      -- 因为 90%+ 随机词缀都是 "of ..." 后缀形式
+      if string.find(text, " of ", 1, true) or string.sub(text, 1, 3) == "of " then
+        for affix, localizedAffix in pairs(randomAffixMap) do
+          local suffix = " " .. affix
+          if string.sub(text, -string.len(suffix)) == suffix then
+            local base = NormalizeText(string.sub(text, 1, string.len(text) - string.len(suffix)))
+            local baseCN = itemNameMap[base]
+            if baseCN then
+              result = baseCN .. "（" .. localizedAffix .. "）"
+              break
+            end
+          end
 
-    for affix, localizedAffix in pairs(randomAffixMap) do
-      local prefix = affix .. " "
-      if string.sub(text, 1, string.len(prefix)) == prefix then
-        local base = NormalizeText(string.sub(text, string.len(prefix) + 1))
-        local baseCN = itemNameMap[base]
-        if baseCN then return baseCN .. "（" .. localizedAffix .. "）" end
-      end
-
-      if string.sub(text, 1, string.len(affix)) == affix then
-        local base = NormalizeText(string.sub(text, string.len(affix) + 1))
-        local baseCN = itemNameMap[base]
-        if baseCN then return baseCN .. "（" .. localizedAffix .. "）" end
-      end
-
-      local suffix = " " .. affix
-      if string.sub(text, -string.len(suffix)) == suffix then
-        local base = NormalizeText(string.sub(text, 1, string.len(text) - string.len(suffix)))
-        local baseCN = itemNameMap[base]
-        if baseCN then return baseCN .. "（" .. localizedAffix .. "）" end
+          if not result and string.sub(text, 1, string.len(affix) + 1) == affix .. " " then
+            local base = NormalizeText(string.sub(text, string.len(affix) + 2))
+            local baseCN = itemNameMap[base]
+            if baseCN then
+              result = baseCN .. "（" .. localizedAffix .. "）"
+              break
+            end
+          end
+        end
       end
     end
+
+    -- 写缓存（result 可能为 nil，存 false 表示"没翻译"）
+    if itemNameTranslateCacheSize >= ITEM_NAME_TRANSLATE_CACHE_MAX then
+      itemNameTranslateCache = {}
+      itemNameTranslateCacheSize = 0
+    end
+    itemNameTranslateCache[text] = result or false
+    itemNameTranslateCacheSize = itemNameTranslateCacheSize + 1
+
+    return result
   end
 
   local function TranslateTextObject(object)

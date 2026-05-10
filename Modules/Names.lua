@@ -41,11 +41,18 @@ EpochCN:RegisterModule("Names", function(E)
 
     if unit == "target" then
       SetText(TargetFrameTextureFrameName, name)
-      SetText(TargetFrame.name, name)
-      SetText(TargetFrameNameBackground and TargetFrameNameBackground.Text, name)
+      if TargetFrame and TargetFrame.name then
+        SetText(TargetFrame.name, name)
+      end
+      -- TargetFrameNameBackground.Text 在 3.3.5 不存在；保留空值安全检查
+      if TargetFrameNameBackground and TargetFrameNameBackground.Text then
+        SetText(TargetFrameNameBackground.Text, name)
+      end
     elseif unit == "focus" then
       SetText(FocusFrameTextureFrameName, name)
-      SetText(FocusFrame and FocusFrame.name, name)
+      if FocusFrame and FocusFrame.name then
+        SetText(FocusFrame.name, name)
+      end
     elseif unit == "mouseover" then
       if GameTooltip and GameTooltip:IsShown() then
         local title = getglobal("GameTooltipTextLeft1")

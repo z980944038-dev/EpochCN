@@ -299,6 +299,34 @@ EpochCN_Glossary = {
     ["Lightweave Embroidery"] = "光织刺绣",
     ["Darkglow Embroidery"] = "暗辉刺绣",
     ["Swordguard Embroidery"] = "护剑刺绣",
+
+    -- Epoch 专属 UI / 系统文本（飞升团队经常使用的英文标签）
+    ["Bounty Board"] = "赏金公告板",
+    ["Call Board"] = "召唤板",
+    ["Active Bounties"] = "活跃赏金",
+    ["Epoch"] = "纪元",
+    ["Project Epoch"] = "纪元计划",
+    ["Ascension"] = "飞升",
+    ["Loremaster"] = "博学者",
+    ["Chronoboon Displacer"] = "时空增益位移装置",
+    ["Dungeon Finder"] = "地下城查找器",
+    ["Looking for Dungeon"] = "寻找地下城",
+    ["Looking for Raid"] = "寻找团队副本",
+    ["Random Dungeon"] = "随机地下城",
+    ["Group Finder"] = "组队查找器",
+    ["Queue"] = "队列",
+    ["Join Queue"] = "加入队列",
+    ["Leave Queue"] = "离开队列",
+
+    -- Epoch 自定义通用评价 / 物品品质名
+    ["Heirloom"] = "传家宝",
+    ["Artifact"] = "神器",
+    ["Legendary"] = "传奇",
+    ["Epic"] = "史诗",
+    ["Rare"] = "稀有",
+    ["Uncommon"] = "优秀",
+    ["Common"] = "普通",
+    ["Poor"] = "粗糙",
   },
   -- --------------------------------------------------------
   -- 任务目标后缀翻译（正则替换）

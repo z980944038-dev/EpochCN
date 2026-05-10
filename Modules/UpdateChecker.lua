@@ -127,7 +127,6 @@ EpochCN:RegisterModule("UpdateChecker", function(E)
     end)
 
     -- Auto-hide after 30 seconds
-    C_Timer = C_Timer or nil
     updateFrame.elapsed = 0
     updateFrame:SetScript("OnUpdate", function(self, elapsed)
       self.elapsed = self.elapsed + elapsed
