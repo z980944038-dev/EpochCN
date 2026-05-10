@@ -20,6 +20,22 @@ EpochCN:RegisterModule("UpdateChecker", function(E)
   local INITIAL_DELAY = 10       -- seconds after login before first broadcast
   local GITHUB_REPO = "https://github.com/z980944038-dev/EpochCN"
 
+  local function VersionTag(version)
+    return "v" .. tostring(version or E.version or "")
+  end
+
+  local function VersionAnchor(version)
+    return string.gsub(VersionTag(version), "[^%w%-_]", "")
+  end
+
+  local function ChangelogUrl(version)
+    return GITHUB_REPO .. "#" .. VersionAnchor(version)
+  end
+
+  local function ReleaseUrl(version)
+    return GITHUB_REPO .. "/releases/tag/" .. VersionTag(version)
+  end
+
   -- Persisted state
   EpochCNDB.dismissedVersion = EpochCNDB.dismissedVersion or ""
   EpochCNDB.lastKnownRemoteVersion = EpochCNDB.lastKnownRemoteVersion or ""
@@ -75,7 +91,8 @@ EpochCN:RegisterModule("UpdateChecker", function(E)
 
     -- Chat notification
     E:Print("|cffff9900⬆ 发现新版本|r: |cff33ff99v" .. remoteVersion .. "|r (当前: v" .. E.version .. ")")
-    E:Print("|cff88ccff下载地址|r: " .. GITHUB_REPO .. "/releases")
+    E:Print("|cff88ccff下载地址|r: " .. ReleaseUrl(remoteVersion))
+    E:Print("|cff88ccff更新说明|r: " .. ChangelogUrl(remoteVersion))
     E:Print("|cff888888输入 /ecn update dismiss 可忽略本次更新提醒。|r")
 
     -- Optional: floating notification frame
@@ -193,7 +210,8 @@ EpochCN:RegisterModule("UpdateChecker", function(E)
       E:Print("当前版本: |cff33ff99v" .. E.version .. "|r")
       if EpochCNDB.lastKnownRemoteVersion ~= "" and IsNewer(EpochCNDB.lastKnownRemoteVersion, E.version) then
         E:Print("|cffff9900最新版本|r: |cff33ff99v" .. EpochCNDB.lastKnownRemoteVersion .. "|r")
-        E:Print("|cff88ccff下载|r: " .. GITHUB_REPO .. "/releases")
+        E:Print("|cff88ccff下载|r: " .. ReleaseUrl(EpochCNDB.lastKnownRemoteVersion))
+        E:Print("|cff88ccff更新说明|r: " .. ChangelogUrl(EpochCNDB.lastKnownRemoteVersion))
       else
         E:Print("已是最新版本。")
       end
@@ -269,6 +287,9 @@ EpochCN:RegisterModule("UpdateChecker", function(E)
   E.updateInfo = {
     repo = GITHUB_REPO,
     currentVersion = E.version,
+    tag = VersionTag(E.version),
+    releaseUrl = ReleaseUrl(E.version),
+    changelogUrl = ChangelogUrl(E.version),
   }
 
   E:Debug("UpdateChecker 已注册")

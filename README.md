@@ -106,6 +106,11 @@ git clone https://github.com/z980944038-dev/EpochCN.git
 
 ## 🏷️ 版本记录 / Changelog
 
+### v0.4.43
+- **修复游戏内更新提示链接仍指向旧版本锚点的问题**
+  - 更新提醒现在直接输出对应版本的 Release 链接和 README 更新说明锚点
+  - `EpochCN.updateInfo` 新增 `tag`、`releaseUrl`、`changelogUrl`，外部工具不再需要手动拼旧链接
+
 ### v0.4.42
 - **扩展装备绿字通用翻译规则，不再只覆盖少量样例**
   - 新增通用 `Increases/Improves your X by Y` 规则，覆盖攻击强度、法术强度、命中/爆击/急速/防御/躲闪/招架/格挡/韧性/精准/穿透等装备属性
