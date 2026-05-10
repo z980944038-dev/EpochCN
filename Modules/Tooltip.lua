@@ -880,6 +880,57 @@ EpochCN:RegisterModule("Tooltip", function(E)
     end
   end
 
+  local function HookTooltipLineWriters(tooltip)
+    if not tooltip or tooltip.EpochCNLineWritersHooked then return end
+    if not tooltip.AddLine and not tooltip.AddDoubleLine then return end
+
+    tooltip.EpochCNLineWritersHooked = true
+
+    local function IsLineHookUnsafe(self)
+      local owner = self and self.GetOwner and self:GetOwner()
+      local name = owner and owner.GetName and owner:GetName()
+      if not name then return end
+
+      return string.find(name, "^SpellButton")
+        or string.find(name, "^ActionButton")
+        or string.find(name, "^MultiBar")
+        or string.find(name, "^BonusActionButton")
+        or string.find(name, "^PetActionButton")
+        or string.find(name, "^ShapeshiftButton")
+        or string.find(name, "^PossessButton")
+        or string.find(name, "^MultiCast")
+        or string.find(name, "^VehicleMenuBarActionButton")
+    end
+
+    local rawAddLine = tooltip.AddLine
+    if rawAddLine then
+      tooltip.AddLine = function(self, text, r, g, b, wrap)
+        if text and not self.EpochCNTranslatingLine and not IsLineHookUnsafe(self) then
+          self.EpochCNTranslatingLine = true
+          local translated = TranslateItemEffectText(text)
+          self.EpochCNTranslatingLine = nil
+          if translated then text = translated end
+        end
+        return rawAddLine(self, text, r, g, b, wrap)
+      end
+    end
+
+    local rawAddDoubleLine = tooltip.AddDoubleLine
+    if rawAddDoubleLine then
+      tooltip.AddDoubleLine = function(self, leftText, rightText, lr, lg, lb, rr, rg, rb)
+        if not self.EpochCNTranslatingLine and not IsLineHookUnsafe(self) then
+          self.EpochCNTranslatingLine = true
+          local translatedLeft = TranslateItemEffectText(leftText)
+          local translatedRight = TranslateItemEffectText(rightText)
+          self.EpochCNTranslatingLine = nil
+          if translatedLeft then leftText = translatedLeft end
+          if translatedRight then rightText = translatedRight end
+        end
+        return rawAddDoubleLine(self, leftText, rightText, lr, lg, lb, rr, rg, rb)
+      end
+    end
+  end
+
   function E:DumpTooltipLines(tooltip)
     tooltip = tooltip or GameTooltip
     if not tooltip or not tooltip.GetName or not tooltip.NumLines then
@@ -1099,6 +1150,7 @@ EpochCN:RegisterModule("Tooltip", function(E)
   end
 
   if GameTooltip then
+    HookTooltipLineWriters(GameTooltip)
     GameTooltip:HookScript("OnTooltipSetItem", TranslateItem)
     GameTooltip:HookScript("OnTooltipSetUnit", TranslateUnit)
     -- OnShow 仅处理非物品/非单位的杂项 tooltip（如游戏对象）
@@ -1114,6 +1166,7 @@ EpochCN:RegisterModule("Tooltip", function(E)
   end
 
   if ItemRefTooltip then
+    HookTooltipLineWriters(ItemRefTooltip)
     ItemRefTooltip:HookScript("OnTooltipSetItem", TranslateItem)
     -- OnShow 仅补充标题翻译；物品效果行由 OnTooltipSetItem 处理
     ItemRefTooltip:HookScript("OnShow", function(self)
@@ -1131,6 +1184,7 @@ EpochCN:RegisterModule("Tooltip", function(E)
   }) do
     local tooltip = getglobal(tooltipName)
     if tooltip and tooltip.HookScript then
+      HookTooltipLineWriters(tooltip)
       tooltip:HookScript("OnTooltipSetItem", TranslateItem)
       -- OnShow 仅补充标题翻译；物品效果行由 OnTooltipSetItem 处理
       tooltip:HookScript("OnShow", function(self)
@@ -1139,8 +1193,7 @@ EpochCN:RegisterModule("Tooltip", function(E)
     end
   end
 
-  -- HookTooltipLineWriters 已移除：
-  -- 原先 hook 了所有 tooltip 的 AddLine/AddDoubleLine，导致任何代码（WoW/其他插件/EpochCN 自身）
-  -- 每添加一行都会触发翻译逻辑（含 100+ 次 string.match），是严重卡顿的头号元凶。
-  -- 物品效果行的翻译现在仅在 OnTooltipSetItem 中通过 TranslateItemEffectLines 一次完成。
+  -- 绿字翻译需要同时覆盖 AddLine/AddDoubleLine：
+  -- 拍卖行、比较框和部分 Epoch 自定义 tooltip 会在 OnTooltipSetItem 之后继续追加效果行。
+  -- 这里只 hook 已知物品 tooltip，且翻译函数带缓存，避免恢复旧版全局扫描造成卡顿。
 end)

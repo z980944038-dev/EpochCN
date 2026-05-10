@@ -106,6 +106,11 @@ git clone https://github.com/z980944038-dev/EpochCN.git
 
 ## 🏷️ 版本记录 / Changelog
 
+### v0.4.41
+- **修复绿字汉化实际不生效的问题**
+  - 恢复物品 Tooltip 的 `AddLine` / `AddDoubleLine` 即时翻译，覆盖拍卖行、比较框和 Epoch 自定义 tooltip 后追加绿字行
+  - 保留递归保护、缓存和动作栏/法术按钮安全跳过，避免旧版全局扫描导致卡顿或污染非物品 tooltip
+
 ### v0.4.40
 - **补强物品与装备绿字描述汉化**，新增全局绿字精确翻译表 `Data/TooltipLineData.lua`
   - 覆盖 Project Epoch 自定义装备效果、合剂说明、配方学习、专业需求与风味文本等常见英文残留
