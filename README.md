@@ -234,15 +234,6 @@ EpochCN/
     └── ...
 ```
 
----
-
-## 💰 汉化捐赠者 / Donors
-
-感谢以下朋友的慷慨支持，让汉化工作得以持续进行：
-
-**ethon** · **王大强** · **manmanain** · **xiongbaobao** · **Shizuka** · **Soulwisp** · **Jynxen** · **hcafei**
-
-以及所有未留名的兄弟们，感谢你们的支持！ ❤️
 
 ---
 
@@ -278,6 +269,15 @@ Translation corrections, missing translations, and code improvements are welcome
 - **游戏内**：`/ecn` 打开设置面板
 
 > 如有翻译错误、缺失或建议，欢迎反馈！
+
+## ⚠️ 法律与免责声明 / Legal & Disclaimer
+
+- **非官方声明 (No Affiliation)**：本项目（EpochCN）是一个由玩家社区驱动的开源翻译项目，与暴雪娱乐（Blizzard Entertainment）及其任何附属机构**没有任何关联、赞助、授权或认可**。
+- **知识产权 (Intellectual Property)**：魔兽世界（World of Warcraft）、相关图像、文本、游戏数据及所有相关素材的版权和商标均完全归暴雪娱乐所有。本项目仅包含社区贡献的本地化翻译文本及辅助代码，不分发任何受版权保护的游戏核心资产。
+- **风险自负 (Use at Your Own Risk)**：本插件/工具按“原样（AS IS）”提供，不提供任何明示或暗示的保证。虽然开发者已尽最大努力确保代码的安全性和合规性，但使用任何第三方修改工具均可能存在违反游戏最终用户许可协议（EULA）的潜在风险。**因使用、修改或分发本插件而导致的任何直接或间接后果（包括但不限于账号封禁、数据丢失、游戏崩溃等），项目开发者及贡献者概不负责**。
+- **非商业用途 (Non-Commercial)**：本项目完全免费且开源，仅供玩家学习、测试与交流使用。严禁任何人将本项目及其衍生内容用于任何商业牟利行为。
+
+> *World of Warcraft and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries. This project is provided "AS IS", without warranty of any kind. The developers assume no liability for any account actions, data loss, or game issues resulting from the use of this modification.*
 
 ---
 
