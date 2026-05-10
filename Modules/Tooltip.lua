@@ -200,6 +200,89 @@ EpochCN:RegisterModule("Tooltip", function(E)
     Tailoring = "裁缝",
   }
 
+  local effectTermMap = {
+    ["all primary stats"] = "所有主要属性",
+    ["all stats"] = "所有属性",
+    ["armor"] = "护甲",
+    ["attack power"] = "攻击强度",
+    ["block rating"] = "格挡等级",
+    ["block value"] = "格挡值",
+    ["critical strike"] = "爆击",
+    ["critical strike rating"] = "爆击等级",
+    ["critical strike chance"] = "爆击几率",
+    ["damage and healing done by magical spells and effects"] = "魔法法术和效果造成的伤害与治疗效果",
+    ["damage done by magical spells and effects"] = "魔法法术和效果造成的伤害",
+    ["defense"] = "防御",
+    ["defense rating"] = "防御等级",
+    ["dodge"] = "躲闪",
+    ["dodge rating"] = "躲闪等级",
+    ["expertise"] = "精准",
+    ["expertise rating"] = "精准等级",
+    ["haste rating"] = "急速等级",
+    ["healing done by magical spells and effects"] = "魔法法术和效果的治疗效果",
+    ["healing done by spells and effects"] = "法术和效果的治疗效果",
+    ["hit rating"] = "命中等级",
+    ["mana regen"] = "法力回复",
+    ["mana regeneration"] = "法力回复",
+    ["melee attack power"] = "近战攻击强度",
+    ["melee haste"] = "近战急速",
+    ["movement speed"] = "移动速度",
+    ["parry"] = "招架",
+    ["parry rating"] = "招架等级",
+    ["ranged attack power"] = "远程攻击强度",
+    ["ranged haste"] = "远程急速",
+    ["resilience rating"] = "韧性等级",
+    ["run speed"] = "移动速度",
+    ["shield block rating"] = "盾牌格挡等级",
+    ["shield block value"] = "盾牌格挡值",
+    ["spell critical strike rating"] = "法术爆击等级",
+    ["spell critical strike chance"] = "法术爆击几率",
+    ["spell damage and healing"] = "法术伤害与治疗效果",
+    ["spell damage"] = "法术伤害",
+    ["spell haste rating"] = "法术急速等级",
+    ["spell hit rating"] = "法术命中等级",
+    ["spell penetration"] = "法术穿透",
+    ["spell power"] = "法术强度",
+    ["stealth detection"] = "潜行侦测",
+    ["weapon damage"] = "武器伤害",
+  }
+
+  local statNameMap = {
+    Agility = "敏捷",
+    Armor = "护甲",
+    Intellect = "智力",
+    Intelligence = "智力",
+    Spirit = "精神",
+    Stamina = "耐力",
+    Strength = "力量",
+  }
+
+  local resistanceNameMap = {
+    Arcane = "奥术抗性",
+    Fire = "火焰抗性",
+    Frost = "冰霜抗性",
+    Nature = "自然抗性",
+    Shadow = "暗影抗性",
+    All = "所有抗性",
+  }
+
+  local function TranslateEffectTerm(term)
+    term = NormalizeTooltipText(term)
+    term = string.gsub(term, "^your%s+", "")
+    term = string.gsub(term, "^the target's%s+", "")
+    term = string.gsub(term, "^the player's%s+", "")
+    term = string.gsub(term, "%s+", " ")
+
+    if statNameMap[term] then return statNameMap[term] end
+    if resistanceNameMap[term] then return resistanceNameMap[term] end
+
+    local lower = string.lower(term)
+    lower = string.gsub(lower, "^your%s+", "")
+    lower = string.gsub(lower, "^the target's%s+", "")
+    lower = string.gsub(lower, "^the player's%s+", "")
+    return effectTermMap[lower]
+  end
+
   local function TranslateSetName(name)
     name = NormalizeTooltipText(name)
     return setNameMap[name] or (EpochCN_ObjectiveNameData and EpochCN_ObjectiveNameData[name]) or name
@@ -239,6 +322,54 @@ EpochCN:RegisterModule("Tooltip", function(E)
     local profession, professionRank = string.match(text, "^Requires ([%a%s]+) %((%d+)%)$")
     if profession and professionRank then
       return "需要 " .. (professionNameMap[profession] or profession) .. " (" .. professionRank .. ")"
+    end
+
+    local genericTerm, genericAmount = string.match(text, "^Increases your (.-) by (%d+)%%%.?$")
+    if genericTerm and genericAmount then
+      local cn = TranslateEffectTerm(genericTerm)
+      if cn then return cn .. "提高 " .. genericAmount .. "%。" end
+    end
+
+    genericTerm, genericAmount = string.match(text, "^Increases (.-) by (%d+)%%%.?$")
+    if genericTerm and genericAmount then
+      local cn = TranslateEffectTerm(genericTerm)
+      if cn then return cn .. "提高 " .. genericAmount .. "%。" end
+    end
+
+    genericTerm, genericAmount = string.match(text, "^Improves your (.-) by (%d+)%%%.?$")
+    if genericTerm and genericAmount then
+      local cn = TranslateEffectTerm(genericTerm)
+      if cn then return cn .. "提高 " .. genericAmount .. "%。" end
+    end
+
+    genericTerm, genericAmount = string.match(text, "^Increases your (.-) by (%d+)%.?$")
+    if genericTerm and genericAmount then
+      local cn = TranslateEffectTerm(genericTerm)
+      if cn then return cn .. "提高 " .. genericAmount .. " 点。" end
+    end
+
+    genericTerm, genericAmount = string.match(text, "^Increases (.-) by (%d+)%.?$")
+    if genericTerm and genericAmount then
+      local cn = TranslateEffectTerm(genericTerm)
+      if cn then return cn .. "提高 " .. genericAmount .. " 点。" end
+    end
+
+    genericTerm, genericAmount = string.match(text, "^Improves your (.-) by (%d+)%.?$")
+    if genericTerm and genericAmount then
+      local cn = TranslateEffectTerm(genericTerm)
+      if cn then return cn .. "提高 " .. genericAmount .. " 点。" end
+    end
+
+    genericTerm, genericAmount = string.match(text, "^Increases (.-) by up to (%d+)%.?$")
+    if genericTerm and genericAmount then
+      local cn = TranslateEffectTerm(genericTerm)
+      if cn then return cn .. "最多提高 " .. genericAmount .. " 点。" end
+    end
+
+    genericTerm, genericAmount = string.match(text, "^Increases your (.-) by up to (%d+)%.?$")
+    if genericTerm and genericAmount then
+      local cn = TranslateEffectTerm(genericTerm)
+      if cn then return cn .. "最多提高 " .. genericAmount .. " 点。" end
     end
 
     -- ========== 基础属性 ==========
@@ -336,8 +467,20 @@ EpochCN:RegisterModule("Tooltip", function(E)
     value = string.match(text, "Improves your chance to get a critical strike by (%d+)%%")
     if value then return "爆击几率提高 " .. value .. "%。" end
 
+    value = string.match(text, "Improves your chance to get a critical strike with spells by (%d+)%%")
+    if value then return "法术爆击几率提高 " .. value .. "%。" end
+
+    value = string.match(text, "Increases your chance to get a critical strike with spells by (%d+)%%")
+    if value then return "法术爆击几率提高 " .. value .. "%。" end
+
     value = string.match(text, "Improves your chance to hit with melee and ranged attacks by (%d+)%%")
     if value then return "近战和远程攻击命中几率提高 " .. value .. "%。" end
+
+    value = string.match(text, "Improves your chance to hit with spells by (%d+)%%")
+    if value then return "法术命中几率提高 " .. value .. "%。" end
+
+    value = string.match(text, "Increases your chance to hit with spells by (%d+)%%")
+    if value then return "法术命中几率提高 " .. value .. "%。" end
 
     value = string.match(text, "Improves your chance to hit by (%d+)%%")
     if value then return "命中几率提高 " .. value .. "%。" end
@@ -384,8 +527,17 @@ EpochCN:RegisterModule("Tooltip", function(E)
     end
 
     -- ========== 法术/治疗增益 ==========
+    value = string.match(text, "Increases healing done by magical spells and effects by up to (%d+)")
+    if value then return "魔法法术和效果的治疗量最多提高 " .. value .. " 点。" end
+
     value = string.match(text, "Increases healing done by spells and effects by up to (%d+)")
     if value then return "法术和效果的治疗量最多提高 " .. value .. " 点。" end
+
+    value = string.match(text, "^Increases spell damage and healing by up to (%d+)%.?$")
+    if value then return "法术伤害和治疗效果最多提高 " .. value .. " 点。" end
+
+    value = string.match(text, "^Increases spell damage by up to (%d+)%.?$")
+    if value then return "法术伤害最多提高 " .. value .. " 点。" end
 
     value = string.match(text, "^Increases damage and healing done by magical spells and effects by up to (%d+)%.?$")
     if value then return "魔法法术和效果造成的伤害与治疗量最多提高 " .. value .. " 点。" end
@@ -399,6 +551,24 @@ EpochCN:RegisterModule("Tooltip", function(E)
     end
     if spellDamage and healing then
       return "所有魔法法术和效果造成的伤害最多提高" .. spellDamage .. "点，治疗效果最多提高" .. healing .. "点。"
+    end
+
+    healing, spellDamage = string.match(text, "^Healing done by up to (%d+) and damage done by up to (%d+) for all magical spells and effects%.?$")
+    if not healing then
+      healing, spellDamage = string.match(text, "^Increases healing done by up to (%d+) and damage done by up to (%d+) for all magical spells and effects%.?$")
+    end
+    if healing and spellDamage then
+      return "所有魔法法术和效果的治疗效果最多提高" .. healing .. "点，造成的伤害最多提高" .. spellDamage .. "点。"
+    end
+
+    spellDamage, healing = string.match(text, "^Increases damage done by up to (%d+) and healing done by up to (%d+) for all magical spells and effects%.?$")
+    if spellDamage and healing then
+      return "所有魔法法术和效果造成的伤害最多提高" .. spellDamage .. "点，治疗效果最多提高" .. healing .. "点。"
+    end
+
+    local schoolName, schoolAmount = string.match(text, "^Increases damage done by (%a+) spells and effects by up to (%d+)%.?$")
+    if schoolName and schoolAmount then
+      return (damageSchoolMap[schoolName] or schoolName) .. "法术和效果造成的伤害最多提高 " .. schoolAmount .. " 点。"
     end
 
     local attackPowerBonus, flaskDuration, cooldownSuffix = string.match(text, "^Increases melee and ranged attack power by (%d+) for (.-)%. Counts as both a Battle and Guardian elixir%. This effect persists through death%.%s*(%b())$")
@@ -498,11 +668,52 @@ EpochCN:RegisterModule("Tooltip", function(E)
     value = string.match(text, "Increases spell power by (%d+)")
     if value then return "法术强度提高 " .. value .. " 点。" end
 
+    value = string.match(text, "Increases your armor penetration by (%d+)")
+    if value then return "护甲穿透提高 " .. value .. " 点。" end
+
+    local resistSchool, resistValue = string.match(text, "^Increases your resistance to (%a+) by (%d+)%.?$")
+    if resistSchool and resistValue then
+      return (resistanceNameMap[resistSchool] or (resistSchool .. "抗性")) .. "提高 " .. resistValue .. " 点。"
+    end
+
+    resistSchool, resistValue = string.match(text, "^Increases (%a+) resistance by (%d+)%.?$")
+    if resistSchool and resistValue then
+      return (resistanceNameMap[resistSchool] or (resistSchool .. "抗性")) .. "提高 " .. resistValue .. " 点。"
+    end
+
+    resistValue = string.match(text, "^Increases all resistances by (%d+)%.?$")
+    if resistValue then return "所有抗性提高 " .. resistValue .. " 点。" end
+
+    local resistSchoolA, resistSchoolB
+    resistSchoolA, resistSchoolB, resistValue = string.match(text, "^Increases (%a+) and (%a+) resistance by (%d+)%.?$")
+    if resistSchoolA and resistSchoolB and resistValue then
+      return (damageSchoolLowerMap[string.lower(resistSchoolA)] or resistSchoolA) .. "和" .. (damageSchoolLowerMap[string.lower(resistSchoolB)] or resistSchoolB) .. "抗性提高 " .. resistValue .. " 点。"
+    end
+
+    value = string.match(text, "^Increases your maximum health by (%d+)%.?$")
+      or string.match(text, "^Increases the player's maximum health by (%d+)%.?$")
+    if value then return "生命值上限提高 " .. value .. " 点。" end
+
+    value = string.match(text, "^Increases your maximum mana by (%d+)%.?$")
+      or string.match(text, "^Increases the player's maximum mana by (%d+)%.?$")
+    if value then return "法力值上限提高 " .. value .. " 点。" end
+
+    local gainTerm, gainAmount, lossTerm, lossAmount, statDuration = string.match(text, "^Increases (%a+) by (%d+), but decreases (%a+) by (%d+) for (.-)%.?$")
+    if gainTerm and gainAmount and lossTerm and lossAmount and statDuration then
+      local gainName = TranslateEffectTerm(gainTerm) or gainTerm
+      local lossName = TranslateEffectTerm(lossTerm) or lossTerm
+      return gainName .. "提高 " .. gainAmount .. " 点，但" .. lossName .. "降低 " .. lossAmount .. " 点，持续" .. TranslateDurationText(statDuration) .. "。"
+    end
+
     -- ========== 每5秒恢复 ==========
     value = string.match(text, "Restores (%d+) mana per 5 sec")
+      or string.match(text, "Restores (%d+) mana every 5 seconds")
+      or string.match(text, "Restores (%d+) mana per 5 seconds")
     if value then return "每5秒恢复 " .. value .. " 点法力值。" end
 
     value = string.match(text, "Restores (%d+) health per 5 sec")
+      or string.match(text, "Restores (%d+) health every 5 seconds")
+      or string.match(text, "Restores (%d+) health per 5 seconds")
     if value then return "每5秒恢复 " .. value .. " 点生命值。" end
 
     -- ========== 伤害吸收 ==========

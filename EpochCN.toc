@@ -5,7 +5,7 @@
 ## Notes-zhCN: Project Epoch 独立中文整合：任务汉化、任务追踪、天赋技能与界面汉化，内置独立的 pfQuest 风格世界地图任务标记核心。
 ## Author: EpochCN 汉化组, Community
 ## X-Designer: EpochCN
-## Version: 0.4.41
+## Version: 0.4.42
 ## SavedVariables: EpochCNDB
 ## SavedVariablesPerCharacter: EpochCNCharDB
 ## DefaultState: enabled
