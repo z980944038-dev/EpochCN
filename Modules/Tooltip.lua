@@ -1097,6 +1097,12 @@ EpochCN:RegisterModule("Tooltip", function(E)
 
     tooltip.EpochCNLineWritersHooked = true
 
+    local function GetLineWriterItemData(self)
+      if not self or not self.EpochCNItemData or not self.GetItem then return end
+      local _, link = self:GetItem()
+      if link then return self.EpochCNItemData end
+    end
+
     local function IsLineHookUnsafe(self)
       local owner = self and self.GetOwner and self:GetOwner()
       local name = owner and owner.GetName and owner:GetName()
@@ -1118,7 +1124,7 @@ EpochCN:RegisterModule("Tooltip", function(E)
       tooltip.AddLine = function(self, text, r, g, b, wrap)
         if text and not self.EpochCNTranslatingLine and not IsLineHookUnsafe(self) then
           self.EpochCNTranslatingLine = true
-          local translated = TranslateItemEffectText(text)
+          local translated = TranslateItemEffectText(text, GetLineWriterItemData(self))
           self.EpochCNTranslatingLine = nil
           if translated then text = translated end
         end
@@ -1131,8 +1137,9 @@ EpochCN:RegisterModule("Tooltip", function(E)
       tooltip.AddDoubleLine = function(self, leftText, rightText, lr, lg, lb, rr, rg, rb)
         if not self.EpochCNTranslatingLine and not IsLineHookUnsafe(self) then
           self.EpochCNTranslatingLine = true
-          local translatedLeft = TranslateItemEffectText(leftText)
-          local translatedRight = TranslateItemEffectText(rightText)
+          local itemData = GetLineWriterItemData(self)
+          local translatedLeft = TranslateItemEffectText(leftText, itemData)
+          local translatedRight = TranslateItemEffectText(rightText, itemData)
           self.EpochCNTranslatingLine = nil
           if translatedLeft then leftText = translatedLeft end
           if translatedRight then rightText = translatedRight end
@@ -1308,6 +1315,7 @@ EpochCN:RegisterModule("Tooltip", function(E)
   local function TranslateItem(tooltip)
     local data, link = GetTooltipItemData(tooltip)
     if not link then return end
+    tooltip.EpochCNItemData = data
 
     if data and data[1] then
       SetTooltipTitle(tooltip, data[1])
@@ -1318,6 +1326,7 @@ EpochCN:RegisterModule("Tooltip", function(E)
   end
 
   local function TranslateSpell(tooltip)
+    tooltip.EpochCNItemData = nil
     if IsUnsafeTooltipOwner(tooltip) then return end
     if not tooltip.GetSpell then return end
 
@@ -1338,6 +1347,7 @@ EpochCN:RegisterModule("Tooltip", function(E)
   end
 
   local function TranslateUnit(tooltip)
+    tooltip.EpochCNItemData = nil
     local _, unit = tooltip:GetUnit()
     if not unit or not UnitGUID then return end
 

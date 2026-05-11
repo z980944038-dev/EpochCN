@@ -286,8 +286,6 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
 
   local itemNameMap = {}
   local itemReverseMap = {}
-  local itemSearchBuckets = {}
-  local itemSearchEntrySeen = {}
   local auctionSearchCache = {}
   local itemNameBuilt = false
   local randomAffixMap = {
@@ -388,55 +386,9 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
     return text
   end
 
-  local function ForEachUTF8Char(text, callback)
-    local i = 1
-    local n = string.len(text or "")
-    while i <= n do
-      local byte = string.byte(text, i)
-      if not byte then break end
-
-      local charLen = 1
-      if byte >= 240 then
-        charLen = 4
-      elseif byte >= 224 then
-        charLen = 3
-      elseif byte >= 192 then
-        charLen = 2
-      end
-
-      callback(string.sub(text, i, i + charLen - 1))
-      i = i + charLen
-    end
-  end
-
-  local function AddSearchEntry(chinese, english)
-    if chinese == "" or english == "" then return end
-
-    local entryKey = chinese .. "\001" .. english
-    if itemSearchEntrySeen[entryKey] then return end
-    itemSearchEntrySeen[entryKey] = true
-
-    local perEntryChars = {}
-    ForEachUTF8Char(chinese, function(char)
-      if char ~= "" and not perEntryChars[char] then
-        perEntryChars[char] = true
-        local bucket = itemSearchBuckets[char]
-        if not bucket then
-          bucket = {}
-          itemSearchBuckets[char] = bucket
-        end
-        table.insert(bucket, { english, chinese })
-      end
-    end)
-  end
-
-  local function AddItemName(english, chinese)
-    english = NormalizeText(english)
-    chinese = NormalizeText(chinese)
-    if english == "" or chinese == "" or english == chinese then return end
-    -- 过滤明显的占位/废弃/测试条目，避免污染反向映射
-    --（用户输入"雷霆之怒"不应返回 "Thunderfury ... DEPRECATED"）
-    if string.find(english, "DEPRECATED", 1, true)
+  local function IsSkippedEnglishName(english)
+    if type(english) ~= "string" or english == "" then return true end
+    return string.find(english, "DEPRECATED", 1, true)
       or string.find(english, "deprecated", 1, true)
       or string.find(english, "[UNUSED]", 1, true)
       or string.find(english, "(TEST)", 1, true)
@@ -449,9 +401,15 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
       or string.find(english, "Placeholder", 1, true)
       or string.find(english, "(old)", 1, true)
       or string.find(english, "(DEPRECATED)", 1, true)
-    then
-      return
-    end
+  end
+
+  local function AddItemName(english, chinese)
+    english = NormalizeText(english)
+    chinese = NormalizeText(chinese)
+    if english == "" or chinese == "" or english == chinese then return end
+    -- 过滤明显的占位/废弃/测试条目，避免污染反向映射
+    --（用户输入"雷霆之怒"不应返回 "Thunderfury ... DEPRECATED"）
+    if IsSkippedEnglishName(english) then return end
     -- 首次出现优先：不覆盖已有映射（避免多对一场景中后加载的覆盖先加载的）
     if not itemNameMap[english] then
       itemNameMap[english] = chinese
@@ -461,36 +419,17 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
     if not itemReverseMap[chinese] then
       itemReverseMap[chinese] = english
     end
-    AddSearchEntry(chinese, english)
-  end
-
-  local function AddSearchAlias(chinese, english)
-    chinese = NormalizeText(chinese)
-    english = NormalizeText(english)
-    if chinese == "" or english == "" or chinese == english then return end
-    if not itemReverseMap[chinese] then
-      itemReverseMap[chinese] = english
-    end
-    AddSearchEntry(chinese, english)
   end
 
   local function BuildItemNameMap()
     if itemNameBuilt then return end
     itemNameBuilt = true
 
-    -- 1) ItemNameMap：最权威的 ID 对齐映射（1.5 万条）
+    -- 1) ItemNameMap：最权威的 ID 对齐映射（2.8 万条）
     --    这是 classic pfQuest enUS × zhCN 双向对齐，质量最高
     if EpochCN_ItemNameMap then
       for english, chinese in pairs(EpochCN_ItemNameMap) do
         AddItemName(english, chinese)
-      end
-    end
-
-    -- Search-only aliases cover Chinese wording differences between ItemData,
-    -- pfQuest, Questie and EpochHead while keeping result display names stable.
-    if EpochCN_ItemSearchAliases then
-      for chinese, english in pairs(EpochCN_ItemSearchAliases) do
-        AddSearchAlias(chinese, english)
       end
     end
 
@@ -501,8 +440,9 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
       end
     end
 
-    -- 不在拍卖行加载 ObjectiveNameData。那张表包含大量任务目标/通用文本，
-    -- 会让第一次搜索在游戏主线程上构建和扫描过多无关数据。
+    -- 不在拍卖行加载 ObjectiveNameData。那张表包含大量任务目标/通用文本。
+    -- 这里也不构建模糊搜索索引：显示翻译只需要 O(1) 英文→中文映射，
+    -- 搜索候选在用户输入中文时按需扫描，避免打开/刷新拍卖行时卡顿。
   end
 
   local function TokenizeEnglish(text, counts)
@@ -526,29 +466,44 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
   -- 4) 候选太多 (>100) → 原样返回中文（搜索词过于宽泛，让服务器空搜比乱搜好）
   -- 5) 少量候选无共同词 → 返回最短候选英文名
   -- 6) 完全找不到 → 原样返回
-  local function GetSearchBucketForQuery(query)
-    local bestBucket = nil
-    local bestSize = nil
-    local seen = {}
+  local MAX_CANDIDATES_FOR_FALLBACK = 80
 
-    ForEachUTF8Char(query, function(char)
-      if not seen[char] then
-        seen[char] = true
-        local bucket = itemSearchBuckets[char]
-        if bucket then
-          local size = table.getn(bucket)
-          if not bestSize or size < bestSize then
-            bestBucket = bucket
-            bestSize = size
-          end
-        end
-      end
-    end)
+  local function AddSearchCandidate(candidateList, candidateSeen, english, localized, query, scanCap)
+    english = NormalizeText(english)
+    localized = NormalizeText(localized)
+    if english == "" or localized == "" or candidateSeen[english] then return false end
+    if IsSkippedEnglishName(english) then return false end
+    if not string.find(localized, query, 1, true) then return false end
 
-    return bestBucket
+    candidateSeen[english] = true
+    table.insert(candidateList, english)
+    return table.getn(candidateList) > scanCap
   end
 
-  local MAX_CANDIDATES_FOR_FALLBACK = 80
+  local function CollectSearchCandidates(query)
+    local candidateList = {}
+    local candidateSeen = {}
+    local scanCap = MAX_CANDIDATES_FOR_FALLBACK * 3  -- 240
+
+    -- Search aliases are generated exactly for Chinese search wording
+    -- differences, so scan them first and only then fall back to display names.
+    if EpochCN_ItemSearchAliases then
+      for localized, english in pairs(EpochCN_ItemSearchAliases) do
+        if AddSearchCandidate(candidateList, candidateSeen, english, localized, query, scanCap) then
+          return candidateList
+        end
+      end
+    end
+
+    BuildItemNameMap()
+    for english, localized in pairs(itemNameMap) do
+      if AddSearchCandidate(candidateList, candidateSeen, english, localized, query, scanCap) then
+        return candidateList
+      end
+    end
+
+    return candidateList
+  end
 
   local function FindEnglishSearchTerm(chinese)
     chinese = NormalizeText(chinese)
@@ -560,7 +515,7 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
     -- larger fallback index on the first search click.
     if EpochCN_ItemSearchAliases then
       local directAlias = NormalizeText(EpochCN_ItemSearchAliases[chinese])
-      if directAlias ~= "" then
+      if directAlias ~= "" and not IsSkippedEnglishName(directAlias) then
         auctionSearchCache[chinese] = directAlias
         return directAlias
       end
@@ -575,25 +530,9 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
       return exact
     end
 
-    -- 2) 从最小中文字符桶里找候选，避免每次中文模糊搜索全表扫描。
-    local candidateList = {}
-    local scanCap = MAX_CANDIDATES_FOR_FALLBACK * 3  -- 240
-    local candidateBucket = GetSearchBucketForQuery(chinese)
-    if not candidateBucket then
-      auctionSearchCache[chinese] = chinese
-      return chinese
-    end
-
-    for _, entry in ipairs(candidateBucket) do
-      local english = entry[1]
-      local localized = entry[2]
-      if string.find(localized, chinese, 1, true) then
-        table.insert(candidateList, english)
-        if table.getn(candidateList) > scanCap then
-          break
-        end
-      end
-    end
+    -- 2) 按需收集候选。这里不再构建全局字符桶，避免首次搜索/刷新时
+    -- 在游戏主线程分配大量小表造成明显卡顿。
+    local candidateList = CollectSearchCandidates(chinese)
 
     local n = table.getn(candidateList)
     if n == 0 then
@@ -718,22 +657,48 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
     return result
   end
 
+  local function ExtractItemID(itemLink)
+    if type(itemLink) ~= "string" then return nil end
+    local itemID = string.match(itemLink, "item:(%d+)")
+    return itemID and tonumber(itemID) or nil
+  end
+
+  local function GetLocalizedItemNameByID(itemID)
+    if not itemID or not TPCN_ItemData then return nil end
+    local data = TPCN_ItemData[itemID]
+    local name = data and data[1]
+    if type(name) == "string" and name ~= "" and HasCN(name) then
+      return NormalizeText(name)
+    end
+    return nil
+  end
+
+  local function SetTranslatedTextObject(object, translated)
+    if not object or not object.GetText or not object.SetText or not translated then return false end
+    local text = object:GetText()
+    if not text or text == "" then return false end
+    if NormalizeText(text) == translated then return true end
+
+    local color = string.match(text, "(|c%x%x%x%x%x%x%x%x)")
+    object.EpochCNRawText = text
+    if color then
+      object:SetText(color .. translated .. "|r")
+    else
+      object:SetText(translated)
+    end
+    return true
+  end
+
   local function TranslateTextObject(object)
     if not object or not object.GetText or not object.SetText then return end
     local text = object:GetText()
     if not text or text == "" then return end
 
-    local color = string.match(text, "(|c%x%x%x%x%x%x%x%x)")
     local clean = string.gsub(text, "|c%x%x%x%x%x%x%x%x", "")
     clean = string.gsub(clean, "|r", "")
     local translated = textMap[clean] or textMap[text] or TranslateItemNameText(clean)
     if translated and translated ~= clean then
-      object.EpochCNRawText = text
-      if color then
-        object:SetText(color .. translated .. "|r")
-      else
-        object:SetText(translated)
-      end
+      SetTranslatedTextObject(object, translated)
     end
   end
 
@@ -775,10 +740,30 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
     end
   end
 
+  local function TranslateBrowseButtonByIndex(index)
+    if not GetAuctionItemLink then return false end
+
+    local offset = 0
+    if FauxScrollFrame_GetOffset and BrowseScrollFrame then
+      offset = FauxScrollFrame_GetOffset(BrowseScrollFrame) or 0
+    end
+
+    local itemLink = GetAuctionItemLink("list", offset + index)
+    local localized = GetLocalizedItemNameByID(ExtractItemID(itemLink))
+    if not localized then return false end
+
+    local changed = false
+    changed = SetTranslatedTextObject(getglobal("BrowseButton" .. index .. "Name"), localized) or changed
+    changed = SetTranslatedTextObject(getglobal("BrowseButton" .. index .. "NameText"), localized) or changed
+    return changed
+  end
+
   local function TranslateAuctionItems()
     for i = 1, 50 do
-      TranslateTextObject(getglobal("BrowseButton" .. i .. "Name"))
-      TranslateTextObject(getglobal("BrowseButton" .. i .. "NameText"))
+      if not TranslateBrowseButtonByIndex(i) then
+        TranslateTextObject(getglobal("BrowseButton" .. i .. "Name"))
+        TranslateTextObject(getglobal("BrowseButton" .. i .. "NameText"))
+      end
       TranslateTextObject(getglobal("AuctionatorEntry" .. i .. "_EntryText"))
       TranslateTextObject(getglobal("AuctionatorEntry" .. i .. "_PerItem_Text"))
       TranslateTextObject(getglobal("Atr_HEntry" .. i .. "_EntryText"))

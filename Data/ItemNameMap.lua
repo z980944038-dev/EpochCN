@@ -42327,4 +42327,25 @@ function LoadEpochCNItemNameMap()
     ["龙鹰长靴"] = "Dragonhawk Boots",
     ["龙齿"] = "Dragon Teeth",
   }
+  local function IsSkippedSearchAlias(english)
+    return string.find(english, "DEPRECATED", 1, true)
+      or string.find(english, "deprecated", 1, true)
+      or string.find(english, "[UNUSED]", 1, true)
+      or string.find(english, "(TEST)", 1, true)
+      or string.find(english, "<TEST>", 1, true)
+      or string.find(english, "<NYI>", 1, true)
+      or string.find(english, "<TXT>", 1, true)
+      or string.find(english, "OLDDwarven", 1, true)
+      or string.sub(english, 1, 4) == "OLD "
+      or string.find(english, "PLACEHOLDER", 1, true)
+      or string.find(english, "Placeholder", 1, true)
+      or string.find(english, "(old)", 1, true)
+      or string.find(english, "(DEPRECATED)", 1, true)
+  end
+  for english, chinese in pairs(EpochCN_ItemNameMap) do
+    local current = EpochCN_ItemSearchAliases[chinese]
+    if not IsSkippedSearchAlias(english) and (current == nil or IsSkippedSearchAlias(current)) then
+      EpochCN_ItemSearchAliases[chinese] = english
+    end
+  end
 end

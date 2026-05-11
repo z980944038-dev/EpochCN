@@ -1,0 +1,43 @@
+{
+  "source": "https://epochhead.com/items",
+  "detailUrlPattern": "https://epochhead.com/?item={id}",
+  "capturedAt": "2026-05-11",
+  "list": {
+    "file": "list.json",
+    "count": 16706,
+    "sha256": "dd16ffeb930fb7268fa76628b4371775383ad4718a2150640ab925b36fc55df8"
+  },
+  "details": {
+    "file": "items.json",
+    "count": 16706,
+    "greenItemCount": 6492,
+    "errorCount": 0,
+    "sha256": "d10e02e3a57342e2d57b09747160d2811723c9d89e7c16f067f6ca261b2754fb"
+  },
+  "schema": {
+    "list": [
+      "id",
+      "name",
+      "category",
+      "slot",
+      "ilevel",
+      "url"
+    ],
+    "details": [
+      "id",
+      "name",
+      "category",
+      "slot",
+      "ilevel",
+      "url",
+      "description",
+      "tooltip",
+      "green"
+    ]
+  },
+  "notes": [
+    "list.json is the complete 335-page EpochHead item index captured from /items.",
+    "items.json is an incremental detail snapshot. It is intentionally committed so future localization work can reuse it without re-scraping completed items.",
+    "Rows with fetch errors are excluded; missing detail rows should be resumed by Tools/scrape_epochhead_items.js."
+  ]
+}

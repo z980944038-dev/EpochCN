@@ -3,7 +3,7 @@ local E = EpochCN or {}
 EpochCN = E
 
 E.name = addonName or "EpochCN"
-E.version = "0.4.44"
+E.version = "0.4.45"
 E.designLabel = "汉化组"
 E.modules = E.modules or {}
 E.moduleOrder = E.moduleOrder or {}
@@ -167,6 +167,7 @@ function E:LoadSeedData()
   if LoadTPCNItemData then LoadTPCNItemData() end
   if LoadEpochCNItemNameMap then LoadEpochCNItemNameMap() end
   if LoadEpochCNConsumableData then LoadEpochCNConsumableData() end
+  if LoadEpochCNItemOverlayData then LoadEpochCNItemOverlayData() end
   if LoadEpochCNTooltipLineData then LoadEpochCNTooltipLineData() end
   if LoadTPCNUnitData then LoadTPCNUnitData() end
   if LoadEpochCNObjectiveNameData then LoadEpochCNObjectiveNameData() end
@@ -385,18 +386,42 @@ function E:GetItemData(id)
   id = tonumber(id)
   if not id then return end
   local consumable = EpochCN_ConsumableData and EpochCN_ConsumableData[id]
+  local overlay = EpochCN_ItemOverlayData and EpochCN_ItemOverlayData[id]
   local base = TPCN_ItemData and TPCN_ItemData[id]
-  if consumable and base then
+  if consumable and overlay then
+    local mergedLineMap = {}
+    if type(overlay[5]) == "table" then
+      for raw, translated in pairs(overlay[5]) do
+        mergedLineMap[raw] = translated
+      end
+    end
+    if type(consumable[5]) == "table" then
+      for raw, translated in pairs(consumable[5]) do
+        mergedLineMap[raw] = translated
+      end
+    end
+    overlay = {
+      consumable[1] and consumable[1] ~= "" and consumable[1] or overlay[1],
+      overlay[2] and overlay[2] ~= "" and overlay[2] or consumable[2],
+      consumable[3] and consumable[3] ~= "" and consumable[3] or overlay[3],
+      consumable[4] or overlay[4],
+      mergedLineMap,
+      consumable[6] or overlay[6],
+    }
+  else
+    overlay = consumable or overlay
+  end
+  if overlay and base then
     return {
-      consumable[1] and consumable[1] ~= "" and consumable[1] or base[1],
-      consumable[2] and consumable[2] ~= "" and consumable[2] or base[2],
-      consumable[3] and consumable[3] ~= "" and consumable[3] or base[3],
-      consumable[4],
-      consumable[5],
-      consumable[6],
+      overlay[1] and overlay[1] ~= "" and overlay[1] or base[1],
+      overlay[2] and overlay[2] ~= "" and overlay[2] or base[2],
+      overlay[3] and overlay[3] ~= "" and overlay[3] or base[3],
+      overlay[4],
+      overlay[5],
+      overlay[6],
     }
   end
-  return consumable or base
+  return overlay or base
 end
 
 function E:GetUnitData(id)
