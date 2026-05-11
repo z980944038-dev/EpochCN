@@ -1323,6 +1323,9 @@ EpochCN:RegisterModule("Tooltip", function(E)
       TranslateKnownTitle(tooltip)
     end
     TranslateItemEffectLines(tooltip, data)
+    if data and EpochCNDB.appendTooltip then
+      AddItemTranslation(tooltip, link, data)
+    end
   end
 
   local function TranslateSpell(tooltip)

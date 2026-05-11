@@ -106,6 +106,13 @@ git clone https://github.com/z980944038-dev/EpochCN.git
 
 ## 🏷️ 版本记录 / Changelog
 
+### v0.4.46
+- **修复完整物品汉化面板未追加的问题**
+  - 恢复物品 Tooltip 的完整 EpochCN 中文面板追加逻辑，确保 EpochHead 生成的全量物品描述实际显示
+  - 保留原有行级绿字即时翻译，同时追加完整中文面板，覆盖拍卖行与背包 Tooltip 中插件后追加英文行的情况
+- **修正发布包安装体验**
+  - 发布包使用 `EpochCN/` 作为根目录，避免源码包目录名 `EpochCN-版本号` 与旧版本目录混用导致加载旧文件
+
 ### v0.4.45
 - **接入 EpochHead 全量物品汉化面板数据**
   - 新增 `Data/EpochItemData.lua`，基于 EpochHead 16706 件物品快照生成完整物品 Tooltip 覆盖
