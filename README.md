@@ -106,6 +106,13 @@ git clone https://github.com/z980944038-dev/EpochCN.git
 
 ## 🏷️ 版本记录 / Changelog
 
+### v0.4.47
+- **默认关闭插件内置地图任务图标**
+  - `worldMap`、`worldMapPins`、小地图任务目标、可接任务 NPC 标记和各类任务点过滤默认全部关闭
+  - 对旧配置执行一次迁移，将历史默认开启的小地图/可接任务图标关闭；之后用户仍可在设置中手动重新开启
+- **复查大数据 Lua 文件完整性**
+  - `Data/EpochQuestData.lua` 与 `Data/MapData.lua` 已通过 Lua 5.1.5 语法检查，当前版本未复现 `unfinished string near '<eof>'`
+
 ### v0.4.46
 - **修复完整物品汉化面板未追加的问题**
   - 恢复物品 Tooltip 的完整 EpochCN 中文面板追加逻辑，确保 EpochHead 生成的全量物品描述实际显示

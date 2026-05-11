@@ -3,7 +3,7 @@ local E = EpochCN or {}
 EpochCN = E
 
 E.name = addonName or "EpochCN"
-E.version = "0.4.46"
+E.version = "0.4.47"
 E.designLabel = "汉化组"
 E.modules = E.modules or {}
 E.moduleOrder = E.moduleOrder or {}
@@ -21,19 +21,19 @@ local defaults = {
   globalStrings = true,
   settingsPanel = true,
   pfQuestBridge = false,
-  worldMap = false,      -- 暂时关闭 EpochCN 自带世界地图任务标记
+  worldMap = false,      -- 默认关闭 EpochCN 自带世界地图任务标记
   worldMapPins = false,
   worldMapTrackingMode = "off",
-  worldMapShowStartPins = true,
-  worldMapShowAvailablePins = true,
-  worldMapShowFinishPins = true,
-  worldMapShowObjectivePins = true,
-  minimapQuestPins = true,
-  minimapQuestObjectivesOnly = true,
+  worldMapShowStartPins = false,
+  worldMapShowAvailablePins = false,
+  worldMapShowFinishPins = false,
+  worldMapShowObjectivePins = false,
+  minimapQuestPins = false,
+  minimapQuestObjectivesOnly = false,
   worldMapClusterRadius = 0.018,
   worldMapPinSize = 16,
   worldMapObjectivePinSize = 2,
-  availableQuestPins = true,
+  availableQuestPins = false,
   availableQuestLevelRange = 3,
   hideLowLevelAvailableQuestPins = true,
   availableQuestLowLevelRange = 4,
@@ -50,6 +50,7 @@ local defaults = {
   minimapButtonAngle = 225,
   updateCheck = true,  -- 自动检查新版本（通过公会/队伍广播）
   debug = false,
+  mapIconDefaultsVersion = "",
 }
 
 local charDefaults = {
@@ -65,6 +66,21 @@ local function MergeDefaults(target, source)
     if target[key] == nil then target[key] = value end
   end
   return target
+end
+
+local function DisableMapIconDefaults(target)
+  if not target or target.mapIconDefaultsVersion == "0.4.47" then return end
+  target.worldMap = false
+  target.worldMapPins = false
+  target.worldMapTrackingMode = "off"
+  target.worldMapShowStartPins = false
+  target.worldMapShowAvailablePins = false
+  target.worldMapShowFinishPins = false
+  target.worldMapShowObjectivePins = false
+  target.minimapQuestPins = false
+  target.minimapQuestObjectivesOnly = false
+  target.availableQuestPins = false
+  target.mapIconDefaultsVersion = "0.4.47"
 end
 
 function E:Debug(message)
@@ -447,6 +463,7 @@ end
 
 function E:Initialize()
   EpochCNDB = MergeDefaults(EpochCNDB, defaults)
+  DisableMapIconDefaults(EpochCNDB)
   EpochCNCharDB = MergeDefaults(EpochCNCharDB, charDefaults)
   if not EpochCNDB.enabled then return end
 
