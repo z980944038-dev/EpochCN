@@ -3,7 +3,7 @@ local E = EpochCN or {}
 EpochCN = E
 
 E.name = addonName or "EpochCN"
-E.version = "0.4.47"
+E.version = "0.4.48"
 E.designLabel = "汉化组"
 E.modules = E.modules or {}
 E.moduleOrder = E.moduleOrder or {}
@@ -43,7 +43,7 @@ local defaults = {
   questTracker = true,   -- 任务追踪 UI 汉化
   disablePFQuestTracker = true,
   forcePFQuestMap = false,
-  appendTooltip = true,
+  appendTooltip = false,
   showDesignTag = true,
   showSource = false,
   minimapButtonHide = false,
@@ -51,6 +51,7 @@ local defaults = {
   updateCheck = true,  -- 自动检查新版本（通过公会/队伍广播）
   debug = false,
   mapIconDefaultsVersion = "",
+  tooltipPlacementVersion = "",
 }
 
 local charDefaults = {
@@ -81,6 +82,12 @@ local function DisableMapIconDefaults(target)
   target.minimapQuestObjectivesOnly = false
   target.availableQuestPins = false
   target.mapIconDefaultsVersion = "0.4.47"
+end
+
+local function DisableAppendedTooltipDefaults(target)
+  if not target or target.tooltipPlacementVersion == "0.4.48" then return end
+  target.appendTooltip = false
+  target.tooltipPlacementVersion = "0.4.48"
 end
 
 function E:Debug(message)
@@ -464,6 +471,7 @@ end
 function E:Initialize()
   EpochCNDB = MergeDefaults(EpochCNDB, defaults)
   DisableMapIconDefaults(EpochCNDB)
+  DisableAppendedTooltipDefaults(EpochCNDB)
   EpochCNCharDB = MergeDefaults(EpochCNCharDB, charDefaults)
   if not EpochCNDB.enabled then return end
 

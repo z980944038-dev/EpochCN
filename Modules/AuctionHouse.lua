@@ -440,6 +440,24 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
       end
     end
 
+    -- 3) EpochHead 全量物品覆盖表：Tooltip 已经能按 ID 汉化这些物品，
+    --    拍卖行列表和中文搜索也必须使用同一份英文名→中文名数据。
+    if EpochCN_ItemOverlayData then
+      for _, data in pairs(EpochCN_ItemOverlayData) do
+        if type(data) == "table" then
+          AddItemName(data[6], data[1])
+        end
+      end
+    end
+
+    if EpochCN_ConsumableData then
+      for _, data in pairs(EpochCN_ConsumableData) do
+        if type(data) == "table" then
+          AddItemName(data[6], data[1])
+        end
+      end
+    end
+
     -- 不在拍卖行加载 ObjectiveNameData。那张表包含大量任务目标/通用文本。
     -- 这里也不构建模糊搜索索引：显示翻译只需要 O(1) 英文→中文映射，
     -- 搜索候选在用户输入中文时按需扫描，避免打开/刷新拍卖行时卡顿。
@@ -664,8 +682,11 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
   end
 
   local function GetLocalizedItemNameByID(itemID)
-    if not itemID or not TPCN_ItemData then return nil end
-    local data = TPCN_ItemData[itemID]
+    if not itemID then return nil end
+    local data = E.GetItemData and E:GetItemData(itemID)
+    if not data and TPCN_ItemData then
+      data = TPCN_ItemData[itemID]
+    end
     local name = data and data[1]
     if type(name) == "string" and name ~= "" and HasCN(name) then
       return NormalizeText(name)

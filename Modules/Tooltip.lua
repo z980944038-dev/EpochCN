@@ -71,7 +71,11 @@ EpochCN:RegisterModule("Tooltip", function(E)
 
   local itemEffectNameMap = {
     ["Flaming Cannonball"] = "烈焰炮弹",
+    ["Frost Arrow"] = "冰霜箭",
     ["Keeper's Sting"] = "守护者之刺",
+    ["Searing Arrow"] = "灼热箭",
+    ["a Frost Arrow"] = "冰霜箭",
+    ["a Searing Arrow"] = "灼热箭",
   }
 
   local setNameMap = {
@@ -508,6 +512,11 @@ EpochCN:RegisterModule("Tooltip", function(E)
 
     local chance, mana = string.match(text, "Your normal ranged attacks have a (%d+)%% chance of restoring (%d+) mana")
     if chance and mana then return "你的普通远程攻击有 " .. chance .. "% 几率恢复 " .. mana .. " 点法力值。" end
+
+    local spellcastMana, spellcastDuration = string.match(text, "^Chance on successful spellcast to restore (%d+) Mana over (%d+) sec%.?$")
+    if spellcastMana and spellcastDuration then
+      return "成功施法时有几率在 " .. spellcastDuration .. " 秒内恢复 " .. spellcastMana .. " 点法力值。"
+    end
 
     -- ========== 炉石/传送 ==========
     if string.find(text, "Returns you to your home location", 1, true) then

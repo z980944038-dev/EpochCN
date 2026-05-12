@@ -1,6 +1,6 @@
 EpochCN_DataManifest = {
-  version = "0.4.47",
-  generated = "2026-05-11",
+  version = "0.4.48",
+  generated = "2026-05-12",
   designer = "EpochCN",
   sources = {
     {

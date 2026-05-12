@@ -61,6 +61,18 @@ SCHOOL = {
     "Shadow": "暗影",
 }
 
+PROC_NAMES = {
+    "Flaming Cannonball": "烈焰炮弹",
+    "Frost Arrow": "冰霜箭",
+    "Keeper's Sting": "守护者之刺",
+    "Searing Arrow": "灼热箭",
+}
+
+
+def translate_proc_name(name: str) -> str:
+    name = re.sub(r"^(?:a|an|the)\s+", "", name or "", flags=re.I)
+    return PROC_NAMES.get(name, name)
+
 ROMAN_NUMERAL = {
     "I": "一",
     "II": "二",
@@ -288,6 +300,16 @@ def translate_effect_line(line: str, objective_names: dict[str, str]) -> str:
         body = body[:cool.start()].strip()
 
     patterns = [
+        (r"^Increases healing done by up to ([\d,]+) and damage done by up to ([\d,]+) for all magical spells and effects\.?$",
+         lambda m: f"{prefix}所有魔法法术和效果的治疗效果最多提高 {m.group(1)} 点，造成的伤害最多提高 {m.group(2)} 点。{cooldown}"),
+        (r"^Increases damage done by up to ([\d,]+) and healing done by up to ([\d,]+) for all magical spells and effects\.?$",
+         lambda m: f"{prefix}所有魔法法术和效果造成的伤害最多提高 {m.group(1)} 点，治疗效果最多提高 {m.group(2)} 点。{cooldown}"),
+        (r"^Chance on successful spellcast to restore ([\d,]+) Mana over (\d+)\s*sec\.?$",
+         lambda m: f"{prefix}成功施法时有几率在 {m.group(2)} 秒内恢复 {m.group(1)} 点法力值。{cooldown}"),
+        (r"^Chance to strike your ranged target with (.+?) for ([\d,]+) to ([\d,]+) (Arcane|Fire|Frost|Holy|Nature|Shadow) damage\.?$",
+         lambda m: f"{prefix}有一定几率用{translate_proc_name(m.group(1))}打击你的远程目标，造成 {m.group(2)} 到 {m.group(3)} 点{SCHOOL.get(m.group(4), m.group(4))}伤害。{cooldown}"),
+        (r"^Chance to strike your target with (.+?) for ([\d,]+) to ([\d,]+) (Arcane|Fire|Frost|Holy|Nature|Shadow) damage\.?$",
+         lambda m: f"{prefix}有一定几率用{translate_proc_name(m.group(1))}打击你的目标，造成 {m.group(2)} 到 {m.group(3)} 点{SCHOOL.get(m.group(4), m.group(4))}伤害。{cooldown}"),
         (r"^Blasts a target for ([\d,]+) to ([\d,]+) (Arcane|Fire|Frost|Holy|Nature|Shadow) damage\.?$",
          lambda m: f"{prefix}轰击目标，造成 {m.group(1)} 到 {m.group(2)} 点{SCHOOL.get(m.group(3), m.group(3))}伤害。{cooldown}"),
         (r"^Deals ([\d,]+) to ([\d,]+) (Arcane|Fire|Frost|Holy|Nature|Shadow) damage\.?$",
