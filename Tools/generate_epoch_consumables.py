@@ -310,7 +310,89 @@ def translate_name(name, existing_items, objective_names):
     return text if has_cn(text) else name
 
 
-def translate_flavor(text):
+MIXED_CONSUMABLE_TEXT_MAP = {
+    "A small satchel containing various trade goods.": "一个装有各种贸易物资的小挎包。",
+    "An extremely potent alcoholic beverage.": "一种效力极强的酒精饮料。",
+    "Allows the shaman to see elemental spirits.": "使萨满祭司能够看见元素之灵。",
+    "Requires Argent Dawn - Revered": "需要银色黎明 - 崇敬",
+    "需要 Argent Dawn - Revered": "需要银色黎明 - 崇敬",
+    "需要 Feastof寒冬Veil": "需要冬幕节",
+    "Cure for the Touch of Zanzil.": "赞吉尔之触的解药。",
+    "Transforms your mount into something more festive.": "将你的坐骑变得更有节日气氛。",
+    "Transforms 你的 mount into something more festive.": "将你的坐骑变得更有节日气氛。",
+    "Increases Stamina by 10 for 15 min and gets you drunk to boot!": "使耐力提高 10 点，持续 15分钟，并让你喝得酩酊大醉！",
+    "Increases 耐力 by 10 for 15分钟和gets you drunk to boot!": "使耐力提高 10 点，持续 15分钟，并让你喝得酩酊大醉！",
+    "Shoots a firework into the air that bursts in a yellow pattern.": "向空中发射一枚烟花，并绽放出黄色图案。",
+    "Shoots a firework into the air that bursts into a thousand red stars.": "向空中发射一枚烟花，并绽放成无数红色星芒。",
+}
+
+MIXED_CONSUMABLE_TARGETS = {
+    "Burning Exile": "炽燃流放者",
+}
+
+TIME_TOKEN_RE = r"\d+(?:\.\d+)?\s*(?:Seconds?|Second|Secs?|Sec|Minutes?|Minute|Mins?|Min|Hours?|Hour|Hrs?|Hr|Days?|Day|秒|分钟|小时|天)"
+
+
+def strip_leading_article(text):
+    return re.sub(r"^(?:a|an|the)\s+", "", text or "", flags=re.I).strip()
+
+
+def translate_consumable_target(name, objective_names):
+    stripped = strip_leading_article(name)
+    if stripped in objective_names and has_cn(objective_names[stripped]):
+        return objective_names[stripped]
+    if stripped in MIXED_CONSUMABLE_TARGETS:
+        return MIXED_CONSUMABLE_TARGETS[stripped]
+    translated = translate_name(stripped, {}, objective_names)
+    return translated if has_cn(translated) else stripped
+
+
+def normalize_mixed_consumable_text(text, objective_names=None):
+    if not text:
+        return text
+
+    objective_names = objective_names or {}
+    text = text.strip()
+
+    direct = MIXED_CONSUMABLE_TEXT_MAP.get(text)
+    if direct:
+        return direct
+
+    match = re.match(
+        rf"^Decrease the (?:armor|护甲) of the target by ([\d,]+) for ({TIME_TOKEN_RE})\. While affected, the target cannot stealth or turn invisible\.?$",
+        text,
+        re.I,
+    )
+    if match:
+        return f"使目标的护甲降低 {match.group(1)} 点，持续 {translate_time(match.group(2))}。在效果持续期间，目标无法潜行或隐形。"
+
+    match = re.match(rf"^Allows the (?:drinker|饮用者) to breathe water for ({TIME_TOKEN_RE})\.?$", text, re.I)
+    if match:
+        return f"使饮用者可以在水下呼吸，持续 {translate_time(match.group(1))}。"
+
+    match = re.match(r"^Instantly restores ([\d,]+) (?:life|health)\.?$", text, re.I)
+    if match:
+        return f"立即恢复 {match.group(1)} 点生命值。"
+
+    match = re.match(r"^([\d,]+) increased (?:攻击强度|attack power) against undead$", text, re.I)
+    if match:
+        return f"对亡灵的攻击强度提高 {match.group(1)} 点"
+
+    match = re.match(r"^([\d,]+) increased (?:法术伤害|spell damage) against undead$", text, re.I)
+    if match:
+        return f"对亡灵的法术伤害提高 {match.group(1)} 点"
+
+    match = re.match(r"^Banishes\s+(.+?)\.?$", text, re.I)
+    if match:
+        raw_target = match.group(1).strip()
+        translated_target = translate_consumable_target(raw_target, objective_names)
+        classifier = "一名" if re.match(r"^(?:a|an)\s+", raw_target, re.I) else ""
+        return f"放逐{classifier}{translated_target}。"
+
+    return text
+
+
+def translate_flavor(text, objective_names=None):
     flavor = {
         "Drink up!": "一饮而尽！",
         "This rare ingredient is practically shaking with remnant arcane energy.": "这种稀有材料几乎因残存的奥术能量而震颤。",
@@ -324,7 +406,10 @@ def translate_flavor(text):
         "Carefully extracted for warfare use.": "为战争用途精心提取。",
         "Looks stable enough...?": "看起来足够稳定……？",
     }
-    return flavor.get(text, replace_terms(translate_time(text)))
+    translated = flavor.get(text)
+    if translated:
+        return translated
+    return normalize_mixed_consumable_text(replace_terms(translate_time(text)), objective_names)
 
 
 def translate_line(line, objective_names):
@@ -333,7 +418,7 @@ def translate_line(line, objective_names):
 
     quoted = re.match(r'^"(.*)"$', text)
     if quoted:
-        return '"' + translate_flavor(quoted.group(1)) + '"'
+        return translate_flavor(quoted.group(1), objective_names)
 
     direct = {
         "Binds to account": "账号绑定",
@@ -385,7 +470,7 @@ def translate_line(line, objective_names):
         }
         for en, cn in profession.items():
             req = req.replace(en, cn)
-        return "需要 " + (req if has_cn(req) else translate_name(req, {}, objective_names))
+        return normalize_mixed_consumable_text("需要 " + (req if has_cn(req) else translate_name(req, {}, objective_names)), objective_names)
     match = re.match(r"^Races: (.+)$", text)
     if match:
         return "种族：" + translate_list(match.group(1), RACES)
@@ -447,7 +532,7 @@ def translate_line(line, objective_names):
         return f"{prefix}每秒恢复你 {match.group(1)}% 的生命值和法力值，持续 {translate_time(match.group(2))}。进食时必须保持坐姿。{extra}{cooldown}"
     match = re.match(r"^Restores ([\d,]+)% of your health per second for (\d+\s*(?:sec|second|seconds|min|minute|minutes))\. Must remain seated while eating\. If you spend at least 10 seconds eating you will become well fed and gain Stamina and Spirit for (\d+\s*(?:sec|second|seconds|min|minute|minutes|hr|hour|hours))\. ?(?:\"(.+)\")?$", body, re.I)
     if match:
-        flavor = ("\"" + translate_flavor(match.group(4)) + "\"") if match.group(4) else ""
+        flavor = ("\"" + translate_flavor(match.group(4), objective_names) + "\"") if match.group(4) else ""
         return f"{prefix}每秒恢复你 {match.group(1)}% 的生命值，持续 {translate_time(match.group(2))}。进食时必须保持坐姿。如果进食至少 10 秒，你会获得充分进食效果，耐力和精神提高，持续 {translate_time(match.group(3))}。{flavor}{cooldown}"
     match = re.match(r"^Restores ([\d,]+) health over (\d+\s*(?:sec|second|seconds|min|minute|minutes))\. Must remain seated while eating\. Also restores ([\d,]+) (Mana|health) every 5 seconds for (\d+\s*(?:sec|second|seconds|min|minute|minutes|hr|hour|hours))\.?$", body, re.I)
     if match:
@@ -464,7 +549,7 @@ def translate_line(line, objective_names):
         bonus = replace_terms(match.group(3) + " " + match.group(4))
         bonus = re.sub(r"(\d+) 法力值 every 5 seconds", r"每 5 秒恢复 \1 点法力值", bonus, flags=re.I)
         bonus = re.sub(r"(\d+) 生命值 every 5 seconds", r"每 5 秒恢复 \1 点生命值", bonus, flags=re.I)
-        flavor = ("\"" + translate_flavor(match.group(6)) + "\"") if match.group(6) else ""
+        flavor = ("\"" + translate_flavor(match.group(6), objective_names) + "\"") if match.group(6) else ""
         return f"{prefix}在 {translate_time(match.group(2))} 内恢复 {match.group(1)} 点生命值。进食时必须保持坐姿。如果进食至少 10 秒，你会获得充分进食效果，{bonus}，持续 {translate_time(match.group(5))}。{flavor}{cooldown}"
     match = re.match(r"^Restores ([\d,]+) health over (\d+\s*(?:sec|second|seconds|min|minute|minutes))\. Must remain seated while eating\. If you spend at least 10 seconds eating you will become well fed and gain a chance upon taking damage to reduce the attack power of enemies behind you by ([\d,]+) for (\d+\s*(?:sec|second|seconds|min|minute|minutes))\. Lasts (\d+\s*(?:sec|second|seconds|min|minute|minutes|hr|hour|hours))\.?$", body, re.I)
     if match:
@@ -673,7 +758,7 @@ def translate_line(line, objective_names):
         return f"{prefix}吸收 {match.group(1)} 到 {match.group(2)} 点{school}。持续 {translate_time(match.group(4))}。{cooldown}"
     match = re.match(r"^Inflicts ([\d,]+) to ([\d,]+) Fire damage and knocks the unfortunate victim away\.\.\. Whoever that ends up being\. ?(?:\"(.+)\")?$", body, re.I)
     if match:
-        flavor = ("\"" + translate_flavor(match.group(3)) + "\"") if match.group(3) else ""
+        flavor = ("\"" + translate_flavor(match.group(3), objective_names) + "\"") if match.group(3) else ""
         return f"{prefix}造成 {match.group(1)} 到 {match.group(2)} 点火焰伤害，并击退那个不幸的受害者……不管最后是谁。{flavor}{cooldown}"
     match = re.match(r"^When applied to a melee weapon it gives a ([\d,]+)% chance of casting (Shadowbolt III|Frostbolt) at the opponent when it hits\. Lasts (\d+\s*(?:sec|second|seconds|min|minute|minutes|hr|hour|hours))\.?$", body, re.I)
     if match:
@@ -730,7 +815,7 @@ def translate_line(line, objective_names):
         return f"{prefix}向指定位置投掷一枚{color}烟幕弹，持续 {translate_time(match.group(2))}。{cooldown}"
     match = re.match(r"^Cures ([\d,]+) poison effect\. ?(?:\"(.+)\")?$", body, re.I)
     if match:
-        flavor = ("\"" + translate_flavor(match.group(2)) + "\"") if match.group(2) else ""
+        flavor = ("\"" + translate_flavor(match.group(2), objective_names) + "\"") if match.group(2) else ""
         return f"{prefix}解除 {match.group(1)} 个毒药效果。{flavor}{cooldown}"
     match = re.match(r"^Summons an Eye of Kilrogg and\.?\nbinds your vision to it\. The eye moves quickly but is very fragile\.?$", body, re.I)
     if match:
@@ -762,7 +847,7 @@ def translate_line(line, objective_names):
         return f"{prefix}在 {translate_time(match.group(3))} 内恢复 {match.group(1)} 点生命值和 {match.group(2)} 点法力值。进食时必须保持坐姿。只能在 PvP 战场中使用。{cooldown}"
     match = re.match(r"^Restores ([\d,]+) mana over (\d+\s*(?:sec|second|seconds|min|minute|minutes))\. Must remain seated while drinking\. Usable only in PvP Battlegrounds and Arenas\. ?(?:\"(.+)\")?$", body, re.I)
     if match:
-        flavor = ("\"" + translate_flavor(match.group(3)) + "\"") if match.group(3) else ""
+        flavor = ("\"" + translate_flavor(match.group(3), objective_names) + "\"") if match.group(3) else ""
         return f"{prefix}在 {translate_time(match.group(2))} 内恢复 {match.group(1)} 点法力值。饮用时必须保持坐姿。只能在 PvP 战场和竞技场中使用。{flavor}{cooldown}"
     match = re.match(r"^Throw (?:the )?(rock|ball) to a friendly (?:target|player)\. If they have free room in their pack they will catch it!$", body, re.I)
     if match:
@@ -783,7 +868,7 @@ def translate_line(line, objective_names):
         return f"{prefix}用它培育一枚魔脉碎片。卡兰斯·阿登提斯需要这些碎片来制作附魔。{cooldown}"
     match = re.match(r"^Places a Land Mine on the ground\. When a hostile creature passes near, It will explode for ([\d,]+) to ([\d,]+) fire damage and knock them away\. The mine has a duration of (\d+\s*(?:sec|second|seconds|min|minute|minutes|hr|hour|hours))\. ?(?:\"(.+)\")?$", body, re.I)
     if match:
-        flavor = ("\"" + translate_flavor(match.group(4)) + "\"") if match.group(4) else ""
+        flavor = ("\"" + translate_flavor(match.group(4), objective_names) + "\"") if match.group(4) else ""
         return f"{prefix}在地上放置一枚地雷。当敌对生物经过附近时，地雷会爆炸，造成 {match.group(1)} 到 {match.group(2)} 点火焰伤害并将其击退。地雷持续 {translate_time(match.group(3))}。{flavor}{cooldown}"
     match = re.match(r"^Applies a blessing of Elune to the target weapon, increasing Attack Power by ([\d,]+) and Spell Power by ([\d,]+)\. Lasts for (\d+\s*(?:sec|second|seconds|min|minute|minutes|hr|hour|hours))\.?$", body, re.I)
     if match:
@@ -818,7 +903,7 @@ def translate_line(line, objective_names):
     if match:
         return f"{prefix}在 {translate_time(match.group(2))} 内恢复 {match.group(1)} 点生命值。进食时必须保持坐姿。如果进食至少 10 秒，你会获得充分进食效果，移动速度提高 {match.group(3)}%，但每 {translate_time(match.group(5))} 受到 {match.group(4)} 点火焰伤害。持续 {translate_time(match.group(6))}。{cooldown}"
 
-    translated = replace_terms(translate_time(body)).strip()
+    translated = normalize_mixed_consumable_text(replace_terms(translate_time(body)).strip(), objective_names)
     translated = re.sub(r"\bDrink up!\b", "一饮而尽！", translated)
     translated = re.sub(r"\bOnly one instance of this 效果 can be active at a time\b", "同一时间只能激活一个该效果", translated, flags=re.I)
     translated = re.sub(r"\bRequires a level (\d+) or higher 物品\b", r"需要等级 \1 或更高的物品", translated, flags=re.I)

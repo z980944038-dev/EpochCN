@@ -96,7 +96,7 @@ EpochCN:RegisterModule("Settings", function(E)
     if reloadNotice then reloadNotice:Show() end
   end
 
-  local function CreateCheck(parent, label, key, tooltip, x, y)
+  local function CreateCheck(parent, label, key, tooltip, x, y, onChanged)
     local check = CreateFrame("CheckButton", nil, parent, "OptionsCheckButtonTemplate")
     check:SetPoint("TOPLEFT", parent, "TOPLEFT", x, y)
     check:SetChecked(EpochCNDB[key])
@@ -109,6 +109,7 @@ EpochCN:RegisterModule("Settings", function(E)
 
     check:SetScript("OnClick", function(self)
       EpochCNDB[self.key] = self:GetChecked() and true or false
+      if onChanged then onChanged(EpochCNDB[self.key]) end
       MarkReload()
     end)
 
@@ -142,7 +143,7 @@ EpochCN:RegisterModule("Settings", function(E)
     if panel then return panel end
 
     panel = CreateFrame("Frame", "EpochCNSettingsFrame", UIParent)
-    panel:SetSize(430, 530)
+    panel:SetSize(430, 560)
     panel:SetPoint("CENTER")
     panel:SetFrameStrata("DIALOG")
     panel:SetMovable(true)
@@ -178,34 +179,38 @@ EpochCN:RegisterModule("Settings", function(E)
     CreateCheck(panel, "常规界面文本", "ui", "普通窗口显示层文本汉化，避开动作条和法术按钮。", 226, -124)
     CreateCheck(panel, "FrameXML 显示层映射", "globalStrings", "只建立安全文本映射，不写 Blizzard 全局变量。", 26, -154)
     CreateCheck(panel, "独立任务追踪 UI", "questTracker", "EpochCN 的任务追踪文本增强。", 226, -154)
-
-    CreateHeader(panel, "Tooltip 选项", 26, -190)
-    CreateCheck(panel, "显示插件标签", "showDesignTag", "在 Tooltip 追加说明中显示 EpochCN 信息标签。", 26, -214)
-    CreateCheck(panel, "显示数据来源", "showSource", "在追加说明中显示数据来源。", 226, -214)
-
-    CreateHeader(panel, "地图与任务标记", 26, -250)
-    CreateCheck(panel, "内置世界地图标记", "worldMap", "实验功能，启用后建议重载；如与 pfQuest 重叠可关闭。", 26, -274)
-    CreateCheck(panel, "显示地图任务点", "worldMapPins", "控制 EpochCN 内置地图任务点绘制。", 226, -274)
-    CreateCheck(panel, "可接任务 NPC 标记", "availableQuestPins", "显示可接任务 NPC 标记。", 26, -304)
-    CreateCheck(panel, "隐藏低等级可接任务", "hideLowLevelAvailableQuestPins", "隐藏低于角色等级一定范围的可接任务标记（参考 pfQuest）。", 226, -304)
-    CreateCheck(panel, "小地图任务目标", "minimapQuestPins", "在小地图显示当前区域附近的任务目标。", 26, -334)
-    CreateCheck(panel, "小地图只显示目标", "minimapQuestObjectivesOnly", "小地图默认只显示当前任务目标/交还点，减少干扰。", 226, -334)
-    CreateCheck(panel, "任务自动同步", "questAutoSync", "尽量同步当前任务 ID 与任务追踪数据。", 26, -364)
-
-    CreateHeader(panel, "调试与维护", 26, -400)
-    CreateCheck(panel, "调试输出", "debug", "在聊天框输出 EpochCN 调试信息。", 26, -424)
-    CreateCheck(panel, "关闭 pfQuest 追踪器", "disablePFQuestTracker", "减少任务追踪重复显示，重载后生效。", 226, -424)
-
-    CreateButton(panel, "打印状态", 86, 26, -462, function()
-      E:Print("已加载 " .. tostring(E.version) .. "，任务=" .. tostring(EpochCNDB.questLog) .. "，Tooltip=" .. tostring(EpochCNDB.tooltip) .. "，拍卖行=" .. tostring(EpochCNDB.auctionHouse))
+    CreateCheck(panel, "客户端语言环境 zhCN", "forceChineseClientLocale", "参考 AddonLocale 写入 GAME_LOCALE=zhCN；支持该变量的插件会优先使用简体中文。关闭后清除 EpochCN 写入的 zhCN。", 26, -184, function(enabled)
+      if E.ApplyClientLocalePreference then E:ApplyClientLocalePreference() end
+      E:Print("客户端语言环境：" .. (enabled and "已配置为 zhCN" or "已关闭") .. "（建议重载界面后完全生效）")
     end)
-    CreateButton(panel, "Tooltip 调试", 100, 118, -462, function()
+
+    CreateHeader(panel, "Tooltip 选项", 26, -220)
+    CreateCheck(panel, "显示插件标签", "showDesignTag", "在 Tooltip 追加说明中显示 EpochCN 信息标签。", 26, -244)
+    CreateCheck(panel, "显示数据来源", "showSource", "在追加说明中显示数据来源。", 226, -244)
+
+    CreateHeader(panel, "地图与任务标记", 26, -280)
+    CreateCheck(panel, "内置世界地图标记", "worldMap", "实验功能，启用后建议重载；如与 pfQuest 重叠可关闭。", 26, -304)
+    CreateCheck(panel, "显示地图任务点", "worldMapPins", "控制 EpochCN 内置地图任务点绘制。", 226, -304)
+    CreateCheck(panel, "可接任务 NPC 标记", "availableQuestPins", "显示可接任务 NPC 标记。", 26, -334)
+    CreateCheck(panel, "隐藏低等级可接任务", "hideLowLevelAvailableQuestPins", "隐藏低于角色等级一定范围的可接任务标记（参考 pfQuest）。", 226, -334)
+    CreateCheck(panel, "小地图任务目标", "minimapQuestPins", "在小地图显示当前区域附近的任务目标。", 26, -364)
+    CreateCheck(panel, "小地图只显示目标", "minimapQuestObjectivesOnly", "小地图默认只显示当前任务目标/交还点，减少干扰。", 226, -364)
+    CreateCheck(panel, "任务自动同步", "questAutoSync", "尽量同步当前任务 ID 与任务追踪数据。", 26, -394)
+
+    CreateHeader(panel, "调试与维护", 26, -430)
+    CreateCheck(panel, "调试输出", "debug", "在聊天框输出 EpochCN 调试信息。", 26, -454)
+    CreateCheck(panel, "关闭 pfQuest 追踪器", "disablePFQuestTracker", "减少任务追踪重复显示，重载后生效。", 226, -454)
+
+    CreateButton(panel, "打印状态", 86, 26, -492, function()
+      E:Print("已加载 " .. tostring(E.version) .. "，任务=" .. tostring(EpochCNDB.questLog) .. "，Tooltip=" .. tostring(EpochCNDB.tooltip) .. "，拍卖行=" .. tostring(EpochCNDB.auctionHouse) .. "，语言=" .. tostring(GAME_LOCALE or "默认"))
+    end)
+    CreateButton(panel, "Tooltip 调试", 100, 118, -492, function()
       if E.DumpTooltipLines then E:DumpTooltipLines(GameTooltip) end
     end)
-    CreateButton(panel, "重载界面", 86, 224, -462, function()
+    CreateButton(panel, "重载界面", 86, 224, -492, function()
       ReloadUI()
     end)
-    CreateButton(panel, "关闭", 70, 316, -462, function()
+    CreateButton(panel, "关闭", 70, 316, -492, function()
       panel:Hide()
     end)
 

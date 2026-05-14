@@ -50,12 +50,6 @@ EpochCN_Glossary = {
     -- 天赋
     TalentFrameTab1                 = "天赋",
     TalentFrameTab2                 = "检查",
-    -- 背包/银行
-    CharacterFrameTab1              = "装备",
-    CharacterFrameTab2              = "声望",
-    CharacterFrameTab3              = "技能",
-    CharacterFrameTab4              = "荣誉",
-    CharacterFrameTab5              = "竞技场",
     -- 拍卖行
     AuctionFrameTab1                = "浏览",
     AuctionFrameTab2                = "出价中",

@@ -329,7 +329,8 @@ local minimapRefreshTimer = 0
 local hoverPollTimer = 0
 local hoverPin
 local PrintMapDebug
-local activePinCount = 0      -- 当前可见 pin 数量（世界地图 + 小地图），0时跳过悬停检测
+local visibleWorldMapPins = 0   -- 当前世界地图实际显示的 pin 数量，供 PollPinTooltip 限定遍历范围
+local visibleMinimapPins = 0    -- 当前小地图实际显示的 pin 数量，同上
 
 local function Print(message)
   if DEFAULT_CHAT_FRAME then
@@ -397,8 +398,15 @@ local function GetMapContextTexts()
   }
 end
 
+local localizedZoneNamesAdded = false
 local function AddLocalizedZoneNames()
-  if not EpochCN_Overrides or not EpochCN_Overrides.maps then return end
+  -- 幂等保护：Overrides.maps 在整个会话期间不变，只需执行一次
+  if localizedZoneNamesAdded then return end
+  if not EpochCN_Overrides or not EpochCN_Overrides.maps then
+    localizedZoneNamesAdded = true
+    return
+  end
+  localizedZoneNamesAdded = true
   for english, localized in pairs(EpochCN_Overrides.maps) do
     local id = zoneNameToID[english]
     if id and localized then zoneNameToID[localized] = id end
@@ -766,10 +774,10 @@ end
 local function UpdateHoveredPinTooltip()
   local pin
   if WorldMapFrame and WorldMapFrame:IsShown() then
-    pin = PollPinTooltip(pins, maxPins)
+    pin = PollPinTooltip(pins, visibleWorldMapPins)
   end
   if not pin and Minimap then
-    pin = PollPinTooltip(minimapPins, maxMinimapPins)
+    pin = PollPinTooltip(minimapPins, visibleMinimapPins)
   end
 
   if pin ~= hoverPin then
@@ -830,7 +838,7 @@ local function HidePins()
       pins[i]:Hide()
     end
   end
-  activePinCount = math.max(0, activePinCount - 1)  -- 保守递减，UpdateWorldMapPins 会精确设置
+  visibleWorldMapPins = 0
 end
 
 local function CreateMinimapPin(index)
@@ -869,7 +877,7 @@ local function HideMinimapPins()
       minimapPins[i]:Hide()
     end
   end
-  activePinCount = math.max(0, activePinCount - 1)
+  visibleMinimapPins = 0
 end
 
 local function MarkerInMapScope(marker, continent, zone, selectedZoneID)
@@ -1497,8 +1505,8 @@ function EpochCN:UpdateWorldMapPins()
     pin:SetPoint("CENTER", canvas, "TOPLEFT", cluster.mx * canvas:GetWidth(), -cluster.my * canvas:GetHeight())
     pin:Show()
   end
-  -- 更新 pin 存在性标记（供 OnUpdate 快速判断）
-  activePinCount = activePinCount + 1
+  -- 精确记录世界地图可见 pin 数量（供 PollPinTooltip 限定遍历范围，避免遍历 300 个 slot）
+  visibleWorldMapPins = math.min(#clusters, maxPins)
 end
 
 PrintMapDebug = function()
@@ -1672,8 +1680,8 @@ function EpochCN:UpdateMinimapQuestPins()
   for i = shown + 1, maxMinimapPins do
     if minimapPins[i] then minimapPins[i]:Hide() end
   end
-  -- 更新 pin 存在性标记
-  if shown > 0 then activePinCount = activePinCount + 1 end
+  -- 精确记录小地图可见 pin 数量（供 PollPinTooltip 限定遍历范围）
+  visibleMinimapPins = shown
 end
 
 function EpochCN:InitWorldMap()
@@ -1721,8 +1729,8 @@ function EpochCN:InitWorldMap()
     hoverPollTimer = hoverPollTimer + elapsed
     if hoverPollTimer >= 0.08 then
       hoverPollTimer = 0
-      -- 快速退出：无可见 pin 且地图未打开时跳过悬停检测，节省约 12 fps 的函数调用
-      if activePinCount > 0 or (WorldMapFrame and WorldMapFrame:IsShown()) then
+      -- 快速退出：无可见 pin 且地图未打开时跳过悬停检测，避免每帧轮询
+      if visibleWorldMapPins > 0 or visibleMinimapPins > 0 or (WorldMapFrame and WorldMapFrame:IsShown()) then
         UpdateHoveredPinTooltip()
       elseif hoverPin then
         hoverPin = nil

@@ -15,6 +15,7 @@ CACHE = ROOT / "Tools" / "cache" / "epochhead_items" / "items.json"
 OUT = ROOT / "Data" / "EpochItemData.lua"
 ITEM_DATA = ROOT / "Data" / "ItemData.lua"
 ITEM_NAME_MAP = ROOT / "Data" / "ItemNameMap.lua"
+GLOSSARY = ROOT / "Data" / "Glossary.lua"
 CONSUMABLE_GENERATOR = ROOT / "Tools" / "generate_epoch_consumables.py"
 
 
@@ -201,6 +202,47 @@ NAME_WORDS = {
     "Mind-numbing Poison": "麻痹毒药",
 }
 
+SPELL_NAME_OVERRIDES = {
+    "Bear": "熊形态",
+    "Bear, Cat, or Travel Form": "熊形态、猎豹形态或旅行形态",
+    "Backstab": "背刺",
+    "Cat": "猎豹形态",
+    "Fade": "渐隐术",
+    "Holy Shock": "神圣震击",
+    "Immolate": "献祭",
+    "Intercept": "拦截",
+    "Kick": "脚踢",
+    "Lightning Bolt": "闪电箭",
+    "Maim": "割碎",
+    "Moonfire": "月火术",
+    "Mutilate": "毁伤",
+    "Nature's Swiftness": "自然迅捷",
+    "Power Word: Shield": "真言术：盾",
+    "Regrowth": "愈合",
+    "Shock": "震击",
+    "Shield Slam": "盾牌猛击",
+    "Sinister Strike": "邪恶攻击",
+    "Slice and Dice": "切割",
+    "Sprint": "疾跑",
+    "Starfire": "星火术",
+    "Stormstrike": "风暴打击",
+    "Swiftmend": "迅捷治愈",
+    "Thunder Clap": "雷霆一击",
+    "Traps": "陷阱",
+    "Travel Form": "旅行形态",
+    "Weakened Soul": "虚弱灵魂",
+    "Wrath": "愤怒",
+    "Avenging Wrath": "复仇之怒",
+    "Cleanse": "清洁术",
+    "Concussive Shot": "震荡射击",
+    "Cyclone": "飓风术",
+    "Ghost Wolf": "幽魂之狼",
+    "Hand of Freedom": "自由之手",
+}
+
+_glossary_terms: dict[str, str] | None = None
+_spell_name_map: dict[str, str] | None = None
+
 
 def load_item_data() -> dict[int, tuple[str, str, str]]:
     result: dict[int, tuple[str, str, str]] = {}
@@ -218,6 +260,94 @@ def load_name_map() -> dict[str, str]:
     for match in row_re.finditer(first_table):
             result[lua_unescape(match.group(1))] = lua_unescape(match.group(2))
     return result
+
+
+def load_glossary_terms() -> dict[str, str]:
+    global _glossary_terms
+    if _glossary_terms is not None:
+        return _glossary_terms
+
+    result: dict[str, str] = {}
+    row_re = re.compile(r"\[\s*" + STRING + r"\s*\]\s*=\s*" + STRING)
+    text = GLOSSARY.read_text(encoding="utf-8", errors="replace")
+    for match in row_re.finditer(text):
+        raw = lua_unescape(match.group(1))
+        localized = lua_unescape(match.group(2))
+        if localized and has_cn(localized) and not has_ascii_letters(localized):
+            result.setdefault(raw, localized)
+
+    _glossary_terms = result
+    return result
+
+
+def strip_training_name(name: str) -> str:
+    name = (name or "").strip()
+    name = re.sub(r"^(书卷：|圣典：|魔典：|石板：|宝典：|手册：)", "", name)
+    name = re.sub(r"雕文$", "", name)
+    name = re.sub(r" (IX|VIII|VII|VI|IV|III|II|X|V|I)$", "", name)
+    return name.strip()
+
+
+def build_spell_name_map() -> dict[str, str]:
+    global _spell_name_map
+    if _spell_name_map is not None:
+        return _spell_name_map
+
+    result = dict(load_glossary_terms())
+    for raw, localized in load_name_map().items():
+        spell_name = None
+        for pattern in [
+            r"^Book of (.+)$",
+            r"^Codex:\s*(.+)$",
+            r"^Codex of (.+)$",
+            r"^Grimoire of (.+)$",
+            r"^Tablet of (.+)$",
+            r"^Tome of (.+)$",
+            r"^Manual of (.+)$",
+            r"^Handbook of (.+)$",
+            r"^Glyph of (.+)$",
+        ]:
+            match = re.match(pattern, raw)
+            if match:
+                spell_name = match.group(1)
+                break
+        if not spell_name:
+            continue
+        spell_name = re.sub(r" (IX|VIII|VII|VI|IV|III|II|X|V|I)$", "", spell_name).strip()
+        translated = strip_training_name(localized)
+        if translated and not has_ascii_letters(translated):
+            result.setdefault(spell_name, translated)
+
+    result.update(SPELL_NAME_OVERRIDES)
+    _spell_name_map = result
+    return result
+
+
+def translate_spell_name(name: str, objective_names: dict[str, str]) -> str:
+    name = re.sub(r"[.。]+$", "", (name or "").strip())
+    translated = build_spell_name_map().get(name) or build_spell_name_map().get(name[:1].upper() + name[1:])
+    if translated:
+        return translated
+    if name in objective_names and has_cn(objective_names[name]) and not has_ascii_letters(objective_names[name]):
+        return objective_names[name]
+    return name
+
+
+def join_chinese_list(parts: list[str]) -> str:
+    if not parts:
+        return ""
+    if len(parts) == 1:
+        return parts[0]
+    if len(parts) == 2:
+        return f"{parts[0]}和{parts[1]}"
+    return "、".join(parts[:-1]) + f"和{parts[-1]}"
+
+
+def translate_spell_list(value: str, objective_names: dict[str, str]) -> str:
+    value = re.sub(r",\s+and\s+", ", ", (value or "").strip())
+    value = re.sub(r"\s+and\s+", ", ", value)
+    parts = [translate_spell_name(part.strip(), objective_names) for part in value.split(",") if part.strip()]
+    return join_chinese_list(parts) or value
 
 
 def normalize_item_name_key(name: str) -> str:
@@ -283,6 +413,13 @@ def translate_effect_line(line: str, objective_names: dict[str, str]) -> str:
     text = (line or "").strip()
     prefix = ""
     body = text
+    set_match = re.match(r"^\((\d+)\)\s*Set:\s*(.+)$", body, re.I)
+    if set_match:
+        prefix = f"({set_match.group(1)}) 套装："
+        body = set_match.group(2).strip()
+    elif body.startswith("Set: "):
+        prefix = "套装："
+        body = body[len("Set: "):]
     for raw_prefix, cn_prefix in [
         ("Equip: ", "装备："),
         ("Chance on hit: ", "击中时可能："),
@@ -300,6 +437,140 @@ def translate_effect_line(line: str, objective_names: dict[str, str]) -> str:
         body = body[:cool.start()].strip()
 
     patterns = [
+        (r"^\+([\d,]+) (Strength|Agility|Stamina|Intellect|Spirit|Armor|Attack Power|All Resistances|Fire Resistance|Frost Resistance|Nature Resistance|Shadow Resistance|Arcane Resistance)\.?$",
+         lambda m: f"{prefix}+{m.group(1)} {consumables.replace_terms(m.group(2))}{cooldown}"),
+        (r"^\+([\d,]+) (Frost|Fire|Nature|Shadow|Arcane) and (Frost|Fire|Nature|Shadow|Arcane) Resistance\.?$",
+         lambda m: f"{prefix}{SCHOOL.get(m.group(2), m.group(2))}和{SCHOOL.get(m.group(3), m.group(3))}抗性提高 {m.group(1)} 点。{cooldown}"),
+        (r"^Increased Defense \+?([\d,]+)\.?$",
+         lambda m: f"{prefix}防御等级提高 {m.group(1)}。{cooldown}"),
+        (r"^Decreases your damage taken from other players by ([\d,]+)%\.?$",
+         lambda m: f"{prefix}受到其他玩家的伤害降低 {m.group(1)}%。{cooldown}"),
+        (r"^Increases your damage dealt against other players by ([\d,]+)%\.?$",
+         lambda m: f"{prefix}对其他玩家造成的伤害提高 {m.group(1)}%。{cooldown}"),
+        (r"^Increases your Primary Stats by ([\d,]+) and Stamina by an additional ([\d,]+) when in Arenas, Battlegrounds, and PvP Objectives\.?$",
+         lambda m: f"{prefix}在竞技场、战场和玩家对战目标区域中，主属性提高 {m.group(1)} 点，额外获得 {m.group(2)} 点耐力。{cooldown}"),
+        (r"^While you are in an area touched by the Firelord, your attack power and spell damage is increased by ([\d,]+)\.?$",
+         lambda m: f"{prefix}当你身处火焰之王影响的区域时，攻击强度和法术伤害提高 {m.group(1)} 点。{cooldown}"),
+        (r"^Improves your chance to get a critical strike with melee and ranged attacks by ([\d,]+)%\.?$",
+         lambda m: f"{prefix}近战和远程攻击爆击几率提高 {m.group(1)}%。{cooldown}"),
+        (r"^Improves your chance to get a critical strike with all (.+) spells by ([\d,]+)%\.?$",
+         lambda m: f"{prefix}所有{translate_spell_name(m.group(1), objective_names)}法术的爆击几率提高 {m.group(2)}%。{cooldown}"),
+        (r"^Improves your chance to get a critical strike with spells by ([\d,]+)%\.?$",
+         lambda m: f"{prefix}法术爆击几率提高 {m.group(1)}%。{cooldown}"),
+        (r"^Improves your chance to get a critical strike with all spells and attacks by ([\d,]+)%\.?$",
+         lambda m: f"{prefix}所有法术和攻击的爆击几率提高 {m.group(1)}%。{cooldown}"),
+        (r"^Improves your chance to hit with melee and ranged attacks by ([\d,]+)%\.?$",
+         lambda m: f"{prefix}近战和远程攻击命中几率提高 {m.group(1)}%。{cooldown}"),
+        (r"^Improves your chance to hit with spells by ([\d,]+)%\.?$",
+         lambda m: f"{prefix}法术命中几率提高 {m.group(1)}%。{cooldown}"),
+        (r"^Improves your chance to hit with all spells and attacks by ([\d,]+)%\.?$",
+         lambda m: f"{prefix}所有法术和攻击的命中几率提高 {m.group(1)}%。{cooldown}"),
+        (r"^Reduces your chance to be dodged or parried by ([\d,]+)%\.?$",
+         lambda m: f"{prefix}你的攻击被躲闪或招架的几率降低 {m.group(1)}%。{cooldown}"),
+        (r"^Increases your chance to dodge an attack by ([\d,]+)%\.?$",
+         lambda m: f"{prefix}躲闪几率提高 {m.group(1)}%。{cooldown}"),
+        (r"^Increases your chance to parry an attack by ([\d,]+)%\.?$",
+         lambda m: f"{prefix}招架几率提高 {m.group(1)}%。{cooldown}"),
+        (r"^Improves your chance to block attacks with a shield by ([\d,]+)%\.?$",
+         lambda m: f"{prefix}盾牌格挡几率提高 {m.group(1)}%。{cooldown}"),
+        (r"^Increases your chance to block attacks with a shield by ([\d,]+)%\.?$",
+         lambda m: f"{prefix}盾牌格挡几率提高 {m.group(1)}%。{cooldown}"),
+        (r"^Restores ([\d,]+) mana (?:per|every) 5 (?:sec|seconds)\.?$",
+         lambda m: f"{prefix}每5秒恢复 {m.group(1)} 点法力值。{cooldown}"),
+        (r"^Restores ([\d,]+) health (?:per|every) 5 (?:sec|seconds)\.?$",
+         lambda m: f"{prefix}每5秒恢复 {m.group(1)} 点生命值。{cooldown}"),
+        (r"^Restores ([\d,]+) (health|mana) when you kill a target that gives experience or honor\. This effect cannot occur more than once every ([\d,]+) seconds?\.?$",
+         lambda m: f"{prefix}当你杀死一个提供经验或荣誉的目标时，恢复 {m.group(1)} 点{'生命值' if m.group(2).lower() == 'health' else '法力值'}。该效果每 {m.group(3)} 秒只能触发一次。{cooldown}"),
+        (r"^Removes all movement impairing effects and all effects which cause loss of control of your character\.?$",
+         lambda _m: f"{prefix}移除所有限制移动的效果，以及所有使你失去角色控制的效果。{cooldown}"),
+        (r"^Chance on spell cast to increase your damage and healing by up to ([\d,]+) for ([\d,]+) sec\.?$",
+         lambda m: f"{prefix}成功施法时有几率使你的伤害和治疗效果最多提高 {m.group(1)} 点，持续 {m.group(2)} 秒。{cooldown}"),
+        (r"^Chance on melee attack to increase your damage and healing done by magical spells and effects by up to ([\d,]+) for ([\d,]+) sec\.?$",
+         lambda m: f"{prefix}近战攻击命中时有几率使魔法法术和效果造成的伤害与治疗效果最多提高 {m.group(1)} 点，持续 {m.group(2)} 秒。{cooldown}"),
+        (r"^Your normal ranged attacks have a ([\d,]+)% chance of restoring ([\d,]+) mana\.?$",
+         lambda m: f"{prefix}你的普通远程攻击有 {m.group(1)}% 几率恢复 {m.group(2)} 点法力值。{cooldown}"),
+        (r"^Chance on melee attack to restore ([\d,]+) energy\.?$",
+         lambda m: f"{prefix}近战攻击命中时有几率恢复 {m.group(1)} 点能量。{cooldown}"),
+        (r"^Chance on melee attack to heal you for ([\d,]+) to ([\d,]+)\.?$",
+         lambda m: f"{prefix}近战攻击命中时有几率为你恢复 {m.group(1)} 到 {m.group(2)} 点生命值。{cooldown}"),
+        (r"^When struck in combat has a chance of freezing the attacker in place for ([\d,]+) (?:sec|seconds?)\.?$",
+         lambda m: f"{prefix}在战斗中被击中时，有几率将攻击者冻结在原地，持续 {m.group(1)} 秒。{cooldown}"),
+        (r"^When struck in combat has a chance of shielding the wearer in a protective shield which will absorb ([\d,]+) damage\.?$",
+         lambda m: f"{prefix}在战斗中被击中时，有几率为穿戴者施加一个防护盾，可吸收 {m.group(1)} 点伤害。{cooldown}"),
+        (r"^When struck in combat has a chance of causing the attacker to flee in terror for ([\d,]+) seconds?\.?$",
+         lambda m: f"{prefix}在战斗中被击中时，有几率使攻击者因恐惧而逃跑 {m.group(1)} 秒。{cooldown}"),
+        (r"^When struck in combat has a chance of returning ([\d,]+) mana, ([\d,]+) rage, or ([\d,]+) energy to the wearer\.?$",
+         lambda m: f"{prefix}在战斗中被击中时，有几率为穿戴者恢复 {m.group(1)} 点法力值、{m.group(2)} 点怒气或 {m.group(3)} 点能量。{cooldown}"),
+        (r"^Reduces the casting time of your (.+) spell by ([\d.]+) sec\.?$",
+         lambda m: f"{prefix}{translate_spell_name(m.group(1), objective_names)}的施法时间缩短 {m.group(2)} 秒。{cooldown}"),
+        (r"^The casting time on your (.+) spell is reduced by ([\d.]+) sec\.?$",
+         lambda m: f"{prefix}{translate_spell_name(m.group(1), objective_names)}的施法时间缩短 {m.group(2)} 秒。{cooldown}"),
+        (r"^Reduces the cooldown of your (.+) ability by ([\d.]+) sec\.?$",
+         lambda m: f"{prefix}{translate_spell_name(m.group(1), objective_names)}的冷却时间缩短 {m.group(2)} 秒。{cooldown}"),
+        (r"^Reduces the cooldown of your (.+) by ([\d.]+) sec\.?$",
+         lambda m: f"{prefix}{translate_spell_name(m.group(1), objective_names)}的冷却时间缩短 {m.group(2)} 秒。{cooldown}"),
+        (r"^Reduces the cooldown of your (.+) by ([\d.]+) seconds?\.?$",
+         lambda m: f"{prefix}{translate_spell_name(m.group(1), objective_names)}的冷却时间缩短 {m.group(2)} 秒。{cooldown}"),
+        (r"^(.+)'s cooldown is reduced by ([\d.]+) seconds?\.?$",
+         lambda m: f"{prefix}{translate_spell_name(m.group(1), objective_names)}的冷却时间缩短 {m.group(2)} 秒。{cooldown}"),
+        (r"^Increases the duration of your (.+) ability by ([\d.]+) sec\.?$",
+         lambda m: f"{prefix}{translate_spell_name(m.group(1), objective_names)}的持续时间延长 {m.group(2)} 秒。{cooldown}"),
+        (r"^Causes your pet to be healed for ([\d.]+)% of the damage you deal\.?$",
+         lambda m: f"{prefix}你的宠物恢复相当于你造成伤害 {m.group(1)}% 的生命值。{cooldown}"),
+        (r"^Fade now also grants you a ([\d.]+)% chance to dodge attacks\.?$",
+         lambda m: f"{prefix}渐隐术现在还会使你获得 {m.group(1)}% 的躲闪攻击几率。{cooldown}"),
+        (r"^Increases your movement speed by ([\d.]+)% while in (.+)\. Only active outdoors\.?$",
+         lambda m: f"{prefix}在{translate_spell_name(m.group(2), objective_names)}时，移动速度提高 {m.group(1)}% 。仅在室外生效。{cooldown}"),
+        (r"^Increases your movement speed by ([\d.]+)%\.?$",
+         lambda m: f"{prefix}移动速度提高 {m.group(1)}% 。{cooldown}"),
+        (r"^Your (.+) casts have a chance to reduce the cast time on your next (.+) by ([\d.]+) sec\.?$",
+         lambda m: f"{prefix}你的{translate_spell_name(m.group(1), objective_names)}有几率使下一次{translate_spell_name(m.group(2), objective_names)}的施法时间缩短 {m.group(3)} 秒。{cooldown}"),
+        (r"^Gives you a ([\d.]+)% chance to avoid interruption caused by damage while casting (.+)\.?$",
+         lambda m: f"{prefix}当你施放{translate_spell_name(m.group(2), objective_names)}时，有 {m.group(1)}% 的几率避免因受到伤害而被打断。{cooldown}"),
+        (r"^Reduces the duration of the (.+) effect caused by your (.+) by ([\d.]+) sec\.?$",
+         lambda m: f"{prefix}{translate_spell_name(m.group(2), objective_names)}造成的{translate_spell_name(m.group(1), objective_names)}效果持续时间缩短 {m.group(3)} 秒。{cooldown}"),
+        (r"^Reduces the mana cost of your (.+) spell by ([\d.]+)% of its base cost\.?$",
+         lambda m: f"{prefix}{translate_spell_name(m.group(1), objective_names)}的法力消耗降低其基础消耗的 {m.group(2)}% 。{cooldown}"),
+        (r"^Your (.+) spell also heals the target for ([\d.]+)\.?$",
+         lambda m: f"{prefix}你的{translate_spell_name(m.group(1), objective_names)}还会为目标恢复 {m.group(2)} 点生命值。{cooldown}"),
+        (r"^Reduces your chance that (.+) will be dispelled by ([\d.]+)%\.?$",
+         lambda m: f"{prefix}{translate_spell_name(m.group(1), objective_names)}被驱散的几率降低 {m.group(2)}% 。{cooldown}"),
+        (r"^All of your shout abilities cost ([\d,]+) less rage\.?$",
+         lambda m: f"{prefix}你的所有怒吼技能消耗的怒气减少 {m.group(1)} 点。{cooldown}"),
+        (r"^Increases the critical strike chance of (.+) by ([\d,]+)%\.?$",
+         lambda m: f"{prefix}{translate_spell_list(m.group(1), objective_names)}的爆击几率提高 {m.group(2)}%。{cooldown}"),
+        (r"^(.+) generates ([\d,]+)% (more|less) threat\.?$",
+         lambda m: f"{prefix}{translate_spell_name(m.group(1), objective_names)}产生的威胁值{'降低' if m.group(3) == 'less' else '提高'} {m.group(2)}%。{cooldown}"),
+        (r"^Reduces the damage you take from area of effect attacks by an additional ([\d,]+)%\.?$",
+         lambda m: f"{prefix}你受到的范围效果攻击伤害额外降低 {m.group(1)}%。{cooldown}"),
+        (r"^Increases the attack speed gained from (.+) by an additional ([\d,]+)%\.?$",
+         lambda m: f"{prefix}{translate_spell_name(m.group(1), objective_names)}提供的攻击速度加成额外提高 {m.group(2)}%。{cooldown}"),
+        (r"^Reduces the [Ee]nergy cost of your (.+) abilities by ([\d,]+)\.?$",
+         lambda m: f"{prefix}{translate_spell_list(m.group(1), objective_names)}的能量消耗降低 {m.group(2)} 点。{cooldown}"),
+        (r"^Reduces the cooldown on your (.+) by ([\d.]+) sec\.?$",
+         lambda m: f"{prefix}{translate_spell_name(m.group(1), objective_names)}的冷却时间缩短 {m.group(2)} 秒。{cooldown}"),
+        (r"^(.+) gains an additional ([\d,]+)% of your current level\.?$",
+         lambda m: f"{prefix}{translate_spell_name(m.group(1), objective_names)}额外获得相当于你当前等级 {m.group(2)}% 的效果。{cooldown}"),
+        (r"^Increases the effective spell power of your (.+) when used as a healing spell by ([\d.]+)%\.?$",
+         lambda m: f"{prefix}{translate_spell_name(m.group(1), objective_names)}作为治疗法术使用时，受到的法术强度加成提高 {m.group(2)}%。{cooldown}"),
+        (r"^Reduces the [Ee]nergy cost of your (.+) by ([\d.]+)\.?$",
+         lambda m: f"{prefix}{translate_spell_name(m.group(1), objective_names)}的能量消耗降低 {m.group(2)} 点。{cooldown}"),
+        (r"^Decreases the magical resistances of your spell targets by ([\d,]+)\.?$",
+         lambda m: f"{prefix}你的法术目标的魔法抗性降低 {m.group(1)} 点。{cooldown}"),
+        (r"^Improves your casting speed and causes periodic effects to occur more frequently with spells by ([\d.]+)%\.?$",
+         lambda m: f"{prefix}法术施放速度提高，且周期性法术效果触发频率提高 {m.group(1)}%。{cooldown}"),
+        (r"^Increases ranged attack speed by ([\d.]+)%\.?$",
+         lambda m: f"{prefix}远程攻击速度提高 {m.group(1)}%。{cooldown}"),
+        (r"^Increases the effect that healing potions have on the wearer by ([\d.]+)%\. This effect does not stack\.?$",
+         lambda m: f"{prefix}你受到的治疗药水效果提高 {m.group(1)}%。该效果无法叠加。{cooldown}"),
+        (r"^Reduces the cast time of your Cyclone spell by ([\d.]+) sec\.?$",
+         lambda m: f"{prefix}飓风术的施法时间缩短 {m.group(1)} 秒。{cooldown}"),
+        (r"^Increases the speed of your Ghost Wolf ability by ([\d.]+)%\.?$",
+         lambda m: f"{prefix}幽魂之狼的移动速度提高 {m.group(1)}%。{cooldown}"),
+        (r"^Increases damage done by (Arcane|Fire|Frost|Holy|Nature|Shadow) spells and effects by up to ([\d,]+)\.?$",
+         lambda m: f"{prefix}{SCHOOL.get(m.group(1), m.group(1))}法术和效果造成的伤害最多提高 {m.group(2)} 点。{cooldown}"),
+        (r"^\+([\d,]+) Attack Power when fighting Elementals\.?$",
+         lambda m: f"{prefix}与元素生物作战时，攻击强度提高 {m.group(1)} 点。{cooldown}"),
         (r"^Increases healing done by up to ([\d,]+) and damage done by up to ([\d,]+) for all magical spells and effects\.?$",
          lambda m: f"{prefix}所有魔法法术和效果的治疗效果最多提高 {m.group(1)} 点，造成的伤害最多提高 {m.group(2)} 点。{cooldown}"),
         (r"^Increases damage done by up to ([\d,]+) and healing done by up to ([\d,]+) for all magical spells and effects\.?$",
@@ -346,11 +617,16 @@ def translate_effect_line(line: str, objective_names: dict[str, str]) -> str:
 
 def translate_tooltip_line(line: str, objective_names: dict[str, str]) -> str:
     text = (line or "").strip()
+    quoted = re.match(r'^"(.*)"$', text)
+    if quoted:
+        return consumables.translate_flavor(quoted.group(1), objective_names)
+
     direct = {
         "Binds when picked up": "拾取后绑定",
         "Binds when equipped": "装备后绑定",
         "Binds when used": "使用后绑定",
         "Binds to account": "账号绑定",
+        "Random Enchantment": "随机附魔",
         "Unique": "唯一",
         "Unique-Equipped": "唯一装备",
         "One-Hand": "单手",
@@ -423,6 +699,9 @@ def translate_tooltip_line(line: str, objective_names: dict[str, str]) -> str:
     match = re.match(r"^Use: Teaches you how to summon this companion\.?$", text)
     if match:
         return "使用：教你学会召唤这个伙伴。"
+    match = re.match(r"^Use: Teaches you how to summon this mount\.?$", text)
+    if match:
+        return "使用：教你学会召唤这种坐骑。"
     match = re.match(r"^Use: Opens a Stratholme postbox\.?$", text)
     if match:
         return "使用：打开一个斯坦索姆邮箱。"

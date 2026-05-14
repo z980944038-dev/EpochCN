@@ -98,6 +98,21 @@ git clone https://github.com/z980944038-dev/EpochCN.git
 
 ---
 
+## 🛠️ 数据构建 / Data Build
+
+EpochCN 现已支持通过命令行参数或环境变量覆盖本地数据源路径，便于在不同机器或 CI 环境持续同步 QuestCN、Tooltips_Chinese 与 FrameXML 数据。
+
+```bash
+/usr/local/bin/python3 Tools/build_epochcn.py \
+  --questcn-root "/path/to/QuestCN" \
+  --tooltips-root "/path/to/Tooltips_Chinese" \
+  --framexml-global-strings "/path/to/FrameXML/GlobalStrings.lua"
+```
+
+可选环境变量：`EPOCHCN_QUESTCN_ROOT`、`EPOCHCN_TOOLTIPS_ROOT`、`EPOCHCN_FRAMEXML_GLOBAL_STRINGS`、`EPOCHCN_LUA_BIN`、`EPOCHCN_DESKTOP_ROOT`。
+
+---
+
 ## 📸 截图 / Screenshots
 
 > 截图待补充 — Screenshots coming soon
@@ -105,6 +120,25 @@ git clone https://github.com/z980944038-dev/EpochCN.git
 ---
 
 ## 🏷️ 版本记录 / Changelog
+
+### v0.5.0
+
+- **修复游戏内更新命令失效**
+  - 统一 `/ecn` 子命令分发入口，避免 `UpdateChecker` 与 Core 互相覆盖 Slash 处理器
+  - `/ecn update` 与 `/ecn status` 现可同时工作，并为后续新子命令扩展保留统一注册点
+- **补强法术描述 DBC token 清洗**
+  - 冷却、持续时间、百分比和几率等常见未解析 token 改为 `若干秒`、`一段时间`、`一定百分比`、`一定几率` 等可读占位
+  - 避免 Tooltip、法术书与角色面板继续出现“冷却时间秒”“提高%”之类残句
+- **重构自检脚本为 TOC 驱动的完整初始化测试**
+  - `Tools/test_load.lua` 直接读取 `EpochCN.toc`，按正式发布顺序加载全部数据与模块
+  - 测试新增完整 `EpochCN:Initialize()`、Slash 命令路由和 spell 32509 语义回归断言
+- **改造构建工具链，适配多机器与 CI**
+  - `Tools/build_epochcn.py` 不再依赖硬编码单机路径，支持 CLI 参数和环境变量覆盖输入目录
+  - 默认优先使用仓库内 `lua-5.1.5/src/lua` 生成地图数据，降低外部环境依赖
+- **扩展通用 NPC / 生物运行时回退汉化**
+  - 新增高频通用词根与阵营/身份词翻译，目标框、名条、Tooltip 和任务目标中的 generic 英文单位名可直接回退成中文
+  - 对 `Quest Credit`、`Target`、`Invisible`、`Marker` 等内部占位实体名增加过滤，避免把技术性名称误翻到界面上
+
 
 ### v0.4.48
 - **修复物品绿字汉化位置错误**

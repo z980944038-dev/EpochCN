@@ -202,9 +202,7 @@ EpochCN:RegisterModule("UpdateChecker", function(E)
   ---------------------------------------------------------------------------
   -- Slash command extension
   ---------------------------------------------------------------------------
-  local originalSlashHandler = SlashCmdList["EPOCHCN"]
-
-  SlashCmdList["EPOCHCN"] = function(msg)
+  E:RegisterSlashHandler(function(msg)
     local cmd = string.lower(msg or "")
     if cmd == "update" then
       E:Print("当前版本: |cff33ff99v" .. E.version .. "|r")
@@ -215,7 +213,7 @@ EpochCN:RegisterModule("UpdateChecker", function(E)
       else
         E:Print("已是最新版本。")
       end
-      return
+      return true
     end
     if cmd == "update dismiss" then
       if EpochCNDB.lastKnownRemoteVersion ~= "" then
@@ -224,12 +222,10 @@ EpochCN:RegisterModule("UpdateChecker", function(E)
       else
         E:Print("当前没有可忽略的新版本。")
       end
-      return
+      return true
     end
-    if originalSlashHandler then
-      originalSlashHandler(msg)
-    end
-  end
+    return false
+  end)
 
   ---------------------------------------------------------------------------
   -- Initialization

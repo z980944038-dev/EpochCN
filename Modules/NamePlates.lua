@@ -61,6 +61,14 @@ EpochCN:RegisterModule("NamePlates", function(E)
     if trimmed ~= text and nameMap[trimmed] then
       return nameMap[trimmed]
     end
+
+    if E.TranslateEnglishUnitName then
+      local translated = E:TranslateEnglishUnitName(trimmed)
+      if translated and translated ~= trimmed then
+        AddName(trimmed, translated)
+        return translated
+      end
+    end
   end
 
   local function GetCreatureIDFromGUID(guid)
@@ -197,6 +205,24 @@ EpochCN:RegisterModule("NamePlates", function(E)
 
   local elapsedSinceScan = 0
   local worldFrameScanTimer = 0
+  local elvRefreshTimer = 0
+  local cachedElvNP  -- 缓存 ElvUI NamePlates 模块引用，避免每帧 pcall
+
+  -- 判断一个 WorldFrame 子 frame 是否为姓名板（3.3.5 原版姓名板结构检测）
+  -- 姓名板特征：有 GetRegions 返回的第一个 region 是 StatusBar 或含有 HealthBar 子 frame
+  local function IsNamePlateFrame(frame)
+    if not frame or not frame.IsShown or not frame:IsShown() then return false end
+    if not frame.GetChildren then return false end
+    -- 3.3.5 原版姓名板的子 frame 中包含一个 StatusBar（血条）
+    local children = { frame:GetChildren() }
+    for _, child in pairs(children) do
+      if child and child.GetObjectType and child:GetObjectType() == "StatusBar" then
+        return true
+      end
+    end
+    return false
+  end
+
   local scanner = CreateFrame("Frame")
   scanner:RegisterEvent("PLAYER_ENTERING_WORLD")
   scanner:RegisterEvent("UPDATE_MOUSEOVER_UNIT")
@@ -215,31 +241,41 @@ EpochCN:RegisterModule("NamePlates", function(E)
     -- ElvUI hook 尝试（仅在未成功且尝试次数合理时）
     if not elvHooked and elvHookAttempts < 20 then
       TryHookElvUI()
-    end
-
-    -- ElvUI 已 hook 时，仅通过 VisiblePlates 更新（由 hook 自动触发，此处为补充刷新）
-    if ElvUI and elvHooked then
-      local ok, Elv = pcall(function() return unpack(ElvUI) end)
-      if ok and Elv and Elv.GetModule then
-        local moduleOk, NP = pcall(Elv.GetModule, Elv, "NamePlates")
-        if moduleOk and NP and NP.VisiblePlates then
-          for frame in pairs(NP.VisiblePlates) do
-            TranslateElvUIFrame(frame)
-          end
+      if elvHooked then
+        -- 缓存 NP 模块引用
+        local ok, Elv = pcall(function() return unpack(ElvUI) end)
+        if ok and Elv and Elv.GetModule then
+          local moduleOk, NP = pcall(Elv.GetModule, Elv, "NamePlates")
+          if moduleOk and NP then cachedElvNP = NP end
         end
       end
-      -- ElvUI 已接管姓名板，跳过 WorldFrame 全量扫描
+    end
+
+    -- ElvUI 已 hook 时，降低补充刷新频率（每 2 秒一次，hook 本身已实时触发）
+    if ElvUI and elvHooked then
+      elvRefreshTimer = elvRefreshTimer + 0.5
+      if elvRefreshTimer < 2.0 then return end
+      elvRefreshTimer = 0
+      if cachedElvNP and cachedElvNP.VisiblePlates then
+        for frame in pairs(cachedElvNP.VisiblePlates) do
+          TranslateElvUIFrame(frame)
+        end
+      end
       return
     end
 
-    -- 非 ElvUI 环境：降低全量扫描频率（每 2 秒一次，避免主城卡顿）
+    -- 非 ElvUI 环境：仅扫描姓名板 frame（而非 WorldFrame 全部子 frame）
+    -- 降低扫描频率至每 3 秒一次
     worldFrameScanTimer = worldFrameScanTimer + 0.5
-    if worldFrameScanTimer < 2.0 then return end
+    if worldFrameScanTimer < 3.0 then return end
     worldFrameScanTimer = 0
 
     if WorldFrame and WorldFrame.GetChildren then
-      for _, child in pairs({ WorldFrame:GetChildren() }) do
-        TranslateFrame(child)
+      local children = { WorldFrame:GetChildren() }
+      for _, child in pairs(children) do
+        if IsNamePlateFrame(child) then
+          TranslateFrame(child)
+        end
       end
     end
   end)

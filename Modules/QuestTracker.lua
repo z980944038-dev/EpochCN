@@ -4,6 +4,82 @@
 EpochCN:RegisterModule("QuestTracker", function(E)
   if not EpochCNDB.questTracker then return end
 
+  local objectivePrefixes = {
+    "Use ",
+    "Use the ",
+    "Activate ",
+    "Activate the ",
+    "Open ",
+    "Open the ",
+    "Inspect ",
+    "Inspect the ",
+    "Escort ",
+    "Rescue ",
+    "Free ",
+    "Defend ",
+    "Protect ",
+    "Destroy ",
+    "Speak to ",
+    "Speak with ",
+    "Talk to ",
+    "Report back to ",
+    "Report to ",
+    "Return to ",
+    "Bring ",
+    "Deliver ",
+    "Collect ",
+    "Gather ",
+    "Retrieve ",
+    "Recover ",
+    "Place ",
+    "Place the ",
+  }
+
+  local objectiveSuffixTokens = {
+    " slain",
+    " killed",
+    " found",
+    " collected",
+    " gathered",
+    " delivered",
+    " completed",
+    " explored",
+    " spoken to",
+    " talked to",
+    " obtained",
+    " acquired",
+    " retrieved",
+    " rescued",
+    " escorted",
+    " destroyed",
+    " defeated",
+    " activated",
+    " used",
+    " placed",
+    " reported",
+    " returned",
+    " freed",
+    " cleared",
+    " defended",
+    " protected",
+  }
+
+  local function IsObjectiveLikeText(text)
+    if type(text) ~= "string" or text == "" then return false end
+    if string.find(text, ":%s*[%-%d]+/[%-%d]+") then return true end
+    for _, prefix in ipairs(objectivePrefixes) do
+      if string.find(text, prefix, 1, true) == 1 then
+        return true
+      end
+    end
+    for _, suffix in ipairs(objectiveSuffixTokens) do
+      if string.find(text, suffix, 1, true) then
+        return true
+      end
+    end
+    return false
+  end
+
   -- WoW 3.3.5 (WotLK) 使用 WatchFrame 显示追踪中的任务
   -- GetQuestLogTitle / GetQuestLogLeaderBoard 已被 QuestLog 模块全局钩挂，
   -- WatchFrame 调用这些函数时会自动获取汉化文本。
@@ -28,6 +104,9 @@ EpochCN:RegisterModule("QuestTracker", function(E)
             local translated = E.localizedTextByRaw and E.localizedTextByRaw[text]
             if not translated and EpochCN_Overrides and EpochCN_Overrides.maps then
               translated = EpochCN_Overrides.maps[text]
+            end
+            if not translated and E.TranslateObjective and IsObjectiveLikeText(text) then
+              translated = E:TranslateObjective(text)
             end
             if translated and translated ~= text then
               region:SetText(translated)
@@ -104,6 +183,9 @@ EpochCN:RegisterModule("QuestTracker", function(E)
             local text = region:GetText()
             if text and text ~= "" then
               local cn = E.localizedTextByRaw and E.localizedTextByRaw[text]
+              if not cn and E.TranslateObjective and IsObjectiveLikeText(text) then
+                cn = E:TranslateObjective(text)
+              end
               if cn and cn ~= text then region:SetText(cn) end
             end
           end

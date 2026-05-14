@@ -25,6 +25,9 @@ EpochCN:RegisterModule("Names", function(E)
       if EpochCN_ObjectiveNameData and EpochCN_ObjectiveNameData[english] then
         return EpochCN_ObjectiveNameData[english]
       end
+      if E.TranslateEnglishUnitName then
+        return E:TranslateEnglishUnitName(english)
+      end
     end
   end
 

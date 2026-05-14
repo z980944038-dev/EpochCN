@@ -6,8 +6,12 @@ const OUT_DIR = path.join(__dirname, "cache", "epochhead_consumables");
 const OUT_FILE = path.join(OUT_DIR, "items.json");
 const BASE = "https://epochhead.com/items?class=consumable";
 const CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
-const PROXY = process.env.EPOCHHEAD_PROXY || "http://127.0.0.1:7892";
+const PROXY = process.env.EPOCHHEAD_PROXY && process.env.EPOCHHEAD_PROXY.trim() !== ""
+  ? process.env.EPOCHHEAD_PROXY.trim()
+  : undefined;
 const WORKERS = Number(process.env.EPOCHHEAD_WORKERS || 4);
+const DETAIL_LIMIT = Number(process.env.EPOCHHEAD_DETAIL_LIMIT || 0);
+const USE_CACHE_LIST = process.env.EPOCHHEAD_USE_CACHE_LIST === "1";
 
 fs.mkdirSync(OUT_DIR, { recursive: true });
 
@@ -23,6 +27,49 @@ function decodeHtml(text) {
     .replace(/&amp;/g, "&")
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">");
+}
+
+function loadExistingItems() {
+  if (!fs.existsSync(OUT_FILE)) return new Map();
+  try {
+    const parsed = JSON.parse(fs.readFileSync(OUT_FILE, "utf8"));
+    if (!Array.isArray(parsed)) return new Map();
+    return new Map(parsed.filter((item) => item && item.id).map((item) => [Number(item.id), item]));
+  } catch (error) {
+    console.warn(`warn: failed to parse existing cache ${OUT_FILE}: ${error && error.message || error}`);
+    return new Map();
+  }
+}
+
+function isPlaceholderName(name) {
+  return /^Item\s+\d+$/i.test(clean(name));
+}
+
+function isPlaceholderTooltip(tooltip) {
+  const lines = Array.isArray(tooltip) ? tooltip.map((line) => clean(line)).filter(Boolean) : [];
+  return lines.length === 1 && lines[0] === "Retrieving item information";
+}
+
+function isCompletedItem(item) {
+  if (!item || item.error) return false;
+  if (isPlaceholderName(item.name)) return false;
+  if (!Array.isArray(item.tooltip) || item.tooltip.length === 0) return false;
+  if (isPlaceholderTooltip(item.tooltip)) return false;
+  return true;
+}
+
+function mergeItem(base, patch) {
+  return {
+    ...(base || {}),
+    ...(patch || {}),
+    id: Number((patch && patch.id) || (base && base.id)),
+  };
+}
+
+function writeItems(items) {
+  const out = Array.from(items.values()).sort((a, b) => a.id - b.id);
+  fs.writeFileSync(OUT_FILE, JSON.stringify(out, null, 2), "utf8");
+  return out;
 }
 
 function stripTags(html) {
@@ -169,7 +216,7 @@ async function collectList(browser) {
   return Array.from(found.values()).sort((a, b) => a.id - b.id);
 }
 
-async function fetchDetails(browser, list) {
+async function fetchDetails(browser, list, existingItems) {
   async function newFetchPage() {
     const page = await browser.newPage();
     await installRoutes(page);
@@ -193,10 +240,23 @@ async function fetchDetails(browser, list) {
     })), chunk);
   }
 
+  const items = new Map();
+  for (const item of list) {
+    const cached = existingItems.get(item.id);
+    items.set(item.id, mergeItem(item, cached ? mergeItem(item, cached) : item));
+  }
+
+  let queue = list.filter((item) => !isCompletedItem(items.get(item.id)));
+  const resumed = list.length - queue.length;
+  if (DETAIL_LIMIT > 0) queue = queue.slice(0, DETAIL_LIMIT);
+
+  console.log(`detail queue: ${queue.length}/${list.length} (resumed ${resumed})`);
+  if (!queue.length) return writeItems(items);
+
   let page = await newFetchPage();
-  const out = [];
-  for (let start = 0; start < list.length; start += WORKERS) {
-    const chunk = list.slice(start, start + WORKERS);
+  let processed = 0;
+  for (let start = 0; start < queue.length; start += WORKERS) {
+    const chunk = queue.slice(start, start + WORKERS);
     let htmls;
     try {
       htmls = await fetchChunk(page, chunk);
@@ -209,7 +269,7 @@ async function fetchDetails(browser, list) {
       const item = chunk[i];
       const payload = htmls[i];
       if (payload.error) {
-        out.push({ ...item, tooltip: [], error: payload.error });
+        items.set(item.id, mergeItem(items.get(item.id), { ...item, tooltip: [], error: payload.error }));
         continue;
       }
       const meta = parseMeta(payload.html, item.name);
@@ -217,27 +277,36 @@ async function fetchDetails(browser, list) {
       if (!tooltip.length) {
         tooltip = parseTooltipLines(meta.title, stripTags(payload.html));
       }
-      out.push({ ...item, name: meta.title || item.name, tooltip });
+      items.set(item.id, mergeItem(items.get(item.id), { ...item, name: meta.title || item.name, tooltip, error: undefined }));
     }
-    if (out.length % 50 === 0 || out.length >= list.length) {
-      console.log(`detail ${out.length}/${list.length}`);
+    processed += chunk.length;
+    if (processed % 50 === 0 || processed >= queue.length) {
+      console.log(`detail ${processed}/${queue.length}`);
     }
-    fs.writeFileSync(OUT_FILE, JSON.stringify(out.sort((a, b) => a.id - b.id), null, 2), "utf8");
+    writeItems(items);
   }
   await page.close();
-  return out.sort((a, b) => a.id - b.id);
+  return writeItems(items);
 }
 
 async function main() {
+  const existingItems = loadExistingItems();
   const browser = await chromium.launch({
     headless: true,
     executablePath: CHROME,
     proxy: PROXY ? { server: PROXY } : undefined,
   });
 
-  const list = await collectList(browser);
-  console.log(`detail queue: ${list.length}`);
-  const out = await fetchDetails(browser, list);
+  if (existingItems.size) {
+    console.log(`loaded cache: ${existingItems.size}`);
+  }
+  const list = USE_CACHE_LIST && existingItems.size
+    ? Array.from(existingItems.values()).sort((a, b) => a.id - b.id)
+    : await collectList(browser);
+  if (USE_CACHE_LIST && existingItems.size) {
+    console.log(`using cache list: ${list.length}`);
+  }
+  const out = await fetchDetails(browser, list, existingItems);
   await browser.close().catch(() => {});
   fs.writeFileSync(OUT_FILE, JSON.stringify(out, null, 2), "utf8");
   console.log(`wrote ${OUT_FILE}`);

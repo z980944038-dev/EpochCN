@@ -20,7 +20,7 @@ EpochCN:RegisterModule("Tooltip", function(E)
   end
 
   local function TranslateKnownTitle(tooltip)
-    if not tooltip or not EpochCN_ObjectiveNameData then return end
+    if not tooltip then return end
     local name = tooltip:GetName()
     local titleLine = name and getglobal(name .. "TextLeft1")
     if not titleLine or not titleLine.GetText then return end
@@ -28,7 +28,9 @@ EpochCN:RegisterModule("Tooltip", function(E)
     local title = titleLine:GetText()
     if not title or title == "" or string.match(title, "^%d+$") then return end
 
-    local translated = EpochCN_ObjectiveNameData[title]
+    local translated = (EpochCN_ObjectiveNameData and EpochCN_ObjectiveNameData[title])
+      or (E.TranslateEnglishUnitName and E:TranslateEnglishUnitName(title))
+      or (E.TranslateEnglishObjectName and E:TranslateEnglishObjectName(title))
     if translated and translated ~= title then
       SetTooltipTitle(tooltip, translated)
     end
@@ -100,6 +102,7 @@ EpochCN:RegisterModule("Tooltip", function(E)
     ["Binds when picked up"] = "拾取后绑定",
     ["Binds when equipped"] = "装备后绑定",
     ["Binds when used"] = "使用后绑定",
+    ["Random Enchantment"] = "随机附魔",
     ["Unique"] = "唯一",
     ["Unique-Equipped"] = "唯一装备",
     ["Item Level"] = "物品等级",
@@ -126,6 +129,35 @@ EpochCN:RegisterModule("Tooltip", function(E)
     ["Tabard"] = "战袍",
   }
 
+  local spellNameOverrides = {
+    ["Bear"] = "熊形态",
+    ["Bear, Cat, or Travel Form"] = "熊形态、猎豹形态或旅行形态",
+    ["Backstab"] = "背刺",
+    ["Cat"] = "猎豹形态",
+    ["Fade"] = "渐隐术",
+    ["Holy Shock"] = "神圣震击",
+    ["Immolate"] = "献祭",
+    ["Kick"] = "脚踢",
+    ["Lightning Bolt"] = "闪电箭",
+    ["Maim"] = "割碎",
+    ["Mutilate"] = "毁伤",
+    ["Nature's Swiftness"] = "自然迅捷",
+    ["Regrowth"] = "愈合",
+    ["Shock"] = "震击",
+    ["Shield Slam"] = "盾牌猛击",
+    ["Sinister Strike"] = "邪恶攻击",
+    ["Slice and Dice"] = "切割",
+    ["Sprint"] = "疾跑",
+    ["Starfire"] = "星火术",
+    ["Stormstrike"] = "风暴打击",
+    ["Swiftmend"] = "迅捷治愈",
+    ["Thunder Clap"] = "雷霆一击",
+    ["Traps"] = "陷阱",
+    ["Travel Form"] = "旅行形态",
+    ["Weakened Soul"] = "虚弱灵魂",
+    ["Wrath"] = "愤怒",
+  }
+
   local function HasCN(text)
     return type(text) == "string" and string.find(text, "[\128-\255]") ~= nil
   end
@@ -146,17 +178,134 @@ EpochCN:RegisterModule("Tooltip", function(E)
     return text
   end
 
+  local derivedSpellNameMap
+
+  local function StripTrainingName(name)
+    name = NormalizeTooltipText(name)
+    name = strgsub(name, "^书卷：", "")
+    name = strgsub(name, "^圣典：", "")
+    name = strgsub(name, "^魔典：", "")
+    name = strgsub(name, "^石板：", "")
+    name = strgsub(name, "^宝典：", "")
+    name = strgsub(name, "^手册：", "")
+    name = strgsub(name, "雕文$", "")
+    name = strgsub(name, "%s+[IVX]+$", "")
+    return NormalizeTooltipText(name)
+  end
+
+  local function BuildDerivedSpellNameMap()
+    if derivedSpellNameMap then return derivedSpellNameMap end
+
+    derivedSpellNameMap = {}
+
+    local glossaryText = EpochCN_Glossary and EpochCN_Glossary.text or {}
+    for raw, localized in pairs(glossaryText) do
+      if raw and localized and localized ~= "" and HasCN(localized) and not HasAsciiLetters(localized) then
+        derivedSpellNameMap[raw] = localized
+      end
+    end
+
+    local itemNameMap = EpochCN_ItemNameMap or {}
+    for raw, localized in pairs(itemNameMap) do
+      local spellName = strmatch(raw, "^Book of (.+)$")
+      if not spellName then spellName = strmatch(raw, "^Codex:%s*(.+)$") end
+      if not spellName then spellName = strmatch(raw, "^Codex of (.+)$") end
+      if not spellName then spellName = strmatch(raw, "^Grimoire of (.+)$") end
+      if not spellName then spellName = strmatch(raw, "^Tablet of (.+)$") end
+      if not spellName then spellName = strmatch(raw, "^Tome of (.+)$") end
+      if not spellName then spellName = strmatch(raw, "^Manual of (.+)$") end
+      if not spellName then spellName = strmatch(raw, "^Handbook of (.+)$") end
+      if spellName then
+        spellName = NormalizeTooltipText(strgsub(spellName, "%s+[IVX]+$", ""))
+      else
+        spellName = strmatch(raw, "^Glyph of (.+)$")
+      end
+
+      if spellName then
+        local translated = StripTrainingName(localized)
+        if translated ~= "" and not HasAsciiLetters(translated) and not derivedSpellNameMap[spellName] then
+          derivedSpellNameMap[spellName] = translated
+        end
+      end
+    end
+
+    for raw, localized in pairs(spellNameOverrides) do
+      derivedSpellNameMap[raw] = localized
+    end
+
+    return derivedSpellNameMap
+  end
+
+  local function TranslateAbilityName(name)
+    name = NormalizeTooltipText(name)
+    name = strgsub(name, "[%.。]+$", "")
+    local translated = BuildDerivedSpellNameMap()[name]
+      or BuildDerivedSpellNameMap()[strgsub(name, "^%l", string.upper)]
+      or (EpochCN_ObjectiveNameData and EpochCN_ObjectiveNameData[name])
+      or itemEffectNameMap[name]
+    if translated and translated ~= "" then return translated end
+    return name
+  end
+
+  local function JoinChineseList(values)
+    local count = #values
+    if count == 0 then return "" end
+    if count == 1 then return values[1] end
+    if count == 2 then return values[1] .. "和" .. values[2] end
+    return table.concat(values, "、", 1, count - 1) .. "和" .. values[count]
+  end
+
+  local function TranslateAbilityList(text)
+    text = NormalizeTooltipText(text)
+    text = strgsub(text, ",%s+and%s+", ", ")
+    text = strgsub(text, "%s+and%s+", ", ")
+
+    local translated = {}
+    for part in string.gmatch(text, "([^,]+)") do
+      part = NormalizeTooltipText(part)
+      if part ~= "" then
+        table.insert(translated, TranslateAbilityName(part))
+      end
+    end
+
+    if #translated == 0 then return text end
+    return JoinChineseList(translated)
+  end
+
   local function TranslateEffectName(name)
     name = NormalizeTooltipText(name)
-    return itemEffectNameMap[name] or (EpochCN_ObjectiveNameData and EpochCN_ObjectiveNameData[name]) or name
+    return TranslateAbilityName(name)
   end
 
   local function TranslateKnownObjectName(name)
     name = NormalizeTooltipText(name)
-    return (EpochCN_ItemNameMap and EpochCN_ItemNameMap[name])
+    local translated = (EpochCN_ItemNameMap and EpochCN_ItemNameMap[name])
       or (EpochCN_ObjectiveNameData and EpochCN_ObjectiveNameData[name])
       or itemEffectNameMap[name]
-      or name
+    if translated and translated ~= name then return translated end
+
+    translated = TranslateAbilityName(name)
+    if translated ~= name then return translated end
+
+    return (E.TranslateEnglishUnitName and E:TranslateEnglishUnitName(name)) or name
+  end
+
+  local mixedItemEffectLineMap = {
+    ["A small satchel containing various trade goods."] = "一个装有各种贸易物资的小挎包。",
+    ["An extremely potent alcoholic beverage."] = "一种效力极强的酒精饮料。",
+    ["Allows the shaman to see elemental spirits."] = "使萨满祭司能够看见元素之灵。",
+    ["Requires Argent Dawn - Revered"] = "需要银色黎明 - 崇敬",
+    ["需要 Argent Dawn - Revered"] = "需要银色黎明 - 崇敬",
+    ["Cure for the Touch of Zanzil."] = "赞吉尔之触的解药。",
+  }
+
+  local mixedItemEffectTargetMap = {
+    ["Burning Exile"] = "炽燃流放者",
+  }
+
+  local function StripWrappedQuotes(text)
+    if type(text) ~= "string" then return text end
+    return (string.match(text, '^"(.-)"$')) or text
   end
 
   local function TranslateDurationText(duration)
@@ -214,8 +363,12 @@ EpochCN:RegisterModule("Tooltip", function(E)
     ["critical strike"] = "爆击",
     ["critical strike rating"] = "爆击等级",
     ["critical strike chance"] = "爆击几率",
+    ["chance to get a critical strike with all spells and attacks"] = "所有法术和攻击的爆击几率",
+    ["chance to hit with all spells and attacks"] = "所有法术和攻击的命中几率",
     ["damage and healing done by magical spells and effects"] = "魔法法术和效果造成的伤害与治疗效果",
+    ["damage dealt against other players"] = "对其他玩家造成的伤害",
     ["damage done by magical spells and effects"] = "魔法法术和效果造成的伤害",
+    ["damage taken from other players"] = "受到其他玩家的伤害",
     ["defense"] = "防御",
     ["defense rating"] = "防御等级",
     ["dodge"] = "躲闪",
@@ -234,6 +387,7 @@ EpochCN:RegisterModule("Tooltip", function(E)
     ["parry"] = "招架",
     ["parry rating"] = "招架等级",
     ["ranged attack power"] = "远程攻击强度",
+    ["ranged attack speed"] = "远程攻击速度",
     ["ranged haste"] = "远程急速",
     ["resilience rating"] = "韧性等级",
     ["run speed"] = "移动速度",
@@ -346,6 +500,12 @@ EpochCN:RegisterModule("Tooltip", function(E)
       if cn then return cn .. "提高 " .. genericAmount .. "%。" end
     end
 
+    genericTerm, genericAmount = string.match(text, "^Decreases your (.-) by (%d+)%%%.?$")
+    if genericTerm and genericAmount then
+      local cn = TranslateEffectTerm(genericTerm)
+      if cn then return cn .. "降低 " .. genericAmount .. "%。" end
+    end
+
     genericTerm, genericAmount = string.match(text, "^Increases your (.-) by (%d+)%.?$")
     if genericTerm and genericAmount then
       local cn = TranslateEffectTerm(genericTerm)
@@ -434,10 +594,10 @@ EpochCN:RegisterModule("Tooltip", function(E)
     if amt and dur then return "在 " .. dur .. " 秒内恢复 " .. amt .. " 点生命值。" end
 
     -- 单值恢复 "Restores 500 health."
-    value = string.match(text, "Restores (%d+) health")
+    value = string.match(text, "^Restores (%d+) health%.?$")
     if value then return "恢复 " .. value .. " 点生命值。" end
 
-    value = string.match(text, "Restores (%d+) mana")
+    value = string.match(text, "^Restores (%d+) mana%.?$")
     if value then return "恢复 " .. value .. " 点法力值。" end
 
     -- ========== 饮食相关 ==========
@@ -458,6 +618,14 @@ EpochCN:RegisterModule("Tooltip", function(E)
     duration = string.match(text, "%((%d+) [Ss]ec cooldown%)")
     if duration then return "(" .. duration .. "秒冷却)" end
 
+    local dispelCooldown = string.match(text, "^Removes all movement impairing effects and all effects which cause loss of control of your character%.%s*(%b())$")
+    if dispelCooldown then
+      return "移除所有限制移动的效果，以及所有使你失去角色控制的效果。" .. TranslateCooldownText(dispelCooldown)
+    end
+    if text == "Removes all movement impairing effects and all effects which cause loss of control of your character." then
+      return "移除所有限制移动的效果，以及所有使你失去角色控制的效果。"
+    end
+
     -- ========== 战斗属性提升 ==========
     local attackPower, hit = string.match(text, "Increases your attack power by (%d+) and your chance to hit by (%d+)%%")
     if attackPower and hit then return "攻击强度提高 " .. attackPower .. " 点，命中几率提高 " .. hit .. "%。" end
@@ -474,6 +642,9 @@ EpochCN:RegisterModule("Tooltip", function(E)
     value = string.match(text, "Improves your chance to get a critical strike with spells by (%d+)%%")
     if value then return "法术爆击几率提高 " .. value .. "%。" end
 
+    value = string.match(text, "Improves your chance to get a critical strike with all spells and attacks by (%d+)%%")
+    if value then return "所有法术和攻击的爆击几率提高 " .. value .. "%。" end
+
     value = string.match(text, "Increases your chance to get a critical strike with spells by (%d+)%%")
     if value then return "法术爆击几率提高 " .. value .. "%。" end
 
@@ -482,6 +653,9 @@ EpochCN:RegisterModule("Tooltip", function(E)
 
     value = string.match(text, "Improves your chance to hit with spells by (%d+)%%")
     if value then return "法术命中几率提高 " .. value .. "%。" end
+
+    value = string.match(text, "Improves your chance to hit with all spells and attacks by (%d+)%%")
+    if value then return "所有法术和攻击的命中几率提高 " .. value .. "%。" end
 
     value = string.match(text, "Increases your chance to hit with spells by (%d+)%%")
     if value then return "法术命中几率提高 " .. value .. "%。" end
@@ -699,6 +873,12 @@ EpochCN:RegisterModule("Tooltip", function(E)
       return (damageSchoolLowerMap[string.lower(resistSchoolA)] or resistSchoolA) .. "和" .. (damageSchoolLowerMap[string.lower(resistSchoolB)] or resistSchoolB) .. "抗性提高 " .. resistValue .. " 点。"
     end
 
+    local dualResistValue
+    dualResistValue, resistSchoolA, resistSchoolB = string.match(text, "^%+(%d+) (%a+) and (%a+) Resistance%.?$")
+    if dualResistValue and resistSchoolA and resistSchoolB then
+      return (resistanceNameMap[resistSchoolA] or (resistSchoolA .. "抗性")) .. "和" .. (resistanceNameMap[resistSchoolB] or (resistSchoolB .. "抗性")) .. "提高 " .. dualResistValue .. " 点。"
+    end
+
     value = string.match(text, "^Increases your maximum health by (%d+)%.?$")
       or string.match(text, "^Increases the player's maximum health by (%d+)%.?$")
     if value then return "生命值上限提高 " .. value .. " 点。" end
@@ -706,6 +886,11 @@ EpochCN:RegisterModule("Tooltip", function(E)
     value = string.match(text, "^Increases your maximum mana by (%d+)%.?$")
       or string.match(text, "^Increases the player's maximum mana by (%d+)%.?$")
     if value then return "法力值上限提高 " .. value .. " 点。" end
+
+    local primaryStats, extraStamina = string.match(text, "^Increases your Primary Stats by (%d+) and Stamina by an additional (%d+) when in Arenas, Battlegrounds, and PvP Objectives%.?$")
+    if primaryStats and extraStamina then
+      return "在竞技场、战场和玩家对战目标区域中，主属性提高 " .. primaryStats .. " 点，额外获得 " .. extraStamina .. " 点耐力。"
+    end
 
     local gainTerm, gainAmount, lossTerm, lossAmount, statDuration = string.match(text, "^Increases (%a+) by (%d+), but decreases (%a+) by (%d+) for (.-)%.?$")
     if gainTerm and gainAmount and lossTerm and lossAmount and statDuration then
@@ -716,11 +901,13 @@ EpochCN:RegisterModule("Tooltip", function(E)
 
     -- ========== 每5秒恢复 ==========
     value = string.match(text, "Restores (%d+) mana per 5 sec")
+      or string.match(text, "Restores (%d+) mana every 5 sec")
       or string.match(text, "Restores (%d+) mana every 5 seconds")
       or string.match(text, "Restores (%d+) mana per 5 seconds")
     if value then return "每5秒恢复 " .. value .. " 点法力值。" end
 
     value = string.match(text, "Restores (%d+) health per 5 sec")
+      or string.match(text, "Restores (%d+) health every 5 sec")
       or string.match(text, "Restores (%d+) health every 5 seconds")
       or string.match(text, "Restores (%d+) health per 5 seconds")
     if value then return "每5秒恢复 " .. value .. " 点生命值。" end
@@ -755,9 +942,153 @@ EpochCN:RegisterModule("Tooltip", function(E)
     value = string.match(text, "Increases ranged haste by (%d+)%%")
     if value then return "远程攻击速度提高 " .. value .. "%。" end
 
+    value = string.match(text, "^Improves your casting speed and causes periodic effects to occur more frequently with spells by ([%d%.]+)%%%.?$")
+    if value then return "法术施放速度提高，且周期性法术效果触发频率提高 " .. value .. "%。" end
+
+    value = string.match(text, "^Increases the effect that healing potions have on the wearer by (%d+)%%%. This effect does not stack%.?$")
+    if value then return "你受到的治疗药水效果提高 " .. value .. "% 。该效果无法叠加。" end
+
+    value = string.match(text, "^Increases the speed of your Ghost Wolf ability by ([%d%.]+)%%%.?$")
+    if value then return "幽魂之狼的移动速度提高 " .. value .. "%。" end
+
+    local spellName, spellSeconds = string.match(text, "^Reduces the casting time of your (.+) spell by ([%d%.]+) sec%.?$")
+    if spellName and spellSeconds then
+      return TranslateAbilityName(spellName) .. "的施法时间缩短 " .. spellSeconds .. " 秒。"
+    end
+
+    spellName, spellSeconds = string.match(text, "^The casting time on your (.+) spell is reduced by ([%d%.]+) sec%.?$")
+    if spellName and spellSeconds then
+      return TranslateAbilityName(spellName) .. "的施法时间缩短 " .. spellSeconds .. " 秒。"
+    end
+
+    local critSpell, critValue = string.match(text, "^Improves your chance to get a critical strike with all (.+) spells by (%d+)%%%.?$")
+    if critSpell and critValue then
+      return "所有" .. TranslateAbilityName(critSpell) .. "法术的爆击几率提高 " .. critValue .. "%。"
+    end
+
+    local petHeal = string.match(text, "^Causes your pet to be healed for ([%d%.]+)%% of the damage you deal%.?$")
+    if petHeal then
+      return "你的宠物恢复相当于你造成伤害 " .. petHeal .. "% 的生命值。"
+    end
+
+    local fadeDodge = string.match(text, "^Fade now also grants you a ([%d%.]+)%% chance to dodge attacks%.?$")
+    if fadeDodge then
+      return "渐隐术现在还会使你获得 " .. fadeDodge .. "% 的躲闪攻击几率。"
+    end
+
+    local moveSpeed, forms = string.match(text, "^Increases your movement speed by ([%d%.]+)%% while in (.+)%. Only active outdoors%.?$")
+    if moveSpeed and forms then
+      return "在" .. TranslateAbilityName(forms) .. "时，移动速度提高 " .. moveSpeed .. "% 。仅在室外生效。"
+    end
+
+    moveSpeed = string.match(text, "^Increases your movement speed by ([%d%.]+)%%%.?$")
+    if moveSpeed then
+      return "移动速度提高 " .. moveSpeed .. "% 。"
+    end
+
+    local firstSpell, nextSpell, reduction = string.match(text, "^Your (.+) casts have a chance to reduce the cast time on your next (.+) by ([%d%.]+) sec%.?$")
+    if firstSpell and nextSpell and reduction then
+      return "你的" .. TranslateAbilityName(firstSpell) .. "有几率使下一次" .. TranslateAbilityName(nextSpell) .. "的施法时间缩短 " .. reduction .. " 秒。"
+    end
+
+    local avoidInterrupt, castSpell = string.match(text, "^Gives you a ([%d%.]+)%% chance to avoid interruption caused by damage while casting (.+)%.?$")
+    if avoidInterrupt and castSpell then
+      return "当你施放" .. TranslateAbilityName(castSpell) .. "时，有 " .. avoidInterrupt .. "% 的几率避免因受到伤害而被打断。"
+    end
+
+    local spellEffect, sourceSpell, effectSeconds = string.match(text, "^Reduces the duration of the (.+) effect caused by your (.+) by ([%d%.]+) sec%.?$")
+    if spellEffect and sourceSpell and effectSeconds then
+      return TranslateAbilityName(sourceSpell) .. "造成的" .. TranslateAbilityName(spellEffect) .. "效果持续时间缩短 " .. effectSeconds .. " 秒。"
+    end
+
+    local manaSpell, manaCost = string.match(text, "^Reduces the mana cost of your (.+) spell by ([%d%.]+)%% of its base cost%.?$")
+    if manaSpell and manaCost then
+      return TranslateAbilityName(manaSpell) .. "的法力消耗降低其基础消耗的 " .. manaCost .. "% 。"
+    end
+
+    local cleanseSpell, cleanseHeal = string.match(text, "^Your (.+) spell also heals the target for ([%d%.]+)%.?$")
+    if cleanseSpell and cleanseHeal then
+      return "你的" .. TranslateAbilityName(cleanseSpell) .. "还会为目标恢复 " .. cleanseHeal .. " 点生命值。"
+    end
+
+    local dispelSpell, dispelChance = string.match(text, "^Reduces your chance that (.+) will be dispelled by ([%d%.]+)%%%.?$")
+    if dispelSpell and dispelChance then
+      return TranslateAbilityName(dispelSpell) .. "被驱散的几率降低 " .. dispelChance .. "% 。"
+    end
+
+    local healingSpell, healingBonus = string.match(text, "^Increases the effective spell power of your (.+) when used as a healing spell by ([%d%.]+)%%%.?$")
+    if healingSpell and healingBonus then
+      return TranslateAbilityName(healingSpell) .. "作为治疗法术使用时，受到的法术强度加成提高 " .. healingBonus .. "%。"
+    end
+
+    local energySpell, energyCost = string.match(text, "^Reduces the [Ee]nergy cost of your (.+) by ([%d%.]+)%.?$")
+    if energySpell and energyCost then
+      return TranslateAbilityName(energySpell) .. "的能量消耗降低 " .. energyCost .. " 点。"
+    end
+
+    local cooldownSpell, cooldownSeconds = string.match(text, "^Reduces the cooldown of your (.+) ability by ([%d%.]+) sec%.?$")
+    if not cooldownSpell then
+      cooldownSpell, cooldownSeconds = string.match(text, "^Reduces the cooldown of your (.+) by ([%d%.]+) sec%.?$")
+    end
+    if not cooldownSpell then
+      cooldownSpell, cooldownSeconds = string.match(text, "^Reduces the cooldown of your (.+) by ([%d%.]+) seconds?%.?$")
+    end
+    if not cooldownSpell then
+      cooldownSpell, cooldownSeconds = string.match(text, "^(.+)'s cooldown is reduced by ([%d%.]+) seconds?%.?$")
+    end
+    if cooldownSpell and cooldownSeconds then
+      return TranslateAbilityName(cooldownSpell) .. "的冷却时间缩短 " .. cooldownSeconds .. " 秒。"
+    end
+
+    local durationSpell, durationSeconds = string.match(text, "^Increases the duration of your (.+) ability by ([%d%.]+) sec%.?$")
+    if durationSpell and durationSeconds then
+      return TranslateAbilityName(durationSpell) .. "的持续时间延长 " .. durationSeconds .. " 秒。"
+    end
+
+    value = string.match(text, "^Reduces the cast time of your Cyclone spell by ([%d%.]+) sec%.?$")
+    if value then return "飓风术的施法时间缩短 " .. value .. " 秒。" end
+
+    value = string.match(text, "^Increases ranged attack speed by ([%d%.]+)%%%.?$")
+    if value then return "远程攻击速度提高 " .. value .. "% 。" end
+
+    value = string.match(text, "^Reduces the cooldown of your Hammer of Justice by ([%d%.]+) sec%.?$")
+    if value then return "制裁之锤的冷却时间缩短 " .. value .. " 秒。" end
+
+    value = string.match(text, "^Reduces the pushback suffered from damaging attacks while casting Fear by (%d+)%%%.?$")
+    if value then return "施放恐惧术时，受到伤害攻击造成的施法延迟降低 " .. value .. "%。" end
+
+    value = string.match(text, "^Decreases the magical resistances of your spell targets by (%d+)%.?$")
+    if value then return "你的法术目标的魔法抗性降低 " .. value .. " 点。" end
+
+    value = string.match(text, "^Duration of incoming crowd control effects reduced by (%d+)%%%. Does not stack with similar effects%.?$")
+    if value then return "你受到的控制效果持续时间缩短 " .. value .. "% 。该效果无法与同类效果叠加。" end
+
+    local lossControlDuration, lossControlCooldown = string.match(text, "^Removes any loss of control effect with a duration of (%d+) seconds or more%. This effect can only occur once every (%d+) min%.?$")
+    if not lossControlDuration then
+      lossControlDuration, lossControlCooldown = string.match(text, "^Removes any loss of control effect with a duration of (%d+) seconds or more%. This effect can only occur once every (%d+) minute%.?$")
+    end
+    if lossControlDuration and lossControlCooldown then
+      return "移除任意持续 " .. lossControlDuration .. " 秒或更久的失控效果。该效果每 " .. lossControlCooldown .. " 分钟只能触发一次。"
+    end
+
+    if text == "Allows underwater breathing." then
+      return "允许在水下呼吸。"
+    end
+
+    if text == "Immune to Disarm." then
+      return "免疫缴械。"
+    end
+
+    local professionName, professionBonus = string.match(text, "^([%a%s]+) %+(%d+)%.?$")
+    if professionName and professionBonus and professionNameMap[professionName] then
+      return professionNameMap[professionName] .. " +" .. professionBonus
+    end
+
     -- ========== 暴击加成 ==========
-    value = string.match(text, "Increases the critical strike chance of (%w+) by (%d+)%%")
-    if value then return value .. " 的爆击几率提高 " .. select(2, string.match(text, "Increases the critical strike chance of (%w+) by (%d+)%%")) .. "%。" end
+    local critAbility, critChance = string.match(text, "^Increases the critical strike chance of (.+) by (%d+)%%%.?$")
+    if critAbility and critChance then
+      return TranslateAbilityList(critAbility) .. "的爆击几率提高 " .. critChance .. "%。"
+    end
 
     -- ========== 被击中时 ==========
     value = string.match(text, "When struck in combat[,.]* has a (%d+)%% chance")
@@ -766,6 +1097,92 @@ EpochCN:RegisterModule("Tooltip", function(E)
     local chance2, effect2 = string.match(text, "When struck in combat[,.]* has a (%d+)%% chance of ([^%.]+)")
     if chance2 and effect2 then
       return "在战斗中被击中时，有 " .. chance2 .. "% 几率" .. effect2 .. "。"
+    end
+
+    local freezeDuration = string.match(text, "^When struck in combat has a chance of freezing the attacker in place for ([%d%.]+) sec%.?$")
+      or string.match(text, "^When struck in combat has a chance of freezing the attacker in place for ([%d%.]+) seconds?%.?$")
+    if freezeDuration then
+      return "在战斗中被击中时，有几率将攻击者冻结在原地，持续 " .. freezeDuration .. " 秒。"
+    end
+
+    local shieldAmount = string.match(text, "^When struck in combat has a chance of shielding the wearer in a protective shield which will absorb ([%d%.]+) damage%.?$")
+    if shieldAmount then
+      return "在战斗中被击中时，有几率为穿戴者施加一个防护盾，可吸收 " .. shieldAmount .. " 点伤害。"
+    end
+
+    local fearDuration = string.match(text, "^When struck in combat has a chance of causing the attacker to flee in terror for ([%d%.]+) seconds?%.?$")
+    if fearDuration then
+      return "在战斗中被击中时，有几率使攻击者因恐惧而逃跑 " .. fearDuration .. " 秒。"
+    end
+
+    local manaGain, rageGain, energyGain = string.match(text, "^When struck in combat has a chance of returning ([%d%.]+) mana, ([%d%.]+) rage, or ([%d%.]+) energy to the wearer%.?$")
+    if manaGain and rageGain and energyGain then
+      return "在战斗中被击中时，有几率为穿戴者恢复 " .. manaGain .. " 点法力值、" .. rageGain .. " 点怒气或 " .. energyGain .. " 点能量。"
+    end
+
+    local procBonus, procDuration = string.match(text, "^Chance on spell cast to increase your damage and healing by up to ([%d%.]+) for ([%d%.]+) sec%.?$")
+    if procBonus and procDuration then
+      return "成功施法时有几率使你的伤害和治疗效果最多提高 " .. procBonus .. " 点，持续 " .. procDuration .. " 秒。"
+    end
+
+    procBonus, procDuration = string.match(text, "^Chance on melee attack to increase your damage and healing done by magical spells and effects by up to ([%d%.]+) for ([%d%.]+) sec%.?$")
+    if procBonus and procDuration then
+      return "近战攻击命中时有几率使魔法法术和效果造成的伤害与治疗效果最多提高 " .. procBonus .. " 点，持续 " .. procDuration .. " 秒。"
+    end
+
+    local healLo, healHi = string.match(text, "^Chance on melee attack to heal you for ([%d,]+) to ([%d,]+)%.?$")
+    if healLo and healHi then
+      return "近战攻击命中时有几率为你恢复 " .. healLo .. " 到 " .. healHi .. " 点生命值。"
+    end
+
+    local energyRestore = string.match(text, "^Chance on melee attack to restore ([%d%.]+) energy%.?$")
+    if energyRestore then
+      return "近战攻击命中时有几率恢复 " .. energyRestore .. " 点能量。"
+    end
+
+    local areaReduction = string.match(text, "^Reduces the damage you take from area of effect attacks by an additional ([%d%.]+)%%%.?$")
+    if areaReduction then
+      return "你受到的范围效果攻击伤害额外降低 " .. areaReduction .. "% 。"
+    end
+
+    local attackSpeedAbility, attackSpeedBonus = string.match(text, "^Increases the attack speed gained from (.+) by an additional ([%d%.]+)%%%.?$")
+    if attackSpeedAbility and attackSpeedBonus then
+      return TranslateAbilityName(attackSpeedAbility) .. "提供的攻击速度加成额外提高 " .. attackSpeedBonus .. "% 。"
+    end
+
+    local energyAbilityList, reducedEnergy = string.match(text, "^Reduces the [Ee]nergy cost of your (.+) abilities by ([%d%.]+)%.?$")
+    if energyAbilityList and reducedEnergy then
+      return TranslateAbilityList(energyAbilityList) .. "的能量消耗降低 " .. reducedEnergy .. " 点。"
+    end
+
+    local cooldownTarget, cooldownReduction = string.match(text, "^Reduces the cooldown on your (.+) by ([%d%.]+) sec%.?$")
+    if cooldownTarget and cooldownReduction then
+      return TranslateAbilityName(cooldownTarget) .. "的冷却时间缩短 " .. cooldownReduction .. " 秒。"
+    end
+
+    local shoutCost = string.match(text, "^All of your shout abilities cost ([%d%.]+) less rage%.?$")
+    if shoutCost then
+      return "你的所有怒吼技能消耗的怒气减少 " .. shoutCost .. " 点。"
+    end
+
+    local threatAbility, threatBonus = string.match(text, "^([%a][%a%s':%-%(%)]+) generates ([%d%.]+)%% more threat%.?$")
+    if threatAbility and threatBonus then
+      return TranslateAbilityName(threatAbility) .. "产生的威胁值提高 " .. threatBonus .. "%。"
+    end
+
+    threatAbility, threatBonus = string.match(text, "^([%a][%a%s':%-%(%)]+) generates ([%d%.]+)%% less threat%.?$")
+    if threatAbility and threatBonus then
+      return TranslateAbilityName(threatAbility) .. "产生的威胁值降低 " .. threatBonus .. "%。"
+    end
+
+    local levelAbility, levelBonus = string.match(text, "^(.+) gains an additional ([%d%.]+)%% of your current level%.?$")
+    if levelAbility and levelBonus then
+      return TranslateAbilityName(levelAbility) .. "额外获得相当于你当前等级 " .. levelBonus .. "% 的效果。"
+    end
+
+    local firelordBonus = string.match(text, "^While you are in an area touched by the Firelord, your attack power and spell damage is increased by ([%d%.]+)%.?$")
+    if firelordBonus then
+      return "当你身处火焰之王影响的区域时，攻击强度和法术伤害提高 " .. firelordBonus .. " 点。"
     end
 
     -- ========== 减少目标移速 ==========
@@ -865,12 +1282,117 @@ EpochCN:RegisterModule("Tooltip", function(E)
       return "造成 " .. lo .. " 到 " .. hi .. " 点" .. (damageSchoolMap[school2] or school2) .. "伤害。"
     end
 
+    local schoolDamage = string.match(text, "^Smites an enemy for (%d+) (%a+) damage%.?$")
+    local schoolName = string.match(text, "^Smites an enemy for %d+ (%a+) damage%.?$")
+    if schoolDamage and schoolName then
+      return "惩击敌人，造成 " .. schoolDamage .. " 点" .. (damageSchoolMap[schoolName] or schoolName) .. "伤害。"
+    end
+
+    local frostLo, frostHi, slowPct, frostDur = string.match(text, "^Launches a bolt of frost at the enemy causing (%d+) ?to ?(%d+) Frost damage and slowing movement speed by (%d+)%% for (%d+) sec%.?$")
+    if not frostLo then
+      frostLo, frostHi, slowPct, frostDur = string.match(text, "^Launches a bolt of frost at the enemy causing (%d+)到(%d+) Frost damage and slowing movement speed by (%d+)%% for (%d+) sec%.?$")
+    end
+    if frostLo and frostHi and slowPct and frostDur then
+      return "向敌人射出一道冰霜箭，造成 " .. frostLo .. " 到 " .. frostHi .. " 点冰霜伤害，并使其移动速度降低 " .. slowPct .. "% ，持续 " .. frostDur .. " 秒。"
+    end
+
+    local fireLo, fireHi, extraDamage, extraDur = string.match(text, "^Hurls a fiery ball that causes (%d+) ?to ?(%d+) Fire damage and an additional (%d+) damage over (%d+) sec%.?$")
+    if not fireLo then
+      fireLo, fireHi, extraDamage, extraDur = string.match(text, "^Hurls a fiery ball that causes (%d+)到(%d+) Fire damage and an additional (%d+) damage over (%d+) sec%.?$")
+    end
+    if fireLo and fireHi and extraDamage and extraDur then
+      return "掷出一颗火球，造成 " .. fireLo .. " 到 " .. fireHi .. " 点火焰伤害，并在 " .. extraDur .. " 秒内额外造成 " .. extraDamage .. " 点伤害。"
+    end
+
+    local poisonDamage, poisonTick, poisonDuration = string.match(text, "^Poisons target for (%d+) Nature damage every (%d+) sec for (%d+) sec%.?$")
+    if poisonDamage and poisonTick and poisonDuration then
+      return "使目标中毒，每 " .. poisonTick .. " 秒造成 " .. poisonDamage .. " 点自然伤害，持续 " .. poisonDuration .. " 秒。"
+    end
+
+    local shadowLo, shadowHi = string.match(text, "^Sends a shadowy bolt at the enemy causing (%d+) ?to ?(%d+) Shadow damage%.?$")
+    if not shadowLo then
+      shadowLo, shadowHi = string.match(text, "^Sends a shadowy bolt at the enemy causing (%d+)到(%d+) Shadow damage%.?$")
+    end
+    if shadowLo and shadowHi then
+      return "向敌人发射一道暗影箭，造成 " .. shadowLo .. " 到 " .. shadowHi .. " 点暗影伤害。"
+    end
+
+    value = string.match(text, "^Sends a shadowy bolt at the enemy causing (%d+) Shadow damage%.?$")
+    if value then return "向敌人发射一道暗影箭，造成 " .. value .. " 点暗影伤害。" end
+
+    local inflictLo, inflictHi, inflictSchool = string.match(text, "^Inflicts (%d+) ?to ?(%d+) (%a+) damage to an enemy%.?$")
+    if not inflictLo then
+      inflictLo, inflictHi, inflictSchool = string.match(text, "^Inflicts (%d+)到(%d+) (%a+) damage to an enemy%.?$")
+    end
+    if inflictLo and inflictHi and inflictSchool then
+      return "对敌人造成 " .. inflictLo .. " 到 " .. inflictHi .. " 点" .. (damageSchoolMap[inflictSchool] or inflictSchool) .. "伤害。"
+    end
+
+    local woundDamage = string.match(text, "^Wounds the target for (%d+) damage%.?$")
+    if woundDamage then
+      return "重创目标，造成 " .. woundDamage .. " 点伤害。"
+    end
+
+    local woundLo, woundHi, intellectLoss, woundDuration = string.match(text, "^Wounds the target for (%d+) ?to ?(%d+) damage and lowers Intellect of target by (%d+) for (%d+) sec%.?$")
+    if not woundLo then
+      woundLo, woundHi, intellectLoss, woundDuration = string.match(text, "^Wounds the target for (%d+)到(%d+) damage and lowers Intellect of target by (%d+) for (%d+) sec%.?$")
+    end
+    if woundLo and woundHi and intellectLoss and woundDuration then
+      return "重创目标，造成 " .. woundLo .. " 到 " .. woundHi .. " 点伤害，并使目标智力降低 " .. intellectLoss .. " 点，持续 " .. woundDuration .. " 秒。"
+    end
+
+    value = string.match(text, "^Grants (%d+) extra attacks? on your next swing%.?$")
+    if value then return "你的下一次攻击额外获得 " .. value .. " 次攻击。" end
+
+    local crippleMove, crippleMelee, crippleRanged, crippleDuration = string.match(text, "^Cripples the target, reducing movement speed by (%d+)%%, increasing time between melee attacks by (%d+)%% and increasing time between ranged attacks by (%d+)%%%. Lasts (%d+) sec%.?$")
+    if crippleMove and crippleMelee and crippleRanged and crippleDuration then
+      return "使目标残废，移动速度降低 " .. crippleMove .. "% ，近战攻击间隔提高 " .. crippleMelee .. "% ，远程攻击间隔提高 " .. crippleRanged .. "% ，持续 " .. crippleDuration .. " 秒。"
+    end
+
+    local damageReduction, damageReductionDuration = string.match(text, "^Damage caused by the target is reduced by (%d+) for (%d+) min%.?$")
+    if damageReduction and damageReductionDuration then
+      return "目标造成的伤害降低 " .. damageReduction .. " 点，持续 " .. damageReductionDuration .. " 分钟。"
+    end
+
     -- ========== 配方学习 ==========
     local recipeTarget = string.match(text, "^Teaches you how to make (.+)%.$")
     if not recipeTarget then recipeTarget = string.match(text, "^Teaches you how to make (.+)$") end
     if recipeTarget then
       local cn = TranslateKnownObjectName(recipeTarget)
       return "教你制作" .. cn .. "。"
+    end
+
+    local cookTarget = string.match(text, "^Teaches you how to cook (.+)%.$")
+    if not cookTarget then cookTarget = string.match(text, "^Teaches you how to cook (.+)$") end
+    if cookTarget then
+      return "教你学会烹饪" .. TranslateKnownObjectName(cookTarget) .. "。"
+    end
+
+    if text == "Teaches you how to summon this mount." then
+      return "教你学会召唤这种坐骑。"
+    end
+
+    local mountName = string.match(text, "^Summons and dismisses a rideable (.+)%. This mount increases speed depending on your Riding Skill%.?$")
+    if mountName then
+      return "召唤或解散一只可骑乘的" .. TranslateKnownObjectName(mountName) .. "。该坐骑的速度会根据你的骑术等级提高。"
+    end
+
+    if text == "Change the school of magic that this wand fires." then
+      return "改变这根魔杖发射的魔法学派。"
+    end
+
+    if text == "Places all five of the Khans' gems in the Amulet of Spirits." then
+      return "将五枚可汗宝石全部放入灵魂护符中。"
+    end
+
+    local dummyDuration = string.match(text, "^Drops a target dummy on the ground that attracts nearby monsters to attack it%. Lasts for (%d+) seconds or until killed%.?$")
+    if dummyDuration then
+      return "在地上放下一个假人，吸引附近怪物攻击它。持续 " .. dummyDuration .. " 秒或直到被摧毁。"
+    end
+
+    local siphonCooldown = string.match(text, "^Siphon energy from a weakened elemental%. %((%d+) Sec Cooldown%)$")
+    if siphonCooldown then
+      return "从一个虚弱的元素身上吸取能量。（" .. siphonCooldown .. "秒冷却）"
     end
 
     local bindingCooldown = string.match(text, "^Call forth a terrible force, binding it to an elemental form%. %((%d+) Min Cooldown%)$")
@@ -905,6 +1427,17 @@ EpochCN:RegisterModule("Tooltip", function(E)
         return "使用：" .. earlyBonus
       elseif HasEquipPrefix(clean) then
         return "装备：" .. earlyBonus
+      end
+    end
+
+    local plainSetBonus = string.match(clean, "^Set[:：]%s*(.+)$")
+    if not plainSetBonus then
+      plainSetBonus = string.match(clean, "^套装[:：]%s*(.+)$")
+    end
+    if plainSetBonus then
+      local translatedPlainSet = TranslateBonusText(plainSetBonus)
+      if translatedPlainSet then
+        return "套装：" .. translatedPlainSet
       end
     end
 
@@ -979,6 +1512,45 @@ EpochCN:RegisterModule("Tooltip", function(E)
       return prefix .. translatedBonus
     end
 
+    local translatedMixed = mixedItemEffectLineMap[clean]
+    if translatedMixed then
+      return prefix .. translatedMixed
+    end
+
+    local amount, duration = string.match(clean, "^Decrease the armor of the target by (%d+) for (%d+) sec%. While affected, the target cannot stealth or turn invisible%.?$")
+    if not amount then
+      amount, duration = string.match(clean, "^Decrease the 护甲 of the target by (%d+) for (%d+)秒%. While affected, the target cannot stealth or turn invisible%.?$")
+    end
+    if amount and duration then
+      return prefix .. "使目标的护甲降低 " .. amount .. " 点，持续 " .. duration .. "秒。在效果持续期间，目标无法潜行或隐形。"
+    end
+
+    local minutes = string.match(clean, "^Allows the drinker to breathe water for (%d+) min%.?$")
+    if not minutes then
+      minutes = string.match(clean, "^Allows the 饮用者 to breathe water for (%d+)分钟%.?$")
+    end
+    if minutes then
+      return prefix .. "使饮用者可以在水下呼吸，持续 " .. minutes .. "分钟。"
+    end
+
+    local health = string.match(clean, "^Instantly restores (%d+) life%.?$") or string.match(clean, "^Instantly restores (%d+) health%.?$")
+    if health then
+      return prefix .. "立即恢复 " .. health .. " 点生命值。"
+    end
+
+    local banishTarget, banishCooldown = string.match(clean, "^Banishes%s+(.+)%s*%((%d+)%s*[Ss]ec%s*[Cc]ooldown%)$")
+    if banishTarget and banishCooldown then
+      local normalizedTarget = string.gsub(banishTarget, "^[Aa]n?%s+", "")
+      local translatedTarget = TranslateEffectName(normalizedTarget)
+      if translatedTarget == normalizedTarget then
+        translatedTarget = mixedItemEffectTargetMap[normalizedTarget] or normalizedTarget
+      end
+      if normalizedTarget ~= banishTarget then
+        return prefix .. "放逐一名" .. translatedTarget .. "。（" .. banishCooldown .. "秒冷却）"
+      end
+      return prefix .. "放逐" .. translatedTarget .. "。（" .. banishCooldown .. "秒冷却）"
+    end
+
     local translated = clean
     -- 动词前缀
     translated = string.gsub(translated, "^Chance to ", "有一定几率")
@@ -1016,14 +1588,8 @@ EpochCN:RegisterModule("Tooltip", function(E)
     -- 数值连接
     translated = string.gsub(translated, "(%d+) to (%d+)", "%1到%2")
 
-    if translated ~= clean then
+    if translated ~= clean and not HasAsciiLetters(translated) then
       return prefix .. translated
-    end
-
-    if prefix ~= "" then
-      local result = prefix .. clean
-      CacheSetEffect(text, result)
-      return result
     end
   end
 
@@ -1064,6 +1630,38 @@ EpochCN:RegisterModule("Tooltip", function(E)
     return result
   end
 
+  local function TranslateMixedItemText(text, itemData)
+    if type(text) ~= "string" or text == "" or not HasAsciiLetters(text) then return text end
+
+    local changed
+    local lines = {}
+    for line in string.gmatch(text .. "\n", "(.-)\n") do
+      local translated = TranslateItemEffectText(line, itemData)
+      if not translated or translated == line then
+        local unquoted = StripWrappedQuotes(line)
+        if unquoted ~= line then
+          local unquotedTranslated = TranslateItemEffectText(unquoted, itemData)
+          if unquotedTranslated and unquotedTranslated ~= unquoted then
+            translated = unquotedTranslated
+          end
+        end
+      end
+
+      if translated and translated ~= line then
+        changed = true
+        table.insert(lines, translated)
+      else
+        table.insert(lines, line)
+      end
+    end
+
+    if changed then
+      return table.concat(lines, "\n")
+    end
+
+    return text
+  end
+
   local function TranslateItemEffectLines(tooltip, itemData)
     if not tooltip or not tooltip.GetName or not tooltip.NumLines then return end
     local name = tooltip:GetName()
@@ -1075,6 +1673,12 @@ EpochCN:RegisterModule("Tooltip", function(E)
       if line and line.GetText and line.SetText then
         local text = line:GetText()
         local translated = TranslateItemEffectText(text, itemData)
+        if (not translated or HasAsciiLetters(translated)) and HasAsciiLetters(text) then
+          local mixedTranslated = TranslateMixedItemText(translated or text, itemData)
+          if mixedTranslated and mixedTranslated ~= (translated or text) then
+            translated = mixedTranslated
+          end
+        end
         if translated and translated ~= text then
           line:SetText(translated)
           changed = true
@@ -1093,6 +1697,12 @@ EpochCN:RegisterModule("Tooltip", function(E)
     if line and line.GetText and line.SetText then
       local text = line:GetText()
       local translated = TranslateItemEffectText(text)
+      if (not translated or HasAsciiLetters(translated)) and HasAsciiLetters(text) then
+        local mixedTranslated = TranslateMixedItemText(translated or text)
+        if mixedTranslated and mixedTranslated ~= (translated or text) then
+          translated = mixedTranslated
+        end
+      end
       if translated and translated ~= text then
         line:SetText(translated)
         return true
@@ -1305,7 +1915,7 @@ EpochCN:RegisterModule("Tooltip", function(E)
     end
     AddItemDetails(tooltip, link)
     if data and data[2] and data[2] ~= "" then
-      tooltip:AddLine(data[2], 0.92, 0.92, 0.92, true)
+      tooltip:AddLine(TranslateMixedItemText(data[2], data), 0.92, 0.92, 0.92, true)
     end
     if EpochCNDB.showSource and data and data[3] and data[3] ~= "" then
       tooltip:AddLine("来源: " .. data[3], 0.55, 0.55, 0.55)
@@ -1342,8 +1952,8 @@ EpochCN:RegisterModule("Tooltip", function(E)
     if IsUnsafeTooltipOwner(tooltip) then return end
     if not tooltip.GetSpell then return end
 
-    local _, _, id = tooltip:GetSpell()
-    local data = E:GetSpellData(id)
+    local name, _, id = tooltip:GetSpell()
+    local data = E:GetSpellData(id) or (E.GetSpellDataByName and E:GetSpellDataByName(name))
     if data then AddTranslation(tooltip, data[1], data[2], data[3]) end
   end
 
@@ -1374,11 +1984,18 @@ EpochCN:RegisterModule("Tooltip", function(E)
     end
 
     local data = E:GetUnitData(unitID)
+    local englishName = UnitName(unit)
     if data then
-      E:RegisterEnglishUnitName(UnitName(unit), data[1])
+      E:RegisterEnglishUnitName(englishName, data[1])
       SetTooltipTitle(tooltip, data[1])
       AddTranslation(tooltip, data[1], data[2], data[3])
       SetTooltipTitle(tooltip, data[1])
+    elseif englishName and E.TranslateEnglishUnitName then
+      local translated = E:TranslateEnglishUnitName(englishName)
+      if translated and translated ~= englishName then
+        E:RegisterEnglishUnitName(englishName, translated)
+        SetTooltipTitle(tooltip, translated)
+      end
     end
   end
 

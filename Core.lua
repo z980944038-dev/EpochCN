@@ -3,10 +3,11 @@ local E = EpochCN or {}
 EpochCN = E
 
 E.name = addonName or "EpochCN"
-E.version = "0.4.48"
+E.version = "0.5.0"
 E.designLabel = "汉化组"
 E.modules = E.modules or {}
 E.moduleOrder = E.moduleOrder or {}
+E.slashHandlers = E.slashHandlers or {}
 E.raw = E.raw or {}
 E.cache = E.cache or { objective = {}, tooltip = {}, questID = {} }
 E.nameMap = E.nameMap or {}
@@ -48,6 +49,7 @@ local defaults = {
   showSource = false,
   minimapButtonHide = false,
   minimapButtonAngle = 225,
+  forceChineseClientLocale = true,
   updateCheck = true,  -- 自动检查新版本（通过公会/队伍广播）
   debug = false,
   mapIconDefaultsVersion = "",
@@ -68,6 +70,21 @@ local function MergeDefaults(target, source)
   end
   return target
 end
+
+function E:ApplyClientLocalePreference()
+  local enabled = true
+  if EpochCNDB and EpochCNDB.forceChineseClientLocale ~= nil then
+    enabled = EpochCNDB.forceChineseClientLocale and true or false
+  end
+
+  if enabled then
+    GAME_LOCALE = "zhCN"
+  elseif GAME_LOCALE == "zhCN" then
+    GAME_LOCALE = nil
+  end
+end
+
+E:ApplyClientLocalePreference()
 
 local function DisableMapIconDefaults(target)
   if not target or target.mapIconDefaultsVersion == "0.4.47" then return end
@@ -107,6 +124,17 @@ function E:RegisterSlashCommands()
   SLASH_EPOCHCN2 = "/epochcn"
   SlashCmdList["EPOCHCN"] = function(msg)
     msg = string.lower(msg or "")
+
+    for _, handler in ipairs(E.slashHandlers or {}) do
+      local ok, handled = pcall(handler, msg)
+      if ok and handled then
+        return
+      end
+      if not ok then
+        E:Debug("斜杠命令扩展执行失败: " .. tostring(handled))
+      end
+    end
+
     if msg == "" or msg == "config" or msg == "options" or msg == "settings" then
       if E.ToggleSettingsPanel then
         E:ToggleSettingsPanel()
@@ -159,6 +187,11 @@ function E:RegisterSlashCommands()
   end
 end
 
+function E:RegisterSlashHandler(handler)
+  if type(handler) ~= "function" then return end
+  table.insert(self.slashHandlers, handler)
+end
+
 function E:RegisterModule(name, init)
   if not self.modules[name] then
     table.insert(self.moduleOrder, name)
@@ -185,6 +218,7 @@ function E:LoadSeedData()
   if LoadTPCNSpellDataSeason then LoadTPCNSpellDataSeason() end
   if LoadTPCNSpellDataEpoch then LoadTPCNSpellDataEpoch() end
   if LoadTPCNSpellData52 then LoadTPCNSpellData52() end
+  if LoadEpochCNSpellRawData then LoadEpochCNSpellRawData() end
   if LoadTPCNGlobalData then LoadTPCNGlobalData() end
   if LoadTPCNCallBoardData then LoadTPCNCallBoardData() end
   if LoadTPCNItemData then LoadTPCNItemData() end
@@ -210,6 +244,16 @@ function E:BuildLookupTables()
   -- ============================================================
   local function SanitizeDBCTokens(text)
     if type(text) ~= "string" or text == "" then return text end
+    -- 先把最常见的 DBC token 片段替换成可读占位，避免清除后留下“冷却时间秒”之类残句。
+    text = string.gsub(text, "%d%d%d%d+m%d+/[%-%d%.]+秒", "若干秒")
+    text = string.gsub(text, "m%d+/[%-%d%.]+秒", "若干秒")
+    text = string.gsub(text, "/%d*%.?%d*;[sS]%d+秒", "若干秒")
+    text = string.gsub(text, "%d%d%d%d%d+[sS]%d+%%", "一定百分比")
+    text = string.gsub(text, "[sS]%d+%%", "一定百分比")
+    text = string.gsub(text, "%d%d%d%d%d+[hH]%%", "一定几率")
+    text = string.gsub(text, "[hH]%%", "一定几率")
+    text = string.gsub(text, "%d%d%d%d%d+d", "一段时间")
+
     -- 移除 法术ID前缀+m/除数 组合，如 "54928m1/1000"、"1144440m2/-1000.2"
     text = string.gsub(text, "%d%d%d%d+m%d+/[%-%d%.]*", "")
     -- 移除独立的 mX/除数 公式，如 "m1/1000"、"m2/1000.1"
@@ -227,6 +271,8 @@ function E:BuildLookupTables()
     -- 移除独立的 @req:xxx@ 前置条件标记
     text = string.gsub(text, "@req:%d+@%s*\n?", "")
     text = string.gsub(text, "@req:[^@]+@%s*\n?", "")
+    -- 裸 % 在这批数据里通常表示未解析的百分比占位；补成可读中文，避免出现“提高%”。
+    text = string.gsub(text, "([^%d])%%", "%1一定百分比")
     -- 移除孤立的小写 s/S/h/d 百分号，如 "h%"、"S2%" 在无对应数字时
     text = string.gsub(text, "([^%a%d])[hHsSdDaAm][%d]?%%", "%1")
     -- 修复 token 被清除后留下的"孤立单位"残留：
@@ -267,13 +313,30 @@ function E:BuildLookupTables()
     end
   end
 
+  local function RegisterSpellText(id, data)
+    if not data or not data[1] then return end
+
+    self.spellTextByName[data[1]] = data
+
+    local raw = EpochCN_SpellRawData and EpochCN_SpellRawData[id]
+    local rawName = raw and raw[1]
+    if type(rawName) == "string" and rawName ~= "" then
+      self.spellTextByName[rawName] = data
+      self.localizedTextByRaw[rawName] = data[1]
+
+      local rawRank = raw[2]
+      if type(rawRank) == "string" and rawRank ~= "" then
+        self.spellTextByName[rawName .. " " .. rawRank] = data
+        self.localizedTextByRaw[rawName .. " " .. rawRank] = data[1]
+      end
+    end
+  end
+
   local sources = { TPCN_SpellData_Epoch, TPCN_SpellData_Season, TPCN_SpellData_52 }
   for _, source in pairs(sources) do
     if source then
-      for _, data in pairs(source) do
-        if data and data[1] then
-          self.spellTextByName[data[1]] = data
-        end
+      for id, data in pairs(source) do
+        RegisterSpellText(id, data)
       end
     end
   end
@@ -310,6 +373,22 @@ function E:BuildLookupTables()
     RegPfEnglish(pfDB["quests"]["enUS-epoch"])
     RegPfEnglish(pfDB["quests"]["enUS"])
   end
+
+  -- 物品名计数表：在启动时预构建，避免第一次 Tooltip 悬停时才触发全量扫表
+  self.itemNameCountsBuilt = true
+  self.itemNameCounts = {}
+  local function CountItemNames(source)
+    if type(source) ~= "table" then return end
+    for _, entry in pairs(source) do
+      local name = entry and entry[1]
+      if type(name) == "string" and name ~= "" then
+        self.itemNameCounts[name] = (self.itemNameCounts[name] or 0) + 1
+      end
+    end
+  end
+  CountItemNames(TPCN_ItemData)
+  CountItemNames(EpochCN_ItemOverlayData)
+  CountItemNames(EpochCN_ConsumableData)
 end
 
 function E:NormalizeDisplayText(text)
@@ -405,6 +484,22 @@ function E:GetSpellData(id)
   if TPCN_SpellData_52 and TPCN_SpellData_52[id] then return TPCN_SpellData_52[id] end
 end
 
+function E:GetSpellDataByName(name)
+  if type(name) ~= "string" or name == "" or not self.spellTextByName then return end
+  name = string.gsub(name, "|c%x%x%x%x%x%x%x%x(.-)|r", "%1")
+  name = string.gsub(name, "|r", "")
+  name = string.gsub(name, "\r", " ")
+  name = string.gsub(name, "\n", " ")
+  name = string.gsub(name, "%s+", " ")
+  name = string.gsub(name, "^%s+", "")
+  name = string.gsub(name, "%s+$", "")
+  if name == "" then return end
+
+  return self.spellTextByName[name]
+    or self.spellTextByName[string.gsub(name, "%s+Rank%s+%d+$", "")]
+    or self.spellTextByName[string.gsub(name, "%s+等级%s*%d+$", "")]
+end
+
 function E:GetItemData(id)
   id = tonumber(id)
   if not id then return end
@@ -435,7 +530,7 @@ function E:GetItemData(id)
     overlay = consumable or overlay
   end
   if overlay and base then
-    return {
+    overlay = {
       overlay[1] and overlay[1] ~= "" and overlay[1] or base[1],
       overlay[2] and overlay[2] ~= "" and overlay[2] or base[2],
       overlay[3] and overlay[3] ~= "" and overlay[3] or base[3],
@@ -444,16 +539,489 @@ function E:GetItemData(id)
       overlay[6],
     }
   end
-  return overlay or base
+
+  local data = overlay or base
+  if not data then return end
+
+  self.cache = self.cache or {}
+  self.cache.itemData = self.cache.itemData or {}
+  if self.cache.itemData[id] then
+    return self.cache.itemData[id]
+  end
+
+  -- itemNameCounts 已在 BuildLookupTables 预构建，此处无需再扫表
+  local name = data[1]
+  if type(name) == "string"
+    and name ~= ""
+    and string.find(name, "[A-Za-z]")
+    and not string.find(name, "[\128-\255]")
+    and EpochCN_ItemNameMap
+    and EpochCN_ItemNameMap[name]
+    and EpochCN_ItemNameMap[name] ~= name
+    and self.itemNameCounts
+    and self.itemNameCounts[name] == 1
+  then
+    local resolved = {
+      EpochCN_ItemNameMap[name],
+      data[2],
+      data[3],
+      data[4],
+      data[5],
+      data[6],
+    }
+    self.cache.itemData[id] = resolved
+    return resolved
+  end
+
+  self.cache.itemData[id] = data
+  return data
 end
 
 function E:GetUnitData(id)
   id = tonumber(id)
   if not id then return end
+  local data
   if EpochCN_Overrides and EpochCN_Overrides.units and EpochCN_Overrides.units[id] then
-    return EpochCN_Overrides.units[id]
+    data = EpochCN_Overrides.units[id]
+  else
+    data = TPCN_UnitData and TPCN_UnitData[id]
   end
-  return TPCN_UnitData and TPCN_UnitData[id]
+  if not data then return end
+
+  self.cache = self.cache or {}
+  self.cache.unitData = self.cache.unitData or {}
+  if self.cache.unitData[id] then
+    return self.cache.unitData[id]
+  end
+
+  local name = data[1]
+  if type(name) == "string"
+    and name ~= ""
+    and string.find(name, "[A-Za-z]")
+    and not string.find(name, "[\128-\255]")
+  then
+    local translated = self.TranslateEnglishUnitName and self:TranslateEnglishUnitName(name)
+    if translated and translated ~= name then
+      local resolved = {
+        translated,
+        data[2],
+        data[3],
+        data[4],
+        data[5],
+        data[6],
+      }
+      self.cache.unitData[id] = resolved
+      if self.RegisterEnglishUnitName then
+        self:RegisterEnglishUnitName(name, translated)
+      end
+      return resolved
+    end
+    return data
+  end
+
+  self.cache.unitData[id] = data
+  return data
+end
+
+local englishUnitWordMap = {
+  ["Alliance"] = "联盟",
+  ["Horde"] = "部落",
+  ["Apprentice"] = "学徒",
+  ["Journeyman"] = "熟练工",
+  ["Adept"] = "大师",
+  ["Trainer"] = "训练师",
+  ["Vendor"] = "商人",
+  ["Merchant"] = "商贩",
+  ["Quartermaster"] = "军需官",
+  ["Innkeeper"] = "旅店老板",
+  ["Barkeep"] = "酒保",
+  ["Flight Master"] = "飞行管理员",
+  ["Auctioneer"] = "拍卖师",
+  ["Banker"] = "银行家",
+  ["Bouncer"] = "保镖",
+  ["Recruit"] = "新兵",
+  ["Footman"] = "步兵",
+  ["Guard"] = "卫兵",
+  ["Guardian"] = "守护者",
+  ["Sentinel"] = "哨兵",
+  ["Scout"] = "侦察兵",
+  ["Warrior"] = "战士",
+  ["Priest"] = "牧师",
+  ["Mage"] = "法师",
+  ["Shaman"] = "萨满",
+  ["Rogue"] = "潜行者",
+  ["Hunter"] = "猎人",
+  ["Warlock"] = "术士",
+  ["Paladin"] = "圣骑士",
+  ["Druid"] = "德鲁伊",
+  ["Deathguard"] = "死亡卫士",
+  ["Lieutenant"] = "副队长",
+  ["Captain"] = "队长",
+  ["Marshal"] = "治安官",
+  ["Commander"] = "指挥官",
+  ["General"] = "将军",
+  ["Sergeant"] = "中士",
+  ["Corporal"] = "下士",
+  ["Champion"] = "勇士",
+  ["Chieftain"] = "酋长",
+  ["Warlord"] = "督军",
+  ["Overseer"] = "监工",
+  ["Foreman"] = "工头",
+  ["Peasant"] = "农夫",
+  ["Worker"] = "工人",
+  ["Peon"] = "苦工",
+  ["Miner"] = "矿工",
+  ["Thug"] = "暴徒",
+  ["Bandit"] = "强盗",
+  ["Cutthroat"] = "刺客",
+  ["Brute"] = "暴徒",
+  ["Spirit Healer"] = "灵魂医者",
+  ["Spellcaster"] = "施法者",
+  ["Geomancer"] = "风水师",
+  ["Necromancer"] = "通灵师",
+  ["Summoner"] = "召唤师",
+  ["Healer"] = "治疗者",
+  ["Berserker"] = "狂战士",
+  ["Assassin"] = "刺客",
+  ["Archer"] = "射手",
+  ["Gunner"] = "枪手",
+  ["Raider"] = "袭击者",
+  ["Rider"] = "骑手",
+  ["Forager"] = "觅食者",
+  ["Reaver"] = "劫掠者",
+  ["Enforcer"] = "打手",
+  ["Thief"] = "盗贼",
+  ["Looter"] = "掠夺者",
+  ["Ambusher"] = "伏击者",
+  ["Defender"] = "防御者",
+  ["Warmaster"] = "统帅",
+  ["Surveyor"] = "勘测员",
+  ["Explorer"] = "探险者",
+  ["Veteran"] = "老兵",
+  ["Seasoned"] = "老练的",
+  ["Stalker"] = "潜伏者",
+  ["Watcher"] = "守望者",
+  ["Sentry"] = "哨兵",
+  ["Keeper"] = "守护者",
+  ["Weaver"] = "编织者",
+  ["Constructor"] = "构造者",
+  ["Executioner"] = "行刑者",
+  ["Vanquisher"] = "征服者",
+  ["Chronomancer"] = "时空法师",
+  ["Invader"] = "入侵者",
+  ["Spellbreaker"] = "破法者",
+  ["Binder"] = "缚法者",
+  ["Mercenary"] = "雇佣兵",
+  ["Soldier"] = "士兵",
+  ["Prisoner"] = "囚犯",
+  ["Refugee"] = "难民",
+  ["Slave"] = "奴隶",
+  ["Steed"] = "战马",
+  ["Rhino"] = "犀牛",
+  ["Fox"] = "狐狸",
+  ["Gnoll"] = "豺狼人",
+  ["Murloc"] = "鱼人",
+  ["Kobold"] = "狗头人",
+  ["Ogre"] = "食人魔",
+  ["Satyr"] = "萨特",
+  ["Harpy"] = "鹰身人",
+  ["Centaur"] = "半人马",
+  ["Naga"] = "纳迦",
+  ["Raptor"] = "迅猛龙",
+  ["Dragonkin"] = "龙人",
+  ["Dragonspawn"] = "龙人",
+  ["Whelp"] = "雏龙",
+  ["Whelpling"] = "雏龙",
+  ["Drake"] = "幼龙",
+  ["Dragon"] = "龙",
+  ["Demon"] = "恶魔",
+  ["Imp"] = "小鬼",
+  ["Felhunter"] = "魔犬",
+  ["Succubus"] = "魅魔",
+  ["Voidwalker"] = "虚空行者",
+  ["Infernal"] = "地狱火",
+  ["Skeleton"] = "骷髅",
+  ["Zombie"] = "僵尸",
+  ["Ghoul"] = "食尸鬼",
+  ["Abomination"] = "憎恶",
+  ["Banshee"] = "女妖",
+  ["Ghost"] = "幽灵",
+  ["Soul"] = "灵魂",
+  ["Void"] = "虚空",
+  ["Portal"] = "传送门",
+  ["Troll"] = "巨魔",
+  ["Defias"] = "迪菲亚",
+  ["Scarlet"] = "血色",
+  ["Forsaken"] = "被遗忘者",
+  ["Bloodsail"] = "血帆",
+  ["Syndicate"] = "辛迪加",
+  ["Infinite"] = "无尽",
+  ["Frostwolf"] = "霜狼",
+  ["Stormpike"] = "雷矛",
+  ["Irondeep"] = "铁深",
+  ["Coldmine"] = "冷矿",
+  ["Skybreaker"] = "破天者",
+  ["Kor'kron"] = "库卡隆",
+  ["Anub'ar"] = "阿努巴尔",
+  ["Drakkari"] = "达卡莱",
+  ["Scourge"] = "天灾",
+  ["Ethereal"] = "虚灵",
+  ["Riverpaw"] = "河爪",
+  ["Forest Troll"] = "森林巨魔",
+  ["Bronze Dragonspawn"] = "青铜龙人",
+  ["Green Dragonspawn"] = "绿龙人",
+  ["White Dragonspawn"] = "白龙人",
+  ["Blackrock"] = "黑石",
+  ["Greater"] = "强大的",
+  ["Lesser"] = "次级",
+  ["Young"] = "年幼的",
+  ["Ancient"] = "远古的",
+  ["Elder"] = "年长的",
+  ["Wounded"] = "受伤的",
+  ["Injured"] = "受伤的",
+  ["Dying"] = "垂死的",
+  ["Captured"] = "被俘的",
+  ["Freed"] = "获释的",
+  ["Obedient"] = "驯服的",
+  ["Juvenile"] = "幼年的",
+  ["Savage"] = "野蛮",
+  ["Fierce"] = "凶猛的",
+  ["Wild"] = "野性的",
+  ["Haunted"] = "闹鬼的",
+  ["Cursed"] = "被诅咒的",
+}
+
+local englishUnitModifierOnly = {
+  ["Greater"] = true,
+  ["Lesser"] = true,
+  ["Young"] = true,
+  ["Ancient"] = true,
+  ["Elder"] = true,
+  ["Wounded"] = true,
+  ["Injured"] = true,
+  ["Dying"] = true,
+  ["Savage"] = true,
+  ["Fierce"] = true,
+  ["Wild"] = true,
+  ["Haunted"] = true,
+  ["Cursed"] = true,
+}
+
+local englishObjectWordMap = {
+  ["Wooden Cage"] = "木制牢笼",
+  ["Prison Cage"] = "囚笼",
+  ["Treasure Chest"] = "宝箱",
+  ["Supply Crate"] = "补给箱",
+  ["Stone Obelisk"] = "石制方尖碑",
+  ["Ritual Altar"] = "仪式祭坛",
+  ["Ancient Brazier"] = "古代火盆",
+  ["Dark Portal"] = "黑暗之门",
+  ["Ancient Shrine"] = "远古神龛",
+  ["Stone Tablet"] = "石碑",
+  ["Wooden"] = "木制",
+  ["Stone"] = "石制",
+  ["Ancient"] = "远古的",
+  ["Old"] = "旧的",
+  ["Broken"] = "破损的",
+  ["Damaged"] = "损坏的",
+  ["Supply"] = "补给",
+  ["Treasure"] = "宝藏",
+  ["Prison"] = "囚禁",
+  ["Ritual"] = "仪式",
+  ["Dark"] = "黑暗",
+  ["Arcane"] = "奥术",
+  ["Rune"] = "符文",
+  ["Cage"] = "牢笼",
+  ["Chest"] = "箱子",
+  ["Crate"] = "箱",
+  ["Obelisk"] = "方尖碑",
+  ["Brazier"] = "火盆",
+  ["Altar"] = "祭坛",
+  ["Shrine"] = "神龛",
+  ["Relic"] = "圣物",
+  ["Banner"] = "旗帜",
+  ["Barrel"] = "桶",
+  ["Totem"] = "图腾",
+  ["Statue"] = "雕像",
+  ["Tablet"] = "石碑",
+  ["Crystal"] = "水晶",
+  ["Orb"] = "宝珠",
+  ["Torch"] = "火把",
+  ["Portal"] = "传送门",
+}
+
+local englishObjectModifierOnly = {
+  ["Wooden"] = true,
+  ["Stone"] = true,
+  ["Ancient"] = true,
+  ["Old"] = true,
+  ["Broken"] = true,
+  ["Damaged"] = true,
+  ["Supply"] = true,
+  ["Treasure"] = true,
+  ["Prison"] = true,
+  ["Ritual"] = true,
+  ["Dark"] = true,
+  ["Arcane"] = true,
+  ["Rune"] = true,
+}
+
+local function HasCJK(text)
+  return type(text) == "string" and string.find(text, "[\128-\255]") ~= nil
+end
+
+function E:TranslateEnglishUnitName(english)
+  if type(english) ~= "string" or english == "" then return nil end
+  english = self.NormalizeDisplayText and self:NormalizeDisplayText(english) or english
+  if not english or english == "" or HasCJK(english) or not string.find(english, "[A-Za-z]") then return nil end
+
+  if self.nameMap and self.nameMap[english] then return self.nameMap[english] end
+  if EpochCN_Overrides and EpochCN_Overrides.englishUnits and EpochCN_Overrides.englishUnits[english] then
+    return EpochCN_Overrides.englishUnits[english]
+  end
+  if EpochCN_ObjectiveNameData and EpochCN_ObjectiveNameData[english] then
+    return EpochCN_ObjectiveNameData[english]
+  end
+
+  local lower = string.lower(english)
+  if string.find(lower, "placeholder", 1, true)
+    or string.find(lower, "dummy", 1, true)
+    or string.find(lower, "trigger", 1, true)
+    or string.find(lower, "bunny", 1, true)
+    or string.find(lower, "target", 1, true)
+    or string.find(lower, "credit", 1, true)
+    or string.find(lower, "marker", 1, true)
+    or string.find(lower, "visual", 1, true)
+    or string.find(lower, "controller", 1, true)
+    or string.find(lower, "event", 1, true)
+    or string.find(lower, "proxy", 1, true)
+    or string.find(lower, "transform", 1, true)
+    or string.find(lower, "invisible", 1, true)
+    or string.find(lower, "invis", 1, true)
+    or string.find(lower, "dnd", 1, true)
+    or string.find(lower, "only gm can see it", 1, true)
+    or string.find(lower, "test", 1, true)
+    or string.find(lower, "unused", 1, true)
+    or string.find(lower, "deprecated", 1, true)
+    or string.find(english, "<", 1, true)
+    or string.find(english, "[", 1, true)
+  then
+    return nil
+  end
+
+  local parts = {}
+  for token in string.gmatch(english, "[A-Za-z][A-Za-z'%-]*") do
+    table.insert(parts, token)
+  end
+  if #parts == 0 then return nil end
+
+  local translatedParts = {}
+  local usedWords = {}
+  local index = 1
+  while index <= #parts do
+    local matched = false
+    for length = math.min(3, #parts - index + 1), 1, -1 do
+      local phrase = table.concat(parts, " ", index, index + length - 1)
+      local translated = englishUnitWordMap[phrase]
+      if translated then
+        table.insert(translatedParts, translated)
+        table.insert(usedWords, phrase)
+        index = index + length
+        matched = true
+        break
+      end
+    end
+    if not matched then
+      return nil
+    end
+  end
+
+  local hasNonModifier = false
+  for _, word in ipairs(usedWords) do
+    if not englishUnitModifierOnly[word] then
+      hasNonModifier = true
+      break
+    end
+  end
+  if not hasNonModifier then return nil end
+
+  return table.concat(translatedParts)
+end
+
+function E:TranslateEnglishObjectName(english)
+  if type(english) ~= "string" or english == "" then return nil end
+  english = self.NormalizeDisplayText and self:NormalizeDisplayText(english) or english
+  if not english or english == "" or HasCJK(english) or not string.find(english, "[A-Za-z]") then return nil end
+
+  if EpochCN_ObjectiveNameData and EpochCN_ObjectiveNameData[english] then
+    return EpochCN_ObjectiveNameData[english]
+  end
+
+  local lower = string.lower(english)
+  if string.find(lower, "placeholder", 1, true)
+    or string.find(lower, "dummy", 1, true)
+    or string.find(lower, "trigger", 1, true)
+    or string.find(lower, "bunny", 1, true)
+    or string.find(lower, "target", 1, true)
+    or string.find(lower, "credit", 1, true)
+    or string.find(lower, "marker", 1, true)
+    or string.find(lower, "visual", 1, true)
+    or string.find(lower, "controller", 1, true)
+    or string.find(lower, "event", 1, true)
+    or string.find(lower, "proxy", 1, true)
+    or string.find(lower, "transform", 1, true)
+    or string.find(lower, "invisible", 1, true)
+    or string.find(lower, "invis", 1, true)
+    or string.find(lower, "dnd", 1, true)
+    or string.find(lower, "spawner", 1, true)
+    or string.find(lower, "waypoint", 1, true)
+    or string.find(lower, "only gm can see it", 1, true)
+    or string.find(lower, "test", 1, true)
+    or string.find(lower, "unused", 1, true)
+    or string.find(lower, "deprecated", 1, true)
+    or string.find(english, "<", 1, true)
+    or string.find(english, "[", 1, true)
+  then
+    return nil
+  end
+
+  local parts = {}
+  for token in string.gmatch(english, "[A-Za-z][A-Za-z'%-]*") do
+    table.insert(parts, token)
+  end
+  if #parts == 0 then return nil end
+
+  local translatedParts = {}
+  local usedWords = {}
+  local index = 1
+  while index <= #parts do
+    local matched = false
+    for length = math.min(3, #parts - index + 1), 1, -1 do
+      local phrase = table.concat(parts, " ", index, index + length - 1)
+      local translated = englishObjectWordMap[phrase]
+      if translated then
+        table.insert(translatedParts, translated)
+        table.insert(usedWords, phrase)
+        index = index + length
+        matched = true
+        break
+      end
+    end
+    if not matched then
+      return nil
+    end
+  end
+
+  local hasNonModifier = false
+  for _, word in ipairs(usedWords) do
+    if not englishObjectModifierOnly[word] then
+      hasNonModifier = true
+      break
+    end
+  end
+  if not hasNonModifier then return nil end
+
+  return table.concat(translatedParts)
 end
 
 function E:RegisterEnglishUnitName(english, chinese)
@@ -470,6 +1038,7 @@ end
 
 function E:Initialize()
   EpochCNDB = MergeDefaults(EpochCNDB, defaults)
+  self:ApplyClientLocalePreference()
   DisableMapIconDefaults(EpochCNDB)
   DisableAppendedTooltipDefaults(EpochCNDB)
   EpochCNCharDB = MergeDefaults(EpochCNCharDB, charDefaults)

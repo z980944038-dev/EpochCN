@@ -5,8 +5,8 @@
 ## Notes-zhCN: Project Epoch 独立中文整合：任务汉化、任务追踪、天赋技能与界面汉化，内置独立的 pfQuest 风格世界地图任务标记核心。
 ## Author: EpochCN 汉化组, Community
 ## X-Designer: EpochCN
-## Version: 0.4.48
-## SavedVariables: EpochCNDB
+## Version: 0.5.0
+## SavedVariables: EpochCNDB, GAME_LOCALE
 ## SavedVariablesPerCharacter: EpochCNCharDB
 ## DefaultState: enabled
 ## LoadOnDemand: 0
@@ -22,6 +22,7 @@ Data\MapData.lua
 Data\SpellData_52.lua
 Data\SpellData_Season.lua
 Data\SpellData_Epoch.lua
+Data\SpellRaw_Epoch.lua
 Data\ItemData.lua
 Data\ItemNameMap.lua
 Data\EpochConsumableData.lua

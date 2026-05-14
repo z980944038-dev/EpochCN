@@ -4,27 +4,48 @@ EpochCN:RegisterModule("UI", function(E)
   local mapTranslations = EpochCN_Overrides and EpochCN_Overrides.maps or {}
 
   -- ============================================================
-  -- 节流调度器：最多每 1 秒执行一次全量扫描
-  -- 如果冷却期内收到请求，延迟到冷却结束后执行（不丢弃）
+  -- 轻量调度器：同帧/短时间内的多次请求合并到下一帧执行
+  -- 避免 Blizzard 先写英文、插件 1 秒后才补中文造成的页面跳字
   -- ============================================================
   local pendingLocalize = false
   local lastLocalizeTime = 0
-  local LOCALIZE_COOLDOWN = 1.0
+  local localizeDelay = 0
+  local localizeElapsed = 0
+  local LOCALIZE_COALESCE_DELAY = 0.02
+  local LOCALIZE_MIN_INTERVAL = 0.05
 
   local scheduler = CreateFrame("Frame")
   scheduler:Hide()
   scheduler:SetScript("OnUpdate", function(self, elapsed)
+    if not pendingLocalize then
+      self:Hide()
+      return
+    end
+
+    localizeElapsed = localizeElapsed + elapsed
+    if localizeElapsed < localizeDelay then return end
+
     local now = GetTime()
-    if now - lastLocalizeTime < LOCALIZE_COOLDOWN then return end
+    if now - lastLocalizeTime < LOCALIZE_MIN_INTERVAL then return end
+
     self:Hide()
     pendingLocalize = false
+    localizeDelay = 0
+    localizeElapsed = 0
     lastLocalizeTime = now
     E:LocalizeUI()
   end)
 
-  local function ScheduleLocalize()
+  local function ScheduleLocalize(immediate)
+    if immediate then
+      localizeDelay = 0
+    elseif not pendingLocalize then
+      localizeDelay = LOCALIZE_COALESCE_DELAY
+    end
+
     if pendingLocalize then return end
     pendingLocalize = true
+    localizeElapsed = 0
     scheduler:Show()
   end
 
@@ -141,6 +162,11 @@ EpochCN:RegisterModule("UI", function(E)
     if widget and widget.SetText then widget:SetText(text) end
   end
 
+  local function ResetTranslateCache()
+    translateTextCache = {}
+    translateTextCacheSize = 0
+  end
+
   -- ============================================================
   -- 不安全框架排除列表（哈希 set，避免 18 次 string.find）
   -- ============================================================
@@ -179,6 +205,8 @@ EpochCN:RegisterModule("UI", function(E)
   -- ============================================================
   -- TranslateFontStrings：只扫描**可见**frame，减少无效遍历
   -- ============================================================
+  local LocalizeFrameNow
+
   local function TranslateFontStrings(frame, depth, visited)
     if not frame then return end
     if depth and depth > 6 then return end  -- 降低深度限制
@@ -193,7 +221,9 @@ EpochCN:RegisterModule("UI", function(E)
 
     if frame.HookScript and not frame.EpochCNUIPatched then
       frame.EpochCNUIPatched = true
-      pcall(frame.HookScript, frame, "OnShow", ScheduleLocalize)
+      pcall(frame.HookScript, frame, "OnShow", function(self)
+        LocalizeFrameNow(self)
+      end)
     end
 
     if frame.GetRegions then
@@ -215,6 +245,11 @@ EpochCN:RegisterModule("UI", function(E)
         TranslateFontStrings(child, depth + 1, visited)
       end
     end
+  end
+
+  LocalizeFrameNow = function(frame)
+    if not frame or IsUnsafeFrame(frame) then return end
+    TranslateFontStrings(frame)
   end
 
   local targets = {
@@ -255,6 +290,40 @@ EpochCN:RegisterModule("UI", function(E)
     "WorldMapFrame",
   }
 
+  local characterTabTextMap = {
+    ["Abilities"] = "技能",
+    ["Character"] = "装备",
+    ["Currency"] = "货币",
+    ["Honor"] = "荣誉",
+    ["Pet"] = "宠物",
+    ["Reputation"] = "声望",
+    ["Skills"] = "技能",
+  }
+
+  local function LocalizeCharacterTabs()
+    for i = 1, 8 do
+      local tab = getglobal("CharacterFrameTab" .. i)
+      if tab and tab.GetText and tab.SetText and (not tab.IsShown or tab:IsShown()) then
+        local text = tab:GetText()
+        local translated = characterTabTextMap[text] or TranslateText(text)
+        if translated and translated ~= text then
+          tab:SetText(translated)
+        end
+      end
+    end
+  end
+
+  local function LocalizeCharacterPanels()
+    LocalizeCharacterTabs()
+
+    for _, name in pairs({ "CharacterFrame", "SkillFrame", "ReputationFrame" }) do
+      local frame = getglobal(name)
+      if frame and (not frame.IsVisible or frame:IsVisible()) then
+        TranslateFontStrings(frame)
+      end
+    end
+  end
+
   function E:LocalizeUI()
     local glossary = EpochCN_Glossary or {}
     for name, text in pairs(glossary.ui or {}) do SetText(name, text) end
@@ -274,6 +343,8 @@ EpochCN:RegisterModule("UI", function(E)
         TranslateFontStrings(frame)
       end
     end
+
+    LocalizeCharacterTabs()
   end
 
   -- 任务日志更新时仅翻译任务相关 frame，不全量扫描所有 UI
@@ -296,6 +367,24 @@ EpochCN:RegisterModule("UI", function(E)
     hooksecurefunc("QuestLog_UpdateQuestDetails", LocalizeQuestFrames)
   end
 
+  if CharacterFrame_ShowSubFrame then
+    hooksecurefunc("CharacterFrame_ShowSubFrame", function()
+      LocalizeCharacterPanels()
+    end)
+  end
+
+  if SkillFrame_Update then
+    hooksecurefunc("SkillFrame_Update", function()
+      LocalizeCharacterPanels()
+    end)
+  end
+
+  if ReputationFrame_Update then
+    hooksecurefunc("ReputationFrame_Update", function()
+      LocalizeCharacterPanels()
+    end)
+  end
+
   local frame = CreateFrame("Frame")
   frame:RegisterEvent("ADDON_LOADED")
   frame:RegisterEvent("PLAYER_ENTERING_WORLD")
@@ -315,11 +404,22 @@ EpochCN:RegisterModule("UI", function(E)
   for _, name in pairs(targets) do
     local target = getglobal(name)
     if target and target.HookScript then
-      target:HookScript("OnShow", function()
+      target:HookScript("OnShow", function(self)
         -- 清空翻译缓存：frame 内容可能已变化
-        translateTextCache = {}
-        translateTextCacheSize = 0
-        ScheduleLocalize()
+        ResetTranslateCache()
+        LocalizeFrameNow(self)
+        ScheduleLocalize(true)
+      end)
+    end
+  end
+
+  for _, name in pairs({ "CharacterFrame", "SkillFrame", "ReputationFrame" }) do
+    local target = getglobal(name)
+    if target and target.HookScript then
+      target:HookScript("OnShow", function()
+        ResetTranslateCache()
+        LocalizeCharacterPanels()
+        ScheduleLocalize(true)
       end)
     end
   end

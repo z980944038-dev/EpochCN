@@ -141,6 +141,14 @@ EpochCN:RegisterModule("QuestLog", function(E)
       end
     end
 
+    if translated == subject and E.TranslateEnglishUnitName then
+      translated = E:TranslateEnglishUnitName(subject) or subject
+    end
+
+    if translated == subject and E.TranslateEnglishObjectName then
+      translated = E:TranslateEnglishObjectName(subject) or subject
+    end
+
     -- 3) 部分匹配兜底（仅对仍未翻译的文本，且 Overrides 表极小）
     if translated == subject and EpochCN_Overrides and EpochCN_Overrides.englishUnits then
       for english, chinese in pairs(EpochCN_Overrides.englishUnits) do
@@ -164,6 +172,116 @@ EpochCN:RegisterModule("QuestLog", function(E)
     return suffix
   end
 
+  local function StripLeadingArticle(text)
+    if not text or text == "" then return text end
+    return (string.gsub(text, "^[Tt]he%s+", "", 1))
+  end
+
+  local function TranslateObjectiveFragment(text)
+    text = Trim(StripLeadingArticle(text))
+    if not text or text == "" then return text end
+    return TranslateObjectiveSubject(text)
+  end
+
+  local objectivePrefixPatterns = {
+    {
+      "^Bring%s+(.+)%s+to%s+(.+)$",
+      function(target, receiver)
+        return "将" .. TranslateObjectiveFragment(target) .. "带给" .. TranslateObjectiveFragment(receiver)
+      end,
+    },
+    {
+      "^Deliver%s+(.+)%s+to%s+(.+)$",
+      function(target, receiver)
+        return "将" .. TranslateObjectiveFragment(target) .. "交给" .. TranslateObjectiveFragment(receiver)
+      end,
+    },
+    {
+      "^Collect%s+(.+)%s+for%s+(.+)$",
+      function(target, receiver)
+        return "为" .. TranslateObjectiveFragment(receiver) .. "收集" .. TranslateObjectiveFragment(target)
+      end,
+    },
+    {
+      "^Gather%s+(.+)%s+for%s+(.+)$",
+      function(target, receiver)
+        return "为" .. TranslateObjectiveFragment(receiver) .. "收集" .. TranslateObjectiveFragment(target)
+      end,
+    },
+    { "^Use%s+(.+)$", function(target) return "使用" .. StripLeadingArticle(target) end },
+    { "^Activate%s+(.+)$", function(target) return "激活" .. StripLeadingArticle(target) end },
+    { "^Open%s+(.+)$", function(target) return "打开" .. StripLeadingArticle(target) end },
+    { "^Inspect%s+(.+)$", function(target) return "查看" .. StripLeadingArticle(target) end },
+    { "^Escort%s+(.+)$", function(target) return "护送" .. TranslateObjectiveFragment(target) end },
+    { "^Rescue%s+(.+)$", function(target) return "营救" .. TranslateObjectiveFragment(target) end },
+    { "^Free%s+(.+)$", function(target) return "解救" .. TranslateObjectiveFragment(target) end },
+    { "^Defend%s+(.+)$", function(target) return "保卫" .. TranslateObjectiveFragment(target) end },
+    { "^Protect%s+(.+)$", function(target) return "保护" .. TranslateObjectiveFragment(target) end },
+    { "^Destroy%s+(.+)$", function(target) return "摧毁" .. TranslateObjectiveFragment(target) end },
+    { "^Speak to%s+(.+)$", function(target) return "与" .. StripLeadingArticle(target) .. "交谈" end },
+    { "^Speak with%s+(.+)$", function(target) return "与" .. StripLeadingArticle(target) .. "交谈" end },
+    { "^Talk to%s+(.+)$", function(target) return "与" .. StripLeadingArticle(target) .. "交谈" end },
+    { "^Report back to%s+(.+)$", function(target) return "回去向" .. TranslateObjectiveFragment(target) .. "复命" end },
+    { "^Report to%s+(.+)$", function(target) return "向" .. StripLeadingArticle(target) .. "复命" end },
+    { "^Return to%s+(.+)$", function(target) return "返回" .. StripLeadingArticle(target) end },
+    { "^Bring me%s+(.+)$", function(target) return "带回" .. TranslateObjectiveFragment(target) end },
+    { "^Bring%s+(.+)$", function(target) return "带回" .. StripLeadingArticle(target) end },
+    {
+      "^Retrieve%s+(.+)%s+from%s+(.+)$",
+      function(target, source)
+        return "从" .. TranslateObjectiveFragment(source) .. "处取回" .. TranslateObjectiveFragment(target)
+      end,
+    },
+    {
+      "^Recover%s+(.+)%s+from%s+(.+)$",
+      function(target, source)
+        return "从" .. TranslateObjectiveFragment(source) .. "处取回" .. TranslateObjectiveFragment(target)
+      end,
+    },
+    {
+      "^Collect%s+(.+)%s+from%s+(.+)$",
+      function(target, source)
+        return "从" .. TranslateObjectiveFragment(source) .. "处收集" .. TranslateObjectiveFragment(target)
+      end,
+    },
+    { "^Collect%s+(.+)$", function(target) return "收集" .. StripLeadingArticle(target) end },
+    { "^Gather%s+(.+)$", function(target) return "收集" .. StripLeadingArticle(target) end },
+    { "^Place%s+(.+)$", function(target) return "放置" .. StripLeadingArticle(target) end },
+  }
+
+  local function ReplaceObjectivePrefix(text)
+    if not text or text == "" then return text end
+    for _, pair in ipairs(objectivePrefixPatterns) do
+      local pattern, formatter = pair[1], pair[2]
+      local captures = { string.match(text, pattern) }
+      if #captures > 0 then
+        return formatter(unpack(captures))
+      end
+    end
+    return text
+  end
+
+  local function FindDynamicObjectiveName(text)
+    if not text or text == "" then return nil, nil end
+
+    local words = {}
+    for token in string.gmatch(text, "[A-Za-z][A-Za-z'%-]+") do
+      table.insert(words, token)
+    end
+
+    for length = math.min(5, #words), 1, -1 do
+      for startIndex = 1, #words - length + 1 do
+        local phrase = table.concat(words, " ", startIndex, startIndex + length - 1)
+        local translated = TranslateObjectiveSubject(phrase)
+        if translated and translated ~= phrase and string.find(text, phrase, 1, true) then
+          return phrase, translated
+        end
+      end
+    end
+
+    return nil, nil
+  end
+
   local function ReplaceKnownObjectiveName(text)
     if not text or not EpochCN_ObjectiveNameData then return text end
     local subject, rest = string.match(text, "^(.-)(:%s*[%-%d]+/[%-%d]+.*)$")
@@ -173,6 +291,7 @@ EpochCN:RegisterModule("QuestLog", function(E)
 
     local checked = {}
     local index = GetObjectiveNameIndex()
+    local bestEnglish, bestChinese
     for token in string.gmatch(text, "[A-Za-z][A-Za-z'%-]+") do
       local candidates = index[token]
       if candidates then
@@ -181,11 +300,21 @@ EpochCN:RegisterModule("QuestLog", function(E)
           if not checked[english] then
             checked[english] = true
             if string.find(text, english, 1, true) then
-              return PlainReplaceOnce(text, english, chinese)
+              if not bestEnglish or string.len(english) > string.len(bestEnglish) then
+                bestEnglish, bestChinese = english, chinese
+              end
             end
           end
         end
       end
+    end
+
+    local dynamicEnglish, dynamicChinese = FindDynamicObjectiveName(text)
+    if dynamicEnglish and (not bestEnglish or string.len(dynamicEnglish) > string.len(bestEnglish)) then
+      return PlainReplaceOnce(text, dynamicEnglish, dynamicChinese)
+    end
+    if bestEnglish then
+      return PlainReplaceOnce(text, bestEnglish, bestChinese)
     end
     return text
   end
@@ -332,6 +461,7 @@ EpochCN:RegisterModule("QuestLog", function(E)
           translated = string.gsub(translated, "%((Completed)%)", "(完成)")
           translated = string.gsub(translated, "%((Done)%)", "(完成)")
           translated = string.gsub(translated, "%((Failed)%)", "(失败)")
+          translated = ReplaceObjectivePrefix(translated)
           translated = ReplaceKnownObjectiveName(translated)
         end
       end
@@ -420,6 +550,7 @@ EpochCN:RegisterModule("QuestLog", function(E)
   -- 使用 CaptureRawAPI 阶段保存的原始函数，避免捕获 pfQuest 的 hook 版本
   local origGetTitleText    = E.raw.GetTitleText    or GetTitleText
   local origGetQuestText    = E.raw.GetQuestText    or GetQuestText
+  local origGetObjectiveText = E.raw.GetObjectiveText or GetObjectiveText
   local origGetProgressText = E.raw.GetProgressText or GetProgressText
   local origGetRewardText   = E.raw.GetRewardText   or GetRewardText
   local origGetGreetingText = E.raw.GetGreetingText or GetGreetingText
@@ -477,6 +608,27 @@ EpochCN:RegisterModule("QuestLog", function(E)
       if data and data[3] and data[3] ~= "" then return ReplacePlayerTokens(data[3]) end
     end
     return engText
+  end
+
+  local function TranslateObjectiveBlock(text)
+    if not text or text == "" then return text end
+    return string.gsub(text, "([^\n]+)", function(line)
+      return E:TranslateObjective(line)
+    end)
+  end
+
+  function GetObjectiveText()
+    local engText = origGetObjectiveText and origGetObjectiveText() or ""
+    local id = dialogQuestID
+    if not id and E.raw.GetCurrentQuestID then
+      local ok, v = pcall(E.raw.GetCurrentQuestID)
+      if ok and tonumber(v) and tonumber(v) > 0 then id = tonumber(v) end
+    end
+    if id then
+      local data = E:GetQuestData(id)
+      if data and data[2] and data[2] ~= "" then return ReplacePlayerTokens(data[2]) end
+    end
+    return TranslateObjectiveBlock(engText)
   end
 
   -- 替换进度文本（玩家持有任务但未完成时 NPC 说的话）
