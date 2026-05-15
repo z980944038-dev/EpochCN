@@ -3,7 +3,7 @@ local E = EpochCN or {}
 EpochCN = E
 
 E.name = addonName or "EpochCN"
-E.version = "0.5.0"
+E.version = "0.7.0"
 E.designLabel = "汉化组"
 E.modules = E.modules or {}
 E.moduleOrder = E.moduleOrder or {}
@@ -217,7 +217,6 @@ end
 function E:LoadSeedData()
   if LoadTPCNSpellDataSeason then LoadTPCNSpellDataSeason() end
   if LoadTPCNSpellDataEpoch then LoadTPCNSpellDataEpoch() end
-  if LoadTPCNSpellData52 then LoadTPCNSpellData52() end
   if LoadEpochCNSpellRawData then LoadEpochCNSpellRawData() end
   if LoadTPCNGlobalData then LoadTPCNGlobalData() end
   if LoadTPCNCallBoardData then LoadTPCNCallBoardData() end
@@ -237,6 +236,7 @@ function E:BuildLookupTables()
   self.localizedTextByRaw = self.localizedTextByRaw or {}
   self.spellTextByName = self.spellTextByName or {}
   self.questIDByTitle = self.questIDByTitle or {}
+  self.stats = self.stats or {}
 
   -- ============================================================
   -- 清洗法术数据中未解析的 DBC 公式/占位符 token
@@ -244,51 +244,82 @@ function E:BuildLookupTables()
   -- ============================================================
   local function SanitizeDBCTokens(text)
     if type(text) ~= "string" or text == "" then return text end
-    -- 先把最常见的 DBC token 片段替换成可读占位，避免清除后留下“冷却时间秒”之类残句。
-    text = string.gsub(text, "%d%d%d%d+m%d+/[%-%d%.]+秒", "若干秒")
-    text = string.gsub(text, "m%d+/[%-%d%.]+秒", "若干秒")
-    text = string.gsub(text, "/%d*%.?%d*;[sS]%d+秒", "若干秒")
-    text = string.gsub(text, "%d%d%d%d%d+[sS]%d+%%", "一定百分比")
-    text = string.gsub(text, "[sS]%d+%%", "一定百分比")
-    text = string.gsub(text, "%d%d%d%d%d+[hH]%%", "一定几率")
-    text = string.gsub(text, "[hH]%%", "一定几率")
-    text = string.gsub(text, "%d%d%d%d%d+d", "一段时间")
 
-    -- 移除 法术ID前缀+m/除数 组合，如 "54928m1/1000"、"1144440m2/-1000.2"
+    -- ============================================================
+    -- 第一阶段：移除 $ 前缀的 WoW DBC 占位符
+    -- Epoch 私服不解析中文文本中的 $ 占位符，必须在数据加载时清除
+    -- ============================================================
+
+    -- 移除 ${...} 花括号公式块，如 "${$42208m1*8}"、"${$AP*0.2+$m1}"
+    text = string.gsub(text, "%$%b{}", "")
+    -- 移除 $(...} 混合括号公式块（翻译中常见的格式错误），如 "$($RAP*0.1+$27026m1}"
+    text = string.gsub(text, "%$%(.-}", "")
+    -- 移除 $(...) 圆括号公式块，如 "$($RAP*0.2+Sm1)"
+    text = string.gsub(text, "%$%b()", "")
+    -- 移除 $lxxx:yyy; 条件复数形式，如 "$l小松饼:小松饼;"
+    text = string.gsub(text, "%$l[^;]*;", "")
+    -- 移除 $/10;s2 除法引用格式
+    text = string.gsub(text, "%$/[%d%.]+;[sSmMoOhHdDaAnNxXvVeEbBqQtT]%d*", "")
+    -- 移除 $*15;s1 乘法引用格式
+    text = string.gsub(text, "%$%*[%d%.]+;[sSmMoOhHdDaAnNxXvVeEbBqQtT]%d*", "")
+    -- 移除 $SpellID+token 引用，如 "$42208m1"、"$27026o2"、"$7922d"、"$6788d"、"$26364s1"
+    text = string.gsub(text, "%$%d+[sSmMoOhHdDaAnNxXvVeEbBqQtT]%d*", "")
+    -- 移除 $RAP、$AP 等变量引用
+    text = string.gsub(text, "%$RAP", "")
+    text = string.gsub(text, "%$AP", "")
+    -- 移除其它变量引用，如 $SPH、$rap、$HND
+    text = string.gsub(text, "%$[A-Za-z_]+%d*", "")
+    -- 移除标准单字母 token：$s1 $d $o1 $n $a1 $m1 $M1 $x1 $v $e $b1 $q1 $t1 等
+    text = string.gsub(text, "%$[sSmMoOhHdDaAnNxXvVeEbBqQtT]%d*", "")
+    -- 移除孤立 $，避免公式被部分清洗后残留
+    text = string.gsub(text, "%$", "")
+    -- 移除 $z（区域名）、$c（职业）、$g（性别）
+    text = string.gsub(text, "%$[zZcCgG]", "")
+
+    -- ============================================================
+    -- 第二阶段：清理残留的非 $ 前缀的 DBC 公式碎片
+    -- ============================================================
+
+    -- 移除 法术ID+m/除数 组合，如 "54928m1/1000"
     text = string.gsub(text, "%d%d%d%d+m%d+/[%-%d%.]*", "")
-    -- 移除独立的 mX/除数 公式，如 "m1/1000"、"m2/1000.1"
+    -- 移除独立的 mX/除数 公式
     text = string.gsub(text, "m%d+/[%-%d%.]+", "")
-    -- 移除 /除数;sX 条件引用，如 "/1000;s1"、"/1000;s2"
+    -- 移除 /除数;sX 条件引用
     text = string.gsub(text, "/%d*%.?%d*;s%d+", "")
-    -- 移除 0-mX/除数 范围公式，如 "0-m1/1000.2"
+    -- 移除 /77;10523m1、/10; 这类非 $ 前缀引用
+    text = string.gsub(text, "/%d+;%d+[A-Za-z]%d*", "")
+    text = string.gsub(text, "/%d+;[A-Za-z]%d*", "")
+    text = string.gsub(text, "/%d+;", "")
+    -- 移除 <bonus>、<percent> 这类占位符
+    text = string.gsub(text, "<[^>]+>", "")
+    -- 移除 ?s123[foo][bar] 条件片段中的控制头
+    text = string.gsub(text, "%?[A-Za-z]%d+%[([^%]]*)%]%[[^%]]*%]", "%1")
+    -- 移除 0-mX/除数 范围公式
     text = string.gsub(text, "0%-m%d+/[%d%.]+", "")
     -- 移除 5位以上法术ID+sX 法术引用
     text = string.gsub(text, "%d%d%d%d%d+s%d+", "")
-    -- 移除 dX 持续时间引用 token
+    -- 移除 5位以上法术ID+d 持续时间引用
     text = string.gsub(text, "%d%d%d%d%d+d", "")
-    -- 移除 aX 范围引用
+    -- 移除 4位以上法术ID+aX 范围引用
     text = string.gsub(text, "%d%d%d%d+a%d+", "")
-    -- 移除独立的 @req:xxx@ 前置条件标记
+    -- 移除 @req:xxx@ 前置条件标记
     text = string.gsub(text, "@req:%d+@%s*\n?", "")
     text = string.gsub(text, "@req:[^@]+@%s*\n?", "")
-    -- 裸 % 在这批数据里通常表示未解析的百分比占位；补成可读中文，避免出现“提高%”。
-    text = string.gsub(text, "([^%d])%%", "%1一定百分比")
-    -- 移除孤立的小写 s/S/h/d 百分号，如 "h%"、"S2%" 在无对应数字时
-    text = string.gsub(text, "([^%a%d])[hHsSdDaAm][%d]?%%", "%1")
-    -- 修复 token 被清除后留下的"孤立单位"残留：
-    --   "冷却时间秒。" -> "冷却时间。"
-    --   "获得%的法术" -> "获得?的法术"
-    --   "提高%。" -> "提高。"
-    text = string.gsub(text, "(%S)%%(的)", "%1%2")
-    text = string.gsub(text, "%%(的)", "%1")
-    text = string.gsub(text, "(%S)%%(，)", "%1%2")
-    text = string.gsub(text, "(%S)%%%s*。", "%1。")
+
+    -- ============================================================
+    -- 第三阶段：修复清理后的文本瑕疵
+    -- ============================================================
+
+    -- 修复孤立百分号
+    text = string.gsub(text, "([^%d])%%([，。、])", "%1%2")
+    text = string.gsub(text, "([^%d])%%$", "%1")
     -- 清理多余空格
     text = string.gsub(text, "[ \t]+", " ")
     text = string.gsub(text, "^[ \t]+", "")
     text = string.gsub(text, "[ \t]+$", "")
     return text
   end
+
 
   local function SanitizeSpellTable(tbl)
     if type(tbl) ~= "table" then return end
@@ -299,7 +330,6 @@ function E:BuildLookupTables()
     end
   end
 
-  SanitizeSpellTable(TPCN_SpellData_52)
   SanitizeSpellTable(TPCN_SpellData_Season)
   SanitizeSpellTable(TPCN_SpellData_Epoch)
 
@@ -332,7 +362,7 @@ function E:BuildLookupTables()
     end
   end
 
-  local sources = { TPCN_SpellData_Epoch, TPCN_SpellData_Season, TPCN_SpellData_52 }
+  local sources = { TPCN_SpellData_Epoch, TPCN_SpellData_Season }
   for _, source in pairs(sources) do
     if source then
       for id, data in pairs(source) do
@@ -389,6 +419,46 @@ function E:BuildLookupTables()
   CountItemNames(TPCN_ItemData)
   CountItemNames(EpochCN_ItemOverlayData)
   CountItemNames(EpochCN_ConsumableData)
+
+  -- 统计数据收集（供设置面板显示）
+  self.stats.spellCount = 0
+  self.stats.spellWithDesc = 0
+  if TPCN_SpellData_Epoch then
+    for id, data in pairs(TPCN_SpellData_Epoch) do
+      self.stats.spellCount = self.stats.spellCount + 1
+      if data[2] and data[2] ~= "" then self.stats.spellWithDesc = self.stats.spellWithDesc + 1 end
+    end
+  end
+  if TPCN_SpellData_Season then
+    for id, data in pairs(TPCN_SpellData_Season) do
+      self.stats.spellCount = self.stats.spellCount + 1
+      if data[2] and data[2] ~= "" then self.stats.spellWithDesc = self.stats.spellWithDesc + 1 end
+    end
+  end
+
+  self.stats.unitTotal = 0
+  self.stats.unitChinese = 0
+  if TPCN_UnitData then
+    for id, data in pairs(TPCN_UnitData) do
+      self.stats.unitTotal = self.stats.unitTotal + 1
+      if data[1] and string.find(data[1], "[\128-\255]") then
+        self.stats.unitChinese = self.stats.unitChinese + 1
+      end
+    end
+  end
+
+  self.stats.questTotal = 0
+  if QustCN_Data_CN then
+    for _ in pairs(QustCN_Data_CN) do self.stats.questTotal = self.stats.questTotal + 1 end
+  end
+  if EpochCN_EpochQuestData then
+    for _ in pairs(EpochCN_EpochQuestData) do self.stats.questTotal = self.stats.questTotal + 1 end
+  end
+
+  self.stats.itemNameMapTotal = 0
+  if EpochCN_ItemNameMap then
+    for _ in pairs(EpochCN_ItemNameMap) do self.stats.itemNameMapTotal = self.stats.itemNameMapTotal + 1 end
+  end
 end
 
 function E:NormalizeDisplayText(text)
@@ -481,7 +551,6 @@ function E:GetSpellData(id)
   if not id then return end
   if TPCN_SpellData_Epoch and TPCN_SpellData_Epoch[id] then return TPCN_SpellData_Epoch[id] end
   if TPCN_SpellData_Season and TPCN_SpellData_Season[id] then return TPCN_SpellData_Season[id] end
-  if TPCN_SpellData_52 and TPCN_SpellData_52[id] then return TPCN_SpellData_52[id] end
 end
 
 function E:GetSpellDataByName(name)
@@ -750,6 +819,98 @@ local englishUnitWordMap = {
   ["Void"] = "虚空",
   ["Portal"] = "传送门",
   ["Troll"] = "巨魔",
+  -- 新增：更多生物/职业/阵营
+  ["Wolf"] = "狼",
+  ["Worg"] = "座狼",
+  ["Bear"] = "熊",
+  ["Spider"] = "蜘蛛",
+  ["Scorpion"] = "蝎子",
+  ["Serpent"] = "蛇",
+  ["Basilisk"] = "石化蜥蜴",
+  ["Crocolisk"] = "鳄鱼",
+  ["Bat"] = "蝙蝠",
+  ["Owl"] = "猫头鹰",
+  ["Eagle"] = "鹰",
+  ["Hawk"] = "鹰",
+  ["Boar"] = "野猪",
+  ["Hyena"] = "土狼",
+  ["Lion"] = "狮子",
+  ["Tiger"] = "老虎",
+  ["Panther"] = "黑豹",
+  ["Gorilla"] = "猩猩",
+  ["Slime"] = "软泥怪",
+  ["Ooze"] = "软泥怪",
+  ["Elemental"] = "元素",
+  ["Golem"] = "傀儡",
+  ["Construct"] = "构造体",
+  ["Gargoyle"] = "石像鬼",
+  ["Shade"] = "暗影",
+  ["Wraith"] = "怨灵",
+  ["Treant"] = "树人",
+  ["Ravager"] = "破坏者",
+  ["Mammoth"] = "猛犸象",
+  ["Vrykul"] = "维库人",
+  -- 新增：职业/称谓
+  ["Initiate"] = "新手",
+  ["Acolyte"] = "侍僧",
+  ["Disciple"] = "门徒",
+  ["Mystic"] = "神秘者",
+  ["Seer"] = "先知",
+  ["Oracle"] = "神谕者",
+  ["Sage"] = "贤者",
+  ["Scholar"] = "学者",
+  ["Arcanist"] = "奥术师",
+  ["Conjurer"] = "魔法师",
+  ["Enchanter"] = "附魔师",
+  ["Elementalist"] = "元素师",
+  ["Knight"] = "骑士",
+  ["Crusader"] = "十字军",
+  ["Templar"] = "圣殿骑士",
+  ["Vindicator"] = "维护者",
+  ["Protector"] = "保护者",
+  ["Avenger"] = "复仇者",
+  ["Inquisitor"] = "审判官",
+  ["Grunt"] = "步兵",
+  ["Gladiator"] = "角斗士",
+  ["Monk"] = "武僧",
+  ["Sniper"] = "狙击手",
+  ["Marksman"] = "射手",
+  ["Rifleman"] = "步枪手",
+  ["Engineer"] = "工程师",
+  ["Mechanic"] = "机械师",
+  ["Tinker"] = "工匠",
+  ["Technician"] = "技师",
+  ["Alchemist"] = "炼金术士",
+  ["Apothecary"] = "药剂师",
+  ["Blacksmith"] = "铁匠",
+  ["Tailor"] = "裁缝",
+  ["Cook"] = "厨师",
+  ["Fisherman"] = "渔夫",
+  ["Farmer"] = "农夫",
+  ["Spy"] = "间谍",
+  ["Infiltrator"] = "渗透者",
+  ["Pirate"] = "海盗",
+  ["Corsair"] = "海盗",
+  ["Sailor"] = "水手",
+  ["Harbinger"] = "先驱",
+  ["Herald"] = "传令官",
+  ["Emissary"] = "使者",
+  ["Ambassador"] = "大使",
+  ["Courier"] = "信使",
+  ["Warden"] = "典狱官",
+  ["Taskmaster"] = "监工",
+  ["Archmage"] = "大法师",
+  ["Battlemage"] = "战斗法师",
+  ["Lich"] = "巫妖",
+  ["Death Knight"] = "死亡骑士",
+  ["Stable Master"] = "马厩管理员",
+  ["Weapon Master"] = "武器大师",
+  ["Battle Master"] = "战场军官",
+  ["Patroller"] = "巡逻兵",
+  ["Outrider"] = "先驱者",
+  ["Tracker"] = "追踪者",
+  ["Tamer"] = "驯兽师",
+  ["Beastmaster"] = "驯兽师",
   ["Defias"] = "迪菲亚",
   ["Scarlet"] = "血色",
   ["Forsaken"] = "被遗忘者",
@@ -789,6 +950,30 @@ local englishUnitWordMap = {
   ["Wild"] = "野性的",
   ["Haunted"] = "闹鬼的",
   ["Cursed"] = "被诅咒的",
+  -- 新增修饰词
+  ["Enraged"] = "激怒的",
+  ["Frenzied"] = "狂暴的",
+  ["Rabid"] = "疯狂的",
+  ["Diseased"] = "染病的",
+  ["Plagued"] = "被瘟疫感染的",
+  ["Corrupted"] = "被腐蚀的",
+  ["Tainted"] = "被污染的",
+  ["Withered"] = "枯萎的",
+  ["Frozen"] = "冰冻的",
+  ["Burning"] = "燃烧的",
+  ["Molten"] = "熔火",
+  ["Spectral"] = "幽灵",
+  ["Undead"] = "亡灵",
+  ["Skeletal"] = "骷髅",
+  ["Giant"] = "巨型",
+  ["Feral"] = "野性的",
+  ["Armored"] = "装甲",
+  ["Iron"] = "钢铁",
+  ["Storm"] = "风暴",
+  ["Frost"] = "冰霜",
+  ["Dark"] = "黑暗",
+  ["Twilight"] = "暮光",
+  ["Fel"] = "邪能",
 }
 
 local englishUnitModifierOnly = {
@@ -805,6 +990,33 @@ local englishUnitModifierOnly = {
   ["Wild"] = true,
   ["Haunted"] = true,
   ["Cursed"] = true,
+  ["Enraged"] = true,
+  ["Frenzied"] = true,
+  ["Rabid"] = true,
+  ["Diseased"] = true,
+  ["Plagued"] = true,
+  ["Corrupted"] = true,
+  ["Tainted"] = true,
+  ["Withered"] = true,
+  ["Frozen"] = true,
+  ["Burning"] = true,
+  ["Molten"] = true,
+  ["Spectral"] = true,
+  ["Undead"] = true,
+  ["Skeletal"] = true,
+  ["Giant"] = true,
+  ["Feral"] = true,
+  ["Armored"] = true,
+  ["Iron"] = true,
+  ["Storm"] = true,
+  ["Frost"] = true,
+  ["Dark"] = true,
+  ["Twilight"] = true,
+  ["Fel"] = true,
+  ["Captured"] = true,
+  ["Freed"] = true,
+  ["Obedient"] = true,
+  ["Juvenile"] = true,
 }
 
 local englishObjectWordMap = {

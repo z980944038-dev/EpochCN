@@ -1,0 +1,1001 @@
+﻿spell_id	priority	skill_line_ids	name_en	rank_en	description_en	tooltip_en	name_zh	rank_zh	description_zh	tooltip_zh	notes
+20032	spellbook	333	Enchant Weapon - Lifestealing		Permanently enchant a melee weapon to often steal $20004s1 life from the enemy and give it to the wielder.						
+20033	spellbook	333	Enchant Weapon - Unholy Weapon		Permanently enchant a melee weapon to sometimes grant you a bone shield that absorbs $84391s1 damage and increases your shadow resistance by $84391s2 for $84391d or until the shield breaks.						
+20034	spellbook	333	Enchant 2H Weapon - Crusader		Permanently enchant a two-handed melee weapon to often heal for 75 to 125 and increase Strength by 100 for 15 sec. when attacking in melee.						
+20035	spellbook	333	Enchant 2H Weapon - Major Spirit		Permanently enchant a two-handed melee weapon to increase Spirit by 9.						
+20036	spellbook	333	Enchant 2H Weapon - Major Intellect		Permanently enchant a two-handed melee weapon to increase Intellect by 9.						
+20037	all		Explode Orb Effect								
+20038	all		Explosion								
+20039	all		Greater Eternal Essence		Turn three lesser eternal essences into a greater one.						
+20040	all		Lesser Eternal Essence		Turn a greater eternal essence into three lesser ones.						
+20041	all		Tammra Sapling		Tammra Conjure's Gaea Seeds						
+20042	spellbook	184	Improved Blessing of Might	Rank 1	Increases the attack power bonus of your Blessing of Might by $s1%.						
+20043	spellbook	50	Aspect of the Wild	Rank 1	The hunter, group and raid members within $a1 yards take on the aspect of the wild, increasing Nature resistance by $s1.  Only one Aspect can be active at a time.	Nature resistance increased by $s1.					
+20045	spellbook	184	Improved Blessing of Might	Rank 2	Increases the attack power bonus of your Blessing of Might by $s1%.						
+20046	spellbook	184	Improved Blessing of Might	Rank 3	Increases the attack power bonus of your Blessing of Might by $s1%.						
+20047	spellbook	184	Improved Blessing of Might	Rank 4	Increases the attack power bonus of your Blessing of Might by $s1%.						
+20048	spellbook	184	Improved Blessing of Might	Rank 5	Increases the attack power bonus of your Blessing of Might by $s1%.						
+20049	spellbook	184	Vengeance	Rank 1	Gives you a $20050s1% bonus to Physical and Holy damage you deal for $20050d after dealing a critical strike from a weapon swing, spell, or ability.  This effect stacks up to $20050u times.						
+20050	spellbook	184	Vengeance		Gives you a $s1% bonus to Physical and Holy damage you deal for $d after dealing a critical strike from a weapon swing, spell, or ability.  This effect stacks up to $u times.	Physical and Holy damage increased by $s1%.					
+20051	spellbook	333	Runed Arcanite Rod		This item binds to you upon being crafted.						
+20052	spellbook	184	Vengeance		Gives you a $s1% bonus to Physical and Holy damage you deal for $d after dealing a critical strike from a weapon swing, spell, or ability.  This effect stacks up to $u times.	Physical and Holy damage increased by $s1%.					
+20053	spellbook	184	Vengeance		Gives you a $s1% bonus to Physical and Holy damage you deal for $d after dealing a critical strike from a weapon swing, spell, or ability.  This effect stacks up to $u times.	Physical and Holy damage increased by $s1%.					
+20054	all		Vengeance			Physical and Holy damage increased by $s1%.					
+20055	all		Vengeance			Physical and Holy damage increased by $s1%.					
+20056	spellbook	184	Vengeance	Rank 2	Gives you a $20052s1% bonus to Physical and Holy damage you deal for $20052d after dealing a critical strike from a weapon swing, spell, or ability.  This effect stacks up to $20052u times.						
+20057	spellbook	184	Vengeance	Rank 3	Gives you a $20053s1% bonus to Physical and Holy damage you deal for $20053d after dealing a critical strike from a weapon swing, spell, or ability.  This effect stacks up to $20053u times.						
+20058	spellbook	184	Vengeance	Rank 4	Gives you a $20054s1% bonus to Physical and Holy damage you deal for $20054d after dealing a critical strike from a weapon swing, spell, or ability.  This effect stacks up to $20054u times.						
+20059	spellbook	184	Vengeance	Rank 5	Gives you a $20055s1% bonus to Physical and Holy damage you deal for $20055d after dealing a critical strike from a weapon swing, spell, or ability.  This effect stacks up to $20055u times.						
+20060	spellbook	184	Deflection	Rank 1	Increases your Parry chance by $s1%.						
+20061	spellbook	184	Deflection	Rank 2	Increases your Parry chance by $s1%.						
+20062	spellbook	184	Deflection	Rank 3	Increases your Parry chance by $s1%.						
+20063	spellbook	184	Deflection	Rank 4	Increases your Parry chance by $s1%.						
+20064	spellbook	184	Deflection	Rank 5	Increases your Parry chance by $s1%.						
+20066	spellbook	184	Repentance		Puts the enemy target in a state of meditation, incapacitating them for up to $d.  Any damage caused will awaken the target.  Only works against Humanoids.	Incapacitated.					
+20091	spellbook	184	Improved Retribution Aura	Rank 1	Increases the damage done by your Retribution Aura by $s1%.						
+20092	spellbook	184	Improved Retribution Aura	Rank 2	Increases the damage done by your Retribution Aura by $s1%.						
+20096	spellbook	267	Anticipation	Rank 1	Increases your Defense skill by $s1.						
+20097	spellbook	267	Anticipation	Rank 2	Increases your Defense skill by $s1.						
+20098	spellbook	267	Anticipation	Rank 3	Increases your Defense skill by $s1.						
+20099	spellbook	267	Anticipation	Rank 4	Increases your Defense skill by $s1.						
+20100	spellbook	267	Anticipation	Rank 5	Increases your Defense skill by $s1.						
+20101	spellbook	184	Benediction	Rank 1	Reduces the mana cost of your Judgement and Seal spells by $s1%.						
+20102	spellbook	184	Benediction	Rank 2	Reduces the mana cost of your Judgement and Seal spells by $s1%.						
+20103	spellbook	184	Benediction	Rank 3	Reduces the mana cost of your Judgement and Seal spells by $s1%.						
+20104	spellbook	184	Benediction	Rank 4	Reduces the mana cost of your Judgement and Seal spells by $s1%.						
+20105	spellbook	184	Benediction	Rank 5	Reduces the mana cost of your Judgement and Seal spells by $s1%.						
+20111	spellbook	184	Two-Handed Weapon Specialization	Rank 1	Increases the damage you deal with two-handed melee weapons by $s1%.						
+20112	spellbook	184	Two-Handed Weapon Specialization	Rank 2	Increases the damage you deal with two-handed melee weapons by $s1%.						
+20113	spellbook	184	Two-Handed Weapon Specialization	Rank 3	Increases the damage you deal with two-handed melee weapons by $s1%.						
+20114	all		BM Only OFF								
+20115	all		BM Only ON								
+20116	spellbook	594	Consecration	Rank 2	Consecrates the land beneath the Paladin, doing $o1 Holy damage over $d to enemies who enter the area.	$s1 damage every $t1 $lsecond:seconds;.					
+20117	spellbook	184	Conviction	Rank 1	Increases your chance to get a critical strike with melee weapons by $s1%.						
+20118	spellbook	184	Conviction	Rank 2	Increases your chance to get a critical strike with melee weapons by $s1%.						
+20119	spellbook	184	Conviction	Rank 3	Increases your chance to get a critical strike with melee weapons by $s1%.						
+20120	spellbook	184	Conviction	Rank 4	Increases your chance to get a critical strike with melee weapons by $s1%.						
+20121	spellbook	184	Conviction	Rank 5	Increases your chance to get a critical strike with melee weapons by $s1%.						
+20127	spellbook	267	Redoubt	Rank 1	Damaging melee and ranged attacks against you have a $h% chance to increase your chance to block by $20128s1%.  Lasts $20128d or $20128n blocks.						
+20128	all		Redoubt			Block chance increased by $s1%.  Lasts maximum of $n  blocks.					
+20130	spellbook	267	Redoubt	Rank 2	Damaging melee and ranged attacks against you have a $h% chance to increase your chance to block by $20131s1%.  Lasts $20131d or $20131n blocks.						
+20131	all		Redoubt			Block chance increased by $s1%.  Lasts maximum of $n  blocks.					
+20132	all		Redoubt			Block chance increased by $s1%.  Lasts maximum of $n  blocks.					
+20133	all		Redoubt			Block chance increased by $s1%.  Lasts maximum of $n  blocks.					
+20134	all		Redoubt		Damaging melee and ranged attacks against you have a $h% chance to increase your chance to block by $20134s1%.  Lasts $20134d or $20134n blocks.	Block chance increased by $s1%.  Lasts maximum of $n  blocks.					
+20135	spellbook	267	Redoubt	Rank 3	Damaging melee and ranged attacks against you have a $h% chance to increase your chance to block by $20132s1%.  Lasts $20132d or $20132n blocks.						
+20136	spellbook	267	Redoubt	Rank 4	Damaging melee and ranged attacks against you have a $h% chance to increase your chance to block by $20133s1%.  Lasts $20133d or $20133n blocks.						
+20137	spellbook	267	Redoubt	Rank 5	Damaging melee and ranged attacks against you have a $h% chance to increase your chance to block by $20134s1%.  Lasts $20134d or $20134n blocks.						
+20138	spellbook	267	Improved Devotion Aura	Rank 1	Increases the armor bonus of your Devotion Aura by $s1%.						
+20139	spellbook	267	Improved Devotion Aura	Rank 2	Increases the armor bonus of your Devotion Aura by $s1%.						
+20140	spellbook	267	Improved Devotion Aura	Rank 3	Increases the armor bonus of your Devotion Aura by $s1%.						
+20141	spellbook	267	Improved Devotion Aura	Rank 4	Increases the armor bonus of your Devotion Aura by $s1%.						
+20142	spellbook	267	Improved Devotion Aura	Rank 5	Increases the armor bonus of your Devotion Aura by $s1%.						
+20143	spellbook	267	Toughness	Rank 1	Increases your armor value from items by $s1%.						
+20144	spellbook	267	Toughness	Rank 2	Increases your armor value from items by $s1%.						
+20145	spellbook	267	Toughness	Rank 3	Increases your armor value from items by $s1%.						
+20146	spellbook	267	Toughness	Rank 4	Increases your armor value from items by $s1%.						
+20147	spellbook	267	Toughness	Rank 5	Increases your armor value from items by $s1%.						
+20148	spellbook	267	Shield Specialization	Rank 1	Increases the amount of damage absorbed by your shield by $s1%.						
+20149	spellbook	267	Shield Specialization	Rank 2	Increases the amount of damage absorbed by your shield by $s1%.						
+20150	spellbook	267	Shield Specialization	Rank 3	Increases the amount of damage absorbed by your shield by $s1%.						
+20153	spellbook	354	Immolation	Rank 1	Deals Fire damage to all enemies near the caster.						
+20154	all		Seal of Righteousness	Rank 1	Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.  Only one Seal can be active on the Paladin at any one time.	Melee attacks cause an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.					
+20162	spellbook	184	Seal of the Crusader	Rank 2	Fills the Paladin with the spirit of a crusader for $d, granting $s1 melee attack power.  The Paladin also attacks $s2% faster, but deals less damage with each attack.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for $20188d, increasing Holy damage taken by up to $20188s1.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.	Melee attack power increased by $s1.  Melee attacks are $s2% faster, but deal less damage.					
+20164	spellbook	267	Seal of Justice	Rank 1	Fills the Paladin with the spirit of justice for $d, giving each melee attack a chance to stun for $20170d.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for $20184d, preventing them from fleeing.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.	Melee attacks have a chance to stun for $20170d.					
+20165	spellbook	594	Seal of Light	Rank 1	Fills the Paladin with divine light for $d, giving each melee attack a chance to heal the Paladin for $20167s1.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for $20185d, granting attacks and spells made against the judged enemy a chance of healing the attacker for $20267s1. If the attacker is at full health, they receive $84517s1% increased healing from this judgement until it successfully heals.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.	Melee attacks have a chance to heal you for $20167s1.					
+20166	spellbook	594	Seal of Wisdom	Rank 1	Fills the Paladin with divine wisdom for $d, giving each melee attack a chance to restore $20168s1 of the Paladin's mana.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for $20186d, granting attacks and spells used against the judged enemy a chance to restore $20268s1 mana to the attacker.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.	Melee attacks have a chance to restore $20168s1 mana.					
+20167	all		Seal of Light	Rank 1							
+20168	all		Seal of Wisdom	Rank 1							
+20170	all		Stun			Stunned.					
+20171	all		Summon Onyxian Whelps								
+20172	all		Summon Onyxian Whelp								
+20173	all		Raid Buff Fire								
+20174	spellbook	267	Guardian's Favor	Rank 1	Reduces the cooldown of your Hand of Protection by $/1000;s1 sec and increases the duration of your Hand of Freedom by $/1000;s2 sec.						
+20175	spellbook	267	Guardian's Favor	Rank 2	Reduces the cooldown of your Hand of Protection by $/1000;s1 sec and increases the duration of your Hand of Freedom by $/1000;s2 sec.						
+20177	spellbook	267	Reckoning	Rank 1	Gives you a $h% chance after being hit by any damaging attack that the next $20178n weapon swings within $20178d will generate an additional attack.						
+20178	all		Reckoning		Gives you a chance after being hit by any damaging attack that the next $20178n weapon swings within $20178d will generate an additional attack.	Each weapon swing generates an additional attack.					
+20179	spellbook	267	Reckoning	Rank 2	Gives you a $h% chance after being hit by any damaging attack that the next $20178n weapon swings within $20178d will generate an additional attack.						
+20180	spellbook	267	Reckoning	Rank 4	Gives you a $h% chance after being hit by any damaging attack that the next $20178n weapon swings within $20178d will generate an additional attack.						
+20181	spellbook	267	Reckoning	Rank 3	Gives you a $h% chance after being hit by any damaging attack that the next $20178n weapon swings within $20178d will generate an additional attack.						
+20182	spellbook	267	Reckoning	Rank 5	Gives you a $h% chance after being hit by any damaging attack that the next $20178n weapon swings within $20178d will generate an additional attack.						
+20184	all		Judgement of Justice	Rank 1		Cannot flee.					
+20185	spellbook	594	Judgement of Light	Rank 1		Melee attacks made against you have a chance of causing the attacker to be healed for $20267s1.					
+20186	spellbook	594	Judgement of Wisdom	Rank 1		Attacks and spells used against you have a chance of restoring $20268s1 of the attacker's mana.					
+20187	spellbook	594	Judgement of Righteousness	Rank 1							
+20188	all		Crusader Strike	Rank 2		Increases Holy damage taken by up to $s1.					
+20189	spellbook	267	Precision	Rank 1	Increases your chance to hit with melee weapons and spells by $s1%.						
+20190	spellbook	50	Aspect of the Wild	Rank 2	The hunter, group and raid members within $a1 yards take on the aspect of the wild, increasing Nature resistance by $s1.  Only one Aspect can be active at a time.	Nature resistance increased by $s1.					
+20192	spellbook	267	Precision	Rank 2	Increases your chance to hit with melee weapons and spells by $s1%.						
+20193	spellbook	267	Precision	Rank 3	Increases your chance to hit with melee weapons and spells by $s1%.						
+20194	all		Improved Blessing of Salvation	Rank 1	Increases the duration of your Blessing of Salvation by $/60000;s1 min.						
+20195	all		Improved Blessing of Salvation	Rank 2	Increases the duration of your Blessing of Salvation by $/60000;s1 min.						
+20196	spellbook	267	One-Handed Weapon Specialization	Rank 1	Increases all damage you deal when a one-handed melee weapon is equipped by $s1%.						
+20197	spellbook	267	One-Handed Weapon Specialization	Rank 2	Increases all damage you deal when a one-handed melee weapon is equipped by $s1%.						
+20198	spellbook	267	One-Handed Weapon Specialization	Rank 3	Increases all damage you deal when a one-handed melee weapon is equipped by $s1%.						
+20199	spellbook	267	One-Handed Weapon Specialization	Rank 4	Increases all damage you deal when a one-handed melee weapon is equipped by $s1%.						
+20200	spellbook	267	One-Handed Weapon Specialization	Rank 5	Increases all damage you deal when a one-handed melee weapon is equipped by $s1%.						
+20201	spellbook	164	Arcanite Rod								
+20203	all		Fire Nova		Inflicts Fire damage to nearby enemies.						
+20205	spellbook	594	Spiritual Focus	Rank 1	Gives your Flash of Light and Holy Light spells a $s1% chance to not lose casting time when you take damage.						
+20206	spellbook	594	Spiritual Focus	Rank 2	Gives your Flash of Light and Holy Light spells a $s1% chance to not lose casting time when you take damage.						
+20207	spellbook	594	Spiritual Focus	Rank 3	Gives your Flash of Light and Holy Light spells a $s1% chance to not lose casting time when you take damage.						
+20208	spellbook	594	Spiritual Focus	Rank 5	Gives your Flash of Light and Holy Light spells a $s1% chance to not lose casting time when you take damage.						
+20209	spellbook	594	Spiritual Focus	Rank 4	Gives your Flash of Light and Holy Light spells a $s1% chance to not lose casting time when you take damage.						
+20210	spellbook	594	Illumination	Rank 1	After getting a critical effect from your Flash of Light, Holy Light, or Holy Shock heal spell, gives you a $h% chance to gain mana equal to $s2% of the base cost of the spell.						
+20211	all		Lord-Commander's Nullifier		Channel at Grand Admiral Westwind once he's invoked his Protection Sphere to bring it down.  Range is $r yards.	Bringing down the Protection Sphere.					
+20212	spellbook	594	Illumination	Rank 2	After getting a critical effect from your Flash of Light, Holy Light, or Holy Shock heal spell, gives you a $h% chance to gain mana equal to $s2% of the base cost of the spell.						
+20213	spellbook	594	Illumination	Rank 3	After getting a critical effect from your Flash of Light, Holy Light, or Holy Shock heal spell, gives you a $h% chance to gain mana equal to $s2% of the base cost of the spell.						
+20214	spellbook	594	Illumination	Rank 4	After getting a critical effect from your Flash of Light, Holy Light, or Holy Shock heal spell, gives you a $h% chance to gain mana equal to $s2% of the base cost of the spell.						
+20215	spellbook	594	Illumination	Rank 5	After getting a critical effect from your Flash of Light, Holy Light, or Holy Shock heal spell, gives you a $h% chance to gain mana equal to $s2% of the base cost of the spell.						
+20216	spellbook	594	Divine Favor		When activated, gives your next Flash of Light, Holy Light, or Holy Shock spell a $s1% critical effect chance.	Critical effect chance of next Flash of Light, Holy Light, or Holy Shock spell increased by $s1%.					
+20217	spellbook	267	Blessing of Kings		Places a Blessing on the friendly target, increasing total stats by $s1% for $d.  Players may only have one Blessing on them per Paladin at any one time.	Increases stats by $s1%.					
+20218	spellbook	184	Sanctity Aura		Increases Holy damage done by party and raid members within $a1 yards by $s1%.  Players may only have one Aura on them per Paladin at any one time.	Increases Holy damage done by $s1%.					
+20219	spellbook	202	Gnomish Engineer		Allows an engineer to make fantastic, yet unreliable gnomish devices.						
+20220	all		Gnomish Engineering								
+20221	all		Goblin Engineering								
+20222	spellbook	202	Goblin Engineer		Allows an engineer to make lethal goblin devices.						
+20223	all		Magic Reflection		Causes an ally to reflect $s1% of harmful spells for $d.	$s1% chance to reflect spells.					
+20224	spellbook	594	Improved Seal of Righteousness	Rank 1	Increases the damage done by your Seal of Righteousness and Judgement of Righteousness by $s1%.						
+20225	spellbook	594	Improved Seal of Righteousness	Rank 2	Increases the damage done by your Seal of Righteousness and Judgement of Righteousness by $s1%.						
+20226	all		Aggro								
+20228	all		Pyroblast		Inflicts $s1 Fire damage to an enemy and scorches the target for an additional $s2 damage every $t2 sec. for $d.	$s2 Fire damage inflicted every $t2 sec.					
+20229	all		Blast Wave		Inflicts $s1 Fire damage to nearby enemies and reduces their movement speed by $s2% for $d.	Movement speed reduced by $s2%.					
+20230	spellbook	26	Retaliation		Instantly counterattack any enemy that strikes you in melee for $d.  Melee attacks made from behind cannot be counterattacked.  A maximum of $n attacks will cause retaliation.	Counterattacking all melee attacks.					
+20233	all		Lay on Hands	Rank 1	Gives the target of your Lay on Hands spell a $20233s1% bonus to their armor value from items for $20233d.  In addition, the cooldown for your Lay on Hands spell is reduced by $/60000;s2 min.	Armor increased by $s1%.					
+20234	spellbook	594	Improved Lay on Hands	Rank 1	Gives the target of your Lay on Hands spell a $20233s1% bonus to their armor value from items for $20233d.  In addition, the cooldown for your Lay on Hands spell is reduced by $/60000;s2 min.						
+20235	spellbook	594	Improved Lay on Hands	Rank 2	Gives the target of your Lay on Hands spell a $20236s1% bonus to their armor value from items for $20236d.  In addition, the cooldown for your Lay on Hands spell is reduced by $/60000;s2 min.						
+20236	all		Lay on Hands	Rank 2	Gives the target of your Lay on Hands spell a $20236s1% bonus to their armor value from items for $20236d.  In addition, the cooldown for your Lay on Hands spell is reduced by $/60000;s2 min.	Armor increased by $s1%.					
+20237	spellbook	594	Healing Light	Rank 1	Increases the amount healed by your Holy Light and Flash of Light spells by $s1%.						
+20238	spellbook	594	Healing Light	Rank 2	Increases the amount healed by your Holy Light and Flash of Light spells by $s1%.						
+20239	spellbook	594	Healing Light	Rank 3	Increases the amount healed by your Holy Light and Flash of Light spells by $s1%.						
+20240	all		Retaliation		Instantly counterattack any enemy that strikes you in melee for $20230d.  Melee attacks made from behind cannot be counterattacked.  A maximum of $20230n attacks will cause retaliation.						
+20243	spellbook	257	Devastate	Rank 1	Sunder the target's armor causing the Sunder Armor effect.  In addition, causes $s2% of weapon damage plus $s3 for each application of Sunder Armor on the target.  A Rogue's Expose Armor ability is considered $u stacks of Sunder Armor.  The Sunder Armor effect can stack up to $u times.	Armor decreased by $s1.					
+20244	spellbook	594	Improved Blessing of Wisdom	Rank 1	Increases the effect of your Blessing of Wisdom spell by $s1%.						
+20245	spellbook	594	Improved Blessing of Wisdom	Rank 2	Increases the effect of your Blessing of Wisdom spell by $s1%.						
+20249	spellbook	594	Improved Flash of Light	Rank 1	Increases the critical effect chance of your Flash of Light spell by $s1%.						
+20250	spellbook	594	Improved Flash of Light	Rank 2	Increases the critical effect chance of your Flash of Light spell by $s1%.						
+20251	spellbook	594	Improved Flash of Light	Rank 3	Increases the critical effect chance of your Flash of Light spell by $s1%.						
+20252	spellbook	256	Intercept	Rank 1	Charge an enemy, causing $20253s2 damage and stunning it for $20253d.						
+20253	all		Intercept Stun	Rank 1		Stunned.					
+20254	spellbook	594	Improved Concentration Aura	Rank 1	Increases the effect of your Concentration Aura by an additional $s1% and reduces the duration of any Silence or Interrupt effect used against an affected group member by $s2%.  The duration reduction does not stack with any other effects.						
+20255	spellbook	594	Improved Concentration Aura	Rank 2	Increases the effect of your Concentration Aura by an additional $s1% and reduces the duration of any Silence or Interrupt effect used against an affected group member by $s2%.  The duration reduction does not stack with any other effects.						
+20256	spellbook	594	Improved Concentration Aura	Rank 3	Increases the effect of your Concentration Aura by an additional $s1% and reduces the duration of any Silence or Interrupt effect used against an affected group member by $s2%.  The duration reduction does not stack with any other effects.						
+20257	spellbook	594	Divine Intellect	Rank 1	Increases your total Intellect by $s1%.						
+20258	spellbook	594	Divine Intellect	Rank 2	Increases your total Intellect by $s1%.						
+20259	spellbook	594	Divine Intellect	Rank 3	Increases your total Intellect by $s1%.						
+20260	spellbook	594	Divine Intellect	Rank 4	Increases your total Intellect by $s1%.						
+20261	spellbook	594	Divine Intellect	Rank 5	Increases your total Intellect by $s1%.						
+20262	spellbook	267	Divine Strength	Rank 1	Increases your total Strength by $s1%.						
+20263	spellbook	267	Divine Strength	Rank 2	Increases your total Strength by $s1%.						
+20264	spellbook	267	Divine Strength	Rank 3	Increases your total Strength by $s1%.						
+20265	spellbook	267	Divine Strength	Rank 4	Increases your total Strength by $s1%.						
+20266	spellbook	267	Divine Strength	Rank 5	Increases your total Strength by $s1%.						
+20267	all		Judgement of Light	Rank 1							
+20268	all		Judgement of Wisdom	Rank 1							
+20269	all		Enchanted Gaea Seed		Place the Gaea seed into the Gaea dirt mound.						
+20270	all		Firebolt	Rank 2	Teaches Imp Firebolt (Rank 2).						
+20271	spellbook	184	Judgement		Unleashes the energy of a Seal spell upon an enemy.  Refer to individual Seals for Judgement effect.						
+20272	all		Illumination		After getting a critical effect from your Flash of Light, Holy Light, or Holy Shock heal spell, gives you a chance to gain mana equal to a percentage of the base cost of the spell.						
+20273	all		Windsor's Inspriation DND								
+20274	all		Capturing Termites		Helps gather termites from a termite mound in Eastern Plaguelands.						
+20275	all		Windsor's Inspiration Effect DND								
+20276	all		Knockdown		Inflicts $s2 damage to an enemy and its nearest allies, stunning them for $d. Affects up to $x1 targets.	Stunned.					
+20277	all		Fist of Ragnaros		Stuns nearby enemies, rendering them unable to move or attack for $d.	Stunned.					
+20279	all		Summon Player		Summons an enemy player.						
+20280	all		Judgement of Righteousness	Rank 2							
+20281	all		Judgement of Righteousness	Rank 3							
+20282	all		Judgement of Righteousness	Rank 4							
+20283	all		Judgement of Righteousness	Rank 5							
+20284	all		Judgement of Righteousness	Rank 6							
+20285	all		Judgement of Righteousness	Rank 7							
+20286	all		Judgement of Righteousness	Rank 8							
+20287	all		Seal of Righteousness	Rank 2	Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will cause $20280s1 Holy damage to an enemy.	Melee attacks cause an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.					
+20288	all		Seal of Righteousness	Rank 3	Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will cause $20281s1 Holy damage to an enemy.	Melee attacks cause an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.					
+20289	all		Seal of Righteousness	Rank 4	Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will cause $20282s1 Holy damage to an enemy.	Melee attacks cause an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.					
+20290	all		Seal of Righteousness	Rank 5	Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will cause $20283s1 Holy damage to an enemy.	Melee attacks cause an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.					
+20291	all		Seal of Righteousness	Rank 6	Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will cause $20284s1 Holy damage to an enemy.	Melee attacks cause an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.					
+20292	all		Seal of Righteousness	Rank 7	Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will cause $20285s1 Holy damage to an enemy.	Melee attacks cause an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.					
+20293	all		Seal of Righteousness	Rank 8	Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will cause $20286s1 Holy damage to an enemy.	Melee attacks cause an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.					
+20294	all		Immolate		Inflicts $s2 Fire damage to an enemy and scorches it for an additional $s1 damage every $t1 sec. for $d.	$s1 Fire damage inflicted every $t1 sec.					
+20295	all		Lightning Bolt		Blasts an enemy with lightning, inflicting Nature damage.						
+20296	all		Flamestrike		Calls down a pillar of flame, burning all enemies in a selected area and inflicting additional damage every $t2 sec. for $d.	Fire damage inflicted every $t2 sec.					
+20297	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+20298	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+20299	all		Forked Lightning		Inflicts Nature damage to enemies in a cone in front of the caster.						
+20300	all		Crusader Strike	Rank 3		Increases Holy damage taken by up to $s1.					
+20301	all		Crusader Strike	Rank 4		Increases Holy damage taken by up to $s1.					
+20302	all		Crusader Strike	Rank 5		Increases Holy damage taken by up to $s1.					
+20303	all		Crusader Strike	Rank 6		Increases Holy damage taken by up to $s1.					
+20305	spellbook	184	Seal of the Crusader	Rank 3	Fills the Paladin with the spirit of a crusader for $d, granting $s1 melee attack power.  The Paladin also attacks $s2% faster, but deals less damage with each attack.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for $20300d, increasing Holy damage taken by up to $20300s1.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.	Melee attack power increased by $s1.  Melee attacks are $s2% faster, but deal less damage.					
+20306	spellbook	184	Seal of the Crusader	Rank 4	Fills the Paladin with the spirit of a crusader for $d, granting $s1 melee attack power.  The Paladin also attacks $s2% faster, but deals less damage with each attack.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for $20301d, increasing Holy damage taken by up to $20301s1.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.	Melee attack power increased by $s1.  Melee attacks are $s2% faster, but deal less damage.					
+20307	spellbook	184	Seal of the Crusader	Rank 5	Fills the Paladin with the spirit of a crusader for $d, granting $s1 melee attack power.  The Paladin also attacks $s2% faster, but deals less damage with each attack.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for $20302d, increasing Holy damage taken by up to $20302s1.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.	Melee attack power increased by $s1.  Melee attacks are $s2% faster, but deal less damage.					
+20308	spellbook	184	Seal of the Crusader	Rank 6	Fills the Paladin with the spirit of a crusader for $d, granting $s1 melee attack power.  The Paladin also attacks $s2% faster, but deals less damage with each attack.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for $20303d, increasing Holy damage taken by up to $20303s1.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.	Melee attack power increased by $s1.  Melee attacks are $s2% faster, but deal less damage.					
+20310	all		Stun			Stunned.					
+20311	all		Summon Player								
+20312	all		Firebolt	Rank 3	Teaches Imp Firebolt (Rank 3).						
+20313	all		Firebolt	Rank 4	Teaches Imp Firebolt (Rank 4).						
+20314	all		Firebolt	Rank 5	Teaches Imp Firebolt (Rank 5).						
+20315	all		Firebolt	Rank 6	Teaches Imp Firebolt (Rank 6).						
+20316	all		Firebolt	Rank 7	Teaches Imp Firebolt (Rank 7).						
+20317	all		Torment	Rank 2	Teaches Voidwalker Torment (Rank 2).						
+20318	all		Blood Pact	Rank 2	Teaches Imp Blood Pact (Rank 2).						
+20319	all		Blood Pact	Rank 3	Teaches Imp Blood Pact (Rank 3).						
+20320	all		Blood Pact	Rank 4	Teaches Imp Blood Pact (Rank 4).						
+20321	all		Blood Pact	Rank 5	Teaches Imp Blood Pact (Rank 5).						
+20322	all		Fire Shield	Rank 1	Teaches Imp Fire Shield (Rank 1).						
+20323	all		Fire Shield	Rank 2	Teaches Imp Fire Shield (Rank 2).						
+20324	all		Fire Shield	Rank 3	Teaches Imp Fire Shield (Rank 3).						
+20326	all		Fire Shield	Rank 4	Teaches Imp Fire Shield (Rank 4).						
+20327	all		Fire Shield	Rank 5	Teaches Imp Fire Shield (Rank 5).						
+20329	all		Phase Shift		Teaches Imp Phase Shift.						
+20330	spellbook	594	Improved Seal of Righteousness	Rank 3	Increases the damage done by your Seal of Righteousness and Judgement of Righteousness by $s1%.						
+20331	spellbook	594	Improved Seal of Righteousness	Rank 4	Increases the damage done by your Seal of Righteousness and Judgement of Righteousness by $s1%.						
+20332	spellbook	594	Improved Seal of Righteousness	Rank 5	Increases the damage done by your Seal of Righteousness and Judgement of Righteousness by $s1%.						
+20333	all		Seal of Light	Rank 2							
+20334	all		Seal of Light	Rank 3							
+20335	spellbook	184	Improved Crusader Strike	Rank 1	In addition to the normal effect, your Crusader Strike will also increase the critical strike chance of all spells and attacks made against that target by an additional $s1%.						
+20336	spellbook	184	Improved Crusader Strike	Rank 2	In addition to the normal effect, your Crusader Strike will also increase the critical strike chance of all spells and attacks made against that target by an additional $s1%.						
+20337	spellbook	184	Improved Crusader Strike	Rank 3	In addition to the normal effect, your Crusader Strike will also increase the critical strike chance of all spells and attacks made against that target by an additional $s1%.						
+20340	all		Seal of Light	Rank 4							
+20341	all		Judgement of Light	Rank 2							
+20342	all		Judgement of Light	Rank 3							
+20343	all		Judgement of Light	Rank 4							
+20344	all		Judgement of Light	Rank 2		Melee attacks made against you have a chance of causing the attacker to be healed for $20341s1.					
+20345	all		Judgement of Light	Rank 3		Melee attacks made against you have a chance of causing the attacker to be healed for $20342s1.					
+20346	all		Judgement of Light	Rank 4		Melee attacks made against you have a chance of causing the attacker to be healed for $20343s1.					
+20347	spellbook	594	Seal of Light	Rank 2	Fills the Paladin with divine light for $d, giving each melee attack a chance to heal the Paladin for $20167s1.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for $20185d, granting attacks and spells made against the judged enemy a chance of healing the attacker for $20267s1. If the attacker is at full health, they receive $84517s1% increased healing from this judgement until it successfully heals.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.	Melee attacks have a chance to heal you for $20333s1.					
+20348	spellbook	594	Seal of Light	Rank 3	Fills the Paladin with divine light for $d, giving each melee attack a chance to heal the Paladin for $20167s1.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for $20185d, granting attacks and spells made against the judged enemy a chance of healing the attacker for $20267s1. If the attacker is at full health, they receive $84517s1% increased healing from this judgement until it successfully heals.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.	Melee attacks have a chance to heal you for $20334s1.					
+20349	spellbook	594	Seal of Light	Rank 4	Fills the Paladin with divine light for $d, giving each melee attack a chance to heal the Paladin for $20167s1.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for $20185d, granting attacks and spells made against the judged enemy a chance of healing the attacker for $20267s1. If the attacker is at full health, they receive $84517s1% increased healing from this judgement until it successfully heals.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.	Melee attacks have a chance to heal you for $20340s1.					
+20350	all		Seal of Wisdom	Rank 2							
+20351	all		Seal of Wisdom	Rank 3							
+20352	all		Judgement of Wisdom	Rank 2							
+20353	all		Judgement of Wisdom	Rank 3							
+20354	all		Judgement of Wisdom	Rank 2		Attacks and spells used against you have a chance of restoring $20352s1 of the attacker's mana.					
+20355	all		Judgement of Wisdom	Rank 3		Attacks and spells used against you have a chance of restoring $20353s1 of the attacker's mana.					
+20356	spellbook	594	Seal of Wisdom	Rank 2	Fills the Paladin with divine wisdom for $d, giving each melee attack a chance to restore $20350s1 of the Paladin's mana.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for $20354d, granting attacks and spells used against the judged enemy a chance to restore $20352s1 mana to the attacker.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.	Melee attacks have a chance to restore $20350s1 mana.					
+20357	spellbook	594	Seal of Wisdom	Rank 3	Fills the Paladin with divine wisdom for $d, giving each melee attack a chance to restore $20351s1 of the Paladin's mana.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for $20355d, granting attacks and spells used against the judged enemy a chance to restore $20353s1 mana to the attacker.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.	Melee attacks have a chance to restore $20351s1 mana.					
+20358	all		Windsor Reading Tablets DND								
+20359	spellbook	594	Sanctified Light	Rank 1	Increases the critical effect chance of your Holy Light, Seal of Light, and Judgement of Light spells by $s1%.						
+20360	spellbook	594	Sanctified Light	Rank 2	Increases the critical effect chance of your Holy Light, Seal of Light, and Judgement of Light spells by $s1%.						
+20361	spellbook	594	Sanctified Light	Rank 3	Increases the critical effect chance of your Holy Light, Seal of Light, and Judgement of Light spells by $s1%.						
+20364	all		Bury Samuel's Remains		Bury at Marla's Grave.						
+20367	all		Tag: Purple Cloud								
+20368	all		Tag: Red Skulls								
+20369	all		Tag: Purple Ball								
+20370	all		Tag: Red Glow								
+20371	all		Tag: Green Glow								
+20372	all		Tag: Hearts								
+20373	all		Tag: Sleep								
+20374	all		Tag: Arrow								
+20375	spellbook	184	Seal of Command	Rank 1	Gives the Paladin a chance to deal additional Holy damage equal to $20424s1% of normal weapon damage.  Persists for 0.5 seconds when swapping to any other Seal.  Lasts $d.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing $/2;20467s1 Holy damage, $20467s1 if the target is stunned or incapacitated.	Melee attacks have a chance to deal additional Holy damage.					
+20376	all		Reduced Frost Cost								
+20377	all		Torment	Rank 3	Teaches Voidwalker Torment (Rank 3).						
+20378	all		Torment	Rank 4	Teaches Voidwalker Torment (Rank 4).						
+20379	all		Torment	Rank 5	Teaches Voidwalker Torment (Rank 5).						
+20380	all		Torment	Rank 6	Teaches Voidwalker Torment (Rank 6).						
+20381	all		Sacrifice	Rank 1	Teaches Voidwalker Sacrifice (Rank 1).						
+20382	all		Sacrifice	Rank 2	Teaches Voidwalker Sacrifice (Rank 2).						
+20383	all		Sacrifice	Rank 3	Teaches Voidwalker Sacrifice (Rank 3).						
+20384	all		Sacrifice	Rank 4	Teaches Voidwalker Sacrifice (Rank 4).						
+20385	all		Sacrifice	Rank 5	Teaches Voidwalker Sacrifice (Rank 5).						
+20386	all		Sacrifice	Rank 6	Teaches Voidwalker Sacrifice (Rank 6).						
+20387	all		Consume Shadows	Rank 1	Teaches Voidwalker Consume Shadows (Rank 1).						
+20388	all		Consume Shadows	Rank 2	Teaches Voidwalker Consume Shadows (Rank 2).						
+20389	all		Consume Shadows	Rank 3	Teaches Voidwalker Consume Shadows (Rank 3).						
+20390	all		Consume Shadows	Rank 4	Teaches Voidwalker Consume Shadows (Rank 4).						
+20391	all		Consume Shadows	Rank 5	Teaches Voidwalker Consume Shadows (Rank 5).						
+20392	all		Consume Shadows	Rank 6	Teaches Voidwalker Consume Shadows (Rank 6).						
+20393	all		Suffering	Rank 1	Teaches Voidwalker Suffering (Rank 1).						
+20394	all		Suffering	Rank 2	Teaches Voidwalker Suffering (Rank 2).						
+20395	all		Suffering	Rank 3	Teaches Voidwalker Suffering (Rank 3).						
+20396	all		Suffering	Rank 4	Teaches Voidwalker Suffering (Rank 4).						
+20397	all		Blood Pact	Rank 1	Teaches Imp Blood Pact (Rank 1).						
+20398	all		Lash of Pain	Rank 2	Teaches Succubus Lash of Pain (Rank 2).						
+20399	all		Lash of Pain	Rank 3	Teaches Succubus Lash of Pain (Rank 3).						
+20400	all		Lash of Pain	Rank 4	Teaches Succubus Lash of Pain (Rank 4).						
+20401	all		Lash of Pain	Rank 5	Teaches Succubus Lash of Pain (Rank 5).						
+20402	all		Lash of Pain	Rank 6	Teaches Succubus Lash of Pain (Rank 6).						
+20403	all		Soothing Kiss	Rank 1	Teaches Succubus Soothing Kiss (Rank 1).						
+20404	all		Soothing Kiss	Rank 2	Teaches Succubus Soothing Kiss (Rank 2).						
+20405	all		Soothing Kiss	Rank 3	Teaches Succubus Soothing Kiss (Rank 3).						
+20406	all		Soothing Kiss	Rank 4	Teaches Succubus Soothing Kiss (Rank 4).						
+20407	all		Seduction		Teaches Succubus Seduction.						
+20408	all		Lesser Invisibility		Teaches Succubus Lesser Invisibility.						
+20409	all		Lady Prestor Transforms DND								
+20410	all		Tag: Clear								
+20420	all		Fireball		Inflicts $s1 Fire damage to an enemy.						
+20424	all		Seal of Command								
+20425	spellbook	184	Judgement of Command	Rank 1							
+20426	all		Devour Magic	Rank 2	Teaches Felhunter Devour Magic (Rank 2).						
+20427	all		Devour Magic	Rank 3	Teaches Felhunter Devour Magic (Rank 3).						
+20428	all		Devour Magic	Rank 4	Teaches Felhunter Devour Magic (Rank 4).						
+20429	all		Tainted Blood	Rank 1	Teaches Felhunter Tainted Blood (Rank 1).						
+20430	all		Tainted Blood	Rank 2	Teaches Felhunter Tainted Blood (Rank 2).						
+20431	all		Tainted Blood	Rank 3	Teaches Felhunter Tainted Blood (Rank 3).						
+20432	all		Tainted Blood	Rank 4	Teaches Felhunter Tainted Blood (Rank 4).						
+20433	all		Spell Lock	Rank 1	Teaches Felhunter Spell Lock (Rank 1).						
+20434	all		Spell Lock	Rank 2	Teaches Felhunter Spell Lock (Rank 2).						
+20435	all		Paranoia		Teaches Felhunter Paranoia.						
+20436	all		Drunken Pit Crew								
+20449	all		Teleport		The caster trades place with one of $ghis:her; images.						
+20463	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+20464	all		Summon Skeleton		Summons $s1 $lSkeleton:Skeletons; to aid the caster in battle for $d.						
+20465	all		Windsor Death DND								
+20466	all		Lady Prestor Despawns DND								
+20467	spellbook	184	Judgement of Command	Rank 1							
+20468	spellbook	267	Improved Righteous Fury	Rank 1	While Righteous Fury is active, all damage taken is reduced by $s2% and increases the amount of threat generated by your Righteous Fury spell by $s1%.						
+20469	spellbook	267	Improved Righteous Fury	Rank 2	While Righteous Fury is active, all damage taken is reduced by $s2% and increases the amount of threat generated by your Righteous Fury spell by $s1%.						
+20470	spellbook	267	Improved Righteous Fury	Rank 3	While Righteous Fury is active, all damage taken is reduced by $s2% and increases the amount of threat generated by your Righteous Fury spell by $s1%.						
+20473	spellbook	594	Holy Shock	Rank 1	Blasts the target with Holy energy, causing $25912s1 Holy damage to an enemy, or $25914s1 healing to an ally.						
+20474	all		Lava Bomb		Throws a Lava Bomb at an enemy, inflicting $19428o1 Fire damage over $19428d.						
+20475	all		Living Bomb		Throws a bomb at an enemy. After $t1 sec., the bomb explodes, inflicting $20476s1 Fire damage to the target and its nearby allies.	$20476s1 Fire damage inflicted to nearby allies after $t1 sec.					
+20476	all		Explosion		Causes the target to explode, dealing $s1 Fire damage to all nearby allies.						
+20477	all		Summon Player								
+20478	all		Armageddon		Unable to move, attack, or cast spells.	Unable to move, attack, or cast spells.					
+20479	all		Armageddon								
+20480	all		Birth								
+20481	all		Garr Armor Debuff								
+20482	all		Firesworn Eruption Trigger								
+20483	all		Massive Eruption								
+20484	spellbook	573	Rebirth	Rank 1	Returns the spirit to the body, restoring a dead target to life with $s1 health and $q mana.						
+20487	spellbook	267	Improved Hammer of Justice	Rank 1	Decreases the cooldown of your Hammer of Justice spell by $/1000;s1 sec.						
+20488	spellbook	267	Improved Hammer of Justice	Rank 2	Decreases the cooldown of your Hammer of Justice spell by $/1000;s1 sec.						
+20489	spellbook	267	Improved Hammer of Justice	Rank 3	Decreases the cooldown of your Hammer of Justice spell by $/1000;s1 sec.						
+20492	all		Resonite Crystal								
+20493	all		zzOLDRitual of Doom Trigger Effect								
+20494	all		Summon Lava Bomb 1								
+20495	all		Summon Lava Bomb 2								
+20496	spellbook	256	Improved Cleave	Rank 3	Increases the bonus damage done by your Cleave ability by $s1%.						
+20500	spellbook	256	Improved Berserker Rage	Rank 1	The Berserker Rage ability will generate $/10;23690s1 rage when used.						
+20501	spellbook	256	Improved Berserker Rage	Rank 2	The Berserker Rage ability will generate $/10;23691s1 rage when used.						
+20502	spellbook	256	Improved Execute	Rank 1	Reduces the rage cost of your Execute ability by $/10;s1.						
+20503	spellbook	256	Improved Execute	Rank 2	Reduces the rage cost of your Execute ability by $/10;s1.						
+20504	spellbook	26	Weapon Mastery	Rank 1	Reduces the chance for your attacks to be dodged by $s1% and reduces the duration of all Disarm effects used against you by $s2%.  This does not stack with other Disarm duration reducing effects.						
+20505	spellbook	26	Weapon Mastery	Rank 2	Reduces the chance for your attacks to be dodged by $s1% and reduces the duration of all Disarm effects used against you by $s2%.  This does not stack with other Disarm duration reducing effects.						
+20506	all		Summon Magmakin		Summons $s1 Magmakin to aid the caster in battle for $d.						
+20507	all		Magmakin Confuse								
+20508	all		Charge		Charges an enemy, inflicting $20527s3 Fire damage to the target and any other nearby enemies, as well as knocking them all back.						
+20509	all		TEST AVATAR								
+20510	all		TEST AVATAR FORM								
+20511	all		Intimidating Shout		The warrior shouts, causing up to $5246i enemies within $5246a2 yards to cower in fear.  The targeted enemy will be unable to move while cowering.  Lasts $5246d.	Cowering in fear.					
+20512	all		Creeping Plague			$s1 nature damage inflicted every $t1 seconds					
+20513	all		Enchanted Resonite Crystal		Smash enchanted Resonite Crystal into Resonite Cask.						
+20514	all		Ruul Snowhoof Shapechange (DND)								
+20527	all		Eruption								
+20528	all		Mor'rogal Enchant		Mor'rogal Conjure's Resonite Crystals						
+20529	all		Bind Chapter 1		Bind pages 1-4 into Chapter 1 of the Shredder Operating Manual.						
+20530	all		Bind Chapter 2		Bind pages 5-8 into Chapter 2 of the Shredder Operating Manual.						
+20531	all		Bind Chapter 3		Bind pages 9-12 into Chapter 3 of the Shredder Operating Manual.						
+20532	all		Intense Heat								
+20533	all		Intense Heat								
+20534	all		Teleport		Teleports an enemy into the midst of burning coals.						
+20535	all		Lightning Breath		Breathes lightning at an enemy, inflicting Nature damage.						
+20536	all		Lightning Breath		Breathes lightning at an enemy, inflicting Nature damage.						
+20537	all		Counterspell		Counters an enemy's spell, preventing the enemy from casting that spell again for $d. Generates a high amount of threat.						
+20538	all		Hate to Zero								
+20539	all		Fatal Bite		Drains $s1 health from an enemy, healing the caster for up to twice that amount.						
+20540	all		Ashenvale Outrunner Sneak	Rank 1	Puts the caster in stealth mode, but slows its movement by $s2%. Lasts until cancelled.	Stealthed.\nMovement speed slowed by $s2%.					
+20541	all		Fetch!								
+20542	all		Static Conduit		Inflicts $s1 Nature damage to nearby enemies every $t1 sec. and increases the Nature damage they take by $s2 for $d.	$s1 Nature damage inflicted every $t1 sec.\nNature damage taken is increased by $s2.					
+20543	all		Lightning Breath		Breathes lightning at an enemy, inflicting Nature damage.						
+20544	all		Attract Rager								
+20545	all		Lightning Shield		Surrounds the caster with $n balls of lightning that have a $h% chance of striking melee or ranged attackers for Nature damage. Each time the lightning shield strikes, a ball of lightning dissipates. Thus, the shield expires after $d. or after it has struck $n times.	$h% chance of inflicting $s1 Nature damage on hit.					
+20546	all		Infernal Spawn Trigger								
+20547	all		Fun Bomb			$20476s1 Fire damage inflicted to nearby allies after $t1 sec.					
+20548	all		Root Self								
+20549	spellbook	792	War Stomp	Racial	Stuns up to $i enemies within $a1 yds for $d.	Stunned.					
+20550	spellbook	792	Endurance	Racial Passive	Total Health increased by $s1%.						
+20551	spellbook	792	Nature Resistance	Racial Passive	Nature resistance increased by $s1.						
+20552	spellbook	792	Cultivation	Racial Passive	Herbalism skill increased by $s1.						
+20553	all		Golemagg's Trust			Physical damage dealt is increased by $s1.\nAttack speed increased by $s2%.					
+20555	spellbook	792	Regeneration	Racial Passive	Health regeneration rate increased by $s1%.  $s2% of total Health regeneration may continue during combat.						
+20556	all		Golemagg's Trust								
+20557	spellbook	792	Beast Slaying	Racial Passive	Damage dealt versus Beasts increased by $s1%.						
+20558	all		Throwing Specialization	Racial Passive	Your chance to critically hit with Throwing Weapons is increased by $s1%.						
+20559	spellbook	26	Mocking Blow	Rank 4	A mocking attack that causes $s1 damage, a moderate amount of threat and forces the target to focus attacks on you for $d.	Taunted.					
+20560	spellbook	26	Mocking Blow	Rank 5	A mocking attack that causes $s1 damage, a moderate amount of threat and forces the target to focus attacks on you for $d.	Taunted.					
+20563	all		Elemental Fire								
+20564	all		Elemental Fire		Ignites the target, dealing $s1 Fire damage and $s2 Fire damage every $t2 sec for $d.	$o2 Fire damage inflicted over $d.					
+20565	all		Magma Blast		Inflicts $s1 Fire damage to an enemy.						
+20566	all		Wrath of Ragnaros		Inflicts $s1 Fire damage to nearby enemies, knocking them back.						
+20567	all		Ragnaros Submerge Visual								
+20568	all		Ragnaros Emerge								
+20569	spellbook	256	Cleave	Rank 5	A sweeping attack that does your weapon damage plus $s1 to the target and his nearest ally.						
+20570	all		Superheated Flames			$s1 Fire damage inflicted to melee attackers.					
+20572	spellbook	792	Blood Fury	Racial	Increases attack power by $s1, but reduces healing effects on you by $23230s1%.  Lasts $d.	Attack power increased by $s1.					
+20573	spellbook	792	Hardiness	Racial Passive	Chance to resist Stun effects increased by an additional $s1%.						
+20574	all		Axe Specialization	Racial Passive	Expertise with Fist Weapons, Axes and Two-Handed Axes increased by $s1.						
+20575	spellbook	792	Command	Racial Passive	Damage dealt by Hunter and Warlock pets increased by $s1%.						
+20576	spellbook	792	Command	Racial Passive	Damage dealt by Hunter and Warlock pets increased by $s1%.						
+20577	all		Cannibalize	Racial	When activated, regenerates $20578s1% of total health every $20578t1 sec for $20578d.  Only works on Humanoid or Undead corpses within $a1 yds.  Any movement, action, or damage taken while Cannibalizing will cancel the effect.						
+20578	all		Corpose Heal Trigger			Regenerate $s1% of total health every $t1 seconds.					
+20579	spellbook	792	Shadow Resistance	Racial Passive	Shadow resistance increased by $s1.						
+20582	spellbook	792	Quickness	Racial Passive	Dodge chance increased by $s1%.						
+20583	spellbook	792	Nature Resistance	Racial Passive	Nature resistance increased by $s1.						
+20584	all		Ghost			Move to the location of your corpse or speak with a spirit healer to be revived.					
+20585	spellbook	126	Wisp Spirit	Cosmetic Racial	Transform into a wisp upon death.						
+20586	all		Windreaper		Inflicts Nature damage every $t1 sec for $d.	Nature damage inflicted every $t1 sec.					
+20587	all		Ragged John's Neverending Cup		Increases Stamina by 10 and reduces physical damage taken by 5 for $d1. However, lowers Strength and Agility by 5 and increases magical damage taken by up to 20.	Powerful brew.					
+20589	spellbook	792	Escape Artist	Racial	Escape the effects of any immobilization or movement speed reduction effect.						
+20590	all		Ragged John's Neverending Cup								
+20591	spellbook	792	Expansive Mind	Racial Passive	Intellect increased by $s1%.						
+20592	spellbook	792	Arcane Resistance	Racial Passive	Arcane resistance increased by $s1.						
+20593	spellbook	792	Engineering Specialization	Racial Passive	Engineering skill increased by $s1.						
+20594	spellbook	792	Stoneform	Racial	While active, grants immunity to Bleed, Poison, and Disease effects. In addition, Armor increased by $65116s1%. Lasts $d.	Immune to Bleed, Poison, and Disease. Armor increased by $65116s1%.					
+20595	all		Gun Specialization	Racial Passive	Your chance to critically hit with Guns is increased by $s1%.						
+20596	spellbook	792	Frost Resistance	Racial Passive	Frost resistance increased by $s1.						
+20597	all		Sword Specialization	Racial Passive	Expertise with Swords and Two-Handed Swords increased by $s1.						
+20598	spellbook	792	The Human Spirit	Racial Passive	Spirit increased by $s1%.						
+20599	spellbook	792	Diplomacy	Racial Passive	You receive an additional 5% gold discount for factions with which you are Friendly or above.						
+20600	spellbook	792	Perception	Racial	Dramatically increases stealth detection for $d.	Stealth detection dramatically increased.					
+20602	all		Fire Nova		Inflicts Fire damage to nearby enemies.						
+20603	all		Shadow Shock		Instantly lashes nearby enemies with dark magic, inflicting Shadow damage.						
+20604	all		Dominate Mind		Takes control of a humanoid enemy up to level $s1 for $d.	Charmed.					
+20605	all		Cleave		Inflicts weapon damage plus $s1 to an enemy and its nearest allies, affecting up to $x1 targets.						
+20606	all		Undead Slayer 15		+$s1 Attack Power when fighting Undead.						
+20607	all		Increased Staff		Reduces your chance to be dodged or parried by $s1%.						
+20608	spellbook	374	Reincarnation	Passive	Allows you to resurrect yourself upon death with $21169s1% health and mana.						
+20609	spellbook	374	Ancestral Spirit	Rank 2	Returns the spirit to the body, restoring a dead target to life with $s1 health and $q1 mana.  Cannot be cast when in combat.						
+20610	spellbook	374	Ancestral Spirit	Rank 3	Returns the spirit to the body, restoring a dead target to life with $s1 health and $q1 mana.  Cannot be cast when in combat.						
+20614	all		Intercept Stun	Rank 2		Stunned.					
+20615	all		Intercept Stun	Rank 3		Stunned.					
+20616	spellbook	256	Intercept	Rank 2	Charge an enemy, causing $20614s2 damage and stunning it for $20614d.						
+20617	spellbook	256	Intercept	Rank 3	Charge an enemy, causing $20615s2 damage and stunning it for $20615d.						
+20618	all		Teleport		Teleports an enemy into the midst of burning coals.						
+20619	all		Magic Reflection		Causes all nearby allies to reflect $s1% of harmful spells for $d.	$s1% chance to reflect spells.					
+20620	all		Aegis of Ragnaros		Surrounds the caster with a shield woven of Shadow magic. The shield lasts $d., absorbs up to $s1 Physical or magical damage, and inflicts $s2 damage to melee attackers.	Shielded against Physical and magical damage.\n$s2 Shadow damage inflicted to melee attackers.					
+20623	all		Fire Blast		Inflicts $s1 Fire damage to an enemy.						
+20624	all		Test Mod Water Breathing (PT)								
+20625	all		Ritual of Doom Sacrifice		Sacrifices a portion of the target's health to summon a Doomguard.						
+20626	spellbook	185	Undermine Clam Chowder								
+20627	all		Lightning Breath		Breathes lightning at an enemy, inflicting Nature damage.						
+20629	all		Corrosive Venom Spit		Spits poison at an enemy, inflicting harm, reducing the target's armor, and causing additional Nature damage every $t2 sec. for $d.	Reduced armor.\nNature damage inflicted every $t2 sec.					
+20630	all		Lightning Breath		Breathes lightning at an enemy, inflicting Nature damage.						
+20631	all		Furbolg Medicine Pouch	Rank 1	Restores $s1 health every $t1 sec for $d.	Restores $s1 health every $t1 sec.					
+20647	spellbook	256	Execute		Attempt to finish off a wounded foe, causing damage and converting each extra point of rage into additional damage.  Only usable on enemies that have less than 20% health.						
+20648	spellbook	165	Medium Leather								
+20649	spellbook	165	Heavy Leather								
+20650	spellbook	165	Thick Leather								
+20654	all		Entangling Roots		Entangles nearby enemies in roots, inflicting Nature damage every $t2 sec. and immobilizing them for up to $d.	Immobilized.\nNature damage inflicted every $t2 sec.					
+20655	all		Barkskin		Heals an ally for $s2 damage every $t2 sec. and increases its armor by $s1 for $d.	Armor increased by $s1.\n$s2 damage healed every $t2 sec.					
+20656	all		Faerie Fire		Reduces an enemy's armor for $d. While affected, the target cannot use stealth or invisibility.	Armor reduced by $s1.\nCannot use stealth or invisibility.					
+20657	all		Acid Spit		Inflicts Nature damage to an enemy.						
+20658	spellbook	256	Execute	Rank 2	Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have less than 20% health.						
+20660	spellbook	256	Execute	Rank 3	Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have less than 20% health.						
+20661	spellbook	256	Execute	Rank 4	Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have less than 20% health.						
+20662	spellbook	256	Execute	Rank 5	Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have less than 20% health.						
+20663	all		Sleep		Puts an enemy to sleep for up to $d. Any damage caused will awaken the target. Only one target can be asleep at a time.	Asleep.					
+20664	all		Rejuvenation		Heals an ally every $t1 sec. for $d.	Damage healed every $t1 sec.					
+20665	all		Regrowth		Heals an ally for a fixed amount, then heals additional damage every $t2 sec. for $d.	Damage healed every $t2 sec.					
+20666	all		Cleave		Inflicts weapon damage plus additional damage to an enemy and its nearest allies, affecting up to $x1 targets and knocking them back.						
+20667	all		Corrosive Acid Breath		Shoots a cloud of acidic breath at enemies in a cone in front of the caster, reducing their armor and inflicting Nature damage every $t1 sec. for $d.	Reduced armor.\nNature damage inflicted every $t1 sec.					
+20668	all		Sleepwalk		Takes control of a humanoid enemy up to level $s1 for $d, increases the magical damage it deals by $s2, and increases the Physical damage it deals by $s3.	Charmed.\nMagical damage dealt is increased by $s2.\nPhysical damage dealt is increased by $s3.					
+20669	all		Sleep		Puts nearby enemies to sleep for up to $d. Any damage caused will awaken them.	Asleep.					
+20672	all		Fade		Turns the caster invisible and increases its movement speed by $s3% for $d.	Invisible.\nMovement speed increased by $s3%.					
+20676	all		Intense Heat								
+20677	all		Cleave		Inflicts Physical damage to an enemy and its nearest allies, affecting up to $x1 targets.						
+20678	all		Fireball		Inflicts $s1 Fire damage to an enemy.						
+20679	all		Fire Blast		Inflicts $s1 Fire damage to an enemy.						
+20680	all		Blizzard		Calls down a blizzard that lasts $d., inflicting $s1 Frost damage every $t1 sec. to all enemies in a selected area.						
+20681	all		Summon Water Elementals		Summons $s1 powerful water elementals to aid the caster.						
+20682	all		Teleport		Teleports an enemy above Theramore Harbor.						
+20683	all		Highlord's Justice		Stuns nearby enemies, rendering them unable to move or attack for $d.	Stunned.					
+20684	all		Cleave		Inflicts weapon damage plus $s1 to an enemy and its nearest allies, affecting up to $x1 targets.						
+20685	all		Storm Bolt		Throws a hammer at an enemy, inflicting $s1 Physical damage and stunning the target for $d.	Stunned.					
+20686	all		Knock Away		Inflicts normal damage plus $s1 to nearby enemies and knocks them back.						
+20687	all		Starfall		Inflicts $s1 Arcane damage to enemies in a selected area every $t1 sec. for $d.						
+20688	all		Searing Arrow		Shoots a flaming arrow at an enemy, inflicting $s1 Fire Damage.						
+20690	all		Moonfire		Inflicts $s2 Arcane damage to an enemy, then an additional $s1 damage every $t1 sec. for $d.	$s1 Arcane damage inflicted every $t1 sec.					
+20691	all		Cleave		Inflicts normal damage to an enemy and its nearest allies, affecting up to $x1 targets.						
+20692	all		Fireball		Inflicts $s1 Fire damage to an enemy.						
+20693	all		Summon Lost Amulet								
+20694	all		Holy Nova		Causes an explosion of divine light, inflicting $s1 Holy damage to nearby enemies and reducing the caster's threat level for $d.						
+20695	all		Holy Smite		Smites an enemy, inflicting $s1 Holy damage.						
+20696	all		Holy Smite		Smites an enemy, inflicting $s1 Holy damage.						
+20697	all		Power Word: Shield		Wraps the caster in a shield that lasts up to $d., absorbing a maximum of $s1 Physical or magical damage. While the shield holds, spells will not be interrupted by Physical attacks.	Shielded against Physical and magical damage.					
+20698	all		Wrath		Hurls a bolt of lightning at an enemy, inflicting $s1 Nature damage.						
+20699	all		Entangling Roots		Entangles nearby enemies in roots, inflicting $s2 Nature damage every $t2 sec. and immobilizing them for up to $d.	Immobilized.\n$s2 Nature damage inflicted every $t2 sec.					
+20700	all		Ritual of Doom								
+20701	all		Rejuvenation		Heals an ally every $t1 sec. for $d.	Damage healed every $t1 sec.					
+20702	all		Summon Treant Allies		Summons $s1 $lTreant Ally:Treant Allies; to accompany the caster until dismissed.						
+20705	all		Power Shield 500		When the victim of a critical hit in combat, $s1% chance to be sheathed in a magical shield absorbing the next $20706s1 damage.						
+20706	all		Power Word: Shield 500	Rank 7	Draws on the soul of the target to shield them, absorbing $s1 damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.	Absorbs damage.					
+20707	all		Soulstone Resurrection		Stores the friendly target's soul.  If the target dies while his soul is stored, he will be able to resurrect with $3026s1 health and $3026q1 mana.	Soul is stored.					
+20708	all		Emote State Ready								
+20709	all		Arcanite Skeleton Key		Allows opening of hard locks.  The skeleton key is consumed in the process.						
+20710	all		Inner Courage 20		+$s1% chance to resist Fear spells and effects.						
+20711	spellbook	56	Spirit of Redemption		Increases total Spirit by $s2% and upon death, the priest becomes the Spirit of Redemption for $27827d.  The Spirit of Redemption cannot move, attack, be attacked or targeted by any spells or effects.  While in this form the priest can cast any healing spell free of cost.  When the effect ends, the priest dies.						
+20712	all		Flame Breath		Inflicts $s1 Fire damage to enemies in a cone in front of the caster.						
+20713	all		The Way to His Heart...: Fished up Reef Shark								
+20714	all		Fireball		Inflicts Fire damage to an enemy.						
+20715	all		Emote - SpellCastOmni								
+20716	all		Sand Breath		Inflicts Arcane damage to enemies in a cone in front of the caster, reducing their movement and increasing the time between their attacks for $d.	Reduced movement speed.\nIncreased time between attacks.					
+20717	all		Sand Breath		Inflicts Arcane damage to enemies in a cone in front of the caster, reducing their movement and increasing the time between their attacks for $d.	Reduced movement speed.\nIncreased time between attacks.					
+20718	all		Emote - SpellCastDirected								
+20719	spellbook	134	Feline Grace	Passive	Reduces damage from falling.						
+20720	all		Arcane Bolt		Hurls a magical bolt at an enemy, inflicting Arcane damage.						
+20723	all		Tower Kill Credit								
+20725	all		Greater Dragon Slayer 25								
+20726	all		Greater Dragon Slayer 25								
+20729	spellbook	267	Hand of Sacrifice	Rank 2	Places a Hand on the party member, transfering $s1 damage taken per hit to the caster.  Lasts $d.  Players may only have one Hand on them per Paladin at any one time.	Transfers $s1 damage taken per hit to the paladin.					
+20731	all		Beast Slaying 15		Increases attack power by $s1 when fighting Beasts.						
+20732	all		Attack Power 15		+$s1 Attack Power.						
+20733	all		Black Arrow		Curses an enemy, inflicting periodic Shadow damage over $d. If the target dies while afflicted by Black Arrow, a Skeleton will be summoned from the target's corpse.	Shadow damage periodically inflicted over $d.					
+20734	all		Black Arrow								
+20735	all		Multi-Shot		Fires a volley of missiles at an enemy and its nearby allies, striking up to $x1 targets for normal damage plus $s1.						
+20736	spellbook	163	Distracting Shot	Rank 1	Distract the target, causing threat.						
+20737	all		Summon Karang's Banner		Place at the Foulweald Totem Mound.						
+20739	spellbook	573	Rebirth	Rank 2	Returns the spirit to the body, restoring a dead target to life with $s1 health and $q mana.						
+20740	all		Dominate Mind		Takes control of a humanoid enemy up to level $s1 for $d.	Charmed.					
+20741	all		Shadow Bolt Volley		Hurls missiles of dark magic, inflicting Shadow damage to nearby enemies.						
+20742	spellbook	573	Rebirth	Rank 3	Returns the spirit to the body, restoring a dead target to life with $s1 health and $q mana.						
+20743	all		Drain Life		Drains $o1 health from nearby enemies over $d., transferring it to the caster.	$o1 health leeched over $d.					
+20746	all		Summon Karang's Banner Aura								
+20747	spellbook	573	Rebirth	Rank 4	Returns the spirit to the body, restoring a dead target to life with $s1 health and $q mana.						
+20748	spellbook	573	Rebirth	Rank 5	Returns the spirit to the body, restoring a dead target to life with $s1 health and $q mana.						
+20751	all		Maul		Adds $s1 damage to the next attack.						
+20752	spellbook	354	Create Soulstone	Rank 2	Creates a Lesser Soulstone.  The Soulstone can be used to store one target's soul.  If the target dies while their soul is stored, they will be able to resurrect with $20758s1 health and $20758q1 mana.\n\nConjured items disappear if logged out for more than 15 minutes.						
+20753	all		Demoralizing Roar		Reduces the melee attack power of nearby enemies by $s1 for $d.	Melee attack power reduced by $s1.					
+20754	all		Rain of Fire		Calls down a molten rain, burning all enemies in a selected area for $s1 Fire damage every $t1 sec. for $d.	$s1 Fire damage inflicted every $t1 sec.					
+20755	spellbook	354	Create Soulstone	Rank 3	Creates a Soulstone.  The Soulstone can be used to store one target's soul.  If the target dies while their soul is stored, they will be able to resurrect with $20759s1 health and $20759q1 mana.\n\nConjured items disappear if logged out for more than 15 minutes.						
+20756	spellbook	354	Create Soulstone	Rank 4	Creates a Greater Soulstone.  The Soulstone can be used to store one target's soul.  If the target dies while their soul is stored, they will be able to resurrect with $20760s1 health and $20760q1 mana.\n\nConjured items disappear if logged out for more than 15 minutes.						
+20757	spellbook	354	Create Soulstone	Rank 5	Creates a Major Soulstone.  The Soulstone can be used to store one target's soul.  If the target dies while their soul is stored, they will be able to resurrect with $20761s1 health and $20761q1 mana.\n\nConjured items disappear if logged out for more than 15 minutes.						
+20758	all		Use Soulstone								
+20759	all		Use Soulstone								
+20760	all		Use Soulstone								
+20761	all		Use Soulstone								
+20762	all		Soulstone Resurrection		Stores the friendly target's soul.  If the target dies while his soul is stored, he will be able to resurrect with $20758s1 health and $20758q1 mana.	Soul is stored.					
+20763	all		Soulstone Resurrection		Stores the friendly target's soul.  If the target dies while his soul is stored, he will be able to resurrect with $20759s1 health and $20759q1 mana.	Soul is stored.					
+20764	all		Soulstone Resurrection		Stores the friendly target's soul.  If the target dies while his soul is stored, he will be able to resurrect with $20760s1 health and $20760q1 mana.	Soul is stored.					
+20765	all		Soulstone Resurrection		Stores the friendly target's soul.  If the target dies while his soul is stored, he will be able to resurrect with $20761s1 health and $20761q1 mana.	Soul is stored.					
+20770	spellbook	56	Resurrection	Rank 5	Brings a dead player back to life with $s1 health and $q1 mana.  Cannot be cast when in combat.						
+20772	spellbook	594	Redemption	Rank 4	Brings a dead player back to life with $s1 health and $q1 mana.  Cannot be cast when in combat.						
+20773	spellbook	594	Redemption	Rank 5	Brings a dead player back to life with $s1 health and $q1 mana.  Cannot be cast when in combat.						
+20776	spellbook	374	Ancestral Spirit	Rank 4	Returns the spirit to the body, restoring a dead target to life with $s1 health and $q1 mana.  Cannot be cast when in combat.						
+20777	spellbook	374	Ancestral Spirit	Rank 5	Returns the spirit to the body, restoring a dead target to life with $s1 health and $q1 mana.  Cannot be cast when in combat.						
+20782	all		DEPRECATED PET SCALING		If you see this, report this!	Damage reduced by $s1%.					
+20783	all		Destroy Karang's Banner								
+20784	spellbook	270	Tamed Pet Passive 07 (DND)			Chance to proc frenzy.					
+20785	all		Charm Tolerance (DND)								
+20786	all		Destroy Karang's Banner								
+20787	all		Immolate		Burns an enemy, then inflicts additional Fire damage every $t1 sec. for $d.	Fire damage inflicted every $t1 sec.					
+20788	all		Counterspell		Counters an enemy's spell.						
+20789	all		Detonate		Detonates, removing 1 spell and draining $s2 mana from all enemies within 10 yards.						
+20790	all		Healing Touch		Calls upon Nature magic to heal an ally for $s1 damage.						
+20791	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+20792	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+20793	all		Fireball		Inflicts Fire damage to an enemy.						
+20794	all		Flamestrike		Calls down a pillar of flame, burning all enemies in a selected area and inflicting additional damage every $t2 sec. for $d.	Fire damage inflicted every $t2 sec.					
+20795	all		Fire Blast		Inflicts Fire damage to an enemy.						
+20797	all		Fireball		Inflicts Fire damage to an enemy.						
+20798	all		Demon Skin		Increases the caster's armor by $s1 and speeds its health regeneration for $d.	Armor increased by $s1.\nIncreased health regeneration.					
+20800	all		Immolate		Burns an enemy, then inflicts additional Fire damage every $t1 sec. for $d.	Fire damage inflicted every $t1 sec.					
+20801	all		Firebolt		Shoots a bolt of flame at an enemy, inflicting Fire damage.						
+20802	all		Lightning Bolt		Blasts an enemy with lightning, inflicting Nature damage.						
+20804	all		Triage		Use on Injured, Badly Injured, and Critically Injured Soldiers.						
+20805	all		Lightning Bolt		Blasts an enemy with lightning, inflicting Nature damage.						
+20806	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+20807	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+20808	all		Fireball		Inflicts Fire damage to an enemy.						
+20809	all		Vampiric Aura								
+20810	all		Vampiric Aura		Melee attacks heal you.						
+20811	all		Fireball		Inflicts Fire damage to an enemy.						
+20812	all		Cripple		Increased the time between an enemy's attacks by $s2% and its movement by $s1%, in addition to reducing its Strength by $s3%. Lasts $d.	Movement speed reduced by $s1%.\nTime between attacks increased by $s2%.\nStrength reduced by $s3%.					
+20813	all		Flamestrike		Calls down a pillar of flame, burning all enemies in a selected area and inflicting additional damage every $t2 sec. for $d.	Fire damage inflicted every $t2 sec.					
+20814	all		Collect Dire Water		Fill at the Dire Pool.						
+20815	all		Fireball		Inflicts Fire damage to an enemy.						
+20816	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+20817	all		Mana Burn		Hits nearby enemies with anti-mana bolts. For each point of mana consumed from a target, that target takes $e1 damage.						
+20818	all		Summon Foulweald Totem Basket		Place at the Foulweald Totem Mound.						
+20819	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+20820	all		Holy Smite		Smites an enemy, inflicting Holy damage.						
+20821	all		Acid Spit		Inflicts Nature damage to an enemy.						
+20822	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+20823	all		Fireball		Inflicts Fire damage to an enemy.						
+20824	all		Lightning Bolt		Blasts an enemy with lightning, inflicting Nature damage.						
+20825	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+20826	all		Immolate		Burns an enemy, then inflicts additional Fire damage every $t1 sec. for $d.	Fire damage inflicted every $t1 sec.					
+20827	all		Flamestrike		Calls down a pillar of flame, burning all enemies in a selected area and inflicting additional damage every $t2 sec. for $d.	Fire damage inflicted every $t2 sec.					
+20828	all		Cone of Cold		Inflicts Frost damage to enemies in a cone in front of the caster, reducing their movement speed for $d.	Reduced movement speed.					
+20829	all		Arcane Bolt		Hurls a magical bolt at an enemy, inflicting Arcane damage.						
+20830	all		Mind Blast		Inflicts Shadow damage to an enemy, but causes a high amount of threat.						
+20831	all		Chain Lightning		Strikes an enemy with a lightning bolt that arcs to another nearby enemy. The spell affects up to $x1 targets, inflicting less Nature damage to each successive target.						
+20832	all		Fire Blast		Inflicts Fire damage to an enemy.						
+20847	all		The Lion Horn of Stormwind		When struck in combat has a 1% chance of increasing all party member's armor by $18946s1 for $18946d.						
+20848	spellbook	197	Flarecore Mantle								
+20849	spellbook	197	Flarecore Gloves								
+20853	spellbook	165	Corehound Boots								
+20854	spellbook	165	Molten Helm								
+20855	spellbook	165	Black Dragonscale Boots								
+20858	all		Demon Slaying 30		Increases attack power by $s1 when fighting Demons.						
+20861	all		Muglash Waiting								
+20862	all		Muglash Despawn								
+20863	all		Muglash's Brazier Trap								
+20864	all		Mace Specialization	Racial Passive	Expertise with Maces and Two-Handed Maces increased by $s1.						
+20869	all		Frost Blast		Blasts a target for $s1 Frost damage.						
+20872	spellbook	164	Fiery Chain Girdle								
+20873	spellbook	164	Fiery Chain Shoulders								
+20874	spellbook	164	Dark Iron Bracers								
+20875	all		Rumsey Rum		Increases Stamina by $s1 for $d and gets you drunk to boot!	Stamina increased by $s1.					
+20876	spellbook	164	Dark Iron Leggings								
+20877	all		Beast Slaying 15		Increases attack power by $s1 when fighting Beasts.						
+20882	all		Enslave Demon		Enslaves the target demon, up to level $m1, forcing it to do your bidding.  While enslaved, the time between the demon's attacks is increased by $s2% and its casting speed is slowed by $s3%.  Lasts up to $d.	Enslaved.					
+20883	all		Arcane Blast		Blasts a target for $s1 Arcane damage.						
+20884	all		Stun 1% for 1 sec		$s1% chance to stun a victim struck in combat for $23454d.						
+20885	all		Vitality	Rank 1	Restores $s1 health per 5 sec.	Restores $s1 health per 5 sec.					
+20886	all		Thorns Dmg +3	Rank 1	When struck in combat inflicts $s1 Arcane damage to the attacker.						
+20887	all		Thorns Dmg +2	Rank 1	When struck in combat inflicts $s1 Arcane damage to the attacker.						
+20888	all		Thorns Dmg +1	Rank 1	When struck in combat inflicts $s1 Arcane damage to the attacker.						
+20889	all		Thorns Dmg +4	Rank 1	When struck in combat inflicts $s1 Arcane damage to the attacker.						
+20890	spellbook	164	Dark Iron Reaver								
+20891	all		Greater Beast Slayer 25								
+20893	all		Greater Beast Slayer 25								
+20895	spellbook	50	Spirit Bond	Rank 2	While your pet is active, you and your pet will regenerate $24529s1% of total health every $24529t1 sec.						
+20897	spellbook	164	Dark Iron Destroyer								
+20900	spellbook	163	Aimed Shot	Rank 2	An aimed shot that increases ranged damage by $s1 and reduces healing done to that target by $s2%.  Lasts $d.	Healing effects reduced by $s2%.					
+20901	spellbook	163	Aimed Shot	Rank 3	An aimed shot that increases ranged damage by $s1 and reduces healing done to that target by $s2%.  Lasts $d.	Healing effects reduced by $s2%.					
+20902	spellbook	163	Aimed Shot	Rank 4	An aimed shot that increases ranged damage by $s1 and reduces healing done to that target by $s2%.  Lasts $d.	Healing effects reduced by $s2%.					
+20903	spellbook	163	Aimed Shot	Rank 5	An aimed shot that increases ranged damage by $s1 and reduces healing done to that target by $s2%.  Lasts $d.	Healing effects reduced by $s2%.					
+20904	spellbook	163	Aimed Shot	Rank 6	An aimed shot that increases ranged damage by $s1 and reduces healing done to that target by $s2%.  Lasts $d.	Healing effects reduced by $s2%.					
+20905	spellbook	163	Trueshot Aura	Rank 2	Increases the attack power of party and raid members within $a1 yards by $s1.  Lasts $d.	Increases attack power by $s1.					
+20906	spellbook	163	Trueshot Aura	Rank 3	Increases the attack power of party and raid members within $a1 yards by $s1.  Lasts $d.	Increases attack power by $s1.					
+20909	spellbook	51	Counterattack	Rank 2	A strike that becomes active after parrying an opponent's attack.  This attack deals $s1 damage and immobilizes the target for $d.  Counterattack cannot be blocked, dodged, or parried.	Immobile.					
+20910	spellbook	51	Counterattack	Rank 3	A strike that becomes active after parrying an opponent's attack.  This attack deals $s1 damage and immobilizes the target for $d.  Counterattack cannot be blocked, dodged, or parried.	Immobile.					
+20911	spellbook	267	Blessing of Sanctuary	Rank 1	Places a Blessing on the friendly target, reducing damage dealt from all sources by up to $s1 for $d.  In addition, when the target blocks a melee attack the attacker will take $s2 Holy damage.  Players may only have one Blessing on them per Paladin at any one time.	Damage taken reduced by up to $s1 and blocked melee attacks cause $s2 Holy damage to the attacker.					
+20912	spellbook	267	Blessing of Sanctuary	Rank 2	Places a Blessing on the friendly target, reducing damage dealt from all sources by up to $s1 for $d.  In addition, when the target blocks a melee attack the attacker will take $s2 Holy damage.  Players may only have one Blessing on them per Paladin at any one time.	Damage taken reduced by up to $s1 and blocked melee attacks cause $s2 Holy damage to the attacker.					
+20913	spellbook	267	Blessing of Sanctuary	Rank 3	Places a Blessing on the friendly target, reducing damage dealt from all sources by up to $s1 for $d.  In addition, when the target blocks a melee attack the attacker will take $s2 Holy damage.  Players may only have one Blessing on them per Paladin at any one time.	Damage taken reduced by up to $s1 and blocked melee attacks cause $s2 Holy damage to the attacker.					
+20914	spellbook	267	Blessing of Sanctuary	Rank 4	Places a Blessing on the friendly target, reducing damage dealt from all sources by up to $s1 for $d.  In addition, when the target blocks a melee attack the attacker will take $s2 Holy damage.  Players may only have one Blessing on them per Paladin at any one time.	Damage taken reduced by up to $s1 and blocked melee attacks cause $s2 Holy damage to the attacker.					
+20915	spellbook	184	Seal of Command	Rank 2	Gives the Paladin a chance to deal additional Holy damage equal to $20424s1% of normal weapon damage.  Persists for 0.5 seconds when swapping to any other Seal.  Lasts $d.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing $/2;20963s1 Holy damage, $20963s1 if the target is stunned or incapacitated.	Melee attacks have a chance to deal additional Holy damage.					
+20916	spellbook	185	Mithril Head Trout								
+20918	spellbook	184	Seal of Command	Rank 3	Gives the Paladin a chance to deal additional Holy damage equal to $20424s1% of normal weapon damage.  Persists for 0.5 seconds when swapping to any other Seal.  Lasts $d.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing $/2;20964s1 Holy damage, $20964s1 if the target is stunned or incapacitated.	Melee attacks have a chance to deal additional Holy damage.					
+20919	spellbook	184	Seal of Command	Rank 4	Gives the Paladin a chance to deal additional Holy damage equal to $20424s1% of normal weapon damage.  Persists for 0.5 seconds when swapping to any other Seal.  Lasts $d.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing $/2;20965s1 Holy damage, $20965s1 if the target is stunned or incapacitated.	Melee attacks have a chance to deal additional Holy damage.					
+20920	spellbook	184	Seal of Command	Rank 5	Gives the Paladin a chance to deal additional Holy damage equal to $20424s1% of normal weapon damage.  Persists for 0.5 seconds when swapping to any other Seal.  Lasts $d.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing $/2;20966s1 Holy damage, $20966s1 if the target is stunned or incapacitated.	Melee attacks have a chance to deal additional Holy damage.					
+20922	spellbook	594	Consecration	Rank 3	Consecrates the land beneath the Paladin, doing $o1 Holy damage over $d to enemies who enter the area.	$s1 damage every $t1 $lsecond:seconds;.					
+20923	spellbook	594	Consecration	Rank 4	Consecrates the land beneath the Paladin, doing $o1 Holy damage over $d to enemies who enter the area.	$s1 damage every $t1 $lsecond:seconds;.					
+20924	spellbook	594	Consecration	Rank 5	Consecrates the land beneath the Paladin, doing $o1 Holy damage over $d to enemies who enter the area.	$s1 damage every $t1 $lsecond:seconds;.					
+20925	spellbook	184	Holy Shield	Rank 1	Increases chance to block by $s1% for $d and deals $s2 Holy damage for each attack blocked while active.  Damage caused by Holy Shield causes 35% additional threat.  Each block expends a charge.  $n charges.	Block chance increased by $s1%.  $s2 Holy damage dealt to attacker when blocked.  Damage caused by Holy Shield causes 35% additional threat.  $n charges.					
+20927	spellbook	184	Holy Shield	Rank 2	Increases chance to block by $s1% for $d and deals $s2 Holy damage for each attack blocked while active.  Damage caused by Holy Shield causes 35% additional threat.  Each block expends a charge.  $n charges.	Block chance increased by $s1%.  $s2 Holy damage dealt to attacker when blocked.  Damage caused by Holy Shield causes 35% additional threat.  $n charges.					
+20928	spellbook	184	Holy Shield	Rank 3	Increases chance to block by $s1% for $d and deals $s2 Holy damage for each attack blocked while active.  Damage caused by Holy Shield causes 35% additional threat.  Each block expends a charge.  $n charges.	Block chance increased by $s1%.  $s2 Holy damage dealt to attacker when blocked.  Damage caused by Holy Shield causes 35% additional threat.  $n charges.					
+20929	spellbook	594	Holy Shock	Rank 2	Blasts the target with Holy energy, causing $25911s1 Holy damage to an enemy, or $25913s1 healing to an ally.						
+20930	spellbook	594	Holy Shock	Rank 3	Blasts the target with Holy energy, causing $25902s1 Holy damage to an enemy, or $25903s1 healing to an ally.						
+20936	all		Spirit of Greater Healing								
+20937	all		Hyper Resurrection 4 sec								
+20939	all		Undying Soul								
+20959	all		Increased Mana Regen		Restores $s1 mana per 5 sec.						
+20961	all		Judgement of Command	Rank 3							
+20962	all		Judgement of Command	Rank 2							
+20963	all		Judgement of Command	Rank 2							
+20964	all		Judgement of Command	Rank 3							
+20965	all		Judgement of Command	Rank 4							
+20966	all		Judgement of Command	Rank 5							
+20967	all		Judgement of Command	Rank 4							
+20968	all		Judgement of Command	Rank 5							
+20969	all		Vitality	Rank 1	Restores $s1 health every $t1 sec.	Restores $s1 health every $t1 sec.					
+20987	all		Giantstalker A		Increases attack power by $s1.						
+20988	all		Nature's Ally		Increases your pet's attack power by $s1.	Increases attack power.					
+20989	all		Sleep		Puts an enemy to sleep for up to $d. Any damage caused will awaken the target. Only one target can be asleep at a time.	Asleep.					
+21007	all		Curse of Weakness		Reduces the Physical damage dealt by nearby enemies by $s1 for $d. Only one curse per warlock can be active on any one target.	Physical damage dealt is reduced by $s1.					
+21008	all		Mocking Blow		A mocking attack that causes $s1 damage and forces the target to focus attacks on you for $d.	Taunted.					
+21009	spellbook	792	Elusiveness	Racial Passive	Reduces the chance enemies have to detect you while Shadowmelded or Stealthed.						
+21010	all		Increase Spell Dam Undead 14		Increases damage done to Undead by magical spells and effects by up to $s1.						
+21011	all		Increase Spell Dam Demons 14		Increases damage done to Demon by magical spells and effects by up to $s1.						
+21012	all		Increased Offhand Damage 10		Increases your damage dealt with offhand attacks by $s1%.						
+21013	all		Attack Power Ranged 60		+$s1 ranged Attack Power.						
+21014	all		Anuniaq's Net		Throw Anuniaq's Net at the nearest School of Tasty Reef Fish within $r yards.						
+21027	all		Spark		Blasts an enemy with lightning, inflicting Nature damage.						
+21029	all		Thaumaturgy Channel								
+21030	all		Frost Shock		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+21047	all		Corrosive Acid Spit		Inflicts Nature damage to an enemy and reduces its armor for $d.	Reduced armor.					
+21048	all		Curse of the Tribes		Reduces the damage dealt by an enemy by $s1% for $d.	Damage dealt is reduced by $s1%.					
+21049	all		Bloodlust		Increases an ally's attack speed by $s1% for $d.	Attack speed increased by $s1%.					
+21050	all		Melodious Rapture		Use to lull the vermin infesting the Deeprun Tram into a state of raptured bliss.						
+21051	all		Melodious Rapture Visual (DND)		Use to lull the vermin infesting the Deeprun Tram into a state of raptured bliss.						
+21052	all		Monty Bashes Rats (DND)		DND						
+21053	all		Capture Soul								
+21054	all		Capture Soul								
+21055	all		Crush Armor		Bash at an enemy's armor, reducing it by $s1 per Crush Armor. Can be applied up to 5 times. Lasts $d.	Reduced armor.					
+21056	all		Mark of Kazzak			Drains $s1 mana every $t second.\nExplodes when unable to drain mana.					
+21057	all		Summon Theradrim Shardling		Summons 3 Theradrim Shardlings.						
+21058	all		Mark of Kazzak								
+21059	all		Acid Spit		Inflicts Nature damage to an enemy.						
+21060	all		Blind		Blinds the target, causing it to wander confused for up to $d.  Any damage caused will remove the effect.	Confused.					
+21061	all		Putrid Breath		Adds a chance to cast Putrid Breath on enemy when hit by a melee attack.						
+21062	all		Putrid Breath		Agility reduced by $s1%.\nSpirit reduced by $s2%.	Agility reduced by $s1%.\nSpirit reduced by $s2%.					
+21063	all		Twisted Reflection		When the target is damaged, Twisted Reflection heals the attacker for $21064s1	When damaged, heals the attacker for $21064s1					
+21064	all		Twisted Reflection		Heals Kazzak for $s1.						
+21066	all		Void Bolt		Deals $s1 Shadow damage to the current target, reducing its movement speed by $s2% for $d.	Movement speed reduced by $s2%.					
+21067	all		Poison Bolt		Shoots poison at an enemy, inflicting Nature damage, then additional damage every $t2 sec. for $d.	Nature damage inflicted every $t2 sec.					
+21068	all		Corruption		Corrupts nearby enemies, inflicting Shadow damage every $t1 sec. for $d.	Shadow damage every $t1 sec.					
+21069	all		Larva Goo		Poisons nearby enemies for $s1 damage, then inflicts an additional $s2 Nature damage every $t2 sec. for $d.	$s2 Nature damage inflicted every $t2 sec.					
+21070	all		Noxious Cloud		Deals Nature damage to enemies within the cloud for $d.						
+21071	all		Boulder		Hurls boulders at nearby enemies, inflicting Physical damage.						
+21072	all		Fireball		Inflicts Fire damage to an enemy.						
+21073	all		Arcane Explosion		Sends out a blast wave of magic, inflicting Arcane damage to nearby enemies.						
+21074	all		Test NPC Resurrection	Rank 1							
+21075	all		Damage Shield		Causes $s1 arcane damage to any creature that strikes a nearby minion.	$s1 damage inflicted to melee attackers.					
+21076	all		Dispel Magic		Dispels magic on nearbv targets, removing $s1 harmful spells from allies.						
+21077	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting $s1 Shadow damage.						
+21078	all		Conjure Milton (DND)		DND						
+21079	all		Echo of Archimonde								
+21080	all		Putrid Breath		Adds a chance to cast Putrid Breath on enemy when hit by a melee attack.						
+21081	all		Sunder Armor		Hacks at an enemy's armor, reducing it by $s1 per Sunder Armor. Can be applied up to 5 times. Lasts $d.	Reduced armor.					
+21082	spellbook	184	Seal of the Crusader	Rank 1	Fills the Paladin with the spirit of a crusader for $d, granting $s1 melee attack power.  The Paladin also attacks $s2% faster, but deals less damage with each attack.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for $21183d, increasing Holy damage taken by up to $21183s1.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.	Melee attack power increased by $s1.  Melee attacks are $s2% faster, but deal less damage.					
+21084	all		Seal of Righteousness	Rank 1	Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will cause $20187s1 Holy damage to an enemy.	Melee attacks cause an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.					
+21086	all		Encouragement								
+21087	all		Immunity								
+21088	all		Improved Arcane Intellect		Your Arcane Intellect provides +$s1 more Intellect than normal.						
+21089	all		Retributive Smite		$s1% chance your next Smite after casting Greater Heal requires $21091s1 less mana to cast.						
+21090	all		Champion								
+21091	all		Retributive Smite			Your next Smite requires less mana.					
+21092	all		Increased Critical Holy		Improves your chance to get a critical strike with Holy spells by $s1%.						
+21093	all		Improved Fortitude		Your Power Word: Fortitude provides +$s1 more Stamina than normal.						
+21094	all		Separation Anxiety								
+21095	all		Separation Anxiety								
+21096	all		Blizzard		Calls down a blizzard that lasts $d., inflicting $s1 Frost damage every $t1 sec. to all enemies in a selected area.						
+21097	all		Manastorm		Calls down a mana storm that lasts $d., inflicting $s1 Frost damage and draining $s2 mana every $t1 sec. to all enemies in a selected area.						
+21098	all		Chill		Blasts nearby enemies with ice, dealing $s1 damage, increasing the time between their attacks by $s2%, and reducing movement speed by $s3%.	Time between attacks increased by $s2%.\nMovement speed reduced by $s3%.					
+21099	all		Frost Breath		Inflicts Frost damage to enemies in a cone in front of the caster, stealing their mana and reducing their movement speed for $d.	Frozen.					
+21100	all		Conjure Elegant Letter								
+21107	all		Ragnaros Submerge Fade								
+21108	all		Summon Sons of Flame								
+21109	all		Vitality	Rank 1	Restores $s1 health per 5 sec.	Restores $s1 health per 5 sec.					
+21110	all		Summon Son of Flame B								
+21111	all		Summon Son of Flame C								
+21112	all		Summon Son of Flame D								
+21113	all		Summon Son of Flame E								
+21114	all		Summon Son of Flame F								
+21115	all		Summon Son of Flame G								
+21116	all		Summon Son of Flame H								
+21117	all		Summon Son of Flame A								
+21118	all		Spell Reflection		Raise your shield, giving you a $s1% chance of reflecting the next spell cast on you.  Lasts $d.						
+21127	all		Maraudon Portal		Creates a portal, teleporting group members that use it to Earth Song Falls in inner Maraudon.						
+21128	all		Maraudon Portal Effect								
+21129	all		Aura of Battle								
+21130	all		Grip of Command								
+21131	all		Breath		Deals $m to $M Fire damage.						
+21132	all		Breath		Deals $m to $M Fire damage.						
+21133	all		Breath		Deals $m to $M Fire damage.						
+21134	all		Will of Ragnaros		Instills awe and wonder amongst worshippers of Ragnaros.	Emitting the Will of Ragnaros.					
+21135	all		Breath		Deals $m to $M Fire damage.						
+21136	all		Breath		Deals $m to $M Fire damage.						
+21137	all		Breath		Deals $m to $M Fire damage.						
+21138	all		Breath		Deals $m to $M Fire damage.						
+21139	all		Breath		Deals $m to $M Fire damage.						
+21140	all		Fatal Wound		Delivers a fatal wound for $s1 damage.						
+21141	all		Shadow Bolt		Sends a shadowy bolt at the enemy causing $s1 Shadow damage and dealing $s2 damage every $t2 sec for $d.	Deals $s2 Shadow damage every $t2 sec.					
+21142	all		Immolation		Deals $s1 Fire damage to anyone who strikes you with a melee attack.						
+21143	spellbook	185	Gingerbread Cookie								
+21144	spellbook	185	Egg Nog								
+21147	all		Arcane Vacuum								
+21149	all		Egg Nog		Restores $o1 health over $d.  Must remain seated while eating.  If you spend at least 10 seconds eating you will become well fed and gain $19705s1 Stamina and Spirit for $19705d.  Also packs quite a kick...	Restores $/5;s1 health per second.					
+21150	all		Summon Player								
+21151	all		Gutgore Ripper		Sends a shadowy bolt at the enemy causing $s1 Shadow damage and lowering all stats by $s2 for $d.						
+21152	all		Earthshaker		Knocks down all nearby enemies for $d.	Stunned.					
+21153	all		Bonereaver's Edge		Your attacks ignore $s1 of your enemies' armor for $d. This effect stacks up to 3 times.	Ignore $s1 of enemies' armor.					
+21154	all		Might of Ragnaros								
+21155	all		Intense Heat								
+21156	spellbook	26	Battle Stance Passive		Decreases threat generated by $s1%.						
+21157	all		Dark Channeling								
+21158	all		Lava Burst		Explodes, dealing $s1 Fire damage to all enemies within 35 yards.						
+21159	all		Fireball		Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.	$s2 Fire damage every $t2 sec.					
+21160	all		Eye of Sulfuras		The Eye of Sulfuras can be combined with the Sulfuron Hammer to create Sulfuras, legendary hammer of Ragnaros.						
+21161	spellbook	164	Sulfuron Hammer								
+21162	all		Fireball		Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.	$s2 Fire damage every $t2 sec.					
+21163	all		Polished Armor	Rank 1		Armor increased by $s1%.					
+21164	all		Sulfuron Hammer								
+21165	all		Haste		Increases your attack speed by $s1% for $d1.	Increased attack speed.					
+21167	all		Snowball		Throw me at a party member!	Knocked Down.					
+21168	all		Vitality	Rank 1	Restores $s1 health every $t1 sec.	Restores $s1 health every $t1 sec.					
+21169	spellbook	374	Reincarnation								
+21170	all		Drain Life		Steals $s1 life from target enemy.						
+21171	all		Ryson's Eye in the Sky		Allows user to view the Alliance stronghold through Ryson's Eye in the Sky when used in conjunction with a Globe of Scrying.	Allows user to view the Alliance stronghold through Ryson's Eye in the Sky when used in conjunction with a Globe of Scrying.					
+21172	all		Grip of Command		Restores 12 Health and 15 Mana each second while in the proximity of a Commander.	Restores 12 Health and 15 Mana each second while in the proximity of a Commander.					
+21173	all		Aerie Gryphon Hover								
+21174	all		Aura of Battle		Restores 8 Health and 10 Mana each second while in the proximity of a Lieutenant.	Restores 8 Health and 10 Mana each second while in the proximity of a Lieutenant.					
+21175	spellbook	185	Spider Sausage								
+21178	spellbook	134	Bear Form (Passive2)	Passive							
+21179	all		Chain Lightning		Blasts up to 3 targets for $s1 Nature damage. Each target after the first takes less damage.						
+21180	all		Summon Thunderstrike		Transforms Shadowstrike into Thunderstrike.						
+21181	all		Summon Shadowstrike		Transforms Thunderstrike into Shadowstrike.						
+21183	all		Crusader Strike	Rank 1		Increases Holy damage taken by up to $s1.					
+21184	spellbook	38	Rogue Passive (DND)		Decreases threat generated by $s1%.						
+21185	all		Spinal Reaper		Restores $21186s1 mana or 20 rage when you kill a target that gives experience; this effect cannot occur more than once every 10 seconds.						
+21186	all		Spinal Reaper	Rank 1	Energizes you with $s1 mana or $/10;s2 rage.	Energizes you with $s1 mana or $/10;s2 rage.					
+21187	all		Stormpike Reputation +5								
+21188	all		Stun Bomb Attack		Hurls a stun bomb, inflicting normal damage plus $s1 to all enemies in a selected area and stunning them for $d.	Stunned.					
+21189	all		Gryphon Wing Flap		Strikes enemies in a cone in front of the caster, knocking them back.						
+21190	all		Aerie Gryphon Speed Buff								
+21207	all		Tailoring Pattern - Mooncloth Boots								
+21227	all		Fire & Ice Channeling								
+21228	all		Arcane Missiles +1		Increases the duration of your Arcane Missiles by $/1000;s1 sec.						
+21229	all		Frostbolt, Improved		Your Frostbolts do $s1 extra damage.						
+21230	all		Fireball, Improved DoT		Increases the added fire damage of your Fireballs by $s1 per period.						
+21247	all		Wintergrasp Shutdown								
+21248	all		Opening								
+21249	all		Call of the Nether								
+21267	all		Conjure Altar of Summoning								
+21268	all		Conjure Altar of Summoning Effect DND								
+21287	all		Conjure Lokholar the Usurper DND								
+21288	all		Opening								
+21307	all		Swell of Souls								
+21327	all		Summon Hive'Ashi Drones								
+21330	all		Corrupted Fear			Fear and reduced movement speed.					
+21331	all		Entangling Roots		Entangles an enemy in roots, inflicting Nature damage every $t2 sec. and immobilizing it for up to $d.	Immobilized.\nNature damage inflicted every $t2 sec.					
+21332	all		Aspect of Neptulon		Used on plagued water elementals in Eastern Plaguelands.						
+21333	all		Lava Breath		Inflicts $s1 Fire damage to enemies behind the caster.						
+21334	all		Reactive Mana		You have a $h% chance to regain $21959s1 mana any time you take damage.						
+21335	all		Thorns		Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.	Causes $s1 Nature damage to attackers.					
+21336	all		Discordant Surge Visual								
+21337	all		Thorns		Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.	Causes $s1 Nature damage to attackers.					
+21338	all		Conjure Furis Felsteed DUMMY DND								
+21339	all		Improved Prayer of Healing		Reduces the casting time of your Prayer of Healing by $s1 sec.						
+21340	all		Berserk								
+21341	all		Shadow Bolt Volley		Hurls missiles of dark magic, inflicting Shadow damage to nearby enemies.						
+21342	all		Mistletoe Test								
+21343	all		Snowball		Throw me!						
+21345	all		Vitality	Rank 1	Restores $s1 health per 5 sec.	Restores $s1 health per 5 sec.					
+21346	all		Vitality	Rank 1	Restores $s1 health per 5 sec.	Restores $s1 health per 5 sec.					
+21347	all		Vitality	Rank 1	Restores $s1 health per 5 sec.	Restores $s1 health per 5 sec.					
+21348	all		Vitality	Rank 1	Restores $s1 health per 5 sec.	Restores $s1 health per 5 sec.					
+21349	all		Vitality	Rank 1	Restores $s1 health per 5 sec.	Restores $s1 health per 5 sec.					
+21350	all		Vitality	Rank 1	Restores $s1 health per 5 sec.	Restores $s1 health per 5 sec.					
+21351	all		Increased Stun Resist 01		+$s1% Stun Resistance.						
+21352	all		Decreased Parry 1		Decreases your chance to parry an attack by $s1%.						
+21353	all		Mount Speed Buff DND								
+21354	all		Snowball Resistant			Knocked Down.					
+21355	all		Planting Guse's Beacon		Plants the beacon in the Eastern Crater. Protect it from harm!						
+21356	all		Conjure Guse's Beacon DND								
+21357	all		Create Aqual Quintessence								
+21358	all		Aqual Quintessence		Douses a rune of the Firelords.						
+21359	all		Increased Mana Regen		Restores $s1 mana per 5 sec.						
+21360	all		Increased Mana Regen		Restores $s1 mana per 5 sec.						
+21361	all		Increased Mana Regen		Restores $s1 mana per 5 sec.						
+21362	all		Increased Mana Regen		Restores $s1 mana per 5 sec.						
+21363	all		Increased Mana Regen		Restores $s1 mana per 5 sec.						
+21364	all		Increased Mana Regen		Restores $s1 mana per 5 sec.						
+21365	all		Increased Mana Regen		Restores $s1 mana per 5 sec.						
+21366	all		Increased Mana Regen		Restores $s1 mana per 5 sec.						
+21367	all		Blizzard		Calls down a blizzard that lasts $d., inflicting $s1 Frost damage every $t1 sec. to all enemies in a selected area.						
+21368	all		Conjure Jeztor's Beacon DND								
+21369	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+21370	all		Planting Jeztor's Beacon		Plants the beacon in the Western Crater. Protect it from harm!						
+21371	all		Planting Mulverick's Beacon		Plants the beacon at the Snowfall Graveyard. Protect it from harm!						
+21372	all		Conjure Mulverick's Beacon DND								
+21387	all		Melt Weapon								
+21388	all		Melt Weapon								
+21389	all		Fire Channeling								
+21390	all		Multi-Shot		Fires a volley of missiles at an enemy and its nearby allies, striking up to $x1 targets for normal damage plus $s1.						
+21391	all		Syndicate Tracker (MURP) DND								
+21392	all		Fire Channeling		Just like Creature - Fire Channeling except this one adds a Channel Cast Directed animation.						
+21393	all		Healing Draught		Restores $s1 health. This item may only be used in PvP Battlegrounds.						
+21394	all		Healing Draught		Restores $s1 health. This item may only be used in PvP Battlegrounds.						
+21395	all		Restore Mana		Restores $s1 mana. This item may only be used in PvP Battlegrounds.						
+21396	all		Restore Mana		Restores $s1 mana. This item may only be used in PvP Battlegrounds.						
+21397	all		Syndicate Tracker (MURP) DND			Tracking for Murp.					
+21398	all		Create Stormpike Assault Order (DND)								
+21399	all		Alchemist's Stone								
+21400	all		Alchemist's Stone								
+21401	all		Frost Shock		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+21402	all		Fireball		Inflicts Fire damage to an enemy.						
+21407	all		Increased Defense		Increased Defense +$s1.						
+21408	all		Increased Defense		Increased Defense +$s1.						
+21409	all		Increased Defense		Increased Defense +$s1.						
+21410	all		Increased Defense		Increased Defense +$s1.						
+21411	all		Increased Defense		Increased Defense +$s1.						
+21412	all		Increased Defense		Increased Defense +$s1.						
+21413	all		Increased Defense		Increased Defense +$s1.						
+21414	all		Increased Defense		Increased Defense +$s1.						
+21415	all		Increased Defense		Increased Defense +$s1.						
+21416	all		Increased Defense		Increased Defense +$s1.						
+21417	all		Increased Defense		Increased Defense +$s1.						
+21418	all		Increased Defense		Increased Defense +$s1.						
+21419	all		Increased Defense		Increased Defense +$s1.						
+21420	all		Increased Defense		Increased Defense +$s1.						
+21421	all		Increased Defense		Increased Defense +$s1.						
+21422	all		Increased Defense		Increased Defense +$s1.						
+21423	all		Increased Defense		Increased Defense +$s1.						
+21424	all		Increased Defense		Increased Defense +$s1.						
+21425	all		Ryson's Eye in the Sky		Allows user to view the Horde stronghold through Ryson's Eye in the Sky when used in conjunction with a Globe of Scrying.	Allows user to view the Horde stronghold through Ryson's Eye in the Sky when used in conjunction with a Globe of Scrying.					
+21426	all		Attack Power Ranged 2		+$s1 ranged Attack Power.						
+21427	all		Attack Power Ranged 5		+$s1 ranged Attack Power.						
+21428	all		Attack Power Ranged 7		+$s1 ranged Attack Power.						
+21429	all		Attack Power Ranged 10		+$s1 ranged Attack Power.						
+21430	all		Attack Power Ranged 12		+$s1 ranged Attack Power.						
+21431	all		Attack Power Ranged 14		+$s1 ranged Attack Power.						
+21432	all		Attack Power Ranged 17		+$s1 ranged Attack Power.						
+21433	all		Attack Power Ranged 19		+$s1 ranged Attack Power.						
+21434	all		Attack Power Ranged 22		+$s1 ranged Attack Power.						
+21435	all		Attack Power Ranged 24		+$s1 ranged Attack Power.						
+21436	all		Attack Power Ranged 26		+$s1 ranged Attack Power.						
+21437	all		Attack Power Ranged 29		+$s1 ranged Attack Power.						
+21438	all		Attack Power Ranged 31		+$s1 ranged Attack Power.						
+21439	all		Attack Power Ranged 34		+$s1 ranged Attack Power.						
+21440	all		Attack Power Ranged 36		+$s1 ranged Attack Power.						
+21441	all		Attack Power Ranged 38		+$s1 ranged Attack Power.						
+21442	all		Attack Power Ranged 41		+$s1 ranged Attack Power.						
+21443	all		Attack Power Ranged 43		+$s1 ranged Attack Power.						
+21444	all		Attack Power Ranged 46		+$s1 ranged Attack Power.						
+21445	all		Attack Power Ranged 48		+$s1 ranged Attack Power.						
+21446	all		Attack Power Ranged 50		+$s1 ranged Attack Power.						
+21447	all		Attack Power Ranged 53		+$s1 ranged Attack Power.						
+21448	all		Attack Power Ranged 55		+$s1 ranged Attack Power.						
+21449	all		Attack Power Ranged 58		+$s1 ranged Attack Power.						
+21450	all		Attack Power Ranged 62		+$s1 ranged Attack Power.						
+21451	all		Attack Power Ranged 65		+$s1 ranged Attack Power.						
+21452	all		Attack Power Ranged 67		+$s1 ranged Attack Power.						
+21453	all		Attack Power Ranged 70		+$s1 ranged Attack Power.						
+21454	all		Attack Power Ranged 72		+$s1 ranged Attack Power.						
+21455	all		Attack Power Ranged 74		+$s1 ranged Attack Power.						
+21456	all		Attack Power Ranged 77		+$s1 ranged Attack Power.						
+21457	all		Attack Power Ranged 79		+$s1 ranged Attack Power.						
+21458	all		Attack Power Ranged 82		+$s1 ranged Attack Power.						
+21459	all		Attack Power Ranged 84		+$s1 ranged Attack Power.						
+21460	all		Attack Power Ranged 86		+$s1 ranged Attack Power.						
+21461	all		Attack Power Ranged 89		+$s1 ranged Attack Power.						
+21462	all		Attack Power Ranged 91		+$s1 ranged Attack Power.						
+21463	all		Teleport to Player								
+21464	all		Conjure Ryson's Beacon (Horde) DND								
+21465	all		Conjure Ryson's Beacon (Alliance) DND								
+21466	all		Increased Block 4		Increases your block rating by $s1.						
+21467	all		Increased Block 3		Increases your block rating by $s1.						
+21468	all		Increased Block 2		Increases your block rating by $s1.						
+21469	all		Increased Block 1		Increases your chance to block attacks with a shield by $s1%.						
+21470	all		Increased Block 6		Increases your block rating by $s1.						
+21471	all		Increased Block 2		Increases your chance to block attacks with a shield by $s1%.						
+21472	all		Increased Block 8		Increases your block rating by $s1.						
+21473	all		Increased Block 2		Increases your chance to block attacks with a shield by $s1%.						
+21474	all		Increased Block 11		Increases your block rating by $s1.						
+21475	all		Increased Block 3		Increases your chance to block attacks with a shield by $s1%.						
+21476	all		Increased Block 3		Increases your chance to block attacks with a shield by $s1%.						
+21477	all		Increased Block 3		Increases your chance to block attacks with a shield by $s1%.						
+21478	all		Increased Block 4		Increases your chance to block attacks with a shield by $s1%.						
+21479	all		Increased Block 17		Increases your block rating by $s1.						
+21480	all		Increased Block 18		Increases your block rating by $s1.						
+21481	all		Increased Block 19		Increases your block rating by $s1.						
+21482	all		Increased Block 21		Increases your block rating by $s1.						
+21483	all		Increased Block 22		Increases your block rating by $s1.						
+21484	all		Increased Block 23		Increases your block rating by $s1.						
+21485	all		Increased Block 5		Increases your chance to block attacks with a shield by $s1%.						
+21486	all		Increased Block 26		Increases your block rating by $s1.						
+21487	all		Increased Block 27		Increases your block rating by $s1.						
+21488	all		Increased Block 28		Increases your block rating by $s1.						
+21489	all		Increased Block 29		Increases your block rating by $s1.						
+21490	all		Increased Block 30		Increases your block rating by $s1.						
+21491	all		Increased Block 31		Increases your block rating by $s1.						
+21492	all		Increased Block 32		Increases your block rating by $s1.						
+21493	all		Increased Block 33		Increases your block rating by $s1.						
+21494	all		Increased Block 34		Increases your block rating by $s1.						
+21495	all		Increased Block 35		Increases your block rating by $s1.						
+21496	all		Increased Block 36		Increases your block rating by $s1.						
+21497	all		Increased Block 37		Increases your block rating by $s1.						
+21498	all		Increased Block 38		Increases your block rating by $s1.						
+21499	all		Increase Holy Dam 1		Increases damage done by Holy spells and effects by up to $s1.						
+21500	all		Increase Holy Dam 3		Increases damage done by Holy spells and effects by up to $s1.						
+21501	all		Increase Holy Dam 4		Increases damage done by Holy spells and effects by up to $s1.						
+21502	all		Increase Holy Dam 6		Increases damage done by Holy spells and effects by up to $s1.						
+21503	all		Increase Holy Dam 7		Increases damage done by Holy spells and effects by up to $s1.						
+21504	all		Increase Holy Dam 9		Increases damage done by Holy spells and effects by up to $s1.						
+21505	all		Increase Holy Dam 10		Increases damage done by Holy spells and effects by up to $s1.						
+21506	all		Increase Holy Dam 11		Increases damage done by Holy spells and effects by up to $s1.						
+21507	all		Increase Holy Dam 13		Increases damage done by Holy spells and effects by up to $s1.						
+21508	all		Increase Holy Dam 14		Increases damage done by Holy spells and effects by up to $s1.						
+21509	all		Increase Holy Dam 16		Increases damage done by Holy spells and effects by up to $s1.						
+21510	all		Increase Holy Dam 17		Increases damage done by Holy spells and effects by up to $s1.						
+21511	all		Increase Holy Dam 19		Increases damage done by Holy spells and effects by up to $s1.						
+21512	all		Increase Holy Dam 20		Increases damage done by Holy spells and effects by up to $s1.						
+21513	all		Increase Holy Dam 21		Increases damage done by Holy spells and effects by up to $s1.						
+21514	all		Increase Holy Dam 23		Increases damage done by Holy spells and effects by up to $s1.						
+21515	all		Increase Holy Dam 24		Increases damage done by Holy spells and effects by up to $s1.						
+21516	all		Increase Holy Dam 26		Increases damage done by Holy spells and effects by up to $s1.						
+21517	all		Increase Holy Dam 27		Increases damage done by Holy spells and effects by up to $s1.						
+21518	all		Increase Holy Dam 29		Increases damage done by Holy spells and effects by up to $s1.						
+21519	all		Increase Holy Dam 30		Increases damage done by Holy spells and effects by up to $s1.						
+21520	all		Increase Holy Dam 31		Increases damage done by Holy spells and effects by up to $s1.						
+21521	all		Increase Holy Dam 33		Increases damage done by Holy spells and effects by up to $s1.						
+21522	all		Increase Holy Dam 34		Increases damage done by Holy spells and effects by up to $s1.						
+21523	all		Increase Holy Dam 36		Increases damage done by Holy spells and effects by up to $s1.						
+21524	all		Increase Holy Dam 37		Increases damage done by Holy spells and effects by up to $s1.						
+21525	all		Increase Holy Dam 39		Increases damage done by Holy spells and effects by up to $s1.						
+21526	all		Increase Holy Dam 40		Increases damage done by Holy spells and effects by up to $s1.						
+21527	all		Increase Holy Dam 41		Increases damage done by Holy spells and effects by up to $s1.						
+21528	all		Increase Holy Dam 43		Increases damage done by Holy spells and effects by up to $s1.						

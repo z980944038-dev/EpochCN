@@ -1,0 +1,57 @@
+tooltip_en	tooltip_zh
+Melee attack power increased by $s1 and magical damage and healing done increased by $s2.	近战攻击强度提高$s1，法术伤害和治疗效果提高$s2。
+Magical damage and healing done increased by $s2.	法术伤害和治疗效果提高$s2。
+Melee attacks cause an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.	近战攻击造成额外${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)}点神圣伤害。
+Damage taken reduced by up to $s1 and blocked melee attacks cause $s2 Holy damage to the attacker.	受到的伤害最多降低$s1，格挡近战攻击时对攻击者造成$s2点神圣伤害。
+$s1 Nature damage every $t1 seconds.	每$t1秒造成$s1点自然伤害。
+All bleed effects and Shred cause $s2% additional damage.	所有流血效果和撕碎造成额外$s2%的伤害。
+Reduces threat caused by $s1%.	造成的威胁值降低$s1%。
+Reduces physical damage taken by $s1%.	受到的物理伤害降低$s1%。
+Increases damage caused by $s1%.	造成的伤害提高$s1%。
+Increases resistance to all magic schools by $s1.	所有魔法抗性提高$s1。
+Melee attack power reduced by $s2.	近战攻击强度降低$s2。
+$s2 Nature damage every $t2 sec.	每$t2秒造成$s2点自然伤害。
+Healing $s1 every $t1 seconds.	每$t1秒治疗$s1点生命值。
+$s1 Shadow damage every $t1 sec.  If dispelled, will cause $*9;s1 damage to the dispeller and silence them for $31117d.	每$t1秒造成$s1点暗影伤害。如果被驱散，将对驱散者造成$*9;s1点伤害并使其沉默$31117d。
+Melee attack power increased by $s1.	近战攻击强度提高$s1。
+Physical damage caused reduced by $s1%.	造成的物理伤害降低$s1%。
+Critical strike chance with all attacks increased by $s1%.	所有攻击的暴击几率提高$s1%。
+Increases damage caused by $s1% and resistance to all magic schools by $s2.	造成的伤害提高$s1%，所有魔法抗性提高$s2。
+Melee and ranged attack speed reduced by $55095s2%.	近战和远程攻击速度降低$55095s2%。
+Casting and melee speed increased by $s1%.	施法和近战速度提高$s1%。
+Increases Intellect by $s1 and Spirit by $s2.	智力提高$s1，精神提高$s2。
+Block chance increased by $s1%.  $s2 Holy damage dealt to attacker when blocked.  Damage caused by Holy Shield causes 35% additional threat.  $n charges.	格挡几率提高$s1%。格挡时对攻击者造成$s2点神圣伤害。神圣之盾造成的伤害产生额外35%的威胁值。$n次充能。
+Converting rage into health.	将怒气转化为生命值。
+Extra $s1 damage on your next Physical attack.	你的下一次物理攻击造成额外$s1点伤害。
+Chance to hit reduced by $s2%.	命中几率降低$s2%。
+Damage taken from Shadow damage-over-time effects increased by $s3%.	受到的暗影持续伤害效果提高$s3%。
+Heals $s1 damage every $t1 second.	每$t1秒治疗$s1点伤害。
+Summoning stars from the sky.	从天空召唤星辰。
+All bleed effects cause $s2% additional damage.	所有流血效果造成额外$s2%的伤害。
+Pinned in place.	被钉在原地。
+Attack power increased by $s2.\nHealing $s1 damage every $t1 seconds.	攻击强度提高$s2。\n每$t1秒治疗$s1点伤害。
+Taking Fire damage every second.	每秒受到火焰伤害。
+Decreases armor by $s2.  Cannot stealth or turn invisible.	护甲降低$s2。无法潜行或隐身。
+Heals $s2 every $t2 seconds.  Increases caster's Chain Heal by $s3%.	每$t2秒治疗$s2点生命值。使施法者的治疗链效果提高$s3%。
+Attack and casting speed increased.	攻击和施法速度提高。
+Stealthed.\nMovement speed slowed by $s2%.	潜行中。\n移动速度降低$s2%。
+Increases spell critical chance by $s1%.	法术暴击几率提高$s1%。
+Attack speed reduced by $s2%.	攻击速度降低$s2%。
+Movement slowed to $s1% of normal speed.	移动速度降低至正常速度的$s1%。
+Heals $s1 damage every $t1 seconds and greatly increasing stealth detection to all nearby friendly targets within $54501a yards.	每$t1秒治疗$s1点伤害，并大幅提高$54501a码范围内所有友方目标的潜行侦测能力。
+Increases Shadow Resistance by $s1.	暗影抗性提高$s1。
+Increases your chance to get a critical strike with melee attacks by $s1%.	近战攻击的暴击几率提高$s1%。
+Most melee hits increase the warrior's attack power.	大多数近战命中会提高战士的攻击强度。
+Offensive ability damage increased by $s1%.	攻击性技能伤害提高$s1%。
+Spell damage taken increased by $s1%.	受到的法术伤害提高$s1%。
+$s1 damage every $t sec	每$t秒造成$s1点伤害
+Priest's party gains mana equal to $s1% of Shadow spell damage caused by the priest.	牧师的队伍获得等同于牧师造成的暗影法术伤害$s1%的法力值。
+Nature damage inflicted every $t1 sec.	每$t1秒造成自然伤害。
+$s1 Shadow damage inflicted every sec.	每秒造成$s1点暗影伤害。
+All damage reduced by $s1%.  Healing effects increased by $s2%.	所有伤害降低$s1%。治疗效果提高$s2%。
+Physical damage increased by $s1%.	物理伤害提高$s1%。
+Taunting creatures.	嘲讽生物。
+Reduces the cast time of your next Greater Heal or Prayer of Healing by $s1%.	你的下一次强效治疗术或治疗祷言的施法时间缩短$s1%。
+All damage increased by $s1%.	所有伤害提高$s1%。
+Absorbing damage.	吸收伤害。
+Spirit based mana regeneration decreased by $s2%.	基于精神的法力恢复降低$s2%。

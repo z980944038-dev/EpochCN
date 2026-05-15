@@ -1,0 +1,1001 @@
+﻿spell_id	priority	skill_line_ids	name_en	rank_en	description_en	tooltip_en	name_zh	rank_zh	description_zh	tooltip_zh	notes
+86941	all		Mercenary of the Alliance		Experience gain increased by $s1%\nReputation gains increased by $s3%\nPlayer versus Player kills in the world have a 25% chance to loot a Bloody Token.	Experience gain increased by $s1%\nReputation gains increased by $s3%\nPlayer versus Player kills in the world have a 25% chance to loot a Bloody Token.					
+86942	all		Mercenary of the Horde		Experience gain increased by $s1%\nReputation gains increased by $s3%\nPlayer versus Player kills in the world have a 25% chance to loot a Bloody Token.	Experience gain increased by $s1%\nReputation gains increased by $s3%\nPlayer versus Player kills in the world have a 25% chance to loot a Bloody Token.					
+86943	all		Soldier of the Alliance		Reputation gains increased by $s1%\nPlayer versus Player kills in the world have a 25% chance to loot a Bloody Token.	Reputation gains increased by $s1%\nPlayer versus Player kills in the world have a 25% chance to loot a Bloody Token.					
+86944	all		Soldier of the Horde		Reputation gains increased by $s1%\nPlayer versus Player kills in the world have a 25% chance to loot a Bloody Token.	Reputation gains increased by $s1%\nPlayer versus Player kills in the world have a 25% chance to loot a Bloody Token.					
+86946	all		Rope Visual		A rope leash.	A rope leash.					
+86947	spellbook	778	Horde Balloon		Teaches you how to summon this companion.						
+86948	all				Teaches you how to summon this companion.						
+86949	spellbook	778	Alliance Balloon		Teaches you how to summon this companion.						
+86950	all				Teaches you how to summon this companion.						
+86951	all		Spiked Net		Captures a mounted player target up to $r yards away in a net for $d.  Requires Warmode.  Only usable within the Eastern Kingdoms and Kalimdor.	Rooted.					
+86952	all		Rocket Powered Punch		Knock back all enemies within 8 yards.  Requires Warmode.  Only usable within the Eastern Kingdoms and Kalimdor.						
+86953	all		Potion of Closing		Increases run speed by $s1% for $d1.  Requires Warmode.  Only usable within the Eastern Kingdoms and Kalimdor.	Increases run speed by $s1%					
+86954	all		Unlock Title: The Bloodthirsty.		Unlock Title: The Bloodthirsty.						
+86955	all		Hillsbrad Victory		Experience gain increased by $s1%\nDamage increased by $s2%	Experience gain increased by $s1%\nDamage increased by $s2%					
+86956	all		Hillsbrad Victory		Experience gain increased by $s1%\nDamage increased by $s2%	Experience gain increased by $s1%\nDamage increased by $s2%					
+86957	all		Brazier Summon								
+86958	all		Dummy Trigger		Dummy Trigger						
+86959	all		Dummy Trigger		Dummy Trigger						
+86960	all		Dummy Trigger		Dummy Trigger						
+86961	all		Dummy Trigger		Dummy Trigger						
+86962	all		Dummy Trigger		Dummy Trigger						
+86963	all		Dummy Trigger		Dummy Trigger						
+86964	all		Begin Scene: onyxia-event-stormwind-marcus		Dummy Trigger						
+86965	all		Dummy Trigger		Dummy Trigger						
+86966	all		Dummy Trigger		Dummy Trigger						
+86967	all		Dummy Trigger		Dummy Trigger						
+86968	all		Dummy Trigger		Dummy Trigger						
+86969	all		Dummy Trigger		Dummy Trigger						
+86970	all		Begin Scene: onyxia-event-stormwind-throne-room		Dummy Trigger						
+86971	all		Begin Scene: onyxia-event-stormwind-throne-finale		Dummy Trigger						
+86972	all		Cure Animal		Cure a sickly animal afflicted by the taint of poison.						
+86973	all		Tame Rockhide Boar			Tamed.					
+86974	all		Tame Rockhide Boar		Begins taming a Rockhide Boar to be your companion for 15 minutes. If you lose the beast's attention for any reason, the taming process will fail.	Taming Rockhide Boar.					
+86975	all		Tame Prowler			Tamed.					
+86976	all		Tame Prowler		Begins taming a Prowler to be your companion for 15 minutes. If you lose the beast's attention for any reason, the taming process will fail.	Taming Prowler.					
+86977	all		Tame Young Forest Bear			Tamed.					
+86978	all		Tame Young Forest Bear		Begins taming a Young Forest Bear to be your companion for 15 minutes. If you lose the beast's attention for any reason, the taming process will fail.	Taming Young Forest Bear.					
+86979	all		Call Lok'delar		Calls forth Lok'delar.						
+86980	all		Attack Power VS Demons 35		Attack Power increased by $s1 when fighting Demons.						
+86981	all		Portal: Theramore								
+86982	all		Portal: Stonard								
+86983	all		Stoneskin Totem	Rank 1							
+86984	all		Arcane Form			Increases damage taken from Arcane by $s1%. Reduces damage taken from other schools of magic and physical attacks by $s2%.					
+86985	all		Fire Form			Increases damage taken from Fire by $s1%. Reduces damage taken from other schools of magic and physical attacks by $s2%.					
+86986	all		Frost Form			Increases damage taken from Frost by $s1%. Reduces damage taken from other schools of magic and physical attacks by $s2%.					
+86987	all		Elixir of Arcane Seeing		Reveals the Elemental Amalgam in the basement of Foothold Citadel in Theramore.						
+86988	all		Teleport: Theramore								
+86989	all		Elixir of Arcane Seeing		Reveals the Elemental Amalgam in the southern orc burrow outside of Stonard.						
+86990	all		Teleport: Stonard								
+86991	all		Stun			Stunned					
+86992	all		Phase 21								
+86993	all		Lightsworn Skeletal Charger	Summon							
+86994	all		Seeing Beyond the Veil		Allows the user to see beyond the Veil.	Seeing beyond the Veil.					
+86995	all		Risen Warhorse	Summon							
+86996	all		Symbol of Life	Rank 1	The Ankh of Life will bring the person attuned to it back to life.						
+86997	all		Quest - Self Healing from resurrect								
+86998	all		Symbol of Life	Rank 1	The Symbol of Life will bring the person attuned to it back to life.						
+86999	all		Death Coil		Causes the enemy target to run in horror for $d and causes $s1 Shadow damage.  The caster gains 100% of the damage caused in health.	Horrified.					
+87000	all		Unholy Light	Rank 13	Heals a friendly target for $s1.						
+87001	all		Placing		Place in the main chamber of Caer Darrow's keep to draw Duke Lionheart out.						
+87002	all		Stoneskin Totem	Rank 1							
+87003	all		Stoneskin Totem	Rank 1							
+87004	all		Water Sample		This container needs to be filled with water from the fissure near Girna's dock in the Wetlands.						
+87005	all		Water Sample		This container needs to be filled with water from the fissure beneath the Venture Co. settlement in Stonetalon Mountains.						
+87006	all		Water Sample		This container needs to be filled with water from the well in Raven Hill.						
+87007	all		Summon Felsteed	Summon							
+87008	all		Begin Scene: junari-fizban-arguing		Dummy Trigger						
+87009	all		Stoneskin Totem	Rank 1							
+87010	all		Strongbox Defender Summon		It's a trap!						
+87011	all		Dispel Scramble								
+87012	all		Bloodstone Seeking								
+87013	all		Soothing Waters		Allows you to loot Raging Bindings.	Allows you to loot Raging Bindings.					
+87014	all		Soothing Waters		Cools a weakened Raging Cinders elemental enough for their bindings to be collected.						
+87015	all		Summon Spawn of Atrasies		Bringing forth calmer elementals.						
+87016	all		Infected Bite		Inflicts Nature damage to an enemy every $t1 sec. and increases the Physical damage it takes for $d.	$s1 nature damage inflicted every $t1 sec.\nIncreased Physical damage taken by $s2.					
+87017	all		Steam Blast		Deals $s1 Fire damage to an enemy, knocking it back.						
+87018	all		Rushing Waters		Blast a Steam Vent with Rushing Waters to crumble it.						
+87019	all		Blazing Hills - Air Plateau								
+87020	all		Blazing Hills - Air Plateau - Return								
+87021	all		Calming Air		Cool and calm a weakened Boiling Wanderer.	Stunned.					
+87022	all		Quake		The ground quakes dealing $s1 Nature damage to targets caught in the aftermath.						
+87023	all		Quake		The ground quakes dealing $s1 Nature damage to targets caught in the aftermath.						
+87025	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87026	all		Capture Terrified Animal		Attempt to capture a terrified animal.						
+87027	all		Place Bait		Place the Strong Smelling Bait within Fireplume's Roost.						
+87028	all		Alestone Estate - Aerie Peak								
+87029	all		Blow Whistle		Blow to summon Fireplume at his roost.						
+87030	all		Aerie Peak - Alestone								
+87031	all		Blow Whistle		Blow to summon Fireplume at Aerie Peak.						
+87032	all		Summon Doomguard		Summons an Doomguard to accompany the caster until dismissed.						
+87033	all		Increase Spell Dam Fire 8		Increases damage done by Fire spells and effects by up to $s1.						
+87034	all		Increase Spell Dam Nature 8		Increases damage done by Nature spells and effects by up to $s1.						
+87035	all		Increase Spell Dam Frost 8		Increases damage done by Frost spells and effects by up to $s1.						
+87036	all		Fiery Blast		Blast an enemy, dealing $s1 fire damage.						
+87037	all		Drizzle's Potion		Increases your Stamina by $s1 for $d.	Stamina increased by $s1.					
+87038	all		Drizzle Spell								
+87039	all		Shadowforge Curse		Reduces an enemy's spirit by $s1% for $d.	Spirit reduced by $s1%.					
+87040	all		Throw Pickaxe		Throw your pickaxe at the target, dealing $s1 Physical damage.						
+87041	all		Flame Breath		Inflicts $s1 Fire damage to enemies in a cone in front of the caster.						
+87042	all		Smelting - 4 Sec								
+87043	all		Fel Sight		Allows the caster to detect stealthed or invisible enemies.	Detecting stealth and invisibility.					
+87044	all		Tap Vision		Forces a Cursing Eye to discreetly share its vision with Watcher Mahar Ba.						
+87045	all		Rocko's Bark		Increase target's spell power by $s1.	Spell power increased by $s1.					
+87046	all		Teddy's Bite		Increase target's melee and ranged attack power by $s1.	Melee and ranged attack power increased by $s1.					
+87047	all		Will to Undeath			Dark verses are spoken nearby, stirring this corpse should it fall.					
+87048	all		Will to Undeath			This necromancer whispers through the still air, yet its lips do not move.					
+87049	all		Will to Undeath			An unholy voice joins this orc's own, uttering a ceaseless incantation.					
+87050	all		Will to Undeath - Necromancer Aura		While active, nearby Risen Skeletons within 30 yards will be returned to unlife.						
+87051	all		Unholy Imperative		Forces the target to fixate on you. When the effect wears off, he will attack the thing he hates the most.	A necromancer has bid this skeleton to attack someone, causing it to ignore attempts to get its attention.					
+87052	all		Unholy Imperative		Orders all Risen Skeletons within 30 yards of the caster to fixate on the caster's target for $d, ignoring other enemies.	A necromancer has ordered any nearby Risen Skeletons to attack you!					
+87053	all		Grombolar Summon Skeleton		Summons an entire legion of Ghouls to fight for the Death Knight.  The Ghouls will swarm the area, taunting and fighting anything they can.						
+87054	all		Grombolar Necromancer - Raise Corpse Trigger		Raise a nearby Skeleton.						
+87055	all		Stun			Stunned					
+87056	all		Legion of the Damned		Raises an army of skeletons to fight for the caster.						
+87057	all		Legion of the Damned		Raises an army of skeletons to fight for the caster.	Summoning Skeletons.					
+87058	all		Grombolar Bone Pit Swarm								
+87059	all		Grombolar Skeleton Summoner - Stun CD								
+87060	all		Book of Necromancy - Skeleton Stats								
+87061	all		Book of Necromancy - Trigger								
+87062	all		Defiled		Perform a necromantic rite on a corpse, stealing its skeleton for a time.	A skeleton has recently risen from this corpse.					
+87063	all		Necromantic Call		Raises a corpse to fight for the caster.						
+87064	all		Soulbinder		Killing a humanoid enemy that yields experience or honor has a chance to raise it as a skeleton for 36 seconds. Maximum 3 skeletons.						
+87065	all		Raise Dead		Summon up to 5 skeletons to fight for you from valid corpses within 20 yards. Requires a Grombolar Soulstone.						
+87066	all		Tremoring Earth		Increases threat generated by Nature and Fire damage spells by $s1% per stack.	Threat generated by Nature and Fire damage spells increased by $s1%.					
+87067	all		Totem of the Broken World		Your non-periodic Nature and Fire damage spells cause the earth to tremor for 20 seconds, increasing the threat they generate by 20%. Stacks up to 5 times.						
+87068	all		Soulbound		Periapt of the Damned Debuff	The necklace you're wearing has tightened. It won't come off...					
+87069	all		Mend Soul		The periapt of the damned sacrifices the stronger soul inside the soulstone to heal its wielder.						
+87070	all		Ravage Soul		The periapt of the damned leeches the wielder's soul and devours the soulstone, causing damage.						
+87071	all		Periapt of the Damned		Swap all of your current health for up to 5000 of your missing health. Requires a Grombolar Soulstone.						
+87072	all		Cosmetic - Periodic Talk - Effect								
+87073	all		Cosmetic - Periodic Talk								
+87074	all		Liam the Dockmaster - Flee Aura								
+87075	all		Shrouded	Rank 1	Puts the caster in stealth mode, but slows its movement by $s2%. Lasts until cancelled.	Stealthed.\nMovement speed slowed by $s2%.					
+87076	all		Increased Spell Penetration 25		Decreases the magical resistances of your spell targets by $s1.						
+87077	all		Blackrock Mountain - Periodic Quake								
+87078	all		Molten Rock		Deals Fire damage in a small area.						
+87079	all		Molten Rock								
+87080	all		Rage of the Firelord			Dredging molten rocks from below and erupting them at random.					
+87081	all		Bind Elemental		Call forth a terrible force, binding it to an elemental form.						
+87082	all		Increased Spell Penetration 22		Decreases the magical resistances of your spell targets by $s1.						
+87083	all		Paralyze		Channels a paralyzing beam at the target, preventing it from taking any action.	Stunned.					
+87084	all		Filling Runic Bottle		Fill the bottle at a lava pool alongside the road heading west of Ashfall Post.						
+87085	all		Charging the Core - Altar of Storms Lightning Visual								
+87086	all		Almost Dead		Charging the core using the mysterious energies of the Altar of Storms.	Barely alive.					
+87087	all		Charging Golem Core		Charge the core at the Altar of Storms west of Blackrock Mountain.						
+87088	all		Drained Scorpid			A dessicated husk.					
+87089	all		Collecting Scorpid Ooze		Fill the vial full of ooze from a dead scorpid.						
+87090	all		Unit Yields No Experience								
+87091	all		Stewart Smash		Pummels targets in front of Stewart for $s1 Physical damage. Generates 5 Runic Power.						
+87092	all		Spit Ooze		Deal $s1 Nature damage to a target, additionally damaging it for $s2 every $t2 sec for $d. Stacks up to 10 times.	$s2 Nature damage inflicted every $t2 sec.					
+87093	all		Resonance Burst		Stewart emits a burst of arcane energy, dealing $s1 damage to enemies around him and stunning them for $d. 	Stunned.					
+87094	all		Expose Core		Consumes all of Stewart's current Runic Power to blast targets around him, dealing Arcane damage based on the amount consumed. Refreshes the duration of Resonance Burst on enemies hit.						
+87095	all		Expose Core		Consumes all of Stewart's current Runic Power to blast targets around him, dealing Arcane damage based on the amount consumed. Refreshes the duration of Resonance Burst on enemies hit.						
+87096	all		Runic Restoration		Cleanses most harmful effects, restoring $s1 Health and 10 Runic Power every second for $d. Damage taken cancels the effect.	Restoring 200 Health and 10 Runic Power every second. Damage taken cancels the effect.					
+87097	all		Control Rod		Use Stewart's control rod to pilot him.	Currently being piloted remotely and cannot leave the Burning Steppes. Enemies killed do not yield loot or experience.					
+87098	all		Return		Stop controlling Stewart.						
+87099	all		Return to Helga if Disconnected								
+87100	all		Ominous Talisman - Death Visual Effect								
+87101	all		Condemned		Causes death at some point within the next day.	This person is marked for death. It's anyone's guess when it'll happen.					
+87102	all		Eep the Raven		Right Click to summon and dismiss your bird.						
+87103	all		Ghostly Visitor		A ghost appears.	An otherworldly presence has sensed your cleverness...					
+87104	all		Fogstone		Let the fog roll in.	Witness to a fogbound world.					
+87105	all		Caretaker's Key		Open the Back Door to Karazhan.						
+87106	all				Open the front door to Karazhan.						
+87107	all		Ice Claw		Inflicts normal damage plus $s2 to an enemy, and increases the time between its attacks by $s1% for $d.	Time between attacks increased by $s1%.					
+87108	all		Smite		Smites an enemy, inflicting Holy damage.						
+87109	all		Hex of Weakness		Weakens the target enemy, reducing damage caused by $s1 and reducing the effectiveness of any healing by $s2%. Lasts $d.	Physical damage done reduced by $s1 and healing effectiveness reduced by $s2%.					
+87110	all		Raptor Strike		Strikes at an enemy, inflicting increased melee damage.						
+87111	all		Health Check								
+87112	all		Shadowguard		Surrounds the caster with $n shadows that have $h% chance of striking melee or ranged attackers for $s1 damage. Each time the shadows strike, a shadow dissipates. Thus, the effect expires after $d. or after it has struck $n times.	$h% chance of inflicting $s1 Shadow damage on hit.					
+87113	all		Mind Blast		Inflicts Shadow damage to an enemy.						
+87114	all		Foreboden		Death.						
+87115	all		Shadow Word: Forebode		Kills the target after $d. Reaching full health cancels this effect.	Kills the target after $d. Reaching full health cancels this effect.					
+87116	all		Shadow Nova		Inflicts moderate Shadow damage to nearby enemies. Causes them to heal you slightly for $d.	Leeches $s2 health every $t2 sec.					
+87117	all		Talon Rake		Rake the target for $s1 damage and an additional $o2 damage over $d.	Bleeding for $s2 damage every $t2 seconds.					
+87118	all		Fire Visual								
+87119	all		Fire Visual								
+87120	all		Clean Gun		Cleans the targeted Stormpike, Dun Morogh, or Mounted Ironforge Mountaineer's gun. Only usable if the target has not had their gun cleaned recently.	Clean gun.					
+87121	all		Threat 1								
+87122	all		Dead Machine								
+87123	all		Self-Disassemble		Efficiently disassembles self.						
+87124	all		Summon Ice Core Extractor		Place down the Ice Core Extractor, which will need to be defended for 1.5 minutes! Must be placed in a deep area of the icy lake, south of the small island.						
+87125	all		Aiding Cobalt			Following Cobalt's directions to assist in repairing the plane.					
+87126	all		Toss Tool								
+87127	all		Extinguish Fire								
+87128	all		Extinguish Fire								
+87129	all		Toss Lubricant								
+87130	all		Toss Metal Plating								
+87131	all		Repair - Get Tool								
+87132	all		Repair - Put Out Fire								
+87133	all		Repair - Get Lubricant								
+87134	all		Repair - Get Metal Plating								
+87135	all		Repair Window								
+87136	all		Finished Repairs								
+87137	all		Finished Repairs								
+87138	all		Finished Repairs								
+87139	all		Plane Repaired								
+87140	all		Fiery Explosion								
+87141	all		Burn Armaments		Burns a nearby Frostmane Armaments box in Rik'watha.						
+87142	all		Lighting Torch		Light this torch at any fire.						
+87143	all		Veron's Lasso		Mount an Amberstill Ram.	Riding an Amberstill Ram.					
+87144	all		Ride Vehicle								
+87145	all		Return Amberstill Ram		Return the Amberstill Ram to Veron Amberstill.						
+87146	all		Sprint		Increases run speed by $s1% for 6 seconds.	Increases run speed by $s1% for 6 seconds.					
+87147	all		Mine Kinetic Ore		Mine Kinetic Ore.						
+87148	all		Azora Shield		Surrounds the caster with a protective shield that reflects $s1% of harmful spells for $d.	$s1% chance to reflect spells.					
+87149	all		Azora Blast			$s3 Arcane damage every $t3 sec.					
+87150	all		Incapacitate		Drains the soul of the target, inflicting Shadow damage every $t1 seconds for $d.	Shadow damage inflicted every $t1 seconds.					
+87151	all		Arcane Barrier		A field of arcane magic surrounds the caster, inflicting Arcane Damage and slowing enemies by $s2%.	Arcane Damage inflicted every $t1 sec., and movement speed reduced by $s2%.					
+87152	all		Gervase Stomp		Stuns all enemies within $a1 yards for $d.	Gervase Stomp					
+87153	all		Aggressive Leap		Leaps behind the target.						
+87154	all		Filling		Right-click to fill the Phial at the Twilight Grove moonwell.						
+87155	all		Sarae's Experiment		Heals a friendly target for $s1 and another $o2 over $d.	Heals $s2 every $t2 seconds.					
+87156	all		Regrowth		Heals a friendly target for $s1 and another $o2 over $d.	Heals $s2 every $t2 seconds.					
+87157	all		Place Picnic		Place the Picnic Set within the Darkshire Hay Field.						
+87158	all		Place Jacks Letter		Place Jack's Letter within Faye Underhill's home.						
+87159	all		Fevered Plague		Inflicts $s1 Nature damage to an enemy, then an additional $s2 damage every $t2 sec. for $d.	$s2 Nature damage inflicted every $t2 sec.					
+87161	all		Destroying		Destroy Chillbone's Phylactery in Blackrock Mountain.						
+87162	all		Bloodstone Seeking								
+87163	all		Alerted			This resident has recently been alerted to Augustus' upcoming sale.					
+87164	all		Increase Spell Dam Arcane 17		Increases damage done by Arcane spells and effects by up to $s1.						
+87165	all		Applying		Apply the All-Purpose Neutralizing Agent to the Scourge cauldron.						
+87166	all		Fish: Tower of Azora		Attempt to fish up a mana tainted sludge from the Tower of Azora well.						
+87167	all		Vomit								
+87168	all		Summon Freed Miner								
+87169	all		Spider Elixir		Give a dose of the Spider Elixir to a wounded miner.						
+87170	all		Orb of Frost		Deals $s1 Frost damage to the target, reducing their movement speed by $s2%.	Reduces movement speed by $s2%.					
+87171	all		Orb of Water		Hurls a massive ball of water.						
+87172	all		Arcane Missiles	Rank 1	Launches Arcane Missiles at the enemy, causing $7268s1 Arcane damage every $t2 sec for $d.						
+87173	all		Arcane Missile	Rank 1	Launches Arcane Missiles at the enemy, causing $7268s1 Arcane damage every $5143t2 sec for $5143d.						
+87174	all		Water Shield		Decreases the damage taken by the Water Elemental by  $s1% for $d.	Damage taken reduced by $s1%.					
+87175	all		Water Bubble		You are engulfed in a Bubble of Water which inflicts $s1 Frost damage every $t1 sec and slows movement speed by $s2% for $d.	Inflicts $s1 Frost damage every $t1 sec and slows movement speed by $s2%.					
+87176	all		Neptulon's Might		Explodes upon death, inflicting $s1 Nature damage to all nearby enemies.	Filled with the essence of Neptulon the Tidehunter. Grants the ability to breath underwater for $d.					
+87177	all		Teleport Northshire Falls		Teleports the user to the top of Northshire Falls.						
+87178	all		Imbue Translocation Stone		Inflicts $s1 Arcane damage to enemies in front of the caster.	Inflicts $s1 Arcane damage to enemies in front of the caster.					
+87179	all		Increase Defense 2		Increased Defense +$s1.						
+87180	all		Fireball		Inflicts Fire damage to an enemy.						
+87181	all		Shadow Mend		Heals friendly target for $s1.						
+87182	all		Mind Blast		Inflicts Shadow damage to an enemy, but causes a high amount of threat.						
+87183	all		Heroic Strike		A strong attack that increases melee damage by $s1 and causes a high amount of threat.						
+87184	all		Syndicate Disguise		Use to disguise yourself as a member of the Syndicate.	Disguised as a member of the Syndicate.					
+87185	all		Fire Visual								
+87186	all		Burn Syndicate Food Supplies		Burn the Syndicate Food Supplies in Durnholde Keep.						
+87187	all		Increase Spell Dam Fire 4		Increases damage done by Fire spells and effects by up to $s1.						
+87188	all		Phase 20								
+87189	all		See Phase 20								
+87190	all		Mine Ghost-Touched Ore		Mine Ghost-Touched Ore.						
+87191	all		Create Hillsbrad Apple Cider								
+87192	all		Hillsbrad Apple Cider Credit								
+87193	all		Southshore Defended								
+87194	all		Southshore Sieged								
+87195	all		Poisoning		Poison the Syndicate Food Supplies.						
+87196	all		Increase Healing 4		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+87197	all		Call Lightning (Cosmetic)		Deals $s1 Nature damage.						
+87198	all		Bury Bhondur's Bones		Bury Bhondur's Bones at the Thelsamar Graveyard.						
+87199	all		Threshadon Snap		Inflicts $s2 damage to an enemy, stunning it for $d.	Stunned.					
+87200	all		Head Bash		Bash your head against the target, stunning them for $d.	Stunned for $d.					
+87201	all		Abomination Hook		Inflicts $s1 Physical damage and pulls the target to the caster.						
+87202	all		Savage Blow		Inflicts $s1% weapon damage and reduces the target's armor by $s2 for $d.	Armor reduced by $s2.					
+87203	all		Sepulcher Abomination	Summon	Summon a Sepulcher Abomination and bind it to your will for $d. May only be used in The Sepulcher.	Controlling a Sepulcher Abomination.					
+87204	all		Ambush	Rank 9	Unleash the fury of Foss' friends.	Healing $s1 damage every $t1 seconds.					
+87205	all		Fling Poop			Chance to hit reduced by $s1%.					
+87206	all		Brokenhorn Stomp		Inflicts $s1 Nature damage to nearby enemies, increasing the time between their attacks by $s3% and slowing their movement by $s2% for $d.	Time between attacks increased by $s3%.\nMovement speed reduced by $s2%.					
+87207	all		Berserker Charge		Charges at an enemy, knocking it back and inflicting normal damage plus $s3.						
+87208	all		Lightning Shield		Surrounds the caster with $n balls of lightning that have $h% chance of striking melee or ranged attackers for $s1 damage. Each time the lightning shield strikes, a ball of lightning dissipates. Thus, the shield expires after $d. or after it has struck $n times.	$h% chance of inflicting $s1 Nature damage on hit.					
+87209	all		Champions Lightning		Strikes an enemy with a lightning bolt that arcs to another nearby enemy. The spell affects up to $x1 targets, causing Nature damage to each.						
+87210	all		Summon Fire Elemental		Summons $s1 $lFire Elemental:Fire Elementals; to accompany the caster until dismissed.						
+87211	all		Molten Armor		Deals $s1 Fire damage.						
+87212	all		Molten Armor		Causes $34913s1 Fire damage when hit, increases your chance to critically hit with spells by $s3%, and reduces the chance you are critically hit by $s2%.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.	Causes $35916s1 Fire damage to attackers.  Chance to receive a critical hit reduced by $s2%.  Chance to critically strike with spells increased by $s3%.					
+87213	all		Poison Cloud		Inflicts $s1 Nature damage to nearby enemies every $t1 sec. for $d.	$s1 Nature damage inflicted every $t1 sec.					
+87214	all		Punch		Pummels an enemy for melee damage.						
+87215	all		Frantic Leap		Leap through the air and slam down on all enemies within $52174a1 yards of the target area, causing $52174s2% weapon damage and stunning them for $52174d.	Stunned.					
+87216	all		Frantic Leap		Leap through the air and slam down on all enemies within $52174a1 yards of the target area, causing $52174s2% weapon damage and stunning them for $52174d.						
+87217	all		Throw Boulder		Hurls a boulder at an enemy, inflicting Physical damage.						
+87218	all		Twins Over								
+87219	all		Reset		Reset						
+87220	all		Test Helmet		Tests the Janky Mind Control Helmet on an Elder Mistvale Gorilla. Only usable at low health.						
+87221	all		Track Lovers		Points the wielder at the owner of the memories held within.						
+87222	all		Track Lovers		Points the wielder at the owner of the memories held within.						
+87223	all		Release Curse								
+87224	all		Feed Harborage Citizen		Feed a Harborage Citizen.						
+87225	all		Well Fed		Cannot consume more Karabor Fire Stew.	Cannot consume more Karabor Fire Stew.					
+87226	all		Bury Joseph's Watch		Bury the watch at Joseph's grave.						
+87227	all		Tame Greater Duskbat		Begins taming a Greater Duskbat to be your companion for 15 minutes.  If you lose the beast's attention for any reason, the taming process will fail.	Taming Greater Duskbat.					
+87228	all		Tame Greater Duskbat			Tamed.					
+87229	all		Tame Starving Worg		Begins taming a Starving Worg to be your companion for 15 minutes. If you lose the beast's attention for any reason, the taming process will fail.	Taming Starving Worg.					
+87230	all		Tame Starving Worg			Tamed.					
+87231	all		Tame Vicious Night Web Spider		Begins taming a Vicious Night Web Spider to be your companion for 15 minutes. If you lose the beast's attention for any reason, the taming process will fail.	Taming Vicious Night Web Spider.					
+87232	all		Tame Vicious Night Web Spider			Tamed.					
+87233	all		Temporal Probe		Probe the temporal disturbance in Winterspring.						
+87234	all		Crossbow Specialization	Rank 1							
+87236	all		Collection Syringe			This ooze has recently been siphoned.					
+87237	all		Collection Syringe		Siphons a sample from the corpse of an ooze in the Weeping Cave.	Siphoning.					
+87238	all		Placing		Place the soil sample into the prepared soil.						
+87239	all		Placing		Place the fungus sample into the prepared soil.						
+87240	all		Placing		Sprinkle the watering can onto the prepared soil.						
+87241	all		Soil Sample								
+87242	all		Fungus Sample								
+87243	all		Watering Can								
+87244	all		Success								
+87245	all		Alexei								
+87246	all		Fire Visual								
+87247	all		Fire Hit								
+87248	all		Pranking								
+87249	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+87250	all		Harvest Golem Repair		Attempt to fix the Broken Golem at the Thickbottom Farm.						
+87251	all		Crude Dragonmaw Outfit		Combine Dragonmaw Pants, Tunic, and Skin to create a Crude Dragonmaw Outfit.						
+87252	all		Crude Dragonmaw Outfit		Combine Dragonmaw Pants, Tunic, and Skin to create a Crude Dragonmaw Outfit.						
+87253	all		Crude Dragonmaw Outfit		Combine Dragonmaw Pants, Tunic, and Skin to create a Crude Dragonmaw Outfit.						
+87254	all		Dragonmaw Disguise		Equip your crudely made Dragonmaw Disguise.						
+87255	all		Dragonmaw Disguise		The look and smell of a Dragonmaw Orc.	The look and smell of a Dragonmaw Orc.					
+87256	all		Dragonmaw Disguise		The look and smell of a Dragonmaw Orc.	The look and smell of a Dragonmaw Orc.					
+87257	all		Soothing Bandage		Heals the targeted Burndural Messenger.						
+87258	all		Summon Doomguard		Summons an Doomguard to accompany the caster until dismissed.						
+87259	all		Chain Fireball		Hurls a fireball at the enemy, dealing $s1 Fire damage and then jumping to additional nearby enemies.  Affects $x1 total targets.  Lasts $d.						
+87260	all		Threat 1								
+87261	all		Breach Ward		Projects a dark green targeting beam onto your current target.	Marking target.					
+87262	all		Breach Ward								
+87263	all		Breach Ward								
+87264	all		Liallas' Shield.		Immune to all attacks and spells.\nCannot attack. \nLasts $d.	Immune to all attacks and spells.\nCannot attack.					
+87265	all		Teleport			Teleporting in.					
+87266	all		Retrieve Sample		Attempt to retrieve a sample from the Ruins of Stardust.						
+87267	all		Aessina's Blessing								
+87268	all		Silverwing Ambusher Sneak	Rank 1	Puts the caster in stealth mode, but slows its movement by $s2%. Lasts until cancelled.	Stealthed.\nMovement speed slowed by $s2%.					
+87269	all		Ambush		Ambush the target, causing $s1 damage.						
+87270	all		Vile Concoction		Hurls a Vile Concoction at the targeted Ashenvale Outrunner.	Recently experimented on with a Vile Concoction.					
+87271	all		Vomit								
+87272	all		Vile Concoction		Hurls a Vile Concoction at the targeted Ashenvale Ambusher.	Recently experimented on with a Vile Concoction.					
+87273	all		Improved Swiftness Potion		You really shouldn't drink this.						
+87274	all		Grumpy Peon			This peon has recently been questioned.					
+87275	all		Summon Tremormatic MK I		Summon the Tremormatic MK I.						
+87276	all		Summon Tremormatic MK II		Summon the Tremormatic MK II.						
+87277	spellbook	165	Wicked Leather Boots								
+87278	all		Poison		Poisons target for $s1 Nature damage every $t1 sec for $d.	$s1 Nature damage inflicted every $t1 sec.					
+87279	spellbook	171	Elixir of Dazzling Light								
+87280	all		Filling		Right-click to fill the Phial at Lake Mennar.						
+87281	all		Increase Spell Dam Fire 13		Increases damage done by Fire spells and effects by up to $s1.						
+87282	all		Increase Spell Dam Holy 8		Increases damage done by Holy spells and effects by up to $s1.						
+87283	all		Increase Spell Dam Fire 11		Increases damage done by Fire spells and effects by up to $s1.						
+87284	spellbook	164	Enchanted Thorium Shield								
+87285	all		Teleport to Wobble Hollow		Teleports the user to Wobble Hollow.						
+87286	spellbook	202	Bladed Pickaxe								
+87287	spellbook	333	Eternal Wand		This item binds to you upon being crafted.						
+87288	spellbook	197	Ironweb Cloak								
+87289	spellbook	778	Baby Giraffe		Teaches you how to summon this companion.						
+87290	all				Teaches you how to summon this companion.						
+87291	all		Deviate Feast								
+87292	all		Deviate Feast		Set out a great feast that will feed your party! Everybody eat me!						
+87293	spellbook	185	Deviate Feast								
+87294	all		Spitelash		Deals Shadow damage to the target and increases their damage taken for $d.	Physical damage taken is increased by $s1.					
+87295	all		Frost Shock		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+87296	all		Spitelash		Deals Shadow damage to the target and increases their damage taken for $d.	Physical damage taken is increased by $s1.					
+87297	all		Frost Shock		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+87298	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+87299	all		Forked Lightning		Inflicts Nature damage to enemies in a cone in front of the caster.						
+87300	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+87301	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+87302	all		Rend		Wounds the target causing them to bleed for $o1 damage over $d.	Bleeding for $s1 damage every $t1 sec.					
+87303	all		Teleport			Teleporting in.					
+87304	all		Siphoned	Rank 1	This thunder lizard has recently had their essence siphoned.	This thunder lizard has recently had their essence siphoned.					
+87305	all		Korgar's Orb	Rank 1	Concentrate the orb's power onto the thunder lizard, siphoning their essence.	Siphoning.					
+87306	all		Stealth	Rank 1	Puts the caster in stealth mode, but slows its movement by $s2%. Lasts until cancelled.	Stealthed.\nMovement speed slowed by $s2%.					
+87307	all		Filling		Fill the crate with manure.						
+87309	all		Marvelous Owlkin Obtaining Neuralizer			This owlbeast has recently been siphoned.					
+87310	all		Marvelous Owlkin Obtaining Neuralizer		Siphon the Essence of Starlight from a weakened Winterspring owlbeast.	Siphoning.					
+87311	all		Fiery Blast		Blast an enemy, dealing $s1 fire damage.						
+87312	all		Shadow Bolt		Sends a shadowy bolt at the enemy, causing $s1 Shadow damage.						
+87313	all		Siphoned			This Shadow Wraith has recently had their essence siphoned.					
+87315	all		Trance Enhancer		Concentrate the Trance Enhancer onto the Shadow Wraith, siphoning their essence.	Siphoning.					
+87317	all		Trance Enhancer		Hypnotize a member of the Burning Blade for 30 seconds.	Hypnotizing.					
+87318	all		Increase Spell Dam Nature 4		Increases damage done by Nature spells and effects by up to $s1.						
+87319	all		Increase Spell Dam Nature 12		Increases damage done by Nature spells and effects by up to $s1.						
+87320	all		Siphoned	Rank 1	This kodo has recently had their essence siphoned.	This kodo has recently had their essence siphoned.					
+87321	all		Jo'gon's Rod	Rank 1	Concentrate the rod's power onto the kodo, siphoning their essence.	Siphoning.					
+87322	all		Random Lightning Visual		Lightning arcs onto nearby locations.	Storming...					
+87323	all		Lightning Bolt	Rank 2	Casts a bolt of lightning at the target for $s1 Nature damage.						
+87324	all		Burn Eggs		Use on Darkmist Egg Sacks near Darkmist Cavern to set them on fire.						
+87325	all		Burning Flesh								
+87326	all		Bodged Defibrillator		Zap a Crew Member awake.						
+87327	all		Smoking		Recently Defibrillated						
+87328	all		Sniffotron Summon		Summon a Sniffotron MK IV to locate Beezil Linkspanner.						
+87329	all		Explode								
+87330	all		Purifying Blood Venom Falls		Attempt to purify Bloodvenom Falls lake.						
+87331	all		Heavy Leather Ball		Throw the ball to a friendly player.   If they have free room in their pack they will catch it!						
+87332	all		Luring Vile Oozemother		Attempt to lure the Vile Oozemother						
+87333	all		Throw Banana		Throw a Tel'Abim Banana at a Groddoc Thunderer.						
+87334	all		Oil Coat (small)		Coats the caster in a slick of oil, making it impossible to fly.	Covered in a thick coat of oil.					
+87335	all		Gnomish Coagulator		Clean up a Venture Co. Oil Spill.						
+87336	all		Place Kodo Calf Bait		Place the Kodo Calf Bait at the entrance of the Bloodhoof Village Inn.						
+87337	all		Healing Touch		Calls upon Nature magic to heal an ally.						
+87338	all		Moonfire		Burns the enemy for Arcane damage and inflicts additional damage over $d.	Arcane damage inflicted every $t1 sec.					
+87339	all		Essence Focuser		Attune to a crystal pile in northeast Silithus.						
+87340	all		Cenarion Kodo		Summons and dismisses a rideable Cenarion Kodo. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+87341	all		Cenarion Saber		Summons and dismisses a rideable Cenarion Saber. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+87342	all		Summoning		Use 5 essences to Summon the Champion of Thunderaan.						
+87343	all		Combine Tablets		Combine the Lower and Upper Twilight Tablets.						
+87344	all		Combine Tablets		Combine the Lower and Upper Twilight Tablets.						
+87345	all		Fire Visual								
+87346	all		Burning		Burn a nearby Pile of Meat in Hive'Zora.						
+87347	all		Planting		Plant the Glowing Seed in the Heart of Hive'Regal.						
+87348	all		Water Bolt	Rank 3	Launches a bolt of frost at the enemy, causing $s2 Frost damage and slowing movement speed by $s1% for $d.	Movement slowed by $s1%.					
+87349	all		Potion of Quickness		Increases run speed by 20% for 15 min.	Increases run speed by 20%					
+87350	all		Mine Palladium Ore		Mine Palladium Ore.						
+87351	all		Summon Tremormatic MK III		Summon the Tremormatic MK III.						
+87352	all		Fire Visual								
+87353	all		Burn Venture Co. Supplies		Burn a nearby Venture Co. Supply Crate in Windshear Crag.						
+87354	all		Light Torch		Light the Unlit Torch at Kaela's Campfire.						
+87355	all		Summon Gral		Place an offering at the Altar of Gral.						
+87356	all		Scout Salve		Apply to an Unconscious Scout to cure them of their poison.						
+87357	all		Salve Applied		Recently Resuscitated						
+87358	all		Burn Corpse		Use on an Centipaar Stinger or Centipaar Swarmer in the Noxious Lair to set them on fire.						
+87359	all		Self Stun - 15 seconds								
+87360	all		Water Shield		The caster is surrounded by $n globes of water.  When a spell, melee or ranged attack hits the caster, $33737s1 mana is restored to the caster. This expends one water globe.  Only one globe will activate every few seconds.  Lasts $d.  Only one Elemental Shield can be active on the Shaman at any one time.	Attacks and spells used against you deal Frost damage and slow the attacker's spell casts.  $n charges.					
+87361	all		Filling		Right-click to fill the Phial at the Thistleshrub Valley Moonwell.						
+87362	all		Summon Totem		Summon Wuti's Water Totem to heal the heat stricken tuskarr.						
+87363	all		Nereid's Blessing		Allows the Imbiber to breathe water for $d.	Waterbreathing.					
+87364	all		Sylph's Blessing		Increases swim speed by $s1% for $d1.	Increases swim speed by $s1%.					
+87365	all		Place Refrigerator		Summon an Empowered Kezan's Premium Refrigerator to heal the heat-stricken tuskarr.						
+87366	all		Sprint		Increase movement speed by $s1%.						
+87367	all		Explode		Target a Hazzali Brainlord and sacrifice Dennis to destroy it.						
+87368	all		Silithid Mind Control Cap	Summon	Mind Control Dennis the Silithid for $d. May only be used in Anje'Watha.	Controlling a Silithid.					
+87369	all		Crude Oil Sample		Right-click to fill the Large Oil Canister at the Oil Platform Base.						
+87370	all		Experimental Rocket Fuel		Right-click to create the Experimental Rocket Fuel at Narain Southfancy's House.						
+87371	all		Reinforcements Salute Trigger								
+87372	all		Reinforcements Get You Trigger								
+87373	all		Cleaning Supplies		Cleans the targeted Oil-Coated Critter.						
+87374	all		Oil Coat (small)		Coats the caster in a slick of oil, making it impossible to fly.	Covered in a thick coat of oil.					
+87375	all		Oil Absorber		Clean up a Tanaris Oil Spill.						
+87376	all		Place Timed Explosive		Place a Timed Explosive on the Tanaris Oil Rig.						
+87377	all		Tar Collector		Absorb Tar from the core of a Tar Beast.						
+87378	all		Bulky Battery Charger		Charge the battery on Raging Tempests in Tanaris. Only usable at low health.						
+87379	all		Throw Grenade		Inflicts $s1 Fire damage to targets in a 5 yard radius.						
+87380	all		Frenzied Moonfire	Rank 1	Burns the enemy for $s2 Arcane damage and then an additional $o1 Arcane damage over $d.	$s1 Arcane damage every $t1 seconds.					
+87381	all		Purifying		Purify the demonic essence at the Dolanaar moonwell.						
+87382	all		Driving License		Unlocks the ability to take part in the Mirage Raceway.						
+87383	all		Podium Finish								
+87384	all		Mirage Raceway Win								
+87385	all		Cool Sparkling Fresh Water		Give a Race Invigilator Cool Sparkling Fresh Water.						
+87386	all		Refreshed		Can not consume more Cool Sparkling Fresh Water.	Can not consume more Cool Sparkling Fresh Water.					
+87387	all		Play: Human1gm.mp3								
+87388	all		Play: Human2gm.mp3								
+87389	all		Play: Human3gm.mp3								
+87390	all		Play: Human4gm.mp3								
+87391	all		Play: Orc1gm.mp3								
+87392	all		Play: Orc2gm.mp3								
+87393	all		Play: Orc3gm.mp3								
+87394	all		Play: Orc4gm.mp3								
+87395	all		Play: Hwrrmgm.mp3								
+87396	all		Play: mus_pb_toytrumpet.mp3								
+87397	all		Play: intro.mp3								
+87398	all		Play: Introgm.mp3								
+87399	all		Play: humanv.mp3								
+87400	all		Play: Human1gm.mp3								
+87401	all		Play: Orc1gm.mp3								
+87402	all		Goblin Team Representation		Take on the visual of a Goblin Pit Crewman.	Take on the visual of a Goblin Pit Crewman.					
+87403	all		Gnome Team Representation		Take on the visual of a Gnome Pit Crewman.	Take on the visual of a Gnome Pit Crewman.					
+87404	all		Remote Controlled Goblin Car		Summon and control your Remote Controlled Goblin Car.	Summon and control your Remote Controlled Goblin Car.					
+87405	all		Remote Controlled Gnome Car		Summon and control your Remote Controlled Gnome Car.	Summon and control your Remote Controlled Gnome Car.					
+87406	all		Filling		Right-click to fill the Phial at the Thalanaar Moonwell.						
+87407	all		Collect Cody		Attempt to collect Cody the Cat.						
+87408	all		Filling		Fill with water from the Golakka Hot Springs.						
+87409	all		Filled Cleaning Pail		Give the Young Venomhide Ravasaur a nice warm bath.						
+87411	all		Yaluni's Totem			This elemental has recently been absorbed.					
+87412	all		Yaluni's Totem		Siphon energy from a weakened elemental.	Siphoning.					
+87414	all		Yaluni's Totem			This tar lord has recently been absorbed.					
+87415	all		Yaluni's Totem		Siphon energy from a weakened elemental.	Siphoning.					
+87417	all		Yaluni's Totem			This tar lord has recently been absorbed.					
+87418	all		Yaluni's Totem		Siphon energy from a weakened elemental.	Siphoning.					
+87419	all		Yaluni's Totem			This guardian has been weakened.					
+87420	all		Yaluni's Totem		Unleash the totem's force and Weaken a Stone Guardian.	Siphoning.					
+87422	all		Yaluni's Totem			This elemental has recently been absorbed.					
+87423	all		Yaluni's Totem		Siphon energy from a weakened elemental.	Siphoning.					
+87424	all		Drilling		Attempt to extract a sediment core.						
+87425	all		Rubbing		Take a rubbing of the tablet.						
+87426	all		Rubbing		Take a rubbing of the tablet.						
+87427	all		Rubbing		Take a rubbing of the tablet.						
+87428	all		Rubbing		Take a rubbing of the tablet.						
+87429	all		Applying		Apply the chemical extract onto the Southern Pylon.						
+87431	all		Repaired Crystal		Drive the spirit out of Spiritseer Nishelle.	Channeling.					
+87432	all		Attuned			This Highborne has recently been attuned.					
+87434	all		Unattuned Crystal		Attune the crystal upon the Highborne Spirit.	Attuning.					
+87437	all		Hawthorn's Blackwater		Increases spell power by $s2 and decreases size for $d. Battle Elixir.	Decreases size and increases spell power by $s2. Battle Elixir.					
+87438	all		Hawthorn's Volatile Solution		Apply the solution to the Heap of Flesh.						
+87439	all		Hawthorn's Stable Solution		Apply the solution to the Heap of Flesh.						
+87440	all		Filling		Right-click to fill the Phial at a Frostfire Hot Spring.						
+87441	all		Filled Scrubbing Pail		Give Glacier a nice warm bath.						
+87443	all		Tanum's Hacksaw			This yeti has recently been harvested.					
+87444	all		Tanum's Hacksaw		Use the Hacksaw on the dead yeti to harvest their fingers.	Hacking.					
+87445	all		Lightning Breath		Breathes lightning at an enemy, inflicting Nature damage.						
+87447	all		Owlkin Faction								
+87448	all		Accessing Arcanaeum		Unlocks the Arcanaeum Door in Teles'aran. Consumed on use.						
+87449	all		Filling		Fill the flask at Malvor's moonwell.						
+87450	all		Triage		Dummy Trigger						
+87451	all		Dummy Trigger		Dummy Trigger						
+87452	all		Dummy Trigger		Dummy Trigger						
+87453	all		Dummy Trigger		Dummy Trigger						
+87454	all		Dummy Trigger		Dummy Trigger						
+87455	all		Dummy Trigger		Dummy Trigger						
+87456	all		Dummy Trigger		Dummy Trigger						
+87458	all		Tested			This Forsaken has recently been tested.					
+87460	all		Mental Insulation Crystal		Insulate the target's mind against mental incursions.	Insulating.					
+87461	all		Racial Swapper		Placeholder	Placeholder					
+87462	all		Racial Swap Cooldown		Can not swap racials again until expired.	Can not swap racials again until expired.					
+87463	all		Racial Knowledge			You can freely swap between Racial Knowledge options.  This effect is lost upon leaving the city.					
+87464	all		Tested			This Forsaken has recently been tested.					
+87466	all		Mental Insulation Crystal		Test the crystal on the prisoner.	Insulating.					
+87467	all		Heart of An'she		Charge with the power of An'she during the day at the Earthmother's Shrine in the Barrens.						
+87468	all		Heart of Mu'sha		Charge with the power of Mu'sha at night at the Earthmother's Shrine in Stonetalon Mountains.						
+87469	all		Heart of An'she		Empower yourself with the Blessing of An'she for 1 minute.	Stamina increased by 15%.					
+87470	all		Heart of Musha			The evil has been weakened.					
+87471	all		Heart of Musha		Unleash the heart's force and weaken the evil.	Siphoning.					
+87472	all		Ritual Incense		Use the ritual incense to honor your ancestors.						
+87473	all		Ritual Incense		Use the ritual incense to honor your ancestors.						
+87474	all		Ritual Incense		Use the ritual incense to honor your ancestors.						
+87475	all		Ritual Incense		Use the ritual incense to honor your ancestors.						
+87476	all		Ritual Incense		Use the ritual incense to honor your ancestors.						
+87477	all		Ritual Incense		Use the ritual incense to honor your ancestors.						
+87478	all		Ritual Incense		Use the ritual incense to honor your ancestors.						
+87479	all		Blowing		Blow the horn at the gallows of Durnholde Keep to summon the Ghost of Blackmoore.						
+87480	all		Firebrew Lager		Sample the Firebrew Lager.	Drunk.					
+87481	all		Wildhammer Stout		Sample the Wildhammer Stout.	Drunk.					
+87482	all		Ash-Flavored Whiskey		Sample the Ash-Flavored Whiskey.	Drunk.					
+87483	all		Filling		Fill Firebrew's Vial at a Scourge cauldron.						
+87484	all		Firebrew's Keg			Drank from Firebrew's Keg.					
+87485	all		Drinking								
+87487	all		The Shaker			This crawler has recently been harvested.					
+87488	all		The Shaker		Harvest scales from the corpse of a Kuzajra Crawler.	Harvesting.					
+87489	all		Fetish of Tzhun'ko		Invoke the voodoo and protect yourself from the Diseased Knife.	Protected by the spirits.					
+87490	all		Diseased Knife		Inflicts a severe disease on your target, quickly killing it!	Rapidly succumbing to a fatal disease!					
+87491	all		Bitto Stormwindico		Sample the Bitto Stormwindico.						
+87492	all		Southfury River Bleu		Sample the Southfury River Bleu.						
+87493	all		Queso Orco		Sample the Queso Orco.						
+87494	all		Theramore Red		Drink the Theramore Red.						
+87495	all		Fancy Stormwind Court Robes			Wearing the Fancy Stormwind Court Robes.					
+87496	all		Begin Scene: weylin-tinkerspring-test-fire		Dummy Trigger						
+87497	all		Cloaking Device		Test the invention.	Hidden in the shadows.					
+87498	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+87499	all		Throw Axe		Throw the axe at a nearby target dummy.						
+87500	all		Throw Axe		Throw the axe at a nearby target dummy.						
+87501	all		Necklace of Berserking		Use the necklace to temporarily go berserk, increasing damage done by 50% for 5 sec.	Damage done increased by 50%.					
+87502	all		Throw Axe		Throw the axe at a nearby target dummy.						
+87503	all		Resurrection Sickness		Neutral to Graveyard NPCs.	Neutral to Graveyard NPCs.					
+87504	all		Position Helper		Print the location of an object to the server console.						
+87505	all		Powerful Foe		Powerful Foe	A powerful foe roams in your zone. Temporarily flagged for PvP.					
+87506	all		World Boss Spawned		Triggers when a World Boss Spawns.						
+87507	all		Felstone Civilian Cowering								
+87508	all		Southshore Steed		Summon a Southshore Steed to your aid!	Increases speed by $s2%.					
+87509	all		Slowing Rocket			Slowed by an enemy racer's rocket.					
+87510	all		Test Missile								
+87511	all		Rev Your Engines!		In the queue to participate in the Mirage Raceway. Exiting the area will remove you from the queue.\n\nNo refunds!	In the queue to participate in the Mirage Raceway. Exiting the area will remove you from the queue.\n\nNo refunds!					
+87512	all		Forcefully Move Forward		Forces the vehicle to move forwards.						
+87513	all		In Vehicle								
+87514	all		Summon Rocket Car		Summons your Mirage Raceway vehicle.						
+87515	all		Accelerate		Increase your speed by $s1, stacking up to $u.						
+87516	all		Jump		Consume your Jump Powerup to leap into the air, avoiding obstacles.	Avoiding obstacles.					
+87517	all		Nitrous		Consume your Nitrous Powerup to gain incredible speed for a short time! Also grants you maximum Acceleration.						
+87518	all		Slowing Rocket			Slowed by an enemy racer's rocket.					
+87519	all		Green Slowing Rocket		Consume your Rocket Powerup to fire a rocket in front of you, slowing them temporarily and removing a stack of Acceleration.						
+87520	all		Red Slowing Rockets		Consume your Rocket Powerup to fire a rocket in front of you, slowing them temporarily and removing a stack of Acceleration.						
+87521	all		Tar Puddle		Consume your Oil Slick Powerup to						
+87522	all		Nitrous!			Power-up ready for use!					
+87523	all		Powerup Visual								
+87524	all		Power-Up			Power-up ready for use!					
+87525	all		Jump!			Power-up ready for use!					
+87526	all		Powerup Visual								
+87527	all		Green Rocket!			Power-up ready for use!					
+87528	all		Powerup Visual								
+87529	all		Red Rockets!			Power-up ready for use!					
+87530	all		Powerup Visual								
+87531	all		Tar Puddle!			Power-up ready for use!					
+87532	all		Powerup Visual								
+87533	all		Use Power-Up		Consume your current power-up.$?a87522[\n\nNitrous: Gain incredible speed for a short time, and gain maximum Acceleration.][]$?a87525[\n\nJump: Leap forward through the air, bypassing traps and power-ups.][]$?a87527[\n\nGreen Slowing Rocket: Launch a rocket in front of you, if it collides with another racer it will slow them temporarily.][]$?a87529[\n\nRed Slowing Rockets: Launch a barrage of rockets at a random racer in front of you, slowing them temporarily.][]$?a87531[\n\nTar Puddle: Release a pool of tar behind you, slowing any racer that enters it.][]						
+87534	all		Explorer's Contract		Experience gains from kills and quests reduced by $s1%.	Experience gains from kills and quests reduced by $s1%.					
+87536	all		Soul of Iron		Never Known Defeat.	Never Known Defeat.					
+87537	all		Tarnished Soul		Tarnished by death.	Tarnished by death. All stats reduced by $s1%.\n\nReturn to a Chronicler within any faction capital to restore your Soul to a non-Iron state.					
+87538	all		Soul of Iron		Display your victory over the flames.	Armor increased by $s1.					
+87539	all		Reality Recalibrators		See the world as it truly is. Disables the effects of transmogrification on all other players, revealing their gear in its original form.	See the world as it truly is. Disables the effects of transmogrification on all other players, revealing their gear in its original form.					
+87540	all		Learn All Demon Spells		Teaches your currently summoned Demon all abilities it can learn at your current level.						
+87541	all		Learn Mounts.		Teaches Expert Riding and Test Mount.						
+87542	spellbook	164	Rough Bronze Gloves								
+87543	all		Well Fed		Strength increased by $s1. Lasts $d.	Strength increased by $s1.					
+87544	all		Learn Racial Knowledge.		Unlocks every Racial Knowledge set.						
+87545	all		Well Fed		Intellect increased by $s1. Lasts $d.	Intellect increased by $s1.					
+87546	spellbook	165	Chromatic Helmet		This item binds to you upon being crafted.						
+87547	all		Well Fed		5 Fire Resistance and 5 Stamina for $d.	Fire Resistance and Stamina increased by $s1.					
+87548	all		Food		Restores $o1 health over $d.  Must remain seated while eating.  If you spend at least 10 seconds eating you will become well fed and gain 5 Fire Resistance and 5 Stamina for $87547d.	Restores $/5;s1 health per second.					
+87549	spellbook	769	Dispel Test Auras		Removes all test auras from the target.						
+87550	spellbook	769	Reduce Target Damage 1%			Damage dealt reduced by $s1%					
+87551	spellbook	769	Increase Target Damage Max 1%			Damage dealt increased by $s1%					
+87552	spellbook	769	Reduce Target Attack and Cast Speed 1%			Attack and Cast Speed reduced by $s1%					
+87553	spellbook	769	Increase Target Attack and Cast Speed 1%			Attack and Cast Speed increased by $s1%					
+87554	spellbook	769	Reduce Target Health Max 1%			Max Health reduced by $s1%					
+87555	spellbook	769	Increase Target Health Max 1%			Max Health increased by $s1%					
+87556	spellbook	769	Reduce Target Move Speed 1%			Movement Speed reduced by $s1%					
+87557	spellbook	769	Increase Target Move Speed 1%			Movement Speed increased by $s1%					
+87558	spellbook	769	Clear ALL Achievements		Removes ALL Achievements and Statistics from the target. USE WITH CAUTION!	Damage dealt reduced by $s1%					
+87559	all		Learn Test Abilities.		Teaches Test Abilities. Only Usable By GMs						
+87560	all		Revenge Shed		+5 Defense and a 3% chance to resist fear effects.  Lasts $d.	Defense increased by $s1. Chance to resist fear effects increased by $s2%.					
+87561	all		Food		Restores $o1 health over $d.  Must remain seated while eating.  If you spend at least 10 seconds eating you will become well fed and gain +5 Defense and a 3% chance to resist fear effects.  Lasts $87560d.	Restores $/5;s1 health per second.					
+87562	all		Well Fed		Stamina and Spirit increased by $s1. Lasts $d.	Stamina and Spirit increased by $s1.					
+87563	all		Well Fed		15 Fire Resistance for $d.	Fire Resistance increased by $s1.					
+87564	all		Food		Restores $o1 health over $d.  Must remain seated while eating.  If you spend at least 10 seconds eating you will become well fed and gain 15 Fire Resistance for $87563d.	Restores $/5;s1 health per second.					
+87565	all		Levelup Pet		Levels up your pet to your current level.						
+87566	all		Scroll of Experience		Experience gain increased by $s1%.	Experience gain increased by $s1%.					
+87567	all		Beta Pet Adjustment			This is a temporary nerf to your pet while we investigate a larger issue causing them to have too many stats. Let us know how combat feels!\n\nAll base stats reduced by $s1%.\nPhysical Damage reduced by $s2%.\nArmor reduced by $s3%.					
+87568	all		Beta Pet Adjustment			This is a temporary nerf to your pet while we investigate a larger issue causing them to have too many stats. Let us know how combat feels!\n\nPhysical Damage reduced by $s1%.\nArmor reduced by $s2%.					
+87569	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87570	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87571	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87572	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87573	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87574	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87575	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87576	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87577	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87578	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87579	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87580	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87581	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87582	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87583	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87584	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87585	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87586	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87587	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87588	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87589	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87590	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87591	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87592	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87593	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87594	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87595	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87596	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87597	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87598	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87599	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87600	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87601	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87602	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87603	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87604	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87605	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87606	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87607	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87608	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87609	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87610	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87611	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87612	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87613	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87614	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87615	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87616	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87617	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87618	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87619	all		NPC Mountup		Mounts the target, limited to the outdoors, following normal vehicle rules.	Movement speed increased by 100%.					
+87620	all		Rope Visual		A rope leash.	Taking damage will cancel this effect.					
+87621	all		Goring Charge		Deals $s1% weapon damage.						
+87622	all		Goring Charge			Bleeding.					
+87623	all		Lashing Roots		Deals $s1% weapon damage.						
+87624	all		Lashing Roots			Being assaulted by travelling globs of roots.					
+87625	all		Root Assault								
+87626	all		Assaulting Roots								
+87627	all		Ravage		Deals $s1% weapon damage, must be behind the target.						
+87628	all		Ravage		Deals $87627s1% weapon damage, must be behind the target.						
+87629	all		Hind Jump		Leap behind the target.						
+87630	all		Exerted			Stunned from the exertion.					
+87631	all		Hefty Peck		Deals $s1% weapon damage split between all enemies in a line in front of the caster.						
+87632	all		Murdered		Death has arrived.	Death has arrived.					
+87633	all		Murder Toxicant		Instantly kills the target... eventually.	The spider sacrificed its remaining life to inflict the Murder Toxicant, which will kill you when the duration has run out.\n    \nFind a cure...					
+87634	all		Ferocious Leap		Deals $s1 damage to nearby enemies.						
+87635	all		Ferocious Leap		Leap to the target's position, dealing $s1 damage if they don't move out of the way.						
+87636	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+87637	all		Create Rune of Opening		Create a Rune of Opening for the target.						
+87638	all		Recently Gave Rune of Opening			Unable to give out a Rune of Opening.					
+87639	all		Infected Bite		Inflicts Nature damage to an enemy every $t1 sec. and increases the Physical damage it takes for $d.	$s1 nature damage inflicted every $t1 sec.\nIncreased Physical damage taken by $s2.					
+87640	all		Steam Blast		Deals $s1 Fire damage to an enemy, knocking it back.						
+87641	all		Tenderize - Transform								
+87642	all		Tenderize		Tenderize a humanoid or beast corpse.						
+87643	all		In Combat - Franklin								
+87644	all		Charge Stun		Charges the target and then unleashes a Demonic Shockwave.						
+87645	all		Charge		Charges the target and then unleashes a Demonic Shockwave.						
+87646	all		Demonic Shockwave		Decimate foes before you.						
+87647	all		Vulnerable Sting			Magic damage taken increased by $s1%.					
+87648	all		Draining Sting		Stuns Klinfran for $d and generates mana for the hunter.	Stunned.					
+87649	all		Increase Spell Dam Fire 40		Increases damage done by Fire spells and effects by up to $s1.						
+87650	all		Mountain Breaker		Increases the critical strike chance of your next attack made within 4 seconds by $s1%.						
+87651	all		Magma Crush		Inflicts $s1 Fire damage split between all enemies in a $a1 yard area.						
+87652	all		Molten Agony		Throws fireballs at any enemies within $a1 yards.						
+87653	all		Molten Agony		Unleashes a hail of fire balls onto all enemies in range.						
+87654	all		Ancient Flame		Throws fireballs at any enemies within $a1 yards.						
+87655	all		Ancient Flame		Unleashes a hail of fire balls onto all enemies in range.	Unleashes a hail of fire balls onto all enemies in range.					
+87656	all		Ancient Flame		Spawns an Ancient Flame at the targets location.						
+87657	all		Burning Soul		Causes the target to explode, dealing $s1 Fire damage to all nearby allies.						
+87658	all		Burning Soul		Enfuses a target with a Burning Soul taking Fire damage every 1 sec. After 10 sec they explode dealing Fire damage to the target and all nearby allies.	Explode after 10 sec dealing Fire damage to yourself and nearby allies.					
+87659	all		Call of Embers		Calls down a molten rain, burning all enemies in a selected area for $s1 Fire damage every $t1 sec. for $d.	$s1 Fire damage inflicted every $t1 sec.					
+87660	all		Flurry		Shower a nearby target with a cascade of snowflakes!	Brrr.					
+87661	all		Blizzard		Calls down a blizzard that lasts $d., inflicting $s1 Frost damage every $t1 sec. to all enemies in a selected area.						
+87662	all		Greater Polymorph		Transforms an enemy into a sheep, forcing it to wander around for up to $d. While wandering, the sheep cannot attack or cast spells, but regenerates very quickly. Only one target can be polymorphed at a time. Only works on beasts, dragons, giants, humanoids, and critters.	Cannot attack or cast spells.\nHealth regeneration increased.					
+87663	all		Nightmare		Strikes fear in an enemy, causing it to flee in terror for up to $d. Only 1 target can be feared at a time.	Fleeing in fear.					
+87664	all		Corruption		Corrupts nearby enemies, inflicting Shadow damage every $t1 sec. for $d.	Shadow damage every $t1 sec.					
+87665	all		Nightmare		Strikes fear in an enemy, causing it to flee in terror for up to $d. Only 1 target can be feared at a time.	Fleeing in fear.					
+87666	all		Corruption		Corrupts nearby enemies, inflicting Shadow damage every $t1 sec. for $d.	Shadow damage every $t1 sec.					
+87667	all		The Blue Child's Day		During the day your melee and ranged attacks have a chance to blast your target with a pillar of flame, dealing Fire damage over time.	Seared by the Sun, taking $s1 Fire damage per $t.					
+87668	all		Blue Child - Day		During the day your melee and ranged attacks have a chance to blast your target with a pillar of flame, dealing Fire damage over time.						
+87669	all		The Blue Child's Night		During the night your spells have a chance to Moonfire your target, dealing Arcane damage over time.	Seen by the greater moon, taking $s1 Arcane damage per $t.					
+87670	all		Blue Child - Night		During the night your spells have a chance to Moonfire your target, dealing Arcane damage over time.						
+87671	all		Laexxaarn's Web		Target creature is caught in a web for $d.						
+87672	all		Deadly Poison		Inflicts $s1 Nature damage to an enemy every $t1 sec. for $d.	$s1 Nature damage inflicted every $t1 sec.					
+87673	all		Soldier Salute Trigger								
+87674	all		Soldier Unsheath Trigger								
+87675	all		Soldier Yes Sir Trigger								
+87676	all		Soldier At Ease Trigger								
+87677	all		Chain Lightning		Strikes an enemy with a lightning bolt that arcs to another nearby enemy. The spell affects up to $x1 targets, causing Nature damage to each.						
+87678	all		Increased Spell Penetration 3		Decreases the magical resistances of your spell targets by $s1.						
+87679	all		Swipe		A ferocious swipe that deals damage to the target and up to three nearby enemies.						
+87680	all		Phase 20								
+87681	all		See Phase 20								
+87682	all		Phase 20								
+87683	all		See Phase 20								
+87684	all		Defend		Reduces damage taken by $s1% for $d.	Damage taken reduced by $s1%.					
+87685	all		Southshore Defender Counter								
+87686	all		Piercing Strike		A strong attack that increases melee damage by $s1 and causes a high amount of threat.	Currently ignoring $s2 of the target's armor.					
+87687	all		Worker's Bludgeon		Strikes at an enemy, inflicting $s1 Physical damage and reducing attack and cast speed by $s2% for $d.	Attack and cast speed reduced by $s2%.					
+87688	all		Heartbroken		This strange experimental device was meant to burst the target's chest cavity in a spray of hot gore. Instead, it induces a brief but pitiful display of miserable, wracking sobs.	Suffering from a broken heart.					
+87689	all		Heartbroken		This strange experimental device was meant to burst the target's chest cavity in a spray of hot gore. Instead, it induces a brief but pitiful display of miserable, wracking sobs.	Suffering from a broken heart.					
+87690	all		Electrical Overload		Sends out a blast wave of magic, inflicting Nature damage to nearby enemies.						
+87691	all		Boulder Throw		Hurls a boulder, inflicting high damage and interrupting any spells being cast by the target.						
+87692	all		Joke One								
+87693	all		Joke Two								
+87694	all		Joke Three								
+87695	all		Joke Four								
+87696	all		Armor Reduc		Reduces your armor by $s1.						
+87697	all		Increase Healing 6		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+87698	all		Teleport Trap		Teleports the target back and stuns it for $d seconds.						
+87699	all		Teleport Trap		Teleports the target back and stuns it for $d seconds.						
+87700	all		Teleport Trap		Teleports the target back and stuns it for $d seconds.						
+87701	all		Teleport Trap		Teleports the target back and stuns it for $d seconds.						
+87702	all		Teleport Trap		Teleports the target back and stuns it for $d seconds.						
+87703	all		Ice Slick Trap		Creates an ice slick that slows any targets inside of it.	Movement speed slowed by $s1%.					
+87704	all		Stun Trap		Stuns all nearby enemies within $a1 yds for $d.	Stunned.					
+87705	all		Net Trap		Immobilizes all nearby enemies within $a1 yds for $d.	Immobilized.					
+87706	all		Net		Casts a net at your target, immobilizing it for $d.	Rooted.					
+87707	all		Iced!			Movement speed slowed by $s1%.					
+87708	all		Icemaker		Your melee attacks slow.	Melee attacks slow enemies.					
+87709	all		Magleezer Lab Flight								
+87710	all		Lesser Heal	Rank 2	Heal your target for $s1.						
+87711	all		Begin Scene: sydney-and-dengmoo		Dummy Trigger						
+87712	all		Death and Decay		$s1 shadow damage inflicted every $t1 sec to all targets in the affected area.	Taking $s1 Shadow damage every $t1 sec.					
+87713	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+87714	all		Threshadon Snap		Inflicts $s2 damage to an enemy, stunning it for $d.	Stunned.					
+87715	all		Swoop		Inflicts $s2 damage to an enemy, stunning it for $d.	Stunned.					
+87716	all		Charge		Increases the Physical damage dealt by the caster by and its movement speed by $s1% for $d.	Physical damage dealt is increased by $s2.\nMovement speed increased by $s1%.					
+87717	all		Soul Visual								
+87718	all		Shadowform								
+87719	all		Subjugate		Drains the soul of the target, inflicting Shadow damage every $t1 seconds for $d.	Shadow damage inflicted every $t1 seconds.					
+87720	all		Release Draigoch			$s1 Shadow damage inflicted to enemies.					
+87721	all		Spectral Bolt	Rank 3	Sends a shadowy bolt at the enemy, causing $s1 Shadow damage.						
+87722	all		Corruption	Rank 2	Corrupts the target, causing $o1 Shadow damage over $d.	$s1 Shadow damage every $t1 seconds.					
+87723	all		Call forth The Cleaner.		It seems like somebody wants to help their friend take on a challenging encounter? Too bad! Here's an overpowered demon with tons of immunities and incredible hit points to come and ruin your day, next time think twice!						
+87724	all		Entangling Roots		Entangles an enemy in roots, inflicting Nature damage every $t2 sec. and immobilizing it for up to $d.	Immobilized. Deals $s2% nature damage every $t2 sec.					
+87725	all		Entangling Roots		Entangles an enemy in roots, inflicting Nature damage every $87724t2 sec. and immobilizing it for up to $87724d.						
+87726	all		Arcing Smash		Lashes out in a vicious arc, inflicting normal damage plus $s1 to enemies in a cone in front of the caster.						
+87727	all		Starshards		Rains starshards down on the enemy target's head, causing $o1 Arcane damage over $d.	$s1 Arcane damage every $t1 seconds.					
+87728	all		Power Word: Shield		Wraps the caster in a shield that lasts up to $d., absorbing a maximum of $s1 Physical or magical damage. While the shield holds, spells will not be interrupted by Physical attacks.	Shielded against Physical and magical damage.					
+87729	all		Renew		Heals an ally every $t1 sec. for $d.	Damage healed every $t1 sec.					
+87730	all		Begin Scene: firewater-neimosh		Dummy Trigger						
+87731	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+87732	all		Fireball	Rank 3	Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.	$s2 Fire damage every $t2 seconds.					
+87733	all		Giraffe Strike		Inflicts normal damage plus $s1 to an enemy, knocking it back.						
+87734	all		Protective Bubble		Shields the caster in a bubble of water, reducing damage taken by $s1%.  Each attack or spell hit against the caster will remove one charge.  Lasts $d or until $n charges are used.	All damage taken reduced by $s1%.\nBursts after $n attacks or spells.					
+87735	all		Scorpid Poison		Inflicts Nature damage to an enemy every $t1 sec. for $d.	Nature damage inflicted every $t1 sec.					
+87736	all		Lightning Bolt		Blasts an enemy with lightning, inflicting Nature damage.						
+87737	all		Orb of Frost		Deals $s1 Frost damage to the target, reducing their movement speed by $s2%.	Reduces movement speed by $s2%.					
+87738	all		Orb of Water		Hurls a massive ball of water.						
+87739	all		Increase Spell Dam Shadow 8		Increases damage done by Shadow spells and effects by up to $s1.						
+87740	all		Earthen Ring Visual		Inflicts Fire damage to nearby enemies.						
+87741	all		Earthen Ring Visual								
+87742	all		Dynamite		Inflicts $s1 Fire damage to all enemies in a selected area.						
+87743	all		Cairne Totem Visual								
+87744	all		Begin Scene: historian-reporting-in		Dummy Trigger						
+87745	all		Shock		Instantly throws a bolt of lightning at an enemy, inflicting Nature damage.						
+87746	all		Earth Shock		Shocks an enemy with concussive force, inflicting Nature damage and interrupting the spell being cast for $d.						
+87747	all		Trample		Inflicts normal damage plus additional damage to nearby enemies.						
+87748	all		Charge		Charges an enemy, inflicting normal damage plus $s2 and stuns the opponent for $d.	Stunned.					
+87749	all		Lightning Cloud		Creates a cloud of lightning that lasts $d., blasting all enemies in a selected area for $s1 Nature damage and inflicting $s2 additional damage every $t2 sec.						
+87750	all		Deadly Poison		Inflicts $s1 Nature damage to an enemy every $t1 sec. for $d.	$s1 Nature damage inflicted every $t1 sec.					
+87751	all		Trample		Inflicts normal damage plus additional damage to nearby enemies.						
+87752	all		Poison		Inflicts Nature damage to an enemy every $t1 sec. for $d.	Nature damage inflicted every $t1 sec.					
+87753	all		Poison		Inflicts Nature damage to an enemy every $t1 sec. for $d.	Nature damage inflicted every $t1 sec.					
+87754	all		Berserker Charge		Charges at an enemy, knocking it back and inflicting normal damage plus $s3.						
+87755	all		Poison Mind		Takes control of an enemy up to level $s1 and inflicts Nature damage every $t2 sec. for $d.	Charmed.\nNature damage inflicted every $t2 sec.					
+87756	all		Corrosive Acid Spit		Inflicts Nature damage to an enemy and reduces its armor for $d.	Reduced armor.					
+87757	all		Swoop		Inflicts normal damage plus $s1 to enemies in a cone in front of the caster, stunning them for $d.	Stunned.					
+87758	all		Toxic Spit		Inflicts Nature damage to an enemy.						
+87759	all		Toxic Spit		Inflicts Nature damage to an enemy.						
+87760	all		Knockdown		Inflicts $s2 damage to an enemy and its nearest allies, stunning them for $d. Affects up to $x1 targets.	Stunned.					
+87761	all		Poison		Inflicts Nature damage to an enemy every $t1 sec. for $d.	Nature damage inflicted every $t1 sec.					
+87762	all		Chain Lightning		Strikes an enemy with a lightning bolt that arcs to another nearby enemy. The spell affects up to $x1 targets, causing Nature damage to each.						
+87763	all		Fatal Sting		Stings an enemy and inflicts additional Nature damage every $t2 sec. for $d. Caster must be very badly wounded in order to cast this spell.	Nature damage inflicted every $t2 sec.					
+87764	all		Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+87765	all		In Combat - Nelson								
+87766	all		Doom Approaches...		Creeping Doom speeds up.	Movement speed increased by $s1%.					
+87767	all		Poison		Inflicts Nature damage to an enemy every $t1 sec. for $d.	Nature damage inflicted every $t1 sec.					
+87768	all		Poison		Inflicts Nature damage to an enemy every $t1 sec. for $d.	Nature damage inflicted every $t1 sec.					
+87769	all		War Stomp		Inflicts normal damage plus $s3 to nearby enemies, stunning them for $d.	Stunned.					
+87770	all		Crowd Pummel	Rank 3	Pummels nearby enemies for normal damage plus $s1 and interrupts any spell being cast 75% of the time for $d.						
+87771	all		Venom Sting		Inflicts $s2 Nature damage to an enemy, then an additional $s1 damage every $t1 sec. for $d.	$s1 Nature damage inflicted every $t1 sec.					
+87772	all		Venom Sting		Inflicts $s2 Nature damage to an enemy, then an additional $s1 damage every $t1 sec. for $d.	$s1 Nature damage inflicted every $t1 sec.					
+87773	all		Venom Sting		Inflicts $s2 Nature damage to an enemy, then an additional $s1 damage every $t1 sec. for $d.	$s1 Nature damage inflicted every $t1 sec.					
+87774	all		Healing Touch		Calls upon Nature magic to heal an ally.						
+87775	all		Moonfire		Burns the enemy for Arcane damage and inflicts additional damage over $d.	Arcane damage inflicted every $t1 sec.					
+87776	all		Boulder		Hurls a boulder at an enemy, inflicting Physical damage.						
+87777	all		Earth Shock		Shocks an enemy with concussive force, inflicting Nature damage and interrupting the spell being cast for $d.						
+87778	all		Concussion Blow		A brutal strike that deals weapon damage and stuns the opponent for $d.	Stunned.					
+87779	all		Fire Nova		Inflicts Fire damage to nearby enemies.						
+87780	all		Fire Blast		Inflicts Fire damage to an enemy.						
+87781	all		Fireball		Inflicts Fire damage to an enemy.						
+87782	all		Shadow Shock		Instantly lashes an enemy with dark magic, inflicting Shadow damage.						
+87783	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+87784	all		Frost Nova		Inflicts Frost damage to nearby enemies, immobilizing them for up to $d.	Immobilized.					
+87785	all		Chain Lightning		Strikes an enemy with a lightning bolt that arcs to another nearby enemy. The spell affects up to $x1 targets, inflicting greater Nature damage to each successive target.						
+87786	all		Fire Blast		Inflicts Fire damage to an enemy.						
+87787	all		Fireball		Inflicts Fire damage to an enemy.						
+87788	all		Poison Bolt		Shoots poison at an enemy, inflicting Nature damage, then additional damage every $t2 sec. for $d.	Nature damage inflicted every $t2 sec.					
+87789	all		Poison Bolt		Shoots poison at an enemy, inflicting Nature damage, then additional damage every $t2 sec. for $d.	Nature damage inflicted every $t2 sec.					
+87790	all		Death Hammer		Throws a mallet at an enemy, inflicting Physical damage.	Stunned.					
+87791	all		Shoot Bow	Rank 1	Fire at the target with a ranged weapon.						
+87792	all		Healing Wave	Rank 1	Heals a friendly target for $s1.						
+87793	all		Winds of Aros		Inflicts Fire damage to nearby enemies.						
+87794	all		Winds of Aros								
+87795	all		Lurker's Brood		Calls forth 3 Silithid that will fight for you.						
+87796	all		Corrosive Acid Spit		Inflicts Nature damage to an enemy and reduces its armor for 10 sec.						
+87797	all		Corrosive Acid Spit		Inflicts Nature damage to an enemy and reduces its armor for $d.	Reduced armor.					
+87798	all		Snap		Stuns the target for $d.	Stunned.					
+87799	all		Searing Arrow		Shoots a flaming arrow at an enemy, inflicting $s1 Fire Damage.						
+87800	all		Starshards		Rains starshards down on the enemy target's head, causing $o1 Arcane damage over $d.	$s1 Arcane damage every $t1 seconds.					
+87801	all		Lightning Bolt		Blasts an enemy with lightning, inflicting Nature damage.						
+87802	all		In Combat - Simone								
+87803	all		Lash of Pain		Deals $s1 every $t for $d to a target in melee range.	Deals $s1 damage every $t sec.					
+87804	all		Whip Grip		Pulls the target to you and slows them.	Slowed by $s2%.					
+87805	all		Seductive Heal		Heals the caster for $s1, but seductively I guess?						
+87806	all		Greater Devour Magic		Steals a beneficial magic effect from the target.  This effect lasts a maximum of 2 min.						
+87807	all		Trap Weakness - Explosive			Increases damage taken by $s1%.					
+87808	all		Trap Weakness - Freezing			Stunned.					
+87809	all		Trap Weakness - Frost			Rooted.					
+87810	all		Trap Weakness - Immolation			Reduces damage done by $s1%.					
+87811	all		Lumigosa Tracker								
+87812	all		Activating Blue Sigil		Activate a Blue Sigil.						
+87813	all		Ice Stalactite		Ice falls from the ceiling dealing $s1 damage and leaving a chunk of ice on the ground.						
+87814	all		Ice Stalactite		Ice falls from the ceiling dealing damage and leaving a chunk of ice on the ground.						
+87815	all		Bellowing Roar		Lets loose a mighty roar, causing large chunks of ice to fall from the ceiling.						
+87816	all		Arcane Missile Volley		Hurls magic at nearby enemies, inflicting Arcane damage.						
+87817	all		Arcane Missile Volley		Launches magical missiles at an enemy, inflicting Arcane damage each second for $d.						
+87818	all		Arcane Blast		Blasts the target with arcane energy, dealing Arcane damage and increasing their Arcane damage taken by $s1%.	Arcane damage taken increased by $s1%.					
+87819	all		Arcane Blast		Blasts the target with arcane energy, dealing $s1 Arcane damage and increasing their Arcane damage taken.						
+87820	spellbook	197	Frostweave Belt								
+87821	spellbook	197	Felcloth Cloak								
+87822	all		Expose Armor (Improved)	Rank 5	Finishing move that exposes the target, reducing armor by $s1.  Exposing a target that has already been exposed will increase the duration of Expose Armor, up to 60 seconds.  Lasts longer per combo point:\n   1 point  : 8 seconds\n   2 points: 16 seconds\n   3 points: 24 seconds\n   4 points: 32 seconds\n   5 points: 40 seconds	Armor decreased by $s1.					
+87823	all		Judgement of the Crusader (Improved)	Rank 6		Increases Holy damage taken by up to $s1.  Chance of critically striking this unit increased by $s2%.					
+87824	all		Curse of the Elements (Malediction)	Rank 3	Curses the target for $d, reducing Nature, Arcane, Fire, Frost, and Shadow resistances by $s1 and increasing Nature, Arcane, Fire, Frost, and Shadow damage taken by $s2%. Only one Curse per Warlock can be active on any one target.	Reduces Nature, Arcane, Fire, Frost, and Shadow resistances by $s1. Increases Nature, Arcane, Fire, Frost, and Shadow damage taken by $s2%.					
+87825	all		Faerie Fire (Improved)	Rank 4	Decrease the armor of the target by $s1 for $d.  While affected, the target cannot stealth or turn invisible.	Decreases armor by $s1.  $s2% increased chance to hit this unit with melee or ranged attacks.					
+87826	all		Hunter's Mark (Improved)	Rank 4	Places the Hunter's Mark on the target, increasing the ranged attack power of all attackers against that target by $84538m2 and by an additional $m2 each time they are struck by a ranged attack, up to a maximum of ${$84538m2+($m2*30)}.  In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible.  The target also appears on the mini-map.  Lasts for $d.	All attackers gain 110 plus $m2 ranged attack power against this target, and 110 melee attack power against this target.					
+87827	all		Hunter's Mark (Improved)	Rank 4	Places the Hunter's Mark on the target, increasing the ranged attack power of all attackers against that target by $84538m2 and by an additional $m2 each time they are struck by a ranged attack, up to a maximum of ${$84538m2+($m2*30)}.  In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible.  The target also appears on the mini-map.  Lasts for $d.	All attackers gain 110 ranged attack power against this target.					
+87828	all		Expose Weakness			All attackers gain attack power against this target.					
+87829	all		Fire Vulnerability			Increases Fire damage taken by $s1%.					
+87830	all		Winter's Chill			Frost spells have a $s1% additional chance to critically hit.					
+87831	all		Curse of Recklessness	Rank 4	Curses the target with recklessness, increasing melee attack power by $s1 but reducing armor by $s2 for $d.  Cursed enemies will not flee and will ignore Fear and Horror effects.  Only one Curse per Warlock can be active on any one target.	Increases melee attack power by $s1 and decreases armor by $s2.   Target will not flee and will ignore Fear and Horror effects.					
+87832	all		Shadow Vulnerability	Rank 1		Increases Shadow damage taken by $s1%.					
+87833	all		Stormstrike		Instantly attack with your weapon, or both weapons if you are dual wielding.  In addition, the target takes $s1% additional Nature damage.  Lasts $d.	Increases Nature damage taken by $s1%.					
+87834	all		Misery	Rank 5		Spell damage taken increased by $s1%.					
+87835	all		Blood Frenzy	Rank 2		Increases physical damage taken by $s1%.					
+87836	all		Dummy								
+87837	all		Dummy								
+87838	all		Dummy								
+87839	all		Dummy								
+87840	all		Dummy								
+87841	all		Dummy								
+87842	all		Dummy								
+87843	all		Dummy								
+87844	all		Dummy								
+87845	all		Dummy								
+87846	all		Dummy								
+87847	all		Dummy								
+87848	all		Dummy								
+87849	all		Dummy								
+87850	all		Sanctity Aura (Improved)		Increases Holy damage done by $s1%. Increases all damage done by $s2%.	Increases Holy damage done by $s1%.					
+87851	all		Moonkin Aura		Increases spell critical chance by $s1%.	Increases spell critical chance by $s1%.					
+87852	all		Leader of the Pack		While in Cat, Bear or Dire Bear Form, the Leader of the Pack increases ranged and melee critical chance of all party and raid members within $24932a1 yards by $24932s1% and your own melee critical chance by an additional 3%.	Increases ranged and melee critical chance by $s1%.					
+87853	all		Grace of Air (Enhanced)	Rank 2		Increases Agility by $s1.					
+87854	all		Strength of Earth (Enhanced)	Rank 4		Increases Strength by $s1.					
+87855	all		Trueshot Aura	Rank 2	Increases the attack power of party and raid members within $a1 yards by $s1.  Lasts $d.	Increases attack power by $s1.					
+87856	all		Flametongue Totem Passive	Rank 4							
+87857	all		Windfury Totem Passive	Rank 3							
+87858	all		Wrath of Air Totem	Rank 1		Magical damage and healing from spells and effects increased by up to $s1.					
+87859	all		Totem of Wrath			Chance to critically strike with spells increased by $s1% and chance to hit with spells increased by $s2%.					
+87860	all		Mana Spring	Rank 4		Gain $s1 mana every $t1 seconds.					
+87861	all		Ferocious Inspiration		When your pet scores a critical hit, all party and raid members within $34456a1 yards have all their damage increased by $s2% for $34456d.	All damage increased by $s1%.					
+87862	all		Unleashed Rage	Rank 5		Melee attack power increased by $s1.					
+87863	all		Commanding Shout (Improved)	Rank 1	Increases maximum health of all raid and party members within $a1 yards by $s1. Lasts $d.	Maximum health increased by $s1.					
+87864	all		Battle Shout (Improved)	Rank 6	The warrior shouts, increasing the melee attack power of all raid and party members within $a1 yards by $s1.  Lasts $d.	Increases your melee attack power by $s1.					
+87865	all		Gift of the Wild (Improved)	Rank 2	Gives the Gift of the Wild to all party and raid members, increasing armor by $s1, all attributes by $s2 and all resistances by $s3 for $d.	Increases armor by $s1, all attributes by $s2 and all resistances by $s3.					
+87866	all		Prayer of Spirit (Improved)	Rank 1	Power infuses your raid or party members, increasing their Spirit by $s1 for $d.	Increases Spirit by $s1.  Spell Damage and Healing increased by $s2% of Spirit.					
+87867	all		Greater Blessing of Might (Improved)	Rank 1	Gives all members of the raid or group that share the same class with the target the Greater Blessing of Might, increasing attack power by $s1 for $d.  Players may only have one Blessing on them per Paladin at any one time.	Increases attack power by $s1.					
+87868	all		Power Word: Fortitude (Improved)	Rank 6	Power infuses the target, increasing their Stamina by $s1 for $d.	Increases Stamina by $s1.					
+87869	all		Arcane Brilliance (Improved)	Rank 1	Infuses all party and raid members with brilliance, increasing their Intellect by $s1 for $d.	Increases Intellect by $s1 and your maximum mana by $s2%.					
+87870	all		Dummy								
+87871	all		Dummy								
+87872	all		Destroying								
+87873	all		Teleport Invigilator Watchtower		Teleports the user to the top of an Invigilator Watchtower.						
+87874	all		Teleport Invigilator Watchtower		Teleports the user to the top of an Invigilator Watchtower.						
+87875	all		Teleport Invigilator Watchtower		Teleports the user to the top of an Invigilator Watchtower.						
+87876	all		Teleport Invigilator Watchtower		Teleports the user to the top of an Invigilator Watchtower.						
+87877	all		Learn Smelt Arcanite		Teaches the target how to smelt Arcanite.						
+87878	all		Arathi - Tol Barad								
+87879	all		Tol Barad - Arathi								
+87880	all		Arathi - Tol Barad - Scouting Run								
+87881	all		Begin Scene: in-dreams-tower-intro		Dummy Trigger						
+87882	all		Taelan Death								
+87883	all		Begin Scene: in-dreams-tower-taelan-died		Dummy Trigger						
+87884	all		Begin Scene: in-dreams-tower-fordring-appears		Dummy Trigger						
+87885	all		Begin Scene: in-dreams-tower-fordring-finale		Dummy Trigger						
+87886	spellbook	185	Dark Iron Fish and Chips								
+87887	spellbook	202	Enchanted Thorium Blades								
+87888	all		Black Kodo		Summons and dismisses a rideable Black Kodo. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+87889	all		Gray Pinto		Summons and dismisses a rideable Gray Pinto. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+87890	all		Black Striped Nightsaber		Summons and dismisses a rideable Black Striped Nightsaber. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+87891	all		Blue Ram		Summons and dismisses a rideable Blue Ram. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+87892	all		Mismatched Skeletal Horse		Summons and dismisses a rideable Mismatched Skeletal Horse. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+87893	all		Green Skeletal Horse		Summons and dismisses a rideable Green Skeletal Horse. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+87894	all		Ochre Riding Wolf		Summons and dismisses a rideable Ochre Riding Wolf. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+87895	all		Purple Skeletal Horse		Summons and dismisses a rideable Purple Skeletal Horse. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+87896	all		Aqua Raptor		Summons and dismisses a rideable Aqua Raptor. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+87897	all		Emerald Mechanostrider Mod A		Summons and dismisses a rideable Emerald Mechanostrider Mod A. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+87898	all		Well Fed		800 Armor for $d.	Armor increased by $s1.					
+87899	all		Food		Restores $o1 health over $d.  Must remain seated while eating.  If you spend at least 10 seconds eating you will become well fed and gain 800 Armor for $87898d.	Restores $/5;s1 health per second.					
+87900	spellbook	185	Sauteed Plated Armorfish								
+87901	spellbook	185	Stratholme Saperavi								
+87902	spellbook	165	Basilisk Scale Chestpiece								
+87903	spellbook	165	Basilisk Scale Gloves								
+87904	spellbook	165	Basilisk Scale Bracers								
+87905	spellbook	165	Basilisk Scale Helmet								
+87906	spellbook	165	Basilisk Scale Leggings								
+87907	spellbook	165	Devil's Feet		This item binds to you upon being crafted.						
+87908	all		Fire Ward		Absorbs $s1 Fire damage.  Lasts $d.	Absorbs Fire damage.					
+87909	spellbook	165	Flamewarders		This item binds to you upon being crafted.						
+87910	spellbook	165	Heavy Basilisk Scale Chestplate								
+87911	all		Reward: Pre-Release Bundle		Grants Bronze Whelpling and Old School Ride Voucher.						
+87912	all		Enchantment for TWILIGHT_CULTIST_GLOVES								
+87913	all		Begin Scene: nat-and-greta		Dummy Trigger						
+87914	all		Filling		Right-click to fill the Dark Iron Crucible at the Black Forge.						
+87915	all		Reforge: Felheart Horns		Reforge Felheart Horns from Helm of the Glorious Champion						
+87916	all		Reforge: Felheart Shoulder Pads		Reforge Felheart Shoulder Pads from Pauldrons of the Glorious Champion						
+87917	all		Reforge: Felheart Robes		Reforge Felheart Robes from Chestguard of the Glorious Champion						
+87918	all		Reforge: Felheart Pants		Reforge Felheart Pants from Leggings of the Glorious Champion						
+87919	all		Reforge: Felheart Gloves		Reforge Felheart Gloves from Gloves of the Glorious Champion						
+87920	all		Reforge: Felheart Slippers		Reforge Felheart Slippers from Sabatons of the Glorious Champion						
+87921	all		Reforge: Giantstalker's Helmet		Reforge Giantstalker's Helmet from Helm of the Glorious Defender						
+87922	all		Reforge: Giantstalker's Epaulets		Reforge Giantstalker's Epaulets from Pauldrons of the Glorious Defender						
+87923	all		Reforge: Giantstalker's Breastplate		Reforge Giantstalker's Breastplate from Chestguard of the Glorious Defender						
+87924	all		Reforge: Giantstalker's Leggings		Reforge Giantstalker's Leggings from Leggings of the Glorious Defender						
+87925	all		Reforge: Giantstalker's Gloves		Reforge Giantstalker's Gloves from Gloves of the Glorious Defender						
+87926	all		Increase Spell Dam Shadow 17		Increases damage done by Shadow spells and effects by up to $s1.						
+87927	all		Reforge: Giantstalker's Boots		Reforge Giantstalker's Boots from Sabatons of the Glorious Defender						
+87928	all		Reforge: Circlet of Prophecy		Reforge Circlet of Prophecy from Helm of the Glorious Hero						
+87929	all		Reforge: Wreath of Prophecy		Reforge Wreath of Prophecy from Helm of the Glorious Hero						
+87930	all		Reforge: Earthfury Helm		Reforge Earthfury Helm from Helm of the Glorious Hero						
+87931	all		Reforge: Earthfury Headdress		Reforge Earthfury Headdress from Helm of the Glorious Hero						
+87932	all		Reforge: Earthfury Faceguard		Reforge Earthfury Faceguard from Helm of the Glorious Hero						
+87933	all		Reforge: Soul-Mantle of Prophecy		Reforge Soul-Mantle of Prophecy from Pauldrons of the Glorious Hero						
+87934	all		Reforge: Light-Mantle of Prophecy		Reforge Light-Mantle of Prophecy from Pauldrons of the Glorious Hero						
+87935	all		Reforge: Earthfury Shoulderguards		Reforge Earthfury Shoulderguards from Pauldrons of the Glorious Hero						
+87936	all		Reforge: Earthfury Shoulderplates		Reforge Earthfury Shoulderplates from Pauldrons of the Glorious Hero						
+87937	all		Reforge: Earthfury Shoulderpads		Reforge Earthfury Shoulderpads from Pauldrons of the Glorious Hero						
+87938	all		Reforge: Shroud of Prophecy		Reforge Shroud of Prophecy from Chestguard of the Glorious Hero						
+87939	all		Reforge: Robes of Prophecy		Reforge Robes of Prophecy from Chestguard of the Glorious Hero						
+87940	all		Reforge: Earthfury Chestguard		Reforge Earthfury Chestguard from Chestguard of the Glorious Hero						
+87941	all		Reforge: Earthfury Breastplate		Reforge Earthfury Breastplate from Chestguard of the Glorious Hero						
+87942	all		Reforge: Earthfury Hauberk		Reforge Earthfury Hauberk from Chestguard of the Glorious Hero						
+87943	all		Reforge: Leggings of Prophecy		Reforge Leggings of Prophecy from Leggings of the Glorious Hero						
+87944	all		Reforge: Trousers of Prophecy		Reforge Trousers of Prophecy from Leggings of the Glorious Hero						
+87945	all		Reforge: Earthfury Legguards		Reforge Earthfury Legguards from Leggings of the Glorious Hero						
+87946	all		Reforge: Earthfury War-Kilt		Reforge Earthfury War-Kilt from Leggings of the Glorious Hero						
+87947	all		Reforge: Earthfury Kilt		Reforge Earthfury Kilt from Leggings of the Glorious Hero						
+87948	all		Reforge: Handwraps of Prophecy		Reforge Handwraps of Prophecy from Gloves of the Glorious Hero						
+87949	all		Reforge: Gloves of Prophecy		Reforge Gloves of Prophecy from Gloves of the Glorious Hero						
+87950	all		Reforge: Earthfury Handguards		Reforge Earthfury Handguards from Gloves of the Glorious Hero						
+87951	all		Reforge: Earthfury Gauntlets		Reforge Earthfury Gauntlets from Gloves of the Glorious Hero						
+87952	all		Reforge: Earthfury Gloves		Reforge Earthfury Gloves from Gloves of the Glorious Hero						
+87953	all		Reforge: Boots of Prophecy		Reforge Boots of Prophecy from Sabatons of the Glorious Hero						
+87954	all		Reforge: Galoshes of Prophecy		Reforge Galoshes of Prophecy from Sabatons of the Glorious Hero						
+87955	all		Reforge: Earthfury Boots		Reforge Earthfury Boots from Sabatons of the Glorious Hero						
+87956	all		Reforge: Earthfury Sabatons		Reforge Earthfury Sabatons from Sabatons of the Glorious Hero						
+87957	all		Reforge: Earthfury Pads		Reforge Earthfury Pads from Sabatons of the Glorious Hero						
+87958	all		Scorpid Poison		Inflicts $s2 Nature damage to an enemy, then an additional $s1 damage every $t1 sec. for $d.	$s1 Nature damage inflicted every $t1 sec.					
+87959	all		Blackrock Anti-Venom		Cleanses a scorpid's Venom Sting.						
+87960	all		Enchantment for Guard's Chest								
+87961	all		Enchantment for Guardian's Bracers								
+87962	all		Enchantment for Speaker's Robes								

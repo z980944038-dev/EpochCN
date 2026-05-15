@@ -11,7 +11,6 @@ SPELL_DBC = ROOT / "spell" / "Spell.dbc"
 OUT = ROOT / "Data" / "SpellRaw_Epoch.lua"
 
 SPELL_DATA_FILES = [
-    ROOT / "Data" / "SpellData_52.lua",
     ROOT / "Data" / "SpellData_Season.lua",
     ROOT / "Data" / "SpellData_Epoch.lua",
 ]

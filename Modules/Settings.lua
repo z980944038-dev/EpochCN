@@ -143,7 +143,7 @@ EpochCN:RegisterModule("Settings", function(E)
     if panel then return panel end
 
     panel = CreateFrame("Frame", "EpochCNSettingsFrame", UIParent)
-    panel:SetSize(430, 560)
+    panel:SetSize(430, 730)
     panel:SetPoint("CENTER")
     panel:SetFrameStrata("DIALOG")
     panel:SetMovable(true)
@@ -197,20 +197,44 @@ EpochCN:RegisterModule("Settings", function(E)
     CreateCheck(panel, "小地图只显示目标", "minimapQuestObjectivesOnly", "小地图默认只显示当前任务目标/交还点，减少干扰。", 226, -364)
     CreateCheck(panel, "任务自动同步", "questAutoSync", "尽量同步当前任务 ID 与任务追踪数据。", 26, -394)
 
-    CreateHeader(panel, "调试与维护", 26, -430)
-    CreateCheck(panel, "调试输出", "debug", "在聊天框输出 EpochCN 调试信息。", 26, -454)
-    CreateCheck(panel, "关闭 pfQuest 追踪器", "disablePFQuestTracker", "减少任务追踪重复显示，重载后生效。", 226, -454)
+    CreateHeader(panel, "社交功能", 26, -430)
+    local socialCheck1 = CreateCheck(panel, "华人玩家发现", "social_enabled_ui", "自动发现安装了 EpochCN 的中文玩家并标记。", 26, -454, function(enabled)
+      EpochCNDB.social = EpochCNDB.social or {}
+      EpochCNDB.social.enabled = enabled
+    end)
+    local socialCheck2 = CreateCheck(panel, "自动加入中文频道", "social_channel_ui", "登录时自动加入 EpochCN 公共频道。", 226, -454, function(enabled)
+      EpochCNDB.social = EpochCNDB.social or {}
+      EpochCNDB.social.autoJoinChannel = enabled
+    end)
+    local socialCheck3 = CreateCheck(panel, "组队招募板", "social_lfg_ui", "启用中文组队招募信息收发。", 26, -484, function(enabled)
+      EpochCNDB.social = EpochCNDB.social or {}
+      EpochCNDB.social.lfgEnabled = enabled
+    end)
+    local socialCheck4 = CreateCheck(panel, "快捷短语 (/qc)", "social_qc_ui", "启用中英双语快捷短语系统。", 226, -484, function(enabled)
+      EpochCNDB.social = EpochCNDB.social or {}
+      EpochCNDB.social.quickChatEnabled = enabled
+    end)
+    -- 初始化社交选项 checkbox 状态（数据存储在 social 子表中）
+    EpochCNDB.social = EpochCNDB.social or {}
+    socialCheck1:SetChecked(EpochCNDB.social.enabled ~= false)
+    socialCheck2:SetChecked(EpochCNDB.social.autoJoinChannel ~= false)
+    socialCheck3:SetChecked(EpochCNDB.social.lfgEnabled ~= false)
+    socialCheck4:SetChecked(EpochCNDB.social.quickChatEnabled ~= false)
 
-    CreateButton(panel, "打印状态", 86, 26, -492, function()
+    CreateHeader(panel, "调试与维护", 26, -520)
+    CreateCheck(panel, "调试输出", "debug", "在聊天框输出 EpochCN 调试信息。", 26, -544)
+    CreateCheck(panel, "关闭 pfQuest 追踪器", "disablePFQuestTracker", "减少任务追踪重复显示，重载后生效。", 226, -544)
+
+    CreateButton(panel, "打印状态", 86, 26, -582, function()
       E:Print("已加载 " .. tostring(E.version) .. "，任务=" .. tostring(EpochCNDB.questLog) .. "，Tooltip=" .. tostring(EpochCNDB.tooltip) .. "，拍卖行=" .. tostring(EpochCNDB.auctionHouse) .. "，语言=" .. tostring(GAME_LOCALE or "默认"))
     end)
-    CreateButton(panel, "Tooltip 调试", 100, 118, -492, function()
+    CreateButton(panel, "Tooltip 调试", 100, 118, -582, function()
       if E.DumpTooltipLines then E:DumpTooltipLines(GameTooltip) end
     end)
-    CreateButton(panel, "重载界面", 86, 224, -492, function()
+    CreateButton(panel, "重载界面", 86, 224, -582, function()
       ReloadUI()
     end)
-    CreateButton(panel, "关闭", 70, 316, -492, function()
+    CreateButton(panel, "关闭", 70, 316, -582, function()
       panel:Hide()
     end)
 
@@ -218,6 +242,22 @@ EpochCN:RegisterModule("Settings", function(E)
     reloadNotice:SetPoint("BOTTOMLEFT", panel, "BOTTOMLEFT", 28, 24)
     reloadNotice:SetText("|cffffcc00设置已保存。模块开关通常需要重载界面或重进游戏后完全生效。|r")
     reloadNotice:Hide()
+
+    -- 汉化统计信息面板
+    CreateHeader(panel, "汉化覆盖统计", 26, -614)
+    local statsText = panel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    statsText:SetPoint("TOPLEFT", panel, "TOPLEFT", 28, -638)
+    statsText:SetWidth(374)
+    statsText:SetJustifyH("LEFT")
+    local stats = E.stats or {}
+    local unitPct = stats.unitTotal and stats.unitTotal > 0 and string.format("%.1f%%", stats.unitChinese / stats.unitTotal * 100) or "N/A"
+    local spellPct = stats.spellCount and stats.spellCount > 0 and string.format("%.1f%%", stats.spellWithDesc / stats.spellCount * 100) or "N/A"
+    statsText:SetText(
+      "|cff88ccff任务数据：|r" .. tostring(stats.questTotal or 0) .. " 条" ..
+      "    |cff88ccff物品映射：|r" .. tostring(stats.itemNameMapTotal or 0) .. " 条\n" ..
+      "|cff88ccff单位名称：|r" .. tostring(stats.unitChinese or 0) .. "/" .. tostring(stats.unitTotal or 0) .. " (" .. unitPct .. ")" ..
+      "    |cff88ccff法术数据：|r" .. tostring(stats.spellWithDesc or 0) .. "/" .. tostring(stats.spellCount or 0) .. " (" .. spellPct .. ")"
+    )
 
     return panel
   end
@@ -310,7 +350,7 @@ EpochCN:RegisterModule("Settings", function(E)
     thanksLine:SetPoint("TOPLEFT", aboutPanel, "TOPLEFT", 28, -280)
     thanksLine:SetWidth(384)
     thanksLine:SetJustifyH("LEFT")
-    thanksLine:SetText("|cffffff00kook-暗色弧|r、|cffffff00小武哥儿|r、|cffffff00飞翔鸟|r、|cffffff00加特林|r、|cffffff00嘹咋咧|r、|cffffff00狄卢|r\n等前期大佬们对汉化工作的大力支持与帮助！")
+    thanksLine:SetText("|cffffff00kook-暗色弧|r、|cffffff00飞翔鸟|r、|cffffff00加特林|r、|cffffff00嘹咋咧|r、|cffffff00狄卢|r\n等前期大佬们对汉化工作的大力支持与帮助！")
 
     -- Contact
     local contactHeader = aboutPanel:CreateFontString(nil, "OVERLAY", "GameFontNormal")
@@ -321,7 +361,7 @@ EpochCN:RegisterModule("Settings", function(E)
     contactLine:SetPoint("TOPLEFT", aboutPanel, "TOPLEFT", 28, -342)
     contactLine:SetWidth(384)
     contactLine:SetJustifyH("LEFT")
-    contactLine:SetText("数据源：https://epochhead.com/\n游戏内输入 /ecn 打开设置面板")
+    contactLine:SetText("数据源：https://epochhead.com/\nQQ 交流群：1097800503\n游戏内输入 /ecn 打开设置面板")
 
     -- Close button at bottom
     local closeBtn = CreateFrame("Button", nil, aboutPanel, "UIPanelButtonTemplate")
@@ -404,6 +444,60 @@ EpochCN:RegisterModule("Settings", function(E)
     UIDropDownMenu_AddButton(info)
 
     info = UIDropDownMenu_CreateInfo()
+    info.text = " "
+    info.notClickable = true
+    info.notCheckable = true
+    UIDropDownMenu_AddButton(info)
+
+    info = UIDropDownMenu_CreateInfo()
+    info.text = "|cff88ccff社交功能|r"
+    info.isTitle = true
+    info.notCheckable = true
+    UIDropDownMenu_AddButton(info)
+
+    info = UIDropDownMenu_CreateInfo()
+    info.text = "中文玩家列表"
+    info.notCheckable = true
+    info.func = function()
+      CloseDropDownMenus()
+      if E.ToggleSocialPanel then E:ToggleSocialPanel() end
+    end
+    UIDropDownMenu_AddButton(info)
+
+    info = UIDropDownMenu_CreateInfo()
+    info.text = "组队招募板"
+    info.notCheckable = true
+    info.func = function()
+      CloseDropDownMenus()
+      if E.ToggleLFGPanel then E:ToggleLFGPanel() end
+    end
+    UIDropDownMenu_AddButton(info)
+
+    info = UIDropDownMenu_CreateInfo()
+    info.text = "快捷短语"
+    info.notCheckable = true
+    info.func = function()
+      CloseDropDownMenus()
+      if E.ToggleQuickChatPanel then E:ToggleQuickChatPanel() end
+    end
+    UIDropDownMenu_AddButton(info)
+
+    info = UIDropDownMenu_CreateInfo()
+    info.text = "反馈建议"
+    info.notCheckable = true
+    info.func = function()
+      CloseDropDownMenus()
+      if E.ToggleFeedbackPanel then E:ToggleFeedbackPanel() end
+    end
+    UIDropDownMenu_AddButton(info)
+
+    info = UIDropDownMenu_CreateInfo()
+    info.text = " "
+    info.notClickable = true
+    info.notCheckable = true
+    UIDropDownMenu_AddButton(info)
+
+    info = UIDropDownMenu_CreateInfo()
     info.text = "隐藏图标"
     info.notCheckable = true
     info.func = function()
@@ -428,50 +522,65 @@ EpochCN:RegisterModule("Settings", function(E)
     if minimapButton or not Minimap or EpochCNDB.minimapButtonHide then return end
 
     minimapButton = CreateFrame("Button", "EpochCNMinimapButton", Minimap)
-    minimapButton:SetSize(32, 32)
+    minimapButton:SetSize(34, 34)
     minimapButton:SetFrameStrata("MEDIUM")
+    minimapButton:SetFrameLevel(8)
     minimapButton:RegisterForClicks("LeftButtonUp", "RightButtonUp", "MiddleButtonUp")
     minimapButton:RegisterForDrag("LeftButton")
 
-    local icon = minimapButton:CreateTexture(nil, "BACKGROUND")
-    icon:SetSize(20, 20)
-    icon:SetPoint("CENTER", 0, 1)
-    icon:SetTexture("Interface\\Icons\\INV_Misc_Book_09")
+    -- 圆形背景底色
+    local bg = minimapButton:CreateTexture(nil, "BACKGROUND")
+    bg:SetSize(26, 26)
+    bg:SetPoint("CENTER", 0, 0)
+    bg:SetTexture("Interface\\CHARACTERFRAME\\TempPortraitAlphaMask")
+    bg:SetVertexColor(0.12, 0.12, 0.14, 0.92)
 
-    local border = minimapButton:CreateTexture(nil, "OVERLAY")
-    border:SetSize(54, 54)
-    border:SetPoint("CENTER")
-    border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
+    -- 主图标：使用翻译/语言相关图标
+    local icon = minimapButton:CreateTexture(nil, "ARTWORK")
+    icon:SetSize(18, 18)
+    icon:SetPoint("CENTER", 0, 0)
+    icon:SetTexture("Interface\\Icons\\INV_Inscription_Tradeskill01")
+    minimapButton.icon = icon
 
-    minimapButton:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight")
+    -- 圆形边框（移除 — 用户反馈外框多余且移位）
+    -- local border = minimapButton:CreateTexture(nil, "OVERLAY")
+    -- border:SetSize(54, 54)
+    -- border:SetPoint("CENTER", 0, 0)
+    -- border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
+    -- minimapButton.border = border
 
-    minimapButton:SetScript("OnClick", function(_, button)
-      if button == "RightButton" then
-        if not minimapMenu then
-          minimapMenu = CreateFrame("Frame", "EpochCNMinimapMenu", UIParent, "UIDropDownMenuTemplate")
-        end
-        UIDropDownMenu_Initialize(minimapMenu, BuildMinimapMenu, "MENU")
-        ToggleDropDownMenu(1, nil, minimapMenu, "cursor", 0, 0)
-      elseif button == "MiddleButton" then
-        E:ToggleAboutPanel()
-      else
-        E:ToggleSettingsPanel()
-      end
-    end)
+    -- 在线中文玩家数量角标
+    local badge = minimapButton:CreateFontString(nil, "OVERLAY", "NumberFontNormalSmall")
+    badge:SetPoint("BOTTOMRIGHT", minimapButton, "BOTTOMRIGHT", 2, -2)
+    badge:SetText("")
+    badge:SetTextColor(0.2, 1, 0.6)
+    minimapButton.badge = badge
 
-    minimapButton:SetScript("OnEnter", function(self)
-      GameTooltip:SetOwner(self, "ANCHOR_LEFT")
-      GameTooltip:SetText("|cff33ffccEpochCN|r  v" .. tostring(E.version), 0.2, 1, 0.8)
-      GameTooltip:AddLine("左键：打开设置", 1, 1, 1)
-      GameTooltip:AddLine("中键：关于", 1, 1, 1)
-      GameTooltip:AddLine("右键：更多选项", 1, 1, 1)
-      GameTooltip:AddLine("拖动：移动图标", 0.6, 0.6, 0.6)
-      GameTooltip:Show()
-    end)
-    minimapButton:SetScript("OnLeave", function() GameTooltip:Hide() end)
+    -- 高亮效果
+    local highlight = minimapButton:CreateTexture(nil, "HIGHLIGHT")
+    highlight:SetSize(26, 26)
+    highlight:SetPoint("CENTER", 0, 0)
+    highlight:SetTexture("Interface\\CHARACTERFRAME\\TempPortraitAlphaMask")
+    highlight:SetVertexColor(0.2, 1, 0.8, 0.3)
+    highlight:SetBlendMode("ADD")
 
-    minimapButton:SetScript("OnDragStart", function(self)
-      self:SetScript("OnUpdate", function()
+    -- 呼吸灯动画（有新消息/新玩家时闪烁）
+    minimapButton.glowAlpha = 0
+    minimapButton.glowDir = 1
+    minimapButton.glowActive = false
+
+    local glow = minimapButton:CreateTexture(nil, "ARTWORK", nil, 1)
+    glow:SetSize(30, 30)
+    glow:SetPoint("CENTER", 0, 0)
+    glow:SetTexture("Interface\\CHARACTERFRAME\\TempPortraitAlphaMask")
+    glow:SetVertexColor(0.2, 1, 0.8, 0)
+    glow:SetBlendMode("ADD")
+    minimapButton.glow = glow
+
+    -- 定时更新角标和呼吸灯
+    minimapButton:SetScript("OnUpdate", function(self, elapsed)
+      -- 拖拽位置更新（仅拖拽时执行）
+      if self.isDragging then
         local mx, my = Minimap:GetCenter()
         local px, py = GetCursorPosition()
         local scale = Minimap:GetEffectiveScale()
@@ -488,14 +597,103 @@ EpochCN:RegisterModule("Settings", function(E)
         end
         EpochCNDB.minimapButtonAngle = angle
         UpdateMinimapButtonPosition()
-      end)
+        return  -- 拖拽时跳过其他逻辑，减少开销
+      end
+
+      -- 更新在线人数角标（每 10 秒）
+      self.badgeTimer = (self.badgeTimer or 0) + elapsed
+      if self.badgeTimer >= 10 then
+        self.badgeTimer = 0
+        local count = E.GetChinesePlayerCount and E:GetChinesePlayerCount() or 0
+        if count > 0 then
+          self.badge:SetText(tostring(count))
+        else
+          self.badge:SetText("")
+        end
+      end
+
+      -- 呼吸灯动画（仅激活时执行）
+      if self.glowActive then
+        self.glowAlpha = self.glowAlpha + self.glowDir * elapsed * 1.5
+        if self.glowAlpha >= 0.6 then
+          self.glowAlpha = 0.6
+          self.glowDir = -1
+        elseif self.glowAlpha <= 0 then
+          self.glowAlpha = 0
+          self.glowDir = 1
+          self.glowCycles = (self.glowCycles or 0) + 1
+          if self.glowCycles >= 3 then
+            self.glowActive = false
+            self.glowCycles = 0
+          end
+        end
+        self.glow:SetAlpha(self.glowAlpha)
+      end
+    end)
+
+    minimapButton:SetScript("OnClick", function(_, button)
+      if button == "RightButton" then
+        if not minimapMenu then
+          minimapMenu = CreateFrame("Frame", "EpochCNMinimapMenu", UIParent, "UIDropDownMenuTemplate")
+        end
+        UIDropDownMenu_Initialize(minimapMenu, BuildMinimapMenu, "MENU")
+        ToggleDropDownMenu(1, nil, minimapMenu, "cursor", 0, 0)
+      elseif button == "MiddleButton" then
+        -- 中键打开社交面板
+        if E.ToggleSocialPanel then
+          E:ToggleSocialPanel()
+        else
+          E:ToggleAboutPanel()
+        end
+      else
+        E:ToggleSettingsPanel()
+      end
+    end)
+
+    minimapButton:SetScript("OnEnter", function(self)
+      GameTooltip:SetOwner(self, "ANCHOR_LEFT")
+      GameTooltip:SetText("|cff33ffccEpoch|cffffffffCN|r", 0.2, 1, 0.8)
+      GameTooltip:AddLine("v" .. tostring(E.version) .. "  " .. tostring(E.designLabel), 0.6, 0.6, 0.6)
+      GameTooltip:AddLine(" ")
+
+      -- 显示在线中文玩家数
+      local count = E.GetChinesePlayerCount and E:GetChinesePlayerCount() or 0
+      if count > 0 then
+        GameTooltip:AddLine("|cff33ffcc" .. count .. "|r 名中文玩家在线", 0.2, 1, 0.6)
+      end
+
+      -- 显示频道状态
+      local chNum = E.GetChineseChannelNumber and E:GetChineseChannelNumber() or 0
+      if chNum > 0 then
+        GameTooltip:AddLine("|cff88ccff中文频道|r 已连接 (/" .. chNum .. ")", 0.5, 0.8, 1)
+      end
+
+      GameTooltip:AddLine(" ")
+      GameTooltip:AddLine("|cffffffffL键|r 设置  |cffffffffM键|r 社交  |cffffffffR键|r 菜单", 0.7, 0.7, 0.7)
+      GameTooltip:AddLine("|cff666666拖动移动位置|r", 0.4, 0.4, 0.4)
+      GameTooltip:Show()
+    end)
+    minimapButton:SetScript("OnLeave", function() GameTooltip:Hide() end)
+
+    minimapButton:SetScript("OnDragStart", function(self)
+      self.isDragging = true
     end)
     minimapButton:SetScript("OnDragStop", function(self)
-      self:SetScript("OnUpdate", nil)
+      self.isDragging = false
       UpdateMinimapButtonPosition()
     end)
 
     UpdateMinimapButtonPosition()
+  end
+
+  -- 触发小地图按钮呼吸灯（供其他模块调用）
+  function E:FlashMinimapButton()
+    if minimapButton then
+      minimapButton.glowActive = true
+      minimapButton.glowCycles = 0
+      minimapButton.glowAlpha = 0
+      minimapButton.glowDir = 1
+    end
   end
 
   function E:ShowMinimapButton()
@@ -527,10 +725,8 @@ EpochCN:RegisterModule("Settings", function(E)
     -- Login broadcast (once per session)
     if not loginBroadcastDone then
       loginBroadcastDone = true
-      local prefix = "|cff33ffccEpoch|cffffffffCN|r"
       E:Print("|cff33ffccEpochCN|r v" .. tostring(E.version) .. " 已加载，/ecn 打开设置。")
       E:Print("|cffffd200汉化捐赠者|r:|cff33ff99ethon|r、|cff33ff99王大强|r、|cff33ff99manmanain|r、|cff33ff99xiongbaobao|r、|cff33ff99Shizuka|r、|cff33ff99Soulwisp|r、|cff33ff99Jynxen|r、|cff33ff99hcafei|r、还有未留名兄弟")
-      E:Print("|cffffd200特别鸣谢|r:|cffffff00kook-暗色弧|r、|cffffff00小武哥儿|r、|cffffff00飞翔鸟|r、|cffffff00加特林|r、|cffffff00嘹咋咧|r、|cffffff00狄卢|r 等前期大佬")
     end
   end)
 end)

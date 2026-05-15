@@ -1,0 +1,1001 @@
+﻿spell_id	priority	skill_line_ids	name_en	rank_en	description_en	tooltip_en	name_zh	rank_zh	description_zh	tooltip_zh	notes
+59948	all		Arcanum of the Flame's Soul		Permanently adds 25 Fire resist and 30 Stamina to a head slot item.\n\nEnchanting the item causes it to become soulbound.						
+59949	all		Check Drake Colors								
+59951	all		Mind Trick: Chains - Left Hand								
+59952	all		Mind Trick: Chains - Right Hand								
+59953	all		Mages Deck		Combine the Ace through Five of Mages to complete the set.						
+59954	all		Arcanum of Torment		Permanently adds 50 attack power and 20 critical strike rating to a head slot item.\n\nEnchanting the item causes it to become soulbound.						
+59955	all		Arcanum of the Stalwart Protector		Permanently adds 37 Stamina and 20 defense rating to a head slot item.\n\nEnchanting the item causes it to become soulbound.						
+59956	all		Mages Deck		Combine the Ace through Five of Mages to complete the set.						
+59957	all		Mages Deck		Combine the Ace through Five of Mages to complete the set.						
+59958	all		Mages Deck		Combine the Ace through Five of Mages to complete the set.						
+59959	all		Mages Deck		Combine the Ace through Five of Mages to complete the set.						
+59960	all		Arcanum of Blissful Mending		Permanently adds 30 spell power and 10 mana per 5 seconds to a head slot item.\n\nEnchanting the item causes it to become soulbound.						
+59961	spellbook	777	Red Proto-Drake		Summons and dismisses a rideable Red Proto-Drake.    This mount can only be summoned in Outland or Northrend. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+59962	all		Demons Deck		Combine the Ace through Five of Demons to complete the set.						
+59963	all		Lightning Breath		Breathes lightning at an enemy, inflicting Nature damage.						
+59964	all		Demons Deck		Combine the Ace through Five of Demons to complete the set.						
+59965	all		Eye Beam		Tharon'ja glares at the target, dealing $s1 Nature damage every $t1 sec.	Nature damage inflicted every $t1 sec.					
+59966	all		Demons Deck		Combine the Ace through Five of Demons to complete the set.						
+59967	all		Demons Deck		Combine the Ace through Five of Demons to complete the set.						
+59968	all		Demons Deck		Combine the Ace through Five of Demons to complete the set.						
+59969	all		Poison Cloud		Inflicts $s1 Nature damage to nearby enemies every $t1 sec. for $d.	$s1 Nature damage inflicted every $t1 sec.					
+59970	all		Arcanum of Burning Mysteries		Permanently adds 30 spell power and 20 critical strike rating to a head slot item.\n\nEnchanting the item causes it to become soulbound.						
+59971	all		Rain of Fire		Calls down a molten rain, burning all enemies in a selected area for $s1 Fire damage every $t1 sec. for $d.	Fire damage inflicted every $t1 sec.					
+59972	all		Curse of Life		Deals shadow damage over $d.  The effect is removed if the target falls below 50% of their maximum life.	Shadow damage inflicted every $t1 secs.\nCurse of Life is removed if you fall below 50% health.					
+59973	all		Shadow Volley		Hurls missiles of dark magic, inflicting Shadow damage to nearby enemies.						
+59974	all		Mind Flay		Inflicts Shadow damage to an enemy and reduces its movement speed for $d.	Shadow damage inflicted over $d.\nReduced movement speed.					
+59975	all		Shadow Bolt Volley		Hurls missiles of dark magic, inflicting Shadow damage to nearby enemies.						
+59976	spellbook	777	Black Proto-Drake		Summons and dismisses a rideable Black Proto-Drake.  This is an extremely fast mount.  This mount can only be summoned in Outland or Northrend. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+59977	all		Horde Air Dropoff Kill Credit								
+59978	all		Shiver		Deals $59979s1 shadow damage when damaged. Jumps to nearby raid member.	Deals $59979s1 shadow damage when damaged. Jumps to nearby raid member.					
+59979	all		Shiver		Deals $59979s1 shadow damage when damaged. Jumps to nearby raid member.	Deals $59979s1 shadow damage when damaged. Jumps to nearby raid member.					
+59982	all		Summon Twisted Visage Spawn								
+59983	all		The Schools of Arcane Magic - Mastery								
+59984	all		Blood Plague		A disease dealing Shadow damage over $d.  Has a 50% chance to remove one heal over time effect whenever it does damage.	Deals Shadow damage over $d.\nCan remove heal over time effects.					
+59985	all		Plague Strike		A vicious strike that deals $s2% weapon damage plus ${$m1*$m2/100} and infects the target with Blood Plague, a disease dealing Shadow damage over time.  The strike removes one heal over time effect from the target.						
+59986	all		Wrath		Hurls a bolt of lightning at an enemy, inflicting Nature damage.						
+59987	all		Moonfire		Burns the enemy for Arcane damage and inflicts additional damage over $d.	Arcane damage inflicted every $t1 sec.					
+59988	all		Mangle		Mangle the target for $s3% normal damage plus ${$m1*$m3/100} and causes the target to take $s2% additional damage from Maul, Shred, and bleed effects for $d.  Awards $34071s1 combo $lpoint:points;.	All bleed effects, Maul, and Shred cause $s2% additional damage.					
+59989	all		Rip		Finishing move that causes damage over time.	$s1 Bleed damage every $t1 seconds.					
+59990	all		Lifebloom		Heals $s1 every second and $61489s1 when effect finishes or is dispelled.	Heals $s1 every second and $61489s1 when effect finishes or is dispelled.					
+59991	all		Nourish		Heals a friendly target for $s1. Heals for an additional 20% if you have a Rejuvenation, Regrowth, or Lifebloom effect active on the target.						
+59992	all		Cleave		Inflicts weapon damage plus additional damage to an enemy and its nearest allies, affecting up to $x1 targets.						
+59993	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+59994	all		Fireball		Inflicts Fire damage to an enemy.						
+59995	all		Frost Nova		Inflicts Frost damage to nearby enemies, immobilizing them for up to $d.	Immobilized.					
+59996	spellbook	777	Blue Proto-Drake		Summons and dismisses a rideable Blue Proto-Drake.    This mount can only be summoned in Outland or Northrend. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+59997	all		Flash of Light		Calls upon Holy magic to heal an ally.						
+59998	all		Consecration		Consecrates the land beneath Paladin, doing $o1 Holy damage over $d to enemies who enter the area.	$s1 damage every $t1 $lsecond:seconds;.					
+59999	all		Avenger's Shield		Hurls a holy shield at the enemy, dealing $s1 Holy damage, Dazing them and then jumping to additional nearby enemies.  Affects $x1 total targets.	Dazed.					
+60002	spellbook	777	Time-Lost Proto-Drake		Summons and dismisses a rideable Time-Lost Proto-Drake.    This mount can only be summoned in Outland or Northrend. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+60003	all		Greater Heal		Calls upon Holy magic to heal an ally.						
+60004	all		Renew		Heals the target of $o1 damage over $d.	Healing $s1 damage every $t1 seconds.					
+60005	all		Shadow Word: Pain		Utters a word of darkness, inflicting Shadow damage to an enemy every $t1 sec. for $d.	Shadow damage inflicted every $t1 sec.					
+60006	all		Mind Flay		Inflicts Shadow damage to an enemy and reduces its movement speed for $d.	Shadow damage inflicted over $d.\nReduced movement speed.					
+60008	all		Eviscerate		Finishing move that causes damage.						
+60009	all		Lightning Bolt		Casts a bolt of lightning at the target for $s1 Nature damage.						
+60010	all		Thunderstorm		Call down a bolt of lightning damaging nearby enemies within $a1 yards. Deals $s1 Nature damage to all nearby enemies, knocking them back.						
+60011	all		Earth Shock		Shocks an enemy with concussive force, inflicting Nature damage and interrupting the spell being cast for $d.						
+60012	all		Healing Wave		Calls upon Nature magic to heal an ally.						
+60013	all		Earth Shield		Protects the target with an earthen shield, causing melee attacks to heal the shielded target.  This effect can only occur once every few seconds.  $n charges.  Lasts $d.	Melee attacks heal the shielded target.					
+60014	all		Earth Shield								
+60015	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+60016	all		Corruption		Corrupts nearby enemies, inflicting Shadow damage every $t1 sec. for $d.	Shadow damage every $t1 sec.					
+60017	all		Bloodthirst		Instantly attack the target causing $s1 damage.  In addition, the next $23885n successful melee attacks will restore 1.5% of max health.  This effect lasts $23885d.  Damage is based on your attack power.						
+60018	all		Devastate		Sunder the target's armor causing the Sunder Armor effect.  In addition, causes $s2% of weapon damage plus $s3 for each application of Sunder Armor on the target.  The Sunder Armor effect can stack up to $u times.	Armor decreased by $s1.					
+60019	all		Thunder Clap		Blasts nearby enemies increasing the time between their attacks by $s2% for $d and doing $s1 damage to them.  Damage increased by attack power.  This ability causes additonal threat and will affect up to $i targets.	Attack speed reduced by $s2%.					
+60020	all		Freezing Cloud		Deals $s3 Frost damage immediately and $s1 Frost damage per sec. afterwards. Lasts $d.	Deals $s1 Frost damage per second.					
+60021	spellbook	777	Plagued Proto-Drake		Summons and dismisses a rideable Plagued Proto-Drake.  This is an extremely fast mount.  This mount can only be summoned in Outland or Northrend. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+60022	all		Clear Puncture								
+60023	all		Scourge Banner Aura		Increases the damage done by $s1%  and the attack speed by $s2% for all Scourge within $a1 yards.	Increases the damage done by $s1%  and the attack speed by $s2% for all Scourge within $a1 yards.					
+60024	spellbook	777	Violet Proto-Drake		Summons and dismisses a rideable Violet Proto-Drake.    This mount can only be summoned in Outland or Northrend. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+60025	spellbook	777	Albino Drake		Summons and dismisses a rideable Albino Drake.    This mount can only be summoned in Outland or Northrend. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+60027	all		Alliance Control Phase Shift								
+60028	all		Horde Control Phase Shift								
+60029	all		Thundershock		Creates a cloud of lightning that lasts $d., blasting all enemies in a selected area for $s1 Nature damage and inflicting $s2 additional damage every $t2 sec.						
+60030	all		Cyclone Strike		Performs a spinning attack that hits all nearby enemies, dealing weapon damage plus $s1% and knocking them back.						
+60032	all		Lightning Bolt		Blasts an enemy with lightning, inflicting Nature damage.						
+60033	all		Dummy								
+60034	all		Smoke								
+60035	all		Teleport - Dalaran to Wintergrasp								
+60036	all		Rune of Distortion		Set off the rune near Grimkor's Orb to get the attention of Grimkor the Wicked.						
+60038	all		Arcane Lightning								
+60039	all		Assign Skeleton Kill Credit to Master								
+60040	all		Kill Credit								
+60041	all		Assign Geist Kill Credit to Master								
+60042	all		Kill Credit								
+60043	spellbook	375	Lava Burst	Rank 2	You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst will deal a critical strike.						
+60044	all		Cosmetic - Wintergrasp Victory Aura								
+60045	all		Assassinate		Death comes swiftly.	Death comes swiftly.					
+60046	all		Assassinate		Instantly kills the victim.	Death comes swiftly.					
+60047	all		Assassinate								
+60048	all		Summon Azure Captain								
+60049	all		Summon Azure Raider								
+60050	all		Summon Azure Sorceror								
+60051	spellbook	51	Explosive Shot	Rank 2	You fire an explosive charge into the enemy target, dealing ${$RAP*0.14+$m1}-${$RAP*0.14+$M1} Fire damage. The charge will blast the target every second for an additional $d.	Taking Fire damage every second.					
+60052	spellbook	51	Explosive Shot	Rank 3	You fire an explosive charge into the enemy target, dealing ${$RAP*0.14+$m1}-${$RAP*0.14+$M1} Fire damage. The charge will blast the target every second for an additional $d.	Taking Fire damage every second.					
+60053	spellbook	51	Explosive Shot	Rank 4	You fire an explosive charge into the enemy target, dealing ${$RAP*0.14+$m1}-${$RAP*0.14+$M1} Fire damage. The charge will blast the target every second for an additional $d.	Taking Fire damage every second.					
+60054	all		Valor Medal of the First War		Increases dodge rating by $s1 for $d1.	Increases dodge rating by $s1.					
+60055	all		Summon Plague Drenched Ghoul								
+60056	all		Summon Rampaging Ghoul								
+60057	all		Restricted Flight Area								
+60058	all		Summon Living Plague								
+60059	all		Huge Green Splash								
+60060	all		Head in the Clouds		Increases your Spirit by $s1 for $d.	Spirit increased by $s1.					
+60061	all		Flow of Time		Your direct healing and heal over time spells have a chance to increase your spell haste rating by 320 for 6 secs.						
+60062	all		Essence of Life		Increases spell haste rating by $s1 for $d.	Increases spell haste rating by $s1.					
+60063	all		Now is the Time!		Your harmful spells have a chance to increase your spell power by $60064s1 for $60064d.						
+60064	all		Now is the time!		Increases spell power by $s1 for $d.	Increases spell power by $s1.					
+60065	all		Reflection of Torment		Increases attack power by $s1 for $d.	Increases attack power by $s1.					
+60066	all		Rage of the Unraveller		Chance on critical hit to increase your attack power by 300 for 10 secs.						
+60067	all		Charge		Charges an enemy, inflicting normal damage plus $s2 and stuns the opponent for $d.						
+60068	all		Path of Frost		The Death Knight's freezing aura creates ice beneath $Ghis:her; feet, allowing $Ghim:her; and $Ghis:her; party or raid to walk on water for $d.  Works while mounted.  Any damage will cancel the effect.	Grants the ability to walk across water.					
+60069	all		Dispersion		You disperse into pure Shadow energy, reducing all damage taken.  You are unable to attack or cast spells, but you regenerate $s1% mana every 1 sec for $d.	Reduces all damage by and you regenerate $s1% mana every $t2 sec for $d.  Cannot attack or cast spells.					
+60070	all		Banner, Horde								
+60072	all		Arcane Breath		Deals $s1 Arcane damage in a $a1 yard cone in front of the caster. $d after being damaged, the affected targets explode with energy, dealing $61079s1 Arcane damage to nearby friends.	Deals $61079s1 Arcane damage to nearby friends after $t2 sec.					
+60073	all		Arcane Shock		Blasts an enemy with Arcane magic, inflicting $s1 Arcane damage.						
+60074	all		Time Stop		Stops time within a 100 yard sphere for $d.	Stunned.					
+60075	all		Enrage		Decreases the time between your attacks by $s1% for $d.	Frenzied.\nTime between melee and ranged attacks decreased by $s1%.					
+60076	all		Time Shock		Deals $s1 Arcane damage.						
+60077	all		Stop Time		Halts the passage of time, freezing all enemy dragons in place for $d.	Frozen in time.					
+60078	all		Vehicle-Turret Shared Health		The life force of the target and caster are linked, sharing damage equally between each other.	$s1% of damage taken is split with ally.					
+60079	all		Fire SGM-3		Fires a heat seeking missile at a targeted Skybreaker Recon Fighter. (5 sec. cooldown, 100 yard range)						
+60080	all		Cosmetic - Explosion (Target)								
+60081	all		Cosmetic - Explosion								
+60082	all		Scourge Dampening Field		Creates a protective bubble around the target.  Enemies in this field take $s1% less damage.	Damage taken reduced by $s1%.					
+60084	all		The Veil of Shadows		Reduces healing effects for nearby enemies by $s1% for $d.	Healing effects reduced by $s1%.					
+60085	all		Vehicle-Turret Shared Health		When active, $25228s2% of all damage taken by the caster is taken by the target.	$s1% of damage taken by caster is split with you.					
+60086	all		Summon Azure Stalker								
+60087	all		Spear Trigger Periodic								
+60088	all		Spear Trigger		Triggers Ymirheim Spear Guns to fire.						
+60089	all		Faerie Fire (Feral)		Decrease the armor of the target by $16857s1% for $16857d.  While affected, the target cannot stealth or turn invisible.  Deals ${$AP*0.05+1} damage and additional threat when used in Bear Form or Dire Bear Form.						
+60091	spellbook	184	Judgement Anti-Parry/Dodge Passive								
+60092	all		Summon Azure Raider								
+60093	all		Summon Azure Sorceror								
+60094	all		Demonic Blast		fdsa	fdas					
+60095	all		Demonic Blast Trigger								
+60096	all		Feeding Frenzy	Rank 1	Your pet does $s1% additional damage to targets with less than 35% health.						
+60097	all		Feeding Frenzy	Rank 2	Your pet does $s1% additional damage to targets with less than 35% health.						
+60099	all		Summon Loaner Gryphon		Summons a Loaner Gryphon mount.  This is not a very fast mount.						
+60100	all		Fire Dart Gun		Fire a poisoned dart at an Orgrim's Hammer Scout. (5 sec. cooldown, 40 yard range)						
+60101	all		Hall Blown Up								
+60103	spellbook	373	Lava Lash	Rank 1	You charge your off-hand weapon with lava, instantly dealing $s1% off-hand Weapon damage. Damage is increased by $s2% if your off-hand weapon is enchanted with Flametongue.						
+60104	all		Grip of Darkness		Harness the unholy energy that surrounds and binds all matter, drawing the target toward the caster.						
+60105	all		Grip of Darkness		Draws your target before you with a beam of unholy power.						
+60106	all		Old Spices		The aged spices make the target smell great.	Smelling great!					
+60107	all		Loaned Gryphon			Increases flight speed by 60%.					
+60108	all		Heroic Leap		Leap through the air and slam down on all enemies within $52174a1 yards of the target area, causing $52174s2% weapon damage and stunning them for $52174d.						
+60109	all		Heroic Leap		Leap through the air and slam down on all enemies within $52174a1 yards of the target area, causing $52174s2% weapon damage and stunning them for $52174d.	Stunned.					
+60110	all		Kill Command	Rank 1	Give the command to kill, increasing your pet's damage done from special attacks by ${$34027M1*3}%.  Each special attack done by the pet reduces the damage bonus by $34027s1%.						
+60111	all		Kill Credit South								
+60112	all		Kill Credit Central								
+60113	all		Kill Command	Rank 1	Give the command to kill, increasing your pet's damage done from special attacks by ${$34027M1*3}%.  Each special attack done by the pet reduces the damage bonus by $34027s1%.						
+60114	spellbook	777	Armored Brown Bear		Summons and dismisses a rideable armored brown bear.  This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+60115	all		Kill Credit North								
+60116	spellbook	777	Armored Brown Bear		Summons and dismisses a rideable armored brown bear.  This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+60117	all		Kill Credit Northwest								
+60118	spellbook	777	Black War Bear		Summons and dismisses a rideable black war bear.  This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+60119	spellbook	777	Black War Bear		Summons and dismisses a rideable black war bear.  This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+60120	all		Summon Loaner Wind Rider		Summons a Loaner Wind Rider mount.  This is not a very fast mount.						
+60121	all		Ancient Curse		Curses all nearby enemies, inflicting $s1 Shadow damage every $t1 sec and reducing attack and casting speeds by $s2% for $d.	$s1 Shadow damage inflicted every $t1 sec.\nAttack and casting speeds reduced by $s2%.					
+60122	all		Baby Spice		Reduces the target's size by $s1% turning them into a baby.	Babyized.					
+60123	all		Lightwell Renew								
+60124	all		Send Hate								
+60125	all		Send Hate Aura								
+60126	all		Create Loaned Gryphon Reins								
+60127	all		Loaned Gryphon Reins Force Cast								
+60128	all		Create Loaned Wind Rider Reins								
+60129	all		Loaned Wind Rider Reins Force Cast								
+60130	all		Increased Plague Strike Crit		Increases the critical strike chance of your Plague Strike by $s1%.						
+60132	all		Oblit/Scourge Strike Runic Power Up		Your Obliterate, Scourge Strike, and Death Strike generate an additional $/10;61040s1 Runic Power when used.						
+60133	all		Icebound Duration Increase		Increases the duration of your Icebound Fortitude by $/1000;s1 seconds.						
+60134	all		Scourge/Oblit Crit Up		Increases the critical strike chance of your Obliterate, Scourge Strike, and Death Strike abilities by $s1%.						
+60135	all		Reduced Lifebloom Cost		The cost of your Lifebloom is reduced by $s1%.						
+60136	spellbook	777	Grand Caravan Mammoth		Summons and dismisses a rideable Grand Caravan Mammoth.  This is a very fast mount that can carry 3 passengers and vendors. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+60137	all		Nourish Heal Boost		Your Nourish heals an additional $s1% for each of your heal over time effects present on the target.						
+60138	all		Insect Swarm Damage		Your Insect Swarm deals an additional $s1% damage.						
+60139	all		Wrath/Starfire Crit		Your Wrath and Starfire spells gain an additional $s1% critical strike chance.						
+60140	spellbook	777	Grand Caravan Mammoth		Summons and dismisses a rideable Grand Caravan Mammoth.  This is a very fast mount that can carry 3 passengers and vendors. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+60141	all		Rip Duration/Lacerate Damage		Your Rip lasts for an additional $/1000;s1 seconds, and your Lacerate deals an additional $s2% damage.						
+60142	all		Barkskin Duration Increase		Increases the duration of Barkskin by $/1000;s1 seconds and decreases the cooldown of Tiger's Fury by $/1000;s2 seconds.						
+60143	all		Kill Command Pet Boost		Your pet deals an additional 5% damage.						
+60144	all		Viper Attack Speed		Your ranged attack speed is increased by $s1% while Aspect of the Viper is active.						
+60145	all		Mana Gem Trinket		Using a mana gem restores an additional 10% mana and increases your spell damage by 225 for 10 seconds.						
+60146	all		Crit Strike Damage Percent		Your offensive spells gain an additional $s1% increased critical strike bonus damage.						
+60147	all		Holy Shock Crit Chance		Your Holy Shock gains an additional $s1% chance to critically strike.						
+60148	all		Holy Light Cost Reduction		The cost of your Holy Light is reduced by $s1%.						
+60149	all		Hammer of Righteousness Boost		Increases the damage dealt by your Hammer of the Righteous by $s1%.						
+60150	all		Divine Protection Duration		Increases the duration of your Divine Shield and Divine Protection by $/1000;s1 seconds.						
+60151	all		Banner, Side, Horde								
+60152	all		Divine Storm Damage		Increases the damage dealt by your Divine Storm by $s1%.						
+60153	all		Judgment Cooldown Reduction		Reduces the cooldown of your Judgment of Light, Judgment of Wisdom, and Judgment of Justice by $/1000;s1 second.						
+60154	all		Prayer of Mending Bounce		Your Prayer of Mending will jump an additional time.						
+60155	all		Greater Heal Cost Reduction		The cost of your Greater Heal is reduced by $s1%.						
+60156	all		Mind Blast Cost Reduction		The mana cost of your Mind Blast is reduced by $s1%.						
+60157	all		Shadow Word Death Crit		Your Shadow Word: Death has an additional $s1% chance to critically strike.						
+60158	all		Magic Reflection		Reflect all spells targeting the caster for $d.	Reflecting spells.					
+60160	all		Death and Decay		$m1 Shadow damage inflicted every $t1 sec to all targets in the affected area for $d.	$s1 Shadow damage inflicted every $t1 sec.					
+60161	all		Banner, Alliance								
+60162	all		Increase Rupture Damage		Increases the damage dealt by your Rupture by $s1%.						
+60163	all		Cheaper Combo Moves		Reduces the Energy cost of your Combo Moves by $s1%.						
+60164	all		Lightning Bolt Crit Mana Back		Your Lightning Bolt costs $s1% less mana.						
+60165	all		Lava Burst Bonus Crit Damage		The bonus critical strike damage of your Lava Burst is increased by $s1%.						
+60166	all		Water Shield Boost		Your Water Shield is $s1% stronger.						
+60167	all		Spirit Link Chain Heal Boost		Increases the healing done by your Chain Heal and Healing Wave by $s1%.						
+60168	all		Lightning Shield Boost		Your Lightning Shield damage is increased by $s1%.						
+60169	all		Flurry Haste Speedup		Your Flurry effect provides an additional $s1% melee haste.						
+60170	all		Corruption Triggers Crit		Your Corruption and Immolate periodic effects have a chance to increase the critical strike chance of your next Shadow Bolt or Incinerate by 10% for the next $61595d.						
+60172	all		Life Tap Bonus Spirit		Casting Life Tap grants you an additional 300 spirit for 10 seconds.						
+60173	all		Shield Slam Damage Up		Increases the damage of your Shield Slam by $s1%.						
+60174	all		Slam Damage Up		Increases the damage of your Slam by $s1%.						
+60175	all		Shield Wall Duration		Increases the duration of your Shield Wall by $/1000;s1 seconds.						
+60176	all		Bleed Cost Reduction		Your Bleed periodic effects have a chance to make your next ability cost 5 less rage.						
+60177	all		Hunger For Blood		Enrages you, increasing all damage caused by $s1%.  If used while a harmful physical effect is afflicting you, it will attempt to remove it and refund $58155s1 energy.  This effect can be stacked up to $u times.  Lasts $d.	All damage caused increased by $s1%.					
+60178	all		Teleport Attackers		Teleports the attacking team to the boats.						
+60180	all		Resolute		Increases maximum health by $s1 for $d.	Health increased by $s1.					
+60181	all		Arcane Stream		Inflicts Arcane damage to an enemy for $d.	Arcane damage inflicted over $d.					
+60182	all		Mana Detonation		Sends out a blast wave of magic, inflicting $s1 Arcane damage to nearby enemies and knocking them back.						
+60183	all		Harvest Soul		Harvests the soul of an enemy, increasing in power and size.	Dealing $s2% more damage.					
+60184	spellbook	375	Elemental Fury		Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by $s1%.						
+60185	spellbook	375	Elemental Fury		Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by $s1%.						
+60186	all		Plague Strike	Rank 6	A vicious strike that deals weapon damage  and plagues the target, dealing $o2 Shadow damage over $d.	Deals $o2 Shadow damage over $d.					
+60187	spellbook	375	Elemental Fury		Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by $s1%.						
+60188	spellbook	375	Elemental Fury		Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by $s1%.						
+60189	all		Banner, Side, Alliance								
+60190	all		Invisibility								
+60191	all		Invisibility								
+60192	spellbook	51	Freezing Arrow	Rank 1	Fire a freezing arrow that places a Freezing Trap at the target location, freezing the first enemy that approaches, preventing all action for up to $14309d.  Any damage caused will break the ice.  Trap will exist for $60202d.  Only one trap can be active at a time.						
+60194	all		See Invisibility								
+60195	all		Sinister Strike		Inflicts normal damage plus $s1 to an enemy.						
+60196	all		Berserker!		Critical strike rating increased by $s1.	Critical strike rating increased by $s1.					
+60197	all		See Invisibility								
+60200	all		Glyph of Raise Dead		Your Raise Dead spell no longer requires a reagent.						
+60201	all		Glyph of Runic Undeath								
+60202	spellbook	51	Freezing Arrow	Rank 1	Fire a freezing arrow that places a Freezing Trap at the target location, freezing the first enemy that approaches, preventing all action for up to $14309d.  Any damage caused will break the ice.  Trap will exist for $60202d.  Only one trap can be active at a time.						
+60203	all		Darkmoon Card: Death		Hurls a bolt of death magic at an enemy, inflicting Shadow damage.						
+60204	all		Arcane Stream		Inflicts Arcane damage to an enemy for $d.	Arcane damage inflicted over $d.					
+60205	all		Mana Detonation		Sends out a blast wave of magic, inflicting $s1 Arcane damage to nearby enemies and knocking them back.						
+60206	all		Ram		Rams any enemies in front of the demolisher, dealing $s2 Damage and knocking them back. Also deals $s3 siege damage to buildings.						
+60207	all		Call of Earth		Calling to the spirits of earth.						
+60208	all		Ally Air Dropoff Kill Credit								
+60209	all		Silence Duration Reduction		Silence duration reduced by $s1%.						
+60210	spellbook	51	Freezing Arrow Effect	Rank 1	Fire a freezing arrow that places a Freezing Trap at the target location, freezing the first enemy that approaches, preventing all action for up to $14309d.  Any damage caused will break the ice.  Trap will exist for $60202d.  Only one trap can be active at a time.	Frozen.					
+60211	all		Cauterize		Cauterize a friendly target, removing all harmful magical effects, but inflicting $s2 Fire damage.						
+60212	all		Grip of the Scourge		Caught in the grip of the Lich King.	Caught in the grip of the Lich King.					
+60213	all		Summon Alliance Transport								
+60214	all		Seal of the Pantheon		Increases armor by $s1 for $d.	Armor increased by $s.					
+60215	all		Lavanthor's Talisman		Increases the block value of your shield by $s1 for $d.	Block value increased by $s1.					
+60218	all		Essence of Gossamer		Reduces damage from each attack by $s2, up to a total of $s1 damage absorbed.  Lasts $d.	Reduces damage from each attack by $s2.					
+60219	spellbook	354	Create Firestone	Rank 6	While applied to target weapon it increases damage dealt by direct spells by $55150s1% and spell critical strike rating by $55150s3.  Lasts for 1 hour.						
+60220	spellbook	354	Create Firestone	Rank 7	While applied to target weapon it increases damage dealt by direct spells by $55151s1% and spell critical strike rating by $55151s3.  Lasts for 1 hour.						
+60221	all		Essence of Gossamer		When struck in combat has a chance of shielding you in a protective barrier which will reduce damage from each attack by 140.  Lasts 10 secs.						
+60223	all		Portal: <Any>								
+60224	all		Opening Legion Portals		They come...	They come...					
+60225	all		Toy - Race Car Speed Aura								
+60227	all		Ticking Time Bomb		Explodes after a few seconds, inflicting $59687s1 Fire damage. Tick-tock.						
+60228	all		Toy - Race Car Speed Aura								
+60229	all		Greatness		Increases your Strength by $s1 for $d.	Strength increased by $s1.					
+60230	all		Toy - Race Car Speed Aura								
+60231	all		Grip of the Scourge		Caught in the grip of the Lich King.	Caught in the grip of the Lich King.					
+60232	all		Toy - Race Car Speed Aura								
+60233	all		Greatness		Increases your Agility by $s1 for $d.	Agility increased by $s1.					
+60234	all		Greatness		Increases your Intellect by $s1 for $d.	Intellect increased by $s1.					
+60235	all		Greatness		Increases your Spirit by $s1 for $d.	Spirit increased by $s1.					
+60236	all		Cyclone		Stuns an enemy for $d.	Stunned.					
+60237	all		Toy - Race Car Speed Aura								
+60238	all		Toy - Race Car Speed Aura								
+60239	all		Gargoyle Ambusher Strike		Inflicts Nature damage to an enemy.						
+60240	all		Toy - Race Car - Summon								
+60241	all		Flame Tsunami								
+60242	all		Darkmoon Card: Illusion		Restores $s1 mana.						
+60243	all		Blood Parrot Despawn								
+60244	all		Blood Parrot Despawn Aura								
+60245	all		Prisms Deck		Combine the Ace through Eight of Prisms to complete the set.						
+60246	all		Prisms Deck		Combine the Ace through Eight of Prisms to complete the set.						
+60247	all		Prisms Deck		Combine the Ace through Eight of Prisms to complete the set.						
+60248	all		Prisms Deck		Combine the Ace through Eight of Prisms to complete the set.						
+60249	all		Prisms Deck		Combine the Ace through Eight of Prisms to complete the set.						
+60250	all		Prisms Deck		Combine the Ace through Eight of Prisms to complete the set.						
+60251	all		Prisms Deck		Combine the Ace through Eight of Prisms to complete the set.						
+60252	all		Prisms Deck		Combine the Ace through Eight of Prisms to complete the set.						
+60255	all		Nobles Deck		Combine the Ace through Eight of Nobles to complete the set.						
+60256	all		Collect Sample		Collects a sample from the cultists' cauldrons on Aldur'thar.						
+60257	all		Nobles Deck		Combine the Ace through Eight of Nobles to complete the set.						
+60258	all		Rune of Repulsion		Increases parry rating by $s1 for $d1.	Increases parry rating by $s1.					
+60259	all		Nobles Deck		Combine the Ace through Eight of Nobles to complete the set.						
+60260	all		Nobles Deck		Combine the Ace through Eight of Nobles to complete the set.						
+60261	all		Nobles Deck		Combine the Ace through Eight of Nobles to complete the set.						
+60262	all		Nobles Deck		Combine the Ace through Eight of Nobles to complete the set.						
+60263	all		Nobles Deck		Combine the Ace through Eight of Nobles to complete the set.						
+60264	all		Nobles Deck		Combine the Ace through Eight of Nobles to complete the set.						
+60265	all		Chaos Deck		Combine the Ace through Eight of Chaos to complete the set.						
+60268	all		Chaos Deck		Combine the Ace through Eight of Chaos to complete the set.						
+60269	all		Chaos Deck		Combine the Ace through Eight of Chaos to complete the set.						
+60270	all		Chaos Deck		Combine the Ace through Eight of Chaos to complete the set.						
+60271	all		Chaos Deck		Combine the Ace through Eight of Chaos to complete the set.						
+60272	all		Chaos Deck		Combine the Ace through Eight of Chaos to complete the set.						
+60273	all		Chaos Deck		Combine the Ace through Eight of Chaos to complete the set.						
+60274	all		Chaos Deck		Combine the Ace through Eight of Chaos to complete the set.						
+60276	all		Undeath Deck		Combine the Ace through Eight of Undeath to complete the set.						
+60277	all		Undeath Deck		Combine the Ace through Eight of Undeath to complete the set.						
+60278	all		Undeath Deck		Combine the Ace through Eight of Undeath to complete the set.						
+60279	all		Undeath Deck		Combine the Ace through Eight of Undeath to complete the set.						
+60280	all		Undeath Deck		Combine the Ace through Eight of Undeath to complete the set.						
+60281	all		Undeath Deck		Combine the Ace through Eight of Undeath to complete the set.						
+60282	all		Undeath Deck		Combine the Ace through Eight of Undeath to complete the set.						
+60283	all		Undeath Deck		Combine the Ace through Eight of Undeath to complete the set.						
+60284	all		Legion World Portal								
+60285	all		Portal Collapse								
+60286	all		Defender's Code		Increases dodge by $s1 for $d1.	Increases dodge rating by $s1.					
+60287	all		Anti-Air Rocket		Fires an explosive missile directly forward, detonating when it has travelled 90 yards, hitting any enemies within 10 yards.						
+60288	all		Sniper Shot		Take the shot.						
+60289	all		Aura of Varimathras		They come...	They come...					
+60290	all		Blast Wave		Unleashes a wave of flame, inflicting Fire damage to nearby enemies and reducing their movement speed for $d.	Reduced movement speed.					
+60291	all		Volazj Whisper: Aggro								
+60292	all		Volazj Whisper: Insanity								
+60293	all		Volazj Whisper: Slay 01								
+60294	all		Volazj Whisper: Slay 02								
+60295	all		Volazj Whisper: Slay 03								
+60296	all		Volazj Whisper: Death 01								
+60297	all		Volazj Whisper: Death 02								
+60298	all		Opening Legion Portals		They come...	They come...					
+60299	all		Incisor Fragment		Increases your armor penetration rating by $s1 for 20 sec.	Increases your armor penetration rating by $s1.					
+60300	all		Unholy Frenzy		Increases an ally's attack speed and damage done by $s1% for $d.	Increases an ally's attack speed and damage done by $s1%.					
+60301	all		Meteorite Whetstone		Your melee and ranged attacks have a chance to increase your haste rating by $60302s1 for $60302d1.						
+60302	all		Meteorite Whetstone		Increases haste rating by $s1.	Increases haste rating by $s1.					
+60303	all		Copy of Green Channeling								
+60304	all		Combine Essence		Combines 10 Tainted Essences to create a Writhing Mass.						
+60305	all		Heart of a Dragon		Increases attack power by $s1 for $d.	Increases attack power by $s1.					
+60306	all		Vestige of Haldor		Your melee and ranged attacks have a chance to burn your enemy, dealing $55748s1 fire damage.						
+60307	all		Vestige of Haldor		Deals $s1 fire damage.						
+60309	all		Channel Souls								
+60310	all		Throw Writhing Mass		Throws a Writhing Mass into a cultist's cauldron in Aldur'thar.						
+60311	all		Dark Discernment		Allows the gathering of Tainted Essence from dead cultists in Aldur'thar.	Allows the gathering of Tainted Essence from dead cultists in Aldur'thar.					
+60312	all		Copy of Aura of the Crusade		Each time you deal melee or ranged damage to an opponent, you gain 6 attack power for the next 10 sec., stacking up to 20 times.  Each time you land a harmful spell on an opponent, you gain 8 spell power for the next 10 sec., stacking up to 10 times.						
+60313	all		Fury of the Five Flights		Each time you deal melee or ranged damage to an opponent, you gain 16 attack power for the next 10 sec, stacking up to 20 times.						
+60314	all		Fury of the Five Flights		Increases your melee and ranged attack power by $s1.  Effect lasts for $d.	Increases melee and ranged attack power by $s1.					
+60315	all		Northrend Non-Heroic Image Channel								
+60316	all		Northrend Heroic Image Channel								
+60317	all		Signet of Edward the Odd		Your melee and ranged attacks have a chance to increase your haste rating by $60318s1 for $60318d1.						
+60318	all		Edward's Insight		Increases haste rating by $s1.	Increases haste rating by $s1.					
+60319	all		Mark of Norgannon		Increases your haste rating by $s1 for $d1.	Increased attack speed.					
+60320	all		Scroll of Recall		Returns you to $z.  Results are unpredictable beyond level 70.						
+60321	all		Scroll of Recall		Returns you to $z.  Results are unpredictable beyond level 80.						
+60322	all		Scroll of Recall		Teleports the caster in a random direction up to 30 yards away.						
+60323	all		Scroll of Recall								
+60324	all		Scroll of Recall								
+60325	all		Scroll of Recall								
+60326	all		Scroll of Recall								
+60327	all		Scroll of Recall								
+60328	all		Scroll of Recall								
+60329	all		Scroll of Recall								
+60330	all		Scroll of Recall								
+60331	all		Scroll of Recall								
+60332	all		Scroll of Recall								
+60333	all		Scroll of Recall								
+60334	all		Scroll of Recall								
+60335	all		Scroll of Recall								
+60336	spellbook	773	Scroll of Recall II								
+60337	spellbook	773	Scroll of Recall III								
+60339	all		Airship Shield Recently Hit, small								
+60340	all		Accuracy		Increases your Hit Rating by $s1 for $d.  Battle Elixir. Battle Elixir.	Increases Hit Rating by $s1. Battle Elixir.					
+60341	all		Deadly Strikes		Increases your Critical Rating by $s1 for $d.  Battle Elixir. Battle Elixir.	Increases Critical Rating by $s1. Battle Elixir.					
+60342	all		Beam Visual								
+60343	all		Mighty Defense		Increases your Defense Rating by $s1 for $d.  Guardian Elixir. Guardian Elixir.	Increases Defense Rating by $s1. Guardian Elixir.					
+60344	all		Expertise		Increases your expertise rating by $s1 for $d.  Battle Elixir. Battle Elixir.	Expertise rating increased by $s1. Battle Elixir.					
+60345	all		Armor Piercing		Increases your Armor Penetration Rating by $s1 for $d.  Battle Elixir. Battle Elixir.	Increases Armor Penetration Rating by $s1. Battle Elixir.					
+60346	all		Lightning Speed		Increases your Haste Rating by $s1 for $d.  Battle Elixir. Battle Elixir.	Increases Haste Rating by $s1. Battle Elixir.					
+60347	all		Mighty Thoughts		Increases your Intellect by $s1 for $d.  Guardian Elixir. Guardian Elixir.	Increases Intellect by $s1. Guardian Elixir.					
+60348	spellbook	373	Maelstrom Ready!								
+60349	all		Maelstrom								
+60350	spellbook	171	Transmute: Titanium		Transmutes many saronite bars into a single titanium bar.  You have a chance to discover other transmutations when successful.						
+60351	all		Mirror Image Forcecast								
+60352	all		Mirror Image								
+60353	all		Pilot Actions								
+60354	spellbook	171	Elixir of Accuracy								
+60355	spellbook	171	Elixir of Deadly Strikes								
+60356	spellbook	171	Elixir of Mighty Defense								
+60357	spellbook	171	Elixir of Expertise								
+60358	all		Beasts Deck		Combine the Ace through Eight of Beasts to complete the set.						
+60359	all		Beasts Deck		Combine the Ace through Eight of Beasts to complete the set.						
+60360	all		Beasts Deck		Combine the Ace through Eight of Beasts to complete the set.						
+60361	all		Beasts Deck		Combine the Ace through Eight of Beasts to complete the set.						
+60362	all		Beasts Deck		Combine the Ace through Eight of Beasts to complete the set.						
+60363	all		Beasts Deck		Combine the Ace through Eight of Beasts to complete the set.						
+60364	all		Beasts Deck		Combine the Ace through Eight of Beasts to complete the set.						
+60365	spellbook	171	Elixir of Armor Piercing								
+60366	spellbook	171	Elixir of Lightning Speed								
+60367	spellbook	171	Elixir of Mighty Thoughts								
+60368	all		Elementals Deck		Combine the Ace through Eight of Elementals to complete the set.						
+60369	all		Elementals Deck		Combine the Ace through Eight of Elementals to complete the set.						
+60370	all		Elementals Deck		Combine the Ace through Eight of Elementals to complete the set.						
+60371	all		Elementals Deck		Combine the Ace through Eight of Elementals to complete the set.						
+60372	all		Elementals Deck		Combine the Ace through Eight of Elementals to complete the set.						
+60373	all		Elementals Deck		Combine the Ace through Eight of Elementals to complete the set.						
+60374	all		Elementals Deck		Combine the Ace through Eight of Elementals to complete the set.						
+60375	all		Portals Deck		Combine the Ace through Eight of Portals to complete the set.						
+60376	all		Portals Deck		Combine the Ace through Eight of Portals to complete the set.						
+60377	all		Portals Deck		Combine the Ace through Eight of Portals to complete the set.						
+60378	all		Portals Deck		Combine the Ace through Eight of Portals to complete the set.						
+60379	all		Portals Deck		Combine the Ace through Eight of Portals to complete the set.						
+60380	all		Portals Deck		Combine the Ace through Eight of Portals to complete the set.						
+60381	all		Portals Deck		Combine the Ace through Eight of Portals to complete the set.						
+60382	all		Warlord Deck		Combine the Ace through Eight of Warlords to complete the set.						
+60383	all		Warlord Deck		Combine the Ace through Eight of Warlords to complete the set.						
+60384	all		Warlord Deck		Combine the Ace through Eight of Warlords to complete the set.						
+60385	all		Warlord Deck		Combine the Ace through Eight of Warlords to complete the set.						
+60386	all		Warlord Deck		Combine the Ace through Eight of Warlords to complete the set.						
+60387	all		Warlord Deck		Combine the Ace through Eight of Warlords to complete the set.						
+60388	all		Warlord Deck		Combine the Ace through Eight of Warlords to complete the set.						
+60389	all		Blessings Deck		Combine the Ace through Eight of Blessings to complete the set.						
+60390	all		Blessings Deck		Combine the Ace through Eight of Blessings to complete the set.						
+60391	all		Blessings Deck		Combine the Ace through Eight of Blessings to complete the set.						
+60392	all		Blessings Deck		Combine the Ace through Eight of Blessings to complete the set.						
+60393	all		Blessings Deck		Combine the Ace through Eight of Blessings to complete the set.						
+60394	all		Blessings Deck		Combine the Ace through Eight of Blessings to complete the set.						
+60395	all		Blessings Deck		Combine the Ace through Eight of Blessings to complete the set.						
+60396	spellbook	171	Mercurial Alchemist Stone								
+60397	all		Furies Deck		Combine the Ace through Eight of Furies to complete the set.						
+60398	all		Furies Deck		Combine the Ace through Eight of Furies to complete the set.						
+60399	all		Furies Deck		Combine the Ace through Eight of Furies to complete the set.						
+60400	all		Furies Deck		Combine the Ace through Eight of Furies to complete the set.						
+60401	all		Furies Deck		Combine the Ace through Eight of Furies to complete the set.						
+60402	all		Furies Deck		Combine the Ace through Eight of Furies to complete the set.						
+60403	spellbook	171	Indestructible Alchemist Stone								
+60404	all		Furies Deck		Combine the Ace through Eight of Furies to complete the set.						
+60405	spellbook	171	Mighty Alchemist Stone								
+60407	all		Frostbite Rotate								
+60408	all		Lunacy Deck		Combine the Ace through Eight of Lunacy to complete the set.						
+60409	all		Lunacy Deck		Combine the Ace through Eight of Lunacy to complete the set.						
+60410	all		Lunacy Deck		Combine the Ace through Eight of Lunacy to complete the set.						
+60411	all		Lunacy Deck		Combine the Ace through Eight of Lunacy to complete the set.						
+60412	all		Lunacy Deck		Combine the Ace through Eight of Lunacy to complete the set.						
+60413	all		Lunacy Deck		Combine the Ace through Eight of Lunacy to complete the set.						
+60414	all		Lunacy Deck		Combine the Ace through Eight of Lunacy to complete the set.						
+60415	all		Storms Deck		Combine the Ace through Eight of Storms to complete the set.						
+60416	all		Storms Deck		Combine the Ace through Eight of Storms to complete the set.						
+60417	all		Storms Deck		Combine the Ace through Eight of Storms to complete the set.						
+60418	all		Storms Deck		Combine the Ace through Eight of Storms to complete the set.						
+60419	all		Storms Deck		Combine the Ace through Eight of Storms to complete the set.						
+60420	all		Storms Deck		Combine the Ace through Eight of Storms to complete the set.						
+60421	all		Storms Deck		Combine the Ace through Eight of Storms to complete the set.						
+60422	all		Corruption of Time								
+60424	spellbook	777	Mekgineer's Chopper		Rides and parks a rockin' Mekgineer's Chopper.  This is a very fast set of wheels. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+60425	all		Hover Fall								
+60426	all		Ghost State								
+60427	all		Teleport Visual (Legion)								
+60428	all		Volatile Acid		Dissolve the remains of a Skeletal Reaver. (30 yard range)						
+60429	all		Ritual of Souls								
+60430	all		Molten Fury		Magma coats the Lava Blaze, increasing size, health, and damage done.	Increases maximum health by $s1%.\nIncreases damage done by $s2%.					
+60431	all		Earth and Moon		Your Wrath and Starfire spells have a chance to apply the Earth and Moon effect, which increases spell damage taken by $s1% for $d.	Increases spell damage taken by $s1%.					
+60432	all		Earth and Moon		Your Wrath and Starfire spells have a chance to apply the Earth and Moon effect, which increases spell damage taken by $s1% for $d.	Increases spell damage taken by $s1%.					
+60433	all		Earth and Moon		Your Wrath and Starfire spells have a chance to apply the Earth and Moon effect, which increases spell damage taken by $s1% for $d.	Increases spell damage taken by $s1%.					
+60436	all		Grim Toll		Your melee and ranged attacks have a chance to increase your armor penetration rating by $60437s1 for $60437d1.						
+60437	all		Grim Toll		Increases armor penetration rating by $s1.	Increases armor penetration rating by $s1.					
+60438	all		Blue Flame Patch								
+60439	all		Loatheb's Shadow		Increases attack power by $s1 for $d.	Increases attack power by $s1.					
+60440	all		Mind Sear		Causes an explosion of shadow magic around the enemy target, causing $60441s1 Shadow damage every 1 sec for $d to all enemies within $60441a1 yards around the target.	Causing shadow damage to all targets within $49821a1 yards.					
+60441	all		Mind Sear	Rank 2	Causes an explosion of shadow magic around the enemy target, causing $s1 Shadow damage every 1 sec for $d to all enemies within $a1 yards around the target.	Causing shadow damage to all targets within $a1 yards.					
+60442	all		Bandit's Insignia		Your melee and ranged attacks have a chance to strike your enemy, dealing $60443s1 arcane damage.						
+60443	all		Bandit's Insignia		Deals $s1 arcane damage.						
+60444	all		Lost!			You were too high a level to use your scroll of recall and it teleported you randomly.					
+60445	all		Dalaran Fountain Fishing		Simulates a single catch from the Dalaran Fountain.  Good luck!						
+60446	all		Shadow Word: Pain		Utters a word of darkness, inflicting Shadow damage to an enemy every $t1 sec. for $d.	Shadow damage inflicted every $t1 sec.					
+60447	all		Mind Blast		Inflicts Shadow damage to an enemy, but causes a high amount of threat.						
+60448	all		Shadow Embrace		Your Shadow Bolt and Haunt spells apply the Shadow Embrace effect, increasing all shadow periodic damage dealt to the target by you by $32394s1%, and reduces all periodic healing done to the target by $32394s2%. Lasts for $32394d. Stacks up to $32386u times.	Periodic shadow damage taken increased by $s1%, and periodic healing recieved reduced by $s2%.					
+60449	all		Shadowform		Assume a Shadowform, increasing your Shadow damage by $s2%.	Shadow damage dealt is increased by $s2%.					
+60450	all		Coin Toss		Toss this coin to a nearby friendly target.						
+60451	all		Corruption of Time			Infused with corrupted temporal energy.					
+60452	all		Drain Soul								
+60453	all		Mind Blast		Inflicts Shadow damage to an enemy.						
+60454	all		Alliance Aggro Trigger								
+60455	all		Horde Aggro Trigger								
+60456	all		Tirion Smashes Heart								
+60457	all		See Cloak Dome Internal (DND(								
+60458	all		Toss Your Luck!		Toss your luck!						
+60460	all		Glyph of Raise Dead		Your Raise Dead spell no longer requires a reagent.						
+60461	all		Ascension								
+60462	all		See Cloaked Alliance Peeps								
+60463	all		See Cloaked Horde Peeps								
+60464	all		Cloaked Alliance Peeps								
+60465	all		Shadow Embrace		Your Shadow Bolt and Haunt spells apply the Shadow Embrace effect, increasing all shadow periodic damage dealt to the target by you by $32394s1%, and reduces all periodic healing done to the target by $32394s2%. Lasts for $32394d. Stacks up to $32386u times.	Periodic shadow damage taken increased by $s1%, and periodic healing recieved reduced by $s2%.					
+60466	all		Shadow Embrace		Your Shadow Bolt and Haunt spells apply the Shadow Embrace effect, increasing all shadow periodic damage dealt to the target by you by $32394s1%, and reduces all periodic healing done to the target by $32394s2%. Lasts for $32394d. Stacks up to $32386u times.	Periodic shadow damage taken increased by $s1%, and periodic healing recieved reduced by $s2%.					
+60467	all		Shadow Embrace		Your Shadow Bolt and Haunt spells apply the Shadow Embrace effect, increasing all shadow periodic damage dealt to the target by you by $32394s1%, and reduces all periodic healing done to the target by $32394s2%. Lasts for $32394d. Stacks up to $32386u times.	Periodic shadow damage taken increased by $s1%, and periodic healing recieved reduced by $s2%.					
+60468	all		Shadow Embrace		Your Shadow Bolt and Haunt spells apply the Shadow Embrace effect, increasing all shadow periodic damage dealt to the target by you by $32394s1%, and reduces all periodic healing done to the target by $32394s2%. Lasts for $32394d. Stacks up to $32386u times.	Periodic shadow damage taken increased by $s1%, and periodic healing recieved reduced by $s2%.					
+60469	all		Cloaked Peeps Visual								
+60470	all		Copy of Vestige of Haldor		Your melee and ranged attacks have a chance to burn your enemy, dealing $55748s1 fire damage.						
+60471	all		Tome of Arcane Phenomena		Increases your haste rating by $s1 for $d1.	Increased haste rating by $s1.					
+60472	all		Mind Flay		Inflicts Shadow damage to an enemy and reduces its movement speed for $d.	Shadow damage inflicted over $d.\nReduced movement speed.					
+60473	all		Forge Ember		Your damaging and healing spells have a chance to increase your spell power by $60479s1 for $60479d1.						
+60474	all		Exit Portal								
+60475	all		Summon Sage Aeire's Totem								
+60476	all		Toss Your Luck!								
+60478	all		Ritual of Doom Effect		Summons a Doomguard.						
+60479	all		Forge Ember		Increases spell power by $s1 for $d.	Increases spell power by $s1.					
+60480	all		Mark of the War Prisoner		Increases spell power by $s2 for $d.	Spell power increased by $s2.					
+60481	all		Cloaked Horde Peeps								
+60482	all		Pendulum of Telluric Currents		Your harmful spells have a chance to strike your enemy, dealing $60483s1 shadow damage.						
+60483	all		Pendulum of Telluric Currents		Deals $s1 shadow damage.						
+60484	all		Heart Explosion								
+60485	all		Illustration of the Dragon Soul		Each time you cast a damaging or healing spell you gain $60486s1 spell power for the next $60486d, stacking up to 10 times.						
+60486	all		Illustration of the Dragon Soul		Increases your spell power by $s1.  Effect lasts for $d.	Increases spell power by $s1.					
+60487	all		Extract of Necromatic Power		Each time one of your spells deals periodic damage, there is a chance $60488s1 additional damage will be dealt.						
+60488	all		Extract of Necromatic Power		Sends a shadowy bolt at the enemy causing $s1 Shadow damage.						
+60489	all		Horde Paint Job								
+60490	all		Embrace of the Spider		Your spells have a chance to increase your haste rating by $60492s1 for 10 secs.						
+60491	all		Alliance Paint Job								
+60492	all		Embrace of the Spider		Increases spell haste rating by $s1 for $d.	Increases spell haste rating by $s1.					
+60493	all		Dying Curse		Your spells have a chance to increase your spell power by $60494s1 for $60494d1.						
+60494	all		Dying Curse		Increases spell power by $s1 for $d.	Spell power increased by $s1.					
+60495	all		Copy of Dying Curse		Increases spell power by $s1 for $d.	Spell power increased by $s1.					
+60496	all		Roll Putress Head								
+60497	all		Severed Head of Putress								
+60498	all		Severed Head of Putress								
+60499	all		Chromie Whisper								
+60500	all		Mind Blast		Inflicts $s1 Shadow damage to an enemy.						
+60501	all		Vampiric Touch		Heals the caster for half the damage dealt by a melee attack.	Heals the caster for half the damage dealt by a melee attack.					
+60502	all		Carrion Swarm		A cresting wave of chaotic magic splashes over enemies in front of the caster, dealing $s1 Shadow damage and $s2 Shadow damage every $t2 sec. for $d.	$s2 Shadow damage every $t2 sec.					
+60503	all		Taste for Blood		Whenever your Rend ability causes damage, you have a chance of allowing the use of your Overpower ability for $60503d.  1 charge.  This effect will not occur more than once every 6 sec.	Allows the use of Overpower.					
+60504	all		Agony of the Fallen Cultist		Increases spell power by $s1.	Spell power increased by $s1.					
+60505	all		Fury of the Fallen Cultist		Increases attack power by $s1.	Attack power increased by $s1.					
+60506	all		Blood of the Fallen Cultist	Level 6	Increases the target's Stamina by $s1 for $d.	Stamina increased by $s1.					
+60507	all		Chromie Whisper								
+60508	all		Chromie Whisper								
+60509	all		Strength of Wrynn		For the Alliance!	For the Alliance!					
+60510	all		Soul Preserver		Your healing spells have a chance to make your next heal cast within $60515d cost $60515s1 less mana.						
+60511	all		Deep Freeze		Channeling freezing winds.	Frozen solid.					
+60512	all		Healing Trance		Your next healing spell costs $s1 less mana.	Your next healing spell costs $s1 less mana.					
+60513	all		Healing Trance		Your next healing spell costs $s1 less mana.	Your next healing spell costs $s1 less mana.					
+60514	all		Healing Trance		Your next healing spell costs $s1 less mana.	Your next healing spell costs $s1 less mana.					
+60515	all		Healing Trance		Your next healing spell costs $s1 less mana.	Your next healing spell costs $s1 less mana.					
+60516	all		Greater Mass Teleport								
+60517	all		Talisman of Troll Divinity		For the next $d, your direct heals increase healing received by their target by up to $60518s1.  This effect lasts $60518d and stacks up to 5 times.	For the next $d, your direct heals increase healing received by their target by up to $60518s1.  This effect lasts $60518d and stacks up to 5 times.					
+60518	all		Touched by a Troll		Increases healing received by up to $s1.	Increases healing received by up to $s1.					
+60519	all		Spark of Life		Each time you cast a damaging or healing spell, there is chance you will gain up to $60520s1 mana per 5 for $60520d.						
+60520	all		Spark of Life		Mana Regen increased by $s1.	Mana Regen increased by $s1.					
+60521	all		Winged Talisman		Increases spell power by $s2 for $d.	Spell power increased by $s2.					
+60522	all		Alexstrasza - Whisper								
+60523	all		Bomb Blast		Burn the target for $s1.	Your vehicle is on fire!					
+60524	all		Majestic Dragon Figurine		Each time you cast a spell you gain 18 Spirit for the next 10 sec, stacking up to 10 times.						
+60525	all		Majestic Dragon Figurine		Increases your Spirit by $s1.  Effect lasts for $d.	Increases Spirit by $s1.					
+60526	all		Living Ice Crystals		Instantly heal your current friendly target for $s1.						
+60527	all		Essence Flow		Increases your Spirit by $s1 for $d1.	Spirit Increased by $s1.					
+60528	all		Rod of Siphoning		Siphons Dark Matter from the corpse of an Enslaved Minion in Aldur'thar.						
+60529	all		Forethought Talisman		Your direct healing spells have a chance to place a heal over time on your target, healing $60530o1 over $60530d.						
+60530	all		Forethought Talisman			Heals $s1 damage every $t1 seconds.					
+60531	all		Create Dark Matter								
+60532	all		Heart Explosion Effects								
+60533	all		Grab On		Grab the Wild Wyrm more tightly, strengthening your Grip by $s1.						
+60534	all		Flight			Flying.					
+60535	all		Light Lamp		Turn on the lights of Dalaran.						
+60536	all		Lich King's Fury		The Wrath of the Lich King.						
+60537	all		Soul of the Dead		Your spell critical strikes have a chance to restore $60538s1 mana.						
+60538	all		Soul of the Dead		Restores $s1 mana.	$1s mana restored.					
+60539	all		Sapphiron Achievement Check								
+60540	all		Chained Grip		Use Nergeld to pull an enemy towards him within 40 yards.	Get over here!					
+60541	all		Instakill Chosen Zealot								
+60542	all		Bitter Blast		Deals $s1 Frost damage to the target.						
+60543	all		Savage Totem of Indomitability		Your Lava Lash ability also grants you $60544s1 attack power for $60544d.						
+60544	all		Savage Aggression		Attack power increased by $s1.	Attack power increased by $s1.					
+60545	all		Koltira's Revenge								
+60546	all		Hateful Totem of Indomitability		Your Lava Lash ability also grants you $60547s1 attack power for $60547d.						
+60547	all		Hateful Aggression		Attack power increased by $s1.	Attack power increased by $s1.					
+60548	all		Deadly Totem of Indomitability		Your Lava Lash ability also grants you $60549s1 attack power for $60549d.						
+60549	all		Deadly Aggression		Attack power increased by $s1.	Attack power increased by $s1.					
+60550	all		LK Arena 4 Totem of Indomitability		Your Lava Lash ability also grants you $60551s1 attack power for $60551d.						
+60551	all		Furious Gladiator's Libram of Fortitude		Attack power increased by $s1.	Attack power increased by $s1.					
+60552	all		LK Arena 5 Totem of Indomitability		Your Lava Lash ability also grants you $60553s1 attack power for $60553d.						
+60553	all		Relentless Aggression		Attack power increased by $s1.	Attack power increased by $s1.					
+60554	all		LK Arena 6 Totem of Indomitability		Your Lava Lash ability also grants you $60555s1 attack power for $60555d.						
+60555	all		Fury of the Gladiator		Attack power increased by $s1.	Attack power increased by $s1.					
+60556	all		Savage Totem of the Third Wind		Increases spell power of Lesser Healing Wave by $s1.						
+60557	all		Hateful Totem of the Third Wind		Increases spell power of Lesser Healing Wave by $s1.						
+60558	all		Deadly Totem of the Third Wind		Increases spell power of Lesser Healing Wave by $s1.						
+60559	all		LK Arena 4 Totem of the Third Wind		Increases spell power of Lesser Healing Wave by $s1.						
+60560	all		LK Arena 5 Totem of the Third Wind		Increases spell power of Lesser Healing Wave by $s1.						
+60561	all		Summon Dark Messenger Beam		Siphons Dark Matter from the corpse of an Enslaved Minion in Aldur'thar.						
+60562	all		LK Arena 6 Totem of the Third Wind		Increases spell power of Lesser Healing Wave by $s1.						
+60563	all		Summon Dark Messenger								
+60564	all		Savage Gladiator's Totem of Survival		Your Shock spells grant $60565s1 spell power for $60565d.						
+60565	all		Savage Magic			Increased spell power by $s1.					
+60566	all		Hateful Magic			Increased spell power by $s1.					
+60567	all		Deadly Magic			Increased spell power by $s1.					
+60568	all		Furious Gladiator's Idol of Steadfastness			Increased spell power by $s1.					
+60569	all		Relentless Survival		Increases spell power by $s1 for $d.	Increased spell power by $s1.					
+60570	all		Intuition of the Gladiator			Increased spell power by $s1.					
+60571	all		Hateful Gladiator's Totem of Survival		Your Shock spells grant $60566s1 spell power for $60566d.						
+60572	all		Deadly Gladiator's Totem of Survival		Your Shock spells grant $60567s1 spell power for $60567d.	Your Shock spells grant $60567s1 spell power for $60567d.					
+60573	all		LK Arena 4 Gladiator's Totem of Survival		Your Shock spells grant $60568s1 spell power for $60568d.						
+60574	all		LK Arena 5 Gladiator's Totem of Survival		Your Shock spells grant $60569s1 spell power for $60569d.						
+60575	all		LK Arena 6 Gladiator's Totem of Survival		Your Shock spells grant $60570s1 spell power for $60570d.						
+60576	all		Copy of Crusader's Command		Your Judgement of Command has a chance to grant $43747s1 attack power for $43747d.						
+60577	all		Savage Gladiator's Libram of Fortitude		Your Crusader Strike ability also grants you $60544s1 attack power for $60544d.						
+60578	all		Summoning Stone Force Cast								
+60579	all		Summon Bunny								
+60580	all		Enchanted								
+60581	all		Frosthide Leg Armor		Permanently attach frosthide armor onto pants to increase Stamina by 55 and Agility by 22.\n\nEnchanting the item causes it to become soulbound.						
+60582	all		Icescale Leg Armor		Permanently attach icescale armor onto pants to increase attack power by 75 and critical strike rating by 22.\n\nEnchanting the item causes it to become soulbound.						
+60583	spellbook	165	Jormungar Leg Reinforcements		Permanently attach jormungar reinforcements onto your pants, increasing Stamina by 55 and Agility by 22.\n\nCan only attach to your own armor, and attaching causes the item to become soulbound.						
+60584	spellbook	165	Nerubian Leg Reinforcements		Permanently attach nerubian reinforcements onto your pants, increasing attack power by 75 and critical strike rating by 22.\n\nCan only attach to your own armor, and attaching causes the item to become soulbound.						
+60585	all		Portal Effect: Shadow Vault Escape								
+60586	all		Mighty Spear Thrust		Drives your spear deep into the Wild Wyrm's chest, inflicting $s1 damage, but you cannot take other actions while you wrest the spear free. This ability loosens your grip on the Wyrm by 15.						
+60587	all		Fatal Strike		Drive your spear down the throat of the Wild Wyrm, inflicting fatal damage. The Wild Wyrm's jaws must be pried open to hit with this attack.						
+60588	all		Corrupting Blight		Inflicts $s1% of the target's maximum health in damage every $t1 sec. for $d. Stacks up to 5 times.	$s1% of maximum health dealt in damage every $t1 sec.					
+60589	all		Corrupting Blight Remove								
+60590	all		Void Strike		Inflicts $s1% weapon damage to an enemy, ignoring all of the enemy's armor.						
+60591	all		Leap								
+60592	all		Recently Impaled Marker								
+60593	all		Quiet Suicide (Cast Time)								
+60594	all		Recently Impaled Marker Clear								
+60595	all		Battle at Valhalas: Thane Banahogg's Leap Effect								
+60596	all		Low Health Trigger								
+60597	all		Blessing of the Crusade			Your power versus the Scourge is significantly increased! Mana and health regeneration increased while standing and defending the banner.					
+60598	all		Brann Achivement FAIL!								
+60599	spellbook	165	Frostscale Bracers								
+60600	spellbook	165	Frostscale Helm								
+60601	spellbook	165	Dark Frostscale Leggings								
+60602	all		Arthas 1								
+60603	all		Eject Passenger 1								
+60604	spellbook	165	Dark Frostscale Breastplate								
+60605	spellbook	165	Dragonstompers								
+60606	spellbook	333	Enchant Boots - Assault		Permanently enchant boots to increase attack power by 24.  Requires a level 60 or higher item.						
+60607	spellbook	165	Iceborne Wristguards								
+60608	spellbook	165	Iceborne Helm								
+60609	spellbook	333	Enchant Cloak - Speed		Permanently enchant a cloak to increase haste rating by 15.  Requires a level 60 or higher item.						
+60611	spellbook	165	Dark Iceborne Leggings								
+60612	all		Dalaran - Sewer Arena - Team Green Death Aura								
+60613	spellbook	165	Dark Iceborne Chestguard								
+60614	all		Dalaran - Sewer Arena - Team Gold Death Aura								
+60616	spellbook	333	Enchant Bracers - Striking		Permanently enchant bracers to increase attack power by 38.  Requires a level 60 or higher item.						
+60617	all		Parry		Parry Illidan's next attack and regenerate 25% of your mana if successful.	Chance to parry increased by $s1%.					
+60618	all		Runed Cobalt Rod								
+60619	spellbook	333	Runed Titanium Rod								
+60620	spellbook	165	Bugsquashers								
+60621	spellbook	333	Enchant Weapon - Greater Potency		Permanently enchant a melee weapon to increase attack power by 50.  Requires a level 60 or higher item.						
+60622	spellbook	165	Nerubian Bracers								
+60623	spellbook	333	Enchant Boots - Icewalker		Permanently enchant boots to increase critical strike and hit rating by 12.  Requires a level 60 or higher item.						
+60624	spellbook	165	Nerubian Helm								
+60625	all		Dalaran - Sewer Arena - Death Auras Maxed Out								
+60626	all		Necrotic Strike		Opens a festering wound on an enemy that reduces the effectiveness of healing spells by $s1% and increases Physical damage taken by $s2.	Healing reduced by $s1%.\nPhysical damage taken increased by $s2.					
+60627	spellbook	165	Dark Nerubian Leggings								
+60628	all		Energize								
+60629	spellbook	165	Dark Nerubian Chestpiece								
+60630	spellbook	165	Scaled Icewalkers								
+60631	spellbook	165	Cloak of Harsh Winds								
+60632	all		Hateful Gladiator's Libram of Fortitude		Your Crusader Strike ability also grants you $60547s1 attack power for $60547d.						
+60633	all		Deadly Gladiator's Libram of Fortitude		Your Crusader Strike ability also grants you $60549s1 attack power for $60549d.						
+60634	all		LK Arena 4 Gladiator's Libram of Fortitude		Your Crusader Strike ability also grants you $60551s1 attack power for $60551d.						
+60635	all		LK Arena 5 Gladiator's Libram of Fortitude		Your Crusader Strike ability also grants you $60553s1 attack power for $60553d.						
+60636	all		LK Arena 6 Gladiator's Libram of Fortitude		Your Crusader Strike ability also grants you $60555s1 attack power for $60555d.						
+60637	spellbook	165	Ice Striker's Cloak								
+60638	all		Copy of Increased Flash of Light Healing		Increases spell power of Flash of Light by $s1.						
+60639	all		Twilight Revenge		Sartharion's attacks become increasingly frenzied as twilight drakes are killed, increasing Physical damage and attack speed by $s1%.	Physical damage increased by $s1%.\nAttack Speed increased by $s2%.					
+60640	spellbook	165	Durable Nerubhide Cape								
+60641	all		Copy of Increased Holy Light Healing		Increases spell power of Holy Light by $s1.						
+60642	all		Annihilate		Leap at Illidan dealing weapon damage +$s2 and stunning him for 6 seconds.	Stunned.					
+60643	spellbook	165	Pack of Endless Pockets								
+60644	all		Deathstrike		Deals weapon damage +$s1.						
+60645	spellbook	165	Dragonscale Ammo Pouch								
+60646	all		Shadow Blast		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+60647	spellbook	165	Nerubian Reinforced Quiver								
+60648	all		Savage Gladiator's Libram of Justice		Increases spell power of Flash of Light by $s1.						
+60649	spellbook	165	Razorstrike Breastplate								
+60650	all		Titanium Seal of Dalaran								
+60651	spellbook	165	Virulent Spaulders								
+60652	spellbook	165	Eaglebane Bracers								
+60653	spellbook	333	Enchant Shield - Greater Intellect		Permanently enchant a shield to increase Intellect by 25.  Requires a level 60 or higher item.						
+60654	all		Cancel Ride Vehicle Aura								
+60655	spellbook	165	Nightshock Hood								
+60656	all		Hateful Gladiator's Libram of Justice		Increases spell power of Flash of Light by $s1.						
+60657	all		Copy of Deadly Totem of the Third Wind		Increases spell power of Lesser Healing Wave by $s1.						
+60658	spellbook	165	Nightshock Girdle								
+60659	all		Deadly Gladiator's Libram of Justice		Increases spell power of Flash of Light by $s1.						
+60660	spellbook	165	Leggings of Visceral Strikes								
+60661	all		LK Arena 4 Gladiator's Libram of Justice		Increases spell power of Flash of Light by $s1.						
+60662	all		LK Arena 5 Gladiator's Libram of Justice		Increases spell power of Flash of Light by $s1.						
+60663	spellbook	333	Enchant Cloak - Major Agility		Permanently enchant a cloak to increase Agility by 22. Requires a level 60 or higher item.						
+60664	all		LK Arena 6 Gladiator's Libram of Justice		Increases spell power of Flash of Light by $s1.						
+60665	spellbook	165	Seafoam Gauntlets								
+60666	spellbook	165	Jormscale Footpads								
+60667	all		Frost Breath		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+60668	spellbook	333	Enchant Gloves - Crusher		Permanently enchant gloves to increase attack power by 44.  Requires a level 60 or higher item.						
+60669	spellbook	165	Wildscale Breastplate								
+60670	all		Berserk								
+60671	spellbook	165	Purehorn Spaulders								
+60672	all		Stomp		Knock Illidan back.						
+60674	all		Icecrown Bomber. Airship Shield, on self								
+60675	all		Savage Gladiator's Death Knight Relic		Your Plague Strike ability also grants you $60544s1 attack power for $60544d.						
+60676	all		Southern Tower Destruction								
+60677	all		Gate Kill Credit								
+60678	all		Plague Bite		Inflicts $s1 Nature damage to an enemy every $t1 sec. and increases the Physical damage it takes by $s2% for $d.	$s1 Nature damage inflicted every $t1 sec.\nPhysical damage taken is increased by $s2%.					
+60679	all		Create Thesis		Combines the three pages of the cultists' research to create the Cult of the Damned Thesis.						
+60680	all		Create Thesis		Combines the three pages of the cultists' research to create the Cult of the Damned Thesis.						
+60681	all		Create Thesis		Combines the three pages of the cultists' research to create the Cult of the Damned Thesis.						
+60682	all		Ride Vehicle								
+60683	all		Ride Vehicle								
+60684	all		Foul Burst		Deals $s1 damage and $s2 damage every second to the target and all nearby enemies for $d.	Suffering $s2 damage every $t2 sec.					
+60685	all		Hateful Gladiator's Death Knight Relic		Your Plague Strike ability also grants you $60547s1 attack power for $60547d.						
+60686	all		Deadly Gladiator's Death Knight Relic		Your Plague Strike ability also grants you $60549s1 attack power for $60549d.						
+60687	all		LK Arena 4 Gladiator's Death Knight Relic		Your Plague Strike ability also grants you $60551s1 attack power for $60551d.						
+60688	all		LK Arena 5 Gladiator's Death Knight Relic		Your Plague Strike ability also grants you $60553s1 attack power for $60553d.						
+60689	all		Claw Swipe		Periodically Triggers Claw Swipe.						
+60690	all		LK Arena 6 Gladiator's Death Knight Relic		Your Plague Strike ability also grants you $60555s1 attack power for $60555d.						
+60691	spellbook	333	Enchant 2H Weapon - Massacre		Permanently enchant a two-handed weapon to increase attack power by 110.  Requires a level 60 or higher item.						
+60692	spellbook	333	Enchant Chest - Powerful Stats		Permanently enchant chest armor to increase all stats by 10.  Requires a level 60 or higher item.						
+60693	all		Savage Gladiator's Idol of Resolve		Your Mangle ability also grants you $60544s1 attack power for $60544d.						
+60694	all		Powerful Stats								
+60695	all		Hateful Gladiator's Idol of Resolve		Your Mangle ability also grants you $60547s1 attack power for $60547d.						
+60696	all		Deadly Gladiator's Idol of Resolve		Your Mangle ability also grants you $60549s1 attack power for $60549d.						
+60697	spellbook	165	Eviscerator's Facemask								
+60698	all		LK Arena 4 Gladiator's Idol of Resolve		Your Mangle ability also grants you $60551s1 attack power for $60551d.						
+60699	all		Return to Orgrimmar		Carried by the winds to Orgrimmar.	Carried by the winds to Orgrimmar.					
+60700	all		LK Arena 5 Gladiator's Idol of Resolve		Your Mangle ability also grants you $60553s1 attack power for $60553d.						
+60701	all		LK Arena 6 Gladiator's Idol of Resolve		Your Mangle ability also grants you $60555s1 attack power for $60555d.						
+60702	spellbook	165	Eviscerator's Shoulderpads								
+60703	spellbook	165	Eviscerator's Chestguard								
+60704	spellbook	165	Eviscerator's Bindings								
+60705	spellbook	165	Eviscerator's Gauntlets								
+60706	spellbook	165	Eviscerator's Waistguard								
+60707	spellbook	333	Enchant Weapon - Superior Potency		Permanently enchant a melee weapon to increase attack power by 65.  Requires a level 60 or higher item.						
+60708	all		Fade Armor		Reduces the armor of an enemy by $s1 for $d.	Armor reduced by $s1.					
+60709	all		MOTI, Redux: Past You's Whisper to Controller - Random								
+60710	all		Savage Gladiator's Idol of Steadfastness		Your Moonfire spell grants $60565s1 spell power for $60565d.						
+60711	spellbook	165	Eviscerator's Legguards								
+60712	spellbook	165	Eviscerator's Treads								
+60713	all		Visual: Grab On		Grip Visual.						
+60714	spellbook	333	Enchant Weapon - Mighty Spellpower		Permanently enchant a melee weapon to increase spell power by 63.  Requires a level 60 or higher item.						
+60715	spellbook	165	Overcast Headguard								
+60716	spellbook	165	Overcast Spaulders								
+60717	all		Hateful Gladiator's Idol of Steadfastness		Your Moonfire spell grants $60566s1 spell power for $60566d.						
+60718	spellbook	165	Overcast Chestguard								
+60719	all		Deadly Gladiator's Idol of Steadfastness		Your Moonfire spell grants $60567s1 spell power for $60567d.						
+60720	spellbook	165	Overcast Bracers								
+60721	spellbook	165	Overcast Handwraps								
+60722	all		LK Arena 4 Gladiator's Idol of Steadfastness		Your Moonfire spell grants $60568s1 spell power for $60568d.						
+60723	spellbook	165	Overcast Belt								
+60724	all		LK Arena 5 Gladiator's Idol of Steadfastness		Your Moonfire spell grants $60569s1 spell power for $60569d.						
+60725	spellbook	165	Overcast Leggings								
+60726	all		LK Arena 6 Gladiator's Idol of Steadfastness		Your Moonfire spell grants $60570s1 spell power for $60570d.						
+60727	spellbook	165	Overcast Boots								
+60728	spellbook	165	Swiftarrow Helm								
+60729	spellbook	165	Swiftarrow Shoulderguards								
+60730	spellbook	165	Swiftarrow Hauberk								
+60731	spellbook	165	Swiftarrow Bracers								
+60732	spellbook	165	Swiftarrow Gauntlets								
+60733	all		Savage Gladiator's Idol of Tenacity		Increases the spell power of the final healing value of your Lifebloom by $s1.						
+60734	spellbook	165	Swiftarrow Belt								
+60735	spellbook	165	Swiftarrow Leggings								
+60736	all		Hateful Gladiator's Idol of Tenacity		Increases the spell power of the final healing value of your Lifebloom by $s1.						
+60737	spellbook	165	Swiftarrow Boots								
+60738	all		Deadly Gladiator's Idol of Tenacity		Increases the spell power of the final healing value of your Lifebloom by $s1.						
+60739	all		LK Arena 4 Gladiator's Idol of Tenacity		Increases the spell power of the final healing value of your Lifebloom by $s1.						
+60740	all		LK Arena 5 Gladiator's Idol of Tenacity		Increases the spell power of the final healing value of your Lifebloom by $s1.						
+60741	all		LK Arena 6 Gladiator's Idol of Tenacity		Increases the spell power of the final healing value of your Lifebloom by $s1.						
+60742	all		Shear		Deals $s1 Physical damage to an enemy.						
+60743	spellbook	165	Stormhide Crown								
+60744	all		Immolation		Burns nearby enemies for $60745s1 fire damage every $t1 seconds.	Burns nearby enemies for $60745s1 fire damage every $t1 seconds.					
+60745	all		Fel Immolation		Burns nearby enemies for $s1 Fire damage periodically.						
+60746	spellbook	165	Stormhide Shoulders								
+60747	spellbook	165	Stormhide Hauberk								
+60748	spellbook	165	Stormhide Wristguards								
+60749	spellbook	165	Stormhide Grips								
+60750	spellbook	165	Stormhide Belt								
+60751	spellbook	165	Stormhide Legguards								
+60752	spellbook	165	Stormhide Stompers								
+60753	all		Send hate to unit								
+60754	spellbook	165	Giantmaim Legguards								
+60755	spellbook	165	Giantmaim Bracers								
+60756	spellbook	165	Revenant's Breastplate								
+60757	spellbook	165	Revenant's Treads								
+60758	spellbook	165	Trollwoven Spaulders								
+60759	spellbook	165	Trollwoven Girdle								
+60760	spellbook	165	Earthgiving Legguards								
+60761	spellbook	165	Earthgiving Boots								
+60763	spellbook	333	Enchant Boots - Greater Assault		Permanently enchant boots to increase attack power by 32.  Requires a level 60 or higher item.						
+60764	all		Totem of Splintering		Increases the attack power bonus on Windfury Weapon attacks by $s1.						
+60765	all		Nax 25 Melee Shaman Totem		Your Storm Strike ability also grants you $60766s1 haste rating for $60766d.						
+60766	all		Essence of the Storm			Haste rating increased by $s1.					
+60767	spellbook	333	Enchant Bracers - Superior Spellpower		Permanently enchant bracers to increase spell power by 30.  Requires a level 60 or higher item.						
+60768	all		Totem of Forest Growth		Reduces the base mana cost of Chain Heal by $s1.						
+60769	all		Totem of Misery		Reduces the mana cost of Healing Wave by $s1.						
+60770	all		Totem of the Elemental Plane		Your Lightning Bolt spell has a chance to grant $60771s1 haste rating for $60771d.						
+60771	all		Totem of the Elemental Plane			Increased haste rating by $s1.					
+60772	all		Totem of Hex		Increases spell power of Chain Lightning and Lightning Bolt by $s1.						
+60773	all		Idol of the Ravenous Beast		Increases the damage dealt by Shred by 203.						
+60774	all		Idol of Worship		Increases periodic damage done by Rip by $s1 per combo point.						
+60775	all		Idol of the Shooting Star		Increases the spell power of your Starfire spell by $s1.						
+60776	all		Claw Swipe		A vicious swipe that deals Physical damage euqal to $s1% of the target's health.						
+60777	all		Idol of Steadfast Renewal		Increases the damage dealt by Wrath by $s1.						
+60778	all		Serenity		Your violent tendencies are soothed by the presence of the Dragon Queen.	Your violent tendencies are soothed by the presence of the Dragon Queen.					
+60779	all		Idol of Lush Moss		Increases the spell power on the periodic portion of your Lifebloom by $s1.						
+60780	all		Idol of Awakening		Reduces the mana cost of Rejuvenation by $s1.						
+60781	all		Curse of Mending		Curses an enemy for $d, giving it $h% chance to heal its target by $60782s1 on attack.	$h% chance to heal enemy target on hit.					
+60782	all		Curse of Mending		Curses an enemy for $60781d, giving it $60781h% chance to heal its target by $60781s1 on attack.						
+60783	all		Jump South								
+60784	all		Rescue Craft - Pick up Fallen Pilot								
+60785	all		Board Rescue Craft								
+60786	all		Stomp		Knock Illidan back.						
+60787	all		Libram of Renewal		Reduces the mana cost of Holy Light by $s1.						
+60790	all		MOTI, Redux: Force Cast to Player of Summon Past You								
+60791	all		MOTI, Redux: Summon Past You								
+60792	all		Libram of Tolerance		Increases spell power of Holy Light by $s1.						
+60793	all		Back Leap		Leap through the air and slam down on all enemies within $52174a1 yards of the target area, causing $52174s3% weapon damage and stunning them for $52174d.  This ability will remove any Immobilzation effects when used.						
+60794	all		Libram of Obstruction		Your Judgement ability also increases your shield block value by $60795s1 for $60795d.						
+60795	all		Libram of Obstruction		Increases the block value of your shield by $s1.	Block value increased by $s1.					
+60796	all		Cloaked Peeps Visual Aura								
+60797	all		Libram of Resurgence		Increases the spell power of your Consecration spell by $s1.						
+60798	all		Monkey Speed		While Aspect of the Monkey is active, each time you dodge you gain $s1% increased movement speed for $d. This speed does not stack with other movement speed increasing effects.	Movement speed increased by $s1%.					
+60799	all		Copy of Savage Gladiator's Libram of Fortitude		Your Crusader Strike ability also grants you $60544s1 attack power for $60544d.						
+60800	all		Libram of Souls Redeemed		Increases spell power of Flash of Light by $s1.						
+60801	all		Summon Rescue Craft, Alliance								
+60802	all		Mandible Crush		Crushes your target, inflicting $s1% melee damage.						
+60803	all		Curse Immunity		Your Remove Curse spell also makes the target immune to all Curses for $60803d.	Immune to all Curse effects.					
+60804	all		Seal Cost Reduced		Reduces the base mana cost of your Seal spells by $s1.						
+60805	all		Eject From Craft, Alliance								
+60806	all		MOTI, Redux: Past You's Periodic Threat								
+60807	all		MOTI, Redux: Past You's Whisper to Controller - Nozdormu								
+60808	all		Hourglass of Eternity		Places the Hourglass of Eternity on the ground at the Bronze Dragonshrine.  Cannot be placed within 40 yards of another hourglass.						
+60809	all		Boarded Rescue Craft								
+60810	all		Visual: Thrust Spear		Thrust Spear Visual.						
+60811	all		MOTI, Redux: Past You's Whisper to Controller - Farewell								
+60812	all		MOTI, Redux: Past You's Despawn Timer								
+60814	all		Frost Blast		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+60815	all		WGA Phase			You feel at peace with the world.					
+60816	all		Eject Player From Craft								
+60817	all		Rescue Craft - Pick up Fallen Pilot								
+60818	all		Libram of Reciprocation		Unleashing your Seal of Command using a Judgement spell has a chance to grant $60819s1 critical strike rating for $60819d.						
+60819	all		Libram of Reciprocation		Increased critical strike rating by $s1.	Increased critical strike rating by $s1.					
+60820	all		Create Alumeth's Remains		Combines Alumeth's Heart, Skull, Scepter and Robes to create Alumeth's Remains.						
+60821	all		Libram of Radiance		Increases the damage dealt by Crusader Strike by ${$m1*$35395m2/100}.						
+60822	all		Create Alumeth's Remains		Combines Alumeth's Heart, Skull, Scepter and Robes to create Alumeth's Remains.						
+60823	all		Create Alumeth's Remains		Combines Alumeth's Heart, Skull, Scepter and Robes to create Alumeth's Remains.						
+60824	all		Create Alumeth's Remains		Combines Alumeth's Heart, Skull, Scepter and Robes to create Alumeth's Remains.						
+60825	all		Copy of Increased Blood Strike Damage		Increases the damage dealt by your Blood Strike and Heart Strike by ${$m1}.						
+60826	all		Sigil of Haunted Dreams		Your Blood Strike and Heart Strikes have a chance to grant $60828s1 critical strike rating for $60828d.						
+60828	all		Sigil of Haunted Dreams		Increased critical strike rating by $s1.	Increased critical strike rating by $s1.					
+60829	all		Health Funnel		Channels the power of Shadow for $d., healing an ally for up to $o1 damage, but reducing the caster's own health regeneration by $s2%.	$o1 of the target's damage healed over $d.\nCaster's health regeneration rate reduced by $s2%.					
+60830	all		Soulbound								
+60831	all		Alumeth's Remains		Awakens Alumeth the Ascended.						
+60832	all		Grindgear Toy Gorilla		Unleash your inner ape!						
+60833	all		Shadow Crash		Fires a missile towards a random target. When this missile lands, it deals $60835s1 Shadow damage to all enemies within $60835a1 yards of that location.						
+60834	all		Ping Alumeth Summon Bunny								
+60835	all		Shadow Crash		Fires a missile towards a random target. When this missile lands, it deals $60835s1 Shadow damage to all enemies within $60835a1 yards of that location.						
+60836	all		Reset Alumeth Bunny								
+60837	all		Sigil of Awareness		Increases the base damage dealt by your Scourge Strike by $s2, your Obliterate by $s3, and your Death Strike by ${0.75*$m1}.						
+60838	all		Trusty Copper Racer		Make sure you have 20 yards of smooth racing space!						
+60839	all		Mystery of the Infinite: Hourglass of Eternity Dies								
+60840	all		Mystery of the Infinite: Hourglass of Eternity Dies - Quest Fails								
+60842	all		Expose Armor		Reduces an enemy's armor by $s1% for $d.	Armor reduced by $s1%.					
+60843	all		Summon Rescue Craft, Horde								
+60844	all		Eject From Craft, Horde								
+60845	all		Shadow Nova		Inflicts Shadow damage to nearby enemies.						
+60846	all		Corrosive Vial		Deals Nature damage to nearby enemies for $d.	$s1 Nature damage inflicted every $t1 sec.					
+60847	all		Slice and Dice	Rank 1	Increases the caster's attack speed by $s1% for $d.	Attack speed increased by $s1%.					
+60848	all		Shadow Crash		Fires a missile towards a random target. When this missile lands, it deals $60849s1 Shadow damage to all enemies within $60489a1 yards of that location.						
+60849	all		Shadow Crash		Fires a missile towards a random target. When this missile lands, it deals $60849s1 Shadow damage to all enemies within $60489a1 yards of that location.						
+60850	all		Mutilate		Instantly attacks with both weapons.  Awards 2 combo points.						
+60851	all		Shadow Nova		Inflicts Shadow damage to nearby enemies.						
+60852	all		Airship Explodes Sequence								
+60853	all		Airship Explodes								
+60854	all		Demonic Circle: Clear		You summon a Demonic Circle at your feet.	Demonic Circle Summoned.					
+60855	all		Airship Explodes, BIG								
+60856	all		TF-Xplosive Rocket Turret		Places a stationary rocket turret which will shoot missiles at the target for up to $d.	Being targetted by a turret.					
+60857	all		Drain Soul Visual		Drains the soul of the target, inflicting Shadow damage every $t1 seconds for $d.	Shadow damage inflicted every $t1 seconds.					
+60858	all		Save Rocket GUID on Summoner								
+60859	all		Rocket Launcher		Inflicts damage to an enemy.						
+60860	all		Airship Explodes, HUGE								
+60861	all		Airship Explodes with fireball								
+60863	all		Fight Wyrm			Engaged in a life or death battle with a Wild Wyrm!					
+60864	all		Jaws of Death		Bites down on a target, inflicting Physical damage equal to $s1% of total health every $56692t1 sec.						
+60865	all		Fly State Visual								
+60866	spellbook	202	Mechano-hog								
+60867	spellbook	202	Mekgineer's Chopper								
+60868	all		Powerful Smash		Inflicts $s1% of weapon damage to an enemy, knocking it back.						
+60869	all		Water Bolt		Hurls a watery bolt at an enemy, inflicting moderate Frost damage.						
+60870	all		Bludgeoning Strike		Strikes at an enemy, inflicting $s1 Physical damage and reducing attack and cast speed by $s2% for $d.	Attack and cast speed reduced by $s2%.					
+60871	all		Fireblast		Blasts the enemy for $s1 Fire damage.						
+60872	all		Ravenous Claw		Drains $s1 health from an enemy, transferring it to the caster.						
+60873	all		Festering Bite		Increases the damage taken by an enemy by $s1% for $d.	Damage taken is increased by $s1%.					
+60874	spellbook	202	Nesingwary 4000								
+60875	all		Create Saronite Razorhead		Creates $s1 Saronite Razorheads.						
+60876	all		Jagged Spike		Fires a jagged spike at an enemy, causing $s Physical damage.						
+60877	all		WGA Detect Invis			You feel at peace with the world.					
+60878	all		WGA Invis			You feel at peace with the world.					
+60879	all		Create Mammoth Cutters		Creates $s1 Mammoth Cutters.						
+60880	all		Stomp		Stomps on an enemy, inflicting $s3 Physical damage and knocking him down for $d.	Stunned.					
+60881	all		Fatal Strike		Drive your spear down the throat of the Wild Wyrm, inflicting fatal damage.  The Wild Wyrm's jaws must be pried open to hit with this attack.						
+60882	all		Impale		Lifts an enemy off the ground with a spiked fist, inflicting $s1 Physical damage.	Stunned.					
+60883	all		Rock Shards		Hurls a jagged rock shard, inflicting $s1 Physical damage to any enemies within $a1 yards of the target.						
+60884	all		Rock Shards		Hurls a jagged rock shard, inflicting $s1 Physical damage to any enemies within $a1 yards of the target.						
+60887	all		Summon Infinite Timerender								
+60888	all		Cosmetic Enchant Cast								
+60889	all		Improved Leader of the Pack		Your Leader of the Pack ability also causes affected targets to have a 100% chance to heal themselves for a percentage of their total health when they critically hit with a melee or ranged attack.  The healing effect cannot occur more than once every 6 sec.						
+60890	all		Flame Shot		Shoots at an enemy, inflicting additional Fire damage.						
+60893	spellbook	171	Northrend Alchemy Research		Experiment with Northrend herbs to discover a new Alchemy recipe.  Can only be done every 3 days.						
+60894	all		Crushing Leap		Leaps at an enemy, inflicting $s1 Physical damage, knocking all nearby enemies away, and creating a cloud of choking debris.						
+60895	all		Crushing Leap		Leaps at an enemy, inflicting $s1 Physical damage, knocking all nearby enemies away, and creating a cloud of choking debris.						
+60896	all		Waiting for Airship TEST								
+60897	all		Shield Crush		Knocks an enemy back with a powerful blow, inflicting $s1 Physical damage and increasing their susceptibility to Physical damage by $s3% for $d.	Increases Physical damage taken by $s3%					
+60898	all		Portal to Stormwind								
+60899	all		Shield Crush		Knocks an enemy back with a powerful blow, inflicting $s1 Physical damage and increasing their susceptibility to Physical damage by $s3% for $d.	Increases Physical damage taken by $s3%					
+60900	all		Portal to Orgrimmar								
+60901	all		Portal to Orgrimmar								
+60902	all		Whirl		Whirls around, dealing damage to nearby enemies.	Whirls around, dealing damage to nearby enemies.					
+60903	all		Arcane Breath		Inflicts $s1 Arcane damage to enemies in front of the caster.	Inflicts $s1 Arcane damage to enemies in front of the caster.					
+60904	all		Portal to Orgrimmar		Opening a portal to Orgrimmar.						
+60905	all		Portal Effect: Naz'anak Exit								
+60906	all		Machine Gun		Fires a machine gun, inflicting $49982s1 damage per $t1 seconds for $d.\nReduces chance to hit by $s2% while firing.	Firing machine gun.\nChance to hit reduced by $s2%.					
+60907	all		Machine Gun		Inflicts $s1 damage upon an enemy.						
+60908	all		Repair		Repairs a nearby mechanical ally for $s1 damage every $t1 sec. over $d.	$s1 damage repaired every $t1 sec.					
+60909	all		[DND] Dalaran - Shop Keeper Greeting								
+60910	all		Demolisher Kill Credit								
+60911	all		Demolisher Kill Credit								
+60912	all		[DND] Dalaran - Shop Keeper Greeting								
+60913	all		[DND] Dalaran - Shop Keeper Greeting								
+60915	all		Ice Paws								
+60916	all		Whirl		Whirls around, dealing damage to nearby enemies.	Whirls around, dealing damage to nearby enemies.					
+60917	all		[DND] Dalaran - Shop Keeper Greeting								
+60918	all		Finished Sortie			You recently finished a sortie.					
+60919	all		Rock Shower		Cause a shower of rocks and debris to pelt the targetted area	$s1 damage per second.					
+60920	all		Player Finished Sortie (DND)								
+60921	all		Generic Quest Invisibility 3								
+60922	all		Generic Quest Invisibility Detection 3								
+60923	all		Rock Shower		Causes a shower of rocks and debris to pelt the targeted area	$s1 damage per second.					
+60924	all		Lich Slap		Slaps the target with a cold hand, dealing $s1 Frost damage and knocking them back.						
+60925	all		Thundering Stomp		Stomp the ground, dealing Physical damage to enemies in a large area and knocking them into the air.						
+60926	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+60927	all		Infected Bite		Inflicts $s1 Nature damage to an enemy every $t1 seconds and increases the Physical damage it takes for $d.	Nature damage inflicted every $t1 sec.\nIncreased Physical damage taken.					
+60929	all		Necrotic Aura Pre Warning								
+60930	all		Storm Hammer								
+60932	all		Disengage		You attempt to disengage from the target, leaping backwards. Must be facing the target.	You attempt to disengage from the target, leaping backwards. Must be facing the target.					
+60934	all		Disengage								
+60935	all		Smolder								
+60936	all		Surge of Power		Fires a beam of pure magic at an enemy, dealing $s1 Arcane damage every half second for $d.						
+60937	all		Seaforium charges damaging wall achievement credit								
+60938	all		Smolder Banner								
+60939	all		Surge of Power								
+60940	all		Portal to Undercity								
+60941	all		Portal to Undercity								
+60942	all		Icecrown Airship - H - Attack - 02b Cannon Explosion, Shield								
+60943	all		WGA Invis Portal			You feel at peace with the world.					
+60944	all		Ride Shredder								
+60945	all		Blood Strike	Rank 6	Instantly strike the enemy, causing $s2% weapon damage plus ${$m1*$m2*0.5/100}.  Each disease on the target causes an additional ${$m1*$m2*0.25/100} damage.						
+60946	all		Nightmare		Causes your Fear spell to inflict a Nightmare on the target when the fear effect ends. The Nightmare effect reduces the target's movement speed.	Movement speed reduced by $s1%.					
+60947	all		Nightmare		Causes your Fear spell to inflict a Nightmare on the target when the fear effect ends. The Nightmare effect reduces the target's movement speed.	Movement speed reduced by $s1%.					
+60948	all		Sniper Shot Aura								
+60949	all		Death Coil		Deals $s1 Shadow damage to a nearby random target.						
+60950	all		Blood Plague		A disease dealing Shadow damage over $d.  Has a 50% chance to remove one heal over time effect whenever it does damage.	Deals Shadow damage over $d.\nCan remove heal over time effects.					
+60951	all		Frost Strike	Rank 6	Instantly strike the enemy, causing $s2% weapon damage plus ${$m1*$m2/100} as Frost damage.						
+60952	all		Icy Touch		Deals $s1 Frost damage and reduces the target's ranged, melee attack, and casting speed by $s2% for $d.	Attack speed reduced by $s2%.					
+60953	all		Death and Decay		$m1 Shadow damage inflicted every $t1 sec to all targets in the affected area for $d.	$s1 Shadow damage inflicted every $t1 sec.					
+60954	all		Aimed Shot		Aims a precise shot at an enemy, inflicting significant additional damage.						
+60955	all		Improved Health Funnel		Increases the amount of Health transferred by your Health Funnel spell by $s1% and reduces the health cost by $18703s2%. In addition, your summoned Demon takes $60955s1% less damage while under the effect of your Health Funnel.	Damage taken is reduced by $s1%.					
+60956	all		Improved Health Funnel		Increases the amount of Health transferred by your Health Funnel spell by $s1% and reduces the health cost by $18704s2%. In addition, your summoned Demon takes $60956s1% less damage while under the effect of your Health Funnel.	Damage taken is reduced by $s1%.					
+60957	all		Cosmetic Nature Cast								
+60958	all		Cosmetic Fire Cast								
+60959	all		Bail out!!								
+60960	all		War Stomp		Inflicts normal damage plus $s3 to nearby enemies, stunning them for $d.	Stunned.					
+60961	all		Quest Credit - Bombardment Infantry								
+60962	all		Ride Tower Cannon								
+60963	all		See Quest Brann Bronzebeard (TOI)								
+60964	all		Strength of Wrynn		For the Alliance!	For the Alliance!					
+60965	all		Quest Credit to Player - Bombardment Infantry								
+60966	all		Heroic Vanguard		Periodically draws the attention of all enemy units within $a1 yards and causes additional high threat to all enemies within $a1 yards.	Drawing the attention of all Forsaken foes.					
+60967	all		Heroic Vanguard Effect								
+60968	all		Ride Wintergrasp Vehicle								
+60969	spellbook	197	Flying Carpet								
+60970	spellbook	256	Heroic Fury		Removes any Immobilization effects and refreshes the cooldown of your Intercept ability.						
+60971	spellbook	197	Magnificent Flying Carpet								
+60972	all		Quest Credit - Bombardment Captain								
+60973	all		Quest Credit to Player - Bombardment Captain								
+60974	all		Swift Mooncloth Carpet								
+60975	all		Swift Ebonweave Carpet								
+60976	all		Swift Spellfire Carpet								
+60977	all		Ominous Cloud								
+60978	all		Ominous Cloud		Ominous cloud is ominous.						
+60979	all		Quest Credit - Bombardment Gargoyle								
+60980	all		Quest Credit - Bombardment Frost Wyrm								
+60981	all		Quest Credit to Player - Bombardment Gargoyle								
+60982	all		Quest Credit to Player - Bombardment Frost Wyrm								
+60983	all		Bright Flare		Scares a Cavedweller Worg for 10 seconds.						
+60984	all		Ominous Cloud								
+60985	all		Dark Lightning		Zaps an enemy for $s1 Shadow damage.						
+60986	all		Medallion of Heroism		Heal self for $s1 damage.						
+60987	all		Summon Ominous Cloud		Summons an Ominous Cloud to strike enemies from above.						
+60988	all		Poisoned Spear		Deals $s1 Nature damage and an additional $s2 Nature damage every $t2 sec. for $d.	Deals $s2 Nature damage every $t2 sec.					
+60989	all		Create Key to the Focusing Iris								
+60990	spellbook	197	Glacial Waistband								
+60991	all		Lash		Strikes at an enemy, inflicting Physical damage.						
+60992	all		Create Heroic Key to the Focusing Iris								
+60993	spellbook	197	Glacial Robe								
+60994	spellbook	197	Glacial Slippers								
+60995	all		Demon Charge	Demon	Charge an enemy, stunning it for $60995d.	Stunned.					
+60996	spellbook	165	Polar Vest								
+60997	spellbook	165	Polar Cord								
+60998	spellbook	165	Polar Boots								
+60999	spellbook	165	Icy Scale Chestguard								
+61000	spellbook	165	Icy Scale Belt								
+61001	all		Player Summon Bunny 01								
+61002	spellbook	165	Icy Scale Boots								
+61003	all		Key to the Focusing Iris		Opens the Normal difficulty version of The Focusing Iris within The Eye of Eternity.						

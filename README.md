@@ -13,7 +13,7 @@
 >
 > 数据来源：[epochhead.com](https://epochhead.com/) · 社区贡献-天涯路漫
 
-只安装 **EpochCN**，就能获得任务、界面、Tooltip、天赋、技能、物品绿字全面汉化，以及内置 pfQuest 风格世界地图任务标记能力。无需额外安装 `pfQuest-epoch`、`QuestCN` 或 `Tooltips_Chinese`。
+只安装 **EpochCN**，就能获得任务、界面、Tooltip、天赋、技能、物品绿字全面汉化，内置 pfQuest 风格世界地图任务标记，以及华人玩家社交系统（自动发现同胞、组队招募、快捷短语）。无需额外安装 `pfQuest-epoch`、`QuestCN` 或 `Tooltips_Chinese`。
 
 ---
 
@@ -52,7 +52,16 @@
 - 世界地图显示队友的任务标记状态
 - Auto-sync quest progress within party
 
-### 🔔 自动更新提醒 Update Notifications
+### � 社交系统 Social System (NEW)
+- **华人玩家发现**：自动发现同样安装了 EpochCN 的中文玩家，目标框和 Tooltip 标记
+- **中文公共频道**：自动加入 EpochCN 频道，`/cn` 快捷发送消息
+- **组队招募板**：中文玩家专属 LFG 系统，发布/浏览/申请一站式组队
+- **快捷短语**：50+ 预设中英双语短语，一键发送，跨语言沟通无障碍
+- **通讯录**：自动记录遇到的中文玩家，支持备注和在线状态追踪
+- **用户反馈**：游戏内提交翻译错误/建议，导出到 GitHub Issues
+- Auto-discover Chinese players, LFG board, quick phrases, contact book
+
+### �🔔 自动更新提醒 Update Notifications
 - 公会/队伍内自动广播版本号
 - 发现新版本时在游戏内弹窗提醒
 - In-game update notifications via guild/party version broadcasting
@@ -94,7 +103,24 @@ git clone https://github.com/z980944038-dev/EpochCN.git
 | `/ecn update dismiss` | 忽略当前版本更新提醒 |
 | `/ecmap help` | 查看世界地图标记命令帮助 |
 | `/ecmap mode <模式>` | 切换地图标记模式 |
-| `/ecmap debug` | 输出地图调试信息 |
+
+**社交功能：**
+
+| 命令 | 说明 |
+|------|------|
+| `/ecn social` | 打开中文玩家在线面板 |
+| `/ecn contacts` | 查看通讯录 |
+| `/ecn note <名字> <备注>` | 设置玩家备注 |
+| `/ecn lfg` | 打开组队招募面板 |
+| `/ecn lfg post <副本> [备注]` | 发布组队招募 |
+| `/ecn lfg codes` | 查看副本代码列表 |
+| `/ecn qc` | 打开快捷短语面板 |
+| `/cn <消息>` | 发送到中文公共频道 |
+| `/cn who` | 查看频道成员 |
+| `/qc <快捷码> [参数]` | 快速发送短语 |
+| `/qcw <快捷码>` | 向目标密语短语 |
+| `/ecn fb` | 打开反馈面板 |
+| `/ecn fb export` | 导出反馈到剪贴板 |
 
 ---
 
@@ -120,6 +146,76 @@ EpochCN 现已支持通过命令行参数或环境变量覆盖本地数据源路
 ---
 
 ## 🏷️ 版本记录 / Changelog
+
+### v0.7.0 — 社交系统
+
+- **新增华人玩家发现系统 (Social.lua)**
+  - 通过 addon 消息自动发现同服安装 EpochCN 的中文玩家
+  - 目标框左侧显示中文玩家图标标记
+  - Tooltip 悬停玩家时显示 `[EpochCN 中文玩家]` 标签、版本、区域、备注
+  - 新玩家上线时聊天框通知 + 小地图按钮呼吸灯闪烁
+  - 通讯录自动记录（最多 200 条），支持备注和屏蔽
+  - 社交面板 UI：在线列表、左键密语、右键邀请组队
+- **新增中文公共频道 (ChineseChannel.lua)**
+  - 登录自动加入 `EpochCN` 频道，华人玩家公共交流空间
+  - `/cn <消息>` 快捷发送，`/cn who` 查看频道成员
+  - 自动追踪频道内发言者，记录到通讯录
+- **新增组队招募板 (LFGBoard.lua)**
+  - 中文玩家专属 LFG 系统，通过 addon channel 广播
+  - 可视化招募面板：发布、浏览、点击密语申请
+  - 支持 80+ 副本代码（经典/TBC/WotLK/团本/PvP）
+  - 新招募到达时聊天框通知 + 小地图闪烁
+  - 自动重发（每 2 分钟），保持招募信息活跃
+- **新增快捷短语系统 (QuickChat.lua)**
+  - 50+ 预设中英双语短语，覆盖组队/交易/战斗/社交/副本场景
+  - `/qc <快捷码>` 一键发送，`/qcw` 智能密语（中文玩家发中文，外国人发英文）
+  - 可视化短语面板，分类标签页浏览，双语模式一键切换
+  - 支持自定义短语 `/ecn phrase add`
+- **新增用户反馈系统 (Feedback.lua)**
+  - 游戏内反馈面板：5 种类型（翻译错误/缺失/Bug/建议/其他）
+  - 自动记录环境信息（版本、等级、职业、区域）
+  - 导出 Markdown 格式文本，方便复制到 GitHub Issues
+  - 快速反馈：自动抓取当前目标/Tooltip 内容作为上下文
+- **小地图按钮全面美化**
+  - 全新圆形设计：半透明深色底盘 + 铭文主题图标
+  - 在线中文玩家数量角标（右下角绿色数字）
+  - 呼吸灯动画：新玩家上线/新招募时青绿色光晕脉冲
+  - Tooltip 增强：显示在线人数、频道状态、操作提示
+  - 中键打开社交面板，右键菜单新增社交功能入口
+- **设置面板扩展**
+  - 新增"社交功能"设置区域：华人玩家发现、中文频道、组队招募、快捷短语开关
+  - 面板高度扩展以容纳新选项
+- **性能优化**
+  - 移除 `UPDATE_MOUSEOVER_UNIT` 高频事件注册
+  - `GetChinesePlayerCount()` 改为缓存计数，不触发遍历
+  - 清理过期玩家添加 30 秒节流保护
+  - 通讯录写入添加 60 秒间隔节流
+  - 小地图 OnUpdate 拖拽时跳过其他逻辑，角标更新间隔 10 秒
+  - LFG 重发计时器无发布时提前 return
+
+### v0.6.0 — 全面提升
+
+- **ItemNameMap 物品名称大幅扩充 (+3,903 条)**
+  - 从 ObjectiveNameData 传播 3,903 条物品名翻译到拍卖行搜索映射
+  - 新增 PvP 套装、装备部件、图纸/配方等模式匹配翻译
+  - 总映射条目从 42,300 提升至 **46,203 条**
+- **UnitData 单位名称补全 (+45 条)**
+  - 从 ObjectiveNameData 传播 28 条 NPC 名称翻译
+  - 词根翻译新增 17 条常见组合名称
+  - Core.lua 运行时词根词典大幅扩展：新增 90+ 生物/职业/阵营/修饰词条目
+- **FrameXMLStrings 界面文本补全 (+27 条)**
+  - 补全按键名称（Delete、Home、PageUp/Down 等）中文翻译
+  - 补全时间显示（AM→上午、PM→下午）
+  - 补全 PvP、法术急速等常用 UI 字符串
+- **Core.lua 性能与功能优化**
+  - 新增 `E.stats` 统计数据收集，启动时预计算法术/单位/任务/物品覆盖率
+  - 扩展 `englishUnitWordMap` 词根词典至 200+ 条目，覆盖更多运行时 NPC 名称翻译
+  - 扩展 `englishUnitModifierOnly` 修饰词表，支持更多前缀组合
+- **Settings.lua 设置面板增强**
+  - 新增"汉化覆盖统计"区域，实时显示任务/物品/单位/法术数据覆盖率
+  - 面板高度扩展以容纳统计信息
+  - 移除登录广播中的特别鸣谢行，精简登录信息
+
 
 ### v0.5.0
 
@@ -233,7 +329,7 @@ EpochCN 现已支持通过命令行参数或环境变量覆盖本地数据源路
 - 修复十余处地图/地区译名错误（尘泥沼泽、贫瘠之地、赤脊山、杜隆塔尔、逆风小径、悲伤沼泽、荒芜之地、费伍德森林等）
 - 统一 `Band of the Endless` 译名（Overrides 与 EpochHeadData 一致为"无尽指环"）
 - 修复 `Settings.lua` 中"小地图按钒"错别字
-- `SpellData_52` 启动时一次性清洗所有 DBC token，不再依赖 Tooltip 单点过滤，角色面板/技能书也得到干净文本
+- 法术数据启动时一次性清洗所有 DBC token，不再依赖 Tooltip 单点过滤，角色面板/技能书也得到干净文本
 - 补充外域、诺森德、副本入口、Epoch 常见城镇 NPC/UI 翻译
 - 移除 `UI.lua` 的 `UPDATE_FACTION` 高频事件订阅，战斗中声望变化不再触发全量 UI 扫描
 - `Names.lua` 安全检查 `TargetFrameNameBackground.Text`（该字段在 3.3.5 不存在）
@@ -252,8 +348,8 @@ EpochCN 现已支持通过命令行参数或环境变量覆盖本地数据源路
 - NPC 对话中的 `<玩家>` `<职业>` 占位符自动替换为角色名和职业名
 
 ### v0.4.33
-- `SpellData_Season.lua` 改为空存根，去除与 SpellData_52 的数据重复
-- 修复 SpellData_52.lua 中多条雕文/技能的描述错误
+- `SpellData_Season.lua` 改为空存根，去除基础法术库的数据重复
+- 修复基础法术库中多条雕文/技能的描述错误
 - 新增 `SanitizeSpellDesc()` 运行时 DBC token 过滤器
 - 补充 80+ 条缺失 FrameXML 字符串
 
@@ -289,20 +385,24 @@ EpochCN 现已支持通过命令行参数或环境变量覆盖本地数据源路
 
 ---
 
-## 📊 数据来源 / Data Sources
+## 📊 数据来源与覆盖率 / Data Sources & Coverage
 
-| 数据文件 | 说明 |
-|----------|------|
-| `Data/QuestCN_Data.lua` | 社区任务中文数据 |
-| `Data/EpochQuestData.lua` | Epoch 自定义任务数据 |
-| `Data/MapData.lua` | 世界地图任务标记坐标 |
-| `Data/ItemData.lua` | 物品中文名称 |
-| `Data/UnitData.lua` | NPC/怪物中文名称 |
-| `Data/SpellData_*.lua` | 法术/技能/天赋中文数据 |
-| `Data/ObjectiveNameData.lua` | 任务目标英中名称映射 |
-| `Data/EpochHeadData.lua` | EpochHead 增量覆盖数据 |
-| `Data/EpochConsumableData.lua` | 消耗品中文数据 |
-| `Data/FrameXMLStrings.lua` | FrameXML 界面文本映射 |
+| 数据文件 | 条目数 | 说明 |
+|----------|--------|------|
+| `Data/QuestCN_Data.lua` | 11,521+ | 社区任务中文数据 |
+| `Data/EpochQuestData.lua` | — | Epoch 自定义任务数据 |
+| `Data/MapData.lua` | — | 世界地图任务标记坐标 |
+| `Data/ItemData.lua` | — | 物品中文名称 |
+| `Data/ItemNameMap.lua` | **46,203** | 拍卖行英中物品名映射 |
+| `Data/EpochItemData.lua` | 76,884 | EpochHead 全量物品覆盖 |
+| `Data/EpochConsumableData.lua` | 48,971 | 消耗品中文数据 |
+| `Data/UnitData.lua` | 32,118 (80.9% 中文) | NPC/怪物中文名称 |
+| `Data/SpellData_*.lua` | 12,340+ | 法术/技能/天赋中文数据 |
+| `Data/ObjectiveNameData.lua` | 48,408 | 任务目标英中名称映射 |
+| `Data/EpochHeadData.lua` | 382 | EpochHead 增量覆盖数据 |
+| `Data/FrameXMLStrings.lua` | 8,233 (84.5% 中文) | FrameXML 界面文本映射 |
+| `Data/TooltipLineData.lua` | 2,846 | 物品绿字精确翻译 |
+| `Data/Glossary.lua` | 255 | 术语表与 UI 控件文字 |
 
 详见 `Data/Manifest.lua`。更新建议运行 `Tools/build_epochcn.py` 重新生成数据。
 
@@ -326,12 +426,18 @@ EpochCN/
 │   ├── Tooltip.lua        # 鼠标提示汉化
 │   ├── AuctionHouse.lua   # 拍卖行汉化
 │   ├── WorldMap.lua       # 世界地图任务标记
-│   ├── Settings.lua       # 设置面板
+│   ├── Settings.lua       # 设置面板与小地图按钮
 │   ├── UpdateChecker.lua  # 版本更新检查
+│   ├── Social.lua         # 华人玩家发现与通讯录
+│   ├── ChineseChannel.lua # 中文公共频道
+│   ├── LFGBoard.lua       # 组队招募板
+│   ├── QuickChat.lua      # 快捷短语系统
+│   ├── Feedback.lua       # 用户反馈收集
 │   └── ...
+├── docs/                # 文档资源（收款码等）
 └── Tools/               # 数据生成与审计工具
     ├── build_epochcn.py
-    ├── sync_epochhead.py
+    ├── extract_feedback.py
     └── ...
 ```
 
@@ -354,13 +460,45 @@ Translation corrections, missing translations, and code improvements are welcome
 
 - **数据源**：[epochhead.com](https://epochhead.com/)
 - **GitHub Issues**：[提交反馈](https://github.com/z980944038-dev/EpochCN/issues)
+- **QQ 交流群**：`1097800503`
 - **游戏内**：`/ecn` 打开设置面板
 
 > 如有翻译错误、缺失或建议，欢迎反馈！
 
+---
+
+## ☕ 捐赠支持 / Donate
+
+EpochCN 是永久免费的开源项目，但持续维护需要成本：
+
+- **AI 大模型 API 费用**：翻译生成、数据清洗、物品描述处理等核心工作依赖 AI 模型
+- **数据同步与版本更新**：每次 Epoch 服务器更新都需要重新处理大量数据
+- **开发者时间与精力**：Bug 修复、新功能开发、社区反馈处理
+
+如果 EpochCN 让你的游戏体验更好了，欢迎请开发者喝杯咖啡 ☕
+
+### 💚 微信 / 支付宝
+
+收款码图片可放入 `docs/donate_wechat.png` 与 `docs/donate_alipay.png`。上传后 GitHub README 会自动展示二维码。
+
+<!--
+<p align="center">
+  <img src="docs/donate_wechat.png" alt="微信支付" width="240" />
+  <img src="docs/donate_alipay.png" alt="支付宝" width="240" />
+</p>
+-->
+
+### 🧡 爱发电
+
+[![爱发电](https://img.shields.io/badge/爱发电-支持EpochCN-purple?style=for-the-badge)](https://ifdian.net/a/EpochCN)
+
+> **说明：** 捐赠纯自愿，不影响任何插件功能。捐赠者的名字会出现在插件内的"关于"面板感谢名单中。如需署名请在转账备注中留下你的游戏角色名或昵称。
+
+---
+
 ## ⚠️ 法律与免责声明 / Legal & Disclaimer
 
-- **非官方声明 (No Affiliation)**：本项目（EpochCN）是一个由玩家社区驱动的开源翻译项目，与暴雪娱乐（Blizzard Entertainment）及其任何附属机构**没有任何关联、赞助、授权或认可**。
+- **非官方声明 (No Affiliation)**：本项目（EpochCN）是一个由玩家社区驱动的开源翻译项目，与暴雪娱乐（Blizzard Entertainment）及其任何附属机构**没有任何关联、授权或认可**。
 - **知识产权 (Intellectual Property)**：魔兽世界（World of Warcraft）、相关图像、文本、游戏数据及所有相关素材的版权和商标均完全归暴雪娱乐所有。本项目仅包含社区贡献的本地化翻译文本及辅助代码，不分发任何受版权保护的游戏核心资产。
 - **风险自负 (Use at Your Own Risk)**：本插件/工具按“原样（AS IS）”提供，不提供任何明示或暗示的保证。虽然开发者已尽最大努力确保代码的安全性和合规性，但使用任何第三方修改工具均可能存在违反游戏最终用户许可协议（EULA）的潜在风险。**因使用、修改或分发本插件而导致的任何直接或间接后果（包括但不限于账号封禁、数据丢失、游戏崩溃等），项目开发者及贡献者概不负责**。
 - **非商业用途 (Non-Commercial)**：本项目完全免费且开源，仅供玩家学习、测试与交流使用。严禁任何人将本项目及其衍生内容用于任何商业牟利行为。

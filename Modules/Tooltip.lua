@@ -1813,26 +1813,54 @@ EpochCN:RegisterModule("Tooltip", function(E)
   -- 清理 SpellData 中未解析的 DBC 公式 token，避免在 Tooltip 中显示乱码
   local function SanitizeSpellDesc(text)
     if not text or text == "" then return text end
-    -- 移除 法术ID前缀+m/除数 组合，如 "54928m1/1000"、"1144440m2/-1000.2"
+    -- 移除 ${...} 花括号公式块
+    text = string.gsub(text, "%$%b{}", "")
+    -- 移除 $(...} 混合括号公式块
+    text = string.gsub(text, "%$%(.-}", "")
+    -- 移除 $(...) 圆括号公式块
+    text = string.gsub(text, "%$%b()", "")
+    -- 移除 $lxxx:yyy; 条件复数形式
+    text = string.gsub(text, "%$l[^;]*;", "")
+    -- 移除 $/10;s2 除法引用格式
+    text = string.gsub(text, "%$/[%d%.]+;[sSmMoOhHdDaAnNxXvVeEbBqQtT]%d*", "")
+    -- 移除 $*15;s1 乘法引用格式
+    text = string.gsub(text, "%$%*[%d%.]+;[sSmMoOhHdDaAnNxXvVeEbBqQtT]%d*", "")
+    -- 移除 $SpellID+token 引用，如 "$42208m1"、"$27026o2"、"$7922d"
+    text = string.gsub(text, "%$%d+[sSmMoOhHdDaAnNxXvVeEbBqQtT]%d*", "")
+    -- 移除 $RAP、$AP 等变量引用
+    text = string.gsub(text, "%$RAP", "")
+    text = string.gsub(text, "%$AP", "")
+    -- 移除其它变量引用，如 $SPH、$rap、$HND
+    text = string.gsub(text, "%$[A-Za-z_]+%d*", "")
+    -- 移除标准单字母 token：$s1 $d $o1 $n $a1 $m1 等
+    text = string.gsub(text, "%$[sSmMoOhHdDaAnNxXvVeEbBqQtT]%d*", "")
+    -- 移除孤立 $，避免公式被部分清洗后残留
+    text = string.gsub(text, "%$", "")
+    -- 移除 $z $c $g
+    text = string.gsub(text, "%$[zZcCgG]", "")
+    -- 移除残留的非 $ 前缀公式碎片
     text = string.gsub(text, "%d%d%d%d+m%d+/[%-%d%.]*", "")
-    -- 移除独立的 mX/除数 公式，如 "m1/1000"、"m2/1000.1"
     text = string.gsub(text, "m%d+/[%-%d%.]+", "")
-    -- 移除 /除数;sX 条件引用，如 "/1000;s1"、"/1000;s2"
     text = string.gsub(text, "/%d*%.?%d*;s%d+", "")
-    -- 移除 0-mX/除数 范围公式，如 "0-m1/1000.2"
+    text = string.gsub(text, "/%d+;%d+[A-Za-z]%d*", "")
+    text = string.gsub(text, "/%d+;[A-Za-z]%d*", "")
+    text = string.gsub(text, "/%d+;", "")
+    text = string.gsub(text, "<[^>]+>", "")
+    text = string.gsub(text, "%?[A-Za-z]%d+%[([^%]]*)%]%[[^%]]*%]", "%1")
     text = string.gsub(text, "0%-m%d+/[%d%.]+", "")
-    -- 移除 5位以上法术ID+sX 的法术引用，如 "34082s2"（5位数字+s+数字）
     text = string.gsub(text, "%d%d%d%d%d+s%d+", "")
-    -- 移除 dX 持续时间引用 token，如 "1165156d秒" 中的数字前缀
     text = string.gsub(text, "%d%d%d%d%d+d", "")
-    -- 移除 aX 范围引用，如 "5729a1"
     text = string.gsub(text, "%d%d%d%d+a%d+", "")
+    -- 修复孤立百分号
+    text = string.gsub(text, "([^%d])%%([，。、])", "%1%2")
+    text = string.gsub(text, "([^%d])%%$", "%1")
     -- 清理多余空格
     text = string.gsub(text, "%s+", " ")
     text = string.gsub(text, "^%s", "")
     text = string.gsub(text, "%s$", "")
     return text
   end
+
 
   local function AddTranslation(tooltip, title, description, source)
     if not title or AlreadyAdded(tooltip) then return end
@@ -1949,7 +1977,8 @@ EpochCN:RegisterModule("Tooltip", function(E)
 
   local function TranslateSpell(tooltip)
     tooltip.EpochCNItemData = nil
-    if IsUnsafeTooltipOwner(tooltip) then return end
+    -- 法术书按钮仅追加翻译文本，不修改原有 tooltip，安全无污染。
+    -- 动作条按钮由 IsLineHookUnsafe 单独保护。
     if not tooltip.GetSpell then return end
 
     local name, _, id = tooltip:GetSpell()

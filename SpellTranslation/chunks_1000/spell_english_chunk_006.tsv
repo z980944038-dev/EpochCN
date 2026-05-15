@@ -1,0 +1,1001 @@
+﻿spell_id	priority	skill_line_ids	name_en	rank_en	description_en	tooltip_en	name_zh	rank_zh	description_zh	tooltip_zh	notes
+12323	spellbook	256	Piercing Howl		Causes all enemies within $a1 yards to be Dazed, reducing movement speed by $s1% for $d.	Dazed.					
+12324	spellbook	256	Improved Demoralizing Shout	Rank 1	Increases the melee attack power reduction of your Demoralizing Shout by $s1%.						
+12325	all		Improved Inner Rage	Rank 1	Reduces the cooldown of your Inner Rage ability by $/1000;s1 secs.						
+12327	spellbook	256	Improved Challenging Shout	Rank 1	Reduces the cooldown of your Challenging Shout ability by $/60000;s1 mins.						
+12328	spellbook	26	Sweeping Strikes		Your next $n melee attacks strike an additional nearby opponent.	Your next $n melee attacks strike an additional nearby opponent.					
+12329	spellbook	256	Improved Cleave	Rank 1	Increases the bonus damage done by your Cleave ability by $s1%.						
+12330	spellbook	256	Improved Slam	Rank 2	Decreases the casting time of your Slam ability by $/1000;S1 sec.						
+12332	all		Lathoric the Black								
+12338	spellbook	8	Improved Fireball	Rank 2	Reduces the casting time of your Fireball spell by $/1000;S1 sec.						
+12339	spellbook	8	Improved Fireball	Rank 3	Reduces the casting time of your Fireball spell by $/1000;S1 sec.						
+12340	spellbook	8	Improved Fireball	Rank 4	Reduces the casting time of your Fireball spell by $/1000;S1 sec.						
+12341	spellbook	8	Improved Fireball	Rank 5	Reduces the casting time of your Fireball spell by $/1000;S1 sec.						
+12342	spellbook	8	Improved Blasting	Rank 3	Reduces the cooldown of your Fire Blast spell by $/1000;S1 sec and increases the critical strike chance of your Arcane Blast spell by $s2%.						
+12345	all		Morgan Test								
+12346	all		Awaken the Soulflayer		Use within the Sanctum of the Fallen God.						
+12347	all		Raze Attack		Right click on the Staff of Command when you are near Shadowsilk Poachers to make Raze attack.						
+12348	all		Atal'ai Altar Light Visual (DND)								
+12349	spellbook	8	Improved Flamestrike	Rank 2	Increases the critical strike chance of your Flamestrike spell by $s1%.						
+12350	spellbook	8	Improved Flamestrike	Rank 3	Increases the critical strike chance of your Flamestrike spell by $s1%.						
+12351	spellbook	8	Burning Soul	Rank 2	Gives your Fire spells a $s1% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by $s2%.						
+12353	spellbook	8	Flame Throwing	Rank 2	Increases the range of your Fire spells by $s1 yards.						
+12354	all		Flame of Hakkar								
+12355	spellbook	8	Impact	Rank 1	Stuns the target for $12355d.	Stunned.					
+12357	spellbook	8	Impact	Rank 2	Gives your Fire spells a $h% chance to stun the target for $12355d.						
+12358	spellbook	8	Impact	Rank 3	Gives your Fire spells a $h% chance to stun the target for $12355d.						
+12359	spellbook	8	Impact	Rank 4	Gives your Fire spells a $h% chance to stun the target for $12355d.						
+12360	spellbook	8	Impact	Rank 5	Gives your Fire spells a $h% chance to stun the target for $12355d.						
+12378	spellbook	8	Fire Power	Rank 2	Increases the damage done by your Fire spells by $s1%.						
+12379	all		Scorch Talent Test (PT)								
+12380	all		Shadow Channeling								
+12398	spellbook	8	Fire Power	Rank 3	Increases the damage done by your Fire spells by $s1%.						
+12399	spellbook	8	Fire Power	Rank 4	Increases the damage done by your Fire spells by $s1%.						
+12400	spellbook	8	Fire Power	Rank 5	Increases the damage done by your Fire spells by $s1%.						
+12418	all		Stealth Detection		Increases your stealth detection.	Increased stealth detection.					
+12419	all		Solid Dynamite		Inflicts $s1 Fire damage in a 5 yard radius.						
+12420	all		Summon Skeletal Servant		Summons $s1 $lSkeletal Servant:Skeletal Servants; to accompany the caster until dismissed.						
+12421	all		Mithril Frag Bomb		Inflicts $s1 Fire damage and stuns targets in a 8 yard radius for $d.  Any damage will break the effect.	Stunned.  Any damage will break the effect.					
+12438	all		Slow Fall		Reduces your fall speed for $d.	Reduced fall speed.					
+12458	all		Evil God Counterspell								
+12459	all		Deadly Scope		Attaches a permanent scope to a bow or gun that increases its damage by 5.						
+12460	all		Sniper Scope		Attaches a permanent scope to a bow or gun that increases its damage by 7.						
+12461	all		Backhand		Inflicts normal damage plus $s2 to an enemy, stunning it for $d.	Stunned.					
+12463	spellbook	237	Improved Arcane Missiles	Rank 2	Gives you a $s1% chance to avoid interruption caused by damage while channeling Arcane Missiles.						
+12464	spellbook	237	Improved Arcane Missiles	Rank 3	Gives you a $s1% chance to avoid interruption caused by damage while channeling Arcane Missiles.						
+12466	all		Fireball		Inflicts Fire damage to an enemy.						
+12467	spellbook	237	Arcane Impact	Rank 2	Increases the critical strike chance of your Arcane spells by an additional $s1%.						
+12468	all		Flamestrike		Calls down a pillar of flame, burning all enemies in a selected area and inflicting additional damage every $t2 sec. for $d.	Fire damage inflicted every $t2 sec.					
+12469	spellbook	237	Arcane Impact	Rank 3	Increases the critical strike chance of your Arcane spells by an additional $s1%.						
+12470	all		Fire Nova		Inflicts Fire damage to nearby enemies.						
+12471	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+12472	spellbook	6	Icy Veins		Hastens your spellcasting, increasing spell casting speed by $s1% and gives you $s2% chance to avoid interruption caused by damage while casting.  Lasts $d.	Casting speed of all spells increased by $s1% and reduces the chance to avoid interruption caused by damage while casting by $s2%.					
+12473	spellbook	6	Improved Frostbolt	Rank 2	Reduces the casting time of your Frostbolt spell by $/1000;S1 sec.						
+12475	spellbook	6	Improved Frost Nova	Rank 2	Reduces the cooldown of your Frost Nova spell by $/1000;s1 sec.						
+12479	all		Hex of Jammal'an			You are being transformed....					
+12480	all		Hex of Jammal'an			Transformed by the Hex of Jammal'an! Allies, beware!					
+12483	all		Hex of Jammal'an								
+12484	spellbook	6	Chilled	Rank 1	Chills the target for $d.	Movement Slowed.					
+12485	spellbook	6	Chilled	Rank 2	Chills the target for $d.	Movement Slowed.					
+12486	spellbook	6	Chilled	Rank 3	Chills the target for $d.	Movement Slowed.					
+12487	spellbook	6	Improved Blizzard	Rank 2	Adds a chill effect to your Blizzard spell.  This effect lowers the target's movement speed by $12485s1%.  Lasts $12485d.						
+12488	spellbook	6	Improved Blizzard	Rank 3	Adds a chill effect to your Blizzard spell.  This effect lowers the target's movement speed by $12486s1%.  Lasts $12486d.						
+12489	spellbook	6	Improved Cone of Cold	Rank 2	Increases the damage dealt by your Cone of Cold spell by $s1%.						
+12490	spellbook	6	Improved Cone of Cold	Rank 3	Increases the damage dealt by your Cone of Cold spell by $s1%.						
+12491	all		Healing Wave		Calls upon Nature magic to heal an ally.						
+12492	all		Healing Wave		Calls upon Nature magic to heal an ally.						
+12493	all		Curse of Weakness		Reduces the Physical damage dealt by an enemy for $d.	Physical damage dealt is reduced by $s1.					
+12494	spellbook	6	Frostbite		Gives your Chill effects a chance to freeze the target for $12494d.	Frozen.					
+12495	all		Eranikus the Chained Invisiibility								
+12496	spellbook	6	Frostbite	Rank 2	Gives your Chill effects a $s1% chance to freeze the target in place for $12494d. If the target is immune to being frozen, it will be considered as frozen.						
+12497	spellbook	6	Frostbite	Rank 3	Gives your Chill effects a $s1% chance to freeze the target in place for $12494d. If the target is immune to being frozen, it will be considered as frozen.						
+12500	spellbook	237	Arcane Mind	Rank 2	Increases your total Intellect by $s1% and increases your armor by an amount equal to $s2% of your Intellect.						
+12501	spellbook	237	Arcane Mind	Rank 3	Increases your total Intellect by $s1% and increases your armor by an amount equal to $s2% of your Intellect.						
+12502	spellbook	237	Arcane Mind	Rank 4	Increases your total Intellect by $s1% and increases your armor by an amount equal to $s2% of your Intellect.						
+12503	spellbook	237	Arcane Mind	Rank 5	Increases your total Intellect by $s1% and increases your armor by an amount equal to $s2% of your Intellect.						
+12504	all		Summon Atal'ai Skeleton								
+12505	spellbook	8	Pyroblast	Rank 2	Hurls an immense fiery boulder that causes $s1 Fire damage and an additional $o2 Fire damage over $d.	$s2 Fire damage every $t2 seconds.					
+12506	all		Atal'ai Skeleton Totem		Casts an Atal'ai Totem, which lasts $d. and periodically summons an Atal'ai Skeleton. Each Skeleton lasts $12504d.						
+12507	all		Atal'ai Skeleton Totem								
+12508	all		Water Channeling								
+12509	all		Teleport to Azshara Tower			Teleporting					
+12510	all		Teleport to Azshara Tower								
+12511	all		Torch Combine								
+12512	all		Kalaran Conjures Torch								
+12518	spellbook	6	Frost Channeling	Rank 2	Reduces the mana cost of your Frost spells by $s1% and reduces the threat caused by your Frost spells by $s2%.						
+12519	spellbook	6	Frost Channeling	Rank 3	Reduces the mana cost of your Frost spells by $s1% and reduces the threat caused by your Frost spells by $s2%.						
+12520	all		Teleport from Azshara Tower								
+12521	all		Teleport from Azshara Tower			Teleporting					
+12522	spellbook	8	Pyroblast	Rank 3	Hurls an immense fiery boulder that causes $s1 Fire damage and an additional $o2 Fire damage over $d.	$s2 Fire damage every $t2 seconds.					
+12523	spellbook	8	Pyroblast	Rank 4	Hurls an immense fiery boulder that causes $s1 Fire damage and an additional $o2 Fire damage over $d.	$s2 Fire damage every $t2 seconds.					
+12524	spellbook	8	Pyroblast	Rank 5	Hurls an immense fiery boulder that causes $s1 Fire damage and an additional $o2 Fire damage over $d.	$s2 Fire damage every $t2 seconds.					
+12525	spellbook	8	Pyroblast	Rank 6	Hurls an immense fiery boulder that causes $s1 Fire damage and an additional $o2 Fire damage over $d.	$s2 Fire damage every $t2 seconds.					
+12526	spellbook	8	Pyroblast	Rank 7	Hurls an immense fiery boulder that causes $s1 Fire damage and an additional $o2 Fire damage over $d.	$s2 Fire damage every $t2 seconds.					
+12528	all		Silence		Silences nearby enemies, preventing them from casting spells for $d.	Cannot cast spells.					
+12529	all		Chilling Touch								
+12530	all		Frailty		Reduces all attributes of nearby enemies by $s1 for $d.	All attributes reduced by $s1.					
+12531	all		Chilling Touch		A chilling touch slows the target, reducing the time between attacks and movemente speed by $12531s2% for $d.	Time between attacks increased by $s1%.\nMovement speed reduced by $s2%.					
+12533	all		Acid Breath		Inflicts $s2 Nature damage and an additional $s1 damage every $t1 sec. to enemies in a cone in front of the caster. Lasts $d.	$s1 Nature damage inflicted every $t1 sec.					
+12534	all		Flames of Retribution		Use on a Sentry Brazier.						
+12535	all		Shade of Eranikus Passive Visual								
+12536	spellbook	237	Clearcasting			Your next damage spell has its mana cost reduced by $/10;s1%.					
+12537	all		Quest - Summon Treant								
+12538	all		Ravenous Claw		Drains $s1 health from an enemy, transferring it to the caster.						
+12539	all		Ghoul Rot		Your attacks have a chance to infect your target with Ghoul Rot.						
+12540	all		Gouge		Inflicts $s1 damage to an enemy and incapacitates it for up to $d. You will automatically stop attacking. Target must be facing you. Any damage received by the stunned target will revive it.	Incapacitated.					
+12541	all		Ghoul Rot		Chance to hit reduced by $s1%.	Chance to hit reduced by $s1%.					
+12542	all		Fear		Strikes fear in an enemy, causing it to flee in terror for $d. Only 1 target can be feared at a time.	Fleeing in fear.					
+12543	all		Hi-Explosive Bomb		Inflicts $s1 Fire damage and stuns targets in a 3 yard radius for $d.  Any damage will break the effect.	Stunned.  Any damage will break the effect.					
+12544	all		Frost Armor		Encases the caster in a layer of frost that lasts $d. The thick ice increases armor, slows melee attackers' movement, and increases the time between their attacks.	Armor increased by $s1.\nSlowing melee attackers' movement and attacks.					
+12545	all		Spitelash		Deals Shadow damage to the target and increases their damage taken for $d.	Physical damage taken is increased by $s1.					
+12546	all		Spitelash								
+12548	all		Frost Shock		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+12549	all		Forked Lightning		Inflicts Nature damage to enemies in a cone in front of the caster.						
+12550	all		Lightning Shield		Surrounds the caster with $n balls of lightning that have a $h% chance of striking melee or ranged attackers for Nature damage. Each time the lightning shield strikes, a ball of lightning dissipates. Thus, the shield expires after $d. or after it has struck $n times.	$h% chance of inflicting Nature damage on hit.					
+12551	all		Frost Shot		Shoots at an enemy, inflicting Frost damage and slowing its movement by $s2% for $d.	Movement speed reduced by $s2%.					
+12552	all		Cripple								
+12553	all		Shock		Instantly throws a bolt of lightning at an enemy, inflicting Nature damage.						
+12554	all		Summon Treasure Horde								
+12555	all		Pummel		Pummels an enemy for $s1 damage and interrupts the spell being cast for $d.						
+12556	all		Frost Armor								
+12557	all		Cone of Cold		Inflicts Frost damage to enemies in a cone in front of the caster, reducing their movement speed for $d.	Reduced movement speed.					
+12560	all		Mining		Mining +$s1.						
+12561	all		Fire Protection	Rank 1	Absorbs $s1 Fire damage.  Lasts $d.	Absorbs Fire damage.					
+12562	all		The Big One		Inflicts $s1 Fire damage and stuns targets for $d in a 10 yard radius.  Any damage will break the effect.	Stunned.  Any damage will break the effect.					
+12564	all		Summon Treasure Horde Visual								
+12565	all		Wyatt Test		Increases your running speed.   The longer you run the faster you go up to a maximum speed.  You cannot use plainsrunning in combat, underwater, or Indoors.						
+12569	spellbook	6	Permafrost	Rank 2	Increases the duration of your Chill effects by $/1000;S1 $lsec:secs; and reduces the target's speed by an additional $s2%.						
+12571	spellbook	6	Permafrost	Rank 3	Increases the duration of your Chill effects by $/1000;S1 $lsec:secs; and reduces the target's speed by an additional $s2%.						
+12574	spellbook	237	Arcane Concentration	Rank 2	Gives you a $h% chance of entering a Clearcasting state after any damage spell hits a target.  The Clearcasting state reduces the mana cost of your next damage spell by $/10;12536s1%.						
+12575	spellbook	237	Arcane Concentration	Rank 3	Gives you a $h% chance of entering a Clearcasting state after any damage spell hits a target.  The Clearcasting state reduces the mana cost of your next damage spell by $/10;12536s1%.						
+12576	spellbook	237	Arcane Concentration	Rank 4	Gives you a $h% chance of entering a Clearcasting state after any damage spell hits a target.  The Clearcasting state reduces the mana cost of your next damage spell by $/10;12536s1%.						
+12577	spellbook	237	Arcane Concentration	Rank 5	Gives you a $h% chance of entering a Clearcasting state after any damage spell hits a target.  The Clearcasting state reduces the mana cost of your next damage spell by $/10;12536s1%.						
+12578	all		Create Oathstone of Ysera's Dragonflight								
+12579	all		Winter's Chill			Frost spells have a $s1% additional chance to critically hit.					
+12584	spellbook	202	Gold Power Core								
+12585	spellbook	202	Solid Blasting Powder								
+12586	spellbook	202	Solid Dynamite								
+12587	spellbook	202	Bright-Eye Goggles								
+12589	spellbook	202	Mithril Tube								
+12590	spellbook	202	Gyromatic Micro-Adjustor								
+12591	spellbook	202	Unstable Trigger								
+12592	spellbook	237	Arcane Subtlety	Rank 2	Reduces your target's resistance to all your spells by $s2 and reduces the threat caused by your Arcane spells by $s1%.						
+12594	spellbook	202	Fire Goggles								
+12595	spellbook	202	Mithril Blunderbuss								
+12596	spellbook	202	Hi-Impact Mithril Slugs								
+12597	spellbook	202	Deadly Scope								
+12598	spellbook	237	Improved Counterspell	Rank 2	Gives your Counterspell a $h% chance to silence the target for $18469d.						
+12599	spellbook	202	Mithril Casing								
+12600	all		Second Chances: Summon Landgren's Soul								
+12601	all		Second Chances: Summon Landgren's Soul Moveto Target Bunny								
+12602	all		The Way to His Heart...: Create Tasty Reef Fish								
+12603	spellbook	202	Mithril Frag Bomb								
+12605	spellbook	237	Improved Shielding	Rank 2	Decreases the mana lost per point of damage taken when Mana Shield is active by $s1% and increases the resistances gained from Mage Armor by $s2%.						
+12606	spellbook	237	Magic Attunement	Rank 2	Increases the effect of your Amplify Magic and Dampen Magic spells by $s1%.						
+12607	spellbook	202	Catseye Ultra Goggles								
+12608	all		Stealth Detection		Slightly increases your stealth detection for $d.	Slightly increased stealth detection.					
+12609	spellbook	171	Catseye Elixir								
+12611	all		Cone of Cold		Inflicts Frost damage to enemies in a cone in front of the caster, reducing their movement speed for $d.	Reduced movement speed.					
+12612	all		Stomp		Stomps the ground, inflicting normal damage to nearby enemies and knocking them back.						
+12613	all		Dark Iron Taskmaster Death								
+12614	spellbook	202	Mithril Heavy-bore Rifle								
+12615	spellbook	202	Spellpower Goggles Xtreme								
+12616	spellbook	202	Parachute Cloak								
+12617	spellbook	202	Deepdive Helmet								
+12618	spellbook	202	Rose Colored Goggles								
+12619	spellbook	202	Hi-Explosive Bomb								
+12620	spellbook	202	Sniper Scope								
+12621	spellbook	202	Mithril Gyro-Shot								
+12622	spellbook	202	Green Lens								
+12623	all		Suppression								
+12624	spellbook	202	Mithril Mechanical Dragonling								
+12625	all		Disease Cloud								
+12626	all		Disease Cloud		A cloud of disease surrounds the bearer, causing $12626s1 Nature damage to enemies within  $12626a1 every $12627t1 sec.						
+12627	all		Disease Cloud		A cloud of disease surrounds the bearer, causing $12626s1 Nature damage to enemies within $37864a1 yards every $t1 sec.	Periodically dealing Nature damage every $t1 sec.					
+12639	all		Summon Hakkar								
+12642	all		Summon Frost Spectres		Summons a Frost Spectre.						
+12654	spellbook	8	Ignite		Your critical strikes from Fire damage spells cause the target to burn for an additional percentage of your spell's damage over $12654d.	Deals Fire damage every $t1 sec.					
+12655	all		Enlightenment								
+12656	spellbook	202	Engineering	Artisan	Allows an engineer to make bombs and gizmos that are truly amazing up to a maximum potential skill of 300.						
+12657	all		Artisan Engineer								
+12658	spellbook	26	Improved Rend	Rank 2	Increases the bleed damage done by your Rend ability by $s1%.						
+12659	spellbook	26	Improved Rend	Rank 3	Increases the bleed damage done by your Rend ability by $s1%.						
+12660	all		Banish Frost Spectres								
+12663	spellbook	26	Improved Heroic Strike	Rank 2	Reduces the cost of your Heroic Strike ability by $/10;s1 rage points.						
+12664	spellbook	26	Improved Heroic Strike	Rank 3	Reduces the cost of your Heroic Strike ability by $/10;s1 rage points.						
+12665	spellbook	257	Improved Thunder Clap	Rank 2	Reduces the cost of your Thunder Clap ability by $/10;s1 rage points and increases the damage by $s2% and the slowing effect by an additional $/10;s2%.						
+12666	spellbook	257	Improved Thunder Clap	Rank 3	Reduces the cost of your Thunder Clap ability by $/10;s1 rage points and increases the damage by $s2% and the slowing effect by an additional $/10;s2%.						
+12667	all		Soul Consumption		Drains $s1 health from nearby enemies, healing the caster for up to $e times the amount stolen.						
+12668	spellbook	26	Improved Hamstring	Rank 2	Gives your Hamstring ability a $h% chance to immobilize the target for $23694d.						
+12670	all		Summon Frost Spectres		Summons a Frost Spectre.						
+12671	all		Summon Frost Spectres		Summon a Frost Spectre.						
+12672	spellbook	6	Ice Shards	Rank 2	Increases the critical strike damage bonus of your Frost spells by $s1%.						
+12674	all		Frost Nova		Inflicts Frost damage to nearby enemies, immobilizing them for up to $d.	Immobilized.					
+12675	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+12676	spellbook	26	Tactical Mastery	Rank 2	You retain up to an additional $s1 of your rage points when you change stances.  Also greatly increases the threat generated by your Bloodthirst and Mortal Strike abilities when you are in Defensive Stance (More effective than Rank 1).						
+12677	spellbook	26	Tactical Mastery	Rank 3	You retain up to an additional $s1 of your rage points when you change stances.  Also greatly increases the threat generated by your Bloodthirst and Mortal Strike abilities when you are in Defensive Stance (More effective than Rank 2).						
+12678	spellbook	257	Stance Mastery	Passive	You retain up to $s1 of your rage points when you change stances.						
+12681	all		Gemology - Copper (DND)								
+12682	all		Gemology - Tin (DND)								
+12684	all		Kadrak's Flag		Place in the Talon Den.						
+12685	all		Fade		Reduces threat level on all enemies by a small amount for $d.	Reduced threat level.					
+12686	all		Enrage		Increases damage done by $s1 and attack speed by $s2% for $d.	Increased melee damage and attack speed.					
+12689	all		Gemology - Iron (DND)								
+12690	all		Gemology - Mithril (DND)								
+12693	all		Drain Life		Steals $s1 life from target enemy.						
+12694	all		Idol Room Spawn A								
+12695	spellbook	26	Charge Rage Bonus Effect	Rank 1							
+12696	spellbook	26	Charge Rage Bonus Effect	Rank 2							
+12697	spellbook	26	Improved Charge	Rank 2	Increases the amount of rage generated by your Charge ability by $/10;s1.						
+12699	all		Summon Screecher Spirit		Summon a screecher spirit from the corpse of a vale screecher.						
+12700	spellbook	26	Poleaxe Specialization	Rank 1	Increases your chance to get a critical strike with Axes and Polearms by $s1%.						
+12701	spellbook	26	Mace Specialization	Rank 2	Gives your melee attacks a chance to stun your target for $5530d and generate $/10;5530s2 rage when using a Mace.  More effective than Mace Specialization (Rank 1).						
+12702	spellbook	26	Mace Specialization	Rank 3	Gives your melee attacks a chance to stun your target for $5530d and generate $/10;5530s2 rage when using a Mace.  More effective than Mace Specialization (Rank 2).						
+12703	spellbook	26	Mace Specialization	Rank 4	Gives your melee attacks a chance to stun your target for $5530d and generate $/10;5530s2 rage when using a Mace.  More effective than Mace Specialization (Rank 3).						
+12704	spellbook	26	Mace Specialization	Rank 5	Gives your melee attacks a chance to stun your target for $5530d and generate $/10;5530s2 rage when using a Mace.  More effective than Mace Specialization (Rank 4).						
+12705	spellbook	26	Long Daze	Rank 1		Dazed.					
+12707	all		zzOLD Improved Pummel								
+12709	all		Collecting Fallout		Captures radioactive fallout.						
+12710	all		Gem Explosion		Visual effect for gems exploding in Azsahra event.						
+12711	spellbook	26	Two-Handed Weapon Specialization	Rank 2	Increases the damage you deal with two-handed melee weapons by $s1%.						
+12712	spellbook	26	Two-Handed Weapon Specialization	Rank 3	Increases the damage you deal with two-handed melee weapons by $s1%.						
+12713	spellbook	26	Two-Handed Weapon Specialization	Rank 4	Increases the damage you deal with two-handed melee weapons by $s1%.						
+12714	spellbook	26	Two-Handed Weapon Specialization	Rank 5	Increases the damage you deal with two-handed melee weapons by $s1%.						
+12715	spellbook	202	Goblin Rocket Fuel Recipe								
+12716	spellbook	202	Goblin Mortar								
+12717	spellbook	202	Goblin Mining Helmet		This item binds to you upon being crafted.						
+12718	spellbook	202	Goblin Construction Helmet		This item binds to you upon being crafted.						
+12719	all		Explosive Arrow								
+12720	spellbook	202	"Goblin ""Boom"" Box"								
+12721	all		Deep Wound		Your critical strikes cause the opponent to bleed.	Bleeding.					
+12722	spellbook	202	Goblin Radio								
+12723	spellbook	26	Sweeping Strikes	Rank 1	Your next melee weapon swing strikes an additional nearby opponent.	Sweeping Strikes.					
+12724	spellbook	257	Shield Specialization	Rank 2	Increases your chance to block attacks with a shield by $s1% and has a $h% chance to generate 1 rage when a block occurs.						
+12725	spellbook	257	Shield Specialization	Rank 3	Increases your chance to block attacks with a shield by $s1% and has a $h% chance to generate 1 rage when a block occurs.						
+12726	spellbook	257	Shield Specialization	Rank 4	Increases your chance to block attacks with a shield by $s1% and has a $h% chance to generate 1 rage when a block occurs.						
+12727	spellbook	257	Shield Specialization	Rank 5	Increases your chance to block attacks with a shield by $s1% and has a $h% chance to generate 1 rage when a block occurs.						
+12728	all		Belnistrasz Dummy								
+12731	all		Strength of Stone		Increases damage by $s1 for $d1.	Increased melee damage.					
+12732	all		Shard of Afrasa		Increases your normal health and mana regeneration by 5.						
+12733	all		Fearless		Increases armor by $s2, all resistances by $s3 and grants immunity to Fear for $d.	Increased armor, increased resistances and immune to Fear.					
+12734	all		Ground Smash		Inflicts Physical damage to nearby enemies, stunning them for $d.	Stunned.					
+12735	all		Fill the Egg of Hakkar		Use to fill the Egg of Hakkar.						
+12736	all		Summon Mithril Dragonling		The Mithril Dragonling comes to life and defends you for $d.						
+12737	all		Frostbolt		Inflicts Frost damage to nearby enemies, reducing their movement speed for $d.	Reduced movement speed.					
+12738	all		Amplify Damage		Increases all forms of damage taken by an enemy by $s1% for $d.	Physical and magical damage taken is increased by $s1%.					
+12739	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+12740	all		Summon Infernal Servant								
+12741	all		Curse of Weakness		Reduces the Physical damage dealt by nearby enemies for $d. Only one curse per warlock can be active on any one target.	Physical damage dealt is reduced by $s1.					
+12742	all		Immolate		Burns an enemy, then inflicts additional Fire damage every $t1 sec. for $d.	Fire damage inflicted every $t1 sec.					
+12743	all		Immolation								
+12744	all		Immolation		Burns nearby enemies for Fire damage periodically.						
+12745	all		Mana Burn		Hits nearby enemies with anti-mana bolts. For each point of mana consumed from a target, that target takes $e1 damage.						
+12746	all		Summon Voidwalker		Summons $s1 $lVoidwalker:Voidwalkers; to accompany the caster until dismissed.						
+12747	all		Entangling Roots		Entangles an enemy in roots, inflicting Nature damage every $t2 sec. and immobilizing it for up to $d.	Immobilized.\nNature damage inflicted every $t2 sec.					
+12748	all		Frost Nova		Inflicts Frost damage to nearby enemies, immobilizing them for up to $d.	Immobilized.					
+12749	spellbook	202	Mithril Mechanical Dragonling		Activates your Mithril Mechanical Dragonling to fight for you for $d.  It requires an hour to cool down before it can be used again.						
+12750	spellbook	257	Anticipation	Rank 2	Increases your Defense skill by $s1.						
+12751	spellbook	257	Anticipation	Rank 3	Increases your Defense skill by $s1.						
+12752	spellbook	257	Anticipation	Rank 4	Increases your Defense skill by $s1.						
+12753	spellbook	257	Anticipation	Rank 5	Increases your Defense skill by $s1.						
+12754	spellbook	202	The Big One								
+12755	spellbook	202	Goblin Bomb Dispenser		This item binds to you upon being crafted.						
+12758	spellbook	202	Goblin Rocket Helmet								
+12759	spellbook	202	Gnomish Death Ray		This item binds to you upon being crafted.						
+12760	spellbook	202	Goblin Sapper Charge								
+12761	spellbook	257	Toughness	Rank 2	Increases your armor value from items by $s1%.						
+12762	spellbook	257	Toughness	Rank 3	Increases your armor value from items by $s1%.						
+12763	spellbook	257	Toughness	Rank 4	Increases your armor value from items by $s1%.						
+12764	spellbook	257	Toughness	Rank 5	Increases your armor value from items by $s1%.						
+12765	spellbook	257	Improved Taunt	Rank 2	Reduces the cooldown of your Taunt ability by $/1000;s1 sec alongside increasing the range by $s2 yards.						
+12766	all		Poison Cloud		Poisons all enemies in an $a1 yard radius around the caster.  Victims of the poison suffer $s1 Nature damage every 5 sec for 45 sec.	Inflicts $s1 Nature damage every $t1 sec.					
+12768	all		Goblin Mortar								
+12774	all		(DND) Belnistrasz Idol Shutdown Visual								
+12781	spellbook	26	Poleaxe Specialization	Rank 2	Increases your chance to get a critical strike with Axes and Polearms by $s1%.						
+12782	all		Shield Spike		A sharp shield spike deals damage to attackers.						
+12783	spellbook	26	Poleaxe Specialization	Rank 3	Increases your chance to get a critical strike with Axes and Polearms by $s1%.						
+12784	spellbook	26	Poleaxe Specialization	Rank 4	Increases your chance to get a critical strike with Axes and Polearms by $s1%.						
+12785	spellbook	26	Poleaxe Specialization	Rank 5	Increases your chance to get a critical strike with Axes and Polearms by $s1%.						
+12787	all		Thrash		Adds a chance to do two additional attacks.						
+12788	spellbook	257	Defiance	Rank 2	Increases the threat generated by your attacks by $s1% while in Defensive Stance and reduces your chance to be dodged or parried by ${$m2/4}.2%.						
+12789	spellbook	257	Defiance	Rank 3	Increases the threat generated by your attacks by $s1% while in Defensive Stance and reduces your chance to be dodged or parried by ${$m2/4}.2%.						
+12790	all		Hukku's Guardians		Summons Hukku's demonic minions to aid him in battle. The minions last until dismissed.						
+12795	all		Frenzy		The caster enrages, increasing damage and attack speed for $d.	Physical damage dealt is increased by $s1.\nAttack speed increased by $s2%.					
+12796	all		Flames								
+12797	spellbook	257	Improved Revenge	Rank 1	Gives your Revenge ability a $h% chance to stun the target for $12798d.						
+12798	spellbook	257	Revenge Stun	Rank 1	Stuns the target for $d.	Stunned.					
+12799	spellbook	257	Improved Revenge	Rank 2	Gives your Revenge ability a $h% chance to stun the target for $12798d.						
+12800	spellbook	257	Improved Revenge	Rank 3	Gives your Revenge ability a $h% chance to stun the target for $12798d.						
+12802	all		Getting Tide Pool Sample #1		This container should be filled with water from the first tide pool in Azshara.						
+12803	spellbook	257	Improved Shield Wall	Rank 2	Increases the effect duration of your Shield Wall ability by $/1000;s1 secs.						
+12804	spellbook	257	Improved Disarm	Rank 2	Increases the duration of your Disarm ability by $/1000;s1 secs.						
+12805	all		Getting Tide Pool Sample #2		This container should be filled with water from the second tide pool in Azshara.						
+12806	all		Getting Tide Pool Sample #3		This container should be filled with water from the third tide pool in Azshara.						
+12807	spellbook	257	Improved Disarm	Rank 3	Increases the duration of your Disarm ability by $/1000;s1 secs.						
+12808	all		Getting Tide Pool Sample #4		This container should be filled with water from the fourth tide pool in Azshara.						
+12809	spellbook	257	Concussion Blow		Stuns the opponent for $d.	Stunned.					
+12810	spellbook	257	Improved Sunder Armor	Rank 2	Reduces the cost of your Sunder Armor and Devastate abilities by $/10;s1 rage point.						
+12811	spellbook	257	Improved Sunder Armor	Rank 3	Reduces the cost of your Sunder Armor and Devastate abilities by $/10;s1 rage point.						
+12812	spellbook	26	Sword Specialization	Rank 2	Gives you a $h% chance to get an extra attack on the same target after hitting your target with your Sword.						
+12813	spellbook	26	Sword Specialization	Rank 3	Gives you a $h% chance to get an extra attack on the same target after hitting your target with your Sword.						
+12814	spellbook	26	Sword Specialization	Rank 4	Gives you a $h% chance to get an extra attack on the same target after hitting your target with your Sword.						
+12815	spellbook	26	Sword Specialization	Rank 5	Gives you a $h% chance to get an extra attack on the same target after hitting your target with your Sword.						
+12816	all		Idom Rool Camera Shake								
+12818	spellbook	257	Improved Bloodrage	Rank 2	Increases the instant rage generated by your Bloodrage ability by $/10;s1.						
+12821	all		Plainsrunning	Rank 1							
+12822	all		Demon Slaying 18		Increases attack power by $s1 when fighting Demons.						
+12823	all		Demon Slaying 36		Increases attack power by $s1 when fighting Demons.						
+12824	spellbook	237	Polymorph	Rank 2	Transforms the enemy into a sheep, forcing it to wander around for up to $d.  While wandering, the sheep cannot attack or cast spells but will regenerate very quickly.  Any damage will transform the target back into its normal form.  Only one target can be polymorphed at a time.  Only works on Beasts, Humanoids and Critters.	Cannot attack or cast spells.  Increased regeneration.					
+12825	spellbook	237	Polymorph	Rank 3	Transforms the enemy into a sheep, forcing it to wander around for up to $d.  While wandering, the sheep cannot attack or cast spells but will regenerate very quickly.  Any damage will transform the target back into its normal form.  Only one target can be polymorphed at a time.  Only works on Beasts, Humanoids and Critters.	Cannot attack or cast spells.  Increased regeneration.					
+12826	spellbook	237	Polymorph	Rank 4	Transforms the enemy into a sheep, forcing it to wander around for up to $d.  While wandering, the sheep cannot attack or cast spells but will regenerate very quickly.  Any damage will transform the target back into its normal form.  Only one target can be polymorphed at a time.  Only works on Beasts, Humanoids and Critters.	Cannot attack or cast spells.  Increased regeneration.					
+12834	spellbook	26	Deep Wounds	Rank 1	Your critical strikes cause the opponent to bleed, dealing 20% of your melee weapon's average damage over $12721d.						
+12835	spellbook	256	Booming Voice	Rank 2	Increases the area of effect and duration of your Battle Shout, Demoralizing Shout and Commanding Shout by $s1%.						
+12836	spellbook	256	Booming Voice	Rank 3	Increases the area of effect and duration of your Battle Shout, Demoralizing Shout and Commanding Shout by $s1%.						
+12837	spellbook	256	Booming Voice	Rank 4	Increases the area of effect and duration of your Battle Shout, Demoralizing Shout and Commanding Shout by $s1%.						
+12838	spellbook	256	Booming Voice	Rank 5	Increases the area of effect and duration of your Battle Shout, Demoralizing Shout and Commanding Shout by $s1%.						
+12839	spellbook	237	Arcane Focus	Rank 2	Reduces the chance that the opponent can resist your Arcane spells by $s1%.						
+12840	spellbook	237	Arcane Focus	Rank 3	Reduces the chance that the opponent can resist your Arcane spells by $s1%.						
+12841	spellbook	237	Arcane Focus	Rank 4	Reduces the chance that the opponent can resist your Arcane spells by $s1%.						
+12842	spellbook	237	Arcane Focus	Rank 5	Reduces the chance that the opponent can resist your Arcane spells by $s1%.						
+12843	all		Mordresh's Shield			Immune to all attacks and spells.					
+12844	all		Remove All Effects								
+12845	all		Lesser Invisibility		Turns the caster invisible for $d, though this spell is unstable and may end early.	Lesser invisibility.					
+12846	spellbook	8	Ignite	Rank 3	Your critical strikes from Fire damage spells cause the target to burn for an additional 24% of your spell's damage over $12654d.						
+12847	spellbook	8	Ignite	Rank 4	Your critical strikes from Fire damage spells cause the target to burn for an additional 32% of your spell's damage over $12654d.						
+12848	spellbook	8	Ignite	Rank 5	Your critical strikes from Fire damage spells cause the target to burn for an additional 40% of your spell's damage over $12654d.						
+12849	spellbook	26	Deep Wounds	Rank 2	Your critical strikes cause the opponent to bleed, dealing 40% of your melee weapon's average damage over $12721d.						
+12850	all		Deep Wounds	Rank 2	Your critical strikes cause the opponent to bleed,						
+12851	all		Release the Hounds		Summons a Felhound Tracker. Read the manual!						
+12852	spellbook	256	Cruelty	Rank 2	Increases your chance to get a critical strike with melee weapons by $s1%.						
+12853	spellbook	256	Cruelty	Rank 3	Increases your chance to get a critical strike with melee weapons by $s1%.						
+12854	all		Spell Focus	Rank 1	Decreases mana cost to all spells by $s1.						
+12855	spellbook	256	Cruelty	Rank 4	Increases your chance to get a critical strike with melee weapons by $s1%.						
+12856	spellbook	256	Cruelty	Rank 5	Increases your chance to get a critical strike with melee weapons by $s1%.						
+12857	spellbook	256	Commanding Presence	Rank 2	Increases the melee attack power bonus of your Battle Shout and the health bonus of your Commanding Shout by $s1%.						
+12858	spellbook	256	Commanding Presence	Rank 3	Increases the melee attack power bonus of your Battle Shout and the health bonus of your Commanding Shout by $s1%.						
+12860	spellbook	256	Commanding Presence	Rank 4	Increases the melee attack power bonus of your Battle Shout and the health bonus of your Commanding Shout by $s1%.						
+12861	spellbook	256	Commanding Presence	Rank 5	Increases the melee attack power bonus of your Battle Shout and the health bonus of your Commanding Shout by $s1%.						
+12862	spellbook	256	Improved Slam	Rank 1	Decreases the casting time of your Slam ability by $/1000;S1 sec.						
+12863	all		Improved Inner Rage	Rank 2	Reduces the cooldown of your Inner Rage ability by $/1000;s1 secs.						
+12864	all		Improved Inner Rage	Rank 3	Reduces the cooldown of your Inner Rage ability by $/1000;s1 secs.						
+12865	all		Improved Inner Rage	Rank 4	Reduces the cooldown of your Inner Rage ability by $/1000;s1 secs.						
+12866	all		Improved Inner Rage	Rank 5	Reduces the cooldown of your Inner Rage ability by $/60000;s1 mins.						
+12867	spellbook	26	Deep Wounds	Rank 3	Your critical strikes cause the opponent to bleed, dealing 60% of your melee weapon's average damage over $12721d.						
+12868	all		Deep Wounds	Rank 3	Your critical strikes cause the opponent to bleed.						
+12872	spellbook	8	Improved Scorch	Rank 2	Your Scorch spells have a $s1% chance to cause your target to be vulnerable to Fire damage.  This vulnerability increases the Fire damage dealt to your target by $22959s1% and lasts $22959d.  Stacks up to $22959u times.						
+12873	spellbook	8	Improved Scorch	Rank 3	Your Scorch spells have a $s1% chance to cause your target to be vulnerable to Fire damage.  This vulnerability increases the Fire damage dealt to your target by $22959s1% and lasts $22959d.  Stacks up to $22959u times.						
+12876	spellbook	256	Improved Demoralizing Shout	Rank 2	Increases the melee attack power reduction of your Demoralizing Shout by $s1%.						
+12877	spellbook	256	Improved Demoralizing Shout	Rank 3	Increases the melee attack power reduction of your Demoralizing Shout by $s1%.						
+12878	spellbook	256	Improved Demoralizing Shout	Rank 4	Increases the melee attack power reduction of your Demoralizing Shout by $s1%.						
+12879	spellbook	256	Improved Demoralizing Shout	Rank 5	Increases the melee attack power reduction of your Demoralizing Shout by $s1%.						
+12880	all		Enrage	Rank 1		Melee damage increased by $s1%.					
+12881	all		Poison State		Makes the caster appear poisoned until canceled.						
+12882	all		Wing Flap		Strikes enemies in a cone in front of the caster, knocking them back.						
+12883	all		Longsight		Allows you to look far into the distance.	Increased vision range until you move.					
+12884	all		Acid Breath		Inflicts $s2 Nature damage and an additional $s1 damage every $t1 sec. to enemies in a cone in front of the caster. Lasts $d.	$s1 Nature damage inflicted every $t1 sec.					
+12885	all		Teleport to Razelikh		Sends player to Razelikh's plateau.						
+12886	spellbook	256	Improved Challenging Shout	Rank 2	Reduces the cooldown of your Challenging Shout ability by $/60000;s1 mins.						
+12887	all		Sweeping Slam		Inflicts normal damage plus $s1 to enemies in a cone in front of the caster, knocking them back.						
+12888	all		Cause Insanity		Drives an enemy target temporarily insane, speeding its attacks by $s2% and its movement by $s3%, as well as causing it to attack its own allies for $d.	Charmed.\nAttack speed increased by $s2%.\nMovement speed increased by $s3%.					
+12889	all		Curse of Tongues		Forces nearby enemies to speak in Demonic, reducing their casting speed by $s1% for $d. Only one curse per warlock can be active on any one target.	Casting speed reduced by $s1%.					
+12890	all		Deep Slumber		Lulls an enemy into a deep sleep for $d., rendering it unable to act, but also making it invulnerable.	Immune to all attacks and spells, but unable to act.					
+12891	all		Acid Breath		Inflicts $s2 Nature damage and an additional $s1 damage every $t1 sec. to enemies in a cone in front of the caster. Lasts $d.	$s1 Nature damage inflicted every $t1 sec.					
+12895	spellbook	202	Inlaid Mithril Cylinder Plans								
+12896	all		Helboar								
+12897	spellbook	202	Gnomish Goggles		This item binds to you upon being crafted.						
+12898	all		Smoke Aura Visual								
+12899	spellbook	202	Gnomish Shrink Ray								
+12900	spellbook	202	Mobile Alarm								
+12902	spellbook	202	Gnomish Net-o-Matic Projector								
+12903	spellbook	202	Gnomish Harm Prevention Belt								
+12904	spellbook	202	Gnomish Ham Radio								
+12905	spellbook	202	Gnomish Rocket Boots								
+12906	spellbook	202	Gnomish Battle Chicken		This item binds to you upon being crafted.						
+12907	spellbook	202	Gnomish Mind Control Cap								
+12908	spellbook	202	Goblin Dragon Gun		This item binds to you upon being crafted.						
+12938	all		Fel Curse		Weakens the servants of Razelikh the Defiler. Must be within close proximity of the target to activate.						
+12939	all		Polymorph Heal Effect								
+12941	all		Fel Curse Effect								
+12942	all		Fell Curse Effect								
+12943	all		Fell Curse Effect								
+12945	spellbook	257	Improved Shield Block	Rank 1	Allows your Shield Block ability to block an additional attack and increases the duration by $/1000;s2 second.						
+12946	all		Putrid Stench		Reduces nearby enemies' Strength by $s2 and Agility by $s3 for $d., as well as preventing them from casting spells.	Strength reduced by $s2.\nAgility reduced by $s3.\nCannot cast spells.					
+12947	all		Withered Touch		Adds a chance to cast Withered Touch on enemy when hit by a melee attack.						
+12948	all		Avatar of Hakkar is summoned								
+12949	all		Idol Room Spawn End Boss								
+12950	spellbook	256	Improved Cleave	Rank 2	Increases the bonus damage done by your Cleave ability by $s1%.						
+12952	spellbook	6	Piercing Ice	Rank 2	Increases the damage done by your Frost spells by $s1%. This effect is tripled against enemies that are immune to Fire damage.						
+12953	spellbook	6	Piercing Ice	Rank 3	Increases the damage done by your Frost spells by $s1%. This effect is tripled against enemies that are immune to Fire damage.						
+12956	all		Demon Armor	Rank 1	Increases Defense by $s1, Shadow resistance by $s2 and your normal health regeneration by 3.						
+12958	spellbook	257	Improved Shield Bash	Rank 2	Gives your Shield Bash ability a $h% chance to silence the target for $18498d.						
+12959	spellbook	26	Iron Will	Rank 2	Increases your chance to resist Stun and Charm effects by an additional $s1%.						
+12960	spellbook	26	Iron Will	Rank 3	Increases your chance to resist Stun and Charm effects by an additional $s1%.						
+12961	spellbook	26	Iron Will	Rank 4	Increases your chance to resist Stun and Charm effects by an additional $s1%.						
+12962	spellbook	26	Iron Will	Rank 5	Increases your chance to resist Stun and Charm effects by an additional $s1%.						
+12963	spellbook	26	Improved Overpower	Rank 2	Increases the critical strike chance of your Overpower ability by $s1%.						
+12964	spellbook	256	Unbridled Wrath	Rank 1	Gives you a chance to generate an additional rage point when you deal melee damage with a weapon.						
+12966	spellbook	256	Flurry	Rank 1	Increases your attack speed by $12966s1% for your next 3 swings after dealing a melee critical strike.	Attack speed increased by $s1%.					
+12967	spellbook	256	Flurry	Rank 2	Increases your attack speed by $12967s1% for your next 3 swings after dealing a melee critical strike.	Attack speed increased by $s1%.					
+12968	spellbook	256	Flurry	Rank 3	Increases your attack speed by $12968s1% for your next 3 swings after dealing a melee critical strike.	Attack speed increased by $s1%.					
+12969	spellbook	256	Flurry	Rank 4	Increases your attack speed by $12969s1% for your next 3 swings after dealing a melee critical strike.	Attack speed increased by $s1%.					
+12970	spellbook	256	Flurry	Rank 5	Increases your attack speed by $12970s1% for your next 3 swings after dealing a melee critical strike.	Attack speed increased by $s1%.					
+12971	spellbook	256	Flurry	Rank 2	Increases your attack speed by $12967s1% for your next 3 swings after dealing a melee critical strike.						
+12972	spellbook	256	Flurry	Rank 3	Increases your attack speed by $12968s1% for your next 3 swings after dealing a melee critical strike.						
+12973	spellbook	256	Flurry	Rank 4	Increases your attack speed by $12969s1% for your next 3 swings after dealing a melee critical strike.						
+12974	spellbook	256	Flurry	Rank 5	Increases your attack speed by $12970s1% for your next 3 swings after dealing a melee critical strike.						
+12975	spellbook	257	Last Stand		When activated, this ability temporarily grants you 30% of your maximum health for $12976d.  After the effect expires, the health is lost.						
+12976	spellbook	257	Last Stand			Health increased by 30% of maximum.					
+12980	all		Simple Teleport		This creates an effect on the casting NPC that makes it appear as though they just arrived.						
+12981	all		Undead Slayer 39		Increases attack power by $s1 when fighting Undead.						
+12982	spellbook	6	Shatter	Rank 2	Increases the critical strike chance of all your spells against frozen targets by 20%.						
+12983	spellbook	6	Shatter	Rank 3	Increases the critical strike chance of all your spells against frozen targets by 30%.						
+12984	spellbook	6	Shatter	Rank 4	Increases the critical strike chance of all your spells against frozen targets by 40%.						
+12985	spellbook	6	Shatter	Rank 5	Increases the critical strike chance of all your spells against frozen targets by 50%.						
+12998	all		Create Yeh'kinya's Scroll								
+12999	spellbook	256	Unbridled Wrath	Rank 2	Gives you a chance to generate an additional rage point when you deal melee damage with a weapon.  Effect occurs more often than Unbridled Wrath (Rank 1).						
+13000	spellbook	256	Unbridled Wrath	Rank 3	Gives you a chance to generate an additional rage point when you deal melee damage with a weapon.  Effect occurs more often than Unbridled Wrath (Rank 2).						
+13001	spellbook	256	Unbridled Wrath	Rank 4	Gives you a chance to generate an additional rage point when you deal melee damage with a weapon.  Effect occurs more often than Unbridled Wrath (Rank 3).						
+13002	spellbook	256	Unbridled Wrath	Rank 5	Gives you a chance to generate an additional rage point when you deal melee damage with a weapon.  Effect occurs more often than Unbridled Wrath (Rank 4).						
+13003	all		Shrink Ray			Attack power reduced by $s1.					
+13004	all		Grow			Increased size and attack power.					
+13005	all		Hammer of Justice		Stuns an enemy, rendering it unable to move or attack for $d.	Stunned.					
+13006	all		Shrink Ray		Shrinks the target reducing their attack power by $13003s1.  Thats what it usually does anyway.....						
+13007	all		Divine Protection		Protects the caster from all attacks and spells for $d., but during that time the caster also cannot attack or use spells.	Immune to all attacks and spells.\nCannot attack or use spells.					
+13008	all		Retribution Aura		Causes $s1 Holy damage to any creature that strikes a nearby party member. Players may only have one aura on them per paladin at any one time. The aura lasts until cancelled.	$s1 Holy damage inflicted to melee attackers.					
+13009	all		Amnennar's Wrath		Knocks an enemy back.						
+13010	all		Shrink			Decreased size and attack power.					
+13013	all		Dissolve Armor		Reduces an enemy's armor by $s1% for $d.	Armor reduced by $s1%.					
+13018	spellbook	8	Blast Wave	Rank 2	A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for $s1 Fire damage, and Dazing them for $d.	Dazed.					
+13019	spellbook	8	Blast Wave	Rank 3	A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for $s1 Fire damage, and Dazing them for $d.	Dazed.					
+13020	spellbook	8	Blast Wave	Rank 4	A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for $s1 Fire damage, and Dazing them for $d.	Dazed.					
+13021	spellbook	8	Blast Wave	Rank 5	A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for $s1 Fire damage, and Dazing them for $d.	Dazed.					
+13022	all		Fire and Arcane Reflect		Reflect fire and arcane spells back at the caster	Fire and Arcane spells are reflected to the caster					
+13028	spellbook	185	Goldthorn Tea								
+13029	all		Goldthorn Tea								
+13030	all		Major Troll's Blood Potion								
+13031	spellbook	6	Ice Barrier	Rank 2	Instantly shields you, absorbing $s1 damage.  Lasts $d.  While the shield holds, spells will not be interrupted.	Absorbs damage.					
+13032	spellbook	6	Ice Barrier	Rank 3	Instantly shields you, absorbing $s1 damage.  Lasts $d.  While the shield holds, spells will not be interrupted.	Absorbs damage.					
+13033	spellbook	6	Ice Barrier	Rank 4	Instantly shields you, absorbing $s1 damage.  Lasts $d.  While the shield holds, spells will not be interrupted.	Absorbs damage.					
+13043	spellbook	8	Molten Shields	Rank 2	Causes your Fire Ward to have a $s1% chance to reflect Fire spells while active. In addition, your Molten Armor has a 100% chance to affect ranged and spell attacks.						
+13044	all		Teleport to Ground		Sends player to Razelikh's plateau.						
+13045	spellbook	256	Enrage	Rank 2	Gives you a $14201s1% melee damage bonus for $14201d up to a maximum of $14201n swings after being the victim of a critical strike.						
+13046	spellbook	256	Enrage	Rank 3	Gives you a $14202s1% melee damage bonus for $14202d up to a maximum of $14202n swings after being the victim of a critical strike.						
+13047	spellbook	256	Enrage	Rank 4	Gives you a $14203s1% melee damage bonus for $14203d up to a maximum of $14203n swings after being the victim of a critical strike.						
+13048	spellbook	256	Enrage	Rank 5	Gives you a $14204s1% melee damage bonus for $14204d up to a maximum of $14204n swings after being the victim of a critical strike.						
+13049	all		Dragon's Call		Calls forth an Emerald Dragon Whelp to protect you in battle for a short period of time.						
+13099	all		Net-o-Matic			Unable to move.					
+13119	all		Net-o-Matic								
+13120	all		Net-o-Matic		Captures the target in a net for $13099d.  The net has a lot of hooks however and sometimes gets caught in the user's clothing when fired......						
+13138	all		Net-o-Matic			The Net-o-Matic has backfired!\nImmobilized.					
+13139	all		Net-o-Matic								
+13140	all		Fireball		Inflicts Fire damage to an enemy.						
+13141	all		Gnomish Rocket Boots		These boots significantly increase your run speed for $d.  WARNING:  Their power supply and gyros do not always function as intended.	Increased run speed.  Gyrostabilizers are known to be unstable causing occasional erratic movement.					
+13142	all		Teleport to Razelikh		Sends player to Razelikh's plateau.						
+13143	all		Summon Razelikh		Use at the Altar of the Defiler to summon Razelikh the Defiler.						
+13158	all		Rocket Boots Malfunction			Out of control!					
+13159	spellbook	50	Aspect of the Pack		The hunter, group and raid members within $a1 yards take on the aspects of a pack of cheetahs, increasing movement speed by $s1% for $d. Only one Aspect can be active at a time.	$s1% increased movement speed.					
+13161	spellbook	50	Aspect of the Beast		The hunter takes on the aspects of a beast, becoming untrackable.  Only one Aspect can be active at a time.	Untrackable.					
+13163	spellbook	50	Aspect of the Monkey		The hunter takes on the aspects of a monkey, increasing chance to dodge by $s1%.  Only one Aspect can be active at a time.	Increases chance to dodge by $s1%.					
+13165	spellbook	50	Aspect of the Hawk	Rank 1	The hunter takes on the aspects of a hawk, increasing ranged attack power by $s1.  Only one Aspect can be active at a time.	Increases ranged attack power by $s1.					
+13166	spellbook	202	Battle Chicken		Creates a Battle Chicken that will fight for you for $d or until it is destroyed.						
+13167	all		Suicide								
+13168	all		Chicken Fury		Increases the Physical damage dealt by the chicken by $s1% and speeds the chicken's attack by $s2% for $d.	Physical damage dealt is increased by $s1%.\nAttack speed increased by $s2%.					
+13180	all		Gnomish Mind Control Cap		Engage in mental combat with a humanoid target to try and control their mind.  If all works well, you will control the mind of the target for $13181d .....						
+13181	all		Gnomish Mind Control Cap			Charmed.					
+13183	all		Goblin Dragon Gun		Deals $13184s1 fire damage for $d to all targets in a cone in front of the engineer using the weapon.   That is unless it explodes.....	Dealing $13184s1 fire damage per second.					
+13184	all		Goblin Dragon Gun		Deals fire damage to all targets in a cone.	Deals fire damage to all targets in a cone.					
+13198	all		Increased Strength 15		+$s1 Strength.						
+13218	all		Wound Poison	Rank 1		All healing effects reduced by $s1%.					
+13219	all		Wound Poison	Rank 1	Coats a weapon with poison that lasts for $d.\nEach strike has a $h% chance of poisoning the enemy, causing $13218s2 Nature damage and reducing all healing effects used on them by $13218s1% for $13218d.  Stacks up to 5 times on a single target.						
+13220	spellbook	790	Wound Poison	Rank 1	Coats a weapon with poison that lasts for 1 hour.\nEach strike has a 30% chance of poisoning the enemy, causing $13218s2 Nature damage and reducing all healing effects used on them by $13218s1% for $13218d.  Stacks up to 5 times on a single target.						
+13222	all		Wound Poison	Rank 2		All healing effects reduced by $s1%.					
+13223	all		Wound Poison	Rank 3		All healing effects reduced by $s1%.					
+13224	all		Wound Poison	Rank 4		All healing effects reduced by $s1%.					
+13225	all		Wound Poison	Rank 2	Coats a weapon with poison that lasts for $d.\nEach strike has a $h% chance of poisoning the enemy, causing $13222s2 Nature damage and reducing all healing effects used on them by $13222s1% for $13222d.  Stacks up to 5 times on a single target.						
+13226	all		Wound Poison	Rank 3	Coats a weapon with poison that lasts for $d.\nEach strike has a $h% chance of poisoning the enemy, causing $13223s2 Nature damage and reducing all healing effects used on them by $13223s1% for $13223d.  Stacks up to 5 times on a single target.						
+13227	all		Wound Poison	Rank 4	Coats a weapon with poison that lasts for $d.\nEach strike has a $h% chance of poisoning the enemy, causing $13224s2 Nature damage and reducing all healing effects used on them by $13224s1% for $13224d.  Stacks up to 5 times on a single target.						
+13228	spellbook	790	Wound Poison II	Rank 2	Coats a weapon with poison that lasts for 1 hour.\nEach strike has a 30% chance of poisoning the enemy, causing $13222s2 Nature damage and reducing all healing effects used on them by $13222s1% for $13222d.  Stacks up to 5 times on a single target.						
+13229	spellbook	790	Wound Poison III	Rank 3	Coats a weapon with poison that lasts for 1 hour.\nEach strike has a 30% chance of poisoning the enemy, causing $13223s2 Nature damage and reducing all healing effects used on them by $13223s1% for $13223d.  Stacks up to 5 times on a single target.						
+13230	spellbook	790	Wound Poison IV	Rank 4	Coats a weapon with poison that lasts for 1 hour.\nEach strike has a 30% chance of poisoning the enemy, causing $13224s2 Nature damage and reducing all healing effects used on them by $13224s1% for $13224d.  Stacks up to 5 times on a single target.						
+13234	all		Harm Prevention Belt		A shield of force protects you from the next $s1 damage done over the next $d1. WARNING:  Force Field may overload when struck temporarily removing the wearer from this dimension.	Absorbs damage.  Effectiveness not guaranteed.					
+13235	all		Forcefield Collapse			Invulnerable, but unable to act.					
+13236	all		Nature Channeling								
+13237	all		Goblin Mortar		Inflicts $s1 Fire damage and stuns the targets in a $a1 yard radius for $d.	Stunned.					
+13238	all		Goblin Mortar		Inflicts $s1 Fire damage and causes $o2 damage over $d to targets in a 10 yard radius.	Stunned.					
+13239	all		Reload Explode								
+13240	spellbook	202	The Mortar: Reloaded		Reloads an empty Goblin mortar.						
+13241	all		Goblin Sapper Charge		Explodes when triggered dealing $s1 Fire damage to all enemies nearby and $s2 damage to you.						
+13258	spellbook	202	Summon Goblin Bomb		Creates a mobile bomb that charges the nearest enemy and explodes for $13259s1 fire damage.						
+13259	all		Explosion								
+13260	all		Pet Bomb Passive								
+13261	all		Malfunction Explosion								
+13262	spellbook	333	Disenchant		Extracts the magical element(s) from good quality (Green) or better weapons or armor.  The targeted item will be DESTROYED and will not be retrievable.						
+13278	all		Gnomish Death Ray		The devices charges over time using your life force and then directs a burst of energy at your opponent.	Charging death ray using your life force.					
+13279	all		Gnomish Death Ray								
+13280	all		Gnomish Death Ray								
+13281	all		Earth Shock		Shocks an enemy with concussive force, inflicting Nature damage and interrupting the spell being cast for $d.						
+13298	all		Poison		Inflicts Nature damage to an enemy every $t1 sec. for $d.	Nature damage inflicted every $t1 sec.					
+13299	all		Poison Proc								
+13318	all		Rend		Wounds the target causing them to bleed for $o1 damage over $d.	Bleeding for $s1 damage every $t1 sec.					
+13319	all		Malfunction								
+13320	all		Malfunction								
+13321	all		Mana Burn		Hits an enemy with an anti-mana bolt. For each point of mana consumed by the bolt, the target takes $e1 damage.						
+13322	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+13323	all		Polymorph		Transforms an enemy into a sheep, forcing it to wander around for up to $d. While wandering, the sheep cannot attack or cast spells. Any damage will transform the target back into its normal form. Only one target can be polymorphed at a time. Only works on beasts, dragons, giants, humanoids, and critters.	Cannot attack or cast spells.					
+13325	all		Transponder Summon								
+13326	all		Arcane Intellect		Increases an ally's Intellect by $s1 for $d.	Intellect increased by $s1.					
+13327	all		Reckless Charge		Charge an enemy, knocking it silly for $d. Also knocks you down, stunning you for a short period of time. Any damage caused will revive the target.	Incapacitated.					
+13338	all		Curse of Tongues		Forces an enemy to speak in Demonic, reducing its casting speed by $s1% for $d. Only one curse per warlock can be active on any one target.	Casting speed reduced by $s1%.					
+13339	all		Fire Blast		Inflicts Fire damage to an enemy.						
+13340	all		Fire Blast		Inflicts Fire damage to an enemy.						
+13341	all		Fire Blast		Inflicts Fire damage to an enemy.						
+13342	all		Fire Blast		Inflicts Fire damage to an enemy.						
+13358	spellbook	95	Defensive State (DND)								
+13360	all		Knockdown								
+13361	all		Greater Magic Essence		Turn three lesser magic essences into a greater one.						
+13362	all		Lesser Magic Essence		Turn a greater magic essence into three lesser ones.						
+13363	all		Lesser Intellect								
+13364	all		Lesser Agility								
+13365	all		Agility								
+13366	all		Intellect								
+13368	all		Spirit								
+13369	all		Lesser Stamina								
+13370	all		Stamina								
+13371	all		Lesser Strength								
+13372	all		Strength								
+13374	all		Fire Blast		Inflicts Fire damage to an enemy.						
+13375	all		Fireball		Inflicts Fire damage to an enemy.						
+13376	all		Fire Shield		Deals Fire damage to all nearby enemies.						
+13377	all		Fire Shield								
+13378	spellbook	333	Enchant Shield - Minor Stamina		Permanently enchant a shield so that it increases the Stamina of the bearer by 1.						
+13380	spellbook	333	Enchant 2H Weapon - Lesser Spirit		Permanently enchant a two-handed melee weapon to increase Spirit by 3.						
+13381	all		Torch		Burns all enemies in a selected area and inflicts additional Fire damage every $t2 sec. for $d.						
+13382	all		Torch		Burns all enemies in an area around the caster and inflicts additional Fire damage every $t2 sec. for $d.						
+13383	all		Increased Defense		Increased Defense +$s1.						
+13384	all		Increased Defense		Increased Defense +$s1.						
+13385	all		Increased Defense		Increased Defense +$s1.						
+13386	all		Increased Defense		Increased Defense +$s1.						
+13387	all		Increased Defense		Increased Defense +$s1.						
+13388	all		Increased Defense		Increased Defense +$s1.						
+13389	all		Increased Defense		Increased Defense +$s1.						
+13390	all		Increased Defense		Increased Defense +$s1.						
+13398	all		Throw Wrench		Throws a wrench at an enemy, inflicting Physical damage.						
+13399	all		Cultivate Packet of Seeds		Consume two Un'Goro Soil samples and a Packet of Tharlendris seeds to make an Evergreen Herb Casing.						
+13418	all		Minor Stealth								
+13419	spellbook	333	Enchant Cloak - Minor Agility		Permanently enchant a cloak to increase Agility by 1.						
+13421	spellbook	333	Enchant Cloak - Lesser Protection		Permanently enchant a cloak to increase armor by 20.						
+13424	all		Faerie Fire	Rank 1	Decrease the armor of the target by $s1 for $d.  While affected, the target cannot stealth or turn invisible.	Decreases armor by $s1.  Cannot stealth or turn invisible.					
+13438	all		Fireball		Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.	$s2 Fire damage every $t2 sec.					
+13439	all		Frostbolt		Launches a bolt of frost at the enemy causing $s2 Frost damage and slowing movement speed by $s1% for $d.	Movement slowed by $s1%.					
+13440	all		Shadow Bolt		Sends a shadowy bolt at the enemy causing $s1 Shadow damage.						
+13441	all		Firebolt		Blasts a target for $s1 Fire damage.						
+13442	all		Firebolt		Blasts a target for $s1 Fire damage.						
+13443	all		Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+13444	all		Sunder Armor		Hacks at an enemy's armor, reducing it more per Sunder Armor. Can be applied up to 5 times. Lasts $d.	Reduced armor.					
+13445	all		Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+13446	all		Strike		Strikes at an enemy, inflicting increased melee damage.						
+13459	all		Decimate		Reduces a target's chance to block by $s1% for $d.	Chance to block reduced by $s1%.					
+13461	all		Go Home		Sends Razelikh home - damn dirty cheaters.						
+13462	all		Minor Blocking								
+13463	all		Summon Bloodpetal Mini Pests		Summons Bloodpetal Mini Me!						
+13464	spellbook	333	Enchant Shield - Lesser Protection		Permanently enchant a shield to increase armor by 30.						
+13466	all		Goblin Dragon Gun			YOU'RE ON FIRE!					
+13478	all		Opening Relic Coffer		Opens a Black Vault Relic Coffer Door.						
+13479	all		Goblin Dragon Gun								
+13480	all		Shadow Bolt		Sends a shadowy bolt at the enemy causing $s1 Shadow damage.						
+13481	spellbook	50	Tame Beast		Begins taming a beast to be your companion.  Your armor is reduced by $1515s3% while you focus on taming the beast for 20 sec.  If you lose the beast's attention for any reason, the taming process will fail.  Once tamed, the beast will be very unhappy and disloyal.  Try feeding the pet immediately to make it happy.						
+13482	all		Lightning Bolt	Rank 1	Blasts a target for $s1 Nature damage.						
+13484	all		Plant Gor'tesh Head		Place on a SOFT DIRT MOUND.						
+13485	spellbook	333	Enchant Shield - Lesser Spirit		Permanently enchant a shield to give 3 spirit.						
+13486	all		Wound		Wounds the target for $s1 damage.						
+13487	all		Create Relic Coffer Chest								
+13488	all		Firegut Fear Storm								
+13489	all		Burning Spirit		Instantly kills the caster.						
+13490	all		Howling Blade	Rank 1	Reduces target's attack power by $s1 for $d.	Reduces attack power by $s1.					
+13491	all		Pummel	Rank 1	Pummel the target for $s1 damage and interrupt the spell being cast for $d.						
+13492	all		Beast Slaying 63		Increases attack power by $s1 when fighting Beasts.						
+13493	all		Gnomish Death Ray			Charging death ray using your life force.					
+13494	all		Haste		Increases your attack speed by $s1% for $d1.	Increased attack speed.					
+13496	all		Dazed		Slows the target's movement by $s1% for $d.	Lowered movement speed.					
+13497	all		Greater Astral Essence		Turn three lesser astral essences into a greater one.						
+13498	all		Lesser Astral Essence		Turn a greater astral essence into three lesser ones.						
+13500	all		Increased 1H Axe		Increases axe skill rating by $s1.						
+13501	spellbook	333	Enchant Bracer - Lesser Stamina		Permanently enchant a bracer so it increases the wearer's Stamina by 3.						
+13503	spellbook	333	Enchant Weapon - Lesser Striking		Permanently enchant a melee weapon to do 2 additional points of damage.						
+13518	all		Poison		Poisons target for $s1 Nature damage every $t1 sec for $d.	$s1 Nature damage inflicted every $t1 sec.					
+13519	all		Holy Smite		Smites an enemy for $s1 Holy damage.						
+13520	all		Quiet Suicide (Frost)		The subject dies with a frost impact on their person.						
+13522	spellbook	333	Enchant Cloak - Lesser Shadow Resistance		Permanently enchant a cloak to increase shadow resistance by 10.						
+13523	all		Lesser Resistance - Shadow								
+13524	all		Curse of Stalvan		Lowers all attributes of target by 2 for $d.	All stats lowered by $s1.					
+13526	all		Corrosive Poison		Corrosive acid that deals $m1 Nature damage every 3 sec and lowers target's armor by $m2 for $d.	Lowered armor and periodic Nature damage.					
+13527	all		Lightning Bolt	Rank 1	Blasts a target for $s1 Nature damage.						
+13528	all		Decayed Strength		Reduces target's Strength by $s1 for $d.	Strength lowered by $s1.					
+13529	spellbook	333	Enchant 2H Weapon - Lesser Impact		Permanently enchant a two-handed melee weapon to do 3 additional points of damage.						
+13530	all		Corruption		Corrupts the target, causing $o1 damage over $d.	Inflicts $s1 Shadow damage every $t1 sec.					
+13532	all		Thunder Clap	Rank 1	Blasts nearby enemies with thunder increasing the time between their attacks by $s2% for $d and doing $s1 Nature damage to them.  Will affect up to $i targets.	Time between attacks increased by $s2%.					
+13533	all		Haste		Increases your attack speed by $s1% for $d1.	Increased attack speed.					
+13534	all		Disarm		Disarm target's weapon for $d.	Disarmed.					
+13536	spellbook	333	Enchant Bracer - Lesser Strength		Permanently enchant bracers to increase Strength by 3.						
+13538	spellbook	333	Enchant Chest - Lesser Absorption		Enchant a piece of chest armor so it has a 5% chance per hit of giving you 25 points of damage absorption.						
+13540	all		Green Channeling								
+13541	all		Knockback 500 Triggers								
+13542	spellbook	50	Mend Pet	Rank 5	Heals your pet for $o1 health over $d.	Heals $s1 every $t1 sec.					
+13543	spellbook	50	Mend Pet	Rank 6	Heals your pet for $o1 health over $d.	Heals $s1 every $t1 sec.					
+13544	spellbook	50	Mend Pet	Rank 7	Heals your pet for $o1 health over $d.	Heals $s1 every $t1 sec.					
+13548	spellbook	778	Westfall Chicken		Right Click to summon and dismiss your chicken.						
+13549	spellbook	163	Serpent Sting	Rank 2	Stings the target, causing ${$RAP*0.1+$m1*5} Nature damage over $d.  Only one Sting per Hunter can be active on any one target.	Causes $s1 Nature damage every $t1 seconds.					
+13550	spellbook	163	Serpent Sting	Rank 3	Stings the target, causing ${$RAP*0.1+$m1*5} Nature damage over $d.  Only one Sting per Hunter can be active on any one target.	Causes $s1 Nature damage every $t1 seconds.					
+13551	spellbook	163	Serpent Sting	Rank 4	Stings the target, causing ${$RAP*0.1+$m1*5} Nature damage over $d.  Only one Sting per Hunter can be active on any one target.	Causes $s1 Nature damage every $t1 seconds.					
+13552	spellbook	163	Serpent Sting	Rank 5	Stings the target, causing ${$RAP*0.1+$m1*5} Nature damage over $d.  Only one Sting per Hunter can be active on any one target.	Causes $s1 Nature damage every $t1 seconds.					
+13553	spellbook	163	Serpent Sting	Rank 6	Stings the target, causing ${$RAP*0.1+$m1*5} Nature damage over $d.  Only one Sting per Hunter can be active on any one target.	Causes $s1 Nature damage every $t1 seconds.					
+13554	spellbook	163	Serpent Sting	Rank 7	Stings the target, causing ${$RAP*0.1+$m1*5} Nature damage over $d.  Only one Sting per Hunter can be active on any one target.	Causes $s1 Nature damage every $t1 seconds.					
+13555	spellbook	163	Serpent Sting	Rank 8	Stings the target, causing ${$RAP*0.1+$m1*5} Nature damage over $d.  Only one Sting per Hunter can be active on any one target.	Causes $s1 Nature damage every $t1 seconds.					
+13563	all		Summon Chicken Egg								
+13564	all		Opening Dark Coffer		Use on the Dark Coffer in the Black Vault.						
+13565	all		Opening Secure Safe		Use on the Secure Safe in the Lower Vault						
+13566	all		Knockback 500 Triggers								
+13567	all		Dummy Trigger								
+13578	all		Jadefire		Surrounds the caster with searing magic for $d. The flames increase armor by $s2% and inflict $s1 damage to melee attackers.	Armor increased by $s2%.\n$s1 Fire damage inflicted to melee attackers.					
+13579	all		Gouge		Inflicts $s1 damage to an enemy and stuns it for up to $d. You will automatically stop attacking. Target must be facing you. Any damage received by the stunned target will revive it.	Incapacitated.					
+13582	all		Deadly Poison		Inflicts $s1 Nature damage to nearby enemies every $t1 sec. for $d.	$s1 Nature damage inflicted every $t1 sec.					
+13583	all		Curse of the Deadwood		Reduces healing effects for an enemy by $s1% for $d.	Healing effects reduced by $s1%.					
+13584	all		Strike		Strikes at an enemy, inflicting normal damage plus a bonus.						
+13585	all		Lightning Shield		Surrounds an ally with $n balls of lightning that have $h% chance of striking melee or ranged attackers for $s1 damage. Each time the lightning shield strikes, a ball of lightning dissipates. Thus, the shield expires after $d. or after it has struck $n times.	$h% chance of inflicting $s1 Nature damage on hit.					
+13586	all		Aqua Jet		Sprays water in all directions, inflicting Frost damage to nearby enemies and knocking them back.						
+13587	all		Mount Speed		Increases mount speed by $s1%.	Mounted speed increased by $s1%.					
+13589	all		Haste Aura		Increases the attack speed of all nearby party members by $s1%.	Attack speed increased by $s1%.					
+13590	all		Increase Arcane Dam 1		Increases damage done by Arcane spells and effects by up to $s1.						
+13591	all		Increase Arcane Dam 3		Increases damage done by Arcane spells and effects by up to $s1.						
+13592	all		Increase Arcane Dam 4		Increases damage done by Arcane spells and effects by up to $s1.						
+13593	all		Increase Arcane Dam 6		Increases damage done by Arcane spells and effects by up to $s1.						
+13594	all		Increase Arcane Dam 7		Increases damage done by Arcane spells and effects by up to $s1.						
+13595	all		Increase Arcane Dam 9		Increases damage done by Arcane spells and effects by up to $s1.						
+13596	all		Increase Arcane Dam 10		Increases damage done by Arcane spells and effects by up to $s1.						
+13597	all		Increase Arcane Dam 11		Increases damage done by Arcane spells and effects by up to $s1.						
+13598	all		Increase Arcane Dam 13		Increases damage done by Arcane spells and effects by up to $s1.						
+13599	all		Increase Arcane Dam 14		Increases damage done by Arcane spells and effects by up to $s1.						
+13601	all		Increase Arcane Dam 16		Increases damage done by Arcane spells and effects by up to $s1.						
+13602	all		Increase Arcane Dam 17		Increases damage done by Arcane spells and effects by up to $s1.						
+13603	all		Increase Arcane Dam 19		Increases damage done by Arcane spells and effects by up to $s1.						
+13604	all		Increase Arcane Dam 20		Increases damage done by Arcane spells and effects by up to $s1.						
+13605	all		Increase Arcane Dam 21		Increases damage done by Arcane spells and effects by up to $s1.						
+13606	all		Mana								
+13607	spellbook	333	Enchant Chest - Mana		Permanently enchant a piece of chest armor to increase the mana of the wearer by 30.						
+13608	all		Hooked Net		Immobilizes an enemy for $d. and inflicts Physical damage.	Immobilized.					
+13611	all		Mining								
+13612	spellbook	333	Enchant Gloves - Mining		Permanently enchant gloves to increase mining skill by 2.						
+13614	all		Herbalism								
+13615	all		Fishing								
+13616	all		Wracking Pains Proc		Melee attacks have a chance to inflict the target with wracking pain, causing them to be periodically stunned.						
+13617	spellbook	333	Enchant Gloves - Herbalism		Permanently enchant gloves to increase herbalism skill by 2.						
+13619	all		Wracking Pains		Melee attacks have a chance to inflict the target with wracking pain, causing them to be periodically stunned.	Periodically stunned.					
+13620	spellbook	333	Enchant Gloves - Fishing		Permanently enchant gloves to increase fishing skill by 2.						
+13622	spellbook	333	Enchant Bracer - Lesser Intellect		Permanently enchant a bracer so it increases the wearer's Intellect by 3.						
+13624	all		Minor Stats								
+13625	all		Lesser Stats								
+13626	spellbook	333	Enchant Chest - Minor Stats		Permanently enchant a piece of chest armor to grant +1 to all stats.						
+13628	spellbook	333	Runed Golden Rod		This item binds to you upon being crafted.						
+13630	all		Scraping		Scrape a sample of the hive wall from an area near a Gorishi hatchery.						
+13631	spellbook	333	Enchant Shield - Lesser Stamina		Permanently enchant a shield to give 3 Stamina.						
+13632	all		Greater Mystic Essence		Turn three lesser mystic essences into a greater one.						
+13633	all		Lesser Mystic Essence		Turn a greater mystic essence into three lesser ones.						
+13635	spellbook	333	Enchant Cloak - Defense		Permanently enchant a cloak to give 30 additional armor.						
+13637	spellbook	333	Enchant Boots - Lesser Agility		Permanently enchant boots to give +3 Agility.						
+13639	all		Greater Health								
+13640	spellbook	333	Enchant Chest - Greater Health		Permanently enchant a piece of chest armor to give +35 health.						
+13642	spellbook	333	Enchant Bracer - Spirit		Permanently enchants bracers to give +5 Spirit.						
+13644	spellbook	333	Enchant Boots - Lesser Stamina		Permanently enchant boots to give +3 Stamina.						
+13646	spellbook	333	Enchant Bracer - Lesser Deflection		Permanently enchants bracers to give +2 Defense.						
+13648	spellbook	333	Enchant Bracer - Stamina		Permanently enchants bracers to give +5 Stamina.						
+13650	all		Lesser Beast Slayer								
+13651	all		Lesser Elemental Slayer								
+13652	all		Resistance - Fire								
+13653	spellbook	333	Enchant Weapon - Lesser Beastslayer		Permanently enchant a melee weapon to increase its damage to beasts by 6.						
+13655	spellbook	333	Enchant Weapon - Lesser Elemental Slayer		Permanently enchant a melee weapon to increase its damage to elementals by 6.						
+13657	spellbook	333	Enchant Cloak - Fire Resistance		Permanently enchant a cloak to give 7 Fire Resistance.						
+13659	spellbook	333	Enchant Shield - Spirit		Permanently enchant a shield to give 5 Spirit.						
+13661	spellbook	333	Enchant Bracer - Strength		Permanently enchants bracers to give +5 Strength.						
+13663	spellbook	333	Enchant Chest - Greater Mana		Permanently enchant a piece of chest armor to give +50 mana.						
+13664	all		Greater Mana								
+13665	all		Increased Parry 1		Increases your chance to parry an attack by $s1%.						
+13667	all		Increased Parry 2		Increases your chance to parry an attack by $s1%.						
+13668	all		Increased Parry 60		Increases your parry rating by $s1.						
+13669	all		Increased Dodge 1		Increases your chance to dodge an attack by $s1%.						
+13670	all		Increased Dodge 2		Increases your chance to dodge an attack by $s1%.						
+13671	all		Increased Dodge 36		Increases your dodge rating by $s1.						
+13672	all		Increased Dodge 48		Increases your dodge rating by $s1.						
+13673	all		Increased Dodge 60		Increases your dodge rating by $s1.						
+13674	all		Increased Block 1		Increases your chance to block attacks with a shield by $s1%.						
+13675	all		Increased Block 2		Increases your chance to block attacks with a shield by $s1%.						
+13676	all		Increased Block 3		Increases your chance to block attacks with a shield by $s1%.						
+13677	all		Increased Block 20		Increases your block rating by $s1.						
+13678	all		Increased Block 25		Increases your block rating by $s1.						
+13687	spellbook	333	Enchant Boots - Lesser Spirit		Permanently enchant boots to increase Spirit by 3.						
+13689	spellbook	333	Enchant Shield - Lesser Block		Permanently enchant a shield to give +2% chance to block.						
+13690	all		Lesser Blocking								
+13692	all		Dire Growl		Reduces an enemy's Strength and its Agility for $d.	Strength reduced by $s1.\nAgility reduced by $s2.					
+13693	spellbook	333	Enchant Weapon - Striking		Permanently enchant a melee weapon to do 3 additional points of damage.						
+13695	spellbook	333	Enchant 2H Weapon - Impact		Permanently enchant a two-handed melee weapon to do 5 additional points of damage.						
+13697	all		Skinning								
+13698	spellbook	333	Enchant Gloves - Skinning		Permanently enchant gloves to increase skinning skill by 5.						
+13700	spellbook	333	Enchant Chest - Lesser Stats		Permanently enchant a piece of chest armor to grant +2 to all stats.						
+13702	spellbook	333	Runed Truesilver Rod		This item binds to you upon being crafted.						
+13704	all		Psychic Scream		Lets out a psychic scream, causing up to $i nearby enemies to flee for $d.	Fleeing in fear.					
+13705	spellbook	38	Precision	Rank 1	Increases your chance to hit with weapons by $s1%.						
+13706	spellbook	38	Dagger Specialization	Rank 1	Increases your chance to get a critical strike with Daggers by $s1%.						
+13707	spellbook	38	Fist Weapon Specialization	Rank 1	Increases your chance to get a critical strike with Fist Weapons by $s1%.						
+13709	spellbook	38	Mace Specialization	Rank 1	Increases the damage dealt by your critical strikes with maces by $s2%, and gives you a $h% chance to stun your target for $5530d with a mace.						
+13712	spellbook	38	Lightning Reflexes	Rank 1	Increases your Agility by $s1%.						
+13713	spellbook	38	Deflection	Rank 1	Increases your Parry chance by $s1%.						
+13714	all		Create Samophlange Manual		Join the cover and 5 pages to create the Samophlange Manual.						
+13715	spellbook	38	Dual Wield Specialization	Rank 1	Increases the damage done by your offhand weapon by $s1%.						
+13716	all		AOD								
+13727	all		Break Samophlange								
+13728	all		Earth Shock		Shocks an enemy with concussive force, inflicting Nature damage and interrupting the spell being cast for $d.						
+13729	all		Flame Shock		Instantly burns an enemy, then inflicts additional Fire damage every $t2 sec. for $d.	Fire damage inflicted every $t2 sec.					
+13730	all		Demoralizing Shout		Reduces the melee attack power of nearby enemies for $d.	Melee attack power reduced.					
+13732	spellbook	38	Improved Sinister Strike	Rank 1	Reduces the Energy cost of your Sinister Strike ability by $s1.						
+13733	spellbook	38	Puncturing Wounds	Rank 1	Increases the critical strike chance of your Backstab ability by $s1%, and the critical strike chance of your Mutilate ability by $s2%.						
+13735	all		Increased Agility 15		+$s1 Agility.						
+13736	all		Whirlwind		Attacks nearby enemies in a whirlwind of steel that lasts $d. and inflicts normal damage plus a bonus.	Attacking all nearby enemies for normal damage plus a bonus.					
+13737	all		Mortal Strike		Inflicts $s1% weapon damage and leaves the target wounded, reducing the effectiveness of any healing by $s2% for $d.	Healing effects reduced by $s2%.					
+13738	all		Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+13739	all		Greater Nether Essence		Turn three lesser nether essences into a greater one.						
+13740	all		Lesser Nether Essence		Turn a greater nether essence into three lesser ones.						
+13741	spellbook	38	Improved Gouge	Rank 1	Increases the effect duration of your Gouge ability by $/1000;S1 sec.						
+13742	spellbook	38	Endurance	Rank 1	Reduces the cooldown of your Sprint and Evasion abilities by $/1000;s1 sec.						
+13743	spellbook	38	Improved Sprint	Rank 1	Gives a $s1% chance to remove all Movement Impairing effects when you activate your Sprint ability.						
+13744	all		Blazing Emblem	Rank 1	Increases Fire resistance by $s2 and reduces all Fire damage taken by up to 25 for $d.	Increased Fire resistance and reduces fire damage taken.					
+13745	all		Arcane Explosion		Sends out a blast wave of magic, inflicting Arcane damage to nearby enemies.						
+13746	spellbook	333	Enchant Cloak - Greater Defense		Permanently enchant a cloak to give 50 additional armor.						
+13747	all		Slow		Increases the time between nearby enemies' attacks and casting time by $s1% and slows their movement by $s2% for $d.	Movement speed reduced by $s2%.  Time between melee and ranged attacks increased by $s1%.  Casting time increased by $s1%.					
+13748	all		Arcane Bolt		Hurls a magical bolt at an enemy, inflicting Arcane damage.						
+13750	spellbook	38	Adrenaline Rush		Increases your Energy regeneration rate by $s1% for $d.	Energy regeneration increased by $s1%.					
+13752	all		Faerie Fire	Rank 2	Decrease the armor of the target by $s1 for $d.  While affected, the target cannot stealth or turn invisible.	Decreases armor by $s1.  Cannot stealth or turn invisible.					
+13754	spellbook	38	Improved Kick	Rank 1	Gives your Kick ability a $h% chance to silence the target for $18425d.						
+13767	all		Hate to Zero								
+13787	all		Demon Armor		Protects the caster, increasing armor, Shadow resistance  and health regeneration for $d.	Armor increased by $s1.\nShadow resistance increased by $s2.\nIncreased health regeneration.					
+13788	spellbook	38	Lightning Reflexes	Rank 2	Increases your Agility by $s1%.						
+13789	spellbook	38	Lightning Reflexes	Rank 3	Increases your Agility by $s1%.						
+13790	spellbook	38	Lightning Reflexes	Rank 4	Increases your Agility by $s1%.						
+13791	spellbook	38	Lightning Reflexes	Rank 5	Increases your Agility by $s1%.						
+13792	spellbook	38	Improved Gouge	Rank 3	Increases the effect duration of your Gouge ability by $/1000;S1 sec.						
+13793	spellbook	38	Improved Gouge	Rank 2	Increases the effect duration of your Gouge ability by $/1000;S1 sec.						
+13794	spellbook	333	Enchant Cloak - Resistance		Permanently enchant a cloak to give 3 to all resistances.						
+13795	spellbook	51	Immolation Trap	Rank 1	Place a fire trap that will burn the first enemy to approach for ${$RAP*0.1+$13797m1*5} Fire damage over $13797d.  Trap will exist for $d.  Only one trap can be active at a time.						
+13796	all		Resistance								
+13797	spellbook	51	Immolation Trap Effect	Rank 1		$s1 Fire damage every $t1 seconds.					
+13800	spellbook	38	Mace Specialization	Rank 2	Increases the damage dealt by your critical strikes with maces by $s2%, and gives you a $h% chance to stun your target for $5530d with a mace.						
+13801	spellbook	38	Mace Specialization	Rank 3	Increases the damage dealt by your critical strikes with maces by $s2%, and gives you a $h% chance to stun your target for $5530d with a mace.						
+13802	spellbook	38	Mace Specialization	Rank 4	Increases the damage dealt by your critical strikes with maces by $s2%, and gives you a $h% chance to stun your target for $5530d with a mace.						
+13803	spellbook	38	Mace Specialization	Rank 5	Increases the damage dealt by your critical strikes with maces by $s2%, and gives you a $h% chance to stun your target for $5530d with a mace.						
+13804	spellbook	38	Dagger Specialization	Rank 2	Increases your chance to get a critical strike with Daggers by $s1%.						
+13805	spellbook	38	Dagger Specialization	Rank 3	Increases your chance to get a critical strike with Daggers by $s1%.						
+13806	spellbook	38	Dagger Specialization	Rank 4	Increases your chance to get a critical strike with Daggers by $s1%.						
+13807	spellbook	38	Dagger Specialization	Rank 5	Increases your chance to get a critical strike with Daggers by $s1%.						
+13808	all		M73 Frag Grenade		Inflicts $s1 Fire damage and stuns targets in a 10 yard radius for $d.  Any damage will break the effect.	Stunned.  Any damage will break the effect.					
+13809	spellbook	51	Frost Trap		Place a frost trap that creates an ice slick around itself for $13810d when the first enemy approaches it.  All enemies within $13810a1 yards will be slowed by $13810s1% while in the area of effect.  Trap will exist for $d.  Only one trap can be active at a time.						
+13810	all		Frost Trap Aura		Place a frost trap that creates an ice slick around itself for $13810d when the first enemy approaches it.  All enemies within $13810a1 yards will be slowed by $13810s1% while in the area of effect.  Trap will exist for $13809d.  Only one trap can be active at a time.	Movement speed slowed by $s1%.					
+13812	spellbook	51	Explosive Trap Effect	Rank 1		$s2 Fire damage every $t2 seconds.					
+13813	spellbook	51	Explosive Trap	Rank 1	Place a fire trap that explodes when an enemy approaches, causing ${$RAP*0.1+$13812m1} to ${$RAP*0.1+$13812M1} Fire damage and burning all enemies for $13812o2 additional Fire damage over $13812d to all within $13812a1 yards.  Trap will exist for $d.  Only one trap can be active at a time.						
+13815	spellbook	333	Enchant Gloves - Agility		Permanently enchant gloves to grant +5 Agility.						
+13817	spellbook	333	Enchant Shield - Stamina		Permanently enchant a shield to increase Stamina by 5.						
+13819	spellbook	594,777	Summon Warhorse	Summon	Summons a warhorse, which serves as a mount.  Speed is increased by $s2%. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+13820	all		Summon Warhorse	Summon							
+13821	all		Goblin Rocket Helmet								
+13822	spellbook	333	Enchant Bracer - Intellect		Permanently enchants bracers to give +5 Intellect.						
+13823	all		Greater Agility								
+13824	all		Stats								
+13825	all		Greater Intellect								
+13826	all		Greater Spirit								
+13827	all		Greater Stamina								
+13828	all		Greater Strength								
+13830	all		Increase Fire Dam 29		Increases damage done by Fire spells and effects by up to $s1.						
+13831	all		Increase Frost Dam 29		Increases damage done by Frost spells and effects by up to $s1.						
+13832	spellbook	38	Precision	Rank 2	Increases your chance to hit with weapons by $s1%.						
+13835	all		Unkillable Off								
+13836	spellbook	333	Enchant Boots - Stamina		Permanently enchant boots to give +5 Stamina.						
+13838	all		Advanced Mining								
+13839	all		Advanced Herbalism								
+13840	all		Lesser Stealth								
+13841	spellbook	333	Enchant Gloves - Advanced Mining		Permanently enchant gloves to increase mining skill by 5.						
+13843	spellbook	38	Precision	Rank 3	Increases your chance to hit with weapons by $s1%.						
+13844	spellbook	38	Precision	Rank 4	Increases your chance to hit with weapons by $s1%.						
+13845	spellbook	38	Precision	Rank 5	Increases your chance to hit with weapons by $s1%.						
+13846	spellbook	333	Enchant Bracer - Greater Spirit		Permanently enchant bracers to increase Spirit by 7.						
+13847	all		Recklessness		Immune to fear effects.\nAll attacks do critical hits.\nArmor reduced by $s2%.	Immune to fear effects.\nAll attacks do critical hits.\nArmor reduced by $s2%.					
+13848	spellbook	38	Dual Wield Specialization	Rank 2	Increases the damage done by your offhand weapon by $s1%.						
+13849	spellbook	38	Dual Wield Specialization	Rank 3	Increases the damage done by your offhand weapon by $s1%.						
+13851	spellbook	38	Dual Wield Specialization	Rank 4	Increases the damage done by your offhand weapon by $s1%.						
+13852	spellbook	38	Dual Wield Specialization	Rank 5	Increases the damage done by your offhand weapon by $s1%.						
+13853	spellbook	38	Deflection	Rank 2	Increases your Parry chance by $s1%.						
+13854	spellbook	38	Deflection	Rank 3	Increases your Parry chance by $s1%.						
+13855	spellbook	38	Deflection	Rank 4	Increases your Parry chance by $s1%.						
+13856	spellbook	38	Deflection	Rank 5	Increases your Parry chance by $s1%.						
+13857	all		Prayer of Healing		Invokes Holy magic to heal nearby party members.						
+13858	spellbook	333	Enchant Chest - Superior Health		Permanently enchant a piece of chest armor to grant +50 health.						
+13860	all		Mind Blast		Inflicts Shadow damage to an enemy.						
+13862	all		Superior Health								
+13863	spellbook	38	Improved Sinister Strike	Rank 2	Reduces the Energy cost of your Sinister Strike ability by $s1.						
+13864	all		Power Word: Fortitude		Increases an ally's Stamina for $d.	Stamina increased by $s1.					
+13865	spellbook	38	Puncturing Wounds	Rank 2	Increases the critical strike chance of your Backstab ability by $s1%, and the critical strike chance of your Mutilate ability by $s2%.						
+13866	spellbook	38	Puncturing Wounds	Rank 3	Increases the critical strike chance of your Backstab ability by $s1%, and the critical strike chance of your Mutilate ability by $s2%.						
+13867	spellbook	38	Improved Kick	Rank 2	Gives your Kick ability a $h% chance to silence the target for $18425d.						
+13868	spellbook	333	Enchant Gloves - Advanced Herbalism		Permanently enchant gloves to increase herbalism skill by 5.						
+13872	spellbook	38	Endurance	Rank 2	Reduces the cooldown of your Sprint and Evasion abilities by $/60000;S1 min.						
+13874	all		Divine Shield		Protects the caster from all attacks and spells for $d., but also increases the time between attacks by $s2% during that time.	Immune to all attacks and spells.\nTime between attacks increased by $s2%.					
+13875	spellbook	38	Improved Sprint	Rank 2	Gives a $s1% chance to remove all Movement Impairing effects when you activate your Sprint ability.						
+13877	spellbook	38	Blade Flurry		Increases your attack speed by $s1%.  In addition, attacks strike an additional nearby opponent.  Lasts $d.	Attack speed increased by $s1%.  Weapon attacks strike an additional nearby opponent.					
+13878	all		Scorch		Scorches an enemy for Fire damage.						
+13879	all		Magma Splash								
+13880	all		Magma Splash		Splashes the target with Magma, melting its armor, dealing Fire damage and additional Fire damage for $d.	$s2 Fire damage inflicted every $t2 sec.\nArmor reduced by $s3.					
+13881	all		Increase Spell Dam 29		Increases damage and healing done by magical spells and effects by up to $s1.						
+13882	spellbook	333	Enchant Cloak - Lesser Agility		Permanently enchant a cloak to increase Agility by 3.						
+13884	all		Withering Poison			Nature damage inflicted every $t1 sec.\nReduced Strength and Agility.					
+13886	all		Withering Poison Proc								
+13887	spellbook	333	Enchant Gloves - Strength		Permanently enchant gloves to grant +5 Strength.						
+13889	all		Minor Speed								
+13890	spellbook	333	Enchant Boots - Minor Speed		Permanently enchant boots to give a slight movement speed increase.						
+13895	all		Summon Spawn of Bael'Gar		Summons $s3 $lSpawn of Bael'Gar:lSpawns of Bael'Gar; in a selected area to aid the caster in battle for $d. The violent summoning also inflicts $s1 Fire damage to enemies in the selected area.						
+13896	spellbook	792	Feedback	Rank 1	The priest becomes surrounded with anti-magic energy.  Any successful spell cast against the priest will burn $6347s1 of the attacker's Mana, causing 1 Shadow damage for each point of Mana burned.  Lasts $d.	Anti-magic energy will burn $6347s1 of the attacker's Mana, causing 1 Shadow damage for each point of Mana burned.					
+13897	all		Fiery Weapon								
+13898	spellbook	333	Enchant Weapon - Fiery Weapon		Permanently enchant a melee weapon to often strike for 40 additional fire damage.						
+13899	all		Fire Storm		Calls down a pillar of flame, burning all enemies in a selected area for $s1 Fire damage and an additional $s2 damage every $t2 sec. for $d.						
+13900	all		Fiery Burst		Inflicts Fire damage to all enemies in a selected area.						
+13901	all		Arcane Bolt		Hurls a magical bolt at an enemy, inflicting Arcane damage.						
+13902	all		Fist of Ragnaros		Stuns an enemy, rendering it unable to move or attack for $d.	Stunned.					
+13903	all		Seal of Sacrifice		Places a seal on a party member, causing the caster to split $s1% of all damage taken by that party member. Lasts $d.	Splitting $s1% of all damage taken by a party member.					
+13905	spellbook	333	Enchant Shield - Greater Spirit		Permanently enchant a shield to give +7 Spirit.						
+13907	all		Smite Demon		Stunned.	Stunned.					
+13908	spellbook	792	Desperate Prayer	Rank 1	Instantly heals the caster for $s1.						
+13909	all		Create Elemental Totem								
+13910	all		Force Create Elemental Totem								
+13912	all		Princess Summons Portal		Used by Princess Bronzebeard to open a portal to Ironforge.						
+13913	all		Blazerunner's Aura								
+13914	all		Blazerunner's Aura								
+13915	spellbook	333	Enchant Weapon - Demonslaying		Permanently enchant a melee weapon to have a chance of stunning and doing additional damage against demons.						
+13917	spellbook	333	Enchant Chest - Superior Mana		Permanently enchant a piece of chest armor to give +65 mana.						
+13918	all		Superior Mana								
+13920	spellbook	333	Enchanting	Artisan	Allows an enchanter to put masterful enchantments on weapons and armor up to a maximum potential skill of 300.						
+13921	all		Artisan Enchanter								
+13922	all		Deflection								
+13923	all		Frost Resistance								
+13927	all		Minor Mount Speed								
+13928	all		Minor Haste								
+13930	all		Lesser Deflection								
+13931	spellbook	333	Enchant Bracer - Deflection		Permanently enchants bracers to give +3 Defense.						
+13933	spellbook	333	Enchant Shield - Frost Resistance		Permanently enchant a shield to increase Frost resistance by 8.						
+13935	spellbook	333	Enchant Boots - Agility		Permanently enchant boots to give +5 Agility.						
+13937	spellbook	333	Enchant 2H Weapon - Greater Impact		Permanently enchant a two-handed melee weapon to do 7 additional points of damage.						
+13939	spellbook	333	Enchant Bracer - Greater Strength		Permanently enchants bracers to give +7 Strength.						
+13941	spellbook	333	Enchant Chest - Stats		Permanently enchant a piece of chest armor to grant +3 to all stats.						
+13943	spellbook	333	Enchant Weapon - Greater Striking		Permanently enchant a melee weapon to do 4 additional points of damage.						
+13945	spellbook	333	Enchant Bracer - Greater Stamina		Permanently enchant bracers to increase Stamina by 7.						
+13947	spellbook	333	Enchant Gloves - Riding Skill		Permanently enchant gloves to increase mount speed by 2%.  Must be level 70 or lower to gain this benefit.						
+13948	spellbook	333	Enchant Gloves - Minor Haste		Permanently enchant gloves to grant a +$13928s% melee and ranged attack speed bonus.						
+13951	all		Rebuild		Repairs a nearby friendly golem for $s1 damage every $t1 sec. over $d.	$s1 damage repaired every $t1 sec.					
+13952	all		Holy Light		Calls upon Holy magic to heal an ally.						
+13953	all		Holy Strike		Consecrates the caster's weapon, inflicting additional damage on its next attack. All damage inflicted is based on Holy magic.						
+13954	all		NPC PORT TEST		Sends player to Razelikh's plateau.						
+13958	spellbook	39	Master of Deception	Rank 1	Reduces the chance enemies have to detect you while in Stealth mode.						
+13959	all		Electrostatic Charge		When struck in combat has a $h% chance of inflicting $16782s1 Nature damage to the attacker.						
+13960	spellbook	38	Sword Specialization	Rank 1	Gives you a $h% chance to get an extra attack on the same target after hitting your target with your Sword.						
+13961	spellbook	38	Sword Specialization	Rank 2	Gives you a $h% chance to get an extra attack on the same target after hitting your target with your Sword.						
+13962	spellbook	38	Sword Specialization	Rank 3	Gives you a $h% chance to get an extra attack on the same target after hitting your target with your Sword.						
+13963	spellbook	38	Sword Specialization	Rank 4	Gives you a $h% chance to get an extra attack on the same target after hitting your target with your Sword.						
+13964	spellbook	38	Sword Specialization	Rank 5	Gives you a $h% chance to get an extra attack on the same target after hitting your target with your Sword.						
+13965	all		Create Krom'zar's Banner								
+13966	spellbook	38	Fist Weapon Specialization	Rank 2	Increases your chance to get a critical strike with Fist Weapons by $s1%.						
+13967	spellbook	38	Fist Weapon Specialization	Rank 3	Increases your chance to get a critical strike with Fist Weapons by $s1%.						
+13968	spellbook	38	Fist Weapon Specialization	Rank 4	Increases your chance to get a critical strike with Fist Weapons by $s1%.						
+13969	spellbook	38	Fist Weapon Specialization	Rank 5	Increases your chance to get a critical strike with Fist Weapons by $s1%.						
+13970	spellbook	39	Master of Deception	Rank 2	Reduces the chance enemies have to detect you while in Stealth mode.  More effective than Master of Deception (Rank 1).						
+13971	spellbook	39	Master of Deception	Rank 3	Reduces the chance enemies have to detect you while in Stealth mode.  More effective than Master of Deception (Rank 2).						
+13972	spellbook	39	Master of Deception	Rank 4	Reduces the chance enemies have to detect you while in Stealth mode.  More effective than Master of Deception (Rank 3).						
+13973	spellbook	39	Master of Deception	Rank 5	Reduces the chance enemies have to detect you while in Stealth mode.  More effective than Master of Deception (Rank 4).						
+13975	spellbook	39	Camouflage	Rank 1	Increases your speed while stealthed by $s1% and reduces the cooldown of your Stealth ability by $/1000;s2 sec.						
+13976	spellbook	39	Initiative	Rank 1	Gives you a $s1% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.						
+13977	spellbook	39	Initiative	Rank 1							
+13978	all		Summon Aquementas		Summons Aquementas.						
+13979	spellbook	39	Initiative	Rank 2	Gives you a $s1% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.						
+13980	spellbook	39	Initiative	Rank 3	Gives you a $s1% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.						
+13981	spellbook	39	Elusiveness	Rank 1	Reduces the cooldown of your Vanish and Blind abilities by $/1000;S1 sec.						
+13982	all		Bael'Gar's Fiery Essence		Use on the remains of Bael'Gar to capture his fiery essence.						
+13983	spellbook	39	Setup	Rank 1	Gives you a $h% chance to add a combo point to your target after dodging their attack or fully resisting one of their spells.						
+14008	all		Miblon's Bait		Place near Miblon Snarltooth.						
+14027	all		Attack Power 24		+$s1 Attack Power.						
+14030	all		Hooked Net		Immobilizes an enemy for $d. and inflicts Physical damage.	Immobilized.					
+14032	all		Shadow Word: Pain		Utters a word of darkness, inflicting Shadow damage to an enemy every $t1 sec. for $d.	Shadow damage inflicted every $t1 sec.					
+14033	all		Mana Burn		Hits an enemy with an anti-mana bolt. For each point of mana consumed by the bolt, the target takes $e1 damage.						
+14034	all		Fireball		Inflicts Fire damage to an enemy.						
+14047	all		Increase Spell Dam 23		Increases damage and healing done by magical spells and effects by up to $s1.						
+14048	all		Increased 1H Axe		Increases axe skill rating by $s1.						
+14049	all		Attack Power 40		+$s1 Attack Power.						
+14050	all		Quest Suicide		Drink in the Tanaris Graveyard.						
+14051	all		Increased Dagger		Increases dagger skill rating by $s1.						
+14052	all		Attack Power 60		+$s1 Attack Power.						
+14053	all		Heal		Heal your target for $s1.						
+14054	all		Increase Spell Dam 27		Increases damage and healing done by magical spells and effects by up to $s1.						
+14055	all		Increase Spell Dam 35		Increases damage and healing done by magical spells and effects by up to $s1.						
+14056	all		Attack Power 50		+$s1 Attack Power.						
+14057	spellbook	39	Opportunity	Rank 1	Increases the damage dealt when striking from behind with your Backstab, Mutilate, Garrote and Ambush abilities by $s1%.						
+14062	spellbook	39	Camouflage	Rank 2	Increases your speed while stealthed by $s1% and reduces the cooldown of your Stealth ability by $/1000;s2 sec.						
+14063	spellbook	39	Camouflage	Rank 3	Increases your speed while stealthed by $s1% and reduces the cooldown of your Stealth ability by $/1000;s2 sec.						
+14064	spellbook	39	Camouflage	Rank 4	Increases your speed while stealthed by $s1% and reduces the cooldown of your Stealth ability by $/1000;s2 sec.						
+14065	spellbook	39	Camouflage	Rank 5	Increases your speed while stealthed by $s1% and reduces the cooldown of your Stealth ability by $/1000;s2 sec.						
+14066	spellbook	39	Elusiveness	Rank 2	Reduces the cooldown of your Vanish and Blind abilities by $/1000;S1 sec.						
+14070	spellbook	39	Setup	Rank 2	Gives you a $h% chance to add a combo point to your target after dodging their attack or fully resisting one of their spells.						
+14071	spellbook	39	Setup	Rank 3	Gives you a $h% chance to add a combo point to your target after dodging their attack or fully resisting one of their spells.						
+14072	spellbook	39	Opportunity	Rank 2	Increases the damage dealt when striking from behind with your Backstab, Mutilate, Garrote and Ambush abilities by $s1%.						
+14073	spellbook	39	Opportunity	Rank 3	Increases the damage dealt when striking from behind with your Backstab, Mutilate, Garrote and Ambush abilities by $s1%.						
+14074	spellbook	39	Opportunity	Rank 4	Increases the damage dealt when striking from behind with your Backstab, Mutilate, Garrote and Ambush abilities by $s1%.						
+14075	spellbook	39	Opportunity	Rank 5	Increases the damage dealt when striking from behind with your Backstab, Mutilate, Garrote and Ambush abilities by $s1%.						
+14076	spellbook	39	Dirty Tricks	Rank 1	Increases the range of your Blind and Sap abilities by $s1 yards and reduces the energy cost of your Blind and Sap abilities by $s2%.						
+14079	spellbook	39	Improved Ambush	Rank 1	Increases the critical strike chance of your Ambush ability by $s1%.						
+14080	spellbook	39	Improved Ambush	Rank 2	Increases the critical strike chance of your Ambush ability by $s1%.						
+14081	spellbook	39	Improved Ambush	Rank 3	Increases the critical strike chance of your Ambush ability by $s1%.						
+14082	spellbook	39	Dirty Deeds	Rank 1	Reduces the Energy cost of your Cheap Shot and Garrote abilities by $s1.  Additionally, your special abilities cause 10% more damage against targets below 35% health.						
+14083	spellbook	39	Dirty Deeds	Rank 2	Reduces the Energy cost of your Cheap Shot and Garrote abilities by $s1.  Additionally, your special abilities cause 20% more damage against targets below 35% health.						
+14087	all		Rend		Wounds the target causing them to bleed for $o1 damage over $d.	Bleeding for $s1 damage every $t1 sec.					
+14089	all		Attack Power 36		+$s1 Attack Power.						
+14093	spellbook	39	Vanished	Rank 1							
+14094	spellbook	39	Dirty Tricks	Rank 2	Increases the range of your Blind and Sap abilities by $s1 yards and reduces the energy cost of your Blind and Sap abilities by $s2%.						
+14097	all		Demon Slaying 45		+$s1 Attack Power when fighting Demons.						
+14098	all		Demon Slaying 117		+$s1 Attack Power when fighting Demons.						
+14099	all		Mighty Blow		Inflicts normal damage plus a bonus to an enemy, knocking it back.						
+14100	all		Terrifying Roar		Causes nearby enemies to flee in fear for $d.	Fleeing in fear.					
+14102	all		Head Smash		Inflicts normal damage plus $s1 on an enemy, stunning it for $d.	Stunned.					
+14103	all		Firebolt		Blasts a target for $s1 Fire damage.						
+14104	all		Spikes		Armor spikes deal damage to melee attackers.						
+14105	all		Frost Blast		Blasts a target for $s1 Frost damage.						
+14106	all		Shadow Bolt		Sends a shadowy bolt at the enemy causing $s1 Shadow damage.						
+14108	all		Venomhide Poison		Poisons an attacking enemy, also potentially splashing venom onto its weapon.						
+14109	all		Lightning Bolt	Rank 1	Blasts a target for $s1 Nature damage.						
+14110	all		Bloodpetal Poison		Poisons an enemy for $d. and drains its mana every $t2 sec., transferring it to the caster.	Nature damage inflicted every $t1 sec.\nMana leeched every $t2 sec.					
+14111	all		Bloodpetal Poison Proc								
+14112	all		Flaying Vine		Inflicts normal damage plus $s1 to an enemy and its nearest allies, affecting up to $x1 targets.						
+14113	spellbook	253	Improved Poisons	Rank 1	Increases the chance to apply poisons to your target by $s1%, and increases the duration of your poison on your weapon by $s2%.						
+14114	spellbook	253	Improved Poisons	Rank 2	Increases the chance to apply poisons to your target by $s1%, and increases the duration of your poison on your weapon by $s2%.						
+14115	spellbook	253	Improved Poisons	Rank 3	Increases the chance to apply poisons to your target by $s1%, and increases the duration of your poison on your weapon by $s2%.						
+14116	spellbook	253	Improved Poisons	Rank 4	Increases the chance to apply poisons to your target by $s1%, and increases the duration of your poison on your weapon by $s2%.						
+14117	spellbook	253	Improved Poisons	Rank 5	Increases the chance to apply poisons to your target by $s1%, and increases the duration of your poison on your weapon by $s2%.						
+14118	all		Rend		Wounds the target causing them to bleed for $o1 damage over $d.	Bleeding for $s1 damage every $t1 sec.					
+14119	all		Lightning Bolt	Rank 1	Blasts a target for $s1 Nature damage.						
+14120	all		Tunneler Acid		Eats away at an enemy's armor, reducing it by $s1 per application. Can be applied up to 5 times. Lasts $d.	Reduced armor.					
+14121	all		Increased 1H Sword		Reduces your chance to be dodged or parried by $s1%.						
+14122	all		Shadow Bolt		Sends a shadowy bolt at the enemy causing $s1 Shadow damage.						
+14124	all		Increased 2H Mace		Increases two-handed maces skill rating by $s1.						
+14125	all		Opening Secret Safe		Use on the Secret Safe.						
+14126	all		Wound		Wounds the target for $s1 damage.						
+14127	all		Increase Spell Dam 28		Increases damage and healing done by magical spells and effects by up to $s1.						
+14128	spellbook	253	Lethality	Rank 1	Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Ghostly Strike, Mutilate, Shiv, and Hemorrhage abilities by $s1%.						
+14129	all		Item - Purify		Cleanses a friendly target, removing $m1 poison $leffect:effects;, $m2 disease $leffect:effects;, and $m3 magic $leffect:effects;.						
+14130	all		Muculent Fever			Spirit reduced by $s1.\nStrength reduced by $s2.					
+14132	spellbook	253	Lethality	Rank 2	Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Ghostly Strike, Mutilate, Shiv, and Hemorrhage abilities by $s1%.						
+14133	all		Muculent Fever Proc								
+14134	all		Item - Purify		Purifies the friendly target, removing $m1 disease $leffect:effects; and $m2 poison $leffect:effects;.						
+14135	spellbook	253	Lethality	Rank 3	Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Ghostly Strike, Mutilate, Shiv, and Hemorrhage abilities by $s1%.						
+14136	spellbook	253	Lethality	Rank 4	Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Ghostly Strike, Mutilate, Shiv, and Hemorrhage abilities by $s1%.						
+14137	spellbook	253	Lethality	Rank 5	Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Ghostly Strike, Mutilate, Shiv, and Hemorrhage abilities by $s1%.						
+14138	spellbook	253	Malice	Rank 1	Increases your critical strike chance by $s1%.						
+14139	spellbook	253	Malice	Rank 2	Increases your critical strike chance by $s1%.						
+14140	spellbook	253	Malice	Rank 3	Increases your critical strike chance by $s1%.						
+14141	spellbook	253	Malice	Rank 4	Increases your critical strike chance by $s1%.						
+14142	spellbook	253	Malice	Rank 5	Increases your critical strike chance by $s1%.						
+14143	all		Remorseless	Rank 1	After killing an opponent that yields experience or honor, gives you a $14143s1% increased critical strike chance on your next Sinister Strike, Hemorrhage, Backstab, Mutilate, Ambush, or Ghostly Strike.  Lasts $14143d.	Critical strike chance for your next Sinister Strike, Backstab, Mutilate, Ambush, Hemorrhage, or Ghostly strike increased by $s1%.					
+14144	spellbook	253	Remorseless Attacks	Rank 1	After killing an opponent that yields experience or honor, gives you a $14143s1% increased critical strike chance on your next Sinister Strike, Hemorrhage, Backstab, Mutilate, Ambush, or Ghostly Strike.  Lasts $14143d.						
+14145	all		Fire Blast		Inflicts Fire damage to an enemy.						
+14146	all		Clone								
+14147	all		Acid Slime			$s1 Nature damage inflicted every $t1 sec.\nArmor reduced by $s2.					
+14148	spellbook	253	Remorseless Attacks	Rank 2	After killing an opponent that yields experience or honor, gives you a $14149s1% increased critical strike chance on your next Sinister Strike, Hemorrhage, Backstab, Mutilate, Ambush, or Ghostly Strike.  Lasts $14149d.						
+14149	all		Remorseless	Rank 2	After killing an opponent that yields experience or honor, gives you a $14149s1% increased critical strike chance on your next Sinister Strike, Hemorrhage, Backstab, Mutilate, Ambush, or Ghostly Strike.  Lasts $14149d.	Critical strike chance for your next Sinister Strike, Backstab, Mutilate, Ambush, Hemorrhage, or Ghostly strike increased by $s1%.					
+14156	spellbook	253	Ruthlessness	Rank 1	Gives your melee finishing moves a $h% chance to add a combo point to your target.						
+14157	all		Ruthlessness	Rank 1							
+14158	spellbook	253	Murder	Rank 1	Increases all damage caused against Humanoid, Giant, Beast and Dragonkin targets by $s1%.						
+14159	spellbook	253	Murder	Rank 2	Increases all damage caused against Humanoid, Giant, Beast and Dragonkin targets by $s1%.						
+14160	spellbook	253	Ruthlessness	Rank 2	Gives your melee finishing moves a $h% chance to add a combo point to your target.						
+14161	spellbook	253	Ruthlessness	Rank 3	Gives your melee finishing moves a $h% chance to add a combo point to your target.						
+14162	spellbook	253	Improved Eviscerate	Rank 1	Increases the damage done by your Eviscerate ability by $s1%.						
+14163	spellbook	253	Improved Eviscerate	Rank 2	Increases the damage done by your Eviscerate ability by $s1%.						
+14164	spellbook	253	Improved Eviscerate	Rank 3	Increases the damage done by your Eviscerate ability by $s1%.						
+14165	spellbook	253	Improved Slice and Dice	Rank 1	Increases the duration of your Slice and Dice ability by $s1%.						
+14166	spellbook	253	Improved Slice and Dice	Rank 2	Increases the duration of your Slice and Dice ability by $s1%.						
+14167	spellbook	253	Improved Slice and Dice	Rank 3	Increases the duration of your Slice and Dice ability by $s1%.						
+14168	spellbook	253	Improved Expose Armor	Rank 1	Increases the armor reduced by your Expose Armor ability by $s1%.						
+14169	spellbook	253	Improved Expose Armor	Rank 2	Increases the armor reduced by your Expose Armor ability by $s1%.						
+14170	all		zzOLDImproved Expose Armor								
+14171	spellbook	39	Serrated Blades	Rank 1	Causes your attacks to ignore $s2 of your target's Armor and increases the damage dealt by your Rupture ability by $s1%.  The amount of Armor reduced increases with your level.						
+14172	spellbook	39	Serrated Blades	Rank 2	Causes your attacks to ignore $s2 of your target's Armor and increases the damage dealt by your Rupture ability by $s1%.  The amount of Armor reduced increases with your level.						
+14173	spellbook	39	Serrated Blades	Rank 3	Causes your attacks to ignore $s2 of your target's Armor and increases the damage dealt by your Rupture ability by $s1%.  The amount of Armor reduced increases with your level.						
+14174	spellbook	253	Improved Kidney Shot	Rank 1	While affected by your Kidney Shot ability, the target receives an additional $s1% damage from all sources.						
+14175	spellbook	253	Improved Kidney Shot	Rank 2	While affected by your Kidney Shot ability, the target receives an additional $s1% damage from all sources.						
+14176	spellbook	253	Improved Kidney Shot	Rank 3	While affected by your Kidney Shot ability, the target receives an additional $s1% damage from all sources.						
+14177	spellbook	253	Cold Blood		When activated, increases the critical strike chance of your next offensive ability by $s1%.	Critical strike chance of your next offensive ability increased by $s1%.					
+14178	all		Sticky Tar								
+14179	spellbook	39	Relentless Strikes		Your finishing moves have a $b1% chance per combo point to restore $14181s1 energy.						
+14180	all		Sticky Tar			Not wielding a weapon.					
+14181	spellbook	39	Relentless Strikes Effect	Rank 1	Your finishing moves have a chance per combo point to restore $14181s1 energy.						
+14183	spellbook	39	Premeditation		When used, adds $s1 combo points to your target.  You must add to or use those combo points within $d or the combo points are lost.						
+14185	spellbook	39	Preparation		When activated, this ability immediately finishes the cooldown on your Evasion, Sprint, Vanish, Cold Blood, Shadowstep and Premeditation abilities.						
+14186	spellbook	253	Seal Fate	Rank 1	Your critical strikes from abilities that add combo points have a $h% chance to add an additional combo point.						

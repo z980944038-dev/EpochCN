@@ -1,0 +1,1001 @@
+﻿spell_id	priority	skill_line_ids	name_en	rank_en	description_en	tooltip_en	name_zh	rank_zh	description_zh	tooltip_zh	notes
+34383	all		Attack Power - Feral (+0654)		Increases attack power by $s1 in Cat, Bear, Dire Bear, and Moonkin forms only.						
+34384	all		Create Krasus' Compendium		Combine Chapters 1-4 of Krasus' Compendium into the completed book.						
+34386	all		Create Hellfire Fire								
+34387	all		Detonating Rune Stones		Disables a Legion Transporter.  Requires 4 Demonic Rune Stones.						
+34388	all		Thunderstomp								
+34389	all		Throw Doomhammer								
+34390	all		Mannoroth Charges Thrall								
+34391	all		Mannoroth Attacks								
+34392	all		Stinger Rage		The caster goes into a frenzy, increasing melee attack speed and shooting a volley of stingers for $d.	Attack speed increased by $s2%.\n$s1 Nature damage dealt on every melee attack.					
+34393	all		Disabling Transporter Quest Credit		Gives quest credit for the Sever the Tie Quest.						
+34394	all		Stinger Frenzy		Deals Nature damage to the current target.						
+34395	all		Mannoroth Dies								
+34396	all		Zap								
+34397	all		Red Beam								
+34398	all		Flame Energy								
+34399	all		Shadow Energy								
+34400	all		A-52 Neuralyzer			The flash of light you did not see did not erase your memories.					
+34401	all		Arcane Energy								
+34402	all		Nature Energy								
+34403	all		Holy Energy								
+34404	all		Frost Energy								
+34405	all		Null Energy								
+34406	spellbook	777	Brown Elekk		Summons and dismisses a rideable Brown Elekk. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+34407	spellbook	777	Great Elite Elekk		Summons and dismisses a rideable Great Elite Elekk.   This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+34408	all		Despawn Glacius								
+34409	all		Frenzy		Increases the caster's attack speed by $s2% and the Physical damage it deals by $s1 for $d.	Physical damage dealt is increased by $s1.\nAttack speed increased by $s2%.					
+34410	all		Hellscream's Warsong		Increases hitpoints by 300. 15% haste to melee attacks. 10 mana regen every 5 seconds.	Increases hitpoints by 300. 15% haste to melee attacks. 10 mana regen every 5 seconds.					
+34411	spellbook	253	Mutilate	Rank 2	Instantly attacks with both weapons for an additional $34414s1 with each weapon.  Damage is increased by 50% against Poisoned targets.  Awards 2 combo points.						
+34412	spellbook	253	Mutilate	Rank 3	Instantly attacks with both weapons for an additional $34416s1 with each weapon.  Damage is increased by 50% against Poisoned targets.  Awards 2 combo points.						
+34413	spellbook	253	Mutilate	Rank 4	Instantly attacks with both weapons for an additional $34419s1 with each weapon.  Damage is increased by 50% against Poisoned targets.  Awards 2 combo points.						
+34414	all		Mutilate	Rank 2	Instantly attacks with both weapons for an additional $34414s1 with each weapon.  Damage is increased by 50% against Poisoned targets.  Awards 2 combo points.						
+34415	all		Mutilate	Rank 2	Instantly attacks with both weapons for an additional $34414s1 with each weapon.  Damage is increased by 50% against Poisoned targets.  Awards 2 combo points.						
+34416	all		Mutilate	Rank 3	Instantly attacks with both weapons for an additional $34416s1 with each weapon.  Damage is increased by 50% against Poisoned targets.  Awards 2 combo points.						
+34417	all		Mutilate	Rank 3	Instantly attacks with both weapons for an additional $34416s1 with each weapon.  Damage is increased by 50% against Poisoned targets.  Awards 2 combo points.						
+34418	all		Mutilate	Rank 4	Instantly attacks with both weapons for an additional $34419s1 with each weapon.  Damage is increased by 50% against Poisoned targets.  Awards 2 combo points.						
+34419	all		Mutilate	Rank 4	Instantly attacks with both weapons for an additional $34419s1 with each weapon.  Damage is increased by 50% against Poisoned targets.  Awards 2 combo points.						
+34423	all		Renew		Heals an ally every $t1 sec. for $d.	Damage healed every $t1 sec.					
+34424	all		Shadow Armor								
+34425	all		Water Bolt		Hurls a watery bolt at an enemy, inflicting Frost damage.						
+34426	all		Greater Invisibility	Passive		Invisible.					
+34427	all		Ethereal Teleport								
+34428	spellbook	256	Victory Rush	Rank 1	Instantly attack the target causing ${$AP*$m1/100} damage.  Can only be used within $32216d after you kill an enemy that yields experience or honor.  Damage is based on your attack power.						
+34429	all		Shadowform								
+34430	all		Purple Beam								
+34431	all		Blue Banish								
+34432	all		Ribbon of Souls								
+34433	spellbook	78	Shadowfiend	Rank 1	Creates a shadowy fiend to attack the target.  Caster receives mana when the Shadowfiend deals damage.  Lasts $d.						
+34434	all		Aldor Spawn Controller								
+34435	all		Rain of Fire		Calls down a molten rain, burning all enemies in a selected area for $s1 Fire damage every $t1 sec. for $d.	$s1 Fire damage inflicted every $t1 sec.					
+34436	all		Shadow Burst		Let forth a burst of energy dealing $s1 Shadow damage to all enemies within 10 yards and removing all threat.						
+34437	all		Death Coil		Causes the enemy target to run in horror for $d and causes $s1 Shadow damage.  The caster gains 100% of the damage caused in health.	Horrified.					
+34438	all		Unstable Affliction		Shadow energy slowly destroys the target, causing $o1 damage over $d.  In addition, if the Unstable Affliction is dispelled it will cause $*9;s1 damage to the dispeller and silence them for $31117d.	$s1 Shadow damage every $t1 sec.  If dispelled, will cause $*9;s1 damage to the dispeller and silence them for $31117d.					
+34439	all		Unstable Affliction		Shadow energy slowly destroys the target, causing $o1 damage over $d.  In addition, if the Unstable Affliction is dispelled it will cause $*9;s1 damage to the dispeller and silence them for $31117d.	$s1 Shadow damage every $t1 sec.  If dispelled, will cause $*9;s1 damage to the dispeller and silence them for $31117d.					
+34441	all		Shadow Word: Pain		Utters a word of darkness, inflicting Shadow damage to an enemy every $t1 sec. for $d.	Shadow damage inflicted every $t1 sec.					
+34442	all		Despawn Consortium Laborer								
+34443	all		Tour Complete								
+34444	all		Summon Khadgar's Servant								
+34445	all		Trigger Khadgar's Servant								
+34446	all		Arcane Missiles		Launches magical missiles at an enemy, inflicting Arcane damage each second for $d.						
+34447	all		Arcane Missiles		Launches a magical missile at an enemy, inflicting Arcane damage.						
+34448	all		Serverside spell orb of translocation (gobjid=180911)								
+34449	all		Water Bolt Volley		Hurls a watery bolt at all nearby enemies within $a1, inflicting $s1 Frost damage.						
+34450	all		Transform: Peasant w/ wood 1.5 scale								
+34451	all		Impale		Inflicts Physical damage to an enemy every $t2 sec. for $d.	Physical damage inflicted every $t2 sec.					
+34452	all		Serverside spell orb of translocation (gobjid=180912)								
+34453	spellbook	50	Animal Handler	Rank 1	Increases your speed while mounted by $s1% and your pet's chance to hit by $s2%.  The mounted movement speed increase does not stack with other effects.						
+34454	spellbook	50	Animal Handler	Rank 2	Increases your speed while mounted by $s1% and your pet's chance to hit by $s2%.  The mounted movement speed increase does not stack with other effects.						
+34455	spellbook	50	Ferocious Inspiration	Rank 1	When your pet scores a critical hit, all party and raid members within $34456a1 yards have all their damage increased by $s2% for $34456d.						
+34456	all		Ferocious Inspiration			All damage increased.					
+34457	spellbook	270	Ferocious Inspiration	Rank 1							
+34459	spellbook	50	Ferocious Inspiration	Rank 2	When your pet scores a critical hit, all party and raid members within $34456a1 yards have all their damage increased by $s2% for $34456d.						
+34460	spellbook	50	Ferocious Inspiration	Rank 3	When your pet scores a critical hit, all party and raid members within $34456a1 yards have all their damage increased by $s2% for $34456d.						
+34461	all		Debug Debuff Trigger								
+34462	spellbook	50	Catlike Reflexes	Rank 1	Increases your chance to dodge by $s1% and your pet's chance to dodge by an additional $s2%.						
+34463	all		Debug Debuff								
+34464	spellbook	50	Catlike Reflexes	Rank 2	Increases your chance to dodge by $s1% and your pet's chance to dodge by an additional $s2%.						
+34465	spellbook	50	Catlike Reflexes	Rank 3	Increases your chance to dodge by $s1% and your pet's chance to dodge by an additional $s2%.						
+34466	spellbook	50	Serpent's Swiftness	Rank 1	Increases ranged combat attack speed by $s1% and your pet's melee attack speed by $s2%.						
+34467	spellbook	50	Serpent's Swiftness	Rank 2	Increases ranged combat attack speed by $s1% and your pet's melee attack speed by $s2%.						
+34468	spellbook	50	Serpent's Swiftness	Rank 3	Increases ranged combat attack speed by $s1% and your pet's melee attack speed by $s2%.						
+34469	spellbook	50	Serpent's Swiftness	Rank 4	Increases ranged combat attack speed by $s1% and your pet's melee attack speed by $s2%.						
+34470	spellbook	50	Serpent's Swiftness	Rank 5	Increases ranged combat attack speed by $s1% and your pet's melee attack speed by $s2%.						
+34471	spellbook	50	The Beast Within		When your pet is under the effects of Bestial Wrath, you also go into a rage causing $34471s2% additional damage and reducing mana costs of all spells by $34471s1% for $34471d.  While enraged, you do not feel pity or remorse or fear and you cannot be stopped unless killed.	Enraged.					
+34472	all		Silent Hunter	Rank 1	Reduces threat from all attacks by $s1%.						
+34473	all		Silent Hunter	Rank 2	Reduces threat from all attacks by $s1%.						
+34474	all		Silent Hunter	Rank 3	Reduces threat from all attacks by $s1%.						
+34475	spellbook	163	Combat Experience	Rank 1	Increases your total Agility by $s1% and your total Intellect by $s2%.						
+34476	spellbook	163	Combat Experience	Rank 2	Increases your total Agility by $s1% and your total Intellect by $s2%.						
+34477	spellbook	51	Misdirection		Threat caused by your next 3 attacks is redirected to the target raid member.  Caster and target can only be affected by one Misdirection spell at a time.  Effect lasts $d.	Redirecting threat.					
+34478	all		Displacement	Rank 1	Reduces your chance to be hit by all attacks by $s1%.						
+34479	all		Displacement	Rank 2	Reduces your chance to be hit by all attacks by $s1%.						
+34480	all		Gravity Lapse		Reverses gravity within the area of effect.	You feel lighter...					
+34481	all		Displacement	Rank 3	Reduces your chance to be hit by all attacks by $s1%.						
+34482	spellbook	163	Careful Aim	Rank 1	Increases your ranged attack power by an amount equal to $s1% of your total Intellect.						
+34483	spellbook	163	Careful Aim	Rank 2	Increases your ranged attack power by an amount equal to $s1% of your total Intellect.						
+34484	spellbook	163	Careful Aim	Rank 3	Increases your ranged attack power by an amount equal to $s1% of your total Intellect.						
+34485	spellbook	163	Master Marksman	Rank 1	Increases your ranged attack power by $s1%.						
+34486	spellbook	163	Master Marksman	Rank 2	Increases your ranged attack power by $s1%.						
+34487	spellbook	163	Master Marksman	Rank 3	Increases your ranged attack power by $s1%.						
+34488	spellbook	163	Master Marksman	Rank 4	Increases your ranged attack power by $s1%.						
+34489	spellbook	163	Master Marksman	Rank 5	Increases your ranged attack power by $s1%.						
+34490	spellbook	163	Silencing Shot		A shot that deals $s1% weapon damage and Silences the target for $d.	Silenced.					
+34491	spellbook	51	Resourcefulness	Rank 1	Reduces the mana cost of all traps and melee abilities by $s1% and reduces the cooldown of all traps by $/1000;s2 sec.						
+34492	spellbook	51	Resourcefulness	Rank 2	Reduces the mana cost of all traps and melee abilities by $s1% and reduces the cooldown of all traps by $/1000;s2 sec.						
+34493	spellbook	51	Resourcefulness	Rank 3	Reduces the mana cost of all traps and melee abilities by $s1% and reduces the cooldown of all traps by $/1000;s2 sec.						
+34494	spellbook	51	Survival Instincts	Rank 1	Reduces all damage taken by $s1% and increases attack power by $s2%.						
+34495	all		Increase Healing 299		Increases spell power by $s1.						
+34496	spellbook	51	Survival Instincts	Rank 2	Reduces all damage taken by $s1% and increases attack power by $s2%.						
+34497	spellbook	51	Thrill of the Hunt	Rank 1	Gives you a $s1% chance to regain 40% of the mana cost of any shot when it critically hits.						
+34498	spellbook	51	Thrill of the Hunt	Rank 2	Gives you a $s1% chance to regain 40% of the mana cost of any shot when it critically hits.						
+34499	spellbook	51	Thrill of the Hunt	Rank 3	Gives you a $s1% chance to regain 40% of the mana cost of any shot when it critically hits.						
+34500	spellbook	51	Expose Weakness	Rank 1	Your ranged criticals have a $h% chance to apply an Expose Weakness effect to the target. Expose Weakness increases the attack power of all attackers against that target by $34501s1% of your Agility for $34501d.						
+34501	spellbook	51	Expose Weakness			All attackers gain attack power against this target.					
+34502	spellbook	51	Expose Weakness	Rank 2	Your ranged criticals have a $h% chance to apply an Expose Weakness effect to the target. Expose Weakness increases the attack power of all attackers against that target by $34501s1% of your Agility for $34501d.						
+34503	spellbook	51	Expose Weakness	Rank 3	Your ranged criticals have a $h% chance to apply an Expose Weakness effect to the target. Expose Weakness increases the attack power of all attackers against that target by $34501s1% of your Agility for $34501d.						
+34506	spellbook	51	Master Tactician	Rank 1	Your successful ranged attacks have a $h% chance to increase your critical strike chance with all attacks by $34833s1% for $34833d.						
+34507	spellbook	51	Master Tactician	Rank 2	Your successful ranged attacks have a $h% chance to increase your critical strike chance with all attacks by $34834s1% for $34834d.						
+34508	spellbook	51	Master Tactician	Rank 3	Your successful ranged attacks have a $h% chance to increase your critical strike chance with all attacks by $34835s1% for $34835d.						
+34509	all		Attack Power 106		Increases attack power by $s1.						
+34510	all		Stun		Stuns target for $d.	Stunned.					
+34511	all		Valor		Temporarily Increases Health by $s1 and Strength by $s2 for $d.	Health increased by $s1 and Strength by $s2.					
+34513	all		Lionheart		Increases Strength by $s2 for $d.	Strength increased by $s2.					
+34514	all		Fear Resistance 5	Passive	Increases your chance to resist Fear effects by $s1%.						
+34515	all		Fear Resistance 8	Passive	Increases your chance to resist Fear effects by $s1%.						
+34516	all		Spread Hellfire Fire								
+34517	all		Arcane Explosion		Sends out a blast wave of magic, inflicting Arcane damage to nearby enemies.						
+34518	all		Nether Protection		You are protected from all physical attacks for $d, but cannot attack or use physical abilities.	Immune to physical attacks.  Cannot attack or use physical abilities.					
+34519	all		Time's Favor		Increases dodge rating by $s1 for $d1.	Increases dodge rating by $s1.					
+34520	all		Elemental Power Extractor		Use on a living Sundered Rumbler or Warp Aberration to extract its power.  Warning: may enhance the elemental's will to survive.						
+34521	all		Summon Fire								
+34522	all		Summon Void Servant		Summons a void servant.						
+34524	all		Elemental Response		This generic aura self-triggers a different spell for each school of magic that lands on the wearer:\n\nFire:          34192\nFrost:        34193\nArcane:    34194\nNature:    34195\nShadow:  34196\nHoly:        34197\nPhysical:  34198\n\nUse this spell ID# on the creature to perform the appropriate action.						
+34525	all		Create Elemental Power								
+34526	all		Burn Blood Elf Equipment		Burns a Blood Elf Tent or Ballista at Sunfury Hold.						
+34527	all		Immolation								
+34528	all		Immolation		Burns nearby enemies for Fire damage periodically.						
+34529	spellbook	164	Nether Chain Shirt								
+34530	spellbook	164	Twisting Nether Chain Shirt								
+34532	all		Shoot								
+34533	spellbook	164	Breastplate of Kings								
+34534	spellbook	164	Bulwark of Kings								
+34535	spellbook	164	Fireguard								
+34536	all		Shoot Flame Arrow								
+34537	spellbook	164	Blazeguard								
+34538	spellbook	164	Lionheart Blade								
+34539	all		Explosion								
+34540	spellbook	164	Lionheart Champion								
+34541	spellbook	164	The Planar Edge								
+34542	spellbook	164	Black Planar Edge								
+34543	spellbook	164	Lunar Crescent								
+34544	spellbook	164	Mooncleaver								
+34545	spellbook	164	Drakefist Hammer								
+34546	spellbook	164	Dragonmaw								
+34547	spellbook	164	Thunder								
+34548	spellbook	164	Deep Thunder								
+34549	all		Dirty Larry Submits								
+34550	all		Tranquility		Regenerates all nearby friendly targets for $s1 every $t1 seconds for $d.  Channeled.	Healing nearby friendly targets for $s1 every $t1 seconds.					
+34551	all		Tree Form		Turns the caster into a tree for $d.  While in this form the caster is immune to damage.	Immune to damage.					
+34557	all		Summon Frayer Protector		Summons $s1 $lFrayer Protector:Frayer Protectors; to accompany the caster for $d..						
+34569	all		Chilled Earth								
+34570	all		Chilled Earth Loop								
+34571	all		Chilled Earth			Movement speed reduced by $s1%.\nYour body is starting to chill...					
+34572	all		Move NW								
+34573	all		Move NE								
+34574	all		Move Onward (Chilled Earth)								
+34575	all		Move N								
+34576	all		Small Bomb Cooldown								
+34577	all		Aerial Assault Auto-load								
+34578	all		Taxi - Reaver's Fall to Spinebreaker Ridge								
+34580	all		Impale		Attempts to impale the target, causing $s1 damage.						
+34581	all		Despawn Defenders								
+34582	all		Elemental Response		This generic aura self-triggers a different spell for each school of magic that lands on the wearer:\n\nFire:          34192\nFrost:        34193\nArcane:    34194\nNature:    34195\nShadow:  34196\nHoly:        34197\nPhysical:  34198\n\nUse this spell ID# on the creature to perform the appropriate action.						
+34583	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+34584	all		Love Struck		Chance on spell cast to increase your Spirit by 145 for 15 secs.						
+34585	all		Love Struck		Increases your Spirit by +$s1 for $d1.	Spirit Increased by +$s1.					
+34586	all		Romulo's Poison		Your melee and ranged attacks have a chance to inject poison into your target dealing $34587s1 Nature damage.						
+34587	all		Romulo's Poison		Inject poison for $s1 Nature damage.						
+34588	all		Summon Underbog Frenzy								
+34589	all		Dangerous Water		You sense danger.	You sense danger nearby.					
+34590	spellbook	755	Bright Blood Garnet								
+34592	all		Block Value 90		Increases the block value of your shield by $s1.						
+34593	all		Block Value 66		Increases the block value of your shield by $s1.						
+34597	all		Power of Arcanagos			Spell power increased by $s1.					
+34598	all		Karazhan Caster Robe		Gives a chance when your harmful spells land to increase spell power by 130 for $34597d.						
+34600	spellbook	51	Snake Trap		Place a trap that will release several venomous snakes to attack the first enemy to approach.  The snakes will die after $45145d.  Trap will exist for $d.  Only one trap can be active at a time.						
+34602	all		Explosion Visual								
+34603	all		Sunfury Disguise		Magically disguises wearer as a member of the Sunfury army.	You are magically disguised as a member of the Sunfury army.					
+34605	all		Blink		Teleports the caster 20 yd. forward unless something is in the way. Also frees the caster from any bonds.	Blinking...					
+34606	all		Summon Hellfire Quest - Explosion Visual								
+34607	spellbook	164	Fel Weightstone								
+34608	spellbook	164	Adamantite Weightstone								
+34611	all		Increase Spell Dam 159		Increases damage and healing done by magical spells and effects by up to $s1.						
+34612	all		Caledis's Disguise								
+34613	all		Nuke Mana Creature								
+34614	all		Backstab		Inflicts normal damage plus $s1 to an enemy, but only if attacking from behind.						
+34615	all		Mind-numbing Poison		Poisons the target with a mentally crippling poison, reducing casting speed by $s1% for $d.	Casting speed slowed by $s1%.					
+34616	all		Deadly Poison		Inflicts $s1 Nature damage to an enemy every $t1 sec. for $d.	Nature damage inflicted every $t1 sec.					
+34617	all		Attack Power - Feral (+0556)		Increases attack power by $s1 in Cat, Bear, Dire Bear, and Moonkin forms only.						
+34618	all		Smash		Smashes the target, inflicting $s1 damage.\nThis ability causes a large amount of threat.						
+34619	all		Repair		Heals caster for $o1 over $t1 sec.	Healing $s1 damage every $t1 seconds.					
+34620	all		Slam		Slams the target, stunning it for $d.						
+34621	all		Fel Reaver Warning Sound		Fel reaver approaching!	You hear a distant sound...					
+34622	all		Hellfire Unyielding Blow Horn		Blow near the alliance siege tower outside Zeth'Gor.						
+34623	all		Fel Reaver Warning Aura		Fel reaver approaching!	You hear a distant sound...					
+34624	all		Frenzy			Damage dealt is increased by $s1%.\nAttack speed increased by $s2%.					
+34625	all		Demolish		Inflicts $s1% weapon damage and leaves the target wounded, reducing the effectiveness of any healing by $s2% for $d.	Healing effects reduced by $s2%.					
+34626	all		Pale Death		Reduces your Stamina by $s1%.	Stamina is reduced by $s1%.					
+34627	all		Nuke Mana Creature II		Kill invaders.						
+34628	all		Negatron Dies								
+34629	all		Pale Death								
+34630	all		Scrap Reaver X6000		Take control of the Scrap Reaver X6000.  You must stay within the Proving Grounds, or you will lose control of the robot.	Scrap Reaver X6000					
+34632	all		Hellfire - Quest - Summon Unyielding								
+34634	all		Sunseeker Aura			Periodically damaging nearby enemies.					
+34635	all		Sunseeker Aura		Deals $s1 Arcane damage to all nearby enemies.						
+34637	all		Soul Channel		Drains up to $o1 mana and health from an enemy over $d. and transfers it to the caster.	$o1 mana and health leeched over $d.					
+34639	all		Polymorph		Transforms an enemy into a lasher, forcing it to wander around for up to $d. While wandering, the lasher cannot attack or cast spells.	Cannot attack or cast spells.					
+34640	all		Wilting Touch		Reduces an enemy's chance to critically hit with a melee attack by $s1%, and reduces its chance to critically hit with a spell attack by $s2%. Lasts $d.	Melee critical hit chance reduced by $s1%.\nSpell critical hit chance reduced by $s2%.					
+34641	all		Spade Toss		Throws a weapon at an enemy, inflicting Physical damage.						
+34642	all		Death & Decay		Invokes the malignant power of death and decay, inflicting Shadow damage to all enemies in a selected area for $d.						
+34643	all		Corrode Armor		Reduces an enemy's armor by $s1% for $d.\nInflicts Nature damage to an enemy every $t2 sec. for $d.	Armor reduced by $s1%.\nNature damage inflicted every $t2 sec.					
+34644	all		Lash		Strikes at an enemy, inflicting increased melee damage.						
+34645	all		Surge		Charges an enemy, inflicting damage to the target and any of its nearby allies, as well as knocking them all back.						
+34646	all		Activate Kirin'Var Rune		Activate a Kirin'Var Rune while standing on it.						
+34648	all		Force Field Visual								
+34650	all		Mana Leech								
+34651	all		Despawn Self								
+34652	all		Rocket-Chief To Negatron								
+34653	all		Fireball		Inflicts Fire damage to an enemy.						
+34654	all		Blind		Blinds the target, causing it to wander confused for up to $d.  Any damage caused will remove the effect.	Confused.					
+34655	all		Deadly Poison		Each strike has a chance of poisoning the enemy for Nature damage over $t2 sec.  Stacks up to 5 times on a single target.	$s2 Nature damage inflicted every $t2 sec.					
+34656	all		Arcane Explosion (Cosmetic)		Sends out a blast wave of magic.						
+34657	all		Deadly Poison	Passive							
+34658	all		Flames								
+34659	all		Hellfire		Ignites the area surrounding the caster, causing $s2 Fire damage to $ghimself:herself; and $5857s1 Fire damage to all nearby enemies every $t2 sec.  Lasts $d.	Damages all nearby enemies.					
+34660	all		Hellfire		Deals $s1 Fire damage to all enemies within $a1 yards.						
+34661	all		Sacrifice		Sacrifices the current target, stunning it and leeching health every $t3 sec for $d.	Stunned.\n$s3 health leeched every $t3 sec.					
+34662	all		Bear Command		Order your pet to brutally attack the enemy.						
+34663	all		Thorns		Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.	Causes $s1 Nature damage to attackers.					
+34664	all		Sleep Visual - Flavor								
+34665	all		Administer Antidote		Administer the antidote to a Hulking Helboar.						
+34666	all		DEPRECATED PET SCALING		If you see this, report this!	Chance to hit.					
+34667	all		DEPRECATED PET SCALING		If you see this, report this!	Chance to dodge.					
+34668	all		Shrink								
+34670	all		Enrage		Increases the caster's attack speed by $s2% and the Physical damage it deals by $s1% for $d.	Physical damage dealt is increased by $s1%.\nAttack speed increased by $s2%.					
+34672	all		Magma Splash			$s2 Fire damage inflicted every $t2 sec.					
+34673	all		Teleport Self								
+34674	all		Explosion		Explosions rock the water near your boat.						
+34675	all		DEPRECATED PET SCALING		If you see this, report this!	Attack speed.					
+34679	all		Archmage Vargoth's Ritual			Preparing to break the Curse of the Violet Tower.					
+34681	all		Summon Thorn Lasher								
+34682	all		Summon Thorn Flayer								
+34683	all		Tornado								
+34684	all		Summon Thorn Lasher								
+34685	all		Summon Thorn Flayer								
+34686	all		Summon Thorn Lasher								
+34687	all		Summon Thorn Flayer								
+34688	all		Summon Thorn Lasher								
+34689	all		Tornado								
+34690	all		Summon Thorn Flayer								
+34691	all		Increase Spell Dam 178		Increases damage and healing done by magical spells and effects by up to $s1.						
+34692	spellbook	50	The Beast Within		When your pet is under the effects of Bestial Wrath, you also go into a rage causing $34471s2% additional damage and reducing mana costs of all spells by $34471s1% for $34471d.  While enraged, you do not feel pity or remorse or fear and you cannot be stopped unless killed.						
+34693	all		Increase Healing 334		Increases spell power by $s1.						
+34694	all		Blind		Blinds the target, causing it to wander confused for up to $d.  Any damage caused will remove the effect.	Confused.					
+34695	all		Tornado								
+34696	all		Drain Life		Steals $s1 life from target enemy.						
+34697	all		Allergic Reaction		Diseases an enemy for $d., increasing the damage it takes by $s1. Nature damage inflicted to an enemy every $t1 sec. for $d.  The diseased target has a chance of spreading its illness to one of its nearby allies.	Damage taken is increased by $s1.\nNature damage inflicted every $t2 sec.\nYou are contagious...					
+34698	all		Time Diffusion								
+34699	all		Time Cloak		Bearing the guise of a Lordaeron Watchman.	Bearing the guise of a Lordaeron Watchman.					
+34700	all		Allergic Reaction			Damage taken is increased by $s1.\nNature damage inflicted every $t2 sec.\nYou are contagious...					
+34701	all		Random Aggro								
+34702	all		Time Cloak		Bearing the guise of a Lordaeron Watchman.	Bearing the guise of a Lordaeron Watchman.					
+34703	all		Laj (Arcane)								
+34704	all		Laj (Fire)								
+34705	all		Laj (Frost)								
+34706	all		Create Unyielding Banner Scrap								
+34707	all		Laj (Nature)								
+34708	all		Summon Unyielding Banner								
+34709	all		Shadow Sight		Stealth Detection.\nInvisibility Detection.\nIncreases damage taken by 5%.	Stealth Detection.\nInvisibility Detection.\nIncreases damage taken by 5%.					
+34710	all		Laj (Shadow)								
+34711	all		Random Attack Speed								
+34712	all		Time Stop								
+34714	all		Thorn Missiles		Launches thorns at an enemy, inflicting physical damage each second for $d.						
+34715	all		Thorn Missiles		Launches thorns at an enemy, inflicting Physical damage.						
+34716	all		Stomp		Inflicts $s1 Physical damage to nearby enemies, stunning them for $d. and increasing the Physical damage they take by $s3.	Stunned.\nPhysical damage taken is increased by $s3.					
+34717	all		Scrying Spell		Scry for the identity of the blood elf maintaining the Curse of the Violet Tower. Must be used near Archmage Vargoth's Orb.						
+34718	all		Transform Sagan (Skunk)								
+34719	all		Fixate		Causes an enemy to fixate upon the caster and increases the caster's attack speed by $s2% for $d. While the target is fixated upon the caster, the target is very reluctant to attack anything else.						
+34720	all		Thrill of the Hunt		Gives you a chance to regain 40% of the mana cost of any shot when it critically hits.						
+34721	all		Displacement								
+34722	all		Decapitation		Hurls your axe in an attempt to decapitate your target causing $s1 damage.						
+34725	all		Shadow Nova		Frost Nova Visual Only.						
+34726	all		Call Slave								
+34727	all		Summon Saplings		Summons a sapling.						
+34728	all		Summon Chilled Earth		Summons a line of fire that hits enemies in the way.						
+34729	all		Chilled Earth		Summons a line of fire that hits enemies in the way.						
+34730	all		Summon Saplings		Summons a sapling.						
+34731	all		Summon Saplings		Summons a sapling.						
+34732	all		Summon Saplings		Summons a sapling.						
+34733	all		Summon Saplings		Summons a sapling.						
+34734	all		Summon Saplings		Summons a sapling.						
+34735	all		Summon Saplings		Summons a sapling.						
+34736	all		Summon Saplings		Summons a sapling.						
+34737	all		Summon Saplings		Summons a sapling.						
+34739	all		Summon Saplings		Summons a sapling.						
+34740	all		Frost Ring								
+34741	all		Summon Saplings		Attempts to raise a sapling life to aid the caster in battle. After $d., if the servant still lives, it will sacrifice itself to heal the caster.						
+34742	all		Ancestral Life								
+34743	all		Summon Greater Sapling								
+34745	all		Shoot Thorns		Flings thorns at an enemy, inflicting Nature damage.						
+34746	all		Frost Ring								
+34747	all		Recurring Power		Increases spell power by $s1 for $d.	Spell power increased by $s1.					
+34748	all		Frostbite Rotate								
+34749	all		Recurring Power		Grants $34747s1 increased spell power for $34747d when one of your spells is resisted.						
+34750	all		Badge of the Protector		Show how heroic you are!						
+34751	all		Attack Power 110		Increases attack power by $s1.						
+34752	all		Freezing Touch		Encases an enemy target in a block of ice, stunning them for $d.	Stunned.					
+34753	spellbook	56	Holy Concentration	Rank 1	Gives you a $h% chance to enter a Clearcasting state after casting any Flash Heal, Binding Heal, or Greater Heal spell.  The Clearcasting state reduces the mana cost of your next Flash Heal, Binding Heal, or Greater Heal spell by $34754s1%.						
+34754	spellbook	56	Clearcasting			Your next Flash Heal, Binding Heal, or Greater Heal spell has its mana cost reduced by $s1%.					
+34755	all		Instakill								
+34756	all		Regenerating Aura								
+34757	all		Toxic Pollen		Causes the caster to automatically inflict $17466s1 Nature damage every $t1 sec. to nearby enemies. The aura lasts until cancelled.	Automatically inflicting $17466s1 Nature damage every $t1 sec. to nearby enemies.					
+34758	all		Toxic Pollen		Deals $s1 Nature damage to all enemies within $a1 yards.						
+34759	all		Plant White Seedling		Summons a seedling to accompany the caster for $d.						
+34760	all		Increase Spell Dam 62		Increases damage and healing done by magical spells and effects by up to $s1.						
+34761	all		Plant Green Seedling		Summons a seedling to accompany the caster for $d.						
+34762	all		Plant Blue Seedling		Summons a seedling to accompany the caster for $d.						
+34763	all		Plant Red Seedling		Summons a seedling to accompany the caster for $d.						
+34764	all		Flight Form (Passive)	Passive							
+34765	all		Arakkoa Channeling								
+34766	all		Summon Charger	Summon							
+34767	spellbook	594,777	Summon Charger	Summon	Summons a Charger, which serves as a mount.  Speed is increased by $s2%. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+34768	all		Summon Warhorse	Summon							
+34769	spellbook	594,777	Summon Warhorse	Summon	Summons a warhorse, which serves as a mount.  Speed is increased by $s2%. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+34770	all		Plant Spawn Effect		Grow a plant using nature magic.	Growing.					
+34771	all		Force Punch		Forcefully punches the ground, knocking all nearby enemies back and dealing $s2 damage.						
+34772	all		QATest +400 Spell Dmg	QASpell	Increases spell power by $s1.						
+34773	all		Block Value 10		Increases the block value of your shield by $s1.						
+34774	all		Magtheridon Melee Trinket		Your melee and ranged attacks have a chance to increase your haste rating by $34775s1 for $34775d1.						
+34775	all		Dragonspine Flurry		Increases haste rating by $s1.	Increases haste rating by $s1.					
+34776	all		Teleport								
+34777	all		Cancel Tranquility								
+34778	all		Summon Frostbite		Summons a line of fire that hits enemies in the way.						
+34779	all		Freezing Circle		Freezes enemies who remain within the icy circle, dealing Frost damage and freezing them in place.	Frozen.					
+34780	all		Poison Bolt Volley		Shoots poison at an enemy, inflicting Nature damage, then additional damage every $t2 sec. for $d.	Nature damage inflicted every $t2 sec.					
+34781	all		Bind Feet								
+34782	all		Bind Feet		Tendrils wrap around the feet of all nearby enemies, slowing their movement by $s1% for $d.	Movement slowed by $s1%.					
+34783	all		Spell Reflection		Raise your shield, reflecting the next spell cast on you.  Lasts $d.	Magical spells will be reflected.\n$n charges.					
+34784	all		Intervene		Run at high speed towards a party member, intercepting the next melee or ranged attack made against them.	The next melee or ranged attack made against you will be made against the intervening warrior instead.					
+34785	all		Arcane Volley		Hurls a magical bolt at an enemy, inflicting Arcane damage.						
+34786	all		Temporal Analysis								
+34787	all		Freezing Circle		Summons a circle of ice that freezes enemies.						
+34788	all		Shared Bonds		The life force of the target and caster are linked, sharing damage equally between each other.	$s2% of damage taken is split with ally.					
+34789	all		Shared Bonds		The life force of the target and caster are linked, sharing damage equally between each other.	$s2% of damage taken is shared.					
+34790	spellbook	777	Dark War Talbuk		Summons and dismisses a rideable Dark War Talbuk.   This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+34791	all		Arcane Explosion		Sends out a blast wave of magic, inflicting Arcane damage to nearby enemies.						
+34792	all		Arcane Resonance								
+34793	all		Arcane Blast		Blasts an enemy with Arcane magic, inflicting normal damage plus $s2 and knocking the enemy back.						
+34794	all		Arcane Resonance		Increase the Arcane damage the target takes by $s1 for $d.	Arcane damage taken increased by $s1.					
+34795	spellbook	777	Red Hawkstrider		Summons and dismisses a rideable Red Hawkstrider. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+34796	all		Increase Spell Dam 121		Increases damage and healing done by magical spells and effects by up to $s1.						
+34797	all		Nature Shock		Hurls a bolt of lightning at an enemy, inflicting Nature damage.						
+34798	all		Greenkeeper's Fury		Hurls a bolt of lightning at an enemy, inflicting Nature damage.						
+34799	all		Arcane Devastation		An instant weapon attack that causes $s1% of weapon damage plus an additional $34794s1 damage for each application of Arcane Resonance on the target.						
+34800	all		Impending Coma		Increases the time between an enemy's attacks by $s1% and slows its movement by $s2% for $d. Puts an enemy to sleep.	Time between attacks increased by $s1%.\nReduces movement speed by $s2%.\nGetting sleepy...					
+34801	all		Sleep		Puts yourself to sleep for up to $d. Any damage caused will awaken the target. Only one target can be asleep at a time.	Asleep.					
+34802	all		Kick		Kicks an enemy for $s1 damage, interrupting the spell being cast for $d.						
+34803	all		Summon Reinforcements		Summon in reinforcements.						
+34804	all		Materialize		Fuses from the latent nether energy of the area.						
+34805	all		Quest Ignore								
+34806	all		Drain Mana Visual								
+34807	all		Arcane Explosion Visual								
+34808	all		Arcane Explosion Effect								
+34809	all		Holy Fury		Increases an ally's spell power by $s1 for $d.	Spell power is increased by $s1.					
+34810	all		Summon Mender 1								
+34811	all		Tail Lash		Strikes at an enemy, inflicting weapon damage plus additional damage.						
+34812	all		Curse of Nazjatar		Increases magical damage taken by the target enemy by $s1%.	Damage taken by magical spells and effects increased by $s1%.					
+34813	all		Face Me								
+34814	all		De-Materialize		Dissipates into the latent nether energy of the area.						
+34815	all		Teleport Effect			Teleporting in.					
+34817	all		Summon Reservist 1								
+34818	all		Summon Reservist 2								
+34819	all		Summon Reservist 3								
+34820	all		Arcane Strike		Strikes at an enemy, $s1 Arcane damage.						
+34821	all		Arcane Flurry		Attacks nearby enemies in a flurry of axes that lasts $d.	Attacking all nearby enemies.					
+34822	all		Arcane Flurry								
+34823	all		Face Me Activation								
+34824	all		Arcane Flurry		Whirls in a circle dealing damage to nearby enemies and dealing $34824s1 Arcane damage to a random target.	Stunned.					
+34825	all		Immune All								
+34826	all		Arcane Flurry		Whirls in a circle dealing damage to nearby enemies and dealing $34824s1 Arcane damage to a random target.						
+34827	all		Water Shield		The caster is surrounded by $n globes of water.  When a spell, melee or ranged attack hits the caster, $33737s1 mana is restored to the caster. This expends one water globe.  Only one globe will activate every few seconds.  Lasts $d.  Only one Elemental Shield can be active on the Shaman at any one time.	Attacks and spells used against you deal Frost damage and slow the attacker's spell casts.  $n charges.					
+34828	all		Water Shield		Casts a bolt of water at the target for $s1 Nature damage.	Spell casting time increased by $s2%.					
+34829	all		Arcane Shot		Shoots an enemy, inflicting Arcane damage.						
+34830	all		Triangulation Point One		Face the direction of the first triangulation point.  When nearby, the device will pinpoint the location with a holographic indicator.	Detect triangulation point					
+34832	all		Hunter's Mark Visual Only	Rank 1	Hunter's Mark Visual Only.						
+34833	spellbook	51	Master Tactician	Rank 1		Critical strike chance with all attacks increased by $s1%.					
+34834	spellbook	51	Master Tactician	Rank 2		Critical strike chance with all attacks increased by $s1%.					
+34835	spellbook	51	Master Tactician	Rank 3		Critical strike chance with all attacks increased by $s1%.					
+34836	spellbook	51	Master Tactician	Rank 4		Critical strike chance with all attacks increased by $s1%.					
+34837	spellbook	51	Master Tactician	Rank 5		Critical strike chance with all attacks increased by $s1%.					
+34838	spellbook	51	Master Tactician	Rank 4	Your successful ranged attacks have a $h% chance to increase your critical strike chance with all attacks by $34836s1% for $34836d.						
+34839	spellbook	51	Master Tactician	Rank 5	Your successful ranged attacks have a $h% chance to increase your critical strike chance with all attacks by $34837s1% for $34837d.						
+34840	all		Triangulation Point One Invisibility								
+34841	all		Forced Labor		Haste an nearby ally, increasing his attack speed.	Attack speed increased by $s1%.					
+34842	all		De-Materialize								
+34843	all		Trigger 000								
+34844	all		Blink		Teleports the caster 20 yd. forward unless something is in the way. Also frees the caster from any bonds.	Blinking...					
+34845	all		Gossip NPC Appearance - Goblin Female, Christmas								
+34846	all		Charge								
+34847	all		Gossip NPC Appearance - Goblin Female								
+34848	all		Gossip NPC Appearance - Goblin Female, Lunar Festival								
+34849	all		Gossip NPC Appearance - Goblin Male, Christmas								
+34850	all		Gossip NPC Appearance - Goblin Male								
+34851	all		Gossip NPC Appearance - Goblin Male, Lunar Festival								
+34852	all		Call of the Falcon		Marks a target, causing nearby birds to attack it.	Marked for death...					
+34853	all		Call of the Falcon								
+34854	all		Lashh'an Kaliri		Summons $s1 $lLashh'an Kaliri:Lashh'an Kaliri; to accompany the caster until dismissed.						
+34856	all		Bloodburn		Inflicts $s1 Physical damage to an enemy and increases the Arcane damage it takes by $s2 for $d.	Arcane damage taken is increased by $s2.					
+34857	all		Triangulation Point Two		Face the direction of the second triangulation point.  When nearby, the device will pinpoint the location with a holographic indicator.	Detect triangulation point					
+34858	all		Triangulation Point Two Invisibility								
+34859	spellbook	56	Holy Concentration	Rank 2	Gives you a $h% chance to enter a Clearcasting state after casting any Flash Heal, Binding Heal, or Greater Heal spell.  The Clearcasting state reduces the mana cost of your next Flash Heal, Binding Heal, or Greater Heal spell by $34754s1%.						
+34860	spellbook	56	Holy Concentration	Rank 3	Gives you a $h% chance to enter a Clearcasting state after casting any Flash Heal, Binding Heal, or Greater Heal spell.  The Clearcasting state reduces the mana cost of your next Flash Heal, Binding Heal, or Greater Heal spell by $34754s1%.						
+34861	spellbook	56	Circle of Healing	Rank 1	Heals friendly target and that target's party members within $84587a1 yards of the target for $84587s1.						
+34863	spellbook	56	Circle of Healing	Rank 2	Heals friendly target and that target's party members within $84588a1 yards of the target for $84588s1.						
+34864	spellbook	56	Circle of Healing	Rank 3	Heals friendly target and that target's party members within $84589a1 yards of the target for $84589s1.						
+34865	spellbook	56	Circle of Healing	Rank 4	Heals friendly target and that target's party members within $84590a1 yards of the target for $84590s1.						
+34866	spellbook	56	Circle of Healing	Rank 5	Heals friendly target and that target's party members within $84591a1 yards of the target for $84591s1.						
+34871	all		Umbrafen Buff		Increases an ally's Stamina by $s1 for $d.	Stamina increased by $s1.					
+34872	all		Frostbite Rune								
+34873	all		Fly			Flying.					
+34874	all		Despawn Underbog Mushrooms								
+34875	all		Blackscale Attack: Dire Raven								
+34876	all		Wyrm from Beyond Transform								
+34877	all		Custodian of Time			Cannot resummon a Custodian of Time for the duration of this debuff.					
+34878	all		Custodian of Time TRIGGER								
+34879	all		Multi-Shot		Fires a volley of missiles at an enemy and its nearby allies, striking up to $x1 targets for normal damage plus $s1.						
+34880	all		Elemental Armor		Increases resistance to all magic schools for $d.	Magic Resistance increased.					
+34881	all		Demon Armor		Protects the caster, increasing armor by $s1, Shadow resistance by $s2, and health regeneration for $d.	Armor increased by $s1.\nShadow resistance increased by $s2.\nIncreased health regeneration.					
+34883	all		QID 10277								
+34884	all		Attack Thrall								
+34885	all		Petrify			Stunned.					
+34886	all		Crushing Pincer		Hacks at the armor of an enemy and its nearby allies, affecting up to $x1 targets. A target's armor is reduced by $s1 per Sunder Armor. Can be applied up to 5 times. Lasts $d.	Armor reduced by $s1.					
+34887	all		DEPRECATED PET SCALING		If you see this, report this!						
+34888	all		Summon a Warp Rift		Activate in the Warp Fields to generate an unstable warp rift.						
+34889	spellbook	763	Fire Breath	Rank 1	Targets in a cone in front of the caster take ${$m1*3} Fire damage over $d.	$s1 Fire damage every second.					
+34891	all		Flight through Caverns								
+34892	all		Arakkoa Channeling Target								
+34893	all		Warp Rifts - Gather Warp Nether								
+34894	all		Create Warp Nether Extractor								
+34895	all		Challenge Veraku		Challenge the nether dragon Veraku. The challenge must be issued while standing near the Dragon Skeleton on the southern part of the Celestial Ridge.						
+34896	spellbook	777	Cobalt War Talbuk		Summons and dismisses a rideable Cobalt War Talbuk.   This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+34897	spellbook	777	White War Talbuk		Summons and dismisses a rideable White War Talbuk.   This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+34898	spellbook	777	Silver War Talbuk		Summons and dismisses a rideable Silver War Talbuk.   This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+34899	spellbook	777	Tan War Talbuk		Summons and dismisses a rideable Tan War Talbuk.   This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+34900	all		Repair Teleport Pad		Repair the Ethereal Teleport Pad at the bottom of the path on the Celestial Ridge.						
+34901	all		Quest - Aledis Aggro								
+34902	all		DEPRECATED PET SCALING		If you see this, report this!						
+34903	all		DEPRECATED PET SCALING		If you see this, report this!						
+34904	all		DEPRECATED PET SCALING		If you see this, report this!						
+34905	all		Stealth Flight								
+34906	all		Mark of Bite			Increases Nature resistance by $s1.\nIncrease all stats by $s2%.					
+34907	all		Taxi - Stair of Destiny to Honor Hold								
+34908	spellbook	613	Enlightenment	Rank 1	Increases your total Stamina, Intellect and Spirit by $s1%.						
+34909	spellbook	613	Enlightenment	Rank 2	Increases your total Stamina, Intellect and Spirit by $s1%.						
+34910	spellbook	613	Enlightenment	Rank 3	Increases your total Stamina, Intellect and Spirit by $s1%.						
+34911	spellbook	613	Enlightenment	Rank 4	Increases your total Stamina, Intellect and Spirit by $s1%.						
+34912	spellbook	613	Enlightenment	Rank 5	Increases your total Stamina, Intellect and Spirit by $s1%.						
+34913	spellbook	8	Molten Armor	Rank 1	Causes $34913s1 Fire damage when hit, increases your chance to critically hit with spells by $30482s3% of your Spirit, and reduces the chance you are critically hit by $30482s2%.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $30482d.						
+34914	spellbook	78	Vampiric Touch	Rank 1	Causes $o2 Shadow damage over $d to your target and causes all party members to gain mana equal to $s1% of any Shadow spell damage you deal.	Priest's party gains mana equal to $s1% of Shadow spell damage caused by the priest.					
+34915	all		Threat								
+34916	spellbook	78	Vampiric Touch	Rank 2	Causes $o2 Shadow damage over $d to your target and causes all party members to gain mana equal to $s1% of any Shadow spell damage you deal.	Priest's party gains mana equal to $s1% of Shadow spell damage caused by the priest.					
+34917	spellbook	78	Vampiric Touch	Rank 3	Causes $o2 Shadow damage over $d to your target and causes all party members to gain mana equal to $s1% of any Shadow spell damage you deal.	Priest's party gains mana equal to $s1% of Shadow spell damage caused by the priest.					
+34919	spellbook	78	Vampiric Touch		Causes Shadow damage to your target and causes all party members to gain mana equal to a percentage of any Shadow spell damage you deal.	5% of Shadow spell damage taken restores mana to the party.					
+34920	all		Strike		Strikes at an enemy, inflicting increased melee damage.						
+34922	all		Shadows Embrace		Inflicts $o1 Shadow damage to an enemy over $d, preventing it from casting spells and reducing the Physical damage it deals by $s3%.	$o1 Shadow damage inflicted over $d.\nPhysical damage dealt is decreased by $s3%.\nSilenced.					
+34924	all		Stair of Destiny to Thrallmar								
+34925	all		Curse of Impotence		Decreases the Magical damage dealt by the target by $s1 for $d.	Magical damage dealt is reduced by $s1.					
+34928	all		Vampiric Aura								
+34929	all		Vampiric Aura		Melee attacks heal you for $s1 damage.						
+34930	all		Mana Burn		Hits an enemy with an anti-mana bolt. For each point of mana consumed by the bolt, the target takes $e1 damage.						
+34931	all		Mana Burn		Hits an enemy with an anti-mana bolt. For each point of mana consumed by the bolt, the target takes $e1 damage.						
+34932	all		Bloodmaul Buzz		Increases the caster's health by $s2% and attack speed by $s1%. Lasts $d.	Attack speed increased by $s1%.\nMaximum health increased by $s2%.					
+34933	all		Arcane Explosion		Sends out a blast wave of magic, inflicting Arcane damage to nearby enemies.						
+34934	all		Shadow Bolt Volley		Hurls missiles of dark magic, inflicting Shadow damage to nearby enemies.						
+34935	spellbook	593	Backlash	Rank 1	Increases your critical strike chance with spells by an additional $s2% and gives you a $h% chance when hit by a physical attack to reduce the cast time of your next Shadow Bolt or Incinerate spell by $34936s1%.  This effect lasts $34936d and will not occur more than once every 8 seconds.						
+34936	spellbook	593	Backlash			Your next Shadow Bolt or Incinerate spell has its cast time reduced by $s1%.					
+34937	all		Powered Down		Golem powers down, remaining stunned until repaired.						
+34938	spellbook	593	Backlash	Rank 2	Increases your critical strike chance with spells by an additional $s2% and gives you a $h% chance when hit by a physical attack to reduce the cast time of your next Shadow Bolt or Incinerate spell by $34936s1%.  This effect lasts $34936d and will not occur more than once every 8 seconds.						
+34939	spellbook	593	Backlash	Rank 3	Increases your critical strike chance with spells by an additional $s2% and gives you a $h% chance when hit by a physical attack to reduce the cast time of your next Shadow Bolt or Incinerate spell by $34936s1%.  This effect lasts $34936d and will not occur more than once every 8 seconds.						
+34940	all		Gouge		Inflicts $s1 damage to an enemy and stuns it for up to $d. You will automatically stop attacking. Target must be facing you. Any damage received by the stunned target will revive it.	Incapacitated.					
+34941	all		Shadow Word: Pain		Utters a word of darkness, inflicting Shadow damage to an enemy every $t1 sec. for $d.	Shadow damage inflicted every $t1 sec.					
+34942	all		Shadow Word: Pain		Utters a word of darkness, inflicting Shadow damage to an enemy every $t1 sec. for $d.	Shadow damage inflicted every $t1 sec.					
+34943	all		Summon Unstable Voidwalker								
+34944	all		Holy Nova		Causes an explosion of holy light around the caster, causing $s1 Holy damage to all enemy targets within $a1 yards and healing all party members within $29514a2 yards for $29514s2.  These effects cause no threat.						
+34945	all		Heal		Calls upon Holy magic to heal an ally.						
+34946	all		Golem Repair		Repairs a nearby golem.	Repairing...					
+34947	spellbook	188,189,204,205,207,761	Warlock Pet Scaling 01								
+34948	spellbook	163	Rapid Killing	Rank 1	Reduces the cooldown of your Rapid Fire ability by $/60000;s2 min.  In addition, after killing an opponent that yields experience or honor, your next Aimed Shot, Arcane Shot or Auto Shot causes $35098s1% additional damage.  Lasts $35098d.						
+34949	spellbook	163	Rapid Killing	Rank 2	Reduces the cooldown of your Rapid Fire ability by $/60000;s2 min.  In addition, after killing an opponent that yields experience or honor, your next Aimed Shot, Arcane Shot or Auto Shot causes $35099s1% additional damage.  Lasts $35099d.						
+34950	spellbook	163	Go for the Throat	Rank 1	Your ranged critical hits cause your pet to generate $34952s1 Focus.						
+34951	all		Summon Deathforge Felguard								
+34952	all		Go for the Throat	Rank 1	Your ranged critical hits cause your pet to generate $34952s1 Focus.						
+34953	all		Go for the Throat	Rank 2	Your ranged critical hits cause your pet to generate $34953s1 Focus.						
+34954	spellbook	163	Go for the Throat	Rank 2	Your ranged critical hits cause your pet to generate $34953s1 Focus.						
+34955	spellbook	755	Golden Ring of Power								
+34956	spellbook	188,189,204,205,207,761	Warlock Pet Scaling 02								
+34957	spellbook	188,189,204,205,207,761	Warlock Pet Scaling 03								
+34958	spellbook	188,189,204,205,207,761	Warlock Pet Scaling 04								
+34959	spellbook	755	Truesilver Commander's Ring								
+34960	spellbook	755	Glowing Thorium Band								
+34961	spellbook	755	Emerald Lion Ring								
+34966	all		Netherstorm - BG - Counter								
+34968	all		Transform Sagan								
+34969	all		Poison		Inflicts Nature damage to an enemy every $t1 sec. for $d.	Nature damage inflicted every $t1 sec.					
+34970	all		Frenzy		Increases the caster's attack speed by $s2% and the Physical damage it deals for $d.	Physical damage dealt is increased by $s1.\nAttack speed increased by $s2%.					
+34971	all		Frenzy		Increases the caster's attack speed by $s2% and the Physical damage it deals by $s1 for $d.	Physical damage dealt is increased by $s1.\nAttack speed increased by $s2%.					
+34973	all		Ravandwyr's Ice Block		You become encased in a block of ice, protecting you from all physical attacks and spells for $d, but during that time you cannot attack, move or cast spells.	Immune to all attacks and spells.  Cannot attack, move or use spells.					
+34974	all		Multi-Shot		Fires a volley of missiles at an enemy and its nearby allies, striking up to $x1 targets for normal damage plus $s1.						
+34975	all		Conjure Chrono-Beacon								
+34976	all		Gillijim's Isle Flag		You are holding the Gillijim's Isle Flag. Take this flag to any controlled point to gain Victory Points.	You are holding the Gillijim's Isle Flag. Take this flag to any controlled point to gain Victory Points.					
+34977	all		Mennu's Healing Ward		Summons a ward that periodically heals allies in an area around it.						
+34978	all		Mennu's Healing Ward Passive								
+34979	spellbook	164	Thick Bronze Darts								
+34980	all		Mennu's Healing Ward		Summons a ward that lasts $d. and periodically heals allies in an area around it.						
+34981	spellbook	164	Whirling Steel Axes								
+34982	spellbook	164	Enchanted Thorium Blades								
+34983	spellbook	164	Felsteel Whisper Knives								
+34984	all		Psychic Horror		Strikes fear in an enemy, dealing $s3 Shadow damage every second and causing it to flee in terror for $d.	Horrified					
+34989	all		Netherstorm Flag Click								
+34990	all		Create Inquisitor's Crest		Combine the two halves of Ekkorash the Inquisitor's crest into the completed crest.						
+34991	all		Summon Netherstorm Flag		Drops the Netherstorm Flag						
+34992	all		Summon Ekkorash		Summon Ekkorash the Inquisitor while standing near the glowing brazier at the center of the Arklon Ruins.						
+34993	all		B'naar Shut Down								
+34994	all		B'naar Shut Down								
+34996	all		Uppercut		Inflicts normal damage plus $s1 to an enemy, knocking it back.						
+34997	all		Despawn Flag								
+34998	all		Bloodmaul Debuff		Increases the caster's HP by $s3%, attack speed by $s2% and the for 5 min.	Attack speed increased by $s2%.\nMaximum health increased by $s3%.					
+34999	all		Emote Roar								
+35004	all		Spore Cloud		Diseases an enemy for $d., increasing the damage it takes by $s1. Inflicts nature damage to an enemy every $t1 sec. for $d.  The diseased target has a chance of spreading its illness to one of its nearby allies.	Physical damage taken is increased by $s1.\nNature damage inflicted every $t1 sec.\nYou are contagious...					
+35005	all		Spore Cloud			Physical damage taken is increased by $s1.\nNature damage inflicted every $t1 sec.\nYou are contagious...					
+35006	all		Flag Check								
+35007	all		Summon Sundered Shards		Summons a Sundered Rumbler						
+35008	all		Water Spit		Hurls a watery bolt at all nearby enemies within $a1, inflicting $s1 Frost damage.						
+35009	all		Invisibility - Reducing threat								
+35010	all		Lightning Bolt		Blasts an enemy with lightning, inflicting Nature damage.						
+35011	all		Knockdown		Inflicts $s2 damage to an enemy, stunning it for $d.	Stunned.					
+35012	all		Charged Arcane Missile		Launches a magical missile at an enemy, inflicting Arcane damage.						
+35013	all		Shrink		Reduces an enemy's Strength by $s1 and Stamina by $s2 for $d.	Strength reduced by $s1%.\nStamina reduced by $s2%.					
+35014	all		Arcane Explosion		Sends out a blast wave of magic, inflicting Arcane damage to nearby enemies.						
+35015	all		Shadow Shock		Instantly lashes nearby enemies with dark magic, inflicting Shadow damage.						
+35016	all		Interrupt Shutdown								
+35017	all		Mask of Deception								
+35018	spellbook	777	Purple Hawkstrider		Summons and dismisses a rideable Purple Hawkstrider. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+35019	all		Arcane Explosion								
+35020	spellbook	777	Blue Hawkstrider		Summons and dismisses a rideable Blue Hawkstrider. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+35022	spellbook	777	Black Hawkstrider		Summons and dismisses a rideable Black Hawkstrider. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+35023	all		Interrupt Complete								
+35025	spellbook	777	Swift Green Hawkstrider		Summons and dismisses a rideable Swift Green Hawkstrider.   This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+35027	spellbook	777	Swift Purple Hawkstrider		Summons and dismisses a rideable Swift Purple Hawkstrider.   This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+35028	spellbook	777	Swift Warstrider		Summons and dismisses a rideable Swift Warstrider.   This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+35029	spellbook	50	Focused Fire	Rank 1	All damage caused by you is increased by $s1% while your pet is active and the critical strike chance of your Kill Command ability is increased by $s2%.						
+35030	spellbook	50	Focused Fire	Rank 2	All damage caused by you is increased by $s1% while your pet is active and the critical strike chance of your Kill Command ability is increased by $s2%.						
+35031	all		Manaforge Disable Visual								
+35032	all		Slow		Increases the time between nearby enemies' attacks by $s1% and slows their movement by $s2% for $d.	Movement speed reduced by $s2%.  Time between melee and ranged attacks increased by $s1%.  Casting time increased by $s1%.					
+35033	all		Arcane Missiles		Launches magical missiles at an enemy, inflicting Arcane damage each second for $d.						
+35034	all		Arcane Missiles		Launches magical missiles at an enemy, inflicting Arcane damage.						
+35035	all		Countercharge		Charges the caster with Arcane energy, adding $35781s1 additional Arcane damage to melee attacks.  This energy can also be released to interrupt an enemy spell.	Melee attacks deal $35781s1 additional Arcane damage.\nAble to instantly counter the next spell cast by an enemy.					
+35036	all		Summon a Warp Rift in Void Ridge		Activate near the Void Stones in Void Ridge.						
+35037	all		Summon Baron Galaxis								
+35039	all		Countercharge		Counters an enemy's spell, preventing the enemy from casting that spell again for $d.						
+35040	all		Bladespire Spear Throw		Throws a weapon at an invisible trigger						
+35041	all		Fake Swing								
+35046	all		Quest - Draenei Survivor Irradiation								
+35047	all		Drill Armor		Drill into an enemy target, dealing weapon damage and reducing its armor. Armor is reduced by $s2% per Drill Armor. Can be applied up to 5 times. Lasts $d.	Armor reduced by $s2%.					
+35049	all		Pound		Pounds an enemy, inflicting weapon damage plus $s1 and disorienting it for $d.	Disoriented.					
+35050	all		Summon Kitty		Summons Mr. Kitty to accompany the caster until dismissed.						
+35051	all		Teleport Self								
+35052	all		Summon Kitty		Summons Mr. Kitty to accompany the caster until dismissed.						
+35053	all		Summon Kitty		Summons Mr. Kitty to accompany the caster until dismissed.						
+35054	all		Mortal Strike		Inflicts $s1% weapon damage and leaves the target wounded, reducing the effectiveness of any healing by $s2% for $d.	Healing effects reduced by $s2%.					
+35055	all		The Claw		Attacks an enemy with The Claw, dealing $s1% weapon damage and disarming it for $d.	Not wielding a weapon.					
+35056	all		Glob of Machine Fluid		Shoots a glob of machine fluid at an enemy, dealing $s1 Nature damage and slowing movement speed by $s2 for $d.	Movement speed reduced by $s2%.					
+35057	all		Netherbomb		Bombs all enemies in a selected area, inflicting Arcane damage.						
+35058	all		Nether Explosion		Detonate all carried Netherbombs at once, dealing heavy Arcane damage.						
+35059	all		Arcane Volley		Hurl magical bolts at nearby enemies, inflicting Arcane damage.						
+35060	all		Focused Fire	Rank 1							
+35061	all		Focused Fire	Rank 2							
+35062	all		Maniacal Charge		Charges an enemy with lit Netherbombs in hand.						
+35063	all		Shoot Honor Hold Scout Archery Target								
+35064	all		Mana Shield		Enfolds the caster in a protective shield that lasts $d. and absorbs up to $s1 Physical damage, draining mana instead of health. Drains $e mana per point of damage absorbed.	Shielded against Physical damage: losing mana instead of health.					
+35065	all		Taxi - Hellfire Peninsula - Shatter Point to Beach Head								
+35066	all		Taxi - Hellfire Peninsula - Beach Head to Shatter Point								
+35067	all		Video Target Emote Kneel	VideoProduction Spell	Forces your target to kneel before Zod.	KNEEL					
+35068	all		Quest - Volatile Mutation Transformation								
+35069	all		Taxi - Hellfire Peninsula - Expedition Point to Shatter Point								
+35070	all		Video AE Emote Kneel	VideoProduction Spell	Forces all units within 20 yards to kneel before Zod.	KNEEL					
+35071	all		Thorn Missiles		Launches thorns at an enemy, inflicting physical damage each second for $d.						
+35072	all		Thorn Missiles		Launches thorns at an enemy, inflicting Physical damage.						
+35073	all		Remove Digestive Acid								
+35074	all		Block Value 69		Increases the block value of your shield by $s1.						
+35075	all		Block Value 75		Increases the block value of your shield by $s1.						
+35076	all		Blessing of A'dal			Grants 200 melee and ranged attack power and increases spell damage by 115. 120 minute duration.					
+35077	all		Band of the Eternal Defender		When struck in combat has a chance of increasing your armor by $35078s1 for $35078d.						
+35078	all		Band of the Eternal Defender		Increases armor by $s1 for $d.	Increases armor by $s1.					
+35079	all		Misdirection			Threat redirected to target.					
+35080	all		Band of the Eternal Champion		Chance on hit to increase your attack power by 160 for 10 seconds.						
+35081	all		Band of the Eternal Champion		Increases attack power by $s1 for $d.	Increases attack power by $s1.					
+35083	all		Band of the Eternal Sage		Your offensive spells have a chance on hit to increase your spell power by 95 for 10 secs.						
+35084	all		Band of the Eternal Sage		Increases spell power by $s1 for $d.	Spell power increased by $s1.					
+35086	all		Band of the Eternal Restorer		Your healing and damage spells have a chance to increase your spell power by 93 for 10 secs.						
+35087	all		Band of the Eternal Restorer		Increases spell power by $s1 for $d.	Spell power increased by $s1.					
+35088	all		VENDOR TEST								
+35089	all		VENDOR TEST								
+35091	all		Nether Refiner		Places Nether Refiner on the ground, allowing Nether Essence to be gathered.						
+35092	all		Workshop Banner Neutral Click								
+35094	all		Despawn Vehicles								
+35095	all		Enlightenment		Restores $s1 mana per 5 sec.	Increased mana regeneration by $s1 mana per 5 sec.					
+35096	all		Greater Heal		Calls upon Holy magic to heal an ally.						
+35097	all		Shoot Honor Hold Scout Archery Target (Miss)								
+35098	spellbook	163	Rapid Killing	Rank 1	Reduces the cooldown of your Rapid Fire ability by $/60000;34948s2 min.  In addition, after killing an opponent that yields experience or honor, your next Aimed Shot, Arcane Shot or Chimera Shot causes $35098s1% additional damage.  Lasts $35098d.	Damage of your next Aimed Shot, Arcane Shot or Chimera Shot increased by $s1%.					
+35099	spellbook	163	Rapid Killing	Rank 2	Reduces the cooldown of your Rapid Fire ability by $/60000;34949s2 min.  In addition, after killing an opponent that yields experience or honor, your next Aimed Shot, Arcane Shot or Chimera Shot causes $35099s1% additional damage.  Lasts $35099d.	Damage of your next Aimed Shot, Arcane Shot or Chimera Shot increased by $s1%.					
+35100	spellbook	163	Concussive Barrage	Rank 1	Your successful Auto Shot attacks have a $h% chance to Daze the target for $35101d.						
+35101	spellbook	163	Concussive Barrage		Your successful Chimera Shot and Multi-Shot attacks have a chance to Daze the target for $35101d.	Dazed.					
+35102	spellbook	163	Concussive Barrage	Rank 2	Your successful Auto Shot attacks have a $h% chance to Daze the target for $35101d.						
+35103	spellbook	163	Concussive Barrage	Rank 3	Your successful Auto Shot attacks have a $h% chance to Daze the target for $35101d.						
+35104	spellbook	163	Improved Barrage	Rank 1	Increases the critical strike chance of your Multi-Shot ability by $s1% and gives you a $s2% chance to avoid interruption caused by damage while channeling Volley.						
+35105	all		Mortal Blow		Reduces an enemy's Stamina by $s1 and attack speed by $s2% for $d.	Stamina reduced by $s1.\nAttack speed reduced by $s2%.					
+35106	all		Arcane Flare		Burns the enemy for Arcane damage and inflicts additional damage over $d.	Arcane damage inflicted every $t1 sec.					
+35107	all		Electrified Net		Immobilizes an enemy for $d. and shocks it with electricity, inflicting Nature damage.	Immobilized.					
+35108	all		Electrified Net		Instantly shocks an enemy, inflicting Nature damage.						
+35109	all		Grishna Kaliri		Summons $s1 $lGrishna Kaliri:Grishna Kaliri; to accompany the caster until dismissed.						
+35110	spellbook	163	Improved Barrage	Rank 2	Increases the critical strike chance of your Multi-Shot ability by $s1% and gives you a $s2% chance to avoid interruption caused by damage while channeling Volley.						
+35111	spellbook	163	Improved Barrage	Rank 3	Increases the critical strike chance of your Multi-Shot ability by $s1% and gives you a $s2% chance to avoid interruption caused by damage while channeling Volley.						
+35112	all		Video Target Emote Sleep	VideoProduction Spell	Forces your target to go to sleep.	SLEEP!					
+35113	all		Warp Measurement		Measures errant energy levels near large mana currents.						
+35114	all		Video AE Emote Sleep	VideoProduction Spell	Forces all units within 20 yards to fall asleep.	SLEEP					
+35115	all		Video Target Emote Stand	VideoProduction Spell	Forces your target to go to stand up.	STAND!					
+35116	all		Video AE Emote Stand	VideoProduction Spell	Forces all units in 20yd radius to stand up.	STAND					
+35117	all		Video Target Emote Sit	VideoProduction Spell	Forces your target to sit	SIT					
+35118	all		Video AE Emote Sit	VideoProduction Spell	Forces all targets in 20 yd radius to sit down.	SIT					
+35119	all		Dummy Trigger								
+35120	all		Charm		Charm the target, causing it to assist you.	Charmed.					
+35121	all		Nether Power		Enables you to channel Nether Energy.  Each of your damage spell critical hits will grant you an application of Nether Power.  Upon reaching 5 applications, the Nether Power will activate and strike your current target with a Nether Explosion.						
+35122	all		Nether Power			Channeling Nether Power.					
+35123	all		Bloodthirst		Successful melee attacks restore health.	Successful melee attacks restore health.					
+35124	all		Arcane Explosion		Sends out a blast wave of magic, inflicting Arcane damage to nearby enemies.						
+35125	all		Bloodthirst		Melee attacks heal you for $s1.						
+35126	all		Silence Resistance 20%		Reduces the duration of any Silence or Interrupt effects used against the wearer by $s3%. This effect does not stack with other similar effects.	Reduces the duration of any Silence or Interrupt effects used against the wearer by $s3%.					
+35127	all		Summon Boom Bot Target								
+35128	all		Summon Boom Bot								
+35129	all		Bloodmaul Brutebane Stout		Places a mug on the ground which attracts a nearby Bladespire ogre.						
+35130	all		Summon Boom Bot								
+35131	all		Bladestorm		Increases your haste rating by $s1 for $d1.	Increased attack speed.					
+35132	all		Boom		Boom.						
+35133	all		Increase Healing 282		Increases spell power by $s1.						
+35134	all		Boom Bot Rotation								
+35135	all		Attack Power - Feral (+0525)		Increases attack power by $s1 in Cat, Bear, Dire Bear, and Moonkin forms only.						
+35136	all		Summon Captured Critter								
+35137	all		Kill Critter								
+35138	all		Clear Boom Bot								
+35139	all		Throw Boom's Doom		Throw a Boom's Doom bomb at the Camp of Boom.	Deals fire damage equal to 1% of maximum health per second.					
+35140	all		Reanimate Critter								
+35141	all		Reanimate Critter								
+35142	all		Drijya Summon Imp								
+35143	all		Summon Time Rift Periodic 5								
+35144	all		Vicious Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+35145	all		Drijya Summon Doomguard								
+35146	all		Drijya Summon Terrorguard								
+35147	all		Sundering Swipe		Swipes at an enemy, dealing weapon damage and reducing the target's armor by $s2 per Sundering Swipe. Can be applied up to 5 times. Lasts $d.	Armor reduced by $s2.					
+35148	all		Nether Charge Countdown								
+35150	all		Nether Charge Passive								
+35151	all		Nether Charge Pulse								
+35152	all		Nether Detonation		Sends out a blast wave of magic, inflicting Arcane damage to nearby enemies.						
+35153	all		Summon Nether Charge NE								
+35154	all		Feather Fall								
+35155	all		Smite								
+35156	spellbook	778	Mana Wyrmling		Right Click to summon and dismiss your mana wyrmling.						
+35157	spellbook	778	Summon Spotted Rabbit		Right Click to summon and dismiss your rabbit.						
+35158	all		Reflective Magic Shield		Surrounds the caster with a protective shield that reflects $s1% of harmful spells for $d.	$s1% chance to reflect spells.					
+35159	all		Reflective Damage Shield		Surrounds the caster with a protective shield that inflicts $s1 Arcane damage to melee attackers when hit.	$s1 damage inflicted to melee attackers.					
+35160	all		Holy Shock								
+35161	all		Head Crack		Reduces an enemy's Stamina by $s1 for $d.	Stamina reduced by $s1.					
+35162	all		Heal								
+35163	all		Blessing of the Silver Crescent		Increases spell power by $s2 for $d.	Spell power increased by $s2.					
+35165	all		Essence of the Martyr		Increases spell power by $s1 for $d.	Spell power increased by $s1.					
+35166	all		Lust for Battle		Increases attack power by $s1 for $d.	Increases attack power by $s1.					
+35168	all		Block Value 102		Increases the block value of your shield by $s1.						
+35169	all		Gnome Ingenuity		Increases the block value of your shield by $s1 for $d.	Block value increased by $s1.					
+35170	all		Judgement								
+35171	all		Pull Bladespire Brute								
+35172	all		Touched by the Light								
+35173	all		Trigger Damage Shield								
+35174	all		Trigger Magic Shield								
+35175	all		Demon Slayer 39		Increases attack power by $s1 when fighting Demons.						
+35176	all		Interrupt Shutdown								
+35177	all		Birth Dummy Cast								
+35178	all		Shield Bash		Bashes an enemy with the caster's shield, inflicting Physical damage and interrupting the spell being cast, and slowing movement speed for $d.	Movement speed reduced by $s3%.					
+35179	all		Shrink		Reduces the size of the target by $s1%.  This effect stacks up to $u times on a single target.	Sized reduced by $s1%.					
+35180	all		Grow		Increases the size of the target by $s1%.  This effect stacks up to $u times on a single target.	Sized increased by $s1%.					
+35181	all		Dive Bomb		Do damage divided up evenly among all affected targets						
+35182	spellbook	769	Banish		Banishes the target.	Banished.					
+35183	all		Unstable Affliction		Shadow energy slowly destroys the target, causing $o1 damage over $d.  In addition, if the Unstable Affliction is dispelled it will cause $*9;s1 damage to the dispeller and silence them for $31117d.	$s1 Shadow damage every $t1 sec.  If dispelled, will cause $*9;s1 damage to the dispeller and silence them for $31117d.					
+35184	all		Unstable Affliction Proc								
+35185	all		Melt Armor		Reduces the armor of nearby enemies by $s1 for $d.	Armor reduced by $s1.					
+35186	all		Melt Armor Proc								
+35187	all		Arcane Explosion Proc								
+35188	all		Chilling Touch								
+35189	all		Solar Strike		Inflicts $s1% weapon damage and leaves the target wounded, reducing the effectiveness of any healing by $s2% for $d.	Healing effects reduced by $s2%.					
+35190	all		Crystal Channel								
+35191	all		Arcane Explosion Proc								
+35192	all		Melt Armor Proc								
+35193	all		Seed of Corruption Proc								
+35194	all		Shadowform		Assumes a Shadowform, increasing Shadow damage dealt by $s2% and reducing melee damage taken by $s1%. Shadowform lasts until cancelled.	Shadow damage dealt is increased by $s2%.\nMelee damage taken is reduced by $s1%.					
+35195	all		Siphon Life		Transfers $s1 health from the target to the caster every $t1 sec.  Lasts $d.	Drains health to the caster every $t1 secs.					
+35196	all		Call Flesh Beast								
+35197	all		Terror Totem		Summons a Terror Totem which periodically fears nearby enemies.						
+35198	all		Terrify		Strikes fear in nearby enemies, causing them to flee in terror for $d.	Fleeing in terror.					
+35199	all		Healing Stream Totem		Summons a Healing Stream Totem with $s1 health at the feet of the caster for $d that heals group members within $5672a1 yards for $5672s1 every $5672t1 seconds.						
+35200	all		Roc Form	Shapeshift	Shapeshifts into a roc for $d., increasing armor and hit points, as well as allowing the use of various bear abilities.	Shapeshifted into roc.\nArmor and hit points increased.					
+35201	all		Paralytic Poison		Stuns an enemy after $d, rendering it unable to move or attack for a short time.	Nature damage inflicted every $t1 sec.\nStuns for $35202d after $d.					
+35202	all		Paralysis			Stunned.					
+35203	all		Toxic Fumes								
+35204	all		Toxic Fumes		Inflicts $s1 Nature damage to nearby enemies every $t1 sec. for $d.	$s1 Nature damage inflicted every $t1 sec.					
+35205	all		Vanish		Puts the caster in stealth mode for $d.	Stealthed.					
+35206	all		Back Blink			Blinking...					
+35207	all		Bandage		Heals $o1 damage over $d.	Healing $s1 damage every $t1 seconds.					
+35208	all		Conversation Credit								
+35209	all		Ring Bessy's Bell		Call Bessy the cow while standing in the middle of the farm fields east of Kirin'Var Village.						
+35210	all		Give Bessy Credit								
+35229	all		Sporeskin			Chance to hit with melee attacks reduced by $s1%.\nChance to hit with spells and abilities reduced by $s2%.					
+35230	all		Sporeskin			$h% chance of reducing chance to hit by $35229m1% when struck.					
+35231	all		Melt Armor		Reduces the armor of nearby enemies by $s1 for $d.	Armor reduced by $s1.					
+35234	all		Strangling Roots		Entangles an enemy in roots, inflicting Nature damage every $t2 sec. and immobilizing it for up to $d.	Immobilized.\nNature damage inflicted every $t2 sec.					
+35235	all		Osmosis		Drains $o1 health from nearby enemies over $d., transferring it to the caster.	$o1 health leeched over $d.					
+35236	all		Heat Wave		Inflicts $s1 Fire damage to enemies in a cone in front of the caster.	Chance to hit reduced by $s2%.					
+35237	all		Bessy Quest Completion								
+35238	all		War Stomp		Inflicts normal damage plus $s3 to nearby enemies, knocking them back.						
+35239	spellbook	778	Brown Rabbit		Right Click to summon and dismiss your rabbit.						
+35240	all		Bloodmaul Intoxication		Increases the time between an enemy's attacks by $s1% and slows its movement by $s2% for $d.	Intoxicated					
+35241	all		Bessy Credit (Script)								
+35242	all		Darkstalker Birth								
+35243	all		Starfire		Causes $s1 Arcane damage to the target.						
+35244	all		Choking Vines		Coats an enemy in roots, damaging them and slowing them. This effect will transform into a root if too many affect the target.	Nature damage every $t2 sec.\nMovement speed reduced by $s1%.\nBecomes a powerful wound at 5 stacks.					
+35245	all		Blade's Edge - Bladespire - Green Beam at String ID								
+35246	all		Place Surveying Marker		Place near a draenei banner in the Ruins of Farahlon.						
+35247	all		Choking Wound		Entangles an enemy in roots, inflicting Nature damage every $t2 sec. and immobilizing it for up to $d.	Immobilized.\nNature damage inflicted every $t2 sec.					
+35249	all		Choking Vines								
+35250	all		Dragon's Breath		Targets in a cone in front of the caster take $s1 Fire damage and are Disoriented for $d.  Any direct damaging attack will revive targets.	Disoriented.					
+35251	all		Summon Arcane Golem								
+35252	all		Unstable Cloud			Deals $o2 damage over $d.\nMovement speed reduced by $s1%.					
+35253	all		DEPRECATED PET SCALING		If you see this, report this!						
+35254	all		DEPRECATED PET SCALING		If you see this, report this!						
+35255	all		Arcane Volley		Hurls a magical bolt at an enemy, inflicting Arcane damage.						
+35256	all		Summon Unstable Mushroom								
+35257	all		DEPRECATED PET SCALING		If you see this, report this!						
+35258	all		DEPRECATED PET SCALING		If you see this, report this!						
+35259	all		Spotlight								
+35260	all		Summon Arcane Golem								
+35261	all		Arcane Nova		Causes an explosion of arcane energy around the caster, causing $s1 arcane damage to all enemy targets within $a1 yards and healing all party members within $29514a2 yards for $29514s2.  These effects cause no threat.						
+35262	all		Bladespire Spear Throw 01		Throws a weapon at a particular Ogre						
+35263	all		Frost Attack		Inflicts $s1 damage on an enemy and slows its movement by $s2% for $d.	Movement slowed by $s2%.					
+35264	all		Frost Attack								
+35265	all		Fire Shield		Surrounds an ally with a shield of flame that inflicts $35266s1 Fire damage to nearby enemies every $t1 sec.  Lasts $d.	Inflicting $35266s1 Fire damage to nearby enemies every $t1 sec.					
+35266	all		Fire Shield		Inflicts $s1 Fire damage to nearby enemies.						
+35267	all		Solarburn		Inflicts Fire damage to an enemy, then additional damage every $t2 sec. for $d.	Fire damage inflicted every $t2 sec.					
+35268	all		Inferno		Surrounds the caster with an inferno that periodically inflicts Fire damage to nearby enemies for $d. While the caster is aflame, $ghe:she; cannot move or use $ghis:her; abilities.	Unable to move or use abilities.\nPeriodically inflicting Fire damage to nearby enemies.					
+35270	all		Food		Restores $o1 health over $d.  Must remain seated while eating.	Restores $/5;s1 health per second.					
+35271	all		Food		Restores $o1 health over $d.  Must remain seated while eating.  If you spend at least 10 seconds eating you will become well fed and gain $35272s1 Stamina and Spirit for $35272d.	Restores $/5;s1 health per second.					
+35272	all		Well Fed		Stamina and Spirit increased by $s1. Lasts $d.	Stamina and Spirit increased by $s1.					
+35273	all		Unstable Mushroom Primer								
+35274	all		Raging Flames								
+35275	all		Summon Raging Flames		Summons two Raging Flames.						
+35276	all		Throw Dynamite		Inflicts $s1 Fire damage to all enemies in a selected area.						
+35277	all		Quell Raging Flames								
+35278	all		Raging Flames								
+35280	all		Domination		Takes control of a humanoid enemy up to level $s1 for $d.	Charmed.					
+35281	all		Raging Flames								
+35282	all		Fel Zapper		Shocks the Scrapped Fel Reaver's heart into a state that it can be salvaged.						
+35283	all		Inferno								
+35284	all		Summon Nether Wraiths								
+35285	all		Summon Nether Wraith								
+35286	all		Summon Nether Wraith								
+35287	all		Summon Nether Wraith								
+35288	all		Summon Nether Wraith								
+35289	all		Disgruntled Anger		Increases the target's attack speed by $s2% and the Physical damage it deals by $s1 for $d.	Physical damage dealt is increased by $s1.\nAttack speed increased by $s2%.					
+35290	spellbook	211,767	Gore	Rank 1	Gores the enemy, causing $s1 damage.  This attack has a 50% chance to inflict double damage.						
+35291	spellbook	211,767	Gore	Rank 2	Gores the enemy, causing $s1 damage.  This attack has a 50% chance to inflict double damage.						
+35292	spellbook	211,767	Gore	Rank 3	Gores the enemy, causing $s1 damage.  This attack has a 50% chance to inflict double damage.						
+35293	spellbook	211,767	Gore	Rank 4	Gores the enemy, causing $s1 damage.  This attack has a 50% chance to inflict double damage.						
+35294	spellbook	211,767	Gore	Rank 5	Gores the enemy, causing $s1 damage.  This attack has a 50% chance to inflict double damage.						
+35295	spellbook	211,767	Gore	Rank 6	Gores the enemy, causing $s1 damage.  This attack has a 50% chance to inflict double damage.						
+35296	spellbook	211,767	Gore	Rank 7	Gores the enemy, causing $s1 damage.  This attack has a 50% chance to inflict double damage.						
+35297	spellbook	211,767	Gore	Rank 8	Gores the enemy, causing $s1 damage.  This attack has a 50% chance to inflict double damage.						
+35298	spellbook	211,767	Gore	Rank 9	Gores the enemy, causing $s1 damage.  This attack has a 50% chance to inflict double damage.						
+35299	all		Gore	Rank 1							
+35300	all		Gore	Rank 2							
+35301	all		Suicide								
+35302	all		Gore	Rank 3							
+35303	all		Gore	Rank 4							
+35304	all		Gore	Rank 5							
+35305	all		Gore	Rank 6							
+35306	all		Gore	Rank 7							
+35307	all		Gore	Rank 8							
+35308	all		Gore	Rank 9							
+35309	all		Bloody Explosion								
+35310	all		Summon Sundered Shard		Summons a Sundered Shard.						
+35311	all		Stream of Machine Fluid		Reduces an enemy's attack speed by $s1% for $d.\nReduces an enemy's armor by $s1% for $d.	Time between attacks increased by $s1%.\nArmor reduced by $s2%.					
+35312	all		Raging Flames								
+35313	all		Hypnotic Gaze		Stuns an enemy, rendering it unable to move or attack for $d.	Stunned.					
+35314	all		Arcane Blast		Blasts an enemy with Arcane magic, inflicting normal damage plus $s2 and knocking the enemy back.						
+35316	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+35317	all		Chilled Blood			Movement speed reduced by $s1%.					
+35318	all		Saw Blade			Physical damage inflicted every $t2 sec.					
+35319	all		Electric Skin		Surrounds the caster with charged skin that has a $h% chance of striking melee or ranged attackers for $s1 damage. Thus, the shield expires after $d.	$h% chance of inflicting $s1 Nature damage on hit.					
+35320	all		Electric Skin		Casts a bolt of lightning at the target for $s1 Nature damage.						
+35321	all		Gushing Wound		Inflicts Physical damage to an enemy every $t1 sec. for $d. Removed by any healing effect.	Physical damage inflicted every $t1 sec.\nBleeding until healed.					
+35322	all		Shadow Power			Attack speed increased by $s1%.					
+35323	spellbook	763	Fire Breath	Rank 2	Targets in a cone in front of the caster take ${$m1*3} Fire damage over $d.	$s1 Fire damage every second.					
+35325	all		Glowing Blood		Reduces an enemy's armor by $s1 for $d. While affected, the target cannot use stealth or invisibility.	Cannot use stealth or invisibility.\nChance to dodge reduced by $s2%.\nAgility increased by $s3%.\n					
+35326	all		Hammer Punch		Pounds an enemy, inflicting weapon damage plus $s1 and stunning it for $d.	Stunned.					
+35327	all		Jackhammer		Pounds the ground, inflicting damage to nearby enemies and reduces an enemy's attack speed by $s2%.	Time between attacks increased by $s2%.					
+35328	all		Lambent Blood		While affected, the target cannot use stealth or invisibility.	Cannot use stealth or invisibility.\nDamage taken increased by $s2%.\nStrength increased by $s3%.\n					
+35329	all		Vibrant Blood		While affected, the target cannot use stealth or invisibility.	Cannot use stealth or invisibility.\nSpell casting time increased by $s2%.\nDamage done by magical spells and effects increased by $s3%.\n					
+35330	all		Jackhammer Effect		Pounds the ground, inflicting damage to nearby enemies and reduces an enemies attack speed by $s2%.	Time between attacks increased by $s2%.					
+35331	all		Black Blood		Reduces an enemy's armor by $s1 for $d. While affected, the target cannot use stealth or invisibility.	Cannot use stealth or invisibility.\nAll stats decreased by $s3%.\nDamage taken reduced by $s2%.\n					
+35332	all		Drain Mana		Drains up to $o1 mana from an enemy over $d. and transfers it to the caster.	$o1 mana leeched over $d.					
+35333	all		Tail Swipe		Inflicts normal damage plus $s1 to an enemy, knocking it back.						
+35334	all		Nether Shock		Instantly lashes an enemy with dark magic, inflicting Shadow damage.	Silenced.					
+35335	all		Nether Leech		Inflicts $s1 Shadow damage.  The caster gains 100% of the damage caused in health.						
+35336	all		Energizing Spores		Increases the enemy's stats by $s1.	Increases all attributes by $s1.					
+35337	all		Spell Power		Increases spell power by $s1 for $d.	Increases spell power by $s1.					
+35338	all		Increase Healing 228		Increases spell power by $s1.						
+35339	all		Lee's TEST Mind Vision		Allows the actor to see through the camera's eyes until cancelled.	Sight granted through target's eyes.					
+35340	all		Root Self								
+35341	all		Boom Visual		Boom Visual Only.						
+35342	all		Osmosis		Drains $s1 health from nearby enemies, transferring it to the caster.						
+35343	all		Dummy Trigger								
+35344	all		Dr. Boom Relay Invisibility								
+35346	spellbook	766	Warp		Teleports to an enemy up to 30 yards away and gives the pet a $s3% chance to avoid the next melee attack.  Lasts $d.	Next melee attack against you has a $s3% chance to miss.					
+35347	all		Feral Combat Skill Rating + 24		Increases feral combat skill rating by $s1.						
+35348	all		Warp	Rank 1							
+35349	all		Opening Ethereum Prison		Unlocks Ethereum prisons.						
+35350	all		Stasis								
+35351	all		Sand Breath		Inflicts Arcane damage to enemies in a cone in front of the caster, reducing their movement and increasing the time between their attacks for $d.	Reduced movement speed.\nIncreased time between attacks.					
+35352	all		Soothe		Reduces your threat to enemy targets within $a1 yards, making them less likely to attack you.						
+35353	all		Temporal Rift		Encloses enemy in a temporal rift, increasing the time between their attacks by $s2% for $d.	Time between attacks increased by $s2%.					
+35354	all		Hand of Death		Instantly kills all enemies.						
+35355	all		Inscription of Warding		Permanently adds 13 dodge rating to a shoulder slot item.\n\nEnchanting the item causes it to become soulbound.						
+35356	all		Spawn Feign Death								
+35357	all		Spawn Feign Death								
+35358	all		Intensity	Rank 2							
+35359	all		Intensity	Rank 3							
+35360	all		Salvation		Reduces the amount of all threat generated by $s1%.						
+35361	all		Thorns		Thorns sprout from the friendly target causing Nature damage to attackers when hit.  Lasts $d.	Causes Nature damage to attackers.					
+35362	all		Unstable Mushroom Visual			Movement speed reduced by $s1%.					
+35363	spellbook	574	Focused Starlight	Rank 1	Increases the critical strike chance of your Wrath, Enervate, Starfire, and Zenith spells by $s1%.						
+35364	spellbook	574	Focused Starlight	Rank 2	Increases the critical strike chance of your Wrath, Enervate, Starfire, and Zenith spells by $s1%.						
+35366	all		Dive Bomb								
+35367	all		Dive Bomb								
+35368	all		Transform: Invisible Stalker								
+35369	all		Rebirth		Reborn from the ashes, Al'ar deals $s1 Fire damage to all enemies within $r1 yards.						
+35370	all		Protectorate Igniter								
+35371	all		White Beam								
+35372	all		Protectorate Igniter		Incinerates withered corpses around and inside Access Shaft Zeon.						
+35373	all		Shadowfury		Shadowfury is unleashed, causing $s1 Shadow damage and knockback to all enemies within $a1 yds for $d.						
+35374	all		Charred Remains								
+35375	all		Dive Bomb								
+35376	all		Translocate								
+35377	all		Scorch		Scorches an enemy for Fire damage.						
+35378	all		Summon Archmage's Staff								
+35379	all		Reflection of Ya-six								
+35380	all		Flame Patch Periodic								
+35381	all		Reflection of Ya-six			Physically exhausted by the chaotic energies of Ya-six, you will be unable to ask him for aid until the malaise wears off.					
+35382	all		Rushing Charge		Charges an enemy, inflicting normal damage plus $s3.						
+35383	all		Flame Patch		Deals $s1 Fire damage and increases all Fire damage taken for $d.	Increases fire damage taken by $s2%.					
+35384	all		Despawn Self								
+35385	all		Threshalisk Charge		Charges an enemy, inflicting normal damage plus $s3.						
+35386	all		DEPRECATED PET SCALING		If you see this, report this!						
+35387	spellbook	768	Poison Spit	Rank 1	Spits poison at an enemy, dealing $o1 Nature damage over $d.	Nature damage inflicted every $t1 sec.					
+35388	all		Poison Spit	Rank 1							
+35389	spellbook	768	Poison Spit	Rank 2	Spits poison at an enemy, dealing $o1 Nature damage over $d.	Nature damage inflicted every $t1 sec.					
+35390	all		Poison Spit	Rank 2							
+35391	all		Poison Spit	Rank 3							
+35392	spellbook	768	Poison Spit	Rank 3	Spits poison at an enemy, dealing $o1 Nature damage over $d.	Nature damage inflicted every $t1 sec.					
+35393	all		EXIT_MINE								
+35394	all		Spore Cloud		Inflicts Nature damage to nearby enemies every $t1 sec. and reduces enemies' armor by $s2%  for $d.	Suffering Nature damage every $t1 sec.\nArmor reduced by $s2%.					
+35395	spellbook	184	Crusader Strike		An instant strike that causes $s2% weapon damage as Holy and refreshes all Judgements on the target.						
+35396	spellbook	184	Sanctified Seals	Rank 2	Increases your chance to critically hit with all spells and melee attacks by $s1% and reduces the chance your Seals and Crusader Strike will be dispelled by $s2%.						
+35397	spellbook	184	Sanctified Seals	Rank 3	Increases your chance to critically hit with all spells and melee attacks by $s1% and reduces the chance your Seals and Crusader Strike will be dispelled by $s2%.						
+35398	all		ARCONUS_CLOSE								
+35399	all		Spell Reflection		Magical spells will be reflected.\n$n charges.	Magical spells will be reflected.\n$n charges.					
+35401	all		Arcane Shot		Shoots an enemy, inflicting Arcane damage.						
+35402	all		Greater Inscription of Warding		Permanently adds 15 dodge rating and 10 defense rating to a shoulder slot item.\n\nEnchanting the item causes it to become soulbound.						
+35403	all		Inscription of Faith		Permanently adds 15 spell power to a shoulder slot item.\n\nEnchanting the item causes it to become soulbound.						
+35404	all		Greater Inscription of Faith		Permanently adds 18 spell power and 5 mana per 5 sec. to a shoulder slot item.\n\nEnchanting the item causes it to become soulbound.						
+35405	all		Inscription of Discipline		Permanently adds 15 spell power to a shoulder slot item.\n\nEnchanting the item causes it to become soulbound.						
+35406	all		Greater Inscription of Discipline		Permanently adds 18 spell power and 10 critical strike rating to a shoulder slot item\n\nEnchanting the item causes it to become soulbound.						
+35407	all		Inscription of Vengeance		Permanently adds 26 attack power to a shoulder slot item.\n\nEnchanting the item causes it to become soulbound.						
+35408	all		Fear Proc								
+35409	all		Brain Damage		It might open your mind and allow you to see things as the ethereals do. It may also give you irreversible brain damage.	You've really done it this time!					
+35410	all		Melt Armor		Melts the target's armor, reducing it by $s2% for $d.	Armor reduced by $s1%.					
+35411	all		Fel Crystalforge Smoke								
+35412	all		Charge		Charges an enemy, inflicting normal damage plus $s2 and stuns the opponent for $d.						
+35413	all		Seed of Revitalization		Cast within the Earthbinder's Circle to heal the land at Fallen Sky Ridge.	Revitalizing the land					
+35414	all		(TXT) ToWoW - Tower Kill Credit (DND)								
+35415	all		Shadow Armor Kit		Permanently increase the shadow resistance of an item worn on the chest, legs, hands or feet by 8.\n\nAttaching the armor kit causes the item to become soulbound.						
+35416	all		Flame Armor Kit		Permanently increase the fire resistance of an item worn on the chest, legs, hands or feet by 8.\n\nAttaching the armor kit causes the item to become soulbound.						
+35417	all		Greater Inscription of Vengeance		Permanently adds 30 attack power and 10 critical strike rating to a shoulder slot item.\n\nEnchanting the item causes it to become soulbound.						
+35418	all		Frost Armor Kit		Permanently increase the frost resistance of an item worn on the chest, legs, hands or feet by 8.\n\nAttaching the armor kit causes the item to become soulbound.						
+35419	all		Nature Armor Kit		Permanently increase the nature resistance of an item worn on the chest, legs, hands or feet by 8.\n\nAttaching the armor kit causes the item to become soulbound.						
+35420	all		Arcane Armor Kit		Permanently increase the arcane resistance of an item worn on the chest, legs, hands or feet by 8.\n\nAttaching the armor kit causes the item to become soulbound.						
+35421	all		Summon Sporewind Frenzy								
+35422	all		Summon Sporewind Frenzy								
+35423	all		Summon Sporewind Frenzies								
+35424	all		Soul Shadows		Drains the soul of the target, inflicting Shadow damage every $t1 seconds for $d.	Immune to spells and effects, but unable to attack.\nImmobilized.					
+35425	all		Summon Shadow Image		Summons a shadow to aid the caster in battle for $d.						
+35426	all		Arcane Explosion Visual								
+35427	all		Blade's Edge Purple Beam								
+35428	all		Summon Lasher Beast								
+35429	all		Sweeping Strikes		Causes the caster's next $n melee attacks to strike an additional nearby enemy. This battle frenzy is tiring, however, and lasts $d. at most.	Melee attacks are striking an additional nearby enemy.					
+35430	all		Infernal								
+35431	all		Infernal			Stunned.					
+35432	all		Inscription of the Knight		Permanently adds 13 defense rating to a shoulder slot item.\n\nEnchanting the item causes it to become soulbound.						
+35433	all		Greater Inscription of the Knight		Permanently adds 15 defense rating and 10 dodge rating to a shoulder slot item.\n\nEnchanting the item causes it to become soulbound.						
+35434	all		Inscription of the Oracle		Permanently adds 6 mana per 5 sec to a shoulder slot item.\n\nEnchanting the item causes it to become soulbound.						
+35435	all		Greater Inscription of the Oracle		Permanently adds 8 mana per 5 sec and 12 spell power to a shoulder slot item.\n\nEnchanting the item causes it to become soulbound.						
+35436	all		Inscription of the Orb		Permanently adds 13 critical strike rating to a shoulder slot item.\n\nEnchanting the item causes it to become soulbound.						
+35437	all		Greater Inscription of the Orb		Permanently adds 15 critical strike rating and 12 spell power to a shoulder slot item.\n\nEnchanting the item causes it to become soulbound.						
+35438	all		Inscription of the Blade		Permanently adds 13 critical strike rating to a shoulder slot item.\n\nEnchanting the item causes it to become soulbound.						
+35439	all		Greater Inscription of the Blade		Permanently adds 15 critical strike rating and 20 attack power to a shoulder slot item.\n\nEnchanting the item causes it to become soulbound.						
+35440	all		Spar Dummy Vertex								
+35441	all		Inscription of Endurance		Permanently adds 7 resistance to all magic schools to a shoulder slot item.\n\nEnchanting the item causes it to become soulbound.						
+35442	all		ncreased All Resist 07		+$s1 All Resistances.						
+35443	all		Arcanum of the Defender		Permanently adds 16 defense rating and 17 dodge rating to a head slot item.\n\nEnchanting the item causes it to become soulbound.						
+35445	all		Arcanum of Renewal		Permanently adds 19 spell power and 9 mana per 5 sec. to a head slot item.\n\nEnchanting the item causes it to become soulbound.						
+35446	spellbook	256	Improved Mortal Strike	Rank 1	Reduces the cooldown of your Mortal Strike ability by $/1000;S1 sec and increases the damage it causes by $s2%.						
+35447	all		Arcanum of Power		Permanently adds 22 spell power and 14 hit rating to a head slot item.\n\nEnchanting the item causes it to become soulbound.						
+35448	spellbook	256	Improved Mortal Strike	Rank 2	Reduces the cooldown of your Mortal Strike ability by $/1000;S1 sec and increases the damage it causes by $s2%.						
+35449	spellbook	256	Improved Mortal Strike	Rank 3	Reduces the cooldown of your Mortal Strike ability by $/1000;S1 sec and increases the damage it causes by $s2%.						
+35450	spellbook	256	Improved Mortal Strike	Rank 4	Reduces the cooldown of your Mortal Strike ability by $/1000;S1 sec and increases the damage it causes by $s2%.						
+35451	spellbook	256	Improved Mortal Strike	Rank 5	Reduces the cooldown of your Mortal Strike ability by $/1000;S1 sec and increases the damage it causes by $s2%.						
+35452	all		Arcanum of Ferocity		Permanently adds 34 attack power and 16 hit rating to a head slot item.\n\nEnchanting the item causes it to become soulbound.						
+35453	all		Arcanum of the Gladiator		Permanently adds 18 Stamina and 20 resilience rating to a head slot item.\n\nEnchanting the item causes it to become soulbound.						
+35454	all		Arcanum of Nature Warding		Permanently adds 20 Nature resistance to a head slot item.\n\nEnchanting the item causes it to become soulbound.						
+35455	all		Arcanum of Arcane Warding		Permanently adds 20 Arcane resistance to a head slot item.\n\nEnchanting the item causes it to become soulbound.						
+35456	all		Arcanum of Fire Warding		Permanently adds 20 Fire resistance to a head slot item.\n\nEnchanting the item causes it to become soulbound.						
+35457	all		Arcanum of Frost Warding		Permanently adds 20 Frost resistance to a head slot item.\n\nEnchanting the item causes it to become soulbound.						
+35458	all		Arcanum of Shadow Warding		Permanently adds 20 Shadow resistance to a head slot item.\n\nEnchanting the item causes it to become soulbound.						
+35459	all		Increased Crossbow		Increases crossbow skill rating by $s1.						
+35460	all		Fury of the Dreghood Elders		Use on Arzeth the Merciless to temporarily remove his powers.						
+35463	all		Staff of the Dreghood Elders Trigger								
+35464	all		Infusion			Doubles in size and 30% melee haste.					
+35465	all		C_C_D								
+35466	all		Human Male Illusion TEST								
+35467	all		All Weapons								
+35468	all		Seed of Revitalization Entangling Roots Visual		Entangling Roots Visual Only.						
+35469	all		Seed of Revitalization Lightning Cloud Visual								
+35470	all		Explosion		Inflict $s1 Fire damage to nearby enemies.						
+35471	all		Seed of Revitalization Giant Insect Swarm Visual		Giant Insect Swarm Visual Only.						
+35472	all		Shield Charge		Charges an enemy, knocking it back and inflicting normal damage plus $s3.	Stunned.					
+35473	all		Forceful Cleave		Inflicts weapon damage plus $s1 to an enemy and its nearest ally and knocks them back.						
+35474	all		Drums of Panic		Unearthly rhythms cause $i enemies within $a1 yds to flee in terror for $d.	Fleeing in terror.					
+35475	all		Drums of War		Increases attack power by $s1 and spell power by $s2 on nearby party members.  Lasts $d.  Cannot affect targets level 80 or higher.	Attack power increased by $s1 and spell power by $s2.					
+35476	all		Drums of Battle		Increases haste rating on nearby party members by up to $s1.  Lasts $d.  Cannot affect targets level 80 or higher.	Haste rating increased by $s1.					
+35477	all		Drums of Speed		Increases movement speed of nearby party members by $s1%.  Lasts $d.	Movement speed increased by $s1%.					
+35478	all		Drums of Restoration		Restores $o1 health and mana to nearby party members over $d.  Cannot affect targets level 80 or higher.	Restores $s1 health and mana every $t1 seconds.					
+35479	all		Human Illusion								
+35480	all		Human Illusion		The power of the Bronze Dragonflight has changed the target's appearance into that of a human.	Transformed into a Human.					
+35481	all		Human Illusion		The power of the Bronze Dragonflight has changed the target's appearance into that of a human.	Transformed into a Human.					
+35482	all		Human Illusion		The power of the Bronze Dragonflight has changed the target's appearance into that of a human.	Transformed into a Human.					
+35483	all		Human Illusion		The power of the Bronze Dragonflight has changed the target's appearance into that of a human.	Transformed into a Human.					
+35484	all		Dummy Trigger								
+35485	all		Human Illusion								
+35486	all		Dependable Damage		This does $s1 damage.						
+35487	all		Seed of Revitalization Lightning Cloud Visual		Lightning Cloud Visual Only.						
+35488	all		Cobrahide Leg Armor		Permanently attach cobrahide armor onto pants to increase attack power by 40 and critical strike rating by 10.\n\nEnchanting the item causes it to become soulbound.						
+35489	all		Clefthide Leg Armor		Permanently attach clefthide armor onto pants to increase Stamina by 30 and Agility by 10.\n\nEnchanting the item causes it to become soulbound.						
+35490	all		Nethercobra Leg Armor		Permanently attach nethercobra armor onto pants to increase attack power by 50 and critical strike rating by 12.\n\nEnchanting the item causes it to become soulbound.						
+35491	all		Furious Rage		Physical damage dealt is decreased by $s1%.\nAttack speed increased by $s2%.\nLasts $d.	Physical damage dealt is decreased by $s1%.\nAttack speed increased by $s2%.					
+35492	all		Exhaustion		Stunned.	Stunned.					
+35493	all		Forked Lightning Tether		Inflicts Nature damage to an enemy for $d.	Nature damage inflicted over $d.\n					
+35494	all		Attack Power 45		Increases attack power by $s1.						
+35495	all		Nethercleft Leg Armor		Permanently attach nethercleft leg armor onto pants to increase Stamina by 40 and Agility by 12.\n\nEnchanting the item causes it to become soulbound.						
+35496	all		Human Illusion								
+35498	all		Spotlight								
+35499	all		Water Spout								
+35500	all		Shalassi Dampening Aura			Decreases maximum health by 50%.\nIncreases mana cost of spells by 50%					
+35501	all		Legion Portal								
+35502	all		Legion Teleport Target								
+35503	all		Dummy Trigger								
+35504	all		Researcher Arcane Power								
+35505	all		Summon Boom Bot								
+35506	all		Energize!								
+35507	all		Mind Flay		Inflicts Shadow damage to an enemy and reduces its movement speed for $d.	Shadow damage inflicted over $d.\nReduced movement speed.					
+35508	all		Energy Overload								
+35509	all		Crusader Strike	Rank 1							
+35510	all		Darkstalker Transform Visual 01								
+35511	all		Serpent Sting		Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.	Causes Nature damage every $t1 seconds.					
+35513	all		Mana Bomb Explosion								
+35514	all		Salaadin's Stasis								
+35515	all		Salaadin's Tesla								

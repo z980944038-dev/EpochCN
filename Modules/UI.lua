@@ -64,6 +64,7 @@ EpochCN:RegisterModule("UI", function(E)
     return (E.localizedTextByRaw and (E.localizedTextByRaw[text] or E.localizedTextByRaw[normalized]))
       or glossaryText[text]
       or glossaryText[normalized]
+      or (TPCN_GlobalData and (TPCN_GlobalData[text] or TPCN_GlobalData[normalized]))
       or mapTranslations[text]
       or mapTranslations[normalized]
   end
@@ -206,6 +207,27 @@ EpochCN:RegisterModule("UI", function(E)
   -- TranslateFontStrings：只扫描**可见**frame，减少无效遍历
   -- ============================================================
   local LocalizeFrameNow
+  local ApplyTranslatedFontString
+  local HookDynamicFontString
+  local HookDynamicFrameText
+
+  local function HookScrollRefreshFrame(frame)
+    if not frame or not frame.HookScript or frame.EpochCNScrollRefreshHooked then return end
+    local name = frame.GetName and frame:GetName()
+    if not name or not string.find(name, "Scroll", 1, true) then return end
+
+    frame.EpochCNScrollRefreshHooked = true
+    local function RefreshAfterScroll(self)
+      ResetTranslateCache()
+      LocalizeFrameNow((self and self.GetParent and self:GetParent()) or self)
+      ScheduleLocalize(true)
+    end
+
+    pcall(frame.HookScript, frame, "OnVerticalScroll", RefreshAfterScroll)
+    pcall(frame.HookScript, frame, "OnMouseWheel", RefreshAfterScroll)
+    pcall(frame.HookScript, frame, "OnValueChanged", RefreshAfterScroll)
+    pcall(frame.HookScript, frame, "OnClick", RefreshAfterScroll)
+  end
 
   local function TranslateFontStrings(frame, depth, visited)
     if not frame then return end
@@ -225,10 +247,12 @@ EpochCN:RegisterModule("UI", function(E)
         LocalizeFrameNow(self)
       end)
     end
+    HookScrollRefreshFrame(frame)
 
     if frame.GetRegions then
       for _, region in pairs({ frame:GetRegions() }) do
         if region and region.GetText and region.SetText then
+          HookDynamicFontString(region)
           local text = region:GetText()
           if text and text ~= "" then
             local translated = TranslateText(text)
@@ -249,6 +273,7 @@ EpochCN:RegisterModule("UI", function(E)
 
   LocalizeFrameNow = function(frame)
     if not frame or IsUnsafeFrame(frame) then return end
+    HookDynamicFrameText(frame)
     TranslateFontStrings(frame)
   end
 
@@ -313,8 +338,90 @@ EpochCN:RegisterModule("UI", function(E)
     end
   end
 
+  ApplyTranslatedFontString = function(fontString, text)
+    if not fontString or fontString.EpochCNSettingText then return end
+    if type(text) ~= "string" or text == "" then return end
+
+    local translated = TranslateText(text)
+    if translated and translated ~= text then
+      fontString.EpochCNSettingText = true
+      fontString:SetText(translated)
+      fontString.EpochCNSettingText = false
+    end
+  end
+
+  HookDynamicFontString = function(fontString)
+    if not fontString or fontString.EpochCNDynamicTextHooked then return end
+    if not fontString.GetText or not fontString.SetText then return end
+
+    fontString.EpochCNDynamicTextHooked = true
+    if hooksecurefunc then
+      pcall(hooksecurefunc, fontString, "SetText", function(self, text)
+        ApplyTranslatedFontString(self, text)
+      end)
+    end
+
+    ApplyTranslatedFontString(fontString, fontString:GetText())
+  end
+
+  HookDynamicFrameText = function(frame, depth, visited)
+    if not frame or (depth and depth > 8) then return end
+    if IsUnsafeFrame(frame) then return end
+    visited = visited or {}
+    if visited[frame] then return end
+    visited[frame] = true
+    depth = depth or 0
+
+    if frame.GetRegions then
+      for _, region in pairs({ frame:GetRegions() }) do
+        HookDynamicFontString(region)
+      end
+    end
+
+    if frame.GetChildren then
+      for _, child in pairs({ frame:GetChildren() }) do
+        HookDynamicFrameText(child, depth + 1, visited)
+      end
+    end
+  end
+
+  local function LocalizeSkillFrameNow()
+    local frame = SkillFrame or getglobal("SkillFrame")
+    if not frame then return end
+    HookDynamicFrameText(frame)
+    TranslateFontStrings(frame)
+  end
+
+  local function LocalizeSkillFrameSoon()
+    ResetTranslateCache()
+    LocalizeSkillFrameNow()
+    ScheduleLocalize(true)
+  end
+
+  local function HookSkillScrollFrame()
+    local frameNames = {
+      "SkillFrameScrollFrame",
+      "SkillFrameScrollFrameScrollBar",
+      "SkillFrameScrollFrameScrollBarScrollUpButton",
+      "SkillFrameScrollFrameScrollBarScrollDownButton",
+    }
+
+    for _, name in pairs(frameNames) do
+      local frame = getglobal(name)
+      if frame and frame.HookScript and not frame.EpochCNSkillScrollHooked then
+        frame.EpochCNSkillScrollHooked = true
+        pcall(frame.HookScript, frame, "OnValueChanged", LocalizeSkillFrameSoon)
+        pcall(frame.HookScript, frame, "OnVerticalScroll", LocalizeSkillFrameSoon)
+        pcall(frame.HookScript, frame, "OnMouseWheel", LocalizeSkillFrameSoon)
+        pcall(frame.HookScript, frame, "OnClick", LocalizeSkillFrameSoon)
+      end
+    end
+  end
+
   local function LocalizeCharacterPanels()
     LocalizeCharacterTabs()
+    HookSkillScrollFrame()
+    LocalizeSkillFrameNow()
 
     for _, name in pairs({ "CharacterFrame", "SkillFrame", "ReputationFrame" }) do
       local frame = getglobal(name)
@@ -379,6 +486,14 @@ EpochCN:RegisterModule("UI", function(E)
     end)
   end
 
+  if SkillFrame_OnVerticalScroll then
+    hooksecurefunc("SkillFrame_OnVerticalScroll", LocalizeSkillFrameSoon)
+  end
+
+  if SkillFrame_OnShow then
+    hooksecurefunc("SkillFrame_OnShow", LocalizeSkillFrameSoon)
+  end
+
   if ReputationFrame_Update then
     hooksecurefunc("ReputationFrame_Update", function()
       LocalizeCharacterPanels()
@@ -398,6 +513,7 @@ EpochCN:RegisterModule("UI", function(E)
   -- 的 OnShow hook 做按需扫描即可
   -- 已移除高频战斗事件：UNIT_DAMAGE, UNIT_RANGEDDAMAGE, UNIT_RESISTANCES, UNIT_STATS, COMBAT_RATING_UPDATE
   frame:SetScript("OnEvent", function()
+    HookSkillScrollFrame()
     ScheduleLocalize()
   end)
 
@@ -424,5 +540,6 @@ EpochCN:RegisterModule("UI", function(E)
     end
   end
 
+  HookSkillScrollFrame()
   E:LocalizeUI()
 end)

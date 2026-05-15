@@ -59,7 +59,7 @@ def audit(path):
 
 if __name__ == '__main__':
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    for f in ['UnitData.lua', 'ItemData.lua', 'SpellData_52.lua', 'SpellData_Epoch.lua',
+    for f in ['UnitData.lua', 'ItemData.lua', 'SpellData_Epoch.lua',
               'QuestCN_Data.lua', 'EpochQuestData.lua', 'CallBoardData.lua']:
         p = os.path.join(root, 'Data', f)
         if os.path.exists(p):

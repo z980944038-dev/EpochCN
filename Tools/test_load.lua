@@ -466,28 +466,28 @@ end
 print("  OK   DBC 英文法术名+等级反查: Improved Heroic Strike Rank 1 -> " .. heroicStrikeTalentRank[1])
 
 -- Check spell sanitization
-local spell32509 = TPCN_SpellData_52[32509] and TPCN_SpellData_52[32509][2]
-if spell32509 and string.find(spell32509, "/1000;s1") then
-  print("  FAIL spell 32509 还包含 DBC token /1000;s1: " .. tostring(spell32509))
+local spell64382 = TPCN_SpellData_Epoch[64382] and TPCN_SpellData_Epoch[64382][2]
+if not spell64382 then
+  print("  FAIL SpellData_Epoch[64382] 不存在")
   os.exit(1)
 end
-if spell32509 and string.find(spell32509, "411139s1") then
-  print("  FAIL spell 32509 还包含法术ID token 411139s1: " .. tostring(spell32509))
+if string.find(spell64382, "$", 1, true) then
+  print("  FAIL spell 64382 还包含 $ DBC token: " .. tostring(spell64382))
   os.exit(1)
 end
-if spell32509 and string.find(spell32509, "冷却时间秒", 1, true) then
-  print("  FAIL spell 32509 仍存在残句 冷却时间秒: " .. tostring(spell32509))
+if string.find(spell64382, "64382s2", 1, true) then
+  print("  FAIL spell 64382 还包含法术ID token 64382s2: " .. tostring(spell64382))
   os.exit(1)
 end
-if spell32509 and not string.find(spell32509, "若干秒", 1, true) then
-  print("  FAIL spell 32509 未保留时间占位: " .. tostring(spell32509))
+if not string.find(spell64382, "一定量伤害", 1, true) then
+  print("  FAIL spell 64382 未保留伤害占位: " .. tostring(spell64382))
   os.exit(1)
 end
-if spell32509 and not string.find(spell32509, "一定百分比的法术急速", 1, true) then
-  print("  FAIL spell 32509 未保留百分比占位: " .. tostring(spell32509))
+if not string.find(spell64382, "一定比例", 1, true) then
+  print("  FAIL spell 64382 未保留百分比占位: " .. tostring(spell64382))
   os.exit(1)
 end
-print("  OK   SpellData_52[32509] DBC tokens cleaned: " .. tostring(spell32509))
+print("  OK   SpellData_Epoch[64382] DBC tokens cleaned: " .. tostring(spell64382))
 
 -- 检查 UnitData[6] 正常存在
 if not TPCN_UnitData[6] then

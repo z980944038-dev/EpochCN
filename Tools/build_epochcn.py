@@ -71,7 +71,6 @@ def parse_args() -> argparse.Namespace:
 def build_copy_map(questcn_root: Path, tooltips_root: Path) -> dict[Path, Path]:
     return {
         questcn_root / "Data/QustCN_Data_CN.lua": ROOT / "Data/QuestCN_Data.lua",
-        tooltips_root / "Data/SpellData_52.lua": ROOT / "Data/SpellData_52.lua",
         tooltips_root / "Data/SpellData_Season.lua": ROOT / "Data/SpellData_Season.lua",
         tooltips_root / "Data/SpellData_Epoch.lua": ROOT / "Data/SpellData_Epoch.lua",
         tooltips_root / "Data/ItemData.lua": ROOT / "Data/ItemData.lua",
@@ -93,15 +92,6 @@ def git_head(url: str) -> str:
         return "unknown"
 
     return out.split()[0] if out else "unknown"
-
-
-def fix_spell_data_52() -> None:
-    path = ROOT / "Data/SpellData_52.lua"
-    text = path.read_text(encoding="utf-8-sig")
-    text = text.replace("function LoadTPCNSpellDataSeason()", "function LoadTPCNSpellData52()", 1)
-    text = text.replace("TPCN_SpellData_Season = {", "TPCN_SpellData_52 = {", 1)
-    path.write_text(text, encoding="utf-8", newline="\n")
-    print("fixed Data/SpellData_52.lua loader")
 
 
 def generate_framexml_strings(framexml_global_strings: Path) -> None:
@@ -142,7 +132,6 @@ def main() -> None:
         shutil.copy2(source, target)
         print(f"copied {source} -> {target}")
 
-    fix_spell_data_52()
     generate_framexml_strings(args.framexml_global_strings.expanduser())
     generate_map_data(args.lua_bin.expanduser())
 

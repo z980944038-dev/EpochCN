@@ -1,0 +1,1001 @@
+﻿spell_id	priority	skill_line_ids	name_en	rank_en	description_en	tooltip_en	name_zh	rank_zh	description_zh	tooltip_zh	notes
+42109	all		Armor Penetration		Increases armor penetration rating by $s1.	Increases armor penetration rating by $s1.					
+42110	all		Increase Healing 443		Increases spell power by $s1.						
+42111	all		Increase Spell Dam 236		Increases damage and healing done by magical spells and effects by up to $s1.						
+42112	all		Headless Horseman - Update Size								
+42113	all		Armor Penetration 210		Increases armor penetration rating by $s1.	Increases armor penetration rating by $s1.					
+42114	all		Headless Horseman - Fire Extinguish (with missile)								
+42115	all		Increased Mana Regen		Restores $s1 mana per 5 sec.						
+42116	all		Attack Power - Feral (+0826)		Increases attack power by $s1 in Cat, Bear, Dire Bear, and Moonkin forms only.						
+42117	all		Ashtongue Pet Faction Switch								
+42118	all		Headless Horseman - Create Fire Node								
+42119	all		Increase Spell Dam 199		Increases damage and healing done by magical spells and effects by up to $s1.						
+42120	all		Increase Healing 375		Increases spell power by $s1.						
+42121	all		Attack Power - Feral (+0788)		Increases attack power by $s1 in Cat, Bear, Dire Bear, and Moonkin forms only.						
+42122	all		Increase Spell Dam 225		Increases damage and healing done by magical spells and effects by up to $s1.						
+42123	all		Fixate								
+42124	all		Increase Spell Dam 194		Increases damage and healing done by magical spells and effects by up to $s1.						
+42125	all		Increase Healing 364		Increases spell power by $s1.						
+42126	all		Discovery Trigger								
+42127	all		Increase Healing 423		Increases spell power by $s1.						
+42129	all		First Person Camera		Zooms the camera in to the target.	Zoomed in.					
+42130	all		AFK Check								
+42131	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+42132	all		Headless Horseman - Start Fire								
+42133	all		Chaos Strike		Inflicts Holy damage to an enemy.\n\nIf the target is afflicted with Flame Buffet, the target will take the additional damage. \n\nIf the target is frozen, the target will take triple damge.\n\nIf the target is afflicted with Siphon Life, the target will be weakened, taking additional Physical and Holy damage.						
+42134	all		Lesser Rune of Warding								
+42135	all		Lesser Rune of Warding								
+42136	all		Greater Rune of Warding								
+42137	all		Greater Rune of Warding								
+42138	all		Brewfest Enthusiast		Increases experience earned by $s1%.  Lasts $d.	Increases experience earned by $s1%.  Lasts $d.					
+42139	all		Boulder		Hurls a boulder at an enemy, inflicting Physical damage.						
+42140	all		Headless Horseman - Start Fire, Periodic Aura								
+42142	all		Headless Horseman - Start Fire trail								
+42143	all		Headless Horseman - Start Fire Target Test								
+42144	all		Headless Horseman - Create Water Bucket								
+42145	all		Pumpkin Soldier Visual								
+42146	all		Brewfest Racing Ram Aura [DND]								
+42148	all		Create Shattered Halls Key Replacement								
+42149	all		Trigger Brewfest Racing Ram		Summons and dismisses a rideable swift white ram.  This is a very fast mount.	Increases speed by $s2%.					
+42150	all		Brewfest Pickup		Description	Aura Description					
+42151	all		Headless Horseman - All Fires Out Test								
+42152	all		Ram Speed Boost			10 seconds of more speed!					
+42153	all		Deadly Dash		The rogue rushes into the target, blades first. This attack knocks the target down, immobilizing it for $d. All attacks are guaranteed to hit while the target is knocked down.						
+42154	all		Headless Horseman - Dim Fire								
+42155	all		Increased Hit Rating 15		Increases your hit rating by $s1.						
+42156	all		Beer Goggles		Guaranteed by Belbi Quikswitch to make EVERYONE look attractive!	Guaranteed by Belbi Quikswitch to make EVERYONE look attractive!					
+42157	all		Armor Penetration 350		Increases armor penetration rating by $s1.	Increases armor penetration rating by $s1.					
+42158	all		Increased 1H Mace		Increases mace skill rating by $s1.						
+42159	all		Ram - Knockup Trap								
+42160	all		Ram - Slowdown Trap								
+42161	all		Ram Slowdown Trap Effect			Frozen.					
+42163	all		Crypt Scarabs								
+42164	all		Simple Teleport		This creates an effect on the casting NPC that makes it appear as though they just arrived.						
+42165	all		Ram - Knockup Trap Effect		Knocks the player up into the air.	Whee!					
+42166	all		Plagued Blood Explosion		Detonate your Mindless Abomination, killing any nearby plagued vrykul units.						
+42167	all		Plagued Blood Explosion		The Plagued Blood Explosion splashes onto further nearby targets.	Stunned.					
+42168	all		Mindless Abomination Control			Controlling the mindless abomination.					
+42169	all		Reflective Dust		Spread the dust over the ruins of the Shady Rest Inn to reveal clues. Can only be used at the Shady Rest Inn.	Detecting clues at the ruins of the Shady Rest Inn.					
+42170	all		Conflagration		Deals Fire damage to nearby allies.						
+42171	all		Evidence marker	Rank 1	Points to a questgiver object in the ruins of the Shady Rest Inn.						
+42172	all		Snare Self 70%								
+42173	all		Snare Self								
+42174	all		Replace Reflective Dust								
+42175	all		Evidence Marker Invis								
+42176	all		Headless Horseman - Invisible Campfire, Create								
+42177	all		Alert Drums		Pounds upon the drums of war, calling for reinforcements.						
+42178	all		Headless Horseman - Invisible Campfire, Remove								
+42179	all		Summon Amani'shi Sentries								
+42180	all		Summon Amani'shi Sentries								
+42181	all		Summon Amani'shi Sentries								
+42182	all		Summon Amani'shi Sentries								
+42183	all		Summon Amani'shi Sentries								
+42184	all		Silence Resistance 10%		Reduces the duration of any Silence or Interrupt effects used against the wearer by $s3%. This effect does not stack with other similar effects.	Reduces the duration of any Silence or Interrupt effects used against the wearer by $s3%.					
+42185	all		Brewfest Control Piece								
+42198	spellbook	6	Blizzard	Rank 7	Ice shards pelt the target area doing ${$42198m1*8*$<mult>} Frost damage over $27085d.						
+42200	all		No Man's Land -> Out of Hyjal								
+42201	all		Eternal Silence			Overwhelming magical energy from the Well of Eternity prevents spellcasting.					
+42202	all		No Man's Land			You are where you should not be...					
+42203	all		Discovered								
+42205	all		Residue of Eternity			Residual energy from the Well of Eternity prevents spellcasting.					
+42206	all		Protection								
+42207	all		Enriched Terocone Juice		Restores $o1 health over $d.  Must remain seated while eating.	Restores $/5;s1 health per second.					
+42208	spellbook	6	Blizzard	Rank 1							
+42209	spellbook	6	Blizzard	Rank 2							
+42210	spellbook	6	Blizzard	Rank 3							
+42211	spellbook	6	Blizzard	Rank 4							
+42212	spellbook	6	Blizzard	Rank 5							
+42213	spellbook	6	Blizzard	Rank 6							
+42217	all		Quest - Plagued Blood Cosmetic + Stun								
+42218	spellbook	593	Rain of Fire	Rank 5	Calls down a fiery rain to burn enemies in the area of effect for ${$42218m1*4} Fire damage over $27212d.						
+42219	all		Discovered (Sub)								
+42220	all		Conflagration		Sets an enemy aflame, inflicting $o1 Fire damage over $d. and sending it into a state of panic. While the target is affected, the flames periodically scorch its nearby allies for $16806s1 damage as well.	You're burning!					
+42222	all		Lunch for Kyle		Serves Kyle his lunch!						
+42223	spellbook	593	Rain of Fire	Rank 1							
+42224	spellbook	593	Rain of Fire	Rank 2							
+42225	spellbook	593	Rain of Fire	Rank 3							
+42226	spellbook	593	Rain of Fire	Rank 4							
+42227	all		Rain of Fire	Rank 1	Calls down a fiery rain to burn enemies in the area of effect for ${$42227m1*4} Fire damage over $19474d.						
+42228	all		Headless Horseman - Fire Extinguish (guard)								
+42229	all		Headless Horseman - Create Water Bucket (Cosmetic)								
+42230	spellbook	574	Hurricane	Rank 4	Creates a violent storm in the target area causing $42230s1 Nature damage to enemies every $27012t3 sec, and increasing the time between attacks by $27012s2%.  Lasts $27012d.  Druid must channel to maintain the spell.						
+42231	spellbook	574	Hurricane	Rank 1							
+42232	spellbook	574	Hurricane	Rank 2							
+42233	spellbook	574	Hurricane	Rank 3							
+42234	spellbook	163	Volley	Rank 4	Continuously fires a volley of ammo at the target area, causing ${$RAP*0.083700+$42234m1} Arcane damage to enemy targets within $a1 yards every ${$1510d/6}.2 $Lsecond:seconds; for $1510d.						
+42235	all		Headless Horseman - Fires Out Victory Aura								
+42236	all		Darkmoon Faire Carnie Appearance A								
+42237	all		Darkmoon Faire Carnie Appearance B								
+42238	all		Darkmoon Faire Carnie Appearance C								
+42239	all		Darkmoon Faire Carnie Appearance D								
+42240	all		Darkmoon Faire Carnie Appearance E								
+42241	all		Darkmoon Faire Carnie Appearance F								
+42242	all		Headless Horseman - Quest Credit, 1								
+42243	spellbook	163	Volley	Rank 1							
+42244	spellbook	163	Volley	Rank 2							
+42245	spellbook	163	Volley	Rank 3							
+42246	all		Propagandized!		Hand a leaflet to a Theramore Guard. If a guard has recently received a leaflet, he may not accept another one.	Has received deserter propaganda recently.					
+42247	all		Battle Shout		Increases the melee attack power of nearby friendly targets by $s1 for $d.	Melee attack power increased by $s1.					
+42248	all		Brewfest Sausage A		Increases spell power by $s1 for $d.	Spell power increased by $s1.					
+42249	all		Brewfest Sausage B		Increases spell power by $s1 for $d.	Spell power increased by $s1.					
+42250	all		Brewfest Sausage C		Increases spell power by $s1 for $d.	Spell power increased by $s1.					
+42251	all		Brewfest Sausage D		Increases spell power by $s1 for $d.	Spell power increased by $s1.					
+42254	all		Weak Alcohol		Weak alcohol with some big taste!	Buzzed.					
+42255	all		Weak Alcohol		A weak alcohol that has a lot of head.	Tipsy.					
+42256	all		Weak Alcohol		A weak alcohol that may bring out the beast in you.	Drunk.					
+42257	all		Weak Alcohol		This brew is hot!	Buzzed.					
+42258	all		Weak Alcohol		Full body goodness!	Tipsy.					
+42259	all		Weak Alcohol		A weak alcohol, but a technological triumph in brewing technology.	Drunk.					
+42260	all		Weak Alcohol		A weak alcohol that's good for you and good for nature.	Buzzed.					
+42261	all		Weak Alcohol		The coolest drink around.	Tipsy.					
+42262	all		Strong Alcohol		All the protein, vitamins, and carbs of your grandma's best turkey dinner, plus 15% alcohol.	Drunk.					
+42263	all		Weak Alcohol		A weak alcohol that will put some Spring in your step.	Buzzed.					
+42264	all		Weak Alcohol		Weak, but smooth, alcohol.	Tipsy.					
+42265	all		Victory!			You freed the village from the Headless Horseman's terror.  Bonus to Agility, Intellect and Strength.					
+42266	all		Random Circumference Point Poison								
+42267	all		Random Circumference Point Bone								
+42268	all		Quest - Mindless Abomination Explosion FX Master								
+42269	all		Brewfest Barker Trap B								
+42270	all		Hellfire								
+42271	all		Brewfest Barker Trap A								
+42272	all		Brewfest Barker Trap C								
+42273	all		Headless Horseman - Fire, non-growing, onSpawn								
+42274	all		Random Circumference Point Bone 2								
+42275	all		Repaired Diving Gear		Allows the wearer to breathe underwater when worn.	Waterbreathing.					
+42277	all		Summon Pumpkin								
+42278	all		Suicide, No Blood								
+42279	all		Random Circumference Point Poison								
+42280	all		Pumpkin Life Cycle								
+42281	all		Sprouting								
+42282	all		Summon Debris		Summons debris hiding inside shipwreck.						
+42283	all		Summon Floating Barrel								
+42285	all		Sprout Body								
+42287	all		Salvage Wreckage		Attempt to salvage cargo from nearby shipwreck debris.						
+42288	all		Summon Salvaged Lockbox								
+42289	all		Summon Mirefin Burrower								
+42290	all		Headless Horseman - Summon Pumpkin, Pulse								
+42291	all		Headless Horseman - Pumpkin Life Cycle Death								
+42292	all		PvP Trinket		Removes all movement impairing effects and all effects which cause loss of control of your character.						
+42293	all		Well Fed		Stamina increased by $s1 and Spirit increased by $s2. Lasts $d.	Stamina increased by $s1 and Spirit increased by $s2.					
+42294	all		Headless Horseman - Pumpkin Aura								
+42295	all		Alcaz Island Survey								
+42296	spellbook	185	Stewed Trout								
+42299	all		Brewfest - Dark Iron Knockback								
+42300	all		Brewfest - Throw Mug								
+42301	all		Combine Grimtotem Notes		Combine 4 Grimtotem Notes into the Grimtotem Battle Plan.						
+42302	spellbook	185	Fisherman's Feast								
+42304	all		ZingTemp2		This spell is dan's roxor sauce spell.						
+42305	spellbook	185	Hot Buttered Trout								
+42308	all		Brain Food		Restores $o1 mana over $d.  Must remain seated while eating.	Restores $/5;s1 mana per second.					
+42309	all		Brain Food		Restores $42311o1 health and $42312o1 mana over $42311d.  Must remain seated while eating.						
+42311	all		Food		Restores $o1 health over $d.  Must remain seated while eating.	Restores $/5;s1 health per second.					
+42312	all		Brain Food		Restores $o1 mana over $d.  Must remain seated while eating.	Restores $/5;s1 mana per second.					
+42313	all		Brewfest - Wallop								
+42315	all		Lifting Charge		Charges at an enemy, knocking into the air and inflicting normal damage plus $s3.						
+42316	all		Alcaz Survey Credit								
+42317	all		Spirit Heal		Calls upon Holy magic to heal an ally.						
+42318	all		Spirit Heal		Calls upon Holy magic to heal an ally.						
+42319	all		Quest - Test Missile - LAB								
+42320	all		Head Butt		Confuses a target for $d.	Confused.					
+42321	all		Toss Bucket								
+42322	all		Give Water Bucket								
+42323	all		Open Blackhoof Cage		Opens a Blackhoof Cage.						
+42324	all		Brewfest Force Dark Iron Give up								
+42325	all		Capture Raptor		Attempt to capture a weakened Bloodfen Raptor or Bloodfen Screecher.						
+42326	all		Twin Waves - Double (Fireball)								
+42328	all		Twin Waves - (Fireball)								
+42329	all		Possessed Arrows								
+42330	all		Possessed Arrows (x8)								
+42331	all		Spli Four Ways - (Fireball)								
+42332	all		Throw Axe		Throws your weapon at an enemy, inflicting $s1% of weapon damage.						
+42333	all		Throw Torch		Throws a torch, starting a fire						
+42334	all		Honor of the Horde		Marks the bearer as a member of honor and distinguishment amoungst the Horde.	You are friendly to members of the Horde.					
+42335	all		Pride of the Alliance		Marks the bearer as a member of honor and distinguishment amoungst the Alliance.	You are friendly to members of the Alliance.					
+42336	all		Has Water Bucket								
+42337	all		Raptor Capture Credit								
+42338	all		Raptor Bait		Place the bait on the ground near the Blackhoof Village Windmill.						
+42339	all		Bucket Lands								
+42340	all		Throw Bucket		Toss to a friend, or onto a burning building.						
+42341	all		Dark Iron Retreat								
+42344	all		Cosmetic - Flame Patch 0.5								
+42345	all		Cosmetic - Flame Patch								
+42346	all		Cosmetic - Flame Patch 2.0								
+42347	all		Stealth		Puts the caster in stealth mode. Lasts until cancelled.	Stealthed.					
+42348	all		Headless Horseman - Fire Extinguish (just splash)								
+42349	all		Give Water Bucket (without missile)								
+42350	all		Throw Skull		Throw the ball to a friendly player.   If they have free room in their pack they will catch it!						
+42351	all		Throw Skull		Throw the ball to a friendly player.   If they have free room in their pack they will catch it!						
+42352	all		Throw Skull Starter		Throw the ball to a friendly player.   If they have free room in their pack they will catch it!						
+42353	all		Spyglass		Use the spyglass to observe the pirates on the ships below.	Cannot move while using the spyglass.					
+42354	all		Banish Self		Banishes an enemy, preventing all action but making it invulnerable for up to $d. Only one target can be banished at a time.	Immune to all attacks and spells, but unable to act.					
+42355	all		Headless Horseman - Smoke								
+42356	all		Burn Direhorn Post		Set fire to one of the structures in Direhorn Post.						
+42357	all		Axe Volley		Throws your weapon, inflicting its $s1 damage on the target.						
+42358	all		Flames of Birth		Calls down a pillar of flame, burning all enemies in a selected area and inflicting additional damage every $t2 sec. for $d.	Fire damage inflicted every $t2 sec.					
+42359	all		Axe Volley		Hurls a volley of Axes.	Hurling a volley of axes.					
+42360	all		Birthing Flame								
+42361	all		Fire Cannon!								
+42362	all		Flames of Birth		Calls down a pillar of flame, burning all enemies in a selected area and inflicting additional damage every $t2 sec. for $d.	Fire damage inflicted every $t2 sec.					
+42363	all		Dan's Steam Tank Form	Shapeshift	Shapeshift into a bear, increasing melee attack power by $1178s3, armor contribution from items by $1178s1%, and Stamina by $1178s2%.  Also protects the caster from Polymorph effects and allows the use of various bear abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.	Immune to Polymorph effects.  Increases melee attack power by $1178s3, armor contribution from items by $1178s1%, and Stamina by $1178s2%.					
+42364	all		Vomit								
+42365	all		Murloc Costume		It's a murloc costume.	RlrlrlRLRLLRLGRLGRLGlglglglgl!					
+42366	all		Break the Blockade: Petrov's Cluster Bombs Instakill								
+42367	all		Idol of Tenacity		Increases the spell power of the final healing value of your Lifebloom by $s1.						
+42368	all		Merciless Libram of Justice		Causes your Flash of Light to increase the target's Resilience rating by $42369s1 for $42369d.						
+42369	all		Merciless Libram of Justice			Increases resilience rating by $s1.					
+42370	all		Merciless Totem of the Third WInd		Causes your Lesser Healing Wave to increase the target's Resilience rating by $42371s1 for $42371d.						
+42371	all		Merciless Gladiator's Totem of the Third Wind			Increases resilience rating by $s1.					
+42372	all		Electrical Charge		Blasts all nearby enemies with an electrical charge.						
+42373	all		Earth Explosion								
+42374	all		Healing Aura		Restores $s1 health to nearby allies.						
+42375	all		Healing Ward Passive								
+42376	all		Healing Ward		Summons a ward that lasts $d. and periodically heals allies in an area around it.						
+42377	all		Shape of the Bear		Shapeshift into a bear for $d, increasing damage but decreasing attack speed by $s2%.						
+42378	all		Spyglass 02		Use the spyglass to observe the pirates on the ships below.	Cannot move while using the spyglass.					
+42379	all		Throw Skull Event		Throw the ball to a friendly player.   If they have free room in their pack they will catch it!						
+42380	all		Conflagration		Sets an enemy aflame, inflicting $o1 Fire damage over $d. and sending it into a state of panic. While the target is affected, the flames periodically scorch its nearby allies for $16806s1 damage as well.	You're burning!					
+42381	all		Horseman's Conflagration		Inflicts $s1 Fire damage to nearby allies.	Inflicts $s1 Fire damage to nearby allies.					
+42382	all		Machine Gun		Fires at an enemy, inflicting Physical damage.						
+42383	all		Voodoo Skull		Throw the skull to a friendly player. If they have free room in their pack they will catch it!						
+42384	all		Brutal Swipe		Do damage divided up evenly among all affected targets.						
+42385	all		Alcaz Survey Aura		Alcaz Survey	Alcaz Survey					
+42386	all		Sleeping Sleep								
+42387	all		Dan's Steam Tank Form (Self)	Shapeshift	Shapeshift into a bear, increasing melee attack power by $1178s3, armor contribution from items by $1178s1%, and Stamina by $1178s2%.  Also protects the caster from Polymorph effects and allows the use of various bear abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.	Immune to Polymorph effects.  Increases melee attack power by $1178s3, armor contribution from items by $1178s1%, and Stamina by $1178s2%.					
+42388	all		Summon Scarlet Bud								
+42389	all		Mangle		Deals $s1% weapon damage and causes the target to take $s2% additional damage from bleed effects for $d.	All bleed effects cause $s2% additional damage.					
+42390	all		Lay Wreath		Lay the wreath at the Hyal Family Monument.						
+42391	all		Throw Booze		Throws booze, starting a fire						
+42393	all		Brewfest - Attack Keg								
+42394	all		Horseman's Summon								
+42395	all		Lacerating Slash		Deals $s1 damage every $t1 sec.	Bleeding for $s1 damage every $t1 sec.					
+42396	all		Mind Flay		Inflicts Shadow damage to an enemy and reduces its movement speed for $d.	Shadow damage inflicted over $d.\nReduced movement speed.					
+42397	all		Rend Flesh		Deals $s1 physical damage and causes the target to bleed for $s2 damage every $t2 sec.	Bleeding for $s2 damage every $t2 sec.					
+42398	all		Deafening Roar		Deals $s1 physical damage and silences enemies for $d.	Silenced.					
+42399	all		Headless Horseman Climax - Send Head								
+42400	all		Headless Horseman Climax - Head Lands								
+42401	all		Headless Horseman Climax - Return Head								
+42402	all		Surge		Charges an enemy, inflicting $s3 damage to the target and any of its nearby allies, as well as knocking them all back.						
+42403	all		Headless Horseman Climax - Body Regen								
+42404	all		Proto-Drake Egg: Summon Proto-Whelp								
+42405	all		Headless Horseman Climax - Command Return Head								
+42406	all		Petrov's Cluster Bombs		Drop on the blockading pirates to kill them. Can only be thrown while you're onboard the zeppelin.						
+42407	all		Brewfest Launch			Whee!					
+42408	all		Headless Horseman Climax - Head Stun								
+42409	all		Headless Horseman Climax - Head Repositions								
+42410	all		Headless Horseman Climax - Command, Head Repositions								
+42411	all		Brogg's Totem		Unleash the magic of Brogg's Totem on the corpse of a Firemane Ash Tail, Firemane Scout, or Firemane Scalebane.	Under the effects of Brogg's totem.					
+42412	all		Throw Chum		Throws your weapon, inflicting its $s1% of its damage on the target.						
+42413	all		Headless Horseman Climax - Head Visual								
+42414	all		Brewfest - Create Portable Brewfest Keg								
+42415	all		Apexis Mob Faction Check								
+42416	all		Apexis Mob Faction Check Aura								
+42418	all		Redeem Remains		Lay a set of Ogre Remains to rest in the Stonemaul Ruins.						
+42420	all		Flash Heal		Calls upon Holy magic to heal an ally.						
+42421	all		Summon Stonemaul Spirit								
+42422	all		Summon Manny								
+42424	all		Brewfest - Daily - Relay Race Accept - DND								
+42425	all		Plant Stonemaul Banner		Plant the banner near the entrance to Onyxia's Lair.						
+42426	all		Create Netherwhelp's Collar								
+42427	all		Earth Explosion, rumble visual								
+42428	all		Headless Horseman Climax - Head Is Dead								
+42429	all		Headless Horseman Climax - Body Death								
+42431	all		Creature - Summon Netherwhelp		Right Click to summon and dismiss Nether Dragon Whelp.						
+42432	all		Headless Horseman Yell Timer								
+42433	all		Smolderwing Fire Breath		Cosmetic fire breath spell.						
+42434	all		Brewfest - Wallop								
+42435	all		Brewfest - Stun		Stuns target for $d.	Stunned.					
+42436	all		Drink!		Down the brew and toss the mug!						
+42437	all		Create BlizzCon 2007 Prize								
+42438	all		Headless Horseman Climax - Enraged Visual								
+42440	all		Drink Free Brew								
+42441	all		Chain Lightning		Strikes an enemy with a lightning bolt that arcs to another nearby enemy. The spell affects up to $x1 targets, causing Nature damage to each.						
+42442	all		Vengeance Landing Cannonfire								
+42443	all		Dragonflayer Fire Bomb								
+42444	all		Dragonflayer Fire Bomb Blaze								
+42445	all		Cannon Fire								
+42446	all		Zul'Aman - Bear Platform - Kill Credit								
+42447	all		Snowball		Throw me before I melt!						
+42448	all		Brewfest - Dark Iron Signal								
+42449	all		Westguard Cavalry Transform into Human								
+42450	all		Dragonflayer Blaze		Inflicts $s1 Fire damage.	Inflicts $s1 Fire damage.					
+42451	all		Westguard Cavalry Transform into Dwarf								
+42452	all		Plant Captured Totem		Plant the Captured Totem in the ground. Can only be used in the Quagmire.						
+42453	all		Summon Dark Iron Attacker								
+42454	all		Captured Totem			Under the effects of mysterious Grimtotem magic.					
+42455	all		Captured Totem Test Credit								
+42456	all		Summon Blockade Explosion Smoke								
+42457	all		Blockade Explosion Bunny - Water								
+42458	all		Blockade Explosion Bunny - Fire								
+42459	all		Dual Wield	Passive	Allows one-hand and off-hand weapons to be equipped in the off-hand.						
+42460	all		Dragonflayer Blaze		Inflicts $42450s1 Fire damage every $t1 sec for $d.	Inflicts $42450s1 Fire damage every $t1 sec.					
+42461	all		Zul'Aman - Dragonhawk Platform - Kill Credit								
+42462	all		Zul'Aman - Eagle Platform - Kill Credit								
+42463	all		Seal of Vengeance	Rank 1							
+42464	all		Captured Totem Periodic								
+42465	all		Zul'Aman - Lynx Platform - Kill Credit								
+42466	all		Cosmetic - Zul'Aman Spirit Effect								
+42467	all		Summon Blockade Explosion Fire								
+42468	all		Break the Blockade: Cannon (Cannonball Fire)								
+42469	all		Ember Clutch Ancient: Fire								
+42470	all		Ember Clutch Ancient: Smoke								
+42471	all		Hatch Eggs								
+42472	all		Throw Dragonflayer Fire Bomb								
+42473	all		Throw Dragonflayer Fire Bomb								
+42474	all		Throw Dragonflayer Fire Bomb								
+42475	all		Throw Dragonflayer Fire Bomb		Throws a fire bomb at the target, inflicting $s1 damage						
+42476	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+42477	all		Chain Heal		Infuses a wounded ally with healing energy that spreads to another nearby ally. The spell affects up to $x1 targets, but the healing energy is diminished by 50% for each successive target.						
+42478	all		Protective Ward		Summons a ward that lasts $d. While the ward persists, nearby friendly units are protected from all damage.						
+42479	all		Protective Ward		Protects the caster from all attacks and spells for $d.	Immune to all attacks and spells.					
+42480	all		Protective Ward Passive								
+42481	all		Protective Ward								
+42482	all		Molotov Test								
+42483	all		Ooze Channel								
+42484	all		Dousing Flames								
+42485	all		End of Ooze Channel								
+42486	all		Ooze Channel Credit								
+42488	all		Caster Spell 1 Only if Aura 2 Is On Caster								
+42489	all		Cast Ooze Zap When Energized		Attempt to zap a Bubbling Swamp Ooze or Acidic Swamp Ooze if you are energized.						
+42490	all		Energized!			Drawing power from the zeppelin's energy core.					
+42491	all		Energized Periodic								
+42492	all		Cast Energized								
+42493	all		Summon Dragonhawk Hatchling								
+42495	all		Cyclone Strike		Performs a spinning attack that hits all nearby enemies, dealing weapon damage plus $s1 and knocking them back.						
+42496	all		Furious Roar	Rank 1	Roar furiously, increasing damage dealt by $s1% while increasing the damage taken by nearby enemies by $42497s1%.	Damage done increased by $s1%.					
+42497	all		Furious Roar	Rank 1		Damage taken increased by $s1%.					
+42498	all		Brewfest - Dark Iron - Go To New Target								
+42499	all		L70ETC Earthquake			Deals $s1 damage every $t1 sec.					
+42500	all		L70ETC Lightning Cloud								
+42501	all		L70ETC Rain of Fire		Calls down a molten rain, burning all enemies in a selected area for $s1 Fire damage every $t1 sec. for $d.	$s1 Fire damage inflicted every $t1 sec.					
+42502	all		Shadow Bolt - Copy		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+42504	all		Headless Horseman Climax - Head: Pause								
+42505	all		L70ETC Flare Effect		Deals $s1 physical damage to the target and additional fire damage over time.						
+42507	all		L70ETC Call Lightning OLD		Deals $s1 Nature damage.						
+42510	all		L70ETC Call Lightning		Deals $s1 Nature damage.						
+42511	all		Summon Restless Apparition								
+42512	all		Witch Hill Information Credit								
+42514	all		Squash Soul		Increases damage taken by $s1% for $d.	Increases damage taken by $s1%.					
+42515	all		Jarl Beam								
+42516	all		Teleport								
+42517	all		Beam to Zelfrax								
+42518	all		Brewfest - Create Complimentary Brewfest Sampler								
+42519	all		Summon Vengeance Landing Combatant								
+42520	all		Cosmetic - Zul'Aman Spirit Drained								
+42521	all		Light Witchbane Torch		Place the torch on the end of the dock at Swamplight Manor.						
+42522	all		Brewfest - Throw Brewfest Mug Bounce								
+42523	all		Weak Alcohol								
+42524	all		Summon Spore		Summons a spore.						
+42525	all		Spore Visual								
+42526	all		Spore Cloud		Inflicts Nature damage to nearby enemies every $t1 sec. and decreases armor by $s2% for $d.	Nature damage inflicted every $t1 sec.\nArmor reduced by $s2%.					
+42527	all		Teleport Self								
+42528	all		Increased Melee Critical 14		Increases your critical strike rating by $s1.						
+42529	all		Teleport Self								
+42530	all		Shoot Flame Arrow								
+42532	all		Explosion								
+42533	all		Has Brewfest Mug								
+42534	all		Shoot Flame Arrow								
+42535	all		Brewfest Chick Chucks Mug								
+42536	all		Brewfest Request Chick Chuck Mug								
+42537	all		Brewfest Request Chick Chuck Mug Aura								
+42538	all		Alerted Aura								
+42539	all		Alert								
+42540	all		Zul'aman Disguise Creation								
+42541	all		Blood rune 1	1							
+42542	all		Cosmetic - Zul'Aman Spirit Drain								
+42543	all		Cancel Alert								
+42544	all		Rejuvenation		Heals the caster every $t1 sec. for $d.	Damage healed every $t1 sec.					
+42546	spellbook	165	Cloak of Darkness								
+42547	all		Headless Horseman Climax, Body Stage 1								
+42548	all		Headless Horseman Climax, Body Stage 2								
+42549	all		Headless Horseman Climax, Body Stage 3								
+42550	all		Brewfest - Dark Iron - Spawn AoE Small								
+42552	all		Summon Pumpkin Missile								
+42554	all		Forsaken Flag			You are holding the Warsong Flag.					
+42556	all		Headless Horseman Climax - Body Regen (removed on death)								
+42557	all		Feign Death								
+42558	spellbook	755	Don Julio's Heart								
+42560	all		Possess Vehicle								
+42561	all		Water Bolt								
+42562	all		Whirl								
+42563	all		Whirl								
+42564	all		Ever-burning Torch		Fling an Ever-burning Torch up to $r yards at a plague vat setting it ablaze.  Can only be used in Halgrind.						
+42565	all		Flame Trench		Deals ${$m1*2}% Fire damage per second for $d.	Deals ${$m1*2}% Fire damage per second.					
+42566	all		Headless Horseman Climax - Head Is Dead								
+42567	all		Cosmetic - Incinerate Blue								
+42570	all		Budd Nedreck - Throw Vial		Throws a vial in quest event						
+42571	all		Cosmetic - Blue Flame Patch 1.0								
+42574	all		Water Bolt		Hurls a watery bolt at an enemy, inflicting $s1 Frost damage.						
+42575	all		Headless Horseman Climax Ghost Visual								
+42576	all		Cannon Blast		Inflicts Fire damage to an enemy.						
+42577	all		Zap								
+42578	all		Cannon Blast		Inflicts Fire damage to an enemy.						
+42579	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+42580	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+42581	all		Spout		A spout of water spews forth, knocking back any enemies in a cone in front of the caster.						
+42582	all		Spout		A spout of water spews forth, knocking back any enemies in a cone in front of the caster.						
+42583	all		Claw Rage		Charges a target, stunning them and dealing a flurry of rapid attacks.						
+42584	all		Spout		A spout of water spews forth, knocking back any enemies in a cone in front of the caster.						
+42585	all		Dark Iron Start Attack, Scare Reveler								
+42586	all		Cosmetic - Blue Flame Patch 2.0								
+42587	all		Horseman's Cleave								
+42588	spellbook	755	Kailee's Rose								
+42589	spellbook	755	Crimson Sun								
+42590	spellbook	755	Falling Star								
+42591	spellbook	755	Stone of Blades								
+42592	spellbook	755	Blood of Amber								
+42593	spellbook	755	Facet of Eternity								
+42594	all		Shape of the Bear		Shapeshift into a bear, increasing damage done by $s2%.						
+42596	all		Squashling								
+42598	all		Squashling								
+42603	all		Headless Horseman Climax, Head: Periodic								
+42604	all		Cosmetic - Blue Fireball to Random Target								
+42605	all		Dark Iron Stop Attack, Normal Reveler								
+42606	all		Shape of the Eagle		Shapeshift into an eagle.						
+42607	all		Shape of the Lynx		Shapeshift into a bear for $d, increasing damage but decreasing attack speed by $s2%.						
+42608	all		Shape of the Dragonhawk		Shapeshift into a bear for $d, increasing damage but decreasing attack speed by $s2%.						
+42609	spellbook	778	Sinister Squashling		Right Click to summon and dismiss your sinister squashling.						
+42610	all		Cosmetic - Blue Flame Patch 0.2								
+42611	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+42613	spellbook	333	Nexus Transformation		Transforms a Nexus Crystal into a Small Prismatic Shard.						
+42615	spellbook	333	Small Prismatic Shard		Creates 3 Small Prismatic Shards out of a Large Prismatic Shard.						
+42616	all		Cannon Fire								
+42617	all		Vertex Color Lt. Blue								
+42618	all		Summon Ice Elemental		Summons an Ice Elemental to accompany the caster until dismissed.						
+42620	spellbook	333	Enchant Weapon - Greater Agility		Permanently enchant a melee weapon to increase Agility by 20.  Requires a level 35 or higher item.						
+42621	all		Fire Bomb								
+42622	all		Fire Bomb								
+42623	all		Fire Bomb								
+42624	all		Fire Bomb								
+42625	all		Fire Bomb								
+42626	all		Fire Bomb								
+42627	all		Fire Bomb								
+42628	all		Fire Bomb								
+42629	all		Fire Bomb								
+42630	all		Fire Bomb								
+42631	all		Fire Bomb								
+42632	all		Mission: Eternal Flame: Bunny 01 Kill Credit								
+42633	all		Mission: Eternal Flame: Bunny 02 Kill Credit								
+42634	all		Mission: Eternal Flame: Bunny 03 Kill Credit								
+42635	all		Mission: Eternal Flame: Bunny 04 Kill Credit								
+42636	all		Birmingham Tools Test 3		aoeu	aoeu					
+42637	all		Headless Horseman - Conflagrate, Periodic Aura								
+42638	all		Headless Horseman - Conflagrate Target Test								
+42644	all		Nat Pagle's Fish Paste		Slather the paste all over yourself and prepare to meet some sea creatures.	To say you smell funky would be putting it mildly.					
+42647	all		Brewfest - Dark Iron - Marching								
+42648	all		Sleeping Sleep								
+42650	spellbook	772	Army of the Dead		Summons an entire legion of Ghouls to fight for the Death Knight.  The Ghouls will swarm the area, taunting and fighting anything they can.  While channelling Army of the Dead, the Death Knight takes less damage equal to $Ghis:her; Dodge plus Parry chance.	Summoning Ghouls.					
+42651	spellbook	772	Army of the Dead		Summons an entire legion of Ghouls to fight for the Death Knight.  The Ghouls will swarm the area, taunting and fighting anything they can.						
+42652	all		Broomstick Transformation		Transforms your flying mount into a broom.  Lasts $d.						
+42653	all		Lesser Heal Death Knight Test	Rank 1	Heal your target for $s1.						
+42654	all		Cosmetic - Budd Nedreck - Throw Vial Rebound		Cosmetic fireball that spawns in Zul'Jin						
+42655	all		Brewfest - Dark Iron - Report Death								
+42656	all		Cosmetic - Zul'Jin Essence Spawn-in								
+42657	all		Cosmetic - Zul'Jin Event - Blue Smoke Flare		Throw a blue smoke flare at a specific location that lasts for $d.						
+42658	all		Sic'em!		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+42659	all		Cosmetic - Zul'Jin Essence								
+42660	all		Gavis Greyshield Credit								
+42661	all		Shoot								
+42662	spellbook	164	Ragesteel Shoulders								
+42664	all		Shoot								
+42665	all		Summon Dark Iron Mole Machine								
+42666	all		The Shadow Vault: See Vaelen's Invisibility								
+42667	all		Flying Broom		A Flying Broom!  This can only be summoned in Outland or Northrend. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+42668	all		Swift Flying Broom		A Swift Flying Broom!    This mount can only be summoned in Outland or Northrend. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+42669	all		Smash		Deals $s1 Physical damage to all enemies within a $a1 yard cone in front of the caster.						
+42670	all		Replace Repaired Diving Gear								
+42671	all		Silencing Shot		A shot that deals $s1% weapon damage and Silences the target for $d.	Silenced.					
+42672	all		Frost Tomb		Encases the target in a block of ice.						
+42673	all		Flying Broom		A Flying Broom!  This mount can only be summoned in Outland or Northrend.	Increases flight speed by $s2%.					
+42674	all		Holiday - Brewfest - Dark Iron Knockback Target Test								
+42676	all		Holiday - Brewfest - Dark Iron Knockback Aura								
+42679	all		Swift Flying Broom		A Swift Flying Broom!  This is a very fast mount.  This mount can only be summoned in Outland or Northrend.	Increases flight speed by $s2%.					
+42680	all		Magic Broom		A magic broom! This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+42681	all		Magic Broom		A magic broom!	Increases speed by $s2%.					
+42682	all		Headless Horseman Attack - Victory Event								
+42683	all		Swift Magic Broom		A swift magic broom!   This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+42684	all		Swift Magic Broom		A swift magic broom!  This is a very fast mount.	Increases speed by $s2%.					
+42685	all		Burn								
+42686	all		Summon Fire								
+42687	all		Adamantite Weapon Chain		Attaches a chain to your weapon, reducing the duration of Disarm effects by $43588s1% and increasing your Parry rating by 15. Does not stack with other similar effects.\n\nAttaching an adamantite weapon chain causes the item to become soulbound.						
+42688	spellbook	164	Adamantite Weapon Chain								
+42690	all		Terrifying Roar		Causes nearby enemies to flee in fear for $d.	Fleeing in fear.					
+42691	all		Peace of Ogri'la		Inflicts $s1 Fire damage to enemies in a cone in front of the caster.						
+42692	all		Rickety Magic Broom		A rickety magic broom!  It barely works.	Slow and steady...					
+42693	all		Rickety Magic Broom		A rickety magic broom!  It barely works.	Slow and steady...					
+42694	all		Cosmetic - Zul'Aman Climax - Skull Missile								
+42695	all		Holiday - Brewfest - Dark Iron Knock-down Power-up								
+42696	all		Drunken Master		You are a deadly whirlwind of brew.	You are a deadly whirlwind of brew.					
+42697	all		Danger! Explosive!: Ore Trap								
+42698	all		Danger! Explosive!: Summon Ore Chest								
+42699	all		Danger! Explosive!: Summon Gem 000 Chest								
+42700	all		Danger! Explosive!: Summon Gem 001 Chest								
+42701	all		Danger! Explosive!: Summon Gem 002 Chest								
+42702	all		Decrepify		Decrepifies the target, reducing Strength by $s1 and slowing movement by $s2%.	Strength reduced by $s1.\nMovement slowed by $s2%.					
+42703	all		Steelring's Foolproof Dynamite		Throw the dynamite up to $r yards to blow up a Whisper Gulch Ore.						
+42704	all		Scourge Resurrection								
+42705	all		Enrage		Increases attack speed by $s1% and size by $s2% per cast. Stacks up to 50 times.	Attack speed increased by $s1%.\nSize increased by $s2%.					
+42706	all		Cosmetic - Tiny Blue Fireball to Random Loc								
+42707	all		Incendiary Bomb								
+42708	all		Staggering Roar		Deals $s1 damage to enemies within $a1 yards, interrupting any spells being cast for $d.						
+42709	all		Cosmetic - Blue Flame Patch 0.5								
+42710	all		Dustwallow to Stormwind Teleport								
+42711	all		Stormwind to Dustwallow Teleport								
+42712	all		Summon Dark Iron Mug Power-Up								
+42713	all		Brewfest Request Chick Chuck Power-Up								
+42714	all		Frost Tomb Summon								
+42715	all		Brewfest Chick Chuck Power-Up								
+42716	all		Self Root Forever (No Visual)								
+42717	all		Diving Apparatus								
+42719	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+42720	all		Cosmetic - Zul'Aman Quest - Zul'jin Spirit Beam		Spirits beam targetting Budd						
+42721	all		Send Them Packing: On Successful Dummy Spell Kill Credit								
+42723	all		Dark Smash		Deals $s1 Shadow damage to all enemies within a $a1 yard cone in front of the caster. In addition, deals $s3 Shadow damage to all enemies, knocking them down.	Stunned.					
+42724	all		Cleave		Inflicts $s1% of normal melee damage to an enemy and its nearest ally.						
+42725	all		Doctored Leaflet								
+42726	all		Cosmetic - Immolation (Whole Body)								
+42728	all		Dreadful Roar			Increases Shadow damage taken by $s1%.					
+42729	all		Dreadful Roar		Deals $s1 Shadow damage to enemies within $a1 yards, interrupting any spells being cast for $d. In addition, targets will take $42728s1% more shadow damage. This effect can stack up to 40 times.						
+42730	all		Woe Strike		Deals $s1% of normal melee damage to an enemy and inflicts the target with Woe Strike. Any healing the target receives while afflicted with Woe Strike deals $42739s1 Shadow damage to the healer.	If direct healed, deals $42739s1 Shadow damage to caster.					
+42731	spellbook	165	Shadowprowler's Chestguard								
+42733	all		Leaflet A								
+42734	all		Propagandized!			Has received deserter propaganda recently.					
+42735	all		Chromatic Wonder		Increases resistance to all schools of magic by $s1 and all stats by $s2 for $d. Counts as both a Battle and Guardian elixir.  This effect persists through death.	All magic schools resistance increased by $s1.\nAll stats increased by $s2.					
+42736	spellbook	171	Flask of Chromatic Wonder								
+42738	all		Super Invis								
+42739	all		Woe Strike		Deals $42730s1% of normal melee damage to an enemy and inflicts the target with Woe Strike. Any healing the target receives while afflicted with Woe Strike deals $42739s1 Shadow damage to the healer.						
+42740	all		Njord's Rune of Protection		Enhances a friendly target with a magical rune, absorbing up to $s1 damage for $d.	Shielded against Physical and Magical damage.					
+42741	all		Pumped Up!		You are PUMPED!	+$s1% to all stats!					
+42744	all		Cosmetic - Zul'Aman - Budd - Spirit Particles								
+42745	all		Enrage		Attack speed increased by $s1% for $d.	Attack speed increased by $s1%.					
+42746	all		Cleave		Inflicts $s1% of normal melee damage to an enemy and its nearest allies, affecting up to $x1 targets.						
+42747	all		Crunch Armor		Reduces an enemy's armor by $s1 for $d.	Armor reduced by $s1.					
+42748	all		Shadow Axe		Throws your Shadow Axe at a random target. The axe will arrive at the target and spin in place for $d, dealing $42751s1 damage per second to all nearby enemies.						
+42749	all		Throw Axe								
+42750	all		Throw Axe								
+42751	all		Shadow Axe		Throws your Shadow Axe at a random target. The axe will arrive at the target and spin in place for $42748d, dealing $42751s1 damage per second to all nearby enemies.						
+42752	all		Create Goblin Gumbo Kettle								
+42753	all		Goblin Gumbo Kettle		Right Click to create a kettle of spicy Goblin Gumbo.\n\nGoblin Gumbo disappears if logged out for more than 15 minutes.						
+42754	all		Create Pumpkin Treats								
+42755	all		Goblin Gumbo								
+42756	all		Razael Kill Credit								
+42757	all		Headless Horseman - Force Cast - Create Pumpkin Treats								
+42758	all		Scott Hartin		Inflicts $s1 Fire damage to all enemies in a selected area.						
+42760	all		Goblin Gumbo		Absurdly spicy goblin stew of no nutritional value. Occasionally belch rank goblin breath for the next $d.	Your breath is FOUL.					
+42761	all		Brewfest - Dark Iron Attack - Keg Marker								
+42762	all		Create Goblin Gumbo								
+42766	all		Fishing Chair		Right Click to set up a comfy fishing chair.						
+42767	all		Sic'em!		Sic your plaguehound on a nearby crow.	Taunted.					
+42768	all		PattyMacDisturb	1							
+42769	all		Release Plaguehound		Releases a hungry plaguehound from the cage.						
+42770	all		Second Wind	Rank 2	Whenever you are struck by a Stun or Immobilize effect you will regenerate $42771o2% of your total health over $42771d.						
+42771	all		Second Wind	Rank 2	Whenever you are struck by a Stun or Immobilize effect you will regenerate $42771o1% of your total health over $42771d.	Heals $s1% of your total health every $t1 sec.					
+42772	all		Hurl Dagger		Hurls a dagger at an enemy, inflicting Physical damage.						
+42773	all		Create Fishing Chair								
+42774	all		Headless Horseman - Create Pumpkin Treats Aura								
+42775	all		Create Pumpkin Treats (stackable)								
+42776	spellbook	777	Spectral Tiger		Summons and dismisses a rideable Spectral Tiger. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+42777	spellbook	777	Swift Spectral Tiger		Summons and dismisses a rideable Swift Spectral Tiger.   This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+42778	all		Blessed Vial Cleanup								
+42780	all		Ringing Slap		Slap an enemy in the face, inflicting Physical damage and interrupting the spell being cast for $d.						
+42781	spellbook	777	Upper Deck - Spectral Tiger Mount								
+42782	all		Sic'em!								
+42783	all		Wrath of the Astromancer		Infuses an enemy with Arcane power, causing them to harm nearby allies for $42787s1 Arcane damage after $d.	$42787s1 Arcane damage to nearby allies after $d.					
+42784	all		Wrath of the Astromancer								
+42785	all		Plaguehound Dummy								
+42786	all		Echo of Ymiron		Transports you to the spirit world. May only be used in Wyrmskull Village.	You are in the spirit world.					
+42787	all		Wrath of the Astromancer		Explodes with arcane power, dealing $s1 arcane damage.	Falling...					
+42788	all		Feed Plaguehound		Feed the Crow Meat to a nearby hungry plaguehound.						
+42789	all		Ping Master								
+42790	all		Charm Plaguehound								
+42791	all		TEST - Justin B Test - JZB								
+42792	all		Recently Dropped Flag		Unable to pick up dropped flags.	Unable to pick up dropped flags.					
+42793	all		Burn Body		Use on an Alliance Corpse or Forsaken Corpse near Vengeance Landing to set them on fire.						
+42794	all		Holiday - Brewfest - Random Mug Fling								
+42795	all		Ingvar Feign Death								
+42796	all		Ingvar Transform								
+42797	all		Brewfest - Dark Iron - Get Active Number								
+42798	all		Brewfest - Dark Iron - Get Active Number Aura								
+42799	all		Lyana Kill Credit								
+42800	all		Summon Flow of Maggots								
+42801	all		The Mark of Illidari		Creates 5 Marks of the Illidari.						
+42802	all		Fireball		Inflicts Fire damage to an enemy.						
+42803	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+42804	all		Chain Lightning		Strikes an enemy with a lightning bolt that arcs to another nearby enemy. The spell affects up to $x1 targets, causing Nature damage to each.						
+42805	all		Dirty Trick		Throw a handful of dirt with great accuracy, blinding up to 3 targets in a nearby area.	Disoriented.					
+42806	all		Unfriendly With Test								
+42808	all		Queen Angerboda's On Reaction 2 Beam								
+42809	all		Queen Angerboda Soul Absorption								
+42810	all		Necrolord Cosmetic Purple Glow								
+42811	all		Teleport Other								
+42812	all		Increase Spell Dam 209		Increases damage and healing done by magical spells and effects by up to $s1.						
+42813	all		Blue Theramore Rocket		Launches a firework at a launcher.						
+42814	all		Increase Spell Dam 229		Increases damage and healing done by magical spells and effects by up to $s1.						
+42815	all		Yellow Theramore Rocket		Launches a firework at a launcher.						
+42816	all		Purple Theramore Rocket		Launches a firework at a launcher.						
+42817	all		Wyrmcaller's Horn		Blow on the wyrmcaller's platform to call down Glacion.						
+42818	all		Headless Horseman - Wisp Flight Port								
+42819	all		Move Once								
+42821	all		Headless Horseman - Wisp Flight Missile								
+42822	all		Opening Gjalerbron Cage		Unlocks Gjalerbron Cages.						
+42823	all		Headless Horseman - Wisp Invis								
+42824	all		Result: Shrink								
+42825	all		Cannon Prep								
+42826	all		Cannon Prep								
+42827	all		Result: Split								
+42828	all		Result: Grow and Explode								
+42829	all		Chaotic Flames		Inflicts Fire damage to nearby enemies.						
+42830	all		Result: Grow								
+42831	all		Result: Shrink and Extinguish								
+42832	spellbook	8	Fireball	Rank 15	Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.	$s2 Fire damage every $t2 seconds.					
+42833	spellbook	8	Fireball	Rank 16	Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.	$s2 Fire damage every $t2 seconds.					
+42834	all		Fireball	Rank 17	Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.	$s2 Fire damage every $t2 seconds.					
+42835	all		Spout								
+42836	all		Opening Large Gjalerbron Cage		Unlock the large cage in the middle of Gjalerbron.						
+42837	all		Spirit Totem (Fire)								
+42838	all		Spirit Totem (Water)								
+42839	all		Headless Horseman - Wisp Port to Horseman								
+42841	spellbook	6	Frostbolt	Rank 15	Launches a bolt of frost at the enemy, causing ${$m2*$<mult>} to ${$M2*$<mult>} Frost damage and slowing movement speed by $s1% for $d.	Movement slowed by $s1%.					
+42842	spellbook	6	Frostbolt	Rank 16	Launches a bolt of frost at the enemy, causing ${$m2*$<mult>} to ${$M2*$<mult>} Frost damage and slowing movement speed by $s1% for $d.	Movement slowed by $s1%.					
+42843	spellbook	237	Arcane Missiles	Rank 12	Launches Arcane Missiles at the enemy, causing $42844s1 Arcane damage every $t2 sec for $d.						
+42844	spellbook	237	Arcane Missiles	Rank 12	Launches Arcane Missiles at the enemy, causing $42844s1 Arcane damage every $42843t2 sec for $42843d.						
+42845	spellbook	237	Arcane Missiles	Rank 13	Launches Arcane Missiles at the enemy, causing $42845s1 Arcane damage every $42846t2 sec for $42846d.						
+42846	spellbook	237	Arcane Missiles	Rank 13	Launches Arcane Missiles at the enemy, causing $42845s1 Arcane damage every $t2 sec for $d.						
+42853	all		Fireball	Rank 17							
+42857	all		Scourge Resurrection								
+42858	spellbook	8	Scorch	Rank 10	Scorch the enemy for $s1 Fire damage.						
+42859	spellbook	8	Scorch	Rank 11	Scorch the enemy for $s1 Fire damage.						
+42862	all		Scourge Resurrection								
+42863	all		Scourge Resurrection								
+42864	all		Dragonflayer Aggro								
+42865	all		Dragonflayer Aggro								
+42866	all		Stealth		Puts the caster in stealth mode for $d.	Stealthed.					
+42867	all		Magic Wings			Slows falling speed.\nRight click to remove at the appropriate time.					
+42868	all		Fire Cannon								
+42869	all		Conflagration		Sets an enemy aflame, inflicting $o1 Fire damage over $d. and sending it into a state of panic. While the target is affected, the flames periodically scorch its nearby allies for $16806s1 damage as well.	You're burning!					
+42870	all		Throw Dragonflayer Harpoon		Hurls a harpoon at the target, inflicting $s1 damage.						
+42871	all		Cosmetic - Drink Tankard								
+42872	spellbook	8	Fire Blast	Rank 10	Blasts the enemy for $s1 Fire damage.						
+42873	spellbook	8	Fire Blast	Rank 11	Blasts the enemy for $s1 Fire damage.						
+42876	all		Quest 9275 reward serverside spell								
+42877	all		Apothecary's Poison Cleanup								
+42878	all		Headless Horseman Climax - Summoning Rhyme								
+42879	all		Headless Horseman Climax - Summoning Rhyme Aura								
+42880	all		Cosmetic - Combat Attack 1H								
+42881	all		Valgarde Broadcast 001								
+42882	all		Valgarde Broadcast 002								
+42883	all		Valgarde Broadcast 003								
+42884	all		Valgarde Broadcast 004								
+42885	all		Valgarde Broadcast 004-1								
+42886	all		Valgarde Broadcast 004-2								
+42887	all		Valgarde Broadcast 004-3								
+42888	all		Valgarde Broadcast 004-4								
+42889	all		Cosmetic - Combat Attack 2H								
+42890	spellbook	8	Pyroblast	Rank 11	Hurls an immense fiery boulder that causes $s1 Fire damage and an additional $o2 Fire damage over $d.	$s2 Fire damage every $t2 seconds.					
+42891	spellbook	8	Pyroblast	Rank 12	Hurls an immense fiery boulder that causes $s1 Fire damage and an additional $o2 Fire damage over $d.	$s2 Fire damage every $t2 seconds.					
+42894	spellbook	237	Arcane Blast	Rank 2	Blasts the target with energy, dealing $s1 Arcane damage.  Each time you cast Arcane Blast, the damage of all Arcane spells is increased by $36032s1% and mana cost of Arcane Blast is increased by $36032s2%.  Effect stacks up to $36032u times and lasts $36032d or until any Arcane damage spell except Arcane Blast is cast.						
+42895	all		Cosmetic - Combat Knockdown Foe								
+42896	spellbook	237	Arcane Blast	Rank 3	Blasts the target with energy, dealing $s1 Arcane damage.  Each time you cast Arcane Blast, the damage of all Arcane spells is increased by $36032s1% and mana cost of Arcane Blast is increased by $36032s2%.  Effect stacks up to $36032u times and lasts $36032d or until any Arcane damage spell except Arcane Blast is cast.						
+42897	spellbook	237	Arcane Blast	Rank 4	Blasts the target with energy, dealing $s1 Arcane damage.  Each time you cast Arcane Blast, the damage of all Arcane spells is increased by $36032s1% and mana cost of Arcane Blast is increased by $36032s2%.  Effect stacks up to $36032u times and lasts $36032d or until any Arcane damage spell except Arcane Blast is cast.						
+42901	all		Cosmetic - Combat Whirlwind								
+42902	all		Cosmetic - Combat Attack Offhand								
+42903	all		Cosmetic - Combat Special Attack 1H								
+42904	all		Cosmetic - Combat Special Attack 2H								
+42905	all		Time-Warped Shoot								
+42906	all		Cosmetic - Combat Shield Block								
+42907	all		Cosmetic - Combat Shield Bash								
+42908	all		Cosmetic - Combat Kick								
+42909	all		Headless Horseman Climax - Summoning Rhyme, Shake, Medium								
+42910	all		Headless Horseman Climax - Summoning Rhyme, Shake, Small								
+42911	all		Flight Path								
+42912	all		Summon Banshee	`							
+42913	spellbook	6	Ice Lance	Rank 2	Deals ${$m1*$<mult>} to ${$M1*$<mult>} Frost damage to an enemy target.  Causes triple damage against Frozen targets.						
+42914	spellbook	6	Ice Lance	Rank 3	Deals ${$m1*$<mult>} to ${$M1*$<mult>} Frost damage to an enemy target.  Causes triple damage against Frozen targets.						
+42917	spellbook	6	Frost Nova	Rank 6	Blasts enemies near the caster for ${$m1*$<mult>} to ${$M1*$<mult>} Frost damage and freezes them in place for up to $d.  Damage caused may interrupt the effect.	Frozen in place.					
+42919	all		Tricky Treat			SUGAR RUSH! Increases speed by $s%.					
+42920	spellbook	237	Arcane Explosion	Rank 9	Causes an explosion of arcane magic around the caster, causing $s1 Arcane damage to all targets within $a1 yards.						
+42921	spellbook	237	Arcane Explosion	Rank 10	Causes an explosion of arcane magic around the caster, causing $s1 Arcane damage to all targets within $a1 yards.						
+42924	all		Giddyup!		Loosen the reins and get ready for some speed!						
+42925	spellbook	8	Flamestrike	Rank 8	Calls down a pillar of fire, burning all enemies within the area for $s1 Fire damage and an additional $o2 Fire damage over $d.	$s2 Fire damage every $t2.					
+42926	spellbook	8	Flamestrike	Rank 9	Calls down a pillar of fire, burning all enemies within the area for $s1 Fire damage and an additional $o2 Fire damage over $d.	$s2 Fire damage every $t2.					
+42929	all		[DNT] Test Mount		[DNT] This is a test mount. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+42930	spellbook	6	Cone of Cold	Rank 7	Targets in a cone in front of the caster take ${$m2*$<mult>} to ${$M2*$<mult>} Frost damage and are slowed by $s1% for $d.	Movement slowed by $s1%.					
+42931	spellbook	6	Cone of Cold	Rank 8	Targets in a cone in front of the caster take ${$m2*$<mult>} to ${$M2*$<mult>} Frost damage and are slowed by $s1% for $d.	Movement slowed by $s1%.					
+42932	all		Prowl		Puts the caster in stealth mode. Lasts until cancelled.	Stealthed.					
+42935	all		Flight Path								
+42936	all		Ornery Ram			Your ram is angry from being whipped too often, too quickly.					
+42937	spellbook	6	Blizzard	Rank 8	Ice shards pelt the target area doing ${$42937m1*8*$<mult>} Frost damage over $42939d.						
+42938	spellbook	6	Blizzard	Rank 9	Ice shards pelt the target area doing ${$42938m1*8*$<mult>} Frost damage over $42940d.						
+42939	spellbook	6	Blizzard	Rank 8	Ice shards pelt the target area doing ${$42937m1*8*$<mult>} Frost damage over $42939d.	$42937s1 Frost damage every $42937t1 $lsecond:seconds;.					
+42940	spellbook	6	Blizzard	Rank 9	Ice shards pelt the target area doing ${$42938m1*8*$<mult>} Frost damage over $42940d.	$42938s1 Frost damage every $42938t1 $lsecond:seconds;.					
+42943	all		Stealth		Puts the caster in stealth mode for $d.	Stealthed.					
+42944	spellbook	8	Blast Wave	Rank 8	A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for $s1 Fire damage, knocking them back and dazing them for $d.	Dazed.					
+42945	spellbook	8	Blast Wave	Rank 9	A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for $s1 Fire damage, knocking them back and dazing them for $d.	Dazed.					
+42948	all		Valgarde Broadcast Blocker								
+42949	spellbook	8	Dragon's Breath	Rank 5	Targets in a cone in front of the caster take $s1 Fire damage and are Disoriented for $d.  Any direct damaging attack will revive targets.  Turns off your attack when used.	Disoriented.					
+42950	spellbook	8	Dragon's Breath	Rank 6	Targets in a cone in front of the caster take $s1 Fire damage and are Disoriented for $d.  Any direct damaging attack will revive targets.  Turns off your attack when used.	Disoriented.					
+42953	all		Teleport to Violet Stand		Teleport to the ruins in Crystalsong Forest underneath Dalaran.						
+42955	spellbook	237	Conjure Refreshment	Rank 1	Conjures $s1 Mana Pies providing the mage and $ghis:her; allies with something to eat.\n\nConjured items disappear if logged out for more than 15 minutes.						
+42956	spellbook	237	Conjure Refreshment	Rank 2	Conjures $s1 Mana Strudels providing the mage and $ghis:her; allies with something to eat.\n\nConjured items disappear if logged out for more than 15 minutes.						
+42959	all		Flight Path								
+42960	all		Flight Path								
+42961	all		Flight Path								
+42962	all		Flight Path								
+42963	all		Cosmetic - Combat Knockdown Self								
+42964	all		Cosmetic - Combat Knockdown Foe								
+42965	all		Tricky Treat		Dangerously sweet sugar-frosted taffy with a rich syrup center. Goes bad in only a day.	SUGAR RUSH! Increases speed by $s%.					
+42966	all		Upset Tummy			The mere thought of eating any more Tricky Treats makes you ill.					
+42967	all		Fire Explosion								
+42968	all		Removing Dragonflayer Harpoon								
+42969	all		Explosion Fade Away		Turns the caster invisible and increases its movement speed by $s3% for $d.	Invisible.\nMovement speed increased by $s3%.					
+42971	all		Headless Horseman - Burning (Cosmetic)								
+42972	all		Blind		Blinds the target, causing it to wander confused for up to $d.  Any damage caused will remove the effect.	Confused.					
+42974	spellbook	333	Enchant Weapon - Executioner		Permanently enchant a melee weapon to occasionally grant you 120 armor penetration rating.  Only one instance of this effect can be active at a time.  Requires a level 60 or higher item.						
+42976	all		Executioner		You have an additional $s1 armor penetration rating for $d.	$s1 armor penetration rating.					
+42978	all		Conjure Water	Rank 9							
+42981	all		Opening Dragonflayer Cage		Unlocks Dragonflayer cages at Wyrmskull Village.						
+42982	all		Vampire Prince Teleport								
+42983	all		Summon Valgarde Warrior								
+42984	all		Summon Valgarde Warrior								
+42985	spellbook	237	Conjure Mana Gem	Rank 6	Conjures a mana sapphire that can be used to instantly restore $42987s1 mana.  3 charges.						
+42986	all		Conjure Mana Gem	Rank 7	Conjures a mana opal that can be used to instantly restore $27103s1 mana.						
+42987	all		Replenish Mana	Rank 6	Restores $s1 mana.						
+42988	all		Replenish Mana	Rank 7	Restores $s1 mana.						
+42990	all		Despawn Self								
+42991	all		Blood Rune 2	1							
+42992	all		Ram - Trot		 This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+42993	all		Ram - Canter		 This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+42994	all		Ram - Gallop		 This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+42995	spellbook	237	Arcane Intellect	Rank 7	Increases the target's Intellect by $s1 for $d.	Increases Intellect by $s1.					
+42996	all		Frost Rune 1	1							
+42997	all		Frost Rune 2	1							
+42998	all		Unholy Rune 1	1							
+42999	all		Arcane Intellect	Rank 7							
+43000	all		Unholy Rune 2	1							
+43001	all		Frost/Blood/Unholy 1	1							
+43002	spellbook	237	Arcane Brilliance	Rank 3	Infuses all  party and raid members with brilliance, increasing their Intellect by $s1 for $d.	Increases Intellect by $s1.					
+43003	all		Arcane Brilliance	Rank 2							
+43004	all		Arcane Brilliance	Rank 3							
+43005	all		QAEnchant Weapon Executioner	QASpell	Permanently enchant a Melee Weapon to occasionally ignore $42976s1 of your enemy's armor.  Requires a level 60 or higher item.						
+43006	all		Valgarde Prisoner Free								
+43008	spellbook	6	Ice Armor	Rank 6	Increases Armor by $s1 and Frost resistance by $s3.   If an enemy strikes the caster, they may have their movement slowed by $7321s1% and the time between their attacks increased by $7321s2% for $7321d.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.	Increases armor by $s1, Frost resistance by $s3 and may slow attackers.					
+43010	spellbook	8	Fire Ward	Rank 7	Absorbs $s1 Fire damage.  Lasts $d.	Absorbs Fire damage.					
+43012	spellbook	6	Frost Ward	Rank 7	Absorbs $s1 Frost damage.  Lasts $d.	Absorbs Frost damage.					
+43014	all		Despawn Self								
+43015	spellbook	237	Dampen Magic	Rank 7	Dampens magic used against the targeted party member, decreasing damage taken from spells by up to $s1 and healing spells by up to $s2.  Lasts $d.	Reduces magic damage taken by up to $s1 and healing by up to $s2.					
+43017	spellbook	237	Amplify Magic	Rank 7	Amplifies magic used against the targeted party member, increasing damage taken from spells by up to $s1 and healing spells by up to $s2.  Lasts $d.	Increases magic damage taken by up to $s1 and healing by up to $s2.					
+43019	spellbook	237	Mana Shield	Rank 8	Absorbs $s1 damage, draining mana instead.  Drains $e mana per damage absorbed.  Lasts $d.	Absorbs damage, draining mana instead.					
+43020	spellbook	237	Mana Shield	Rank 9	Absorbs $s1 damage, draining mana instead.  Drains $e mana per damage absorbed.  Lasts $d.	Absorbs damage, draining mana instead.					
+43023	spellbook	237	Mage Armor	Rank 5	Increases your resistance to all magic by $s1 and allows $s2% of your mana regeneration to continue while casting.  In addition, the duration of all harmful Magic effects used against you is reduced by $s3%.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.	Resistance to all magic schools increased by $s1 and allows $s2% of your mana regeneration to continue while casting.  Duration of all harmful Magic effects reduced by $s3%.					
+43024	spellbook	237	Mage Armor	Rank 6	Increases your resistance to all magic by $s1 and allows $s2% of your mana regeneration to continue while casting.  In addition, the duration of all harmful Magic effects used against you is reduced by $s3%.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.	Resistance to all magic schools increased by $s1 and allows $s2% of your mana regeneration to continue while casting.  Duration of all harmful Magic effects reduced by $s3%.					
+43027	all		Summon Valgarde Mage								
+43028	all		Summon Valgarde Mage								
+43029	all		Summon Valgarde Priest								
+43030	all		Summon Valgarde Priest								
+43031	all		Summon Valgarde Paladin								
+43032	all		Summon Valgarde Paladin								
+43033	all		Dark Frostbolt								
+43034	all		Headless Horseman - Wisp Escape Missile								
+43035	all		Dark Frostbolt - Frost								
+43036	all		Dismembering Corpse		Dismember a Winterskorn vrykul corpse.						
+43037	all		Gruesome, But Necessary: Kill Credit								
+43038	spellbook	6	Ice Barrier	Rank 7	Instantly shields you, absorbing $s1 damage.  Lasts $d.  While the shield holds, spellcasting will not be delayed by damage.	Absorbs damage.					
+43039	spellbook	6	Ice Barrier	Rank 8	Instantly shields you, absorbing $s1 damage.  Lasts $d.  While the shield holds, spellcasting will not be delayed by damage.	Absorbs damage.					
+43042	all		Westguard Command Insignia		Calls forth the Westguard Sergeant.  Can only be used in Skorn and cannot be used in combat.  Right-click the insignia again to dismiss the sergeant.						
+43043	spellbook	8	Molten Armor	Rank 2	Causes $43043s1 Fire damage when hit, increases your chance to critically hit with spells by $43045s3%of your Spirit, and reduces the chance you are critically hit by $43045s2%.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $43045d.						
+43044	spellbook	8	Molten Armor	Rank 3	Causes $43044s1 Fire damage when hit, increases your chance to critically hit with spells by $43046s3%of your Spirit, and reduces the chance you are critically hit by $43046s2%.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $43046d.						
+43045	spellbook	8	Molten Armor	Rank 2	Causes $43043s1 Fire damage when hit, increases your critical strike rating by $43045s3% of your Spirit, and reduces the chance you are critically hit by $43045s2%.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $43045d.	Causes $43043s1 Fire damage to attackers.  Chance to receive a critical hit reduced by $s2%.  Critical strike rating increased by $s3% of Spirit.					
+43046	spellbook	8	Molten Armor	Rank 3	Causes $43044s1 Fire damage when hit, increases your critical strike rating by $m3% of your Spirit, and reduces the chance you are critically hit by $43046s2%.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $43046d.	Causes $43044s1 Fire damage to attackers.  Chance to receive a critical hit reduced by $s2%.  Critical strike rating increased by $s3% of Spirit.					
+43049	all		Upset Tummy								
+43050	all		Gnomish Flame Turret								
+43051	all		Spyglass		Observe far-off things from a distance.\n\nConjured items disappear if logged out for more than 15 minutes.	Moving or entering combat puts the spyglass away.					
+43052	all		Ram Fatigue			Your racing ram is fatigued.					
+43053	all		Vampire Soul Expel								
+43054	all		Vampire Soul Expel Channel								
+43055	all		Vampire Soul Retrieve								
+43056	all		Vampire Soul Retrieve Channel								
+43057	all		Torch		Set the longhouses and barracks ablaze from within.						
+43058	all		Burn Skorn, Burn!: NW Kill Credit								
+43059	all		Gruesome, But Necessary: Vrykul On Dismember								
+43060	all		Eyes of the Eagle		Through the Eyes of the Eagle, you are able to see Garwal.	Able to see Garwal.					
+43061	all		Burn Skorn, Burn!: NE Kill Credit								
+43062	all		Alpha Worg: Garwal's Invisibility								
+43063	all		Burn Skorn, Burn!: SW Kill Credit								
+43064	all		Eyes of the Eagle: Player Force Cast								
+43065	all		Burn Skorn, Burn!: Barracks Kill Credit								
+43066	all		Cone of Cold		Cone of Cold Visual Only.						
+43067	all		Towers of Certain Doom: NW Kill Credit								
+43068	all		Sergeant's Flare Effect								
+43069	all		Towers of Certain Doom: Skorn Cannonfire								
+43070	all		Val'kyr Invisibility Type 1								
+43071	all		Val'kyr Invisibility Type 1 (Detect)								
+43072	all		Towers of Certain Doom: Tower Caster Instakill								
+43073	all		Mug Target Practice								
+43074	all		Taxi to the Windrunner								
+43075	all		Judgement of the Val'kyr								
+43076	all		Mark Cannon		Mark an Alliance cannon mounted on the makeshift wall at the Derelict Strand with a smoke flare.						
+43077	all		Towers of Certain Doom: E Kill Credit								
+43078	all		Vengeance Landing Cannonfire								
+43079	all		Vengeance Landing Cannonfire								
+43080	all		Quest - Howling Fjord - Guide Our Sights - FX Master								
+43081	all		Random Circumference Point Cannon Part 01								
+43082	all		Random Circumference Point Cannon Part 02								
+43083	all		Frostbolt		Inflicts Frost damage upon an enemy.	Movement slowed by $s2%.					
+43084	all		Loan Spyglass								
+43085	all		Cosmetic - Ready Spell Directed State (Frost)		Inflicts Fire damage to an enemy.						
+43086	all		Towers of Certain Doom: SW Kill Credit								
+43087	all		Towers of Certain Doom: SE Kill Credit								
+43088	all		Shadow Nova		Inflicts Shadow damage to nearby enemies.						
+43089	all		Vrykul Scroll of Ascension		Display at the Thane's Pyre in Skorn to challenge Halfdan the Ice-Hearted.						
+43090	all		Force Cast Blessed Vial Cleanup DND								
+43091	all		Stop the Ascension!: Summon Halfdan's Soul								
+43092	all		Stop the Ascension!: Halfdan's Soul Destruction								
+43093	all		Grievous Throw		A vicious attack that causes the target to bleed profusely until fully healed.  Deals $s1 damage every $t1 seconds until healed.	$s1 Physical damage inflicted every $t1 sec.\nYou will bleed until fully healed.					
+43094	all		Valgarde Prisoner Credit								
+43095	all		Creeping Paralysis		Affect all nearby players with a slow paralysis that stuns if not removed within $t1 sec.	Your body is becoming numb.					
+43096	all		Summon All Players								
+43097	all		Summon All Players								
+43098	all		Teleport to Center								
+43099	all		Deep Wounds								
+43100	all		Deep Wounds		Causes the target to bleed, taking damage every $t1 sec.						
+43101	all		Headless Horseman Climax - Command, Head Requests Body								
+43102	all		Winterhoof Emblem		Calls forth the Winterhoof Brave.  Can only be used in Skorn and cannot be used in combat.  Right-click the emblem again to dismiss the brave.						
+43103	all		Loan Spyglass								
+43104	all		Deep Wound		Causes the target to bleed, taking damage every $t1 sec.	Bleeding.					
+43105	all		Headless Horseman Climax - Body Regen (confuse only - removed on death)								
+43106	all		Brave's Flare Effect								
+43107	all		Spear Throw		Throws a poisoned spear at an enemy, inflicting Physical damage plus an additional $s2 nature damage every $t2 seconds for $d.	$s2 damage inflicted every $t2 seconds.					
+43108	all		Bone Breaker		Stomps the ground, inflicting normal damage to nearby enemies and knocking them back.						
+43109	all		Throw Torch								
+43110	all		Summon Spirit Wolf		Summons a ghostly spirit wolf to assist the caster for $d.						
+43111	all		Headless Horseman Climax - Command, Body Tells Body to Move								
+43112	all		Summon Cyclone		Summons a cyclone that moves around randomly.  Enemies near the cyclone will be knocked away.						
+43113	all		Fire Wall								
+43114	all		Fire Wall			Deals $s1 Fire damage per second.					
+43115	all		Plague Vial		Drops a heavy bomb.						
+43116	all		Headless Horseman Climax - Horseman's Whirlwind								
+43118	all		Horseman's Whirl		A whirling attack that inflicts $s1% weapon damage to enemies within $a1 yards of the Horseman.	A whirling attack that inflicts $s1% weapon damage to enemies within $a1 yards of the Horseman.					
+43119	all		Cyclone Visual								
+43120	all		Cyclone		Periodically triggers a Cyclone knock away.						
+43121	all		Cyclone		Deals $s1 damage and knocks players away.						
+43122	all		Operation: Skornful Wrath: Create Insignia								
+43123	all		Skorn Must Fall!: Create Token								
+43124	all		Lifesteal		Chance to drain $s1 health from an enemy, on a melee swing, transferring it to the caster.	Stealing life when attacking.					
+43125	all		Lifesteal		Drains $s1 health from an enemy, transferring it to the caster.						
+43126	all		Mug Target Practice								
+43127	all		Intangible Presence		Reduces an enemy's chance to hit by $s1%. \nReduces an enemy's chance to hit with spells by $s2%.	Chance to hit with spells and melee attacks reduced by $s1%.					
+43128	all		Raptor Charge		Increases movement speed by $s1% for $d.	Movement speed increased by $s1%.					
+43129	all		Headless Horseman - Speaks								
+43130	all		Creeping Vines		Coats an enemy in roots, damaging them and rooting them. This effect will transform into a snare when removed.	Nature damage every $t2 sec.\nRooted.					
+43131	all		Lingering Vines		Coats an enemy in roots, damaging them and snaring them. This effect will transform into a snare when removed.	Nature damage every $t2 sec.\nMovement speed reduced by $s1%.					
+43132	all		Poison Burst		Shoots poison at an enemy, inflicting Nature damage, then additional damage every $t2 sec. for $d.	Nature damage inflicted every $t2 sec.					
+43133	all		Debilitating Poison		Reduces an enemy's physical damage by $s2% and Inflicts $s1 Nature damage to an enemy every $t1 sec. for $d.	$s1 Nature damage inflicted every $t1 sec.\nPhysical damage dealt reduced by $s2%.					
+43134	all		Hatch Spiderlings								
+43135	all		Bubbling Ooze		Deals Nature damage to your target every $t1 seconds.	Nature damage every $t1 seconds.					
+43136	all		Test at Sea Taxi								
+43137	all		Zap								
+43138	all		North Fleet Reservist Kill Credit								
+43139	all		Enrage		Decreases the time between your attacks by $s1% for $d.	Attack speed increased by $s1%.					
+43140	all		Flame Breath		Inflicts $s2 Fire damage to enemies in a cone in front of the caster.						
+43141	all		Feign and Drown								
+43142	all		Transfigure		Transforms the caster, unleashing the powers of nature upon all nearby enemies, dealing $s2 Nature damage.						
+43143	all		Halazzi Transform								
+43144	all		Hatch All Eggs								
+43145	all		Halazzi Transform								
+43146	all		Eyes of the Eagle: Send Event to Talonshrike								
+43147	all		Feathery Cyclone Burst								
+43148	all		Headless Horseman - Fire Size BIG								
+43149	all		Claw Rage		Charges a target, stunning them and dealing a flurry of rapid attacks.						
+43150	all		Claw Rage		Charges a target, stunning them and dealing a flurry of rapid attacks.	Unable to move.\nPhysical damage taken increased by $s2.					
+43151	all		Necrolord: Purple Beam								
+43152	all		Lynx Rush								
+43153	all		Lynx Rush		Charges an enemy, dealing $s2 Physical damage and causing them to bleed for $o3 additional damage over $d.	$s3 Physical damage inflicted every $t3 sec.					
+43154	all		Drink		Restores $o1 mana over $d.  Must remain seated while drinking.	Restores $/5;s1 mana per second.					
+43155	all		Drink								
+43156	all		Brewfest Keg Protector			You've protected a Brewfest keg.  Talk to a ticket redeemer to get your prize tickets.					
+43157	all		Tillinghast's Plague Canister		Spray the selected proto-drake egg at the Ember Clutch. Oh what fun!						
+43158	all		Has Target Rifle								
+43159	all		Soul Infusion								
+43160	all		Green Eggs and Whelps: Summon Plagued Proto-Whelp								
+43161	all		Spirit Particles (green - Chest)								
+43166	all		Poison Elemental Impact Visual								
+43167	all		Spirit Particles (green)								
+43168	all		Brewfest Keg Keeper Redemption								
+43169	all		Draconis Gastritis: Summon Tillinghast's Plagued Meat								
+43170	all		Dragonflayer Presence								
+43171	all		Dragonflayer Presence								
+43172	all		Tillinghast's Plagued Meat		Places Tillinghast's Plagued Meat on the ground to attract a proto-drake in the Ember Clutch.						
+43173	all		Draconis Gastritis: Dummy to Draconis Gastritis Bunny								
+43174	all		Draconis Gastritis: Kill Credit								
+43175	all		Draconis Gastritis: Script Effect to Master								
+43176	all		Upset Stomach			Upset Stomach					
+43177	all		Draconis Gastritis: Proto-Drake Vomit Effect								
+43178	all		Plant Forsaken Banner		Places Forsaken Banner on top of a fallen Winterskorn hero.						
+43180	all		Food		Restores $o1 health over $d.  Must remain seated while eating.	Restores $/5;s1 health per second.					
+43182	all		Drink		Restores ${$m2/5*30} mana over $d.  Must remain seated while drinking.	Restores ${$m2/5} mana per second.					
+43183	all		Drink		Restores ${$m2/5*30} mana over $d.  Must remain seated while drinking.	Restores ${$m2/5} mana per second.					
+43184	all		Headless Horseman - Burning (Cosmetic), Base								
+43185	all		Healing Potion		Restores $s1 health.						
+43186	all		Restore Mana		Restores $s1 mana.						
+43187	all		Dive		Dives at the target, inflicting $s1 damage.						
+43189	all		Test Horn		Sound the horn near the Frozen Waterfall to mimic the sound of a female yeti.						
+43190	all		Opening Oluf's Cage		Unlocks Oluf's cage.						
+43191	all		Ulf Credit								
+43192	all		Oric Credit								
+43193	all		Gunnar Credit								
+43194	all		Agility	Rank 6	Increases the target's Agility by $s1 for $d.	Agility increased by $s1.					
+43195	all		Intellect	Rank 6	Increases the target's Intellect by $s1 for $d.	Intellect increased by $s1.					
+43196	all		Armor	Rank 6	Increases the target's Armor by $s1 for $d.	Armor increased by $s1.					
+43197	all		Spirit	Rank 6	Increases the target's Spirit by $s1 for $d.	Spirit increased by $s1.					
+43198	all		Stamina	Level 6	Increases the target's Stamina by $s1 for $d.	Stamina increased by $s1.					
+43199	all		Strength	Rank 6	Increases the target's Strength by $s1 for $d.	Strength increased by $s1.					
+43200	all		Decompose								
+43201	all		Decompose								
+43202	all		Shining Light		Protected by the shining light. Undeath is repelled by your presence.	Protected by the shining light. Undeath is repelled by your presence.					
+43203	all		Shining Light								
+43204	all		Attack Power - Feral (+0801)		Increases attack power by $s1 in Cat, Bear, Dire Bear, and Moonkin forms only.						
+43205	all		Multi-Shot		Fires a volley of missiles at an enemy and its nearby allies, striking up to $x1 targets for normal damage plus $s1.						
+43206	all		Brewfest Keg Keeper Redemption (Force)								
+43207	all		Headless Horseman Climax - Head's Breath								
+43208	all		Flame Whirl		Whirl around, spitting flame at all nearby enemies, increasing their vulnerability to Fire magic.	Fire damage taken increased by $s2%.					
+43209	all		Place Ram Meat		Place the ram meat on the ground near the sleeping Shatterhorn.						
+43210	all		Target Rifle		Fires a pellet at the nearest target in front of you within $a1 yards.						
+43211	all		Target Rifle								
+43213	all		Flame Whirl		Whirl around, spitting flame at all nearby enemies, increasing their vulnerability to Fire magic.						
+43214	all		Combine Ram Meat		Combine 4 pieces of Tough Ram Meat into a Giant Yeti Meal.						
+43215	all		Flame Breath		Inflicts $s1 Fire damage to enemies in a cone in front of the caster.						
+43216	all		Pillar of Fire								
+43217	all		Burn		Causes $s2 Fire damage to nearby enemies.						
+43218	all		Pillar of Fire								
+43219	all		Armor Penetration 119		Increases armor penetration rating by $s1.	Increases armor penetration rating by $s1.					
+43221	all		Ares Invisibility								
+43222	all		Ares Invisibility								
+43223	all		Greater Blessing of Kings		Places a Blessing on all nearby friendly targets, increasing their attack power by $s1 for $d.	Increases stats by $s1%.					
+43224	all		Fury of the Ashbringer		Adds a chance to do two additional attacks.						
+43225	all		Fury of the Ashbringer		Gives the caster $s1 extra attacks.						
+43226	all		Summon Servitor of the Light								
+43227	all		Servitor of the Light			Cannot summon another Servitor of the Light while aura is active.					
+43228	all		Guided by the Oathbound QC								
+43229	all		Ares Invisibility								
+43230	all		Servitor Aggro Aura								
+43231	all		Servitor Aggro Aura								
+43232	all		Summon Plaguehound Tracker		Allows you to take control of a plaguehound tracker.						
+43233	all		Burn Structure		Use in Baleheim near various wooden structures to set them on fire.						
+43234	all		Shoot								
+43235	all		Shining Light								
+43236	all		Quest 11288 reward serverside spell								
+43237	all		Summon Prowling Worg								
+43239	all		Despawn Trapped Creature								
+43240	all		Fireball Volley		Inflicts Fire damage to nearby enemies.						
+43241	all		Mass Dispel - Cosmetic								
+43242	all		Haste		Fills the target with power, increasing its casting speed by $s1% and movement speed by $s2%.	Casting speed increased by $s1%.\nMovement speed increased by $s2%.					
+43243	all		Shred Armor		Shreds an enemy's armor, reducing it by $s1 for $d.	Reduced armor by $s1.					
+43244	all		Headless Horseman - Create Water Bucket, Barrel Splash								
+43245	all		Fire Blast		Inflicts Fire damage to an enemy.						
+43246	all		Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+43247	all		Flight Path								
+43248	all		Flight Path								
+43249	all		Startling Roar		Breaks all friends within $r1 yards out of snares, crowd-control and stunning effects.						
+43250	all		Flight Path								
+43251	all		Flight Path								
+43252	all		Flight Path								
+43253	all		Flight Path								
+43254	all		Threat								
+43255	all		Zul'Aman - Crate Burst								
+43256	all		Lynx Flurry		Enrages self, increasing size and damage done.	Increases damage done by $s1%.					
+43257	all		Lynx Flurry								
+43258	all		Cosmetic - Zul'Aman - Dust Cloud								
+43259	all		Brewfest  - Barker Bunny 1								
+43260	all		Brewfest  - Barker Bunny 2								
+43261	all		Brewfest  - Barker Bunny 3								
+43262	all		Brewfest  - Barker Bunny 4								
+43263	all		Ghoul Taunt		Taunts and causes additional high threat to all enemies within $a1 yards.						
+43264	all		Periodic Taunt								
+43265	spellbook	772	Death and Decay	Rank 1	Corrupts the ground targeted by the Death Knight, causing $m1 Shadow damage every sec that targets remain in the area for $d.  This ability produces a high amount of threat.	$s1 Shadow damage inflicted every sec.					
+43266	all		Gjalerbron Warrior: Mount Speed 100%		Increases mount speed by $s1%. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+43267	all		Saber Lash		Do damage divided up evenly among all affected targets.						
+43268	all		Saber Lash		Do damage divided up evenly among all affected targets						
+43269	all		Summon Stone Giant								
+43270	all		Bind Stone Giant		Binds a stone giant with runic wards.	Bound with runic wards.					
+43271	all		Halazzi Transform								
+43272	all		Halazzi Transform								
+43273	all		Cleave		Inflicts $s1% of normal melee damage to an enemy and its nearest allies, affecting up to $x1 targets.						

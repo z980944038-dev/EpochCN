@@ -1,0 +1,1001 @@
+﻿spell_id	priority	skill_line_ids	name_en	rank_en	description_en	tooltip_en	name_zh	rank_zh	description_zh	tooltip_zh	notes
+23266	all		Fiery Aura	Rank 1	When struck in combat inflicts $s1 Fire damage to the attacker.						
+23267	all		Firebolt		Blasts a target for $s1 Fire damage.						
+23268	all		Shadow Word: Pain		Utters a word of darkness, inflicting Shadow damage to an enemy every $t1 sec. for $d.	Shadow damage inflicted every $t1 sec.					
+23269	all		Holy Blast		Suffering from the unleashed Judgement, the spirit is stunned for $d and emanates a wave of Holy energy, inflicting $s2 Holy damage to other nearby spirits.	Stunned.					
+23271	all		Ephemeral Power		Increases damage and healing done by magical spells and effects by up to $s1 for $d.	Magical damage and healing dealt is increased by $s1					
+23272	all		Soul Flame								
+23273	all		Immune Charm/Fear/Polymorph		Dispels all Charm, Fear and Polymorph effects.						
+23274	all		Immune Fear/Polymorph/Snare		Dispels all Fear, Polymorph and Slowing effects.						
+23275	all		Dreadful Grasp			Rooted.					
+23276	all		Immune Fear/Polymorph/Stun		Dispels all Fear, Polymorph and Stun effects.						
+23277	all		Immune Charm/Fear/Stun		Dispels all Charm, Fear and Stun effects.						
+23278	all		Shadow Scythe								
+23279	all		Crippling Clip								
+23298	all		Demonic Doom			$s1 shadow damage every $t1 seconds.					
+23299	all		Stinging Trauma								
+23300	all		Seal of the Crusader Judgement Increase		Increases the Holy damage bonus of your Crusader Strike by $s1.						
+23301	all		Ebon Blade Banner		Target and impale the corpse of any of the vrykul in the greater Jotunheim region.  Range is $r yards.						
+23302	all		Hammer of Justice Cooldown Reduction		Reduces the cooldown of your Hammer of Justice by $/1000;s1 sec.						
+23303	all		Vaelen the Flayed [The Shadow Vault] - Invisibility								
+23304	all		Manna-Enriched Horse Feed								
+23307	all		Possess								
+23308	all		Incinerate		Deals $s1 Fire damage to all enemies.						
+23309	all		Incinerate		Deals $s1 Fire damage to all enemies.						
+23310	all		Time Lapse		Frozen in time!\nHealth reduced by $s2%.\nLasts $d.	Frozen in time!\nHealth reduced by $s2%.					
+23311	all		Time Lapse								
+23312	all		Time Lapse		Frozen in time!\nHealth reduced by $s2%.\nLasts $d.	Frozen in time!\nHealth reduced by $s2%.					
+23313	all		Corrosive Acid		Deals $s1 damage every $t1 sec.\nArmor reduced by $s2.\nLasts $d.	Deals $s1 damage every $t1 sec.\nArmor reduced by $s2.					
+23314	all		Corrosive Acid		Deals $s1 damage every $t1 sec.\nArmor reduced by $s2.\nLasts $d.	Deals $s1 damage every $t1 sec.\nArmor reduced by $s2.					
+23315	all		Ignite Flesh		Deals $s1 damage every $t1 sec.	Deals $s1 damage every $t1 sec.					
+23316	all		Ignite Flesh		Deals $s1 Fire damage every $t1 sec to all enemies near the caster for $d.	Deals $s1 damage every $t1 sec.					
+23317	all		Dragondog Breath Selection (L1)								
+23318	all		Dragondog Breath Selection (L2)								
+23319	all		Dragondog Breath Selection (L3)								
+23320	all		Dragondog Breath Selection (L4)								
+23321	all		Dragondog Breath Selection (L5)								
+23322	all		Dragondog Breath Selection (R1)								
+23323	all		Dragondog Breath Selection (R2)								
+23324	all		Dragondog Breath Selection (R3)								
+23325	all		Dragondog Breath Selection (R4)								
+23326	all		Dragondog Breath Selection (R5)								
+23327	all		Trigger Trap								
+23328	all		Trigger Trap								
+23329	all		Heal Max Health								
+23330	all		No Stealth Detection								
+23331	all		Blast Wave		Unleashes a wave of flame, inflicting Fire damage to nearby enemies and reducing their movement speed for $d.	Reduced movement speed.					
+23332	all		trans2								
+23333	all		Warsong Flag		You are holding the Warsong Flag.	You are holding the Warsong Flag.					
+23334	all		Horde Flag Drop		You dropped the flag!						
+23335	all		Silverwing Flag		You are holding the Silverwing Flag.	You are holding the Silverwing Flag.					
+23336	all		Alliance Flag Drop		You dropped the flag!						
+23337	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+23338	spellbook	777	Swift Stormsaber		Summons and dismisses a rideable Swift Stormsaber.   This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+23339	all		Wing Buffet		Inflicts $s2 damage to enemies in a cone in front of the caster, knocking them back.						
+23340	all		Shadow of Ebonroc		When the target is melee damaged, heals Ebonroc for $23394s1.	When melee damaged, heals Ebonroc for $23394s1.					
+23341	all		Flame Buffet		Inflicts $s1 Fire damage to an enemy and increases the Fire damage it takes by $s2 for $d.	Fire damage taken is increased by $s2.					
+23342	all		Enrage		Decreases the time between your attacks by $s1% for $d.	Attack speed increased by $s1%.					
+23343	all		Nefarian Tunnel Selection								
+23344	all		Nefarian Tunnel Selection (L1)								
+23345	all		Nefarian Tunnel Selection (L2)								
+23346	all		Nefarian Tunnel Selection (L3)								
+23347	all		Nefarian Tunnel Selection (L4)								
+23348	all		Nefarian Tunnel Selection (L5)								
+23349	all		Nefarian Tunnel Selection (R1)								
+23350	all		Nefarian Tunnel Selection (R2)								
+23351	all		Nefarian Tunnel Selection (R3)								
+23352	all		Nefarian Tunnel Selection (R4)								
+23353	all		Nefarian Tunnel Selection (R5)								
+23354	all		Feed Pet (Quest Test)		Feed your pet the selected item.  Feeding your pet increases happiness.  Using food close to the pet's level will have a better result.						
+23355	all		Feed Pet Effect (Quest Test)			Increases happiness.					
+23356	all		Taming Lesson		Teaches Tame Beast, Call Pet and Dismiss Pet.						
+23357	all		Training Lesson		Teaches Feed Pet and Revive Pet.						
+23359	all		Transmogrify!		Zap a Feralas giant into a more manageable form.	Zapped!					
+23360	all		Trigger Trap2								
+23361	all		Raise Undead Drakonid								
+23362	all		Raise Drakonids								
+23363	all		Summon Drakonid Corpse Trigger								
+23364	all		Tail Lash		A sweeping tail strike hits all enemies behind the caster, taking $s3 damage, causing them to drop their weapon and stunning them for $d.	Stunned.					
+23365	all		Dropped Weapon			Disarmed.					
+23378	all		Magma Splash								
+23379	all		Magma Splash		Deals Fire damage to the current target and additional Fire damage every $t2 sec for $d.	$s2 Fire damage inflicted every $t2 sec.					
+23380	all		Moonfire		Burns the enemy for Arcane damage and inflicts additional damage over $d.	Arcane damage inflicted every $t1 sec.					
+23381	all		Healing Touch		Calls upon Nature magic to heal an ally.						
+23382	all		Knock Away								
+23383	all		Alliance Flag Click								
+23384	all		Horde Flag Click								
+23385	all		Alliance Flag Returns (Event)								
+23386	all		Horde Flag Returns (Event)								
+23387	all		Alliance Flag Capture Test								
+23388	all		Horde Flag Capture Test								
+23389	all		Alliance Flag Capture								
+23390	all		Horde Flag Capture								
+23391	all		Boulder		Hurls a boulder at an enemy, inflicting Physical damage.						
+23392	all		Boulder		Hurls a boulder at an enemy, inflicting Physical damage.						
+23393	all		Brood Affliction: Blue								
+23394	all		Shadow of Ebonroc								
+23396	all		Restoration	Rank 1							
+23397	all		Berserk		Forces all warriors near the caster into Berserker stance for $d, increasing their damage taken by $s3%.	Forced into Berseker Stance.\nIncreases damage taken by $s3%.					
+23398	all		Involuntary Transformation		Forces the target to remain transformed for $d.	Forced into cat form.					
+23399	spellbook	165	Barbaric Bracers								
+23401	all		Corrupted Healing		Causes the target's direct healing spells to deal a damage over time spell.	Direct healing spells cause the target to take damage over time.					
+23402	all		Corrupted Healing			Deals $s1 damage every $t1 sec.					
+23405	all		Alliance Reset Teleport								
+23406	all		Horde Reset Teleport								
+23407	all		Reset Teleport								
+23408	all		Drop Pillow DND								
+23409	all		Soft Landin'		While equipped, the wearer suffers less damage from falls.	While equipped, the wearer suffers less damage from falls.					
+23410	all		Wild Magic		You have lost control of some of your magic. Lasts $d.	You have lost control of some of your magic.					
+23411	all		Fireball								
+23412	all		Frostbolt								
+23413	all		Arcane Explosion								
+23414	all		Paralyze		Roots all rogues within range of the caster for $d.	Unable to move.					
+23415	all		Improved Blessing of Protection			Immune to physical attacks.					
+23416	all		Pillow Fight		Charges at an enemy, knocking it back.						
+23417	all		Smother		Deals damage to the target every $t1 seconds for $d.	Being smothered by a gigantic pillow!					
+23418	all		Siphon Blessing		Forces all Paladins within range of the caster to cast Blessing of Protection on Nefarian.	Forced to periodically cast Blessing of Protection on Nefarian.					
+23419	all		Corrupted Fire Nova Totem		Summons a Fire Nova Totem that has $s1 health and lasts $d.  Unless it is destroyed within $11311t1 sec., the totem inflicts $11307s1 fire damage to enemies within $11307a1 yd.						
+23420	all		Corrupted Stoneskin Totem		Summons a Stoneskin Totem with $s1 health at the feet of the caster.  The totem protects party members within $10405a1 yards, reducing melee damage taken by $10405s1.  Lasts $d.						
+23422	all		Corrupted Healing Stream Totem	Rank 5	Summons a Healing Stream Totem with $s1 health at the feet of the caster for $d that heals group members within $10461a1 yards for $10461s1 every $10461t1 seconds.						
+23423	all		Corrupted Windfury Totem		Summons a Windfury Totem with $s1 health at the feet of the caster.  The totem enchants all party members weapons with wind, if they are within $10611a1 yards.  Each hit has a 20% chance of granting the attacker $10610s2 extra $lattack:attacks; with $10610s1 extra attack power.  Lasts $d.						
+23424	all		Corrupted Totems								
+23425	all		Corrupted Totems			Summons corrupted totems.					
+23426	all		Summon Infernals		Summons two infernals onto the caster for $d.						
+23427	all		Summon Infernals								
+23428	spellbook	778	Albino Snapjaw		Right Click to summon and dismiss your Snapjaw.						
+23429	spellbook	778	Loggerhead Snapjaw		Right Click to summon and dismiss your Snapjaw.						
+23430	spellbook	778	Olive Snapjaw		Right Click to summon and dismiss your Snapjaw.						
+23431	spellbook	778	Leatherback Snapjaw		Right Click to summon and dismiss your Snapjaw.						
+23432	spellbook	778	Hawksbill Snapjaw		Right Click to summon and dismiss your Snapjaw.						
+23433	all		Increased Critical Spell		Improves your chance to get a critical strike with spells by $s1%.						
+23434	all		Increased Critical Spell		Improves your chance to get a critical strike with spells by $s1%.						
+23435	all		Increased Holy Criticals		Increases the critical effect chance of your Holy spells by $s1%.						
+23436	all		Corrupt Weapon			Damages ranged weapon.					
+23439	all		Corruption								
+23440	all		Increased Critical Spell Shadow		Improves your chance to get a critical strike with Shadow spells by $s1%.						
+23441	all		Gadgetzan Transporter								
+23442	all		Everlook Transporter		Rips the dimensional walls asunder and transports you to Everlook in Winterspring.   There are technical problems that sometimes occur, but that's what Goblin Engineering is all about!						
+23443	all		Increased Critical Spell Shadow		Increases your spell critical strike rating with Shadow spells by $s1.						
+23444	all		Transporter Malfunction			MALFUNCTION!  Activating Inertial Transmogrifier!					
+23445	all		Evil Twin			You have been replaced by your evil twin.					
+23446	all		Gadgetzan Transporter Failure								
+23447	all		Transporter Malfunction			TRANSPORTER FAILURE!!!   SPACIAL LOCK NOT ACHIEVED!! LOCATION UNDETERMINED!					
+23448	all		Transporter Arrival								
+23449	all		Transporter Malfunction			TRANSPORTER MALFUNCTION!!     FIRE!!!!    BAD!!!!!					
+23450	all		Transporter Arrival								
+23451	all		Speed			Movement speed increased by $s1%.					
+23452	all		Invisibility			Invisible.					
+23453	all		Gnomish Transporter		Safely transport yourself to Gadgetzan in Tanaris!    Emphasis on Safe!   Yup, nothing bad could ever happen while using this device!						
+23454	all		Stun		Stuns target for $d.	Stunned.					
+23455	spellbook	56	Holy Nova	Rank 1	Causes an explosion of holy light around the caster, causing $15237s1 Holy damage to all enemy targets within $15237a1 yards and healing all party members within $23455a1 yards for $23455s1.  These effects cause no threat.						
+23456	all		Transporter Malfunction			MALFUNCTION!  Activating Inertial Transmogrifier!					
+23457	all		Transporter Malfunction			MALFUNCTION!  Activating Inertial Transmogrifier!					
+23458	spellbook	56	Holy Nova	Rank 2	Causes an explosion of holy light around the caster, causing $15430s1 Holy damage to all enemy targets within $15430a1 yards and healing all party members within $23458a1 yards for $23458s1.  These effects cause no threat.						
+23459	spellbook	56	Holy Nova	Rank 3	Causes an explosion of holy light around the caster, causing $15431s1 Holy damage to all enemy targets within $15431a1 yards and healing all party members within $23459a1 yards for $23459s1.  These effects cause no threat.						
+23460	all		Teleport to Blackwing Lair DND		Teleport player to Blackwing Lair.						
+23461	all		Flame Breath		Inflicts $s1 Fire damage to enemies in a cone in front of the caster.	Deals $s2 damage every $t2 sec.					
+23462	all		Fire Nova		Inflicts Fire damage to nearby enemies.						
+23464	all		Create Soul Shard								
+23466	all		Tower Capture								
+23467	all		Tower Buff			Range damage increased.					
+23468	all		Minor Healthstone		Instantly restores $s1 life.						
+23469	all		Minor Healthstone		Instantly restores $s1 life.						
+23470	all		Lesser Healthstone		Instantly restores $s1 life.						
+23471	all		Lesser Healthstone		Instantly restores $s1 life.						
+23472	all		Healthstone		Instantly restores $s1 life.						
+23473	all		Healthstone		Instantly restores $s1 life.						
+23474	all		Greater Healthstone		Instantly restores $s1 life.						
+23475	all		Greater Healthstone		Instantly restores $s1 life.						
+23476	all		Major Healthstone		Instantly restores $s1 life.						
+23477	all		Major Healthstone		Instantly restores $s1 life.						
+23478	all		Burning Adrenaline								
+23479	all		Remove Bones								
+23480	all		Increase Fire Dam 10	Rank 1	Increases damage done by Fire spells and effects by up to $s1.						
+23481	all		Increase Fire Dam 14	Rank 2	Increases damage done by Fire spells and effects by up to $s1.						
+23482	all		Increase Fire Dam 17	Rank 3	Increases damage done by Fire spells and effects by up to $s1.						
+23483	all		Increase Fire Dam 21	Rank 4	Increases damage done by Fire spells and effects by up to $s1.						
+23484	all		Dispel Drakonids								
+23485	all		Big Bonfire Damage								
+23486	spellbook	202	Dimensional Ripper - Everlook								
+23487	all		Separation Anxiety								
+23488	all		Spirit Hammer								
+23489	spellbook	202	Ultrasafe Transporter - Gadgetzan								
+23490	all		Dimension Ripper - Everlook								
+23491	all		Ultrasafe Transporter: Gadgetzan								
+23492	all		Separation Anxiety								
+23493	all		Restoration			Restores Health and Mana.					
+23498	all		Call Pet		Summons your pet to you.						
+23499	all		Revive Pet								
+23500	all		Summon Felhunter								
+23501	all		Summon Voidwalker								
+23502	all		Summon Succubus								
+23503	all		Summon Imp								
+23504	all		Fool's Plight		Deals $s1 damage to the current target.						
+23505	all		Berserking			Increases all damage caused by $s1% and all damage taken by $s2%.					
+23506	all		Aura of Protection		Absorbs $s1 damage.  Lasts $d.	Absorbs $s1 damage.					
+23507	spellbook	202	Snake Burst Firework								
+23509	spellbook	777	Frostwolf Howler		Summons and dismisses a rideable Frostwolf Howler.   This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+23510	spellbook	777	Stormpike Battle Charger		Summons and dismisses a rideable Stormpike Battle Charger.   This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+23511	all		Demoralizing Shout		Reduces the melee attack power of nearby enemies for $d.	Melee attack power reduced by $s1.					
+23512	all		Fireball Volley		Inflicts Fire damage to nearby enemies.						
+23513	all		Essence of the Red		The blessing of Alexstrasza is applied to all allies nearby.\n\nRestores $s1 Mana per second.\nRestores $s2 Energy per second.\nGenerates $/10;s3 Rage per second.\nGenerates $/10;s3 Runic Power per second.	Restores $s1 Mana per second.\nRestores $s2 Energy per second.\nGenerates $/10;s3 Rage per second.\nGenerates $/10;s3 Runic Power per second.					
+23514	all		Placing Message to the Wildhammer		Place near the well at the center of Aerie Peak. Show those filthy dwarven dogs your resolve! Then run away...						
+23515	all		Block Value 14		Increases the block value of your shield by $s1.						
+23516	all		Block Value 27		Increases the block value of your shield by $s1.						
+23518	all		zzOLDCreate Healthstone								
+23519	all		zzOLDCreate Healthstone								
+23523	all		Alliance Warsong CTF Flag								
+23524	all		Alliance Warsong CTF Win								
+23525	all		Horde Warsong CTF Flag								
+23526	all		Horde Warsong CTF Win								
+23527	all		Alliance Alterac Valley								
+23528	all		Horde Alterac Valley								
+23529	all		Horde Alterac Valley								
+23530	spellbook	778	Tiny Red Dragon		Right Click to summon and dismiss your tiny red dragon.						
+23531	spellbook	778	Tiny Green Dragon		Right Click to summon and dismiss your tiny green dragon.						
+23532	all		Horde Alterac Valley								
+23533	all		Horde Alterac Valley								
+23534	all		Alliance Alterac Valley								
+23535	all		Alliance Alterac Valley								
+23536	all		Alliance Alterac Valley								
+23537	all		Frenzy		Increases the caster's attack speed by $s2% and the Physical damage it deals by $s1 for $d.	Physical damage dealt is increased by $s1.\nAttack speed increased by $s2%.					
+23538	all		Battle Standard		Place a Battle Standard with $s1 health that increases the maximum damage of all party members that stay within $23576a1 yards of the Battle Standard by $23576s1%.  Lasts $d. May only be used in Alterac Valley.						
+23539	all		Battle Standard		Place a Battle Standard with $s1 health that increases the damage of all party members that stay within $23574a1 yards of the Battle Standard by $23574s1%.  Lasts $d. May only be used in Alterac Valley.						
+23540	all		Enriched Ration		Restores $25695o1 health and $25696o2 mana over $25695d.  Must remain seated while eating.  Usable only in PvP Battlegrounds.	Restores $/5;s1 health and $/5;s2 mana per second.					
+23541	all		Iron Ration		Restores $26474o1 health and $26475o2 mana over $26474d.  Must remain seated while eating.  Usable only in PvP Battlegrounds.						
+23542	all		Field Ration		Restores $26472o1 health and $26473o2 mana over $26472d.  Must remain seated while eating.  Usable only in PvP Battlegrounds.						
+23544	all		Healing Circle								
+23545	all		Subtlety		Decreases the threat generated by your spells by $s1%.						
+23546	all		Fusion		Fuses the Death Knight with the targeted party member, increasing his damage and health by $s1% for $d. When the duration ends, the Death Knight consumes the target's soul, instantly killing the target.						
+23547	all		Parry			Increases parry by $s1%.					
+23548	all		Parry		$h% chance to parry the next attack after a block.						
+23549	all		Increased Area		Increases the radius of Arcane Explosion, Flamestrike, and Blizzard by $s1%.						
+23550	all		Increased Prayer of Healing Criticals		Increases your chance of a critical hit with Prayer of Healing by $s1%.						
+23551	all		Lightning Shield		When you cast a Healing Wave or Lesser Healing Wave, there is a 25% chance the target also receives a free Lightning Shield that causes $23552s1 Nature damage to attacker on hit.						
+23552	all		Lightning Shield			Causes $s1 Nature damage to attacker on hit.  $n charges.					
+23553	all		Shadow Cost Reduction		Mana cost of Shadow spells reduced by $s1%.						
+23554	all		Improved Drain Life		Health or Mana gained from Drain Life and Drain Mana increased by $s1%.						
+23555	all		Decreased Destruction Threat		Reduces the threat generated by your Destruction spells by $s1%.						
+23556	all		Decreased Tranquility and Hurricane Cooldown		Reduces the cooldown of your Tranquility and Hurricane spells by $s1%.						
+23557	all		Improved Thorns Damage		Damage dealt by Thorns increased by $s1 and duration increased by $s2%.						
+23558	all		Improved Feint		Improves the threat reduction of Feint by $s1%.						
+23559	all		Improved Aspect of the Hawk		Increases the Ranged Attack Power bonus of your Aspect of the Hawk by $s1%.						
+23560	all		Improved Mend Pet		Increases the range of your Mend Pet spell by $s1% and the effect by $s2%.  Also reduces the cost by $s3%.						
+23561	all		Enhanced Sunder Armor		Increases the threat generated by Sunder Armor by $s1%.						
+23562	all		Block Value 30		Increases the block value of your shield by $s1.						
+23563	all		Enhanced Battle Shout		Increases the attack power granted by Battle Shout by $s1.						
+23564	all		Improved Judgement of Light		Increases the chance of triggering a Judgement of Light heal by $s1%.						
+23565	all		Increased Aura Radii		Increases the radius of a Paladin's auras by $s1.						
+23566	all		Improved Volley and Multishot		Increases the damage of Multi-shot and Volley by $s1%.						
+23567	all		First Aid	Rank 10	Heals $o1 damage over $d.  Usable only in PvP Battlegrounds.	Healing $s1 damage every $t1 seconds.					
+23568	all		First Aid	Rank 8	Heals $o1 damage over $d.  Usable only in PvP Battlegrounds.	Healing $s1 damage every $t1 seconds.					
+23569	all		First Aid	Rank 6	Heals $o1 damage over $d.  Usable only in PvP Battlegrounds.	Healing $s1 damage every $t1 seconds.					
+23570	all		Increased Critical Spell Nature		Improves your chance to get a critical strike with Nature spells by $s1%.						
+23571	all		Mana Surge								
+23572	all		Mana Surge		After casting your Healing Wave or Lesser Healing Wave spell, gives you a 25% chance to gain Mana equal to 35% of the base cost of the spell.						
+23573	all		Chain Healing Wave		Your Healing Wave will now jump to additional nearby targets. Each jump reduces the effectiveness of the heal by 80%, and the spell will jump to up to two additional targets.						
+23574	all		Battle Standard			Increases damage by $s1%.					
+23575	all		Water Shield		The caster is surrounded by $24398n globes of water, granting $24398s2 mana per 5 sec.  When a spell, melee or ranged attack hits the caster, $23575s1 mana is restored to the caster. This expends one water globe.  Only one globe will activate every few seconds.  Lasts $24398d.  Only one Elemental Shield can be active on the Shaman at any one time.						
+23576	all		Battle Standard			Increases damage by $s1%.					
+23577	all		Expose Weakness			All attackers gain $s1 ranged attack power against this target.					
+23578	all		Expose Weakness		You have a chance whenever you deal ranged damage to apply an Expose Weakness effect to the target. Expose Weakness increases the Ranged Attack Power of all attackers against that target by $23577s1 for $23577d.						
+23580	all		Bloodfang			Heals $s2 damage per second.					
+23581	all		Bloodfang		Gives the Rogue a chance to inflict $23580s1 damage on the target and heal the Rogue for $23580s2 health every $23580t2 sec. for $23580d. on a melee hit.\n						
+23582	all		Clean Escape		Heals the rogue for $23583s1 when Vanish is performed.						
+23583	all		Clean Escape								
+23584	spellbook	256	Dual Wield Specialization	Rank 1	Increases the damage done by your offhand weapon by $s1%.						
+23585	spellbook	256	Dual Wield Specialization	Rank 2	Increases the damage done by your offhand weapon by $s1%.						
+23586	spellbook	256	Dual Wield Specialization	Rank 3	Increases the damage done by your offhand weapon by $s1%.						
+23587	spellbook	256	Dual Wield Specialization	Rank 4	Increases the damage done by your offhand weapon by $s1%.						
+23588	spellbook	256	Dual Wield Specialization	Rank 5	Increases the damage done by your offhand weapon by $s1%.						
+23589	all		Creeping Doom								
+23590	all		Judgement								
+23591	all		Judgement		Inflicts $23590s1 additional Holy damage on the target of a Paladin's Judgement.						
+23592	all		Lightning Bolt		Blasts a target for $s1 Nature damage.						
+23593	all		Increase Healing 92		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+23594	all		Increase Shadow Dam 64		Increases damage done by Shadow spells and effects by up to $s1.						
+23595	all		Luffa		Removes one Bleed effect.						
+23598	all		Meeting Stone Summon		Begins a ritual that summons the targeted group member.						
+23600	all		Piercing Howl		Causes all enemies near the warrior to be dazed for $d.	Dazed.					
+23601	all		Scatter Shot		A short-range shot that deals $s1% weapon damage and disorients the target for $d.  Any damage caused will remove the effect.	Disoriented.					
+23602	all		Shield Specialization	Rank 1	Increases your chance to block attacks with a shield and has a chance to generate $s1 rage when a block occurs.						
+23603	all		Wild Polymorph		Inflicts the target with wild magic, causing them to polymorph repeatedly for $d.	Cannot attack or cast spells.					
+23604	all		Reduce Threat		Reduce your threat to the current target making them less likely to attack you.						
+23605	all		Spell Vulnerability		Spell damage taken by target increased by $s1% for $d.	Increase spell damage taken by $s1%.					
+23618	all		GGOODMANTEST2								
+23619	all		Burning Adrenaline								
+23620	all		Burning Adrenaline			Damage done increased by $s1%.\nSpells cast are all instant.\nReduces max health by $23619s1% every second.\nDeals $*2;23478s1 damage to surrounding allies on death.					
+23621	all		Wild Leather Boots								
+23622	all		Wild Leather Cloak								
+23623	all		Wild Leather Helmet								
+23625	all		Wild Leather Leggings								
+23626	all		Wild Leather Shoulders								
+23627	all		Wild Leather Vest								
+23628	spellbook	164	Heavy Timbermaw Belt								
+23629	spellbook	164	Heavy Timbermaw Boots								
+23632	spellbook	164	Girdle of the Dawn								
+23633	spellbook	164	Gloves of the Dawn								
+23636	spellbook	164	Dark Iron Helm								
+23637	spellbook	164	Dark Iron Gauntlets								
+23638	spellbook	164	Black Amnesty								
+23639	spellbook	164	Blackfury								
+23642	all		Corruption			\nReduced movement speed.					
+23644	all		Burning Adrenaline								
+23645	all		Hourglass Sand		Cures the user of Brood Affliction: Bronze.						
+23646	all		Elemental Shield								
+23648	all		Alliance Flag Captured								
+23649	all		Horde Flag Captured								
+23650	spellbook	164	Ebon Hand								
+23652	spellbook	164	Blackguard								
+23653	spellbook	164	Nightfall								
+23658	all		Complete Alterac Valley quest								
+23659	all		Complete Warsong Gulch Quest								
+23660	all		Complete Warsong Gulch Quest								
+23661	all		Create Silverwing Talisman of Merit								
+23662	spellbook	197	Wisdom of the Timbermaw								
+23663	spellbook	197	Mantle of the Timbermaw								
+23664	spellbook	197	Argent Boots								
+23665	spellbook	197	Argent Shoulders								
+23666	spellbook	197	Flarecore Robe								
+23667	spellbook	197	Flarecore Leggings								
+23674	all		Test Eng Haste		SO FAST!						
+23675	all		Minigun								
+23676	all		Minigun								
+23677	all		Beasts Deck		Combine the Ace through Eight of Beasts to complete the set.						
+23678	all		Warlord Deck		Combine the Ace through Eight of Warlords to complete the set.						
+23679	all		Elementals Deck		Combine the Ace through Eight of Elementals to complete the set.						
+23680	all		Portals Deck		Combine the Ace through Eight of Portals to complete the set.						
+23681	all		Clear Essence of the Red			Restores $s1 Mana per second.\nRestores $s2 Energy per second.\nGenerates $/10;s3 Rage per second.					
+23682	all		Heroism		Sometimes heals bearer of $s1 damage when attacking an enemy.						
+23683	all		Twisting Nether		Allows you to resurrect yourself upon death with $21169s1% health and mana.  Usable once per hour.						
+23684	all		Aura of the Blue Dragon		2% chance successful spellcast to allow $s1% of your Mana regeneration to continue while casting for $d.	$s1% of your Mana regeneration continuing while casting.					
+23685	all		Sam's Test Spell								
+23686	all		Lightning Strike		Chance to strike your melee target with lightning for $23687s1 Nature damage.						
+23687	all		Lightning Strike		Lightning Strike for $s1 Nature damage.						
+23688	all		Aura of the Blue Dragon		2% chance on successful spellcast to allow $23684s1% of your Mana regeneration to continue while casting for $23684d.						
+23689	all		Heroism		Sometimes heals bearer of $23682s1 damage when damaging an enemy in melee.						
+23690	all		Berserker Rage Effect		The Berserker Rage ability will generate $/10;23690s1 rage when used.						
+23691	all		Berserker Rage Effect		The Berserker Rage ability will generate $/10;23691s1 rage when used.						
+23692	all		Alterac Manna Biscuit		Restores $26260o1 health and $26261o2 mana over $26260d.  Must remain seated while eating.	Restores $/5;s1 health and $/5;s2 mana per second.					
+23693	all		Stormpike's Salvation		While active, target's hit points increase by 20%.	While active, target's hit points increase by 20%.					
+23694	all		Improved Hamstring		Gives your Hamstring ability a chance to immobilize the target for $23694d.	Immobilized.					
+23695	spellbook	26	Improved Hamstring	Rank 3	Gives your Hamstring ability a $h% chance to immobilize the target for $23694d.						
+23696	all		First Aid	Rank 10	Heals $o1 damage over $d.	Healing $s1 damage every $t1 seconds.					
+23697	all		Alterac Spring Water		Increases Spirit by $s1 for $d.	Spirit increased by $m1.					
+23698	all		Alterac Spring Water		Restores $o1 mana over $d.  Must remain seated while drinking. Also increases your Spirit by $18141s1 for $18141d.	Restores $/5;s1 mana per second.					
+23699	all		Unstoppable Force		Knocks target back a short distance.						
+23700	all		Twisting Nether								
+23701	all		Twisting Nether		Gives the wearer a 10% chance of being able to resurrect with $23700s1% health and mana.						
+23702	all		Create Warsong Mark of Honor								
+23703	spellbook	165	Might of the Timbermaw								
+23704	spellbook	165	Timbermaw Brawlers								
+23705	spellbook	165	Dawn Treaders								
+23706	spellbook	165	Golden Mantle of the Dawn								
+23707	spellbook	165	Lava Belt								
+23708	spellbook	165	Chromatic Gauntlets								
+23709	spellbook	165	Corehound Belt								
+23710	spellbook	165	Molten Belt								
+23719	all		Untamed Fury		Increases Strength by $s1 for $d.	Strength increased by $s1.					
+23720	all		Blessing of the Black Book		Empowers your pet, increasing pet damage by $s1% and increasing pet armor by $s2% for $d. This spell will only affect an Imp, Succubus, Incubus, Voidwalker, or Felhunter.	Damage dealt is increased by $s1%.\nArmor is increased by $s2%.					
+23721	all		Arcane Infused		Infuses you with Arcane energy, causing your next Arcane Shot fired within $d to detonate at the target. The Arcane Detonation will deal $23722s1 damage to enemies near the target.	Your next Arcane Shot will create an Arcane Detonation.					
+23722	all		Arcane Detonation								
+23723	all		Mind Quickening		Quickens the mind, increasing the Mage's casting speed by $s1% for $d.	Casting speed increased by $s1%.					
+23724	all		Metamorphosis Rune		Decreases the mana cost of all Druid shapeshifting forms by $s1% for $d.	Shapeshifting mana cost reduced by $s1%.					
+23725	all		Gift of Life		Heals yourself for 15% of your maximum health, and increases your maximum health by 15% for 20 sec.	Maximum health increased by 15%.					
+23726	all		Venomous Totem		Increases the chance to apply Rogue poisons to your target by $s1% for $d.	Chance to apply poisons to your target increased by $s1%.					
+23727	all		Increased Spell Hit Chance 1		Improves your chance to hit with spells by $s1%.						
+23728	all		Increase Spell Dam 84		Increases damage and healing done by magical spells and effects by up to $s1.						
+23729	all		Increased Spell Hit Chance 2		Improves your chance to hit with spells by $s1%.						
+23730	all		Increase Spell Dam 64		Increases damage and healing done by magical spells and effects by up to $s1.						
+23731	all		Block Value 19		Increases the block value of your shield by $s1.						
+23732	all		Increase Spell Dam 56		Increases damage and healing done by magical spells and effects by up to $s1.						
+23733	all		Blinding Light		Energizes a Paladin with light, increasing melee attack speed by $s2% and spell casting speed by $s1% for $d.	Attack speed increased by $s2%.\nCasting speed increased by $s1%.					
+23734	all		Nature Aligned		Aligns the Shaman with nature, increasing spell damage by $s1%, improving heal effects by $s2%, and increasing mana cost of spells by $s3% for $d.	Spell damage increased by $s1%.\nHealing effects increased by $s2%.\nMana cost increased by $s3%.					
+23735	all		Sayge's Dark Fortune of Strength			Increases strength by $s1%.\n\nRemoved in Raid Instances.					
+23736	all		Sayge's Dark Fortune of Agility			Increases agility by $s1%.\n\nRemoved in Raid Instances.					
+23737	all		Sayge's Dark Fortune of Stamina			Increases stamina by $s1%.\n\nRemoved in Raid Instances.					
+23738	all		Sayge's Dark Fortune of Spirit			Increases spirit by $s1%.\n\nRemoved in Raid Instances.					
+23758	all		Speak Draconic								
+23759	spellbook	354	Master Demonologist			Reduces threat caused by $s1%.					
+23760	spellbook	354	Master Demonologist			Reduces physical damage taken by $s1%.					
+23761	spellbook	354	Master Demonologist			Increases damage caused by $s1%.					
+23762	spellbook	354	Master Demonologist			Increases resistance to all magic schools by $s1.					
+23763	all		Despawn Silverwing Flag								
+23764	all		Despawn Horde Flag								
+23765	all		Darkmoon Faire Fortune								
+23766	all		Sayge's Dark Fortune of Intelligence			Increases intelligence by $s1%.\n\nRemoved in Raid Instances.					
+23767	all		Sayge's Dark Fortune of Armor			Increases armor by $s1%.\n\nRemoved in Raid Instances.					
+23768	all		Sayge's Dark Fortune of Damage			Increases all damage by $s1%.\n\nRemoved in Raid Instances.					
+23769	all		Sayge's Dark Fortune of Resistance			Increases all magical resistances by $s1.\n\nRemoved in Raid Instances.					
+23770	all		Sayge's Carnie Buff								
+23771	all		Wracking Pains Proc								
+23772	all		Wilt		Destroys the mana, rage and energy of all enemies within 100 yards.						
+23773	all		Suffering of Sanity		Steals health and power from the target.						
+23774	all		System Shock		Leeches power from the target.						
+23775	all		Stun Forever		Stuns the target until the effect is dispelled.						
+23776	all		Clear Possess								
+23777	all		Zero Mana/Full Health DND								
+23779	all		Resurgence DND								
+23780	all		Aegis of Preservation		Increases armor by $s1, and heals $23781s1 damage every time you take ranged or melee damage for $d.	Armor increased by $s1.\nHeals $23781s1 damage every time you take ranged or melee damage.					
+23781	all		Aegis Heal								
+23782	all		Gift of Life			Maximum health increased by $s1.					
+23783	all		Gift of Life								
+23784	all		Master Demonologist								
+23785	spellbook	354	Master Demonologist		Grants both the Warlock and the summoned demon an effect as long as that demon is active.\n\nImp - Reduces threat caused by $23759s1%.\n\nVoidwalker - Reduces physical damage taken by $23760s1%.\n\nSuccubus - Increases all damage caused by $23761s1%.\n\nFelhunter - Increases all resistances by .2 per level.\n\nFelguard - Increases all damage caused by $35702s1% and all resistances by .1 per level.						
+23786	all		Powerful Anti-Venom		Target is cured of poisons up to level 60.						
+23787	spellbook	129	Powerful Anti-Venom		Creates 1-3 Vials of Powerful Anti-Venom.						
+23789	spellbook	769	Stoneclaw Totem TEST		Summons a Stoneclaw Totem TEST.						
+23790	all		Stoneclaw Totem Effect TEST								
+23792	all		Stoneclaw Totem Passive TEST								
+23793	all		Strength								
+23794	all		Agility +15								
+23795	all		Increased Mana Regen		Restores $s1 mana per 5 sec.						
+23796	all		Increase Healing 24		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+23797	all		Spirit								
+23798	all		Intellect								
+23799	spellbook	333	Enchant Weapon - Strength		Permanently enchant a melee weapon to increase Strength by 15.						
+23800	spellbook	333	Enchant Weapon - Agility		Permanently enchant a melee weapon to increase Agility by 15.						
+23801	spellbook	333	Enchant Bracer - Mana Regeneration		Permanently enchant bracers to restore 5 mana every 5 seconds.						
+23802	spellbook	333	Enchant Bracer - Healing Power		Permanently enchants bracers to increase the effects of your healing spells by 24 and your spell damage by 8.						
+23803	spellbook	333	Enchant Weapon - Mighty Spirit		Permanently enchant a melee weapon to increase Spirit by 20.						
+23804	spellbook	333	Enchant Weapon - Mighty Intellect		Permanently enchant a melee weapon to increase Intellect by 22.						
+23811	spellbook	778	Jubling		Right Click to summon and dismiss your Jubling.						
+23822	spellbook	354	Master Demonologist		Grants both the Warlock and the summoned demon an effect as long as that demon is active.\n\nImp - Reduces threat caused by $23826s1%.\n\nVoidwalker - Reduces physical damage taken by $23841s1%.\n\nSuccubus - Increases all damage caused by $23833s1%.\n\nFelhunter - Increases all resistances by .4 per level.\n\nFelguard - Increases all damage caused by $35703s1% and all resistances by .2 per level.						
+23823	spellbook	354	Master Demonologist		Grants both the Warlock and the summoned demon an effect as long as that demon is active.\n\nImp - Reduces threat caused by $23827s1%.\n\nVoidwalker - Reduces physical damage taken by $23842s1%.\n\nSuccubus - Increases all damage caused by $23834s1%.\n\nFelhunter - Increases all resistances by .6 per level.\n\nFelguard - Increases all damage caused by $35704s1% and all resistances by .3 per level.						
+23824	spellbook	354	Master Demonologist		Grants both the Warlock and the summoned demon an effect as long as that demon is active.\n\nImp - Reduces threat caused by $23828s1%.\n\nVoidwalker - Reduces physical damage taken by $23843s1%.\n\nSuccubus - Increases all damage caused by $23835s1%.\n\nFelhunter - Increases all resistances by .8 per level.\n\nFelguard - Increases all damage caused by $35705s1% and all resistances by .4 per level.						
+23825	spellbook	354	Master Demonologist		Grants both the Warlock and the summoned demon an effect as long as that demon is active.\n\nImp - Reduces threat caused by $23829s1%.\n\nVoidwalker - Reduces physical damage taken by $23844s1%.\n\nSuccubus - Increases all damage caused by $23836s1%.\n\nFelhunter - Increases all resistances by 1 per level.\n\nFelguard - Increases all damage caused by $35706s1% and all resistances by .5 per level.						
+23826	spellbook	354	Master Demonologist			Reduces threat caused by $s1%.					
+23827	spellbook	354	Master Demonologist			Reduces threat caused by $s1%.					
+23828	spellbook	354	Master Demonologist			Reduces threat caused by $s1%.					
+23829	spellbook	354	Master Demonologist			Reduces threat caused by $s1%.					
+23830	all		Master Demonologist								
+23831	all		Master Demonologist								
+23832	all		Master Demonologist								
+23833	spellbook	354	Master Demonologist			Increases damage caused by $s1%.					
+23834	spellbook	354	Master Demonologist			Increases damage caused by $s1%.					
+23835	spellbook	354	Master Demonologist			Increases damage caused by $s1%.					
+23836	spellbook	354	Master Demonologist			Increases damage caused by $s1%.					
+23837	spellbook	354	Master Demonologist			Increases resistance to all magic schools by $s1.					
+23838	spellbook	354	Master Demonologist			Increases resistance to all magic schools by $s1.					
+23839	spellbook	354	Master Demonologist			Increases resistance to all magic schools by $s1.					
+23840	spellbook	354	Master Demonologist			Increases resistance to all magic schools by $s1.					
+23841	spellbook	354	Master Demonologist			Reduces physical damage taken by $s1%.					
+23842	spellbook	354	Master Demonologist			Reduces physical damage taken by $s1%.					
+23843	spellbook	354	Master Demonologist			Reduces physical damage taken by $s1%.					
+23844	spellbook	354	Master Demonologist			Reduces physical damage taken by $s1%.					
+23845	all		Attract Jubjub								
+23848	all		Test Strike W50	Rank 4	A vicious strike that deals $s3% weapon damage plus $/2;s2 and wounds the target, reducing the effectiveness of any healing by $s1% for $d.	Healing effects reduced by $s1%.					
+23849	all		Venoxis Transform								
+23850	all		Test Strike W35	Rank 4	A vicious strike that deals $s3% weapon damage plus 396 and wounds the target, reducing the effectiveness of any healing by $s1% for $d.	Healing effects reduced by $s1%.					
+23851	all		Hatch Egg		Hatch a Jubling from the Egg.   It will take a while before the egg is ready to hatch.						
+23852	all		Jubling Cooldown								
+23853	all		Jubling Cooldown								
+23858	all		Holy Nova		Causes an explosion of divine light, inflicting $s1 Holy damage to nearby enemies and reducing the caster's threat level for $d.						
+23859	all		Dispel Magic		Dispels magic on an ally, removing $s1 harmful $lspell:spells;.						
+23860	all		Holy Fire		Consumes an enemy in flames, burning it and inflicting additional Fire damage every $t2 sec. over $d.	Fire damage inflicted every $t2 sec.					
+23861	all		Poison Cloud		Inflicts $s1 Nature damage to nearby enemies every $t1 sec. for $d.	$s1 Nature damage inflicted every $t1 sec.					
+23862	all		Venom Spit		Spits poison at an enemy, inflicting Nature damage, then additional damage every $t2 sec. for $d.	Nature damage inflicted every $t2 sec.					
+23863	all		Revitalize		2% chance on melee attack of restoring $23864s energy.						
+23864	all		Revitalize		Revitalized - $s1 Energy restored.						
+23865	all		Parasitic Serpent			Deals $s1 damage every $t1 sec.					
+23866	all		Summon Parasitic Serpent								
+23867	all		Parasitic Serpent								
+23878	all		Random Aggro								
+23880	spellbook	256	Bloodthirst								
+23881	spellbook	256	Bloodthirst	Rank 1	Instantly attack the target causing ${$AP*$m1/100} damage.  In addition, the next $23885n successful melee attacks will restore $23880s1 health.  This effect lasts $23885d.  Damage is based on your attack power.						
+23885	spellbook	256	Bloodthirst			Successful melee attacks restore $23880s1 health.					
+23886	all		Bloodthirst			Successful melee attacks restore $23889s1 health.					
+23887	all		Bloodthirst			Successful melee attacks restore $23890s1 health.					
+23888	all		Bloodthirst			Successful melee attacks restore $23891s1 health.					
+23889	all		Bloodthirst								
+23890	all		Bloodthirst								
+23891	all		Bloodthirst								
+23892	spellbook	256	Bloodthirst	Rank 2	Instantly attack the target causing ${$AP*$m1/100} damage.  In addition, the next $23886n successful melee attacks will restore $23889s1 health.  This effect lasts $23886d.  Damage is based on your attack power.						
+23893	spellbook	256	Bloodthirst	Rank 3	Instantly attack the target causing ${$AP*$m1/100} damage.  In addition, the next $23887n successful melee attacks will restore $23890s1 health.  This effect lasts $23887d.  Damage is based on your attack power.						
+23894	spellbook	256	Bloodthirst	Rank 4	Instantly attack the target causing ${$AP*$m1/100} damage.  In addition, the next $23888n successful melee attacks will restore $23891s1 health.  This effect lasts $23888d.  Damage is based on your attack power.						
+23895	all		Renew		Heals an ally every $t1 sec. for $d.	Damage healed every $t1 sec.					
+23896	all		Alliance Flag Taken From Base (Event)								
+23897	all		Horde Flag Taken From Base  (Event)								
+23918	all		Sonic Burst		Inflicts normal damage plus $s1 on nearby enemies, preventing them from spellcasting for $d.	Cannot cast spells.					
+23919	all		Swoop		Inflicts normal damage plus $s1 to enemies in a cone in front of the caster, stunning them for $d.	Stunned.					
+23920	spellbook	257	Spell Reflection		Raise your shield, reflecting the next spell cast on you.  Lasts $d.	Reflects the next spell cast on you.					
+23921	all		Shield Guard		Guard the friendly target with your shield, causing $s1% of all melee and ranged attacks to attack you instead.  Target must remain within $a1 yards of the warrior.  A unit can only be guarded by one Shield Guard at a time.  The warrior can only Shield Guard one target at a time.	Guarded.					
+23922	spellbook	257	Shield Slam	Rank 1	Slam the target with your shield, causing $s2 damage, modified by your shield block value, and dispels $s1 magic effect on the target.  Also causes a high amount of threat to the target and threat based on your shield block value to enemies within $150086a1 yards.						
+23923	spellbook	257	Shield Slam	Rank 2	Slam the target with your shield, causing $s2 damage, modified by your shield block value, and dispels $s1 magic effect on the target.  Also causes a high amount of threat to the target and threat based on your shield block value to enemies within $150086a1 yards.						
+23924	spellbook	257	Shield Slam	Rank 3	Slam the target with your shield, causing $s2 damage, modified by your shield block value, and dispels $s1 magic effect on the target.  Also causes a high amount of threat to the target and threat based on your shield block value to enemies within $150086a1 yards.						
+23925	spellbook	257	Shield Slam	Rank 4	Slam the target with your shield, causing $s2 damage, modified by your shield block value, and dispels $s1 magic effect on the target.  Also causes a high amount of threat to the target and threat based on your shield block value to enemies within $150086a1 yards.						
+23929	all		Increase Spell Dam 71		Increases damage and healing done by magical spells and effects by up to $s1.						
+23930	all		Seal of the Dawn		+$s1 Attack Power when fighting Undead.  It also allows the acquisition of Scourgestones on behalf of the Argent Dawn.						
+23931	all		Thunderclap		Inflicts $s1 Nature damage to nearby enemies, increasing the time between their attacks by $s3% and slowing their movement by $s2% for $d.	Time between attacks increased by $s3%.\nMovement speed reduced by $s2%.					
+23932	all		A-Mid Trigger								
+23933	all		A-Mid Horde								
+23934	all		A-Mid Alliance								
+23935	all		H-Mid Trigger								
+23936	all		Mid Trigger								
+23937	all		ALT -N Trigger								
+23938	all		ALT -S Trigger								
+23939	all		ALT -N Alliance								
+23940	all		ALT -N Horde								
+23941	all		ALT -S Alliance								
+23942	all		ALT -S Horde								
+23943	all		H-Mid Alliance								
+23944	all		H-Mid Horde								
+23945	all		Mid Alliance								
+23946	all		Mid Horde								
+23947	all		Power Word: Fortitude	Rank 5	Power infuses the target increasing their Stamina by $M1 for $d.	Increases Stamina by $M1.					
+23948	all		Power Word: Fortitude	Rank 6	Power infuses the target increasing their Stamina by $M1 for $d.	Increases Stamina by $M1.					
+23949	all		Exzhal Calls Circle of Binding DND								
+23950	all		Exzhal Searches for Wild Gods DND								
+23951	all		Bloodlust		Increases an ally's attack speed by $s1% for $d.	Attack speed increased by $s1%.					
+23952	all		Shadow Word: Pain		Utters a word of darkness, inflicting Shadow damage to an enemy every $t1 sec. for $d.	$s1 Shadow damage inflicted every $t1 sec.					
+23953	all		Mind Flay		Inflicts Shadow damage to an enemy and reduces its movement speed for $d.	$s1 Shadow damage inflicted every second for $d.\nReduced movement speed.					
+23954	all		Great Heal		Calls upon Holy magic to heal an ally.						
+23958	all		Mind Exhaustion			Unable to use the Orb of Domination.					
+23959	all		Test Stab R50	Rank 8	Backstab the target, causing $s2% weapon damage plus 334 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.						
+23960	all		Test Strike R50	Rank 8	An instant strike that causes $/2;s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.						
+23961	all		Frostwolf Reputation +1								
+23962	all		Stormpike Reputation +1								
+23963	all		Frostwolf Reputation +2								
+23964	all		Bloodrager's Requiem		While active, target's critical hit chance with spells and attacks increases by 10%.	While active, target's critical hit chance with spells and attacks increases by 10%.					
+23965	all		Instant Heal								
+23966	all		Jeklik Transform								
+23967	all		Dragonbane		Inflicts $s1% weapon damage.	Healing effects reduced by $s2%.					
+23968	all		Throw Liquid Fire		Periodically firing liquid flame onto the ground.						
+23969	all		Throw Liquid Fire								
+23970	all		Throw Liquid Fire		Deals $s1 Fire damage to nearby enemies.						
+23971	all		Summon Liquid Fire								
+23972	all		Blaze		Deals Fire damage to nearby enemies.						
+23973	all		Root Self								
+23974	all		Summon Frenzied Bloodseeker Bats								
+23975	all		Create iCoke Prize Voucher								
+23978	all		Speed			Movement speed increased by $s1%.					
+23979	all		Holy Wrath		Sends bolts of holy power in all directions, causing $s1 Holy damage to all Undead and Demon targets within $a1 yds.						
+23989	spellbook	163	Readiness		When activated, this ability immediately finishes the cooldown on your other Hunter abilities.						
+23990	all		Item - Minor Run Speed		Run speed increased slightly.						
+23991	all		Damage Absorb		Absorbs $s1 physical damage.  Lasts $d.	Absorbs $s1 physical damage.					
+23992	all		Fire Resistance	Rank 1	Increases Fire resistance by $s1.	Increases Fire resistance by $s1.					
+23998	all		Create Zul'Gurub Talisman WAR R1 DND								
+23999	all		Create Zul'Gurub Talisman WAR R2 DND								
+24000	all		Create Zul'Gurub Talisman WAR R3 DND								
+24001	all		Create Zul'Gurub Talisman WAR R4 DND								
+24002	all		Tranquilizing Poison		Inflicts the target with poison, which increases the time between attacks by $s1%, reduces their movement by $s2% and puts them to sleep after $d.	Time between attacks increased by $s1%.\nReduces movement speed by $s2%.\nDrains $/10;s3 rage per second.\nGetting sleepy...					
+24003	all		Tranquilizing Poison		Inflicts the target with poison, which increases the time between attacks by $s1%, reduces their movement by $s2% and puts them to sleep after $d.	Time between attacks increased by $s1%.\nReduces movement speed by $s2%.\nDrains $/10;s3 rage per second.\nGetting sleepy...					
+24004	all		Sleep		Puts yourself to sleep for up to $d. Any damage caused will awaken the target. Only one target can be asleep at a time.	Asleep.					
+24005	all		Food		Restores $s1% of your health per second for $d.  Must remain seated while eating.	Restores $s1% of your health per second.					
+24006	all		Bounty of the Harvest		Conjures $s1 food from the harvest.\n\nConjured items disappear if logged out for more than 15 minutes.						
+24007	all		Zul'Gurub Talisman PAL R1 DND								
+24008	all		Zul'Gurub Talisman PAL R2 DND								
+24009	all		Zul'Gurub Talisman PAL R3 DND								
+24010	all		Zul'Gurub Talisman PAL R4 DND								
+24011	all		Venom Spit		Spits poison at an enemy, inflicting Nature damage, then additional damage every $t2 sec. for $d.	Nature damage inflicted every $t2 sec.					
+24012	all		Create Zul'Gurub Talisman PRT R1 DND								
+24013	all		Create Zul'Gurub Talisman PRT R2 DND								
+24014	all		Create Zul'Gurub Talisman PRT R3 DND								
+24015	all		Create Zul'Gurub Talisman PRT R4 DND								
+24016	all		Exploit Weakness		Inflicts normal damage plus $s1 on an enemy, but only if attacking from behind.						
+24017	all		Create Arathi Resource Crate								
+24018	all		Axe Flurry		Attacks nearby enemies in a flurry of axes that lasts $d.	Attacking all nearby enemies.					
+24019	all		Axe Flurry								
+24020	all		Axe Flurry		Hurls a massive axe, dealing $s1 damage and stunning the target for $d.	Stunned.					
+24021	all		Anti-Magic Shield		Creates an anti-magic shell around the caster, giving it magic immunity for $d.	Immune to magic.					
+24022	all		Cleanse Nova		Causes an explosion of divine light, inflicting $s1 Holy damage to nearby enemies and reducing the caster's threat level for $d.						
+24023	all		Charge		Charges an enemy, inflicting normal damage plus $s3 and stuns the opponent for $d.						
+24024	all		Unstable Concoction		Deals $s1 Fire damage to all enemies within $a1 yards.						
+24038	all		Create Zul'Gurub Talisman MAG R1 DND								
+24039	all		Create Zul'Gurub Talisman MAG R2 DND								
+24040	all		Create Zul'Gurub Talisman MAG R3 DND								
+24041	all		Create Zul'Gurub Talisman MAG R4 DND								
+24042	all		Test Maul	Rank 4	Instant attack plus $s1 damage.						
+24043	all		Test Fury	Rank 4	Increases damage done by $s1 for $d.	Increases damage done by $s1.					
+24044	all		Create Zul'Gurub Talisman WLK R1 DND								
+24045	all		Create Zul'Gurub Talisman WLK R2 DND								
+24046	all		Create Zul'Gurub Talisman WLK R3 DND								
+24047	all		Create Zul'Gurub Talisman WLK R4 DND								
+24048	all		Whirling Trip		Knocks down nearby enemies, stunning them for $d. and inflicting increased weapon damage.	Stunned.					
+24049	all		Impale		Inflicts Physical damage to an enemy every $t1 sec. for $d.	$s1 damage inflicted every $t1 sec.					
+24050	all		Spirit Burst		Deals $s1 Shadow damage to enemies within $a1 yards of the target.						
+24051	all		Spirit Burst								
+24052	all		Summon Voodoo Spirit								
+24053	all		Hex		Transforms an enemy into a frog, rendering it unable to attack or cast spells for $d.	Hexed.					
+24054	all		Shrink		Reduces nearby enemies' Strength by $s1 and Stamina by $s2 for $d.	Strength reduced by $s1.\nStamina reduced by $s2.					
+24055	all		Create Zul'Gurub Talisman DRU R1 DND								
+24056	all		Create Zul'Gurub Talisman DRU R2 DND								
+24057	all		Confused								
+24058	all		Release Toads		Summons a swarm of toads.						
+24059	all		Create Zul'Gurub Talisman DRU R3 DND								
+24060	all		Create Zul'Gurub Talisman DRU R4 DND								
+24061	all		Complete Arathi Basin quest, 4 bases								
+24062	all		Toad Explode		Detonates a Toad, dealing damage to nearby enemies.						
+24063	all		Disease Cloud			Deals $s1 damage per second.					
+24064	all		Complete Arathi Basin quest, 5 bases								
+24065	all		Toad Explode		Detonates a Toad each second, dealing damage to nearby enemies.						
+24066	all		Toad Explode								
+24067	all		Create Zul'Gurub Talisman SHM R1 DND								
+24068	all		Create Zul'Gurub Talisman SHM R2 DND								
+24069	all		Create Zul'Gurub Talisman SHM R3 DND								
+24070	all		Create Zul'Gurub Talisman SHM R4 DND								
+24071	all		Axe Flurry								
+24072	all		Create Zul'Gurub Talisman ROG R1 DND								
+24073	all		Create Zul'Gurub Talisman ROG R2 DND								
+24074	all		Create Zul'Gurub Talisman ROG R3 DND								
+24075	all		Create Zul'Gurub Talisman ROG R4 DND								
+24076	all		Create Zul'Gurub Talisman HUN R1 DND								
+24077	all		Create Zul'Gurub Talisman HUN R2 DND								
+24078	all		Create Zul'Gurub Talisman HUN R3 DND								
+24079	all		Create Zul'Gurub Talisman HUN R4 DND								
+24080	all		Death Touch Copy								
+24081	all		Summon Spawn of Mar'li								
+24082	all		Hatch Spider Egg								
+24083	all		Hatch Eggs								
+24084	all		Mar'li Transform								
+24085	all		Transform Visual								
+24086	all		Growth								
+24087	all		Growth								
+24088	all		Full Grown								
+24089	all		Full Grown								
+24090	all		Minor Movement Speed		Minor increase to running and swimming speed.						
+24091	spellbook	197	Bloodvine Vest								
+24092	spellbook	197	Bloodvine Leggings								
+24093	spellbook	197	Bloodvine Boots								
+24097	all		Poison		Inflicts Nature damage to an enemy every $t1 sec. for $d.	Nature damage inflicted every $t1 sec.					
+24099	all		Poison Bolt Volley		Shoots poison at an enemy, inflicting Nature damage, then additional damage every $t2 sec. for $d.	Nature damage inflicted every $t2 sec.					
+24101	all		Grom's Troll Tribute		Places a tribute upon Grom's monument.	Places a tribute upon Grom's monument.					
+24102	all		Grom's Tauren Tribute		Places a tribute upon Grom's monument.	Places a tribute upon Grom's monument.					
+24103	all		Grom's Forsaken Tribute		Places a tribute upon Grom's monument.	Places a tribute upon Grom's monument.					
+24104	all		Grom's Orc Tribute		Places a tribute upon Grom's monument.	Places a tribute upon Grom's monument.					
+24105	all		Uther's Human Tribute		Places a tribute within Uther's tomb.	Places a tribute within Uther's tomb.					
+24106	all		Uther's Gnome Tribute		Places a tribute within Uther's tomb.	Places a tribute within Uther's tomb.					
+24107	all		Uther's Dwarf Tribute		Places a tribute within Uther's tomb.	Places a tribute within Uther's tomb.					
+24108	all		Uther's Night Elf Tribute		Places a tribute within Uther's tomb.	Places a tribute within Uther's tomb.					
+24109	all		Enlarge		Increases the Physical damage dealt by an ally by $s1 for $d.	Physical damage dealt is increased by $s1.					
+24110	all		Enveloping Webs		Immobilizes an enemy, increases the time between its attacks by $s2%, and prevents it from casting spells for $d.	Unable to move or cast spells.\nTime between attacks increased by $s2%.					
+24111	all		Corrosive Poison		Reduces an enemy's armor by $s2 and inflicts $s1 Nature damage every $t1 sec. for $d.	$s1 Nature damage inflicted every $t1 sec.\nArmor reduced by $s2.					
+24112	all		Poison Shock								
+24117	all		Pain Spike	Rank 1	Healing temporary damage inflicted by Pain Spike.	Healing temporary damage.					
+24121	spellbook	165	Primal Batskin Jerkin								
+24122	spellbook	165	Primal Batskin Gloves								
+24123	spellbook	165	Primal Batskin Bracers								
+24124	spellbook	165	Blood Tiger Breastplate								
+24125	spellbook	165	Blood Tiger Shoulders								
+24131	spellbook	51	Wyvern Sting	Rank 1		$s1 Nature damage every $t1 seconds.					
+24132	spellbook	51	Wyvern Sting	Rank 2	A stinging shot that puts the target to sleep for $d.  Any damage will cancel the effect.  When the target wakes up, the Sting causes $24134o1 Nature damage over $24134d.  Only one Sting per Hunter can be active on the target at a time.	Asleep.					
+24133	spellbook	51	Wyvern Sting	Rank 3	A stinging shot that puts the target to sleep for $d.  Any damage will cancel the effect.  When the target wakes up, the Sting causes $24135o1 Nature damage over $24135d.  Only one Sting per Hunter can be active on the target at a time.	Asleep.					
+24134	spellbook	51	Wyvern Sting	Rank 2		$s1 Nature damage every $t1 seconds.					
+24135	spellbook	51	Wyvern Sting	Rank 3		$s1 Nature damage every $t1 seconds.					
+24136	spellbook	164	Bloodsoul Breastplate								
+24137	spellbook	164	Bloodsoul Shoulders								
+24138	spellbook	164	Bloodsoul Gauntlets								
+24139	spellbook	164	Darksoul Breastplate								
+24140	spellbook	164	Darksoul Leggings								
+24141	spellbook	164	Darksoul Shoulders								
+24148	all		Presence of Might								
+24149	all		Presence of Might		Permanently adds 10 Stamina, 7 Defense, and 15 Shield Block value to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.						
+24150	all		Stinger Charge Primer								
+24151	all		Syncretist's Sigil								
+24153	all		Death's Embrace								
+24154	all		Falcon's Call								
+24155	all		Vodouisant's Vigilant Embrace								
+24156	all		Presence of Sight								
+24157	all		Hoodoo Hex								
+24158	all		Prophetic Aura								
+24159	all		Animist's Caress								
+24160	all		Syncretist's Sigil		Permanently adds 10 Stamina, 7 Defense, and increases healing by up to 24 to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.						
+24161	all		Death's Embrace		Permanently adds 28 Attack Power and 1% Dodge to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.						
+24162	all		Falcon's Call		Permanently adds 24 Ranged Attack Power, 10 Stamina, and 1% Chance to Hit to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.						
+24163	all		Vodouisant's Vigilant Embrace		Permanently adds 15 Intellect and increases all healing and spell damage by up to 13 to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.						
+24164	all		Presence of Sight		Permanently adds 18 to all healing and damage spells and 1% chance to hit with spells to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.						
+24165	all		Hoodoo Hex		Permanently adds 10 Stamina and increases spell damage and healing by up to 18 to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.						
+24167	all		Prophetic Aura		Permanently adds 10 Stamina, 4 mana per 5 sec., and increases healing by up to 24 to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.						
+24168	all		Animist's Caress		Permanently adds 10 Stamina, 10 Intellect, and increases healing by up to 24 to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.						
+24169	all		Thekal Transform								
+24171	all		Resurrection Impact Visual								
+24172	all		Thekal Trigger								
+24173	all		Resurrection		Reincarnates with the support of nearby allies.						
+24178	all		Will of Hakkar		Takes control of a humanoid enemy up to level $s1 for $d.	Hakkar will rule the world!					
+24179	all		Create Seal of the Dawn								
+24180	all		Quest - Polymorph Impact								
+24181	all		Horde Arathi Basin								
+24182	all		Alliance Arathi Basin								
+24183	all		Summon Zulian Guardians		Summons a Zulian Guardian.						
+24184	all		Servant of Hakkar DND		Takes control of a humanoid enemy up to level $s1 for $d.	Hakkar will rule the world.					
+24185	all		Bloodlust		Increases an ally's attack speed by $s1% for $d.	Attack speed increased by $s1%.					
+24186	all		Create Zul's Aura								
+24187	all		Claw		Deals a vicious attack, damaging the target.						
+24188	all		Improved Hammer of Justice		Increases the duration of Hammer of Justice by $/1000;S1 sec.						
+24189	all		Force Punch		Deals $s1 damage all enemies nearby, knocking them back.						
+24190	all		Arlokk Transform								
+24191	all		Improved Power Word: Shield		Increases the amount of damage absorbed by Power Word: Shield by $s1.						
+24192	all		Speed Slash		Deals $s1 damage per second for $d.	Deals $s1 damage per second.					
+24193	all		Charge		Charges an enemy, inflicting normal damage plus $s2 and stuns the opponent for $d.						
+24194	all		Uther's Tribute		Offer a tribute at Uther Lightbringer's tomb in Western Plaguelands.						
+24195	all		Grom's Tribute		Offer a tribute at Grom Hellscream's monument in Ashenvale.						
+24196	all		Increase Spell Dam 47		Increases damage and healing done by magical spells and effects by up to $s1.						
+24197	all		Increase Spell Dam Undead 48		Increases damage done to Undead by magical spells and effects by up to $s1.						
+24198	all		Rune of the Dawn		Increases damage done to Undead by magical spells and effects by up to $s1.  It also allows the acquisition of Scourgestones on behalf of the Argent Dawn.						
+24199	all		Knockback 35								
+24201	all		Create Rune of the Dawn								
+24202	all		Create Heart of Hakkar Rift								
+24203	all		Heart of Hakkar Banning								
+24204	all		Heart of Hakkar Implode								
+24205	all		Half Heal								
+24206	all		Half Heal Effect								
+24207	all		Hellfire Cast Visual								
+24208	all		Great Heal		Calls upon Holy magic to heal an ally.						
+24209	all		Great Heal		Calls upon Holy magic to heal an ally.						
+24210	all		Mark of Arlokk			Attracting Minions of Arlokk.					
+24211	all		Mark of Arlokk								
+24212	all		Shadow Word: Pain		Utters a word of darkness, inflicting Shadow damage to an enemy every $t1 sec. for $d.	$s1 Shadow damage inflicted every $t1 sec.					
+24213	all		Ravage		Inflicts normal damage plus $s1 to an enemy, stunning it for $d.	Stunned.					
+24214	all		Heart of Hakkar - Molthor chucks the heart								
+24215	all		Create Heart of Hakkar Explosion								
+24217	all		Quest - Heart of Hakkar, Ritual Cast Visual								
+24218	all		Test Power Bonus (Cat)								
+24219	all		Test Critical Bonus								
+24221	all		Quest - Teleport Spawn-out								
+24222	all		Vanish Visual								
+24223	all		Vanish								
+24224	spellbook	39	Intuition		Increases the damage from your Ambush and Garrote abilities by $s1% and gives you a $s2% chance to notice when players see through your Stealth.						
+24225	all		Exhaustion			Movement slowed by $s1%.					
+24226	all		Increase Reputation		Increase your reputation permanently with the Zandalar Tribe.						
+24228	all		Vanish								
+24229	all		Vanish								
+24230	all		Vanish								
+24231	all		Vanish								
+24232	all		Vanish								
+24233	all		Vanish								
+24235	all		Super Invis								
+24236	all		Whirlwind		Attacks nearby enemies in a whirlwind of steel that lasts $d. and inflicts normal damage plus $15589s1.	Attacking all nearby enemies for normal damage plus $15589s1.					
+24237	all		Summon Alliance Graveyard Teleporter								
+24238	all		Test Rip	Rank 6	Finishing move that causes damage over time.  Damage increases per combo point:\n   1 point  : 228 damage over $d.\n   2 points: 354 damage over $d.\n   3 points: 480 damage over $d.\n   4 points: 606 damage over $d.\n   5 points: 732 damage over $d.	Bleed damage every $t1 seconds.					
+24239	spellbook	184	Hammer of Wrath	Rank 3	Hurls a hammer that strikes an enemy for $s1 Holy damage.  Only usable on enemies that have 20% or less health.						
+24240	all		Spawn - Red Lightning								
+24241	all		Decapitate		Attempts to decapitate the target, causing $s1 damage.						
+24242	spellbook	777	Swift Razzashi Raptor		Summons and dismisses Bloodlord Mandokir's raptor.   This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+24243	all		Increase Spell Dam 840		Increases damage and healing done by magical spells and effects by up to $s1.						
+24244	all		Grow			All grown up.					
+24245	all		String Together Heads		Combine with 5 Channeler's Heads into a Gurubashi Head Collection.						
+24246	all		Summon Zulian Prowler								
+24247	all		Summon Zulian Prowlers								
+24248	spellbook	134	Ferocious Bite	Rank 6	Finishing move that causes damage per combo point and converts each extra point of energy into $f1 additional damage.  Damage is increased by your attack power.\n   1 point  : 259-292 damage\n   2 points: 428-461 damage\n   3 points: 597-630 damage\n   4 points: 766-799 damage\n   5 points: 935-968 damage						
+24249	all		Summon Zulian Stalkers								
+24250	all		Summon Zulian Stalker								
+24251	all		Zulian Slice		Slices the enemy for $s1 Nature damage.						
+24252	spellbook	777	Swift Zulian Tiger		Summons and dismisses High Priest Thekal's tiger.   This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+24253	all		Graveyard Teleport Test								
+24254	all		Serpent's Hiss		Blasts the enemy with poison for $s1 Nature damage.						
+24255	all		Primal Blessing		Infuses the caster with a blessing from the Primal Gods. Ranged and melee attack power increased by $s1 for $d.	Melee attack power increased by $s1.\nRanged attack power increased by $s2.					
+24256	all		Primal Blessing Trigger DND		Grants a small chance when ranged or melee damage is dealt to infuse the wielder with a blessing from the Primal Gods. Ranged and melee attack power increased by 300 for 12 seconds.						
+24257	all		Jeklik's Crushing Blow		Wounds the target for $s1 damage.						
+24258	all		Quest - Troll Hero Summon Visual								
+24259	all		Spell Lock			Silenced.					
+24261	all		Brain Wash		Charms a target, placing it under the control of the totem.	Charmed.					
+24262	all		Summon Brain Wash Totem		Summons a Brain Wash Totem to control a nearby enemy.						
+24263	all		UNUSED Quest - Create Empowered Mojo Bundle		Create the Empowered Mojo Bundle.						
+24264	all		Extinguish		Extinguishes the Brazier of Madness.						
+24265	all		Killer Bees!			Attacked by killer bees.  Jump in the water quickly!					
+24266	spellbook	171	Gurubashi Mojo Madness								
+24267	all		Gurubashi Mojo Madness								
+24268	all		Mar'li's Brain Boost		Restores $s1 mana every $t1 sec for $d.	Restores $s1 mana every $t1 sec.					
+24274	spellbook	184	Hammer of Wrath	Rank 2	Hurls a hammer that strikes an enemy for $s1 Holy damage.  Only usable on enemies that have 20% or less health.						
+24275	spellbook	184	Hammer of Wrath	Rank 1	Hurls a hammer that strikes an enemy for $s1 Holy damage.  Only usable on enemies that have 20% or less health.						
+24279	all		Punctured Voodoo Doll DRU DND		Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.						
+24280	all		Punctured Voodoo Doll HUN DND		Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.						
+24281	all		Punctured Voodoo Doll ROG DND		Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.						
+24282	all		Punctured Voodoo Doll MAG DND		Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.						
+24283	spellbook	51	Surefooted	Rank 3	Increases hit chance by $s3% and increases the chance movement impairing effects will be resisted by an additional $s1%.						
+24284	all		Punctured Voodoo Doll PRT DND		Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.						
+24285	all		Punctured Voodoo Doll PAL DND		Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.						
+24288	all		Punctured Voodoo Doll SHM DND		Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.						
+24289	all		Punctured Voodoo Doll WAR DND		Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.						
+24290	all		Punctured Voodoo Doll WLK DND		Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.						
+24291	all		Dragon Slaying 48		+$s1 Attack Power when fighting Dragonkin.						
+24292	all		Dragon Slaying 117		+$s1 Attack Power when fighting Dragonkin.						
+24293	spellbook	51	Monster Slaying	Rank 1	Increases all damage caused against Beasts, Giants and Dragonkin targets by $s1% and increases critical damage caused against Beasts, Giants and Dragonkin targets by an additional $s2%.						
+24294	spellbook	51	Monster Slaying	Rank 2	Increases all damage caused against Beasts, Giants and Dragonkin targets by $s1% and increases critical damage caused against Beasts, Giants and Dragonkin targets by an additional $s2%.						
+24295	spellbook	51	Monster Slaying	Rank 3	Increases all damage caused against Beasts, Giants and Dragonkin targets by $s1% and increases critical damage caused against Beasts, Giants and Dragonkin targets by an additional $s2%.						
+24296	spellbook	51	Lightning Reflexes	Rank 4	Increases your Agility by $s1%.						
+24297	spellbook	51	Lightning Reflexes	Rank 5	Increases your Agility by $s1%.						
+24300	all		Drain Life		Drains $o1 health from an enemy over $d., transferring it to the caster.	$o1 health leeched over $d.					
+24301	all		Fishing Skill +35		Increased Fishing +$s1.						
+24302	all		Eternium Fishing Line		Replaces the fishing line on your fishing pole with a high test eternium line.						
+24303	all		Fishing								
+24304	all		Quest - Create Mudskunk Lure								
+24306	all		Delusions of Jin'do		Grants the ability to see the Delusions of Jin'do.\nDeals $s1 damage every $t1 sec.\nYour eyes tingle...	Deals $s1 damage every $t1 sec.\nYour eyes tingle...					
+24307	all		Shade of Jin'do Passive								
+24308	all		Summon Shade of Jin'Do								
+24309	all		Powerful Healing Ward		Summons a ward that lasts $d. and periodically heals allies in an area around it.						
+24310	all		Powerful Healing Ward								
+24311	all		Powerful Healing Ward								
+24312	all		Level Up								
+24313	all		Shade								
+24314	all		Threatening Gaze		Bloodlord Mandokir is watching you closely...	Bloodlord Mandokir is watching you closely...					
+24315	all		Charge								
+24316	all		Guillotine								
+24317	all		Sunder Armor		Hacks at an enemy's armor, reducing it by $s1 per Sunder Armor. Can be applied up to 5 times. Lasts $d.	Reduced armor.					
+24318	all		Frenzy		Increases the caster's attack speed by $s2% and the Physical damage it deals by $s1 for $d.	Physical damage dealt is increased by $s1.\nAttack speed increased by $s2%.					
+24319	all		Summon Poison Cloud								
+24320	all		Poisonous Blood								
+24321	all		Poisonous Blood		Deals $s1 damage every $t1 sec. to the target for $d.	Deals $s1 damage every $t1 sec.					
+24322	all		Blood Siphon			Deals $s1 damage per second.\nFeeding Hakkar $*5;s1 health per second.					
+24323	all		Blood Siphon		Your blood is Poisonous!\nDealing $s1 damage per second to Hakkar.\nLasts $d.	Your blood is Poisonous!\nDealing $s1 damage per second to Hakkar.					
+24324	all		Blood Siphon		Siphoning the blood from nearby enemies.	Siphoning the blood from nearby enemies.					
+24325	all		Pagle's Point Cast - Create Mudskunk Lure		Load with 5 Zulian Mudskunks, and then cast from Pagle's Point in Zul'Gurub.						
+24326	all		Gahz'ranka Slam		Inflicts normal damage plus $s1 to nearby enemies and knocks them back.						
+24327	all		Cause Insanity		Drives an enemy target temporarily insane, speeding its attacks by $s2% and its movement by $s3%, as well as causing it to attack its own allies for $d.	Charmed.\nAttack speed increased by $s2%.\nMovement speed increased by $s3%.					
+24328	all		Corrupted Blood		Deals $s1 damage and $s2 damage every second to the target and all nearby enemies for $d.	Deals $s2 damage every $t2 sec.					
+24331	all		Rake		Rake the target for $s1 damage and an additional $o2 damage over $d.	Bleeding for $s2 damage every $t2 seconds.					
+24332	all		Rake		Rake the target for $s1 damage and an additional $o2 damage over $d.	Bleeding for $s2 damage every $t2 seconds.					
+24333	all		Ravage		Inflicts normal damage plus $s1 to an enemy, stunning it for $d.	Stunned.					
+24334	all		Acid Spit		Inflicts Nature damage to an enemy.						
+24335	all		Wyvern Sting		A stinging shot that puts the target to sleep for $d.  Any damage will cancel the effect.  When the target wakes up, the Sting causes $24336o1 Nature damage over $24336d.	Asleep.					
+24336	all		Wyvern Sting			$s1 Nature damage every $t1 seconds.					
+24337	all		Ambush		Ambush the target, causing $s1 damage.						
+24339	all		Infected Bite		Inflicts Nature damage to an enemy every $t1 sec. and increases the Physical damage it takes for $d.	$s1 nature damage inflicted every $t1 sec.\nIncreased Physical damage taken by $s2.					
+24340	all		Meteor		Deals $s1 Fire damage, split between all enemies within $r1 yards of the impact crater.						
+24341	all		Revive								
+24342	all		Despawn Chained Spirits								
+24343	all		Call Chained Spirit								
+24344	all		Bloodlord's Aura								
+24345	all		Bloodlord's Aura								
+24346	all		Mojo		Increases your Mojo.						
+24347	all		Master Angler		Turns you into a fish giving water breath and increasing your movement speed, but attacking or casting while in this form breaks the effect.  Does not work out of water or at the water's surface.	Water Breath and increased speed.					
+24348	all		Cheetah Sprint			Increases your Aspect of the Cheetah movement speed bonus by $s1.					
+24349	all		Summon Bloodlord's Raptor								
+24350	all		Safe Fall		Reduces damage from falling.						
+24351	all		Fear Resistance 4	Passive	Increases your chance to resist Fear effects by $s1%.						
+24352	all		Devilsaur Fury		Increases your attack power by $s1 and your chance to hit by $s2%.  Effect lasts for $d.	Increases attack power by $s1 and chance to hit by $s2%.					
+24353	all		Primal Instinct		Your pet's next attack is guaranteed to critically strike if that attack is capable of striking critically.	Next attack is a guaranteed critical.					
+24354	all		Prayer Beads Blessing		Increases healing done by spells and effects by up to $s1 for $d.	Healing done by spells and effects increased by up to $s1.					
+24355	all		Drink		Restores $s1% of your mana per second for $d.  Must remain seated while drinking.	Restores $s1% of your mana per second.					
+24356	spellbook	202	Bloodvine Goggles								
+24357	spellbook	202	Bloodvine Lens								
+24360	all		Greater Dreamless Sleep		Puts the imbiber in a dreamless sleep for $d.  During that time the imbiber heals 2100 health and 2100 mana.	Dreamless Sleep.					
+24361	all		Regeneration		Regenerate $s1 health every 5 sec for $d. Guardian Elixir.	Regenerate $s1 health every 5 sec. Guardian Elixir.					
+24362	all		Increased 1H Fist Weapons		Reduces your chance to be dodged or parried by $s1%.						
+24363	all		Mana Regeneration		Regenerate $s1 mana per 5 sec for $d. Guardian Elixir.	Regenerate $s1 mana per 5 sec. Guardian Elixir.					
+24364	all		Living Free Action		Makes you immune to Stun and Movement Impairing effects for the next $d.  Also removes existing Stun and Movement Impairing effects.	Free Action.					
+24365	spellbook	171	Mageblood Elixir								
+24366	spellbook	171	Greater Dreamless Sleep Potion								
+24367	spellbook	171	Living Action Potion								
+24368	spellbook	171	Mighty Troll's Blood Elixir								
+24374	all		Fireball		Inflicts Fire damage to an enemy.						
+24375	all		War Stomp		Inflicts normal damage plus $s3 to nearby enemies, knocking them back and stunning them for $d.	Stunned.					
+24376	all		Opening Azure Bag		Opens the Sealed Azure Bag.						
+24377	all		Destroy Bijou								
+24378	all		Berserking			Increases all damage caused by $s1% and all damage taken by $s2%.					
+24379	all		Restoration			Restores Health, Mana and Pet Happiness.					
+24382	all		Spirit of Zanza		Increases the player's Spirit by $s1 and Stamina by $s2 for $d.  You can only have the effect of one Zanza potion at a time. Guardian Elixir.	Spirit increased by $s1 and Stamina by $s2. Guardian Elixir.					
+24383	all		Swiftness of Zanza		Increases the player's run speed by $s1% for $d.  You can only have the effect of one Zanza potion at a time. Guardian Elixir.	Run speed increased by $s1%. Guardian Elixir.					
+24384	all		Essence Mango		Restores $26401o1 health and $26402o2 mana over $25695d.  Must remain seated while eating.						
+24388	all		Brain Damage		Wounds the target for $s1 damage and lowers Intellect of target by $s2 for $d.	Lowered Intellect.					
+24389	all		Chaos Fire		Restores $s1 mana and increases the damage of your next Fire spell by up to $s2.  Effect lasts for $d.	Damage of your next Fire spell increased by up to $s2.					
+24390	all		Opening								
+24391	all		Opening								
+24392	all		Frosty Zap		Your Frostbolt spells have a $s1% chance to restore $s2 mana when cast.						
+24393	all		Test Strike		457 Damage.						
+24394	spellbook	270	Intimidation		Command your pet to intimidate the target, causing a high amount of threat and stunning the target for $24394d. Lasts $19577d.	Stunned.					
+24395	spellbook	50	Bestial Wrath								
+24396	spellbook	50	Bestial Wrath								
+24397	spellbook	50	Bestial Wrath								
+24398	spellbook	374	Water Shield	Rank 1	The caster is surrounded by $n globes of water, granting $s2 mana per 5 sec.  When a spell, melee or ranged attack hits the caster, $23575s1 mana is restored to the caster. This expends one water globe.  Only one globe will activate every few seconds.  Lasts $d.  Only one Elemental Shield can be active on the Shaman at any one time.	$s2 mana per 5 sec.  Attacks and spells used against you restore $23575s1 mana.  $n charges.					
+24399	spellbook	164	Dark Iron Boots								
+24401	all		Test Pet Passive								
+24402	all		Deafened			Decreases your chance to hit with spells and melee attacks by $s1.					
+24405	all		Icy Energy								
+24406	spellbook	50	Improved Mend Pet	Rank 1	Reduces the mana cost of your Mend Pet spell and gives the Mend Pet spell a chance of cleansing $24406s1 Curse, Disease, Magic or Poison effect from the pet each tick.						
+24407	all		Overpower		Instantly overpowers an enemy, causing weapon damage plus $s1. Can only be used after the target dodges. Overpower cannot be blocked, dodged, or parried.						
+24408	all		Charge		Charges an enemy, inflicting normal damage plus $s3 and stuns the opponent for $d.						
+24409	all		Arathi Basin Field Ration		Restores $26472o1 health and $26473o2 mana over $26472d.  Must remain seated while eating.  Usable only inside Arathi Basin.						
+24410	all		Arathi Basin Iron Ration		Restores $26474o1 health and $26475o2 mana over $26474d.  Must remain seated while eating.  Usable only inside Arathi Basin.	Restores $/5;s1 health and $/5;s2 mana per second.					
+24411	all		Arathi Basin Enriched Ration		Restores $25695o1 health and $25696o2 mana over $25695d.  Must remain seated while eating.  Usable only inside Arathi Basin.	Restores $25695/5;s1 health and $25696/5;s2 mana per second.					
+24412	all		First Aid	Rank 6	Heals $o1 damage over $d.  Usable only inside Arathi Basin.	Healing $s1 damage every $t1 seconds.					
+24413	all		First Aid	Rank 8	Heals $o1 damage over $d.  Usable only inside Arathi Basin.	Healing $s1 damage every $t1 seconds.					
+24414	all		First Aid	Rank 10	Heals $o1 damage over $d.  Usable only inside Arathi Basin.	Healing $s1 damage every $t1 seconds.					
+24415	all		Slow		Increases the time between nearby enemies' attacks by $s1%, slows their movement by $s2%, and slow casting speed by $s3% for $d.	Time between attacks increased by $s1%.\nMovement speed reduced by $s2%.\nCasting speed reduced by $s3%.					
+24416	all		Superior Aspects	Rank 1	Allows Aspect of the Beast and $s1% of the Dodge effect of Aspect of the Monkey or Aspect of the Dragonhawk to be shared with the Hunter's party.						
+24417	all		Sheen of Zanza		Increases the chance that the player will reflect hostile spells cast on them by $s1% for $d. Will automatically reflect the first offensive spell cast against the user. Only one type of Zanza potion may be active at any given time. Guardian Elixir.	Hostile spells reflected $s1% of the time. Guardian Elixir.					
+24418	spellbook	185	Heavy Crocolisk Stew								
+24420	all		Zandalar Signet of Serenity		Permanently adds to a shoulder slot item increased healing done by spells and effects up to 33.						
+24421	all		Zandalar Signet of Mojo		Permanently adds to a shoulder slot item increased damage and healing done by magical spells and effects up to 18.						
+24422	all		Zandalar Signet of Might		Permanently adds 30 attack power to a shoulder slot item.						
+24423	spellbook	213,653,655	Screech	Rank 1	Blasts a single enemy for $s1 damage and lowers the melee attack power of all enemies in melee range by $s2.  Effect lasts $d.	Melee attack power reduced by $s2.					
+24424	all		Demoralizing Screech	Rank 1	Blasts a single enemy for $24423s1 damage and lowers the attack power of all enemies in melee range by $24423s2.  Effect lasts $24423d.						
+24425	all		Spirit of Zandalar		Increases all stats for 2 hours.	Increases all stats for 2 hours.\n\nRemoved in Raid Instances.					
+24426	all		Increased Critical Holy Spells		Increases the critical effect chance of your Holy spells by $s1%.						
+24427	all		Diamond Flask		Restores $s2 health every $t2 sec and increases your Strength by $s1.  Lasts $d.	Restores $s2 health every $t2 sec and Strength increased by $s1.					
+24428	all		Improved Hamstring		Reduces the cost of your Hamstring ability by $/10;s1 rage points.						
+24429	all		Improved Counterspell		Reduces the cooldown of Counterspell by $/1000;s1 sec.						
+24430	all		Improved Rain of Fire/Hellfire		Increases the radius of Rain of Fire and Hellfire by 1 yard.						
+24431	all		Improved Whirlwind		Decrease the rage cost of Whirlwind by $/10;s1.						
+24432	all		Improved Feign Death		Decreases the cooldown of Feign Death by $/1000;s1 sec.						
+24433	all		Improved Wrath/Starfire		Increases the critical hit chance of Wrath and Starfire by $s1%.						
+24434	all		Improved Kick		Decreases the cooldown of Kick by $/1000;S1 sec.						
+24435	all		Drain Life		Drains $o1 health from an enemy over $d., transferring it to the caster.	$o1 health leeched over $d.					
+24436	all		Copy of Improved Mana/Health Totems		Decreases the mana cost of your Healing Stream and Mana Spring totems by $s1.						
+24437	all		Blood Leech		Drains $s1 health from nearby enemies, healing the caster for up to three times the amount stolen.						
+24438	all		Battle Shout		Increases the melee attack power of nearby party members by $s1 for $d.	Melee attack power increased by $s1.					
+24439	all		Fire Resistance	Rank 2	Increases Fire resistance by $s1.	Increases Fire resistance by $s1.					
+24440	all		Fire Resistance	Rank 1	Increases Fire resistance by $23992s1.	Increases Fire resistance by $23992s1.					
+24441	all		Fire Resistance	Rank 2	Increases Fire resistance by $24439s1.						
+24443	spellbook	50	Improved Revive Pet	Rank 1	Revive Pet's casting time is reduced by $/1000;s1 sec, mana cost is reduced by $s2%, and increases the health your pet returns with by an additional $s3%.						
+24444	all		Fire Resistance	Rank 3	Increases Fire resistance by $s1.	Increases Fire resistance by $s1.					
+24445	all		Fire Resistance	Rank 4	Increases Fire resistance by $s1.	Increases Fire resistance by $s1.					
+24446	all		Frost Resistance	Rank 1	Increases Frost resistance by $s1.	Increases Frost resistance by $s1.					
+24447	all		Frost Resistance	Rank 2	Increases Frost resistance by $s1.	Increases Frost resistance by $s1.					
+24448	all		Frost Resistance	Rank 3	Increases Frost resistance by $s1.	Increases Frost resistance by $s1.					
+24449	all		Frost Resistance	Rank 4	Increases Frost resistance by $s1.	Increases Frost resistance by $s1.					
+24450	spellbook	209	Prowl	Rank 1	Puts your pet in stealth mode, but slows its movement speed by $s2%. The first attack from stealth receives a $s3% bonus to damage.  Lasts until cancelled.	Stealthed.\nMovement speed slowed by $s2%.					
+24451	all		Prowl	Rank 1	Puts your pet in stealth mode, but slows its movement to $24450s2% of normal. The first attack from stealth receives a $24450s3% bonus to damage.  Lasts until cancelled.						
+24452	spellbook	209	Prowl	Rank 2	Puts your pet in stealth mode, but slows its movement speed by $s2%. The first attack from stealth receives a $s3% bonus to damage.  Lasts until cancelled.	Stealthed.\nMovement speed slowed by $s2%.					
+24453	spellbook	209	Prowl	Rank 3	Puts your pet in stealth mode, but slows its movement speed by $s2%. The first attack from stealth receives a $s3% bonus to damage.  Lasts until cancelled.	Stealthed.\nMovement speed slowed by $s2%.					
+24454	all		Prowl	Rank 2	Puts your pet in stealth mode, but slows its movement to $24452s2% of normal. The first attack from stealth receives a $24452s3% bonus to damage.  Lasts until cancelled.						
+24455	all		Prowl	Rank 3	Puts your pet in stealth mode, but slows its movement to $24453s2% of normal. The first attack from stealth receives a $24453s3% bonus to damage.  Lasts until cancelled.						
+24456	all		Improved Intimidating Shout		Decreases the cooldown of Intimidating Shout by $/1000;s1 sec.						
+24457	all		Improved Holy Light		Reduces the casting time of your Holy Light spell by $/1000;S1 sec.						
+24458	all		Shadow Shock		Instantly lashes an enemy with dark magic, inflicting Shadow damage.						
+24459	all		Shadow Shock		Instantly lashes an enemy with dark magic, inflicting Shadow damage.						
+24460	all		Improved Blessings		Increases the duration of all Blessings by $s1%.						
+24461	all		Improved Frost Shock		Improves the duration of your Frost Shock spell by $/1000;S1 sec.						
+24462	all		Improved Lightning Bolt		Increase the range of your Lightning Bolt spell by $s1 yds.						
+24463	all		Fire Resistance	Rank 3	Increases Fire resistance by $24444s1.						
+24464	all		Fire Resistance	Rank 4	Increases Fire resistance by $24445s1.						
+24465	all		Improved Concussive Shot		Decreases the cooldown of Concussive Shot by $/1000;s1 sec.						
+24466	all		Banish								
+24467	all		Improved Serpent Sting		Increases the duration of Serpent Sting by $/1000;s1 sec.						
+24469	all		Improved Blind		Decreases the cooldown of Blind by $/1000;s1 sec.						
+24471	all		Improved Eviscerate and Rupture		Decrease the energy cost of Eviscerate and Rupture by $s1.						
+24474	all		Destroy Wards								
+24475	all		Frost Resistance	Rank 1	Increases Frost resistance by $24446s1.	Increases Frost resistance by $24446s1.					
+24476	all		Frost Resistance	Rank 2	Increases Frost resistance by $24447s1.	Increases Frost resistance by $24447s1.					
+24477	all		Frost Resistance	Rank 3	Increases Frost resistance by $24448s1.	Increases Frost resistance by $24448s1.					
+24478	all		Frost Resistance	Rank 4	Increases Frost resistance by $24449s1.	Increases Frost resistance by $24449s1.					
+24479	all		Improved Faerie Fire		Increases the duration of Faerie Fire by $/1000;s1 sec.						
+24480	all		Improved Starfire		Increases the critical hit chance of your Starfire spell $s1%.						
+24482	all		Improved Smite and Holy Fire		Increase the range of your Smite and Holy Fire spells by $s1 yds.						
+24483	all		Improved Mind Control		Reduces the casting time of your Mind Control spell by $/1000;S1 sec.						
+24486	all		Improved Corruption		Increases the damage of Corruption by $s1%.						
+24487	all		Improved Death Coil		Decreases the cooldown of Death Coil by $s1%.						
+24488	all		Shadow Resistance	Rank 1	Increases Shadow resistance by $s1.	Increases Shadow resistance by $s1.					
+24489	all		Improved Arcane Intellect		Decreases the mana cost of Arcane Intellect and Arcane Brilliance by $s1%.						
+24490	all		Shadow Resistance	Rank 1	Increases Shadow resistance by $24488s1.	Increases Shadow resistance by $24488s1.					
+24491	all		Improved Flamestrike		Reduces the casting time of your Flamestrike spell by $/1000;S1 sec.						
+24492	all		Nature Resistance	Rank 1	Increases Nature resistance by $s1.	Increases Nature resistance by $s1.					
+24493	all		Arcane Resistance	Rank 1	Increases Arcane resistance by $s1.	Increases Arcane resistance by $s1.					
+24494	all		Nature Resistance	Rank 1	Increases Nature resistance by $24492s1.	Increases Shadow resistance by $24492s1.					
+24495	all		Arcane Resistance	Rank 1	Increases Arcane resistance by $24493s1.	Increases Arcane resistance by $24493s1.					
+24497	all		Arcane Resistance	Rank 2	Increases Arcane resistance by $s1.	Increases Arcane resistance by $s1.					
+24498	all		Brilliant Light		Increases the critical hit chance of Holy spells by $s1% for $d.	Holy spell critical hit chance increased by $s1%.					
+24499	all		Energized Shield		Increases the damage dealt by your Lightning Shield spell by $s1% for $d.	Lightning Shield damage increased by $s1%.					
+24500	all		Arcane Resistance	Rank 3	Increases Arcane resistance by $s1.	Increases Arcane resistance by $s1.					
+24502	all		Nature Resistance	Rank 2	Increases Nature resistance by $s1.	Increases Nature resistance by $s1.					
+24503	all		Nature Resistance	Rank 3	Increases Nature resistance by $s1.	Increases Nature resistance by $s1.					
+24504	all		Nature Resistance	Rank 4	Increases Nature resistance by $s1.	Increases Nature resistance by $s1.					
+24505	all		Shadow Resistance	Rank 2	Increases Shadow resistance by $s1.	Increases Shadow resistance by $s1.					
+24506	all		Shadow Resistance	Rank 3	Increases Shadow resistance by $s1.	Increases Shadow resistance by $s1.					
+24507	all		Shadow Resistance	Rank 4	Increases Shadow resistance by $s1.	Increases Shadow resistance by $s1.					
+24508	all		Arcane Resistance	Rank 2	Increases Arcane resistance by $24497s1.	Increases Arcane resistance by $24497s1.					
+24509	all		Arcane Resistance	Rank 3	Increases Arcane resistance by $24500s1.	Increases Arcane resistance by $24500s1.					
+24510	all		Arcane Resistance	Rank 4	Increases Arcane resistance by $24501s1.	Increases Arcane resistance by $24501s1.					
+24511	all		Nature Resistance	Rank 2	Increases Nature resistance by $24502s1.	Increases Nature resistance by $24502s1.					
+24512	all		Nature Resistance	Rank 3	Increases Nature resistance by $24503s1.	Increases Nature resistance by $24503s1.					
+24513	all		Nature Resistance	Rank 4	Increases Nature resistance by $24504s1.	Increases Nature resistance by $24504s1.					
+24514	all		Shadow Resistance	Rank 2	Increases Shadow resistance by $24505s1.	Increases Shadow resistance by $24505s1.					
+24515	all		Shadow Resistance	Rank 3	Increases Shadow resistance by $24506s1.	Increases Shadow resistance by $24506s1.					
+24516	all		Shadow Resistance	Rank 4	Increases Shadow resistance by $24507s1.	Increases Shadow resistance by $24507s1.					
+24529	spellbook	50	Spirit Bond	Rank 2	While your pet is active, you and your pet will regenerate $24529s1% of total health every $24529t1 sec.	Regenerate $s1% of total health every $t1 sec.					
+24530	spellbook	8	Felfire		Blasts the enemy for $s1 Fire damage.						
+24531	all		Refocus		Instantly clears the cooldowns of Aimed Shot, Multishot, Volley, and Arcane Shot.						
+24532	all		Burst of Energy		Instantly increases your energy by $s1.						
+24542	all		Nimble Healing Touch		Reduces the casting time of your Healing Touch spells by $s1%, and reduces the mana cost of your healing spells by $s2% for $d.	Healing Touch casting time decreased by $s1%.\nHealing spell mana cost reduced by $s2%.					
+24543	all		Massive Destruction		Increases the critical hit chance of your Destruction spells by $s1% for $d.	Destruction spell critical hit chance increased by $s1%.					
+24544	all		Arcane Potency		Increases the critical hit chance of your Arcane spells by $s1%, and increases the critical hit damage of your Arcane spells by $s2% for $d.	Arcane spell critical hit chance increased by $s1%.\nArcane spell critical hit damage increased by $s2%.					
+24545	all		Natural Armor	Rank 1	Armor increased by $s1.						
+24546	all		Rapid Healing		Reduces the casting time of your Greater Heal spells by $s1%, and reduces the mana cost of your healing spells by $s2% for $d.	Greater Heal casting time decreased by $s1%.\nHealing spell mana cost reduced by $s2%.					
+24547	all		Natural Armor	Rank 1	Armor increased by $24545s1.						
+24549	all		Natural Toughness	Rank 1	Armor increased by $s1.  Does not stack with Natural Armor or Natural Tank.						
+24550	all		Natural Toughness	Rank 2	Armor increased by $s1.  Does not stack with Natural Armor or Natural Tank.						
+24551	all		Natural Toughness	Rank 3	Armor increased by $s1.  Does not stack with Natural Armor or Natural Tank.						
+24552	all		Natural Armor	Rank 1	Armor increased by $s1.  Does not stack with Natural Toughness or Natural Tank.						
+24553	all		Natural Armor	Rank 2	Armor increased by $s1.  Does not stack with Natural Toughness or Natural Tank.						
+24554	all		Natural Armor	Rank 3	Armor increased by $s1.  Does not stack with Natural Toughness or Natural Tank.						
+24555	all		Natural Tank	Rank 1	Armor increased by $s1.  Does not stack with Natural Toughness or Natural Armor.						
+24556	all		Natural Armor	Rank 2	Armor increased by $24549s1.						
+24557	all		Natural Armor	Rank 3	Armor increased by $24550s1.						
+24558	all		Natural Armor	Rank 4	Armor increased by $24551s1.						
+24559	all		Natural Armor	Rank 5	Armor increased by $24552s1.						
+24560	all		Natural Armor	Rank 6	Armor increased by $24553s1.						
+24561	all		Natural Armor	Rank 7	Armor increased by $24554s1.						
+24562	all		Natural Armor	Rank 8	Armor increased by $24555s1.						
+24571	all		Blood Fury		Instantly increases your rage by $/10;s1.						
+24573	all		Mortal Strike		Inflicts $s1% weapon damage and leaves the target wounded, reducing the effectiveness of any healing by $s2% for $d.	Healing effects reduced by $s2%.					
+24574	all		Brittle Armor		Increases your armor by 2000 and defense skill by 30 for $d. Every time you take melee or ranged damage, this bonus is reduced by 200 armor and 3 defense.						
+24575	all		Brittle Armor			Increases armor by $s1.\nIncreases defense rating by $s2.					
+24576	all		Chromatic Mount		Summons and dismisses a rideable Chromatic Drake.   You wish! This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+24577	spellbook	213,653,655	Screech	Rank 2	Blasts a single enemy for $s1 damage and lowers the melee attack power of all enemies in melee range by $s2.  Effect lasts $d.	Melee attack power reduced by $s2.					
+24578	spellbook	213,653,655	Screech	Rank 3	Blasts a single enemy for $s1 damage and lowers the melee attack power of all enemies in melee range by $s2.  Effect lasts $d.	Melee attack power reduced by $s2.					
+24579	spellbook	213,653,655	Screech	Rank 4	Blasts a single enemy for $s1 damage and lowers the melee attack power of all enemies in melee range by $s2.  Effect lasts $d.	Melee attack power reduced by $s2.					
+24580	all		Demoralizing Screech	Rank 2	Blasts a single enemy for $24577s1 damage and lowers the attack power of all enemies in melee range by $24577s2.  Effect lasts $24577d.						
+24581	all		Demoralizing Screech	Rank 3	Blasts a single enemy for $24578s1 damage and lowers the attack power of all enemies in melee range by $24578s2.  Effect lasts $24578d.						
+24582	all		Demoralizing Screech	Rank 4	Blasts a single enemy for $24579s1 damage and lowers the attack power of all enemies in melee range by $24579s2.  Effect lasts $24579d.						
+24583	spellbook	236	Scorpid Poison	Rank 2	Inflicts $o2 Nature damage over $d. Effect can stack up to 5 times on a single target.	$s2 Nature damage every $t2 sec.					
+24584	all		Scorpid Poison	Rank 2	Inflicts $24583o2 Nature damage over $24583d. Effect can stack up to 5 times on a single target.						

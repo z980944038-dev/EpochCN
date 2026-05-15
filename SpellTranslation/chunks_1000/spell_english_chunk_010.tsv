@@ -1,0 +1,1001 @@
+﻿spell_id	priority	skill_line_ids	name_en	rank_en	description_en	tooltip_en	name_zh	rank_zh	description_zh	tooltip_zh	notes
+18442	spellbook	197	Felcloth Hood								
+18443	all		Safe Fall								
+18444	spellbook	197	Runecloth Headband								
+18445	spellbook	197	Mooncloth Bag								
+18446	spellbook	197	Wizardweave Robe								
+18447	spellbook	197	Mooncloth Vest								
+18448	spellbook	197	Mooncloth Shoulders								
+18449	spellbook	197	Runecloth Shoulders								
+18450	spellbook	197	Wizardweave Turban								
+18451	spellbook	197	Felcloth Robe								
+18452	spellbook	197	Mooncloth Circlet								
+18453	spellbook	197	Felcloth Shoulders								
+18454	spellbook	197	Gloves of Spell Mastery								
+18455	spellbook	197	Bottomless Bag								
+18456	spellbook	197	Truefaith Vestments		This item binds to you upon being crafted.						
+18457	spellbook	197	Robe of the Archmage		This item binds to you upon being crafted.						
+18458	spellbook	197	Robe of the Void		This item binds to you upon being crafted.						
+18459	spellbook	8	Incineration	Rank 1	Increases the critical strike chance of your Fire Blast and Scorch spells by $s1%.						
+18460	spellbook	8	Incineration	Rank 2	Increases the critical strike chance of your Fire Blast and Scorch spells by $s1%.						
+18461	all		Vanish Purge								
+18462	spellbook	237	Arcane Meditation	Rank 1	Allows $s1% of your mana regeneration to continue while casting.						
+18463	spellbook	237	Arcane Meditation	Rank 2	Allows $s1% of your mana regeneration to continue while casting.						
+18464	spellbook	237	Arcane Meditation	Rank 3	Allows $s1% of your mana regeneration to continue while casting.						
+18469	all		Counterspell - Silenced			Silenced.					
+18476	all		Summon Minion								
+18498	spellbook	257	Shield Bash - Silenced			Silenced.					
+18499	spellbook	256	Berserker Rage		The warrior enters a berserker rage, becoming immune to Fear, Sap and Incapacitate effects and generating extra rage when taking damage.  Lasts $d.	Immune to Fear, Sap and Incapacitate effects.  Generating extra rage when taking damage.					
+18500	all		Wing Buffet		Inflicts $s2 damage to enemies in a cone in front of the caster, knocking them back. This effect ignores armor.						
+18501	all		Enrage		Increases the Physical damage dealt by the caster and speeds its attacks for $d.	Physical damage dealt is increased by $s1.\nAttack speed increased by $s2%.					
+18502	all		Curse of Hakkar		Drains $s1 mana from an enemy every $t1 sec., transferring it to the caster over $d.	$s1 mana leeched every $t1 sec.					
+18503	all		Hex		Transforms an enemy into a chicken, rendering it unable to attack or cast spells for $d.	Hexed.					
+18530	spellbook	56	Divine Fury	Rank 1	Reduces the casting time of your Smite, Holy Fire, Heal and Greater Heal spells by $/1000;S1 sec.						
+18531	spellbook	56	Divine Fury	Rank 2	Reduces the casting time of your Smite, Holy Fire, Heal and Greater Heal spells by $/1000;S1 sec.						
+18533	spellbook	56	Divine Fury	Rank 3	Reduces the casting time of your Smite, Holy Fire, Heal and Greater Heal spells by $/1000;S1 sec.						
+18534	spellbook	56	Divine Fury	Rank 4	Reduces the casting time of your Smite, Holy Fire, Heal and Greater Heal spells by $/1000;S1 sec.						
+18535	spellbook	56	Divine Fury	Rank 5	Reduces the casting time of your Smite, Holy Fire, Heal and Greater Heal spells by $/1000;S1 sec.						
+18540	spellbook	354	Ritual of Doom		Begins a ritual that sacrifices a random participant to summon a doomguard.  The doomguard must be immediately enslaved or it will attack the ritual participants.  Requires the caster and 4 additional party members to complete the ritual.  In order to participate, all players must right-click the portal and not move until the ritual is complete.						
+18541	spellbook	354	Ritual of Doom Effect		Summons a Doomguard.						
+18542	all		Immolate								
+18543	all		Flame Lash		Burns an enemy, then inflicts additional Fire damage every $t1 sec. for $d.	Fire damage inflicted every $t1 sec.					
+18544	spellbook	613	Force of Will	Rank 1	Increases your spell damage by $s2% and the critical strike chance of your offensive spells by $s1%.						
+18545	all		Scorpid Sting		Stings an enemy, reducing its Strength and Agility by $s1 for $d.	Strength and Agility reduced by $s1.					
+18546	all		Overdrive		Immobilizes the caster, but increases its attack speed by $s2% for $d.	Immobilized.\nAttack speed increased by $s2%.					
+18547	spellbook	613	Force of Will	Rank 2	Increases your spell damage by $s2% and the critical strike chance of your offensive spells by $s1%.						
+18548	spellbook	613	Force of Will	Rank 3	Increases your spell damage by $s2% and the critical strike chance of your offensive spells by $s1%.						
+18549	spellbook	613	Force of Will	Rank 4	Increases your spell damage by $s2% and the critical strike chance of your offensive spells by $s1%.						
+18550	spellbook	613	Force of Will	Rank 5	Increases your spell damage by $s2% and the critical strike chance of your offensive spells by $s1%.						
+18551	spellbook	613	Mental Strength	Rank 1	Increases your maximum mana by $s1%.						
+18552	spellbook	613	Mental Strength	Rank 2	Increases your maximum mana by $s1%.						
+18553	spellbook	613	Mental Strength	Rank 3	Increases your maximum mana by $s1%.						
+18554	spellbook	613	Mental Strength	Rank 4	Increases your maximum mana by $s1%.						
+18555	spellbook	613	Mental Strength	Rank 5	Increases your maximum mana by $s1%.						
+18557	all		Drain Life		Drains $o1 health from an enemy over $d., transferring it to the caster.	$o1 health leeched over $d.					
+18559	all		Demon Pick		Demon Pick to Destroy Demon Crystal.						
+18560	spellbook	197	Mooncloth		The purification of tainted Felcloth into Mooncloth can only be done at a moonwell, and only ocassionally will the waters permit themselves to be used in such a way.						
+18561	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+18562	spellbook	573	Swiftmend		Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal them an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth.						
+18564	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18565	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18566	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18567	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18568	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18569	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18570	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18571	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18572	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18573	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18574	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18575	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18576	all		Breath								
+18578	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18579	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18580	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18581	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18582	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18583	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18584	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18585	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18586	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18587	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18588	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18589	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18590	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18591	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18592	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18593	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18594	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18595	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18596	all		Breath								
+18597	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18598	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18599	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18600	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18601	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18602	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18603	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18604	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18605	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18606	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18607	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18608	all		First Aid	Rank 9	Heals $o1 damage over $d.	Healing $s1 damage every $t1 seconds.					
+18609	all		Breath								
+18610	all		First Aid	Rank 10	Heals $o1 damage over $d.	Healing $s1 damage every $t1 seconds.					
+18611	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18612	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18613	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18614	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18615	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18616	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18617	all		Breath								
+18618	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18619	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18620	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18621	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18622	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18623	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18624	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18625	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18626	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18627	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18628	all		Breath		Onyxia's flaming breath hits all enemies on the ground for $s1 Fire damage.						
+18629	spellbook	129	Runecloth Bandage								
+18630	spellbook	129	Heavy Runecloth Bandage								
+18631	all		Runecloth Bandage								
+18632	all		Heavy Runecloth Bandage								
+18633	all		Weakening Disease		Deals $s1 Shadow damage every $t1 sec for $d and lowers their Strength for the duration of the disease.	Diseased and weakened.					
+18634	all		Target Dummy - Event 001		Drops a target dummy on the ground that attracts nearby monsters to attack it.  Lasts for 3 min.						
+18647	spellbook	354	Banish	Rank 2	Banishes the enemy target, preventing all action but making it invulnerable for up to $d.  Only one target can be banished at a time.  Only works on Demons and Elementals.	Invulnerable, but unable to act.					
+18649	all		Shadow Shot		Shoots an enemy, inflicting Shadow damage.						
+18650	all		Summon Marduk the Black								
+18651	all		Multi-Shot		Fires a volley of missiles at an enemy and its nearby allies, striking up to $x1 targets for normal damage plus a bonus.						
+18652	all		Siphon Health		Deals $s1 Shadow damage every $t1 sec for $d. All damage done is then transferred to the caster.	Deals $s1 Shadow damage every $t1 sec.					
+18653	all		Siphon Health								
+18654	all		Siphon Health								
+18655	all		Mortar Animate								
+18656	all		Corruption		Corrupts the target, causing $o1 damage over $d.	Inflicts $s1 Shadow damage every $t1 sec.					
+18657	spellbook	574	Hibernate	Rank 2	Forces the enemy target to sleep for up to $d.  Any damage will awaken the target.  Only one target can be forced to hibernate at a time.  Only works on Beasts and Dragonkin.	Asleep.					
+18658	spellbook	574	Hibernate	Rank 3	Forces the enemy target to sleep for up to $d.  Any damage will awaken the target.  Only one target can be forced to hibernate at a time.  Only works on Beasts and Dragonkin.	Asleep.					
+18661	all		Araj's Phylactery								
+18662	spellbook	355	Curse of Doom Effect		Summons a Doomguard.						
+18663	all		Shadow Shock		Instantly lashes an enemy with dark magic, inflicting Shadow damage.						
+18666	all		Corrupt Redpath								
+18669	all		Schematic: Minor Recombobulator		Teaches you how to make a Minor Recombobulator.						
+18670	all		Knock Away		Inflicts normal damage plus $s1 to an enemy and knocks it back.						
+18671	all		Curse of Agony		Curses nearby enemies with agony, inflicting Shadow damage every $t1 sec. for $d. Only one curse per warlock can be active on any one target.	Shadow damage every $t1 sec.					
+18672	all		Increased All Resist 01		+$s1 All Resistances.						
+18673	all		Increased All Resist 02		+$s1 All Resistances.						
+18674	all		Increased All Resist 03		+$s1 All Resistances.						
+18675	all		Increased All Resist 04		+$s1 All Resistances.						
+18676	all		Increased All Resist 05		+$s1 All Resistances.						
+18677	all		Increased All Resist 06		+$s1 All Resistances.						
+18678	all		Increased All Resist 07		+$s1 All Resistances.						
+18679	all		Increased All Resist 08		+$s1 All Resistances.						
+18680	all		Increased All Resist 09		+$s1 All Resistances.						
+18681	all		Increased All Resist 10		+$s1 All Resistances.						
+18682	all		Increased All Resist 11		+$s1 All Resistances.						
+18683	all		Increased All Resist 12		+$s1 All Resistances.						
+18684	all		Increased All Resist 13		+$s1 All Resistances.						
+18685	all		Increased All Resist 14		+$s1 All Resistances.						
+18686	all		Increased All Resist 15		+$s1 All Resistances.						
+18687	all		Increased All Resist 16		+$s1 All Resistances.						
+18688	all		Increased All Resist 17		+$s1 All Resistances.						
+18689	all		Increased All Resist 18		+$s1 All Resistances.						
+18690	all		Increased All Resist 19		+$s1 All Resistances.						
+18691	all		Increased All Resist 20		+$s1 All Resistances.						
+18692	spellbook	354	Improved Healthstone	Rank 1	Increases the amount of Health restored by your Healthstone by $s1%.						
+18693	spellbook	354	Improved Healthstone	Rank 2	Increases the amount of Health restored by your Healthstone by $s1%.						
+18694	spellbook	354	Improved Imp	Rank 1	Increases the effect of your Imp's Firebolt, Fire Shield, and Blood Pact spells by $s1%.						
+18695	spellbook	354	Improved Imp	Rank 2	Increases the effect of your Imp's Firebolt, Fire Shield, and Blood Pact spells by $s1%.						
+18696	spellbook	354	Improved Imp	Rank 3	Increases the effect of your Imp's Firebolt, Fire Shield, and Blood Pact spells by $s1%.						
+18697	spellbook	354	Demonic Embrace	Rank 1	Increases your total Stamina by $s1% but reduces your total Spirit by $s2%.						
+18698	spellbook	354	Demonic Embrace	Rank 2	Increases your total Stamina by $s1% but reduces your total Spirit by $s2%.						
+18699	spellbook	354	Demonic Embrace	Rank 3	Increases your total Stamina by $s1% but reduces your total Spirit by $s2%.						
+18700	spellbook	354	Demonic Embrace	Rank 4	Increases your total Stamina by $s1% but reduces your total Spirit by $s2%.						
+18701	spellbook	354	Demonic Embrace	Rank 5	Increases your total Stamina by $s1% but reduces your total Spirit by $s2%.						
+18702	all		Curse of the Darkmaster		Reduces an enemy's Strength by $s1 and Stamina by $s2 for $d.	Strength reduced by $s1.\nStamina reduced by $s2.					
+18703	spellbook	354	Improved Health Funnel	Rank 1	Increases the amount of Health transferred by your Health Funnel spell by $s1% and reduces the initial health cost by $s2%.						
+18704	spellbook	354	Improved Health Funnel	Rank 2	Increases the amount of Health transferred by your Health Funnel spell by $s1% and reduces the initial health cost by $s2%.						
+18705	spellbook	354	Improved Voidwalker	Rank 1	Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice and Suffering spells by $s1%.						
+18706	spellbook	354	Improved Voidwalker	Rank 2	Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice and Suffering spells by $s1%.						
+18707	spellbook	354	Improved Voidwalker	Rank 3	Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice and Suffering spells by $s1%.						
+18708	spellbook	354	Fel Domination		Your next Imp, Voidwalker, Succubus, Felhunter or Felguard Summon spell has its casting time reduced by $/1000;S1 sec and its Mana cost reduced by $s2%.	Imp, Voidwalker, Succubus, Felhunter and Felguard casting time reduced by $/1000;S1 sec.  Mana cost reduced by $s2%.					
+18709	spellbook	354	Master Summoner	Rank 1	Reduces the casting time of your Imp, Voidwalker, Succubus, Felhunter and Fel Guard Summoning spells by $/1000;s1 sec and the Mana cost by $s2%.						
+18710	spellbook	354	Master Summoner	Rank 2	Reduces the casting time of your Imp, Voidwalker, Succubus, Felhunter and Fel Guard Summoning spells by $/1000;s1 sec and the Mana cost by $s2%.						
+18711	all		Forging		Fill with lava from the top of Fire Plume RIdge in Un'Goro and two Thorium Bars to create an Unfinished Skeleton Key.						
+18727	spellbook	204	Tamed Pet Passive (DND)								
+18728	spellbook	188	Tamed Pet Passive (DND)								
+18729	spellbook	205	Tamed Pet Passive (DND)								
+18730	spellbook	189	Tamed Pet Passive (DND)								
+18731	spellbook	354	Fel Intellect	Rank 1	Increases the Intellect of your Imp, Voidwalker, Succubus, Felhunter and Felguard by $s1% and increases your maximum mana by $s2%.						
+18733	all		Air Bubbles			Air bubbles allow breathing.					
+18735	spellbook	204	Tamed Pet Passive (DND)								
+18736	spellbook	205	Tamed Pet Passive (DND)								
+18737	spellbook	188	Tamed Pet Passive (DND)								
+18738	spellbook	189	Tamed Pet Passive (DND)								
+18739	spellbook	189	Tamed Pet Passive (DND)								
+18740	spellbook	188	Tamed Pet Passive (DND)								
+18741	spellbook	205	Tamed Pet Passive (DND)								
+18742	spellbook	204	Tamed Pet Passive (DND)								
+18743	spellbook	354	Fel Intellect	Rank 2	Increases the Intellect of your Imp, Voidwalker, Succubus, Felhunter and Felguard by $s1% and increases your maximum mana by $s2%.						
+18744	spellbook	354	Fel Intellect	Rank 3	Increases the Intellect of your Imp, Voidwalker, Succubus, Felhunter and Felguard by $s1% and increases your maximum mana by $s2%.						
+18747	all		Blue Dragon Immunity (PT)								
+18748	spellbook	354	Fel Stamina	Rank 1	Increases the Stamina of your Imp, Voidwalker, Succubus, Felhunter and Felguard by $s1% and increases your maximum health by $s2%.						
+18749	spellbook	354	Fel Stamina	Rank 2	Increases the Stamina of your Imp, Voidwalker, Succubus, Felhunter and Felguard by $s1% and increases your maximum health by $s2%.						
+18750	spellbook	354	Fel Stamina	Rank 3	Increases the Stamina of your Imp, Voidwalker, Succubus, Felhunter and Felguard by $s1% and increases your maximum health by $s2%.						
+18754	spellbook	354	Improved Succubus	Rank 1	Increases the effect of your Succubus' Lash of Pain and Soothing Kiss spells by $s1%, and increases the duration of your Succubus' Seduction and Lesser Invisibility spells by $s2%.						
+18755	spellbook	354	Improved Succubus	Rank 2	Increases the effect of your Succubus' Lash of Pain and Soothing Kiss spells by $s1%, and increases the duration of your Succubus' Seduction and Lesser Invisibility spells by $s2%.						
+18756	spellbook	354	Improved Succubus	Rank 3	Increases the effect of your Succubus' Lash of Pain and Soothing Kiss spells by $s1%, and increases the duration of your Succubus' Seduction and Lesser Invisibility spells by $s2%.						
+18759	all		Swallow Soul								
+18761	all		Swallow Soul								
+18762	all		Hand of Iruxos		Close Demon Portals.						
+18763	all		Freeze		Stuns an enemy and inflicts Frost damage every $t1 sec. for $d.	Stunned.\nFrost damage inflicted every $t1 sec.					
+18764	all		Fungal Regrowth	Rank 1	Restores $s1 health every $t1 sec.	Restores $s1 health every $t1 sec.					
+18765	all		Sweeping Strikes		Causes the caster's next $n melee attacks to strike an additional nearby enemy. This battle frenzy is tiring, however, and lasts $d. at most.	Melee attacks are striking an additional nearby enemy.					
+18767	spellbook	354	Master Conjuror	Rank 1	Reduces the casting time of conjuring stones by ${0-$m2/1000}.2 sec. Increases the bonus Fire damage from Firestones and the Firestone effect by $s1%. Spellstone now also grants an absorption effect when used. Increases the amount of health you gain from resurrecting via a Soulstone by $s3%, and whenever a party member consumes a Healthstone you heal for ${0-$m2/100}% of the amount it healed them for.						
+18768	spellbook	354	Master Conjuror	Rank 2	Reduces the casting time of conjuring stones by ${0-$m2/1000}.2 sec. Increases the bonus Fire damage from Firestones and the Firestone effect by $s1%. Spellstone now also grants an absorption effect when used. Increases the amount of health you gain from resurrecting via a Soulstone by $s3%, and whenever a party member consumes a Healthstone you heal for ${0-$m2/100}% of the amount it healed them for.						
+18769	spellbook	354	Unholy Power	Rank 1	Increases the damage done by your Voidwalker, Succubus, Felhunter and Felguard's melee attacks and your Imp's Firebolt by $s1%.						
+18770	spellbook	354	Unholy Power	Rank 2	Increases the damage done by your Voidwalker, Succubus, Felhunter and Felguard's melee attacks and your Imp's Firebolt by $s1%.						
+18771	spellbook	354	Unholy Power	Rank 3	Increases the damage done by your Voidwalker, Succubus, Felhunter and Felguard's melee attacks and your Imp's Firebolt by $s1%.						
+18772	spellbook	354	Unholy Power	Rank 4	Increases the damage done by your Voidwalker, Succubus, Felhunter and Felguard's melee attacks and your Imp's Firebolt by $s1%.						
+18773	spellbook	354	Unholy Power	Rank 5	Increases the damage done by your Voidwalker, Succubus, Felhunter and Felguard's melee attacks and your Imp's Firebolt by $s1%.						
+18787	all		Heaven's Blessing		Increases Attack Power by $s1 for $d.	Increased attack power.					
+18788	spellbook	354	Demonic Sacrifice		When activated, sacrifices your summoned demon to grant you an effect that lasts $18789d.  The effect is canceled if any Demon is summoned.\n\nImp: Increases your Fire damage by $18789s1%.\n\nVoidwalker: Restores $18790s1% of total health every $18790t1 sec.\n\nSuccubus: Increases your Shadow damage by $18791s1%.\n\nFelhunter: Restores $18792s1% of total mana every $18792t1 sec.						
+18789	all		Burning Wish			Fire damage increased by $s1%.					
+18790	all		Fel Stamina			Restores $s1% of total Health every $t1 sec.					
+18791	all		Touch of Shadow			Shadow damage increased by $s1%.					
+18792	all		Fel Energy			Restores $s1% of total Mana every $t1 sec.					
+18793	all		Kodo Kombobulator								
+18794	all		Young Tirion								
+18795	all		Peon Sleeping (Stun emote)								
+18796	all		Fireball		Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.	$s2 Fire damage every $t2 sec.					
+18797	all		Flurry Axe		Grants $s1 extra attack on your next swing.						
+18798	all		Freeze		Stunned and Frozen.	Stunned and Frozen.					
+18799	all		Freeze		When struck in combat has a 1% chance of inflicting $18798s2 Frost damage to the attacker and freezing them for $18798d.						
+18800	all		Light Test								
+18801	all		TESTT								
+18802	all		Frost Shot		Shoots at an enemy, inflicting additional Frost damage and slowing its movement by $s2% for $d.	Movement speed reduced by $s2%.					
+18803	all		Focus		Next spell cast within $d will cast instantly.	Next spell casts instantly.					
+18804	all		Eruption								
+18805	all		Recombobulate		Dispels Polymorph effects on a friendly target.  Also restores $s2 health and mana.						
+18807	spellbook	78	Mind Flay	Rank 6	Assault the target's mind with Shadow energy, causing $o1 Shadow damage over $d and slowing their movement speed by $s2%.	Movement speed slowed by $s2%.					
+18809	spellbook	8	Pyroblast	Rank 8	Hurls an immense fiery boulder that causes $s1 Fire damage and an additional $o2 Fire damage over $d.	$s2 Fire damage every $t2 seconds.					
+18810	all		Taelan's Suffering		Taelan's Suffering	Taelan's Suffering					
+18811	all		Taelan's Suffering Effect			Taelan's Suffering					
+18812	all		Knockdown		Inflicts $s2 damage to an enemy, stunning it for $d.	Stunned.					
+18813	all		Knock Away		Inflicts normal damage plus $s1 to an enemy and knocks it back.						
+18814	all		Summon Phoenix Adds								
+18815	all		Drain Life		When struck in combat has a 3% chance of stealing $18817s1 life from target enemy.						
+18816	all		Flamestrike		When struck in combat has a 1% chance of dealing $18818s1 Fire damage to all targets around you.						
+18817	all		Drain Life		Steals $s1 life from target enemy.						
+18818	all		Flamestrike		Deals $s1 Fire damage.	Deals $s1 Fire damage.					
+18819	all		Holy Cleave		Inflicts weapon damage plus $s1 to an enemy and its nearest allies, affecting up to $x1 targets.						
+18820	all		Insight		Reduces the cost of your next spell cast within $d by up to 500 mana.	Reduced mana cost.					
+18821	spellbook	354	Improved Enslave Demon	Rank 1	Reduces the Attack Speed and Casting Speed penalty of your Enslave Demon spell by $s1% and reduces the resist chance by $s3%.						
+18822	spellbook	354	Improved Enslave Demon	Rank 2	Reduces the Attack Speed and Casting Speed penalty of your Enslave Demon spell by $s1% and reduces the resist chance by $s3%.						
+18826	all		Savior's Sacrifice		Increases armor by $s1 for $d.	Increased armor.					
+18827	spellbook	355	Improved Bane of Agony	Rank 1	Increases the damage done by your Bane of Agony by $s1%.						
+18828	all		Bone Armor		When struck in combat has a 3% chance to encase the caster in bone, increasing armor by $s1 for $d.	Increased armor.					
+18829	spellbook	355	Improved Bane of Agony	Rank 2	Increases the damage done by your Bane of Agony by $s1%.						
+18831	all		Conjure Lily Root	Rank 1	Conjures a Lily Root that restores health and mana when eaten.						
+18832	all		Lily Root		Restores $s1 mana and health.						
+18833	all		Firebolt		Blasts a target for $s1 Fire damage.						
+18847	all		Fevered Fatigue								
+18848	spellbook	95	Spirit Weapons	Passive	Gives a chance to parry enemy melee attacks and reduces the threat generated by your melee attacks unless you are wearing a shield by $36591s2%.						
+18867	spellbook	593	Shadowburn	Rank 2	Instantly blasts the target for $s2 Shadow damage.  If the target dies within $29341d of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.						
+18868	spellbook	593	Shadowburn	Rank 3	Instantly blasts the target for $s2 Shadow damage.  If the target dies within $29341d of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.						
+18869	spellbook	593	Shadowburn	Rank 4	Instantly blasts the target for $s2 Shadow damage.  If the target dies within $29341d of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.						
+18870	spellbook	593	Shadowburn	Rank 5	Instantly blasts the target for $s2 Shadow damage.  If the target dies within $29341d of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.						
+18871	spellbook	593	Shadowburn	Rank 6	Instantly blasts the target for $s2 Shadow damage.  If the target dies within $29341d of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.						
+18873	all		Diablo								
+18874	all		Diablo								
+18879	spellbook	355	Siphon Life	Rank 2	Deals $s2 damage and transfers $s1 health from the target to the caster every $t1 sec.  Lasts $d.	$s2 damage and draining $s1 health to the caster every $t1 sec.					
+18880	spellbook	355	Siphon Life	Rank 3	Deals $s2 damage and transfers $s1 health from the target to the caster every $t1 sec.  Lasts $d.	$s2 damage and draining $s1 health to the caster every $t1 sec.					
+18881	spellbook	355	Siphon Life	Rank 4	Deals $s2 damage and transfers $s1 health from the target to the caster every $t1 sec.  Lasts $d.	$s2 damage and draining $s1 health to the caster every $t1 sec.					
+18887	all		Create Nimboya's Laden Pike		Attach 20 Witherbark Skulls to create Nimboya's Laden Pike.						
+18907	all		Target Dummy - Event 002		Drops a target dummy on the ground that attracts nearby monsters to attack it.  Lasts for 3 min.						
+18908	all		Dissipate Sand Storm								
+18930	spellbook	593	Conflagrate	Rank 2	Ignites a target that is already afflicted by your Immolate, dealing $s1 Fire damage and consuming the Immolate spell.						
+18931	spellbook	593	Conflagrate	Rank 3	Ignites a target that is already afflicted by your Immolate, dealing $s1 Fire damage and consuming the Immolate spell.						
+18932	spellbook	593	Conflagrate	Rank 4	Ignites a target that is already afflicted by your Immolate, dealing $s1 Fire damage and consuming the Immolate spell.						
+18936	all		Trigger Silithid								
+18937	spellbook	355	Dark Pact	Rank 2	Drains $s1 of your pet's Mana, returning 100% to you.						
+18938	spellbook	355	Dark Pact	Rank 3	Drains $s1 of your pet's Mana, returning 100% to you.						
+18941	all		Double Attack								
+18942	all		Fire Protection		Absorbs $s1 fire damage.  Lasts $d.	Absorbs $s1 fire damage.					
+18943	all		Double Attack		Gives the caster $s1 extra $lattack:attacks;.						
+18944	all		Smash		Smashes the ground, inflicting $s1 damage to nearby enemies.						
+18945	all		Knock Away		Inflicts normal damage plus $s1 to an enemy and knocks it back.						
+18946	all		The Lion Horn of Stormwind		Increases armor by $s1 for $d.	Increases armor by $s1.					
+18947	all		Inferno Dummy Effect								
+18948	all		Dark Energy			Strength reduced by $s1%.					
+18949	all		Atal'ai Poison			$s1 Nature damage inflicted every $t1 sec.					
+18950	all		Invisibility and Stealth Detection								
+18951	all		Spirit Particles (green)								
+18952	all		Opening Termite Barrel		Opens the termite barrel placed in the Northridge Lumber Mill.						
+18953	all		Ranshalla Waiting								
+18954	all		Ranshalla Despawn								
+18955	all		Ranshalla's Torch Trap								
+18956	all		Restore Life		Restores $s1 health every $t1 sec for $d.	Healing.					
+18957	all		Restore Life		Restores $s1 health every $t1 sec for $d.	Healing.					
+18958	all		Flame Lash		Burns an enemy for $s1 damage and reduces its Fire resistance by $s2 for $d.	Fire resistance reduced by $s2.					
+18959	all		Rat Aggro Clear								
+18960	spellbook	574	Teleport: Moonglade		Teleports the caster to the Moonglade.						
+18967	all		Rat Aggro Clear								
+18968	all		Fire Shield		Surrounds an ally with a shield of flame that inflicts $11968s1 Fire damage to nearby enemies every $t1 sec.  Lasts $d.	Inflicting $11968s1 Fire damage to nearby enemies every $t1 sec.					
+18969	all		Taelan Death								
+18970	all		Self Stun - (Visual only)								
+18971	all		Message to Grand Inquisitor								
+18972	all		Slow		Increases the time between an enemy's attacks by $s1% and slows its movement by $s2% for $d.	Movement speed reduced by $s2%.  Time between melee and ranged attacks increased by $s1%.  Casting time increased by $s1%.					
+18973	all		Tirion Message to Isillien								
+18974	all		Summon Lunaclaw		Apply near a Moonkin Stone to bring forth the stone's defender, Lunaclaw.						
+18975	all		Summon Ice Totem		Summons an Ice Totem that lasts $d. and inflicts Frost damage to nearby enemies every $18978t1 sec., slowing their attacks and movement.						
+18976	all		Self Resurrection		A Soulstone is used automatically upon death, restoring its owner to life at $s1% health and mana.						
+18977	all		Frost			Time between attacks increased and slowed movement.					
+18978	all		Ice Totem								
+18979	all		Lightning		5% chance of dealing $18980s1 Nature damage on a successful melee attack.						
+18980	all		Lightning	Rank 1	Blasts the enemy for $s1 Nature damage.						
+18983	all		Heal on Kill		Heal yourself of $18984s1 damage when you kill a target.						
+18984	all		Heal on Kill	Rank 1	Heal yourself of $s1 damage.						
+18985	all		Resist Silence	Rank 1	Increases your resistance to silence by $s1%.						
+18986	all		Lunaclaw Spirit								
+18987	all		Create Relic Bundle		Place in the Darrowshire Town Square.						
+18988	all		Create Relic Bundle								
+18989	spellbook	777	Gray Kodo		Summons and dismisses a rideable Gray Kodo. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+18990	spellbook	777	Brown Kodo		Summons and dismisses a rideable Brown Kodo. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+18991	spellbook	777	Green Kodo		Summons and dismisses a rideable Green Kodo.   This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+18992	spellbook	777	Teal Kodo		Summons and dismisses a rideable Teal Kodo.   This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+18993	all		Ranshalla's Altar Trap								
+18994	all		Ranshalla - Bind Wildkin								
+18995	spellbook	713	Kodo Riding	Passive							
+18996	all		Kodo Riding		Allows the player to ride a kodo.						
+18997	all		Tirion Message to Isillien 002								
+19007	spellbook	189	Tamed Pet Passive (DND)								
+19027	all		Teleport: Moonglade								
+19028	spellbook	354	Soul Link		When active, $25228s2% of all damage taken by the caster is taken by your Imp, Voidwalker, Succubus, Felhunter, Felguard, or enslaved demon instead.  That damage cannot be prevented.  In addition, both the demon and master will inflict $25228s1% more damage.  Lasts as long as the demon is active and controlled.						
+19029	all		Create Coagulated Rot		Combine 7 pieces of Living Rot inside the mortar and grind away with the pestle. Leave standing to allow coagulation.						
+19030	all		Bear Form	Shapeshift	Shapeshifts into a bear for $d., increasing armor and hit points, as well as allowing the use of various bear abilities.	Shapeshifted into bear.\nArmor and hit points increased.					
+19031	all		Summon Human Skull								
+19032	all		Throw Human Skull								
+19033	all		Blighthound Call								
+19047	spellbook	165	Cured Rugged Hide								
+19048	spellbook	165	Heavy Scorpid Bracers								
+19049	spellbook	165	Wicked Leather Gauntlets								
+19050	spellbook	165	Green Dragonscale Breastplate								
+19051	spellbook	165	Heavy Scorpid Vest								
+19052	spellbook	165	Wicked Leather Bracers								
+19053	spellbook	165	Chimeric Gloves								
+19054	spellbook	165	Red Dragonscale Breastplate								
+19055	spellbook	165	Runic Leather Gauntlets								
+19057	all		Armor +40		Permanently increase the armor value of an item worn on the chest, legs, hands or feet by 40.  Only usable on items level 35 and above.						
+19058	spellbook	165	Rugged Armor Kit								
+19059	spellbook	165	Volcanic Leggings								
+19060	spellbook	165	Green Dragonscale Leggings								
+19061	spellbook	165	Living Shoulders								
+19062	spellbook	165	Ironfeather Shoulders								
+19063	spellbook	165	Chimeric Boots								
+19064	spellbook	165	Heavy Scorpid Gauntlets								
+19065	spellbook	165	Runic Leather Bracers								
+19066	spellbook	165	Frostsaber Boots								
+19067	spellbook	165	Stormshroud Pants								
+19068	spellbook	165	Warbear Harness								
+19069	all		Plant Magic Beans		Plant in bright beams of light.						
+19070	spellbook	165	Heavy Scorpid Belt								
+19071	spellbook	165	Wicked Leather Headband								
+19072	spellbook	165	Runic Leather Belt								
+19073	spellbook	165	Chimeric Leggings								
+19074	spellbook	165	Frostsaber Leggings								
+19075	spellbook	165	Heavy Scorpid Leggings								
+19076	spellbook	165	Volcanic Breastplate								
+19077	spellbook	165	Blue Dragonscale Breastplate								
+19078	spellbook	165	Living Leggings								
+19079	spellbook	165	Stormshroud Armor								
+19080	spellbook	165	Warbear Woolies								
+19081	spellbook	165	Chimeric Vest								
+19082	spellbook	165	Runic Leather Headband								
+19083	spellbook	165	Wicked Leather Pants								
+19084	spellbook	165	Devilsaur Gauntlets								
+19085	spellbook	165	Black Dragonscale Breastplate								
+19086	spellbook	165	Ironfeather Breastplate								
+19087	spellbook	165	Frostsaber Gloves								
+19088	spellbook	165	Heavy Scorpid Helm								
+19089	spellbook	165	Blue Dragonscale Shoulders								
+19090	spellbook	165	Stormshroud Shoulders								
+19091	spellbook	165	Runic Leather Pants								
+19092	spellbook	165	Wicked Leather Belt								
+19093	spellbook	165	Onyxia Scale Cloak								
+19094	spellbook	165	Black Dragonscale Shoulders								
+19095	spellbook	165	Living Breastplate								
+19096	all		Summon Conquered Soul								
+19097	spellbook	165	Devilsaur Leggings								
+19098	spellbook	165	Wicked Leather Armor								
+19099	all		Blizzard		Calls down a blizzard that lasts $d., inflicting $s1 Frost damage every $t1 sec. to all enemies in the nearby area.						
+19100	spellbook	165	Heavy Scorpid Shoulders								
+19101	spellbook	165	Volcanic Shoulders								
+19102	spellbook	165	Runic Leather Armor								
+19103	spellbook	165	Runic Leather Shoulders								
+19104	spellbook	165	Frostsaber Tunic								
+19105	all		MHTest01 Effect								
+19106	spellbook	165	Onyxia Scale Breastplate								
+19107	spellbook	165	Black Dragonscale Leggings								
+19108	all		MHTest02								
+19109	all		MHTest02 Effect								
+19127	all		Xabraxxis Demon Bag								
+19128	all		Knockdown		Inflicts $s2 damage to an enemy and its nearest allies, stunning them for $d. Affects up to $x1 targets.	Stunned.					
+19129	all		Massive Tremor		Causes a massive ground tremor, inflicting $s1 damage to nearby enemies and interrupts any spell being cast for $d..						
+19130	all		Revenge		Instantly counterattack an enemy for $s1 damage. Revenge must follow a block, dodge, or parry.						
+19131	all		Shield Charge		Charges an enemy, knocking it back and inflicting normal damage plus $s3.						
+19132	all		Mighty Blow		Inflicts normal damage plus $s1 to an enemy, knocking it back.						
+19133	all		Frost Shock		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+19134	all		Frightening Shout		Shouts at nearby enemies causing them to flee in fear for $d.	Feared.					
+19135	all		Avatar		Increases the Physical damage dealt by the caster by $s1% and enhances its armor by $s2% for $d.	Physical damage dealt is increased by $s1%.\nArmor increased by $s2%.					
+19136	all		Stormbolt		Inflicts $s1 damage to an enemy, stunning it for $d.	Stunned.					
+19137	all		Slow		Increases the time between nearby enemies' attacks by $s1% and slows their movement by $s2% for $d.	Movement speed reduced by $s2%.  Time between melee and ranged attacks increased by $s1%.  Casting time increased by $s1%.					
+19138	all		Summon Lunaclaw		Apply near a Moonkin Stone to bring forth the stone's defender, Lunaclaw.						
+19150	all		Musty Tome Trap								
+19151	spellbook	51	Humanoid Slaying	Rank 1	Increases all damage caused against Humanoid targets by $s1% and increases critical damage caused against Humanoid targets by an additional $s2%.						
+19152	spellbook	51	Humanoid Slaying	Rank 2	Increases all damage caused against Humanoid targets by $s1% and increases critical damage caused against Humanoid targets by an additional $s2%.						
+19153	spellbook	51	Humanoid Slaying	Rank 3	Increases all damage caused against Humanoid targets by $s1% and increases critical damage caused against Humanoid targets by an additional $s2%.						
+19155	all		Precision	Rank 5	Increases your chance to hit with melee weapons by $s1%.						
+19159	spellbook	51	Savage Strikes	Rank 1	Increases the critical strike chance of Raptor Strike and Mongoose Bite by $s1%.						
+19160	spellbook	51	Savage Strikes	Rank 2	Increases the critical strike chance of Raptor Strike and Mongoose Bite by $s1%.						
+19168	spellbook	51	Lightning Reflexes	Rank 1	Increases your Agility by $s1%.						
+19179	all		Bear Form	Shapeshift							
+19180	spellbook	51	Lightning Reflexes	Rank 2	Increases your Agility by $s1%.						
+19181	spellbook	51	Lightning Reflexes	Rank 3	Increases your Agility by $s1%.						
+19184	spellbook	51	Entrapment	Rank 1	Gives your Immolation Trap, Frost Trap, Explosive Trap, and Snake Trap a $h% chance to entrap the target, preventing them from moving for $19185d.						
+19185	spellbook	51	Entrapment			Immobile.					
+19194	all		Double Attack		Gives the caster $s1 extra $lattack:attacks;.						
+19195	all		Hate to 90%								
+19196	all		Surge		Charges an enemy, inflicting $s3 damage to the target and any of its nearby allies, as well as knocking them all back.						
+19199	all		Tea with Sugar		Restores $s1 health and mana.						
+19213	all		Pattern: Onyxia Scale Cloak		Teaches you how to craft an Onyxia Scale Cloak.						
+19223	all		Surge 2								
+19226	all		Zergling								
+19227	all		Zergling								
+19228	spellbook	51	Improved Wing Clip	Rank 1	Gives your Wing Clip ability a $h% chance to immobilize the target for $19229d.						
+19229	all		Improved Wing Clip			Immobilized.					
+19230	all		Panda								
+19231	all		Panda								
+19232	spellbook	51	Improved Wing Clip	Rank 2	Gives your Wing Clip ability a $h% chance to immobilize the target for $19229d.						
+19233	spellbook	51	Improved Wing Clip	Rank 3	Gives your Wing Clip ability a $h% chance to immobilize the target for $19229d.						
+19236	spellbook	792	Desperate Prayer	Rank 2	Instantly heals the caster for $s1.						
+19237	all		Smokey's Explosion								
+19238	spellbook	792	Desperate Prayer	Rank 3	Instantly heals the caster for $s1.						
+19239	spellbook	51	Clever Traps	Rank 1	Increases the duration of Freezing and Frost Trap effects by $s1%, the damage of Immolation and Explosive Trap effects by $s2%, and the number of snakes summoned from Snake Traps by $s2%.						
+19240	spellbook	792	Desperate Prayer	Rank 4	Instantly heals the caster for $s1.						
+19241	spellbook	792	Desperate Prayer	Rank 5	Instantly heals the caster for $s1.						
+19242	spellbook	792	Desperate Prayer	Rank 6	Instantly heals the caster for $s1.						
+19243	spellbook	792	Desperate Prayer	Rank 7	Instantly heals the caster for $s1.						
+19244	spellbook	189	Spell Lock	Rank 1	Silences the enemy for $24259d.  If used on a casting target, it will counter the enemy's spellcast, preventing any spell from that school of magic from being cast for $d.						
+19245	spellbook	51	Clever Traps	Rank 2	Increases the duration of Freezing and Frost Trap effects by $s1%, the damage of Immolation and Explosive Trap effects by $s2%, and the number of snakes summoned from Snake Traps by $s2%.						
+19249	all		Touch of Weakness	Rank 2		Physical damage done reduced by $s2.					
+19250	all		Placing Smokey's Explosives		Plants Smokey's Special Compound at a Mark of Detonation. KABOOM!						
+19251	all		Touch of Weakness	Rank 3		Physical damage done reduced by $s2.					
+19252	all		Touch of Weakness	Rank 4		Physical damage done reduced by $s2.					
+19253	all		Touch of Weakness	Rank 5		Physical damage done reduced by $s2.					
+19254	all		Touch of Weakness	Rank 6		Physical damage done reduced by $s2.					
+19255	spellbook	51	Survivalist	Rank 1	Increases total health by $s1%.						
+19256	spellbook	51	Survivalist	Rank 2	Increases total health by $s1%.						
+19257	spellbook	51	Survivalist	Rank 3	Increases total health by $s1%.						
+19258	spellbook	51	Survivalist	Rank 4	Increases total health by $s1%.						
+19259	spellbook	51	Survivalist	Rank 5	Increases total health by $s1%.						
+19260	all		Frost Blast		Blasts a target for $s1 Frost damage.						
+19261	spellbook	792	Touch of Weakness	Rank 2	The next melee attack against the caster will cause $19249s1 Shadow damage and reduce the damage caused by the attacker by $19249s2 for $19249d.	The next damaging melee attack against you will damage and weaken the target.					
+19262	spellbook	792	Touch of Weakness	Rank 3	The next melee attack against the caster will cause $19251s1 Shadow damage and reduce the damage caused by the attacker by $19251s2 for $19251d.	The next damaging melee attack against you will damage and weaken the target.					
+19263	spellbook	51	Deterrence		When activated, increases your Dodge and Parry chance by $s1% for $d.	Dodge and Parry chance increased by $s1%.					
+19264	spellbook	792	Touch of Weakness	Rank 4	The next melee attack against the caster will cause $19252s1 Shadow damage and reduce the damage caused by the attacker by $19252s2 for $19252d.	The next damaging melee attack against you will damage and weaken the target.					
+19265	spellbook	792	Touch of Weakness	Rank 5	The next melee attack on the caster will cause $19253s1 Shadow damage and reduce the damage caused by the attacker by $19253s2 for $19253d.	The next damaging melee attack against you will damage and weaken the target.					
+19266	spellbook	792	Touch of Weakness	Rank 6	The next melee attack on the caster will cause $19254s1 Shadow damage and reduce the damage caused by the attacker by $19254s2 for $19254d.	The next damaging melee attack against you will damage and weaken the target.					
+19267	all		Feedback	Rank 2							
+19268	all		Feedback	Rank 3							
+19269	all		Feedback	Rank 4							
+19270	all		Feedback	Rank 5							
+19271	spellbook	792	Feedback	Rank 2	The priest becomes surrounded with anti-magic energy.  Any successful spell cast against the priest will burn $19267s1 of the attacker's Mana, causing 1 Shadow damage for each point of Mana burned.  Lasts $d.	Anti-magic energy will burn $19267s1 of the attacker's Mana, causing 1 Shadow damage for each point of Mana burned.					
+19272	all		Lava Breath		Inflicts $s1 Fire damage to enemies in front of the caster.						
+19273	spellbook	792	Feedback	Rank 3	The priest becomes surrounded with anti-magic energy.  Any successful spell cast against the priest will burn $19268s1 of the attacker's Mana, causing 1 Shadow damage for each point of Mana burned.  Lasts $d.	Anti-magic energy will burn $19268s1 of the attacker's Mana, causing 1 Shadow damage for each point of Mana burned.					
+19274	spellbook	792	Feedback	Rank 4	The priest becomes surrounded with anti-magic energy.  Any successful spell cast against the priest will burn $19269s1 of the attacker's Mana, causing 1 Shadow damage for each point of Mana burned.  Lasts $d.	Anti-magic energy will burn $19269s1 of the attacker's Mana, causing 1 Shadow damage for each point of Mana burned.					
+19275	spellbook	792	Feedback	Rank 5	The priest becomes surrounded with anti-magic energy.  Any successful spell cast against the priest will burn $19270s1 of the attacker's Mana, causing 1 Shadow damage for each point of Mana burned.  Lasts $d.	Anti-magic energy will burn $19270s1 of the attacker's Mana, causing 1 Shadow damage for each point of Mana burned.					
+19276	spellbook	792	Devouring Plague	Rank 2	Afflicts the target with a disease that causes $o1 Shadow damage over $d.  Damage caused by the Devouring Plague heals the caster.	Causes $s1 damage every $t1 seconds, healing the caster.					
+19277	spellbook	792	Devouring Plague	Rank 3	Afflicts the target with a disease that causes $o1 Shadow damage over $d.  Damage caused by the Devouring Plague heals the caster.	Causes $s1 damage every $t1 seconds, healing the caster.					
+19278	spellbook	792	Devouring Plague	Rank 4	Afflicts the target with a disease that causes $o1 Shadow damage over $d.  Damage caused by the Devouring Plague heals the caster.	Causes $s1 damage every $t1 seconds, healing the caster.					
+19279	spellbook	792	Devouring Plague	Rank 5	Afflicts the target with a disease that causes $o1 Shadow damage over $d.  Damage caused by the Devouring Plague heals the caster.	Causes $s1 damage every $t1 seconds, healing the caster.					
+19280	spellbook	792	Devouring Plague	Rank 6	Afflicts the target with a disease that causes $o1 Shadow damage over $d.  Damage caused by the Devouring Plague heals the caster.	Causes $s1 damage every $t1 seconds, healing the caster.					
+19281	spellbook	792	Hex of Weakness	Rank 2	Weakens the target enemy, reducing damage caused by $s1 and reducing the effectiveness of any healing by $s2%.  Lasts $d.	Physical damage done reduced by $s1 and healing effectiveness reduced by $s2%.					
+19282	spellbook	792	Hex of Weakness	Rank 3	Weakens the target enemy, reducing damage caused by $s1 and reducing the effectiveness of any healing by $s2%.  Lasts $d.	Physical damage done reduced by $s1 and healing effectiveness reduced by $s2%.					
+19283	spellbook	792	Hex of Weakness	Rank 4	Weakens the target enemy, reducing damage caused by $s1 and reducing the effectiveness of any healing by $s2%.  Lasts $d.	Physical damage done reduced by $s1 and healing effectiveness reduced by $s2%.					
+19284	spellbook	792	Hex of Weakness	Rank 5	Weakens the target enemy, reducing damage caused by $s1 and reducing the effectiveness of any healing by $s2%.  Lasts $d.	Physical damage done reduced by $s1 and healing effectiveness reduced by $s2%.					
+19285	spellbook	792	Hex of Weakness	Rank 6	Weakens the target enemy, reducing damage caused by $s1 and reducing the effectiveness of any healing by $s2%.  Lasts $d.	Physical damage done reduced by $s1 and healing effectiveness reduced by $s2%.					
+19286	spellbook	51	Improved Feign Death	Rank 1	Reduces the chance your Feign Death ability will be resisted by $s1%.						
+19287	spellbook	51	Improved Feign Death	Rank 2	Reduces the chance your Feign Death ability will be resisted by $s1%.						
+19290	spellbook	51	Surefooted	Rank 1	Increases hit chance by $s3% and increases the chance movement impairing effects will be resisted by an additional $s1%.						
+19294	spellbook	51	Surefooted	Rank 2	Increases hit chance by $s3% and increases the chance movement impairing effects will be resisted by an additional $s1%.						
+19295	spellbook	51	Deflection	Rank 1	Increases your Parry chance by $s1%.						
+19296	spellbook	792	Starshards	Rank 2	Rains starshards down on the enemy target's head, causing $o1 Arcane damage over $d.	$o1 Arcane damage over $d.					
+19297	spellbook	51	Deflection	Rank 2	Increases your Parry chance by $s1%.						
+19298	spellbook	51	Deflection	Rank 3	Increases your Parry chance by $s1%.						
+19299	spellbook	792	Starshards	Rank 3	Rains starshards down on the enemy target's head, causing $o1 Arcane damage over $d.	$o1 Arcane damage over $d.					
+19300	spellbook	51	Deflection	Rank 5	Increases your Parry chance by $s1%.						
+19301	spellbook	51	Deflection	Rank 4	Increases your Parry chance by $s1%.						
+19302	spellbook	792	Starshards	Rank 4	Rains starshards down on the enemy target's head, causing $o1 Arcane damage over $d.	$o1 Arcane damage over $d.					
+19303	spellbook	792	Starshards	Rank 5	Rains starshards down on the enemy target's head, causing $o1 Arcane damage over $d.	$o1 Arcane damage over $d.					
+19304	spellbook	792	Starshards	Rank 6	Rains starshards down on the enemy target's head, causing $o1 Arcane damage over $d.	$o1 Arcane damage over $d.					
+19305	spellbook	792	Starshards	Rank 7	Rains starshards down on the enemy target's head, causing $o1 Arcane damage over $d.	$o1 Arcane damage over $d.					
+19306	spellbook	51	Counterattack	Rank 1	A strike that becomes active after parrying an opponent's attack.  This attack deals $s1 damage and immobilizes the target for $d.  Counterattack cannot be blocked, dodged, or parried.	Immobile.					
+19307	all		Crystal of Zin-Malor		Deals damage and drains $s1 mana every second if you are not worthy.	Periodic health and mana loss.					
+19308	spellbook	792	Shadowguard	Rank 2	The caster is surrounded by shadows.  When a spell, melee or ranged attack hits the caster, the attacker will be struck for $28378s1 Shadow damage.  Attackers can only be damaged once every few seconds.  This damage causes no threat.  $n charges.  Lasts $d.	Causes $s1 Shadow damage to attacker on hit.  This damage causes no threat.  $n charges.					
+19309	spellbook	792	Shadowguard	Rank 3	The caster is surrounded by shadows.  When a spell, melee or ranged attack hits the caster, the attacker will be struck for $28379s1 Shadow damage.  Attackers can only be damaged once every few seconds.  This damage causes no threat.  $n charges.  Lasts $d.	Causes $s1 Shadow damage to attacker on hit.  This damage causes no threat.  $n charges.					
+19310	spellbook	792	Shadowguard	Rank 4	The caster is surrounded by shadows.  When a spell, melee or ranged attack hits the caster, the attacker will be struck for $28380s1 Shadow damage.  Attackers can only be damaged once every few seconds.  This damage causes no threat.  $n charges.  Lasts $d.	Causes $s1 Shadow damage to attacker on hit.  This damage causes no threat.  $n charges.					
+19311	spellbook	792	Shadowguard	Rank 5	The caster is surrounded by shadows.  When a spell, melee or ranged attack hits the caster, the attacker will be struck for $28381s1 Shadow damage.  Attackers can only be damaged once every few seconds.  This damage causes no threat.  $n charges.  Lasts $d.	Causes $s1 Shadow damage to attacker on hit.  This damage causes no threat.  $n charges.					
+19312	spellbook	792	Shadowguard	Rank 6	The caster is surrounded by shadows.  When a spell, melee or ranged attack hits the caster, the attacker will be struck for $28382s1 Shadow damage.  Attackers can only be damaged once every few seconds.  This damage causes no threat.  $n charges.  Lasts $d.	Causes $s1 Shadow damage to attacker on hit.  This damage causes no threat.  $n charges.					
+19319	all		Vicious Bite		Bites an enemy, inflicting Physical damage.						
+19362	all		MHTest03								
+19363	spellbook	778	Summon Mechanical Yeti		Summons a mechanical yeti that will protect you for $d.						
+19364	all		Ground Stomp		Stomps the ground, stunning nearby enemies for $d.	Stunned.					
+19365	all		Ancient Dread		Reduces an enemy's casting speed by $s1% and increases the time between its attacks by $s2% for $d.	Casting speed reduced by $s1%.\nTime between attacks increased by $s2%.					
+19366	all		Cauterizing Flames		Reduces the Fire resistance of nearby enemies by $s1 for $d.	Fire resistance reduced by $s1.					
+19367	all		Withering Heat		Reduces an enemy's maximum health by $s1% for $d.	Maximum health reduced by $s1%.					
+19368	all		Summon Infected Mossflayer								
+19369	all		Ancient Despair		Disorients nearby enemies, causing them to stop attacking their targets and wander around for $d.	Disoriented.					
+19370	spellbook	51	Killer Instinct	Rank 1	Increases your critical strike chance with all attacks by $s1%.						
+19371	spellbook	51	Killer Instinct	Rank 2	Increases your critical strike chance with all attacks by $s1%.						
+19372	all		Ancient Hysteria		Reduces nearby enemies' Spirit by $s1% and their Intellect by $s2% for $d.	Spirit reduced by $s1%.\nIntellect reduced by $s2%.					
+19373	spellbook	51	Killer Instinct	Rank 3	Increases your critical strike chance with all attacks by $s1%.						
+19376	spellbook	51	Trap Mastery	Rank 1	Decreases the chance enemies will resist trap effects by $s1%.						
+19377	spellbook	51	Trap Mastery	Rank 2	Decreases the chance enemies will resist trap effects by $s1%.						
+19380	all		Beast Slaying 33		+$s1 Attack Power when fighting Beasts.						
+19381	spellbook	51	Melee Specialization	Rank 1	Increases the damage you deal with melee weapons by $s1%.						
+19382	spellbook	51	Melee Specialization	Rank 2	Increases the damage you deal with melee weapons by $s1%.						
+19383	spellbook	51	Melee Specialization	Rank 3	Increases the damage you deal with melee weapons by $s1%.						
+19384	spellbook	51	Melee Specialization	Rank 4	Increases the damage you deal with melee weapons by $s1%.						
+19385	spellbook	51	Melee Specialization	Rank 5	Increases the damage you deal with melee weapons by $s1%.						
+19386	spellbook	51	Wyvern Sting	Rank 1	A stinging shot that puts the target to sleep for $d.  Any damage will cancel the effect.  When the target wakes up, the Sting causes $24131o1 Nature damage over $24131d.  Only one Sting per Hunter can be active on the target at a time.	Asleep.					
+19387	spellbook	51	Entrapment	Rank 2	Gives your Immolation Trap, Frost Trap, Explosive Trap, and Snake Trap a $h% chance to entrap the target, preventing them from moving for $19185d.						
+19388	spellbook	51	Entrapment	Rank 3	Gives your Immolation Trap, Frost Trap, Explosive Trap, and Snake Trap a $h% chance to entrap the target, preventing them from moving for $19185d.						
+19391	all		Fireball		Inflicts Fire damage to an enemy.						
+19392	all		Summon Lava Spawn		Summons a lava spawn.						
+19393	all		Soul Burn		Inflicts $o1 Fire damage to an enemy over $d, preventing it from casting spells and reducing the Physical damage it deals by $s3%.	$o1 Fire damage inflicted over $d.\nPhysical damage dealt is decreased by $s3%.\nSilenced.					
+19394	all		Summon Gordunni chest (JUNK)								
+19395	all		Gordunni Trap								
+19396	all		Incinerate								
+19397	all		Incinerate			Fire damage taken is increased by $s1.					
+19407	spellbook	163	Improved Concussive Shot	Rank 1	Gives your Concussive Shot a $h% chance to stun the target for $19410d.						
+19408	all		Panic		Panics nearby enemies, causing them to flee in fear for $d.	Fleeing in fear.					
+19409	all		Bone Armor		When struck in combat has a 3% chance to encase the caster in bone, increasing armor by $18828s1 for $18828d.						
+19410	all		Improved Concussive Shot			Stunned.					
+19411	all		Lava Bomb		Throws a Lava Bomb at an enemy, inflicting $19428o1 Fire damage over $19428d.						
+19412	spellbook	163	Improved Concussive Shot	Rank 2	Gives your Concussive Shot a $h% chance to stun the target for $19410d.						
+19413	spellbook	163	Improved Concussive Shot	Rank 3	Gives your Concussive Shot a $h% chance to stun the target for $19410d.						
+19414	spellbook	163	Improved Concussive Shot	Rank 4	Gives your Concussive Shot a $h% chance to stun the target for $19410d.						
+19415	spellbook	163	Improved Concussive Shot	Rank 5	Gives your Concussive Shot a $h% chance to stun the target for $19410d.						
+19416	spellbook	163	Efficiency	Rank 1	Reduces the Mana cost of your Shots and Stings by $s1%.						
+19417	spellbook	163	Efficiency	Rank 2	Reduces the Mana cost of your Shots and Stings by $s1%.						
+19418	spellbook	163	Efficiency	Rank 3	Reduces the Mana cost of your Shots and Stings by $s1%.						
+19419	spellbook	163	Efficiency	Rank 4	Reduces the Mana cost of your Shots and Stings by $s1%.						
+19420	spellbook	163	Efficiency	Rank 5	Reduces the Mana cost of your Shots and Stings by $s1%.						
+19421	spellbook	163	Improved Hunter's Mark	Rank 1	Causes $s1% of your Hunter's Mark ability's base attack power to apply to melee attack power as well.						
+19422	spellbook	163	Improved Hunter's Mark	Rank 2	Causes $s1% of your Hunter's Mark ability's base attack power to apply to melee attack power as well.						
+19423	spellbook	163	Improved Hunter's Mark	Rank 3	Causes $s1% of your Hunter's Mark ability's base attack power to apply to melee attack power as well.						
+19424	spellbook	163	Improved Hunter's Mark	Rank 4	Causes $s1% of your Hunter's Mark ability's base attack power to apply to melee attack power as well.						
+19425	spellbook	163	Improved Hunter's Mark	Rank 5	Causes $s1% of your Hunter's Mark ability's base attack power to apply to melee attack power as well.						
+19426	spellbook	163	Lethal Shots	Rank 1	Increases your critical strike chance with ranged weapons by $s1%.						
+19427	spellbook	163	Lethal Shots	Rank 2	Increases your critical strike chance with ranged weapons by $s1%.						
+19428	all		Conflagration		$o1 Fire damage inflicted over $d to nearby enemies.	$o1 Fire damage inflicted over $d.					
+19429	spellbook	163	Lethal Shots	Rank 3	Increases your critical strike chance with ranged weapons by $s1%.						
+19430	spellbook	163	Lethal Shots	Rank 4	Increases your critical strike chance with ranged weapons by $s1%.						
+19431	spellbook	163	Lethal Shots	Rank 5	Increases your critical strike chance with ranged weapons by $s1%.						
+19433	all		Tamed Pet Passive (DND)								
+19434	spellbook	163	Aimed Shot	Rank 1	An aimed shot that increases ranged damage by $s1 and reduces healing done to that target by $s2%.  Lasts $d.	Healing effects reduced by $s2%.					
+19435	spellbook	197	Mooncloth Boots								
+19436	all		Lava Bomb Despawn								
+19437	all		Mooncloth Boots								
+19438	spellbook	204	Sacrifice	Rank 2	Sacrifices the Voidwalker, giving its owner a shield that will absorb $s1 damage for $d.  While the shield holds, spellcasting will not be interrupted by damage.	Absorbs all damage.					
+19439	all		Sacrifice	Rank 2							
+19440	spellbook	204	Sacrifice	Rank 3	Sacrifices the Voidwalker, giving its owner a shield that will absorb $s1 damage for $d.  While the shield holds, spellcasting will not be interrupted by damage.	Absorbs all damage.					
+19441	spellbook	204	Sacrifice	Rank 4	Sacrifices the Voidwalker, giving its owner a shield that will absorb $s1 damage for $d.  While the shield holds, spellcasting will not be interrupted by damage.	Absorbs all damage.					
+19442	spellbook	204	Sacrifice	Rank 5	Sacrifices the Voidwalker, giving its owner a shield that will absorb $s1 damage for $d.  While the shield holds, spellcasting will not be interrupted by damage.	Absorbs all damage.					
+19443	spellbook	204	Sacrifice	Rank 6	Sacrifices the Voidwalker, giving its owner a shield that will absorb $s1 damage for $d.  While the shield holds, spellcasting will not be interrupted by damage.	Absorbs all damage.					
+19444	all		Sacrifice	Rank 3							
+19445	all		Sacrifice	Rank 4							
+19446	all		Sacrifice	Rank 5							
+19447	all		Sacrifice	Rank 6							
+19448	all		Poison		Inflicts Nature damage to an enemy every $t1 sec. for $d.	Nature damage inflicted every $t1 sec.					
+19449	all		Magma Spit								
+19450	all		Magma Spit		Spews Fire damage at the target, dealing additional Fire damage every $t2 sec.	$s2 Fire damage inflicted every $t2 sec.					
+19451	all		Enrage		Decreases the time between your attacks by $s1% for $d.	Attack speed increased by $s1%.					
+19452	all		Toxic Spit		Inflicts Nature damage to an enemy.						
+19453	all		Hive'Zora Egg		Lays $s1 $lHive'Zora Egg:Hive'Zora Eggs;. A Hive'Zora Wasp will hatch from $lthe:each; egg.						
+19454	spellbook	163	Improved Arcane Shot	Rank 1	Reduces the cooldown of your Arcane Shot by $/1000;S1 sec.						
+19455	spellbook	163	Improved Arcane Shot	Rank 2	Reduces the cooldown of your Arcane Shot by $/1000;S1 sec.						
+19456	spellbook	163	Improved Arcane Shot	Rank 3	Reduces the cooldown of your Arcane Shot by $/1000;S1 sec.						
+19457	spellbook	163	Improved Arcane Shot	Rank 4	Reduces the cooldown of your Arcane Shot by $/1000;S1 sec.						
+19458	spellbook	163	Improved Arcane Shot	Rank 5	Reduces the cooldown of your Arcane Shot by $/1000;S1 sec.						
+19459	all		Hive'Zora Wasp								
+19460	all		Shadow Shock		Instantly lashes an enemy with dark magic, inflicting Shadow damage.						
+19461	spellbook	163	Barrage	Rank 1	Increases the damage done by your Multi-Shot and Volley spells by $s1%.						
+19462	spellbook	163	Barrage	Rank 2	Increases the damage done by your Multi-Shot and Volley spells by $s1%.						
+19463	all		Corrosive Acid Spit		Inflicts Nature damage to an enemy and reduces its armor for $d.	Reduced armor.					
+19464	spellbook	163	Improved Stings	Rank 1	Increases the damage done by your Serpent Sting and Wyvern Sting by $s1% and the mana drained by your Viper Sting by $s2%.  In addition, reduces the chance your Stings will be dispelled by $s3%.						
+19465	spellbook	163	Improved Stings	Rank 2	Increases the damage done by your Serpent Sting and Wyvern Sting by $s1% and the mana drained by your Viper Sting by $s2%.  In addition, reduces the chance your Stings will be dispelled by $s3%.						
+19466	spellbook	163	Improved Stings	Rank 3	Increases the damage done by your Serpent Sting and Wyvern Sting by $s1% and the mana drained by your Viper Sting by $s2%.  In addition, reduces the chance your Stings will be dispelled by $s3%.						
+19467	spellbook	163	Improved Stings	Rank 4	Increases the damage done by your Serpent Sting and Wyvern Sting by $s1% and the mana drained by your Viper Sting by $s2%.  In addition, reduces the chance your Stings will be dispelled by $s3%.						
+19468	spellbook	163	Improved Stings	Rank 5	Increases the damage done by your Serpent Sting and Wyvern Sting by $s1% and the mana drained by your Viper Sting by $s2%.  In addition, reduces the chance your Stings will be dispelled by $s3%.						
+19469	all		Poison Mind		Takes control of an enemy up to level $s1 and inflicts Nature damage every $t2 sec. for $d.	Charmed.\nNature damage inflicted every $t2 sec.					
+19470	all		Gem of the Serpent		Places gem in Naga statue.						
+19471	all		Berserker Charge		Charges at an enemy, knocking it back and inflicting normal damage plus $s3.						
+19472	all		Sinister Strike		Inflicts normal damage plus $s1 to an enemy.						
+19473	all		Naga Statue Spell								
+19474	all		Rain of Fire	Rank 1	Calls down a fiery rain to burn enemies in the area of effect for ${$42227m1*4} Fire damage over $19474d.	$42227s1 Fire damage every $42227t1 seconds.					
+19476	all		Dispel Magic	Rank 1	Dispels magic on the target, removing $s1 harmful $lspell:spells; from a friend or $s1 beneficial $lspell:spells; from an enemy.						
+19478	spellbook	189	Tainted Blood	Rank 1	Taints the Felhunter's blood for $d.  When the Felhunter is hit with a melee attack, the attacker will lose $19479s1 melee attack power for $19479d.  Stacks up to 5 times on a single target.	Drains $19479s1 melee attack power when hit.  Stacks up to 5 times.					
+19479	all		Tainted Blood Effect	Rank 1		Melee attack power reduced by $s1.					
+19480	spellbook	189	Paranoia		Greatly increases the stealth detection of all party members within $a1 yds of the Felhunter.	Greatly increases stealth detection.					
+19481	all		Paranoia								
+19482	all		War Stomp	Rank 1	Causes $s2 damage and stuns all enemies within $a1 yards for $d.	Stunned.					
+19483	spellbook	354	Immolation	Rank 1	Burns nearby enemies for $20153s1 fire damage every $t1 seconds.	Burns nearby enemies for $20153s1 fire damage every $t1 seconds.					
+19484	all		Majordomo Teleport Visual								
+19485	spellbook	163	Mortal Shots	Rank 1	Increases your ranged weapon critical strike damage bonus by $s1%.						
+19486	all		Improved Scorpid Sting			Stamina reduced by $s1.					
+19487	spellbook	163	Mortal Shots	Rank 2	Increases your ranged weapon critical strike damage bonus by $s1%.						
+19488	spellbook	163	Mortal Shots	Rank 3	Increases your ranged weapon critical strike damage bonus by $s1%.						
+19489	spellbook	163	Mortal Shots	Rank 4	Increases your ranged weapon critical strike damage bonus by $s1%.						
+19490	spellbook	163	Mortal Shots	Rank 5	Increases your ranged weapon critical strike damage bonus by $s1%.						
+19491	all		Improved Scorpid Sting	Rank 1	Reduces the Stamina of targets affected by your Scorpid Sting by 10% of the amount of Strength reduced.						
+19492	all		Antimagic Pulse		Dispels magic on nearby enemies, removing $s1 beneficial spell $leffect:effects;.						
+19493	all		Improved Scorpid Sting	Rank 2	Reduces the Stamina of targets affected by your Scorpid Sting by 20% of the amount of Strength reduced.						
+19494	all		Improved Scorpid Sting	Rank 3	Reduces the Stamina of targets affected by your Scorpid Sting by 30% of the amount of Strength reduced.						
+19496	all		Magma Shackles		Reduces the movement speed of nearby enemies by $s1% for $d.	Movement speed reduced by $s1%.					
+19497	all		Eruption		Deals $s1 Fire damage to all nearby enemies, knocking them back.						
+19498	spellbook	51	Hawk Eye	Rank 1	Increases the range of your ranged weapons by $s1 yards.						
+19499	spellbook	51	Hawk Eye	Rank 2	Increases the range of your ranged weapons by $s1 yards.						
+19500	spellbook	51	Hawk Eye	Rank 3	Increases the range of your ranged weapons by $s1 yards.						
+19501	all		Spiral Wave of Death								
+19502	all		Sickly Critter Aura								
+19503	spellbook	163	Scatter Shot		A short-range shot that deals $s1% weapon damage and disorients the target for $d.  Any damage caused will remove the effect.  Turns off your attack when used.	Disoriented.					
+19505	spellbook	189	Devour Magic	Rank 1	Purges $s1 harmful magic $leffect:effects; from a friend or $s1 beneficial magic $leffect:effects; from an enemy.  If an effect is devoured, the Felhunter will be healed for $19658s1.						
+19506	spellbook	163	Trueshot Aura	Rank 1	Increases the attack power of party and raid members within $a1 yards by $s1.  Lasts $d.	Increases attack power by $s1.					
+19507	spellbook	163	Ranged Weapon Specialization	Rank 1	Increases the damage you deal with ranged weapons by $s1%.						
+19508	spellbook	163	Ranged Weapon Specialization	Rank 2	Increases the damage you deal with ranged weapons by $s1%.						
+19509	spellbook	163	Ranged Weapon Specialization	Rank 3	Increases the damage you deal with ranged weapons by $s1%.						
+19510	spellbook	163	Ranged Weapon Specialization	Rank 4	Increases the damage you deal with ranged weapons by $s1%.						
+19511	spellbook	163	Ranged Weapon Specialization	Rank 5	Increases the damage you deal with ranged weapons by $s1%.						
+19512	all		Apply Salve		Cure a sickly animal afflicted by the taint of poisoning.						
+19513	all		Lightning Cloud		Creates a cloud of lightning that lasts $d., blasting all enemies in a selected area for $s1 Nature damage and inflicting $s2 additional damage every $t2 sec.						
+19514	all		Lightning Shield		Surrounds the caster with $n balls of lightning that have a $h% chance of striking melee or ranged attackers for Nature damage. Each time the lightning shield strikes, a ball of lightning dissipates. Thus, the shield expires after $d. or after it has struck $n times.	$h% chance of inflicting $s1 Nature damage on hit.					
+19515	all		Frenzy								
+19516	all		Frenzy		Increases the caster's attack speed.	Attack speed increased by $s1%.					
+19527	all		Majordomo Teleport								
+19548	all		Tame Ice Claw Bear		Begins taming an Ice Claw Bear to be your companion for 10 minutes.  If you lose the beast's attention for any reason, the taming process will fail.	Taming Ice Claw Bear.					
+19549	spellbook	50	Improved Aspect of the Monkey	Rank 1	Increases the Dodge bonus of your Aspect of the Monkey by $s1%.						
+19550	spellbook	50	Improved Aspect of the Monkey	Rank 2	Increases the Dodge bonus of your Aspect of the Monkey by $s1%.						
+19551	spellbook	50	Improved Aspect of the Monkey	Rank 3	Increases the Dodge bonus of your Aspect of the Monkey by $s1%.						
+19552	spellbook	50	Improved Aspect of the Hawk	Rank 1	While Aspect of the Hawk is active, all normal ranged attacks have a $s1% chance of increasing ranged attack speed by $s2% for $6150d.						
+19553	spellbook	50	Improved Aspect of the Hawk	Rank 2	While Aspect of the Hawk is active, all normal ranged attacks have a $s1% chance of increasing ranged attack speed by $s2% for $6150d.						
+19554	spellbook	50	Improved Aspect of the Hawk	Rank 3	While Aspect of the Hawk is active, all normal ranged attacks have a $s1% chance of increasing ranged attack speed by $s2% for $6150d.						
+19555	spellbook	50	Improved Aspect of the Hawk	Rank 4	While Aspect of the Hawk is active, all normal ranged attacks have a $s1% chance of increasing ranged attack speed by $s2% for $6150d.						
+19556	spellbook	50	Improved Aspect of the Hawk	Rank 5	While Aspect of the Hawk is active, all normal ranged attacks have a $s1% chance of increasing ranged attack speed by $s2% for $6150d.						
+19557	all		Improved Eyes of the Beast	Rank 1	Increases the duration of your Eyes of the Beast by $/1000;s1 sec.						
+19558	all		Improved Eyes of the Beast	Rank 2	Increases the duration of your Eyes of the Beast by $/1000;s1 sec.						
+19559	spellbook	50	Pathfinding	Rank 1	Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by $s1%.						
+19560	spellbook	50	Pathfinding	Rank 2	Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by $s1%.						
+19561	all		Summon Gnashjaw		Summons Gnashjaw.						
+19564	all		Draw Water Sample		Draw a sample of water from the waterfall at the mouth of the Cliffspring Falls cave .						
+19565	all		Draw Water Sample		Draw a sample of water from the pool of water at the top of Dreadmist Peak.						
+19566	all		Salt Shaker		Allows an experienced leatherworker to turn Deeprock Salt into Refined Deeprock Salt.  Use of the device exposes the user to sub-core micro radiation and should not be used more than once every few days.						
+19567	spellbook	202	Salt Shaker								
+19569	all		Split		The caster splits into an additional lava spawn.						
+19570	all		Split		Split into another Lava Spawn.						
+19571	all		Destroy Ghost Magnet								
+19572	spellbook	50	Improved Mend Pet	Rank 1	Reduces the mana cost of your Mend Pet spell by $s2% and gives the Mend Pet spell a $s1% chance of cleansing $24406s1 Curse, Disease, Magic or Poison effect from the pet each tick.						
+19573	spellbook	50	Improved Mend Pet	Rank 2	Reduces the mana cost of your Mend Pet spell by $s2% and gives the Mend Pet spell a $s1% chance of cleansing $24406s1 Curse, Disease, Magic or Poison effect from the pet each tick.						
+19574	spellbook	50	Bestial Wrath		Send your pet into a rage causing $s2% additional damage for $d.  While enraged, the beast does not feel pity or remorse or fear and it cannot be stopped unless killed.	Enraged.					
+19575	spellbook	50	Improved Revive Pet	Rank 2	Revive Pet's casting time is reduced by $/1000;s1 sec, mana cost is reduced by $s2%, and increases the health your pet returns with by an additional $s3%.						
+19577	spellbook	50,270	Intimidation		Command your pet to intimidate the target on the next successful melee attack, causing a high amount of threat and stunning the target for $24394d.	Intimidating.					
+19578	spellbook	50	Spirit Bond	Rank 1	While your pet is active, you and your pet will regenerate $19579s1% of total health every $19579t1 sec.						
+19579	spellbook	50	Spirit Bond	Rank 1	While your pet is active, you and your pet will regenerate $19579s1% of total health every $19579t1 sec.	Regenerate $s1% of total health every $t1 sec.					
+19580	all		DEPRECATED PET SCALING		If you see this, report this!	Base armor increased by $s1%.					
+19581	all		DEPRECATED PET SCALING		If you see this, report this!	Max Health increased by $s1%.					
+19582	all		DEPRECATED PET SCALING		If you see this, report this!	Speed increased by $s1%.					
+19583	spellbook	50	Endurance Training	Rank 1	Increases the Health of your pet by $s1% and your total health by $s2%.						
+19584	spellbook	50	Endurance Training	Rank 2	Increases the Health of your pet by $s1% and your total health by $s2%.						
+19585	spellbook	50	Endurance Training	Rank 3	Increases the Health of your pet by $s1% and your total health by $s2%.						
+19586	spellbook	50	Endurance Training	Rank 4	Increases the Health of your pet by $s1% and your total health by $s2%.						
+19587	spellbook	50	Endurance Training	Rank 5	Increases the Health of your pet by $s1% and your total health by $s2%.						
+19588	all		Place Ghost Magnet		Place between the Dead Goliaths in the Valley of Bones.						
+19589	all		DEPRECATED PET SCALING		If you see this, report this!	Focus regeneration increased by $s1%.					
+19590	spellbook	50	Bestial Discipline	Rank 1	Increases the Focus regeneration of your pets by $s1%.						
+19591	all		DEPRECATED PET SCALING		If you see this, report this!	Critical strike chance increased by $s1%.					
+19592	spellbook	50	Bestial Discipline	Rank 2	Increases the Focus regeneration of your pets by $s1%.						
+19593	all		Egg Explosion		Explode, hurting all nearby enemies for damage proportional to distance.						
+19594	all		Plague Effect								
+19595	all		Shadow and Frost Reflect		Reflect Shadow and Frost spells back at their caster	Shadow and Frost spells are reflected back at the caster					
+19596	spellbook	270	Bestial Swiftness		Increases the outdoor movement speed of your pets by $s1%.						
+19597	all		Tame Ice Claw Bear			Tamed.					
+19598	spellbook	50	Ferocity	Rank 1	Increases the critical strike chance of your pet by $s1%.						
+19599	spellbook	50	Ferocity	Rank 2	Increases the critical strike chance of your pet by $s1%.						
+19600	spellbook	50	Ferocity	Rank 3	Increases the critical strike chance of your pet by $s1%.						
+19601	spellbook	50	Ferocity	Rank 4	Increases the critical strike chance of your pet by $s1%.						
+19602	spellbook	50	Ferocity	Rank 5	Increases the critical strike chance of your pet by $s1%.						
+19603	all		Bestial Fury	Rank 1	Gives your pet a $s1% chance to gain $19604s1 Focus after getting a critical strike.						
+19604	all		Bestial Fury Effect								
+19605	all		Bestial Fury	Rank 2	Gives your pet a $s1% chance to gain $19604s1 Focus after getting a critical strike.						
+19606	all		Bestial Fury	Rank 3	Gives your pet a $s1% chance to gain $19604s1 Focus after getting a critical strike.						
+19607	all		Bestial Fury	Rank 4	Gives your pet a $s1% chance to gain $19604s1 Focus after getting a critical strike.						
+19608	all		Bestial Fury	Rank 5	Gives your pet a $s1% chance to gain $19604s1 Focus after getting a critical strike.						
+19609	spellbook	50	Thick Hide	Rank 1	Increases the armor rating of your pets by $s1% and your armor contribution from items by $s2%.						
+19610	spellbook	50	Thick Hide	Rank 2	Increases the armor rating of your pets by $s1% and your armor contribution from items by $s2%.						
+19612	spellbook	50	Thick Hide	Rank 3	Increases the armor rating of your pets by $s1% and your armor contribution from items by $s2%.						
+19614	all		Despawn Caster								
+19615	all		Frenzy Effect	Rank 1	Gives your pet a chance to gain a $19615s1% attack speed increase for $19615d after dealing a critical strike.	Attack speed increased by $s1%.					
+19616	spellbook	50	Unleashed Fury	Rank 1	Increases the damage done by your pets by $s1%.						
+19617	spellbook	50	Unleashed Fury	Rank 2	Increases the damage done by your pets by $s1%.						
+19618	spellbook	50	Unleashed Fury	Rank 3	Increases the damage done by your pets by $s1%.						
+19619	spellbook	50	Unleashed Fury	Rank 4	Increases the damage done by your pets by $s1%.						
+19620	spellbook	50	Unleashed Fury	Rank 5	Increases the damage done by your pets by $s1%.						
+19621	spellbook	50	Frenzy	Rank 1	Gives your pet a $s1% chance to gain a $19615s1% attack speed increase for $19615d after dealing a critical strike.						
+19622	spellbook	50	Frenzy	Rank 2	Gives your pet a $s1% chance to gain a $19615s1% attack speed increase for $19615d after dealing a critical strike.						
+19623	spellbook	50	Frenzy	Rank 3	Gives your pet a $s1% chance to gain a $19615s1% attack speed increase for $19615d after dealing a critical strike.						
+19624	spellbook	50	Frenzy	Rank 4	Gives your pet a $s1% chance to gain a $19615s1% attack speed increase for $19615d after dealing a critical strike.						
+19625	spellbook	50	Frenzy	Rank 5	Gives your pet a $s1% chance to gain a $19615s1% attack speed increase for $19615d after dealing a critical strike.						
+19626	all		Fire Shield								
+19627	all		Fire Shield		Inflicts $s1 Fire damage to nearby enemies.						
+19628	all		Flames		Inflicts $s1 Fire damage to nearby enemies.						
+19629	all		Summon Flames								
+19630	all		Cone of Fire		Inflicts $s1 Fire damage to enemies in a cone in front of the caster.						
+19631	all		Melt Armor		Reduces the armor of nearby enemies by $s1 for $d.	Armor reduced by $s1.					
+19632	all		Cleave		Inflicts normal damage plus $s1 to an enemy and its nearest allies, affecting up to $x1 targets.						
+19633	all		Knock Away		Inflicts normal damage plus $s1 to an enemy and knocks it back.						
+19634	all		Mana Rejuvenation		Restores $s1 mana every $t1 sec for $d.	Restores $s1 mana every $t1 seconds.					
+19635	all		Incite Flames		Reduces the Fire resistance of nearby enemies by $s1 for $d.	Fire resistance reduced by $s1.					
+19636	all		Fire Blossom		Causes flames to blossom from the caster, immobilizing it and periodically inflicting $19637s1 Fire damage to an enemy for $d.	Immobilized.\nPeriodically inflicting $19637s1 Fire damage to an enemy.					
+19637	all		Fire Blossom								
+19638	all		Prismstone		Increases all resistances by $s1 for $d.						
+19639	all		Pummel		Pummels an enemy and interrupts the spell being cast for $d.						
+19640	all		Pummel								
+19641	all		Pyroclast Barrage		Inflicts $o2 Fire damage to enemies in a cone in front of the caster, stunning them for $d.	Stunned.\n$o2 Fire damage inflicted over $d.					
+19642	all		Cleave		Inflicts normal damage plus $s1 to an enemy and its nearest allies, affecting up to $x1 targets.						
+19643	all		Mortal Strike		Inflicts $s1% weapon damage to an enemy and leaves it wounded, reducing the effectiveness of any healing by $s2% for $d.	Healing effects reduced by $s2%.					
+19644	all		Strike		Inflicts normal damage plus $s1 to an enemy.						
+19645	all		Anti-Magic Shield		Creates an anti-magic shell around the caster, giving it magic immunity for $d.	Immune to magic.					
+19646	all		Silver Skeleton Key		Allows opening of simple locks.  The skeleton key is consumed in the process.						
+19647	spellbook	189	Spell Lock	Rank 2	Silences the enemy for $24259d.  If used on a casting target, it will counter the enemy's spellcast, preventing any spell from that school of magic from being cast for $d.						
+19648	all		Spell Lock	Rank 1							
+19649	all		Golden Skeleton Key		Allows opening of standard locks.  The skeleton key is consumed in the process.						
+19650	all		Spell Lock	Rank 2							
+19651	all		Truesilver Skeleton Key		Allows opening of difficult locks.  The skeleton key is consumed in the process.						
+19652	all		Tainted Blood Effect	Rank 2		Melee attack power reduced by $s1.					
+19653	all		Tainted Blood Effect	Rank 3		Melee attack power reduced by $s1.					
+19654	all		Tainted Blood Effect	Rank 4		Melee attack power reduced by $s1.					
+19655	spellbook	189	Tainted Blood	Rank 2	Taints the Felhunter's blood for $d.  When the Felhunter is hit with a melee attack, the attacker will lose $19652s1 melee attack power for $19652d.  Stacks up to 5 times on a single target.	Drains $19652s1 melee attack power when hit.  Stacks up to 5 times.					
+19656	spellbook	189	Tainted Blood	Rank 3	Taints the Felhunter's blood for $d.  When the Felhunter is hit with a melee attack, the attacker will lose $19653s1 melee attack power for $19653d.  Stacks up to 5 times on a single target.	Drains $19653s1 melee attack power when hit.  Stacks up to 5 times.					
+19657	all		Arcanite Skeleton Key								
+19658	spellbook	189	Devour Magic Effect		Heals when an effect is dispelled.						
+19659	all		Ignite Mana		Burns $19665s1 mana from nearby enemies every $t1 sec. for $d. Each point of mana that is destroyed also damages the target from which it is consumed.	$19665s1 mana burned every $t1 sec.					
+19660	spellbook	189	Tainted Blood	Rank 4	Taints the Felhunter's blood for $d.  When the Felhunter is hit with a melee attack, the attacker will lose $19654s1 melee attack power for $19654d.  Stacks up to 5 times on a single target.	Drains $19654s1 melee attack power when hit.  Stacks up to 5 times.					
+19661	all		Tainted Blood	Rank 1							
+19662	all		Tainted Blood	Rank 2							
+19663	all		Tainted Blood	Rank 3							
+19664	all		Tainted Blood	Rank 4							
+19665	all		Ignite Mana								
+19666	spellbook	164	Silver Skeleton Key								
+19667	spellbook	164	Golden Skeleton Key								
+19668	spellbook	164	Truesilver Skeleton Key								
+19669	spellbook	164	Arcanite Skeleton Key		Allows opening of hard locks.  The skeleton key is consumed in the process.						
+19674	all		Tame Large Crag Boar		Begins taming a Large Crag Boar to be your companion for 10 minutes.  If you lose the beast's attention for any reason, the taming process will fail.	Taming Large Crag Boar.					
+19675	all		Feral Charge Effect		Causes you to charge an enemy, immobilizing and interrupting any spell being cast for $19675d.						
+19676	all		Tame Snow Leopard			Tamed.					
+19677	all		Tame Large Crag Boar			Tamed.					
+19678	all		Tame Adult Plainstrider			Tamed.					
+19679	all		Tame Prairie Stalker			Tamed.					
+19680	all		Tame Swoop			Tamed.					
+19681	all		Tame Dire Mottled Boar			Tamed.					
+19682	all		Tame Surf Crawler			Tamed.					
+19683	all		Tame Armored Scorpid			Tamed.					
+19684	all		Tame Webwood Lurker			Tamed.					
+19685	all		Tame Nightsaber Stalker			Tamed.					
+19686	all		Tame Strigid Screecher			Tamed.					
+19687	all		Tame Snow Leopard		Begins taming a Snow Leopard to be your companion for 10 minutes.  If you lose the beast's attention for any reason, the taming process will fail.	Taming Snow Leopard.					
+19688	all		Tame Adult Plainstrider		Begins taming an Adult Plainstrider to be your companion for 10 minutes.  If you lose the beast's attention for any reason, the taming process will fail.	Taming Adult Plainstrider.					
+19689	all		Tame Prairie Stalker		Begins taming a Prairie Stalker to be your companion for 10 minutes.  If you lose the beast's attention for any reason, the taming process will fail.	Taming Prairie Stalker.					
+19690	all		Scarlet Illusion		Use to disguise yourself as a member of the Scarlet Crusade.	Disguised as a member of the Scarlet Crusade.					
+19691	all		Beast Slaying 18		Attack Power increased by $s1 when fighting Beasts.						
+19692	all		Tame Swoop		Begins taming a Swoop to be your companion for 10 minutes.  If you lose the beast's attention for any reason, the taming process will fail.	Taming Swoop.					
+19693	all		Tame Webwood Lurker		Begins taming a Webwood Lurker to be your companion for 10 minutes.  If you lose the beast's attention for any reason, the taming process will fail.	Taming Webwood Lurker.					
+19694	all		Tame Dire Mottled Boar		Begins taming a Dire Mottled Boar to be your companion for 10 minutes.  If you lose the beast's attention for any reason, the taming process will fail.	Taming Dire Mottled Boar.					
+19695	all		Inferno		Surrounds the caster with an inferno that periodically inflicts Fire damage to nearby enemies for $d. While the caster is aflame, $ghe:she; cannot move or use $ghis:her; abilities.	Unable to move or use abilities.\nPeriodically inflicting Fire damage to nearby enemies.					
+19696	all		Tame Surf Crawler		Begins taming a Surf Crawler to be your companion for 10 minutes.  If you lose the beast's attention for any reason, the taming process will fail.	Taming Surf Crawler.					
+19697	all		Tame Armored Scorpid		Begins taming an Armored Scorpid to be your companion for 10 minutes.  If you lose the beast's attention for any reason, the taming process will fail.	Taming Armored Scorpid.					
+19698	all		Inferno		Channels the flames of the molten core to deal Fire damage to all nearby enemies. Damage increases the longer Inferno is channelled.						
+19699	all		Tame Nightsaber Stalker		Begins taming a Nightsaber Stalker to be your companion for 10 minutes.  If you lose the beast's attention for any reason, the taming process will fail.	Taming Nightsaber Stalker.					
+19700	all		Tame Strigid Screecher		Begins taming a Strigid Screecher to be your companion for 10 minutes.  If you lose the beast's attention for any reason, the taming process will fail.	Taming Strigid Screecher.					
+19701	all		Boulder		Hurls a boulder at an enemy, knocking it back and inflicting Physical damage.						
+19702	all		Impending Doom		Inflicts $s1 Shadow damage to nearby enemies after $t1 sec.	$s1 Shadow damage inflicted after $t1 sec.					
+19703	all		Lucifron's Curse		Curses nearby enemies, increasing the costs of their spells and abilities by $s1% for $d. This cost increase applies to all spells and abilities, whether they cost mana, rage, or energy.	Spell and ability costs are increased by $s1%.					
+19704	all		Summon Earth Elemental		Summons $s1 $lEarth Elemental:Earth Elementals; to accompany the caster until dismissed.						
+19705	all		Well Fed		Stamina and Spirit increased by $s1. Lasts $d.	Stamina and Spirit increased by $s1.					
+19706	all		Well Fed		Stamina and Spirit increased by $s1. Lasts $d.	Stamina and Spirit increased by $s1.					
+19707	all		Hate to 50%								
+19708	all		Well Fed		Stamina and Spirit increased by $s1. Lasts $d.	Stamina and Spirit increased by $s1.					
+19709	all		Well Fed		Stamina and Spirit increased by $s1. Lasts $d.	Stamina and Spirit increased by $s1.					
+19710	all		Well Fed		Stamina and Spirit increased by $s1. Lasts $d.	Stamina and Spirit increased by $s1.					
+19711	all		Well Fed		Stamina and Spirit increased by $s1. Lasts $d.	Stamina and Spirit increased by $s1.					
+19712	all		Arcane Explosion		Sends out a blast wave of magic, inflicting $s1 Arcane damage to nearby enemies.						
+19713	all		Shazzrah's Curse		Increases the magical damage taken by nearby enemies by $s1% for $d.	Magical damage taken is increased by $s1%.					
+19714	all		Magic Grounding		Reduces the magical damage taken by the caster by $s1% for $d.	Magical damage taken is reduced by $s1%.					
+19715	all		Counterspell		Counters the spellcasting of nearby enemies, preventing any spell from that school of magic from being cast for $d. Generates a high amount of threat.						
+19716	all		Gehennas' Curse		Reduces healing effects for nearby enemies by $s1% for $d.	Healing effects reduced by $s1%.					
+19717	all		Rain of Fire		Calls down a molten rain, burning all enemies in a selected area for $s1 Fire damage every $t1 sec. for $d.	$s1 Fire damage inflicted every $t1 sec.					
+19719	all		Use Bauble		Complete the aquatic time trial at the Shrine of Remulos.						
+19720	all		Combine Pendants		Combine with the Half Pendant of Aquatic Endurance to form the Pendant of the Sea Lion.						
+19721	all		Resurrect Trooper								
+19722	all		Summon Scarlet Trooper								
+19723	all		Advanced Target Dummy - Event 003		Drops a target dummy on the ground that attracts nearby monsters to attack it.  Lasts for 3 min.						
+19725	all		Turn Undead		Compels an undead enemy to flee for up to $d. Only one target can be turned at a time.	Compelled to flee.					
+19726	all		Resistance Aura		Increases the resistance of nearby group members to all schools of magic by $s1 for $d.	Magical resistance increased by $s1.					
+19727	all		Aquatic Miasma			Swim speed is reduced by $s1%.					
+19728	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting $s1 Shadow damage.						
+19729	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting $s1 Shadow damage.						
+19730	all		Strike		Strikes at an enemy, inflicting normal damage plus $s1.						
+19731	spellbook	189	Devour Magic	Rank 2	Purges $s1 harmful magic $leffect:effects; from a friend or $s1 beneficial magic $leffect:effects; from an enemy.  If an effect is devoured, the Felhunter will be healed for $19732s1.						
+19732	spellbook	189	Devour Magic Effect	Rank 2							
+19733	spellbook	189	Devour Magic Effect	Rank 3							
+19734	spellbook	189	Devour Magic	Rank 3	Purges $s1 harmful magic $leffect:effects; from a friend or $s1 beneficial magic $leffect:effects; from an enemy.  If an effect is devoured, the Felhunter will be healed for $19733s1.						
+19735	spellbook	189	Devour Magic Effect	Rank 4							
+19736	spellbook	189	Devour Magic	Rank 4	Purges $s1 harmful magic $leffect:effects; from a friend or $s1 beneficial magic $leffect:effects; from an enemy.  If an effect is devoured, the Felhunter will be healed for $19735s1.						
+19737	all		Devour Magic	Rank 2							
+19738	all		Devour Magic	Rank 3							
+19739	all		Devour Magic	Rank 4							
+19740	spellbook	184	Blessing of Might	Rank 1	Places a Blessing on the friendly target, increasing attack power by $s1 for $d.  Players may only have one Blessing on them per Paladin at any one time.	Increases attack power by $s1.					
+19742	spellbook	594	Blessing of Wisdom	Rank 1	Places a Blessing on the friendly target, restoring $s1 mana every 5 seconds for $d.  Players may only have one Blessing on them per Paladin at any one time.	Restores $s1 mana every 5 seconds.					
+19746	spellbook	594	Concentration Aura		Gives a $s1% chance of ignoring spell interruption when damaged to all party and raid members within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.	Gives a $s1% chance of ignoring spell interruption when damaged.					
+19749	all		Trooper Ping								
+19750	spellbook	594	Flash of Light	Rank 1	Heals a friendly target for $s1.						
+19752	spellbook	267	Divine Intervention		The paladin sacrifices $ghimself:herself; to remove the targeted party member from harms way.  Enemies will stop attacking the protected party member, who will be immune to all harmful attacks but cannot take any action for $19753d.	Complete immunity but unable to move.					
+19753	all		Divine Intervention		Sacrifices the caster to remove the targeted party member from harm's way.  Enemies will stop attacking the protected party member, who will be immune to all harmful attacks but will not be able to take any action for $19753d.	Complete immunity but unable to move.					
+19755	all		Frightalon		Lowers all attributes of target by $s1 for $d.	All stats lowered by $s1.					
+19767	all		Aynasha's Bow		Shoots at an enemy, inflicting Physical damage.						
+19768	all		Gizelton Caravan								
+19769	all		Thorium Grenade		Inflicts $s1 Fire damage and stuns targets for $d in a 3 yard radius.  Any damage will break the effect.	Stunned.  Any damage will break the effect.					
+19770	all		Gizelton Caravan								
+19771	all		Serrated Bite		Inflicts $o1 Physical damage to an enemy over $d.	$o1 damage inflicted over $d.					
+19772	spellbook	778	Lifelike Toad		Right Click to summon and dismiss your lifelike mechanical toad.						
+19773	all		Elemental Fire		Sears the soul of your bound subject, instantly forfeiting his life to empower you.						
+19774	all		Summon Ragnaros		Beckoned from his slumber deep beneath the molten core, Ragnaros, the Fire Lord, will be awakened.						
+19775	all		Dark Mending		Uses dark magic to heal an ally for $s1 damage.						
+19776	all		Shadow Word: Pain		Utters a word of darkness, inflicting Shadow damage to an enemy every $t1 sec. for $d.	Shadow damage inflicted every $t1 sec.					
+19777	all		Dark Strike		Consecrates the caster's weapon, inflicting $s1 additional damage on its next attack. All damage caused is considered Shadow damage.						
+19778	all		Demoralizing Shout		Reduces the melee and ranged attack power of nearby enemies by $s1 for $d.	Melee and ranged attack power reduced by $s1.					
+19779	all		Inspire		Increases the Physical damage dealt by an ally by $s2% and speeds its attacks by $s1% for $d.	Attack speed increased by $s1%.\nPhysical damage dealt is increased by $s2%.					
+19780	all		Hand of Ragnaros		Inflicts $s3 Fire damage to nearby enemies, knocking them back and stunning them for $d.	Stunned.					
+19781	all		Flame Spear		Tosses a spear of flame, inflicting $s1 Fire damage to an enemy, as well as scorching any other enemies in the vicinity of the target.						
+19784	all		Dark Iron Bomb		Inflicts $s1 Fire damage and stuns targets in a $a1 yard radius for $d.  Any damage will break the effect.	Stunned.  Any damage will break the effect.					
+19785	all		Throw		Throws a weapon at an enemy, inflicting $s1 damage.						
+19786	all		Resist Silence		Increases your resistance to silence effects by $s1%.						
+19787	all		Increased Armor 110		+$s1 Armor.						
+19788	spellbook	202	Dense Blasting Powder								
+19790	spellbook	202	Thorium Grenade								
+19791	spellbook	202	Thorium Widget								
+19792	spellbook	202	Thorium Rifle								
+19793	spellbook	202	Lifelike Mechanical Toad								
+19794	spellbook	202	Spellpower Goggles Xtreme Plus								
+19795	spellbook	202	Thorium Tube								
+19796	spellbook	202	Dark Iron Rifle								
+19797	all		Conjure Torch of Retribution								
+19798	all		Earthquake		Inflicts $s2 damage to nearby enemies.						
+19799	spellbook	202	Dark Iron Bomb								
+19800	spellbook	202	Thorium Shells								
+19801	spellbook	163	Tranquilizing Shot		Attempts to remove $s1 Frenzy effect from an enemy creature.						
+19802	all		Summon Arcanite Dragonling		The Arcanite Dragonling comes to life and defends you for $d.						
+19804	spellbook	202	Arcanite Dragonling		Activates your Arcanite Dragonling to fight for you for $d.						
+19805	all		Masterwork Target Dummy		Drops a target dummy on the ground that attracts nearby monsters to attack it. Lasts for 15 seconds or until killed.						
+19806	all		Injure Self								
+19808	all		Masterwork Target Dummy Effect								
+19809	all		Masterwork Target Dummy Passive		Causes nearby monsters to attack the caster.						
+19810	all		Injure Self on Spawn								
+19811	all		Annihilate								
+19812	all		Enrage		Decreases the time between your attacks by $s1% for $d.	Attack speed increased by $s1%.					
+19813	all		Knockback		Knocks away all targets in front of the caster.						
+19814	spellbook	202	Masterwork Target Dummy								
+19815	spellbook	202	Delicate Arcanite Converter								
+19816	all		Fireball		Inflicts Fire damage to an enemy.						
+19817	all		Double Attack		Gives the caster $s1 extra $lattack:attacks;.						
+19818	all		Double Attack		Gives the caster $s1 extra $lattack:attacks;.						
+19819	spellbook	202	Voice Amplification Modulator								
+19820	all		Mangle		Inflicts $s2 damage to an enemy every $t2 sec. and slows its movement by $s1% for $d.	Movement speed reduced by $s1%.\n$s2 Physical damage inflicted every $t2 sec.					
+19821	all		Arcane Bomb		Drains $s1 mana from those in the blast radius and does 50% of the mana drained in damage to the target.  Also Silences targets in the blast for $d.	Silenced.					
+19822	all		Play Dead			Feigning death.					
+19823	all		Fire Nova Visual								
+19824	all		Summon Blackwing Legionnaires								
+19825	spellbook	202	Master Engineer's Goggles								
+19826	all		Summon Blackwing Legionnaire								
+19827	all		Summon Blackwing Mage								
+19828	all		Summon Death Talon Dragonspawn								
+19829	all		Summon Guardian of Nefarian								
+19830	spellbook	202	Arcanite Dragonling								
+19831	spellbook	202	Arcane Bomb								
+19832	all		Possess			Possessed.					
+19833	spellbook	202	Flawless Arcanite Rifle								
+19834	spellbook	184	Blessing of Might	Rank 2	Places a Blessing on the friendly target, increasing attack power by $s1 for $d.  Players may only have one Blessing on them per Paladin at any one time.	Increases attack power by $s1.					
+19835	spellbook	184	Blessing of Might	Rank 3	Places a Blessing on the friendly target, increasing attack power by $s1 for $d.  Players may only have one Blessing on them per Paladin at any one time.	Increases attack power by $s1.					
+19836	spellbook	184	Blessing of Might	Rank 4	Places a Blessing on the friendly target, increasing attack power by $s1 for $d.  Players may only have one Blessing on them per Paladin at any one time.	Increases attack power by $s1.					
+19837	spellbook	184	Blessing of Might	Rank 5	Places a Blessing on the friendly target, increasing attack power by $s1 for $d.  Players may only have one Blessing on them per Paladin at any one time.	Increases attack power by $s1.					
+19838	spellbook	184	Blessing of Might	Rank 6	Places a Blessing on the friendly target, increasing attack power by $s1 for $d.  Players may only have one Blessing on them per Paladin at any one time.	Increases attack power by $s1.					
+19850	spellbook	594	Blessing of Wisdom	Rank 2	Places a Blessing on the friendly target, restoring $s1 mana every 5 seconds for $d.  Players may only have one Blessing on them per Paladin at any one time.	Restores $s1 mana every 5 seconds.					
+19852	spellbook	594	Blessing of Wisdom	Rank 3	Places a Blessing on the friendly target, restoring $s1 mana every 5 seconds for $d.  Players may only have one Blessing on them per Paladin at any one time.	Restores $s1 mana every 5 seconds.					
+19853	spellbook	594	Blessing of Wisdom	Rank 4	Places a Blessing on the friendly target, restoring $s1 mana every 5 seconds for $d.  Players may only have one Blessing on them per Paladin at any one time.	Restores $s1 mana every 5 seconds.					
+19854	spellbook	594	Blessing of Wisdom	Rank 5	Places a Blessing on the friendly target, restoring $s1 mana every 5 seconds for $d.  Players may only have one Blessing on them per Paladin at any one time.	Restores $s1 mana every 5 seconds.					
+19869	all		Dragon Orb								
+19870	spellbook	256	Improved Intimidating Shout	Rank 1	Increases the duration of your Intimidating Shout by $/1000;s1 sec.						
+19871	spellbook	256	Improved Intimidating Shout	Rank 2	Increases the duration of your Intimidating Shout by $/1000;s1 sec.						
+19872	all		Calm Dragonkin		Lulls a young dragon asleep for $d.	Asleep.					
+19873	all		Destroy Egg		Destroys a nearby egg.						
+19874	all		Lightning Bolt	Rank 1	Blasts a target for $s1 Nature damage.						
+19876	spellbook	267	Shadow Resistance Aura	Rank 1	Gives $s1 additional Shadow resistance to all party and raid members within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.	Increases Shadow resistance by $s1.					
+19878	spellbook	51	Track Demons		Shows the location of all nearby demons on the minimap.  Only one form of tracking can be active at a time.	Tracking Demons.					
+19879	spellbook	51	Track Dragonkin		Shows the location of all nearby dragonkin on the minimap.  Only one form of tracking can be active at a time.	Tracking Dragonkin.					
+19880	spellbook	51	Track Elementals		Shows the location of all nearby elementals on the minimap.  Only one form of tracking can be active at a time.	Tracking Elementals.					
+19881	all		Shoot (TEST)		Attack with an equipped wand.						
+19882	spellbook	51	Track Giants		Shows the location of all nearby giants on the minimap.  Only one form of tracking can be active at a time.	Tracking Giants.					
+19883	spellbook	51	Track Humanoids		Shows the location of all nearby humanoids on the minimap.  Only one form of tracking can be active at a time.	Tracking Humanoids.					
+19884	spellbook	51	Track Undead		Shows the location of all nearby undead on the minimap.  Only one form of tracking can be active at a time.	Tracking Undead.					
+19885	spellbook	51	Track Hidden		Greatly increases stealth detection and shows hidden units within detection range on the minimap.  Only one form of tracking can be active at a time.	Greatly increases stealth detection.					
+19886	all		Expert Cook		Teaches you how to be an Expert Cook, allowing a maximum of 225 cooking skill.						
+19887	all		Artisan Cook		Teaches you how to be an Artisan Cook, allowing a maximum of 300 cooking skill.						
+19888	spellbook	267	Frost Resistance Aura	Rank 1	Gives $s1 additional Frost resistance to all party and raid members within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.	Increases Frost resistance by $s1.					
+19889	all		Expert Fishing		Teaches you how to be an Expert Fisherman, allowing a maximum of 225 fishing skill.						
+19890	all		Artisan Fishing		Teaches you how to be an Artisan Fisherman, allowing a maximum of 300 fishing skill.						
+19891	spellbook	267	Fire Resistance Aura	Rank 1	Gives $s1 additional Fire resistance to all party and raid members within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.	Increases Fire resistance by $s1.					
+19895	spellbook	267	Shadow Resistance Aura	Rank 2	Gives $s1 additional Shadow resistance to all party and raid members within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.	Increases Shadow resistance by $s1.					
+19896	spellbook	267	Shadow Resistance Aura	Rank 3	Gives $s1 additional Shadow resistance to all party and raid members within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.	Increases Shadow resistance by $s1.					
+19897	spellbook	267	Frost Resistance Aura	Rank 2	Gives $s1 additional Frost resistance to all party and raid members within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.	Increases Frost resistance by $s1.					
+19898	spellbook	267	Frost Resistance Aura	Rank 3	Gives $s1 additional Frost resistance to all party and raid members within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.	Increases Frost resistance by $s1.					
+19899	spellbook	267	Fire Resistance Aura	Rank 2	Gives $s1 additional Fire resistance to all party and raid members within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.	Increases Fire resistance by $s1.					
+19900	spellbook	267	Fire Resistance Aura	Rank 3	Gives $s1 additional Fire resistance to all party and raid members within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.	Increases Fire resistance by $s1.					
+19901	spellbook	769	dmg7								
+19902	all		Artisan First Aid		Teaches you advanced first aid, allowing a maximum of 300 first aid skill.						
+19903	all		Expert First Aid		Teaches you how to be an expert in first aid, allowing a maximum of 225 first aid skill.						
+19927	all		Test Enchant Weapon Flame		Permanently enchant a melee weapon to often strike for $13897s1 additional fire damage.						
+19931	all		Mike's Test Spell		Permanently enchant boots to give +5 Stamina.						
+19932	all		QAEnchant Cloak +7 Fire Resistance	QASpell	Permanently enchant a cloak to give $13652s1 Fire Resistance.						
+19937	all		Illusion: Black Dragonkin		Use to disguise yourself as a member of the Black Dragonflight.	Disguised as a member of the Black Dragonflight.					
+19938	all		Awaken Peon		Wakes up a targeted sleeping peon.						
+19939	spellbook	594	Flash of Light	Rank 2	Heals a friendly target for $s1.						
+19940	spellbook	594	Flash of Light	Rank 3	Heals a friendly target for $s1.						
+19941	spellbook	594	Flash of Light	Rank 4	Heals a friendly target for $s1.						
+19942	spellbook	594	Flash of Light	Rank 5	Heals a friendly target for $s1.						
+19943	spellbook	594	Flash of Light	Rank 6	Heals a friendly target for $s1.						
+19951	all		Pacify Self								
+19952	all		Heal Ragnaros			$o1 damage healed over $d.					
+19953	all		Frenzy			Physical damage dealt is increased by $s1.\nAttack speed increased by $s2%.					
+19970	all		Entangling Roots	Rank 6	Roots the target in place and causes $o2 Nature damage over $d.  Damage caused may interrupt the effect.  Only useable outdoors.	Rooted.  Causes $s2 Nature damage every $t2 seconds.					
+19971	all		Entangling Roots	Rank 5	Roots the target in place and causes $o2 Nature damage over $d.  Damage caused may interrupt the effect.  Only useable outdoors.	Rooted.  Causes $s2 Nature damage every $t2 seconds.					
+19972	all		Entangling Roots	Rank 4	Roots the target in place and causes $o2 Nature damage over $d.  Damage caused may interrupt the effect.  Only useable outdoors.	Rooted.  Causes $s2 Nature damage every $t2 seconds.					
+19973	all		Entangling Roots	Rank 3	Roots the target in place and causes $o2 Nature damage over $d.  Damage caused may interrupt the effect.  Only useable outdoors.	Rooted.  Causes $s2 Nature damage every $t2 seconds.					
+19974	all		Entangling Roots	Rank 2	Roots the target in place and causes $o2 Nature damage over $d.  Damage caused may interrupt the effect.  Only useable outdoors.	Rooted.  Causes $s2 Nature damage every $t2 seconds.					
+19975	all		Entangling Roots	Rank 1	Roots the target in place and causes $o2 Nature damage over $d.  Damage caused may interrupt the effect.  Only useable outdoors.	Rooted.  Causes $s2 Nature damage every $t2 seconds.					
+19977	spellbook	594	Blessing of Light	Rank 1	Places a Blessing on the friendly target, increasing the effects of Holy Light spells used on the target by up to $s1 and the effects of Flash of Light spells used on the target by up to $s2.  Lasts $d.  Players may only have one Blessing on them per Paladin at any one time.	Receives up to $s1 extra healing from Holy Light spells, and up to $s2 extra healing from Flash of Light spells.					
+19978	spellbook	594	Blessing of Light	Rank 2	Places a Blessing on the friendly target, increasing the effects of Holy Light spells used on the target by up to $s1 and the effects of Flash of Light spells used on the target by up to $s2.  Lasts $d.  Players may only have one Blessing on them per Paladin at any one time.	Receives up to $s1 extra healing from Holy Light spells, and up to $s2 extra healing from Flash of Light spells.					
+19979	spellbook	594	Blessing of Light	Rank 3	Places a Blessing on the friendly target, increasing the effects of Holy Light spells used on the target by up to $s1 and the effects of Flash of Light spells used on the target by up to $s2.  Lasts $d.  Players may only have one Blessing on them per Paladin at any one time.	Receives up to $s1 extra healing from Holy Light spells, and up to $s2 extra healing from Flash of Light spells.					
+19983	all		Cleave		Inflicts normal damage plus $s1 to an enemy and its nearest allies, affecting up to $x1 targets.						
+19984	all		Superior Strength								
+19985	all		Superior Stamina								
+19986	all		Superior Spirit								
+19987	all		Superior Intellect								
+19988	all		Greater Stats								
+19989	all		Superior Agility								
+19990	all		Major Health								
+19991	all		Major Mana								
+19992	all		Greater Resistance								
+20000	all		Alexander's Test Periodic Aura		This is Alexander's Test Spell. Just ignore it for now. At the moment it lets you pretend to be a sky writer.	Some Description					
+20001	all		Mercutio Horse Dummy DND								
+20002	all		Intellect 15								
+20003	all		Spirit 15								
+20004	all		Life Steal		Reduces target health by $s1 and gives it to the caster.						
+20005	all		Chilled		Target's movement slowed by $s2% and time between attacks increased by $s1% for $d.	Movement slowed by $s2% and time between attacks increased by $s1%.					
+20006	all		Unholy Curse		Inflicts Shadow damage and reduces Physical damage done by $s1 for $d.	Physical damage done reduced by $s1.					
+20007	all		Holy Strength		Heal self for $s2 and Increases Strength by $s1 for $d.	Strength Increased by $s1.					
+20008	spellbook	333	Enchant Bracer - Greater Intellect		Permanently enchant bracers to increase Intellect by 7.						
+20009	spellbook	333	Enchant Bracer - Superior Spirit		Permanently enchant bracers to increase Spirit by 9.						
+20010	spellbook	333	Enchant Bracer - Superior Strength		Permanently enchant bracers to increase Strength by 9.						
+20011	spellbook	333	Enchant Bracer - Superior Stamina		Permanently enchant bracers to increase Stamina by 9.						
+20012	spellbook	333	Enchant Gloves - Greater Agility		Permanently enchant gloves to increase Agility by 7.						
+20013	spellbook	333	Enchant Gloves - Greater Strength		Permanently enchant gloves to increase Strength by 7.						
+20014	spellbook	333	Enchant Cloak - Greater Resistance		Permanently enchant a cloak to increase all resistances by 5.						
+20015	spellbook	333	Enchant Cloak - Superior Defense		Permanently enchant a cloak to increase armor by 70.						
+20016	spellbook	333	Enchant Shield - Superior Spirit		Permanently enchant a shield to give +9 Spirit.						
+20017	spellbook	333	Enchant Shield - Greater Stamina		Permanently enchant a shield to increase Stamina by 7.						
+20018	all		Create Healthstone (Major)		Creates a Major Healthstone that can be used to instantly restore $11732s1 health.\n\nConjured items disappear if logged out for more than 15 minutes.						
+20019	all		Engulfing Flames		Sets an enemy aflame, inflicting $o1 Fire damage over $d. and sending it into a state of panic. While the target is affected, the flames periodically scorch its nearby allies for $20021s1 damage as well.	You're burning!					
+20020	spellbook	333	Enchant Boots - Greater Stamina		Permanently enchant boots to increase Stamina by 7.						
+20021	all		Engulfing Flames								
+20022	all		Create Soulstone		Creates a Soulstone that is automatically used upon death, restoring its owner to life at $3026s1% health and mana.\n\nConjured items disappear if logged out for more than 15 minutes.						
+20023	spellbook	333	Enchant Boots - Greater Agility		Permanently enchant boots to increase Agility by 7.						
+20024	spellbook	333	Enchant Boots - Spirit		Permanently enchant boots to increase Spirit by 5.						
+20025	spellbook	333	Enchant Chest - Greater Stats		Permanently enchant chest armor to increase all stats by 4.						
+20026	spellbook	333	Enchant Chest - Major Health		Permanently enchant chest armor to increase health by 100.						
+20027	all		Immune Effect: Taunt								
+20028	spellbook	333	Enchant Chest - Major Mana		Permanently enchant chest armor to increase mana by 100.						
+20029	spellbook	333	Enchant Weapon - Icy Chill		Permanently enchant a melee weapon to sometimes chill the target, dealing $20005s2 frost damage and reducing their movement speed by $20005s2% and attack speed by $20005s1% for $20005d.						
+20030	spellbook	333	Enchant 2H Weapon - Superior Impact		Permanently enchant a two-handed melee weapon to increase its damage by 9.						
+20031	spellbook	333	Enchant Weapon - Superior Striking		Permanently enchant a melee weapon to increase its damage by 5.						

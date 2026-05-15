@@ -1,0 +1,1001 @@
+﻿spell_id	priority	skill_line_ids	name_en	rank_en	description_en	tooltip_en	name_zh	rank_zh	description_zh	tooltip_zh	notes
+83884	all		Strike		Strikes at an enemy, inflicting weapon damage plus additional damage.						
+83885	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+83886	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+83887	all		Scorpid Sting		Stings an enemy, reducing its Strength and Agility by $s1 for $d.	Strength and Agility reduced by $s1.					
+83888	all		Sunder Armor		Hacks at an enemy's armor, reducing it per Sunder Armor. Can be applied up to 5 times. Lasts $d.	Reduced armor.					
+83889	all		Shield Bash		Bashes an enemy with the caster's shield, inflicting Physical damage and interrupting the spell being cast.						
+83890	all		Lightning Bolt		Blasts an enemy with lightning, inflicting Nature damage.						
+83891	all		Mind Flay		Inflicts Shadow damage to an enemy and reduces its movement speed for $d.	Shadow damage inflicted over $d.\nReduced movement speed.					
+83892	all		Shadow Word: Pain		Utters a word of darkness, inflicting Shadow damage to an enemy every $t1 sec. for $d.	Shadow damage inflicted every $t1 sec.					
+83893	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+83894	all		Strike		Strikes at an enemy, inflicting weapon damage plus additional damage.						
+83895	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+83896	all		Flame Lash		Burns an enemy, then inflicts additional Fire damage every $t1 sec. for $d.	Fire damage inflicted every $t1 sec.					
+83897	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+83898	all		Aynasha's Bow		Shoots at an enemy, inflicting Physical damage.						
+83899	all		Poison		Inflicts Nature damage to an enemy every $t1 sec. for $d.	Nature damage inflicted every $t1 sec.					
+83900	all		Knockdown		Inflicts $s2 damage to an enemy and its nearest allies, stunning them for $d. Affects up to $x1 targets.	Stunned.					
+83901	all		Toxic Spit		Inflicts Nature damage to an enemy.						
+83902	all		Toxic Spit		Inflicts Nature damage to an enemy.						
+83903	all		Poison		Inflicts Nature damage to an enemy every $t1 sec. for $d.	Nature damage inflicted every $t1 sec.					
+83904	all		Poison		Inflicts Nature damage to an enemy every $t1 sec. for $d.	Nature damage inflicted every $t1 sec.					
+83905	all		Corrosive Acid Spit		Inflicts Nature damage to an enemy and reduces its armor for $d.	Reduced armor.					
+83906	all		Swoop		Inflicts normal damage plus $s1 to enemies in a cone in front of the caster, stunning them for $d.	Stunned.					
+83907	all		Poison Mind		Takes control of an enemy up to level $s1 and inflicts Nature damage every $t2 sec. for $d.	Charmed.\nNature damage inflicted every $t2 sec.					
+83908	all		Berserker Charge		Charges at an enemy, knocking it back and inflicting normal damage plus $s3.						
+83909	all		Venom Sting		Inflicts $s2 Nature damage to an enemy, then an additional $s1 damage every $t1 sec. for $d.	$s1 Nature damage inflicted every $t1 sec.					
+83910	all		Venom Sting		Inflicts $s2 Nature damage to an enemy, then an additional $s1 damage every $t1 sec. for $d.	$s1 Nature damage inflicted every $t1 sec.					
+83911	all		Venom Sting		Inflicts $s2 Nature damage to an enemy, then an additional $s1 damage every $t1 sec. for $d.	$s1 Nature damage inflicted every $t1 sec.					
+83912	all		Poison		Inflicts Nature damage to an enemy every $t1 sec. for $d.	Nature damage inflicted every $t1 sec.					
+83913	all		Poison		Inflicts Nature damage to an enemy every $t1 sec. for $d.	Nature damage inflicted every $t1 sec.					
+83914	all		Charge		Charges an enemy, inflicting normal damage plus $s2 and stuns the opponent for $d.	Stunned.					
+83915	all		Lightning Cloud		Creates a cloud of lightning that lasts $d., blasting all enemies in a selected area for $s1 Nature damage and inflicting $s2 additional damage every $t2 sec.						
+83916	all		Shock		Instantly throws a bolt of lightning at an enemy, inflicting Nature damage.						
+83917	all		Trample		Inflicts normal damage plus additional damage to nearby enemies.						
+83918	all		Earth Shock		Shocks an enemy with concussive force, inflicting Nature damage and interrupting the spell being cast for $d.						
+83919	all		Trample		Inflicts normal damage plus additional damage to nearby enemies.						
+83920	all		Knock Away		Inflicts normal damage plus $s1 to an enemy and knocks it back.						
+83921	all		Knockdown		Inflicts $s2 damage to an enemy, stunning it for $d.	Stunned.					
+83922	all		Crush Armor		Bash at an enemy's armor, reducing it by $s1 per Crush Armor. Can be applied up to 5 times. Lasts $d.	Reduced armor.					
+83923	all		Boulder		Hurls a boulder at an enemy, knocking it back and inflicting Physical damage.						
+83924	all		Earth Shock		Shocks an enemy with concussive force, inflicting Nature damage and interrupting the spell being cast for $d.						
+83925	all		Tunneler Acid		Eats away at an enemy's armor, reducing it by $s1 per application. Can be applied up to 5 times. Lasts $d.	Reduced armor.					
+83926	all		Acid Spit		Inflicts Nature damage to an enemy.						
+83927	all		Acid Spit		Inflicts Nature damage to an enemy.						
+83928	all		Concussion Blow		A brutal strike that deals weapon damage and stuns the opponent for $d.	Stunned.					
+83929	all		Fire Nova		Inflicts Fire damage to nearby enemies.						
+83930	all		Fire Blast		Inflicts Fire damage to an enemy.						
+83931	all		Regrowth		Heals an ally for a fixed amount, then heals additional damage every $t2 sec. for $d.	Damage healed every $t2 sec.					
+83932	all		Rejuvenation		Heals an ally every $t1 sec. for $d.	Damage healed every $t1 sec.					
+83933	all		Healing Touch		Calls upon Nature magic to heal an ally.						
+83934	all		Starfire		Causes $s1 Arcane damage to the target.						
+83935	all		Mind Blast		Inflicts Shadow damage to an enemy.						
+83936	all		Mana Burn		Hits an enemy with an anti-mana bolt. For each point of mana consumed by the bolt, the target takes $e1 damage.						
+83937	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+83938	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+83939	all		Multi-Shot		Fires a volley of missiles at an enemy and its nearby allies, striking up to $x1 targets for normal damage plus a bonus.						
+83940	all		Shadow Shot		Shoots an enemy, inflicting Shadow damage.						
+83941	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+83942	all		Boulder		Hurls a boulder at an enemy, inflicting Physical damage.						
+83943	all		Earth Shock		Shocks an enemy with concussive force, inflicting Nature damage and interrupting the spell being cast for $d.						
+83944	all		Fireball		Inflicts Fire damage to an enemy.						
+83945	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+83946	all		Frost Nova		Inflicts Frost damage to nearby enemies, immobilizing them for up to $d.	Immobilized.					
+83947	all		Chain Lightning		Strikes an enemy with a lightning bolt that arcs to another nearby enemy. The spell affects up to $x1 targets, inflicting greater Nature damage to each successive target.						
+83948	all		Fire Blast		Inflicts Fire damage to an enemy.						
+83949	all		Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+83950	all		Strike		Strikes at an enemy, inflicting increased melee damage.						
+83951	all		Trample		Inflicts normal damage plus additional damage to nearby enemies.						
+83952	all		Venom Spit		Spits poison at nearby enemies, inflicting Nature damage, then additional damage every $t2 sec. for $d.	Nature damage inflicted every $t2 sec.					
+83953	all		Strike		Strikes at an enemy, inflicting increased melee damage.						
+83954	all		Sonic Burst		Inflicts normal damage plus $s1 on nearby enemies, preventing them from spellcasting for $d.	Cannot cast spells.					
+83955	all		Throw		Throws a weapon at an enemy, inflicting Physical damage.						
+83956	all		Pummel		Pummels an enemy for $s1 damage and interrupts the spell being cast for $d.						
+83957	all		Throw		Throws a weapon at an enemy, inflicting Physical damage.						
+83958	all		Lightning Bolt		Blasts an enemy with lightning, inflicting Nature damage.						
+83959	all		Rejuvenation		Heals an ally every $t1 sec. for $d.	Damage healed every $t1 sec.					
+83960	all		Earth Shock		Shocks an enemy with concussive force, inflicting Nature damage and interrupting the spell being cast for $d.						
+83961	all		Fireball		Inflicts Fire damage to an enemy.						
+83962	all		Rain of Fire		Calls down a molten rain, burning all enemies in a selected area, dealing Fire damage every $t1 sec. for $d.	$s1 Fire damage inflicted every $t1 sec.					
+83963	all		Venom Sting		Inflicts $s2 Nature damage to an enemy, then an additional $s1 damage every $t1 sec. for $d.	$s1 Nature damage inflicted every $t1 sec.					
+83964	all		Maul		Adds $s1 damage to the next attack.						
+83965	all		Healing Touch		Calls upon Nature magic to heal an ally.						
+83966	all		Moonfire		Burns the enemy for Arcane damage and inflicts additional damage over $d.	Arcane damage inflicted every $t1 sec.					
+83967	all		Demoralizing Shout		Reduces the melee attack power of nearby enemies for $d.	Melee attack power reduced by $s1.					
+83968	all		Dark Plague		Inflicts Nature damage to an enemy, then an additional damage every $t2 sec. for $d.	$s2 Nature damage inflicted every $t2 sec.					
+83969	all		Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+83970	all		Knockdown		Inflicts $s2 damage to an enemy and its nearest allies, stunning them for $d. Affects up to $x1 targets.	Stunned.					
+83971	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+83972	all		Strike		Strikes at an enemy, inflicting weapon damage plus $s1.						
+83973	all		Kick		Kicks an enemy dealing damage, interrupting the spell being cast for $d.						
+83974	all		Holy Strike		Consecrates the caster's weapon, inflicting additional damage on its next attack. All damage inflicted is based on Holy magic.						
+83975	all		Exorcism		Inflicts Holy damage to an undead enemy.						
+83976	all		Holy Light		Calls upon Holy magic to heal an ally.						
+83977	all		Mind Blast		Inflicts Shadow damage to an enemy, but causes a high amount of threat.						
+83978	all		Shadow Word: Pain		Utters a word of darkness, inflicting Shadow damage to an enemy every $t1 sec. for $d.	Shadow damage inflicted every $t1 sec.					
+83979	all		Mind Flay		Inflicts Shadow damage to an enemy and reduces its movement speed for $d.	Shadow damage inflicted over $d.\nReduced movement speed.					
+83980	all		Cry of the Dead		Deals $s1 shadow damage to nearby enemies and interrupts spellcasting for $d.						
+83981	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+83982	all		Arcane Bolt		Hurls a magical bolt at an enemy, inflicting Arcane damage.						
+83983	all		Strike		Strikes at an enemy, inflicting weapon damage plus additional damage.						
+83984	all		Sunder Armor		Hacks at an enemy's armor, reducing it per Sunder Armor. Can be applied up to 5 times. Lasts $d.	Reduced armor.					
+83985	all		Kick		Kicks an enemy dealing damage, interrupting the spell being cast for $d.						
+83986	all		Arcane Bolt		Hurls a magical bolt at an enemy, inflicting Arcane damage.						
+83987	all		Arcane Explosion		Sends out a blast wave of magic, inflicting Arcane damage to nearby enemies.						
+83988	all		Rain of Fire		Calls down a molten rain, burning all enemies in a selected area for $s1 Fire damage every $t1 sec. for $d.	$s1 Fire damage inflicted every $t1 sec.					
+83989	all		War Stomp		Inflicts normal damage plus $s3 to nearby enemies, stunning them for $d.	Stunned.					
+83990	all		Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+83991	all		Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+83992	all		Strike		Strikes at an enemy, inflicting increased melee damage.						
+83993	all		Shadow Shock		Instantly lashes an enemy with dark magic, inflicting Shadow damage.						
+83994	all		Shadow Shield		Surrounds the caster with a shield woven of Shadow magic. The shield lasts $d., absorbs Physical or magical damage, and inflicts Shadow damage to melee attackers.	Shielded against Physical and magical damage.\nShadow damage inflicted to melee attackers.					
+83995	all		Cleave		Inflicts weapon damage plus additional damage to an enemy and its nearest allies, affecting up to $x1 targets and knocking them back.						
+83996	all		Entangling Roots		Entangles nearby enemies in roots, inflicting Nature damage every $t2 sec. and immobilizing them for up to $d.	Immobilized.\nNature damage inflicted every $t2 sec.					
+83997	all		Faerie Fire		Reduces an enemy's armor for $d. While affected, the target cannot use stealth or invisibility.	Armor reduced by $s1.\nCannot use stealth or invisibility.					
+83998	all		Rejuvenation		Heals an ally every $t1 sec. for $d.	Damage healed every $t1 sec.					
+83999	all		Faerie Fire		Reduces an enemy's armor for $d. While affected, the target cannot use stealth or invisibility.	Armor reduced by $s1.\nCannot use stealth or invisibility.					
+84000	all		Cleave		Inflicts weapon damage plus additional damage to an enemy and its nearest allies, affecting up to $x1 targets and knocking them back.						
+84001	all		Rejuvenation		Heals an ally every $t1 sec. for $d.	Damage healed every $t1 sec.					
+84002	all		Regrowth		Heals an ally for a fixed amount, then heals additional damage every $t2 sec. for $d.	Damage healed every $t2 sec.					
+84003	all		Entangling Roots		Entangles nearby enemies in roots, inflicting Nature damage every $t2 sec. and immobilizing them for up to $d.	Immobilized.\nNature damage inflicted every $t2 sec.					
+84004	all		Faerie Fire		Reduces an enemy's armor for $d. While affected, the target cannot use stealth or invisibility.	Armor reduced by $s1.\nCannot use stealth or invisibility.					
+84005	all		Corrosive Acid Breath		Shoots a cloud of acidic breath at enemies in a cone in front of the caster, reducing their armor and inflicting Nature damage every $t1 sec. for $d.	Reduced armor.\nNature damage inflicted every $t1 sec.					
+84006	all		Corrosive Acid Breath		Shoots a cloud of acidic breath at enemies in a cone in front of the caster, reducing their armor and inflicting Nature damage every $t1 sec. for $d.	Reduced armor.\nNature damage inflicted every $t1 sec.					
+84007	all		Corrosive Acid Breath		Shoots a cloud of acidic breath at enemies in a cone in front of the caster, reducing their armor and inflicting Nature damage every $t1 sec. for $d.	Reduced armor.\nNature damage inflicted every $t1 sec.					
+84008	all		Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+84009	all		Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+84010	all		Knock Away		Inflicts normal damage plus $s1 to an enemy and knocks it back.						
+84011	all		Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+84012	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84013	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+84014	all		Revenge		Instantly counterattack an enemy for $s1 damage. Revenge must follow a block, dodge, or parry.						
+84015	all		Revenge		Instantly counterattack an enemy for $s1 damage. Revenge must follow a block, dodge, or parry.						
+84016	all		Corrosive Venom Spit		Spits poison at an enemy, inflicting harm, reducing the target's armor, and causing additional Nature damage every $t2 sec. for $d.	Reduced armor.\nNature damage inflicted every $t2 sec.					
+84017	all		Lightning Breath		Breathes lightning at an enemy, inflicting Nature damage.						
+84018	all		Swoop		Inflicts normal damage plus $s1 to enemies in a cone in front of the caster, stunning them for $d.	Stunned.					
+84019	all		Lightning Breath		Breathes lightning at an enemy, inflicting Nature damage.						
+84020	all		Fatal Bite		Drains $s1 health from an enemy, healing the caster for up to twice that amount.						
+84021	all		Lightning Breath		Breathes lightning at an enemy, inflicting Nature damage.						
+84022	all		Static Conduit		Inflicts $s1 Nature damage to nearby enemies every $t1 sec. and increases the Nature damage they take by $s2 for $d.	$s1 Nature damage inflicted every $t1 sec.\nNature damage taken is increased by $s2.					
+84023	all		Entangling Roots		Entangles an enemy in roots, inflicting Nature damage every $t2 sec. and immobilizing it for up to $d.	Immobilized.\nNature damage inflicted every $t2 sec.					
+84024	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84025	all		Scorpid Sting		Stings an enemy, reducing its Strength and Agility by $s1 for $d.	Strength and Agility reduced by $s1.					
+84026	all		Snap Kick		Inflicts damage to an enemy, stunning it for $d.	Stunned.					
+84027	all		Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+84028	all		Thunderclap		Inflicts Nature damage to nearby enemies, increasing the time between their attacks by $s3% and slowing their movement speed for $d.	Time between attacks increased by $s3%.\nMovement speed reduced by $s2%.					
+84029	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84030	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84031	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84032	all		Scorpid Sting		Stings an enemy, reducing its Strength and Agility by $s1 for $d.	Strength and Agility reduced by $s1.					
+84033	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+84034	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84035	all		Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+84036	all		Flame Breath		Inflicts $s1 Fire damage to enemies in a cone in front of the caster.						
+84037	all		Vicious Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+84038	all		Fireball		Inflicts Fire damage to an enemy.						
+84039	all		Corrosive Acid Breath		Shoots a cloud of acidic breath at enemies in a cone in front of the caster, reducing their armor and inflicting Nature damage every $t1 sec. for $d.	Reduced armor.\nNature damage inflicted every $t1 sec.					
+84040	all		Strike		Strikes at an enemy, inflicting increased melee damage.						
+84041	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84042	all		Flamestrike		Calls down a pillar of flame, burning all enemies in a selected area and inflicting additional damage every $t2 sec. for $d.	Fire damage inflicted every $t2 sec.					
+84043	all		Flame Buffet		Inflicts $s1 Fire damage to an enemy and increases the Fire damage it takes by $s2 for $d.	Fire damage taken is increased by $s2.					
+84044	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84045	all		Frost Armor		Encases the caster in a layer of frost that lasts $d. The thick ice increases armor, slows melee attackers' movement, and increases the time between their attacks.	Armor increased by $s1.\nSlowing melee attackers' movement and attacks.					
+84046	all		Fireball		Inflicts Fire damage to an enemy.						
+84047	all		Fire Blast		Inflicts Fire damage to an enemy.						
+84048	all		Cone of Cold		Inflicts Frost damage to enemies in a cone in front of the caster, reducing their movement speed for $d.	Reduced movement speed.					
+84049	all		Shield Charge		Charges an enemy, knocking it back and inflicting normal damage plus $s3.	Stunned.					
+84050	all		Shield Bash		Bashes an enemy with the caster's shield, inflicting Physical damage and interrupting the spell being cast.						
+84051	all		Cleave		Inflicts normal damage plus $s1 to an enemy and its nearest allies, affecting up to $x1 targets.						
+84052	all		Strike		Inflicts normal damage plus $s1 to an enemy.						
+84053	all		Heroic Strike	Rank 8	A strong attack that increases melee damage by $s1 and causes a high amount of threat.						
+84054	all		Strike		Strikes at an enemy, inflicting increased melee damage.						
+84055	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84056	all		Cleave		Inflicts normal damage plus $s1 to an enemy and its nearest allies, affecting up to $x1 targets.						
+84057	all		Revenge		Instantly counterattack an enemy for $s1 damage. Revenge must follow a block, dodge, or parry.						
+84058	all		Fatal Bite		Drains health from an enemy, healing the caster for up to twice that amount.						
+84059	all		Fel Fireball		Inflicts Fire damage to an enemy.						
+84060	all		Demoralizing Shout		Reduces the melee attack power of nearby enemies for $d.	Melee attack power reduced.					
+84061	all		Rabies		Reduces the rate of an enemy's health regeneration by $s1%, in addition to lowering its Strength by $s2 and its Agility by $s3, for $d.	Health regeneration rate reduced by $s1%.\nStrength reduced by $s2.\nAgility reduced by $s3.					
+84062	all		Localized Toxin		Inflicts $s1 Nature damage to an enemy every $t1 sec. for $d.	$s1 Nature damage inflicted every $t1 sec.					
+84063	all		War Stomp		Inflicts normal damage plus $s3 to nearby enemies, knocking them back and stunning them for $d.	Stunned.					
+84064	all		Rend Flesh		Inflicts damage to an enemy every $t1 sec. for $d.	$s1 damage inflicted every $t1 sec.					
+84065	all		Rip		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+84066	all		Infected Bite		Inflicts Nature damage to an enemy every $t1 sec. and increases the Physical damage it takes for $d.	$s1 Nature damage inflicted every $t1 sec.\nPhysical damage taken is increased by $s2.					
+84067	all		Lightning Breath		Breathes lightning at an enemy, inflicting Nature damage.						
+84068	all		Acid Spit		Inflicts Nature damage to an enemy.						
+84069	all		Poison Bolt		Shoots poison at an enemy, inflicting Nature damage, then additional damage every $t2 sec. for $d.	Nature damage inflicted every $t2 sec.					
+84070	all		Poison Shock		Deals Nature damage to nearby enemies.						
+84071	all		Charge		Charges an enemy, inflicting normal damage plus $s2 and stuns the opponent for $d.	Stunned.					
+84072	all		Acidic Strike		Inflicts Nature damage to an enemy, reducing its armor by $s2% for $d.	Armor reduced by $s2%.					
+84073	all		War Stomp	Rank 1	Causes $s2 damage and stuns all enemies within $a1 yards for $d.	Stunned.					
+84074	all		Charge		Charges an enemy, inflicting normal damage plus a bonus.						
+84075	all		Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+84076	all		Strike		Strikes at an enemy, inflicting increased melee damage.						
+84077	all		Charge		Charges an enemy, inflicting normal damage plus a bonus.						
+84078	all		Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+84079	all		Strike		Strikes at an enemy, inflicting increased melee damage.						
+84080	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84081	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+84082	all		Jadefire		Surrounds the caster with searing magic for $d. The flames increase armor by $s2% and inflict $s1 damage to melee attackers.	Armor increased by $s2%.\n$s1 Fire damage inflicted to melee attackers.					
+84083	all		Immolate		Burns an enemy, then inflicts additional Fire damage every $t1 sec. for $d.	Fire damage inflicted every $t1 sec.					
+84084	all		Strike		Strikes at an enemy, inflicting normal damage plus a bonus.						
+84085	all		Swipe		A ferocious swipe that deals damage to the target and up to three nearby enemies.						
+84086	all		Hooked Net		Immobilizes an enemy for $d. and inflicts Physical damage.	Immobilized.					
+84087	all		Sunder Armor		Hacks at an enemy's armor, reducing it more per Sunder Armor. Can be applied up to 5 times. Lasts $d.	Reduced armor.					
+84088	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84089	all		Hooked Net		Immobilizes an enemy for $d. and inflicts Physical damage.	Immobilized.					
+84090	all		Sunder Armor		Hacks at an enemy's armor, reducing it more per Sunder Armor. Can be applied up to 5 times. Lasts $d.	Reduced armor.					
+84091	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84092	all		Hooked Net		Immobilizes an enemy for $d. and inflicts Physical damage.	Immobilized.					
+84093	all		Sunder Armor		Hacks at an enemy's armor, reducing it more per Sunder Armor. Can be applied up to 5 times. Lasts $d.	Reduced armor.					
+84094	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84095	all		Hooked Net		Immobilizes an enemy for $d. and inflicts Physical damage.	Immobilized.					
+84096	all		Hooked Net		Immobilizes an enemy for $d. and inflicts Physical damage.	Immobilized.					
+84097	all		Hooked Net		Immobilizes an enemy for $d. and inflicts Physical damage.	Immobilized.					
+84098	all		Flame Breath		Inflicts $s1 Fire damage to enemies in a cone in front of the caster.						
+84099	all		Flame Breath		Inflicts $s1 Fire damage to enemies in a cone in front of the caster.						
+84100	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84101	all		Strike		Strikes at an enemy, inflicting increased melee damage.						
+84102	all		Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+84103	all		Holy Smite		Smites an enemy, inflicting Holy damage.						
+84104	all		Entangling Roots		Entangles an enemy in roots, inflicting Nature damage every $t2 sec. and immobilizing it for up to $d.	Immobilized.\nNature damage inflicted every $t2 sec.					
+84105	all		Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+84106	all		Sunder Armor		Hacks at an enemy's armor, reducing it per Sunder Armor. Can be applied up to 5 times. Lasts $d.	Reduced armor.					
+84107	all		Demoralizing Roar		Reduces the melee attack power of nearby enemies for $d.	Melee attack power reduced by $s1.					
+84108	all		Vicious Bite		Bites an enemy, inflicting Physical damage.						
+84109	all		Strike		Strikes at an enemy, inflicting weapon damage plus additional damage.						
+84110	all		Leech Poison		Drains $s1 health from an enemy every $t1 sec. over $d., transferring it to the caster.	$s1 health leeched every $t1 sec.					
+84111	all		Acid Breath		Inflicts $s2 Nature damage and an additional $s1 damage every $t1 sec. to enemies in a cone in front of the caster. Lasts $d.	$s1 Nature damage inflicted every $t1 sec.					
+84112	all		Sinister Strike		Inflicts normal damage plus $s1 to an enemy.						
+84113	all		Gouge		Inflicts $s1 damage to an enemy and stuns it for up to $d. You will automatically stop attacking. Target must be facing you. Any damage received by the stunned target will revive it.	Incapacitated.					
+84114	all		Thorn Volley		Deals $s1 damage to nearby enemies, knocking them down for $d.	Stunned.					
+84115	all		Frost Shock		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+84116	all		Blast Wave		Unleashes a wave of flame, inflicting Fire damage to nearby enemies and reducing their movement speed for $d.	Reduced movement speed.					
+84117	all		Knock Away		Inflicts normal damage plus $s1 to an enemy and knocks it back.						
+84118	all		War Stomp		Inflicts normal damage plus $s3 to nearby enemies, stunning them for $d.	Stunned.					
+84119	all		Crowd Pummel	Rank 3	Pummels nearby enemies for normal damage plus $s1 and interrupts any spell being cast 75% of the time for $d.						
+84120	all		Deadly Poison		Inflicts $s1 Nature damage to an enemy every $t1 sec. for $d.	$s1 Nature damage inflicted every $t1 sec.					
+84121	all		Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+84122	all		Poison Bolt		Shoots poison at an enemy, inflicting Nature damage, then additional damage every $t2 sec. for $d.	Nature damage inflicted every $t2 sec.					
+84123	all		Poison Bolt		Shoots poison at an enemy, inflicting Nature damage, then additional damage every $t2 sec. for $d.	Nature damage inflicted every $t2 sec.					
+84124	all		Fatal Sting		Stings an enemy and inflicts additional Nature damage every $t2 sec. for $d. Caster must be very badly wounded in order to cast this spell.	Nature damage inflicted every $t2 sec.					
+84125	all		Trample		Inflicts normal damage plus additional damage to nearby enemies.						
+84126	all		Chain Lightning		Strikes an enemy with a lightning bolt that arcs to another nearby enemy. The spell affects up to $x1 targets, causing Nature damage to each.						
+84127	all		Fireball		Inflicts Fire damage to an enemy.						
+84128	all		Shadow Shock		Instantly lashes an enemy with dark magic, inflicting Shadow damage.						
+84129	all		Acid Splash		Inflicts Nature damage to nearby enemies every $t1 sec. for $d.	$s1 Nature damage inflicted every $t1 sec.					
+84130	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+84131	all		Unholy Frenzy		Increases an ally's attack speed by $s1% for $d., but also inflicts $s2 Nature damage to that ally every $t2 sec.	Attack speed increased by $s1%.\n$s2 Nature damage inflicted every $t2 sec.					
+84132	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+84133	all		Unholy Frenzy		Increases an ally's attack speed by $s1% for $d., but also inflicts $s2 Nature damage to that ally every $t2 sec.	Attack speed increased by $s1%.\n$s2 Nature damage inflicted every $t2 sec.					
+84134	all		Fool's Plight		Deals $s1 damage to the current target.						
+84135	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+84136	all		Shadow Word: Pain		Utters a word of darkness, inflicting Shadow damage to an enemy every $t1 sec. for $d.	Shadow damage inflicted every $t1 sec.					
+84137	all		Power Word: Shield		Wraps an ally in a shield that lasts up to $d., absorbing damage. While the shield holds, spell channeling will not be affected by damage taken.	Shielded against damage.					
+84138	all		Shadow Word: Pain		Utters a word of darkness, inflicting Shadow damage to an enemy every $t1 sec. for $d.	Shadow damage inflicted every $t1 sec.					
+84139	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+84140	all		Venom Sting		Inflicts $s2 Nature damage to an enemy, then an additional $s1 damage every $t1 sec. for $d.	$s1 Nature damage inflicted every $t1 sec.					
+84141	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84142	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84143	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84144	all		Sayge's Dark Fortune of Resistance			Increases all magical resistances by $s1.					
+84145	all		Charge		Charges an enemy, inflicting normal damage plus $s2 and stuns the opponent for $d.	Stunned.					
+84146	all		Charge		Charges an enemy, inflicting normal damage plus $s2 and stuns the opponent for $d.	Stunned.					
+84147	all		Shield Bash		Bashes an enemy with the caster's shield, inflicting Physical damage and interrupting the spell being cast.						
+84148	all		Shield Bash		Bashes an enemy with the caster's shield, inflicting Physical damage and interrupting the spell being cast.						
+84149	all		Cleave	Rank 3	A sweeping attack that does the Felguard's weapon damage plus $s1 to the target and his nearest ally.						
+84150	all		Snap Kick		Kicks an enemy for $s1 damage, interrupting the spell being cast for $d.	Silenced					
+84151	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84152	all		Snap Kick		Inflicts $s2 damage to an enemy, stunning it for $d.	Stunned.					
+84153	all		Knockdown		Inflicts $s2 damage to an enemy and its nearest allies, stunning them for $d. Affects up to $x1 targets.	Stunned.					
+84154	all		Knock Away		Inflicts normal damage plus $s1 to an enemy and knocks it back.						
+84155	all		Mind Flay		Inflicts Shadow damage to an enemy and reduces its movement speed for $d.	Shadow damage inflicted over $d.\nReduced movement speed.					
+84156	all		Shadow Word: Pain		Utters a word of darkness, inflicting Shadow damage to an enemy every $t1 sec. for $d.	Shadow damage inflicted every $t1 sec.					
+84157	all		Immolate		Burns an enemy, then inflicts additional Fire damage every $t1 sec. for $d.	Fire damage inflicted every $t1 sec.					
+84158	all		Fireball		Inflicts Fire damage to an enemy.						
+84159	all		Shadow Shock		Instantly lashes an enemy with dark magic, inflicting Shadow damage.						
+84160	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+84161	all		Frost Nova		Inflicts Frost damage to nearby enemies, immobilizing them for up to $d.	Immobilized.					
+84162	all		Chain Lightning		Strikes an enemy with a lightning bolt that arcs to another nearby enemy. The spell affects up to $x1 targets, inflicting greater Nature damage to each successive target.						
+84163	all		Fire Blast		Inflicts Fire damage to an enemy.						
+84164	all		Healing Touch		Calls upon Nature magic to heal an ally for $s1 damage.						
+84165	all		Shadow Word: Pain		Utters a word of darkness, inflicting Shadow damage to an enemy every $t1 sec. for $d.	Shadow damage inflicted every $t1 sec.					
+84166	all		Mind Flay		Inflicts Shadow damage to an enemy and reduces its movement speed for $d.	Shadow damage inflicted over $d.\nReduced movement speed.					
+84167	all		Chain Lightning		Strikes an enemy with a lightning bolt that arcs to another nearby enemy. The spell affects up to $x1 targets, inflicting greater Nature damage to each successive target.						
+84168	all		Fire Nova		Inflicts Fire damage to nearby enemies.						
+84169	all		Frost Nova		Inflicts Frost damage to nearby enemies, immobilizing them for up to $d.	Immobilized.					
+84170	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84171	all		Crusader Strike		Inflicts $s1 damage to an enemy and increases the Holy damage it takes by $s2 per Crusader Strike. Can be applied up to 5 times. Lasts $d.	Holy damage taken is increased.					
+84172	all		Holy Light		Calls upon Holy magic to heal an ally.						
+84173	all		Fireball		Inflicts Fire damage to an enemy.						
+84174	all		Sunder Armor		Hacks at an enemy's armor, reducing it more per Sunder Armor. Can be applied up to 5 times. Lasts $d.	Reduced armor.					
+84175	all		Charge		Charges an enemy, inflicting normal damage plus $s2 and stuns the opponent for $d.	Stunned.					
+84176	all		Mind Shatter								
+84177	all		Thunderclap		Inflicts Nature damage to nearby enemies, increasing the time between their attacks and slowing their movement for $d.	Time between attacks increased by $s3%.\nMovement speed reduced by $s2%.					
+84178	all		Flame Shock		Instantly burns an enemy, then inflicts additional Fire damage every $t2 sec. for $d.	Fire damage inflicted every $t2 sec.					
+84179	all		Healing Wave		Calls upon Nature magic to heal an ally.						
+84180	all		Mind Blast		Inflicts Shadow damage to an enemy, but causes a high amount of threat.						
+84181	all		Shadow Word: Pain		Utters a word of darkness, inflicting Shadow damage to an enemy every $t1 sec. for $d.	Shadow damage inflicted every $t1 sec.					
+84182	all		Flash Heal		Calls upon Holy magic to heal an ally.						
+84183	all		Throw		Throws a weapon at an enemy, inflicting Physical damage.						
+84184	all		Snap Kick		Inflicts $s2 damage to an enemy, stunning it for $d.	Stunned.					
+84185	all		Earth Shock		Shocks an enemy with concussive force, inflicting Nature damage and interrupting the spell being cast for $d.						
+84186	all		Knock Away		Inflicts normal damage plus $s1 to an enemy and knocks it back.						
+84187	all		Demoralizing Shout		Reduces the melee attack power of nearby enemies for $d.	Melee attack power reduced by $s1.					
+84188	all		Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+84189	all		Thunderclap		Inflicts Nature damage to nearby enemies, increasing the time between their attacks and slowing their movement for $d.	Time between attacks increased by $s3%.\nMovement speed reduced by $s2%.					
+84190	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84191	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84192	all		Fireball	Rank 9	Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.	$s2 Fire damage every $t2 seconds.					
+84193	all		Frostbolt	Rank 8	Launches a bolt of frost at the enemy, causing ${$m2*$<mult>} to ${$M2*$<mult>} Frost damage and slowing movement speed by $s1% for $d.	Movement slowed by $s1%.					
+84194	all		Charge		Charges an enemy, inflicting normal damage plus a bonus.						
+84195	all		Charge		Charges an enemy, inflicting normal damage plus $s2 and stuns the opponent for $d.	Stunned.					
+84196	all		Snap Kick		Inflicts $s2 damage to an enemy, stunning it for $d.	Stunned.					
+84197	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84198	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84199	all		Curse of Agony		Curses an enemy with agony, inflicting Shadow damage every $t1 sec. over $d.	Shadow damage inflicted every $t1 sec.					
+84200	all		Inner Fire	Rank 4	A burst of Holy energy fills the caster, increasing armor by $s1.  Each melee or ranged damage hit against the priest will remove one charge.  Lasts $d or until $n charges are used.	Increases armor by $s1.					
+84201	all		Holy Smite		Smites an enemy, inflicting Holy damage.						
+84202	all		Heal		Calls upon Holy magic to heal an ally.						
+84203	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+84204	all		Knockdown		Inflicts $s2 damage to an enemy, stunning it for $d.	Stunned.					
+84205	all		Shield Bash		Bashes an enemy with the caster's shield, inflicting Physical damage and interrupting the spell being cast.						
+84206	all		Heroic Strike		A strong attack that increases melee damage by $s1 and causes a high amount of threat.						
+84207	all		Sunder Armor		Hacks at an enemy's armor, reducing it per Sunder Armor. Can be applied up to 5 times. Lasts $d.	Reduced armor.					
+84208	all		Shield Bash		Bashes an enemy with the caster's shield, inflicting Physical damage and interrupting the spell being cast.						
+84209	all		Shield Bash		Bashes an enemy with the caster's shield, inflicting Physical damage and interrupting the spell being cast.						
+84210	all		Claw Grasp		Immobilizes an enemy and inflicts $o1 damage over $d.	Immobilized.\n$o1 damage inflicted over $d.					
+84211	all		Frost Armor		Encases the caster in a layer of frost that lasts $d. The thick ice increases armor, slows melee attackers' movement, and increases the time between their attacks.	Armor increased by $s1.\nSlowing melee attackers' movement and attacks.					
+84212	all		Fireball		Inflicts Fire damage to an enemy.						
+84213	all		Spear Throw		Throws a poisoned spear at an enemy, inflicting Physical damage plus an additional $s2 nature damage every $t2 seconds for $d.	$s2 damage inflicted every $t2 seconds.					
+84214	all		Bone Breaker		Stomps the ground, inflicting normal damage to nearby enemies and knocking them back.						
+84215	all		Shock		Instantly throws a bolt of lightning at an enemy, inflicting Nature damage.						
+84216	all		War Stomp		Inflicts normal damage plus $s3 to nearby enemies, knocking them back and stunning them for $d.	Stunned.					
+84217	all		Shield Bash		Bashes an enemy with the caster's shield, inflicting Physical damage and interrupting the spell being cast.						
+84218	all		Flame Breath		Inflicts $s1 Fire damage to enemies in a cone in front of the caster.						
+84219	all		Lightning Bolt		Blasts an enemy with lightning, inflicting Nature damage.						
+84220	all		Healing Wave		Calls upon Nature magic to heal an ally.						
+84221	all		Gore		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+84222	all		Toxic Fumes		Inflicts $s1 Nature damage to nearby enemies every $t1 sec. for $d.	$s1 Nature damage inflicted every $t1 sec.					
+84223	all		Backstab		Inflicts bonus damage to an enemy, but only if attacking from behind.						
+84224	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+84225	all		Strike		Strikes at an enemy, inflicting weapon damage plus additional damage.						
+84226	all		Hooked Net		Immobilizes an enemy for $d. and inflicts Physical damage.	Immobilized.					
+84227	all		Shield Bash		Bashes an enemy with the caster's shield, inflicting Physical damage and interrupting the spell being cast.						
+84228	all		Fireball		Inflicts Fire damage to an enemy.						
+84229	all		Fireball		Inflicts Fire damage to an enemy.						
+84230	all		Localized Toxin		Inflicts $s1 Nature damage to an enemy every $t1 sec. for $d.	$s1 Nature damage inflicted every $t1 sec.					
+84231	all		Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+84232	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+84233	all		Mind Freeze		Strike the target's mind with cold, dealing $m2 Frost Damage modified by attack power and interrupting spellcasting while also preventing any spell in that school from being cast for $d.						
+84234	all		Icy Touch		Deals $s1 Frost damage and reduces the target's ranged, melee attack, and casting speed by $s2% for $d.	Attack speed reduced by $s2%.					
+84235	all		Howling Blast		Blast the target with a frigid wind dealing $s2 Frost damage to all enemies within 10 yards.  Deals triple damage to Frozen targets.						
+84236	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+84237	all		Shadowflame		Targets in a cone in front of the caster take $47897s1 Shadow damage and an additional $47960o1 Fire damage over $47960d.						
+84238	all		Scourge Hook		Inflicts $s1 Physical damage and pulls the target to the caster.						
+84239	spellbook	197	Cloth Scavenging	Passive	You sometimes find additional cloth from most creatures.						
+84240	all		Reward: Beta One		Grants the Beta One participation rewards.						
+84241	all		Reward: Beta Two		Grants the Beta Two participation rewards.						
+84242	all		Reward: Beta Three		Grants the Beta Three participation rewards.						
+84243	spellbook	778	Beetah Beetle		Right Click to summon and dismiss Beetah Beetle.						
+84244	all				Teaches you how to summon this companion.						
+84245	all		Fishing Skill +35		Increased Fishing +$s1.						
+84246	spellbook	185	Springsocket Eel								
+84247	all		Poison Breath		Inflicts $s1 Nature damage to enemies in a cone in front of you.						
+84248	all		Eye Peck								
+84249	all		Sharpened Talons		A brutal strike that causes the target to bleed, taking additional damage over $d.	Taking $s2 additional damage every $t2 sec.					
+84250	all		Sticky Guano		Coats the target with Guano slowing its movement speed by $s1%.	Movemend speed decreased by $s1%.					
+84251	all		Feather Storm		Inflicts Fire damage to nearby enemies.						
+84252	all		Feather Storm								
+84253	all		Feather Storm								
+84254	all		Feather Storm								
+84255	all		Feather Storm								
+84256	all		Throw Dynamite		Inflicts $s1 Fire damage to all enemies in a selected area.						
+84257	all		Stomp		Stomps the ground, inflicting normal damage to nearby enemies and knocking them back.						
+84258	all		Rotten Banana Aroma		The scent is a mix between ghoul foot and a pig rump.	The scent is a mix between ghoul foot and a pig rump.					
+84259	all		Rotten Banana Toss								
+84260	all		Cannon Fire		Hurls a fiery ball that causes $s1 fire damage to the enemy.						
+84261	all		Overload			Damage done increased by $s1%.\r\nSpells cast are all instant.\r\n					
+84262	all		Overload			Damage done increased by $s1%.\nSpells cast are all instant.\nReduces max health by $23619s1% every second.\nDeals $*2;23478s1 damage to surrounding allies on death.					
+84263	all		Fan of Knives		Instantly throw both weapons at all targets within $a1 yards, causing $s1% weapon damage.						
+84264	all		Leech Poison		Drains $s1 health from surrounding enemies per sec, transferring it to the caster.	$s1 health leeched every $t1 sec.					
+84265	all		Determined Stab		Stabs an enemy, inflicting Physical damage.  This attack cannot be blocked, dodged, or parried.						
+84266	all		Backstab		Inflicts normal damage plus $s1 to an enemy, but only if attacking from behind.						
+84267	all		Wound Poison		Poisons the enemy, reducing all healing effects used on them by $s1 for $d.	Healing effects reduced by $s1.					
+84268	all		Gouge		Inflicts $s1 damage to an enemy and stuns it for up to $d. You will automatically stop attacking. Target must be facing you. Any damage received by the stunned target will revive it.	Incapacitated.					
+84269	all		Strike		Strikes at an enemy, inflicting normal damage plus $s1.						
+84270	all		Rushing Charge	Rank 1	Increases the caster's movement speed by $s1% for $d. and causes it to inflict an additional $s2 damage on its first attack.	Movement speed increased by $s1%.\nInflicts an additional $s2 damage on first attack.					
+84271	all		Eye Peck		Reduces chance to hit by $s1% for $d.	Reduces chance to hit by $s1%.					
+84272	all		Swoop		Inflicts normal damage plus $s1 to enemies in a cone in front of the caster, stunning them for $d.	Stunned.					
+84273	all		Heal		Calls upon Holy magic to heal an ally.						
+84274	all		Shield Bash		Inflicts normal damage plus $s1 to an enemy and knocks it back.						
+84275	all		Surgical Precision		Immune to fear effects.\nAll attacks do critical hits.\nArmor reduced by $s2%.	Immune to fear effects.\nAll attacks do critical hits.\nArmor reduced by $s2%.					
+84276	all		Dummy Trigger		Dummy Trigger						
+84277	all		Dummy Trigger		Dummy Trigger						
+84278	all		Dummy Trigger		Dummy Trigger						
+84279	all		Dummy Trigger		Dummy Trigger						
+84280	all		Dummy Trigger		Dummy Trigger						
+84281	all		Saber Defense		Assumes a defensive stance that reflects attacks when the warrior is hit. Lasts $d.						
+84282	all		Dummy Trigger		Dummy Trigger						
+84283	all		Poisoned Thrust		Deals weapon damage + $s1 and reduces the targets stats by $s2% for $d.	All statistics reduced by $s2%.					
+84284	all		Black Powder Shot		Unloads a shot of black powder in a cone, burning enemies for $o2 Fire damage over $d and reducing their movement speed by $s3%.	Deals $s2 damage every $t2 sec. and reduces movement speed by $s3%.					
+84285	all		Whirlwind		Attacks nearby enemies in a whirlwind of steel that inflicts normal damage plus $s1.						
+84286	all		Charge		Charges an enemy, inflicting normal damage plus $s2 and stuns the opponent for $d.	Stunned.					
+84287	all		Dummy Trigger		Dummy Trigger						
+84288	all		Hillsbrad Assault								
+84289	all		Hillsbrad Assault								
+84290	all		Experimental Parachute		A version of Tizzie's Experimental Parachute.	A version of Tizzie's Experimental Parachute.					
+84291	all		Engage Jetpack		Engaging Tizzie's Jetpack						
+84292	all		Rocket Pack			Allows the wearer to fly through the air. Inflicts damage and slows the attack and movement speeds of enemy units upon landing. Effects increase with flight time.					
+84293	all		Water Bubble		You are engulfed in a Bubble of Water which inflicts $s1 Frost damage every $t1 sec and slows movement speed by $s2% for $d.	Inflicts $s1 Frost damage every $t1 sec and slows movement speed by $s2%.					
+84294	all		Feed Trained Razorbeak		Feed the Razorbeak Treat to a Trained Razorbeak.						
+84295	all		Feed Snapjaw		Feed the Snapjaw Snack to a Snapjaw.						
+84296	all		Moonfire		Burns the enemy for Arcane damage.						
+84297	all		Burn Effigy		Hurl a Burning Torch at Rirrek's Effigy to set it ablaze.						
+84298	all		Moonkin Form		Call on the power of Elune and morph into a Moonkin.	Transformed					
+84300	all		Reduces Parry & Dodge 1		Reduces your chance to be dodged or parried by ${$m1/4}%.						
+84301	all		Increase Spell Dam 5		Increases damage and healing done by magical spells and effects by up to $s1.						
+84302	all		Glyph of Druidic Flight		Whenever you take a flight path from a Flight Master you will take on the form of a bird and fly along the route.						
+84303	all		Glyph of Druidic Flight		Whenever you take a flight path from a Flight Master you will take on the form of a bird and fly along the route.						
+84304	all		Flight Form		Flight paths are half cost.	Taking the form of a bird.					
+84305	all		Glyph of the Polar Bear		Changes the appearance of your bear and dire bear forms to that of a polar bear.						
+84306	all		Glyph of the Polar Bear		Changes the appearance of your bear and dire bear forms to that of a polar bear.						
+84307	all		Glyph of the Primal Bear		Changes the appearance of your bear and dire bear forms to that of a primal bear of olde.						
+84308	all		Glyph of the Primal Bear		Changes the appearance of your bear and dire bear forms to that of a primal bear of olde.						
+84309	all		Glyph of the Primal Cat		Changes the appearance of your cat form to that of a primal cat of olde.						
+84310	all		Glyph of the Primal Cat		Changes the appearance of your cat form to that of a primal cat of olde.						
+84311	all		Glyph of the Primal Forms		Changes the appearance of your bear, dire bear, and cat forms to that of primal appearances of olde.						
+84312	all		Glyph of the Primal Forms		Changes the appearance of your bear, dire bear, and cat forms to that of primal appearances of olde.						
+84313	all		Hearthstone		Returns you to $z.  Speak to an Innkeeper in a different place to change your home location.						
+84314	all		Glyph of Holy Retreat		Hearth with a Righteous Holy Visual.						
+84315	all		Glyph of Holy Retreat		Hearth with a Righteous Holy Visual.						
+84316	all		Hearthstone		Returns you to $z.  Speak to an Innkeeper in a different place to change your home location.						
+84317	all		Glyph of Darkened Retreat		Hearth with a Darkened Shadow Visual.						
+84318	all		Glyph of Darkened Retreat		Hearth with a Darkened Shadow Visual.						
+84319	all		Hearthstone		Returns you to $z.  Speak to an Innkeeper in a different place to change your home location.						
+84320	all		Glyph of Frozen Retreat		Hearth with a Frosty Visual.						
+84321	all		Glyph of Frozen Retreat		Hearth with a Frosty Visual.						
+84322	all		Hearthstone		Returns you to $z.  Speak to an Innkeeper in a different place to change your home location.						
+84323	all		Glyph of Flaming Retreat		Hearth with a Fiery Visual.						
+84324	all		Glyph of Flaming Retreat		Hearth with a Fiery Visual.						
+84325	all		Hearthstone		Returns you to $z.  Speak to an Innkeeper in a different place to change your home location.						
+84326	all		Glyph of Arcane Retreat		Hearth with a Magical Arcane Visual.						
+84327	all		Glyph of Arcane Retreat		Hearth with a Magical Arcane Visual.						
+84328	all		Hearthstone		Returns you to $z.  Speak to an Innkeeper in a different place to change your home location.						
+84329	all		Glyph of Bloody Retreat		Hearth with a Bloody Visual.						
+84330	all		Glyph of Bloody Retreat		Hearth with a Bloody Visual.						
+84331	all		Hearthstone		Returns you to $z.  Speak to an Innkeeper in a different place to change your home location.						
+84332	all		Glyph of Winter's Embrace		Casting Icy Veins now coats your body in an arctic chill.						
+84333	all		Glyph of Winter's Embrace		Casting Icy Veins now coats your body in an arctic chill.						
+84334	all		Winter's Embrace								
+84335	all		Glyph of Disguise		When you pickpocket an enemy you gain their appearance as a disguise for 5 minutes. Breaks on combat.						
+84336	all		Glyph of Disguise		When you pickpocket an enemy you gain their appearance as a disguise for 5 minutes. Breaks on combat.						
+84337	all		Disguise		Disguised as a creature of the world.	Disguised as a creature of the world.					
+84338	all		Increase Critical 1		Improves your chance to get a critical strike with melee and ranged attacks by $s1%.						
+84339	all		Increase Hit 2		Improves your chance to hit with melee and ranged attacks by $s1%.						
+84340	all		Increase Spell Dam 18		Increases damage and healing done by magical spells and effects by up to $s1.						
+84341	all		Increase Spell Dam Arcane 11		Increases damage done by Arcane spells and effects by up to $s1.						
+84342	all		Increase Dodge 1		Increases your chance to dodge an attack by $s1%.						
+84343	all		Increase Spell Dam Holy 30		Increases damage done by Holy spells and effects by up to $s1.						
+84344	all		Increase Spell Dam 12		Increases damage and healing done by magical spells and effects by up to $s1.						
+84345	all		Increase Spell Dam 8		Increases damage and healing done by magical spells and effects by up to $s1.						
+84346	all		Increase Hit 1		Improves your chance to hit with melee and ranged attacks by $s1%.						
+84347	all		Increase Healing 16		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84348	all		Increase Spell Hit 1		Improves your chance to hit with spells by $s1%.						
+84349	all		Increase Spell Dam Shadow 16		Increases damage done by Shadow spells and effects by up to $s1.						
+84350	all		Increase Spell Dam 10		Increases damage and healing done by magical spells and effects by up to $s1.						
+84351	all		Increase Spell Dam Shadow 12		Increases damage done by Shadow spells and effects by up to $s1.						
+84352	all		Increase Healing 15		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84353	all		Increase Spell Critical 1		Improves your chance to get a critical strike with spells by $s1%.						
+84354	all		Increase Spell Dam 22		Increases damage and healing done by magical spells and effects by up to $s1.						
+84355	all		Sulfuras Ward			Absorbing Fire damage.					
+84356	all		Purge By Fire		Hurls a powerful fireball at the target, dealing $s1 Fire damage and ignoring resistances. If the target is immune to the attack your fireball returns to revolve around you, absorbing $84355s1 Fire damage for $84355d.						
+84357	all		Primaevum Igne		Engulf the enemy in primeval fire, dealing $s1 Fire damage every second for $d.  This effect ignores all resistances and most immunities.	Suffering $s1 Fire damage every second.  This effect ignores all resistances and most immunities.					
+84358	all		Springvale's Blessing		Look upon the sheen of thy blessed metal, restoring $s1 health and granting $s2 Spirit for $d.	Spirit increased by $s2.					
+84359	all		Reduces Parry & Dodge 2		Reduces your chance to be dodged or parried by ${$m1/4}%.						
+84360	all		Increase Spell Critical 2		Improves your chance to get a critical strike with spells by $s1%.						
+84361	all		Increase Spell Dam 35		Increases damage and healing done by magical spells and effects by up to $s1.						
+84362	all		Soul Bag Proc		When you acquire a Soul Shard you have a $s1% chance to create an additional Soul Shard.						
+84363	all		Soul Bag Proc		When you acquire a Soul Shard you have a $s1% chance to create an additional Soul Shard.						
+84364	all		Soul Bag Proc		When you acquire a Soul Shard you have a $s1% chance to create an additional Soul Shard.						
+84365	all		Soul Bag Proc		When you acquire a Soul Shard you have a $s1% chance to create an additional Soul Shard.						
+84366	all		Soul Bag Proc		When you acquire a Soul Shard you have a $s1% chance to create an additional Soul Shard.						
+84367	all		Create Soul Shard		Creates a Soul Shard.						
+84368	all		Increase Healing 26		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84369	all		Increase Spell Dam 15		Increases damage and healing done by magical spells and effects by up to $s1.						
+84370	all		Increase Spell Dam Shadow 33		Increases damage done by Shadow spells and effects by up to $s1.						
+84371	all		Increase Spell Dam 13		Increases damage and healing done by magical spells and effects by up to $s1.						
+84372	all		Increase Spell Dam Fire 33		Increases damage done by Fire spells and effects by up to $s1.						
+84373	all		Increase Spell Dam Holy 24		Increases damage done by Holy spells and effects by up to $s1.						
+84374	all		Elixir of Iron Diplomacy								
+84375	all		Elixir of Iron Diplomacy		Increases reputation gained with the Thorium Brotherhood by $s1% for $d.	Increases reputation gained with the Thorium Brotherhood.					
+84376	all		Elixir of Valorous Diplomacy								
+84377	all		Elixir of Valorous Diplomacy		Increases reputation gained with Valor's Expedition by $s1% for $d.	Increases reputation gained with Valor's Expedition.					
+84378	all		Elixir of Whirling Wind								
+84379	all		Elixir of Whirling Wind		Prevents up to $s1 damage done by each physical or magical attack for $d. Guardian Elixir.	Prevents up to $s1 damage done by attacks. Guardian Elixir.					
+84380	all		Elixir of Woodland Diplomacy								
+84381	all		Elixir of Woodland Diplomacy		Increases reputation gained with Timbermaw Hold by $s1% for $d.	Increases reputation gained with Timbermaw Hold.					
+84382	all		Greater Catseye Elixir								
+84383	all		Greater Catseye Elixir		Increases your stealth detection for $d.	Increases stealth detection.					
+84384	all		Increase Spell Dam 38		Increases damage and healing done by magical spells and effects by up to $s1.						
+84385	spellbook	164	Bleakwood Hew								
+84386	spellbook	164	Dark Iron Belt								
+84387	all		Dark Iron 8pc		While you are in an area touched by the Firelord, your attack power and spell damage is increased by $s1.						
+84388	all		Dark Iron 8pc		While you are in an area touched by the Firelord, your attack power and spell damage is increased by $84387s1.						
+84389	all		Increase Defense 1		Increased Defense +$s1.						
+84390	all		Increase Spell Dam 21		Increases damage and healing done by magical spells and effects by up to $s1.						
+84391	all		Unholy Shield		Grants a bone shield that absorbs $s1 damage and increases your shadow resistance by $s2 for $d or until the shield breaks.	Absorbs damage.  Shadow Resistance increased by $s2.					
+84392	all		Increase Healing 49		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84393	all		Increase Spell Dam 16		Increases damage and healing done by magical spells and effects by up to $s1.						
+84394	spellbook	164	Blackfire								
+84395	all		Increase Healing 40		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84396	spellbook	165	Lava Boots								
+84397	spellbook	165	Lava Bracers								
+84398	spellbook	165	Lava Gauntlets								
+84399	all		Increase Dodge 2		Increases your chance to dodge an attack by $s1%.						
+84400	spellbook	165	Lava Helm								
+84401	spellbook	165	Lava Leggings								
+84402	spellbook	165	Lava Chestguard								
+84403	spellbook	171	Elixir of Iron Diplomacy								
+84404	spellbook	164	Black Blood Pendant								
+84405	all		Increase Spell Dam Fire 15		Increases damage done by Fire spells and effects by up to $s1.						
+84406	spellbook	164	Searing Grips								
+84407	all		Increase Spell Dam Shadow 20		Increases damage done by Shadow spells and effects by up to $s1.						
+84408	spellbook	333	Staff of the Cursed Seer								
+84409	spellbook	202	Lens of Kajal		This item binds to you upon being crafted.						
+84410	spellbook	165	Searing Mitts								
+84411	spellbook	197	Blood-Spattered Shirt								
+84412	all		Lava 8pc		While you are in an area touched by the Firelord, your attack power is increased by $s1.						
+84413	all		Lava 8pc		While you are in an area touched by the Firelord, your attack power is increased by $84412s1.						
+84414	all		Increase Healing 42		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84415	all		Increase Healing 45		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84416	all		Increase Spell Dam Holy 20		Increases damage done by Holy spells and effects by up to $s1.						
+84417	all		Increase Healing 7		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84418	all		Increase Healing 35		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84419	all		Increase Healing 43		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84420	all		Increase Spell Dam 2		Increases damage and healing done by magical spells and effects by up to $s1.						
+84421	all		Reduces Sharp Parry & Dodge 2		Reduces your chance to be dodged or parried with sharp weapons by ${$m1/4}%.						
+84422	all		Increase Spell Dam 19		Increases damage and healing done by magical spells and effects by up to $s1.						
+84423	spellbook	792	Mace Specialization	Racial Passive	Reduces your chance to be dodged or parried with Maces and Two-Handed Maces by ${$m1/4}%.						
+84424	spellbook	792	Sword Specialization	Racial Passive	Reduces your chance to be dodged or parried with Swords and Two-Handed Swords by ${$m1/4}%.						
+84425	spellbook	792	Wand Specialization	Racial Passive	Your chance to critically hit with Wands is increased by $s1%.						
+84426	spellbook	792	Dagger Specialization	Racial Passive	Reduces your chance to be dodged or parried with Daggers by ${$m1/4}%.						
+84427	spellbook	792	Thrown Weapon Specialization	Racial Passive	Your chance to critically hit with Thrown Weapons is increased by $s1%.						
+84428	spellbook	792	Gun Specialization	Racial Passive	Your chance to critically hit with Guns is increased by $s1%.						
+84429	all		Crossbow Specialization	Racial Passive	Your chance to critically hit with Crossbows is increased by $s1%.						
+84430	spellbook	792	Axe Specialization	Racial Passive	Reduces your chance to be dodged or parried with Axes and Two-Handed Axes by ${$m1/4}%.						
+84431	spellbook	792	Fist Weapon Specialization	Racial Passive	Reduces your chance to be dodged or parried with Fist Weapons by ${$m1/4}%.						
+84432	spellbook	792	Stave Specialization	Racial Passive	Reduces your chance to be dodged or parried with Staves by ${$m1/4}%.						
+84433	spellbook	792	Bow Specialization	Racial Passive	Your chance to critically hit with Bow Weapons is increased by $s1%.						
+84434	spellbook	792	Polearm Specialization	Racial Passive	Reduces your chance to be dodged or parried with Polearms by ${$m1/4}%.						
+84435	spellbook	792	Racial Knowledge: Human	Knowledge	Allows you to use abilities from the Human race.						
+84436	all		Racial Knowledge: Human	Rank 1	Allows you to use abilities from the Human race.						
+84437	all		Human Knowledge		Knows the racial abilities from the Human race.	Knows the racial abilities from the Human race.					
+84438	spellbook	792	Mountainous Spirit	Racial Passive	Spirit increased by $s1%.						
+84439	spellbook	792	Spirits of the Forest	Racial Passive	Spirit increased by $s1%.						
+84440	spellbook	792	Spirit of Invention	Racial Passive	Spirit increased by $s1%.						
+84441	spellbook	792	Thrall's Hope	Racial Passive	Spirit increased by $s1%.						
+84442	spellbook	792	Spirits of Lordaeron	Racial Passive	Spirit increased by $s1%.						
+84443	spellbook	792	Ancestry	Racial Passive	Spirit increased by $s1%.						
+84444	spellbook	792	Spirits Be With You	Racial Passive	Spirit increased by $s1%.						
+84445	spellbook	792	Seal of Vengeance	Paladin Racial	Fills the Paladin with holy power, granting each melee attack a chance to cause $31803o1 Holy damage over $31803d.  This effect can stack up to $31803u times.  Only one Seal can be active on the Paladin at any one time.  Lasts $d.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing $31804s1 Holy damage per application of Holy Vengeance.	Melee attacks have a chance to cause $31803o1 Holy damage over $31803d.					
+84446	spellbook	792	Racial Knowledge: Dwarf	Knowledge	Allows you to use abilities from the Dwarf race.						
+84447	all		Racial Knowledge: Dwarf	Rank 1	Allows you to use abilities from the Dwarf race.						
+84448	all		Dwarf Knowledge		Knows the racial abilities from the Dwarf race.	Knows the racial abilities from the Dwarf race.					
+84449	spellbook	792	Lineage of Arathor	Racial	While active, grants immunity to Bleed, Poison, and Disease effects. In addition, Armor increased by $65116s1%. Lasts $d.	Immune to Bleed, Poison, and Disease. Armor increased by $65116s1%.					
+84450	all		Lineage of Arathor	Racial	Removes all poison, disease and bleed effects and increases your armor by $s1% for $65116d.	Armor increased by $s1%.					
+84451	spellbook	792	Elune's Embrace	Racial	While active, grants immunity to Bleed, Poison, and Disease effects. In addition, Armor increased by $65116s1%. Lasts $d.	Immune to Bleed, Poison, and Disease. Armor increased by $65116s1%.					
+84452	all		Elune's Embrace	Racial	Removes all poison, disease and bleed effects and increases your armor by $s1% for $65116d.	Armor increased by $s1%.					
+84453	spellbook	792	Metalform	Racial	While active, grants immunity to Bleed, Poison, and Disease effects. In addition, Armor increased by $65116s1%. Lasts $d.	Immune to Bleed, Poison, and Disease. Armor increased by $65116s1%.					
+84454	all		Metalform	Racial	Removes all poison, disease and bleed effects and increases your armor by $s1% for $65116d.	Armor increased by $s1%.					
+84455	spellbook	792	Grommash's Will	Racial	While active, grants immunity to Bleed, Poison, and Disease effects. In addition, Armor increased by $65116s1%. Lasts $d.	Immune to Bleed, Poison, and Disease. Armor increased by $65116s1%.					
+84456	all		Grommash's Will	Racial	Removes all poison, disease and bleed effects and increases your armor by $s1% for $65116d.	Armor increased by $s1%.					
+84457	spellbook	792	Bwonsamdi's Voodoo	Racial	While active, grants immunity to Bleed, Poison, and Disease effects. In addition, Armor increased by $65116s1%. Lasts $d.	Immune to Bleed, Poison, and Disease. Armor increased by $65116s1%.					
+84458	all		Bwonsamdi's Voodoo	Racial	Removes all poison, disease and bleed effects and increases your armor by $s1% for $65116d.	Armor increased by $s1%.					
+84459	spellbook	792	Putridum	Racial	While active, grants immunity to Bleed, Poison, and Disease effects. In addition, Armor increased by $65116s1%. Lasts $d.	Immune to Bleed, Poison, and Disease. Armor increased by $65116s1%.					
+84460	all		Putridum	Racial	Removes all poison, disease and bleed effects and increases your armor by $s1% for $65116d.	Armor increased by $s1%.					
+84461	spellbook	792	Earthmother's Protection	Racial	While active, grants immunity to Bleed, Poison, and Disease effects. In addition, Armor increased by $65116s1%. Lasts $d.	Immune to Bleed, Poison, and Disease. Armor increased by $65116s1%.					
+84462	all		Earthmother's Protection	Racial	Removes all poison, disease and bleed effects and increases your armor by $s1% for $65116d.	Armor increased by $s1%.					
+84463	all		Judgement of the Mountain		Fills the Paladin with the might of thanes for $d, giving your attacks a chance based on weapon speed to gain Armor and increase the damage of Hammer of Wrath.\n\nUnleashing this Seal's energy will cause all nearby targets to take $s1 Holy damage per stack and increase the duration of Mountain's Might to $d until your next use of this Seal.						
+84464	all		Mountain's Might			Armor increased by $s1. Damage dealt by Hammer of Wrath increased by $s2%.					
+84465	spellbook	792	Seal of the Mountain	Paladin Racial	Fills the Paladin with the might of thanes for $d, giving your attacks a chance based on weapon speed to gain $84464s1 Armor and increase the damage of Hammer of Wrath by $84464s2% for $84464d. This effect stacks up to $84464u times.\n\nUnleashing this Seal's energy will cause all nearby targets to take $84463s1 Holy damage per stack and increase the duration of Mountain's Might to $84463d until your next use of this Seal.	Your attacks have a chance to increase your armor by $84464s1 and the damage dealt by Hammer of Wrath by $84464s2%. Stacks up to $84464u times.					
+84466	spellbook	594	Risen Warhorse		Summons and dismisses a rideable Risen Warhorse. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+84467	spellbook	594	Risen Charger		Summons and dismisses a rideable Risen Charger. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+84468	all		Medical Practice		Increases your Spirit by $s1% of your Intellect for $d.	Increases your Spirit by $s1% of your Intellect for $d.					
+84469	spellbook	792	Medical Practice		Increases your Spirit by $84468s1% of your Intellect for $84468d.	Increases your Spirit by $84468s1% of your Intellect for $84468d.					
+84470	spellbook	792	Racial Knowledge: Tauren	Knowledge	Allows you to use abilities from the Tauren race.						
+84471	all		Racial Knowledge: Tauren	Rank 1	Allows you to use abilities from the Tauren race.						
+84472	all		Tauren Knowledge		Knows the racial abilities from the Tauren race.	Knows the racial abilities from the Tauren race.					
+84473	spellbook	792	Endurance	Racial Passive	Total Health increased by $s1%.						
+84474	spellbook	792	Endurance	Racial Passive	Total Health increased by $s1%.						
+84475	spellbook	792	Endurance	Racial Passive	Total Health increased by $s1%.						
+84476	spellbook	792	Endurance	Racial Passive	Total Health increased by $s1%.						
+84477	spellbook	792	Endurance	Racial Passive	Total Health increased by $s1%.						
+84478	spellbook	792	Endurance	Racial Passive	Total Health increased by $s1%.						
+84479	spellbook	792	Endurance	Racial Passive	Total Health increased by $s1%.						
+84480	spellbook	792	Earthen Stomp	Racial	Stuns up to $i enemies within $a1 yds for $d.	Stunned.					
+84481	spellbook	792	Graceful Sweep	Racial	Stuns up to $i enemies within $a1 yds for $d.	Stunned.					
+84482	spellbook	792	Crafty Bomb	Racial	Stuns up to $i enemies within $a1 yds for $d.	Stunned.					
+84483	spellbook	792	Warchief Stomp	Racial	Stuns up to $i enemies within $a1 yds for $d.	Stunned.					
+84484	spellbook	792	Fungal Burst	Racial	Stuns up to $i enemies within $a1 yds for $d.	Stunned.					
+84485	spellbook	792	Righteous Stomp	Racial	Stuns up to $i enemies within $a1 yds for $d.	Stunned.					
+84486	spellbook	792	Voodoo Shuffle	Racial	Stuns up to $i enemies within $a1 yds for $d.	Stunned.					
+84487	spellbook	792	An'she's Protection	Priest Racial	Increases your resistance to all schools of magic by an amount equal to your level. Lasts $d.	All resistances increased by $s1.					
+84488	all		Radiance		Causing $s1 damage.						
+84489	spellbook	792	Radiance	Rank 1 Priest Racial	Causes the target to emit harmful rays of light, dealing $84488s1 Holy damage to the target and ${$84488m1*2} Holy damage to up to ${$84488i-1} enemies around the target every $t sec. for $d.	Taking $84488s1 damage and dealing ${$84488m1*2} damage to up to ${$84488i-1} nearby allies every $t sec.					
+84490	all		Radiance		Causing $s1 damage.						
+84491	spellbook	792	Radiance	Rank 2 Priest Racial	Causes the target to emit harmful rays of light, dealing $84490s1 Holy damage to the target and ${$84490m1*2} Holy damage to up to ${$84490i-1} enemies around the target every $t sec. for $d.	Taking $84490s1 damage and dealing ${$84490m1*2} damage to up to ${$84490i-1} nearby allies every $t sec.					
+84492	all		Radiance		Causing $s1 damage.						
+84493	spellbook	792	Radiance	Rank 3 Priest Racial	Causes the target to emit harmful rays of light, dealing $84492s1 Holy damage to the target and ${$84492m1*2} Holy damage to up to ${$84492i-1} enemies around the target every $t sec. for $d.	Taking $84492s1 damage and dealing ${$84492m1*2} damage to up to ${$84492i-1} nearby allies every $t sec.					
+84494	all		Radiance		Causing $s1 damage.						
+84495	spellbook	792	Radiance	Rank 4 Priest Racial	Causes the target to emit harmful rays of light, dealing $84494s1 Holy damage to the target and ${$84494m1*2} Holy damage to up to ${$84494i-1} enemies around the target every $t sec. for $d.	Taking $84494s1 damage and dealing ${$84494m1*2} damage to up to ${$84494i-1} nearby allies every $t sec.					
+84496	all		Radiance		Causing $s1 damage.						
+84497	spellbook	792	Radiance	Rank 5 Priest Racial	Causes the target to emit harmful rays of light, dealing $84496s1 Holy damage to the target and ${$84496m1*2} Holy damage to up to ${$84496i-1} enemies around the target every $t sec. for $d.	Taking $84496s1 damage and dealing ${$84496m1*2} damage to up to ${$84496i-1} nearby allies every $t sec.					
+84498	all		Radiance		Causing $s1 damage.						
+84499	spellbook	792	Radiance	Rank 6 Priest Racial	Causes the target to emit harmful rays of light, dealing $84498s1 Holy damage to the target and ${$84498m1*2} Holy damage to up to ${$84498i-1} enemies around the target every $t sec. for $d.	Taking $84498s1 damage and dealing ${$84498m1*2} damage to up to ${$84498i-1} nearby allies every $t sec.					
+84500	all		Radiance		Causing $s1 damage.						
+84501	spellbook	792	Radiance	Rank 7 Priest Racial	Causes the target to emit harmful rays of light, dealing $84500s1 Holy damage to the target and ${$84500m1*2} Holy damage to up to ${$84500i-1} enemies around the target every $t sec. for $d.	Taking $84500s1 damage and dealing ${$84500m1*2} damage to up to ${$84500i-1} nearby allies every $t sec.					
+84502	all		Bladestorm Slowness Cap								
+84503	all		Endless Rage	Rank 1	You generate $s1% more rage from damage dealt.						
+84504	all		Endless Rage	Rank 2	You generate $s1% more rage from damage dealt.						
+84505	all		Endless Rage	Rank 3	You generate $s1% more rage from damage dealt.						
+84506	all		Empowered Rend	Rank 1	The damage dealt by Rend is $/1000;S1 seconds faster.						
+84507	all		Empowered Rend	Rank 2	The damage dealt by Rend is $/1000;S1 second faster.						
+84508	spellbook	594	Seal of Righteousness	Rank 1	Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.  Persists for 0.5 seconds when swapping to any other Seal.\n\nUnleashing this Seal's energy will cause $20187s1 Holy damage to an enemy.	Melee attacks cause an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.					
+84509	spellbook	594	Seal of Righteousness	Rank 2	Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.  Persists for 0.5 seconds when swapping to any other Seal.\n\nUnleashing this Seal's energy will cause $20280s1 Holy damage to an enemy.	Melee attacks cause an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.					
+84510	spellbook	594	Seal of Righteousness	Rank 3	Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.  Persists for 0.5 seconds when swapping to any other Seal.\n\nUnleashing this Seal's energy will cause $20281s1 Holy damage to an enemy.	Melee attacks cause an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.					
+84511	spellbook	594	Seal of Righteousness	Rank 4	Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.  Persists for 0.5 seconds when swapping to any other Seal.\n\nUnleashing this Seal's energy will cause $20282s1 Holy damage to an enemy.	Melee attacks cause an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.					
+84512	spellbook	594	Seal of Righteousness	Rank 5	Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.  Persists for 0.5 seconds when swapping to any other Seal.\n\nUnleashing this Seal's energy will cause $20283s1 Holy damage to an enemy.	Melee attacks cause an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.					
+84513	spellbook	594	Seal of Righteousness	Rank 6	Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.  Persists for 0.5 seconds when swapping to any other Seal.\n\nUnleashing this Seal's energy will cause $20284s1 Holy damage to an enemy.	Melee attacks cause an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.					
+84514	spellbook	594	Seal of Righteousness	Rank 7	Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.  Persists for 0.5 seconds when swapping to any other Seal.\n\nUnleashing this Seal's energy will cause $20285s1 Holy damage to an enemy.	Melee attacks cause an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.					
+84515	spellbook	594	Seal of Righteousness	Rank 8	Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.  Persists for 0.5 seconds when swapping to any other Seal.\n\nUnleashing this Seal's energy will cause $20286s1 Holy damage to an enemy.	Melee attacks cause an additional ${$cond($eq($HND,1),0.85*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2-1,1.2*($m1*1.2*1.03*$MWS/100)+0.03*($MW+$mw)/2+1)} Holy damage.					
+84516	all		Seal of the Crusader	Rank 1	Damage Done Reduced by $s1%	Damage Done Reduced by $s1%					
+84517	all		Judgement of Light			Increases your healing taken from Judgement of Light by $s1%.					
+84518	all		Illumination Trigger								
+84519	all		Judgement of Light Intermediate								
+84520	all		Seal of Wisdom								
+84521	all		Seal of Wisdom								
+84522	all		Seal of Wisdom								
+84523	all		Cost of Dedication			Taking damage based on the damage done by your Judgement of Dedication. This effect ignores immunities.					
+84524	all		Seal of Dedication								
+84525	all		Judgement of Dedication								
+84526	spellbook	184	Seal of Dedication	Rank 1	Fills the Paladin with strength of will for $d, causing your attacks to deal $84524s1% weapon damage as Holy damage to your target and an additional target nearby.\n        \nUnleashing this Seal's energy will release a wave of light in front of you, dealing $84525s2 Holy damage to all targets it hits. $84525s3% of the damage dealt by this wave will also damage you over $84523d.	Melee attacks deal $84524s1% weapon damage as Holy to an additional target.					
+84527	all		Seal of Dedication								
+84528	all		Judgement of Dedication								
+84529	spellbook	184	Seal of Dedication	Rank 2	Fills the Paladin with strength of will for $d, causing your attacks to deal $84527s1% weapon damage as Holy damage to your target and an additional target nearby.\n        \nUnleashing this Seal's energy will release a wave of light in front of you, dealing $84528s2 Holy damage to all targets it hits. $84528s3% of the damage dealt by this wave will also damage you over $84523d.	Melee attacks deal $84527s1% weapon damage as Holy to an additional target.					
+84530	all		Purifying Power		Casting Exorcism or Holy Wrath increases the critical effect chance of your next healing spell by $s1%.	Critical effect chance of your next healing spell increased by $s1%.					
+84531	all		Purifying Power		Casting Exorcism or Holy Wrath increases the critical effect chance of your next healing spell by $s1%.	Critical effect chance of your next healing spell increased by $s1%.					
+84532	all		Overwhelming Light		When your Holy Light, Flash of Light, or Holy Shock spells heal a target to full health, 3 nearby injured allies will be healed by an amount equal to some of the healing effect.						
+84533	all		Overwhelming Light	Rank 1	When your Holy Light, Flash of Light, or Holy Shock spells heal a target to full health, 3 nearby injured allies will be healed by an amount equal to $s1% of the healing effect.						
+84534	all		Overwhelming Light	Rank 2	When your Holy Light, Flash of Light, or Holy Shock spells heal a target to full health, 3 nearby injured allies will be healed by an amount equal to $s1% of the healing effect.						
+84535	all		Hunter's Mark	Rank 1	Places the Hunter's Mark on the target, increasing the ranged attack power of all attackers against that target by $s2 and by an additional ${$m2/10} each time they are struck by a ranged attack, up to a maximum of ${$m2*4}.  In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible.  The target also appears on the mini-map.  Lasts for $d.	All attackers gain $s2 ranged attack power against this target.					
+84536	all		Hunter's Mark	Rank 2	Places the Hunter's Mark on the target, increasing the ranged attack power of all attackers against that target by $s2 and by an additional ${$m2/10} each time they are struck by a ranged attack, up to a maximum of ${$m2*4}.  In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible.  The target also appears on the mini-map.  Lasts for $d.	All attackers gain $s2 ranged attack power against this target.					
+84537	all		Hunter's Mark	Rank 3	Places the Hunter's Mark on the target, increasing the ranged attack power of all attackers against that target by $s2 and by an additional ${$m2/10} each time they are struck by a ranged attack, up to a maximum of ${$m2*4}.  In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible.  The target also appears on the mini-map.  Lasts for $d.	All attackers gain $s2 ranged attack power against this target.					
+84538	all		Hunter's Mark	Rank 4	Places the Hunter's Mark on the target, increasing the ranged attack power of all attackers against that target by $s2 and by an additional ${$m2/10} each time they are struck by a ranged attack, up to a maximum of ${$m2*4}.  In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible.  The target also appears on the mini-map.  Lasts for $d.	All attackers gain $s2 ranged attack power against this target.					
+84539	all		Dismiss Pet		Dismiss your pet.  Dismissing your pet will reduce its happiness by $/1000;s1.						
+84540	all		Call Pet		Summons your pet to you.						
+84541	spellbook	51	Increased Pet Talent	Rank 1	Increases your number of pet talent points by $s1.						
+84542	spellbook	51	Increased Pet Talent	Rank 2	Increases your number of pet talent points by $s1.						
+84543	spellbook	51	Increased Pet Talent	Rank 3	Increases your number of pet talent points by $s1.						
+84544	spellbook	51	Increased Pet Talent	Rank 4	Increases your number of pet talent points by $s1.						
+84545	all		Misdirection		Threat being redirected to you.	Threat redirected to target.					
+84546	spellbook	203,212,218,251,654	Snap	Rank 1	Snap the enemy, causing $s1 damage.						
+84547	spellbook	203,212,218,251,654	Snap	Rank 2	Snap the enemy, causing $s1 damage.						
+84548	spellbook	203,212,218,251,654	Snap	Rank 3	Snap the enemy, causing $s1 damage.						
+84549	spellbook	203,212,218,251,654	Snap	Rank 4	Snap the enemy, causing $s1 damage.						
+84550	spellbook	203,212,218,251,654	Snap	Rank 5	Snap the enemy, causing $s1 damage.						
+84551	spellbook	203,212,218,251,654	Snap	Rank 6	Snap the enemy, causing $s1 damage.						
+84552	spellbook	203,212,218,251,654	Snap	Rank 7	Snap the enemy, causing $s1 damage.						
+84553	spellbook	203,212,218,251,654	Snap	Rank 8	Snap the enemy, causing $s1 damage.						
+84554	spellbook	790	Blinding Powder	Rank 1	Create the reagent for the Blind Ability.						
+84555	all		Axe Specialization	Rank 1	Your critical strikes cause the opponent to bleed.						
+84556	all		Axe Specialization		Gives you a chance to cause your target to bleed for $o1% weapon damage damage over $d after hitting them with an Axe.	Bleeding for $s1% weapon damage every $t sec.					
+84557	all		Axe Specialization	Rank 1	Gives you a $h% chance to cause your target to bleed for $84555o1% weapon damage over $84555d after hitting them with an Axe.						
+84558	all		Axe Specialization	Rank 2	Gives you a $h% chance to cause your target to bleed for $84555o1% weapon damage over $84555d after hitting them with an Axe.						
+84559	all		Axe Specialization	Rank 3	Gives you a $h% chance to cause your target to bleed for $84555o1% weapon damage over $84555d after hitting them with an Axe.						
+84560	all		Axe Specialization	Rank 4	Gives you a $h% chance to cause your target to bleed for $84555o1% weapon damage over $84555d after hitting them with an Axe.						
+84561	all		Axe Specialization	Rank 5	Gives you a $h% chance to cause your target to bleed for $84555o1% weapon damage over $84555d after hitting them with an Axe.						
+84562	all		Expose Armor	Rank 1	Finishing move that exposes the target, reducing armor by $s1.  Exposing a target that has already been exposed will increase the duration of Expose Armor, up to 60 seconds.  Lasts longer per combo point:\n   1 point  : 8 seconds\n   2 points: 16 seconds\n   3 points: 24 seconds\n   4 points: 32 seconds\n   5 points: 40 seconds	Armor decreased by $s1.					
+84563	all		Expose Armor	Rank 2	Finishing move that exposes the target, reducing armor by $s1.  Exposing a target that has already been exposed will increase the duration of Expose Armor, up to 60 seconds.  Lasts longer per combo point:\n   1 point  : 8 seconds\n   2 points: 16 seconds\n   3 points: 24 seconds\n   4 points: 32 seconds\n   5 points: 40 seconds	Armor decreased by $s1.					
+84564	all		Expose Armor	Rank 3	Finishing move that exposes the target, reducing armor by $s1.  Exposing a target that has already been exposed will increase the duration of Expose Armor, up to 60 seconds.  Lasts longer per combo point:\n   1 point  : 8 seconds\n   2 points: 16 seconds\n   3 points: 24 seconds\n   4 points: 32 seconds\n   5 points: 40 seconds	Armor decreased by $s1.					
+84565	all		Expose Armor	Rank 4	Finishing move that exposes the target, reducing armor by $s1.  Exposing a target that has already been exposed will increase the duration of Expose Armor, up to 60 seconds.  Lasts longer per combo point:\n   1 point  : 8 seconds\n   2 points: 16 seconds\n   3 points: 24 seconds\n   4 points: 32 seconds\n   5 points: 40 seconds	Armor decreased by $s1.					
+84566	all		Expose Armor	Rank 5	Finishing move that exposes the target, reducing armor by $s1.  Exposing a target that has already been exposed will increase the duration of Expose Armor, up to 60 seconds.  Lasts longer per combo point:\n   1 point  : 8 seconds\n   2 points: 16 seconds\n   3 points: 24 seconds\n   4 points: 32 seconds\n   5 points: 40 seconds	Armor decreased by $s1.					
+84567	all		Expose Armor	Rank 6	Finishing move that exposes the target, reducing armor by $s1.  Exposing a target that has already been exposed will increase the duration of Expose Armor, up to 60 seconds.  Lasts longer per combo point:\n   1 point  : 8 seconds\n   2 points: 16 seconds\n   3 points: 24 seconds\n   4 points: 32 seconds\n   5 points: 40 seconds	Armor decreased by $s1.					
+84568	spellbook	38	Redirect		Transfers any existing combo points to the current enemy target. Requires active combo points.  Does not break stealth.						
+84569	all		Cheated Death		You have a $s1% chance that an attack which would otherwise kill you will instead reduce you to 10% of your maximum health, unless the attack is too devastating. In addition, all damage taken will be reduced by an amount equal to twice your dodge chance, up to 90%, for $45182d.  This effect cannot occur more than once per minute.	You have recently escaped certain death. You will not be so lucky a second time.					
+84570	all		Deadly Poison	Rank 1		Target takes $s1 Nature damage every $t1 seconds.					
+84571	all		Deadly Poison II	Rank 2		Target takes $s1 Nature damage every $t1 seconds.					
+84572	all		Deadly Poison III	Rank 3		Target takes $s1 Nature damage every $t1 seconds.					
+84573	all		Deadly Poison IV	Rank 4		Target takes $s1 Nature damage every $t1 seconds.					
+84574	all		Deadly Poison V	Rank 5		Target takes $s1 Nature damage every $t1 seconds.					
+84575	all		Poisoned Knife Proc								
+84576	all		Poisoned Knife	Rank 1	Throw and Deadly Throw now have a $h1% chance to consume 5 minutes of your off-hand weapon's poison to apply it to the target.						
+84577	all		Poisoned Knife	Rank 2	Throw and Deadly Throw now have a $h1% chance to consume 5 minutes of your off-hand weapon's poison to apply it to the target.						
+84578	all		Cold Blood		When activated, increases the critical strike chance of your next offensive ability by $s1%.	Critical strike chance of your next offensive ability increased by $s1%.					
+84579	all		Shadow Vulnerability	Rank 1		Increases Shadow damage taken by $s1%.					
+84580	all		Shadow Weaving	Rank 1	Your Shadow damage spells have a $s1% chance to cause your target to be vulnerable to Shadow damage.  This vulnerability increases the Shadow damage dealt to your target by $84579s1% and lasts $84579d.  Stacks up to $84579u times.						
+84581	all		Shadow Weaving	Rank 2	Your Shadow damage spells have a $s1% chance to cause your target to be vulnerable to Shadow damage.  This vulnerability increases the Shadow damage dealt to your target by $84579s1% and lasts $84579d.  Stacks up to $84579u times.						
+84582	all		Shadow Weaving	Rank 3	Your Shadow damage spells have a $s1% chance to cause your target to be vulnerable to Shadow damage.  This vulnerability increases the Shadow damage dealt to your target by $84579s1% and lasts $84579d.  Stacks up to $84579u times.						
+84583	all		Shadow Weaving	Rank 4	Your Shadow damage spells have a $s1% chance to cause your target to be vulnerable to Shadow damage.  This vulnerability increases the Shadow damage dealt to your target by $84579s1% and lasts $84579d.  Stacks up to $84579u times.						
+84584	all		Shadow Weaving	Rank 5	Your Shadow damage spells have a $s1% chance to cause your target to be vulnerable to Shadow damage.  This vulnerability increases the Shadow damage dealt to your target by $84579s1% and lasts $84579d.  Stacks up to $84579u times.						
+84585	spellbook	613	Mana Burn	Rank 1	Destroy $s1 mana from a target. For each mana destroyed in this way, the target takes 0.5 Shadow damage.						
+84586	all		Shadowfiend Damage and Avoidance								
+84587	all		Circle of Healing	Rank 1	Heals friendly target and that target's party members within $a1 yards of the target for $s1.						
+84588	all		Circle of Healing	Rank 2	Heals friendly target and that target's party members within $a1 yards of the target for $s1.						
+84589	all		Circle of Healing	Rank 3	Heals friendly target and that target's party members within $a1 yards of the target for $s1.						
+84590	all		Circle of Healing	Rank 4	Heals friendly target and that target's party members within $a1 yards of the target for $s1.						
+84591	all		Circle of Healing	Rank 5	Heals friendly target and that target's party members within $a1 yards of the target for $s1.						
+84592	all		Holy Water		Inflicts $s1 Holy damage to Undead in a $a1 yard radius.						
+84593	spellbook	56	Bless Water	Rank 1	Infuse water with power, transforming it into Weak Holy Water.						
+84594	all		Holy Water		Inflicts $s1 Holy damage to Undead in a $a1 yard radius.						
+84595	spellbook	56	Bless Water	Rank 2	Infuse water with power, transforming it into Lesser Holy Water.						
+84596	all		Holy Water		Inflicts $s1 Holy damage to Undead in a $a1 yard radius.						
+84597	spellbook	56	Bless Water	Rank 3	Infuse water with power, transforming it into Holy Water.						
+84598	all		Holy Water		Inflicts $s1 Holy damage to Undead in a $a1 yard radius.						
+84599	spellbook	56	Bless Water	Rank 4	Infuse water with power, transforming it into Strong Holy Water.						
+84600	all		Holy Water		Inflicts $s1 Holy damage to Undead in a $a1 yard radius.						
+84601	spellbook	56	Bless Water	Rank 5	Infuse water with power, transforming it into Blessed Holy Water.						
+84602	spellbook	613	Power Word: Barrier	Rank 1	Create a barrier around you, absorbing damage dealt to all party and raid members within it.  The barrier lasts for $d or until it absorbs $s1 damage, increased by up to 250% when affecting a large group.  Priest must channel to maintain the spell.	Absorbing damage.					
+84603	spellbook	613	Power Word: Barrier	Rank 2	Create a barrier around you, absorbing damage dealt to all party and raid members within it.  The barrier lasts for $d or until it absorbs $s1 damage, increased by up to 250% when affecting a large group.  Priest must channel to maintain the spell.	Absorbing damage.					
+84604	spellbook	613	Power Word: Barrier	Rank 3	Create a barrier around you, absorbing damage dealt to all party and raid members within it.  The barrier lasts for $d or until it absorbs $s1 damage, increased by up to 250% when affecting a large group.  Priest must channel to maintain the spell.	Absorbing damage.					
+84605	spellbook	375	Molten Blast	Rank 1	Hurls a ball of molten lava at the target for $s1 Fire damage and resetting the duration of your active Flame Shock effect.						
+84606	spellbook	375	Molten Blast	Rank 1	Hurls a ball of molten lava at the target for $s1 Fire damage.						
+84607	spellbook	375	Molten Blast	Rank 2	Hurls a ball of molten lava at the target for $s1 Fire damage and resetting the duration of your active Flame Shock effect.						
+84608	spellbook	375	Molten Blast	Rank 2	Hurls a ball of molten lava at the target for $s1 Fire damage.						
+84609	spellbook	375	Molten Blast	Rank 3	Hurls a ball of molten lava at the target for $s1 Fire damage and resetting the duration of your active Flame Shock effect.						
+84610	spellbook	375	Molten Blast	Rank 3	Hurls a ball of molten lava at the target for $s1 Fire damage.						
+84611	spellbook	375	Molten Blast	Rank 4	Hurls a ball of molten lava at the target for $s1 Fire damage and resetting the duration of your active Flame Shock effect.						
+84612	spellbook	375	Molten Blast	Rank 4	Hurls a ball of molten lava at the target for $s1 Fire damage.						
+84613	spellbook	375	Molten Blast	Rank 5	Hurls a ball of molten lava at the target for $s1 Fire damage and resetting the duration of your active Flame Shock effect.						
+84614	spellbook	375	Molten Blast	Rank 5	Hurls a ball of molten lava at the target for $s1 Fire damage.						
+84615	spellbook	375	Molten Blast	Rank 6	Hurls a ball of molten lava at the target for $s1 Fire damage and resetting the duration of your active Flame Shock effect.						
+84616	spellbook	375	Molten Blast	Rank 6	Hurls a ball of molten lava at the target for $s1 Fire damage.						
+84617	spellbook	375	Molten Blast	Rank 7	Hurls a ball of molten lava at the target for $s1 Fire damage and resetting the duration of your active Flame Shock effect.						
+84618	spellbook	375	Molten Blast	Rank 7	Hurls a ball of molten lava at the target for $s1 Fire damage.						
+84619	spellbook	375	Molten Blast	Rank 8	Hurls a ball of molten lava at the target for $s1 Fire damage and resetting the duration of your active Flame Shock effect.						
+84620	spellbook	375	Molten Blast	Rank 8	Hurls a ball of molten lava at the target for $s1 Fire damage.						
+84621	all		Healing Stream Passive	Rank 1		Heals $s1 every $t1 seconds.					
+84622	all		Healing Stream Passive	Rank 1		Heals $s1 every $t1 seconds.					
+84623	all		Healing Stream Passive	Rank 1		Heals $s1 every $t1 seconds.					
+84624	all		Healing Stream Passive	Rank 1		Heals $s1 every $t1 seconds.					
+84625	all		Healing Stream Passive	Rank 1		Heals $s1 every $t1 seconds.					
+84626	all		Healing Stream Passive	Rank 1		Heals $s1 every $t1 seconds.					
+84627	all		Stormstrike		Instantly attack with your weapon.  In addition, Nature damage dealt to the target is increased by $s1%.  Lasts $17364d.						
+84628	spellbook	375	Soothe Elemental	Rank 1	Soothes the target elemental, reducing the range at which it will attack you by $s1 yards.  Only affects Elemental targets level 40 or lower.  Lasts $d.	Reduced distance at which target will attack.					
+84629	spellbook	375	Soothe Elemental	Rank 2	Soothes the target elemental, reducing the range at which it will attack you by $s1 yards.  Only affects Elemental targets level 55 or lower.  Lasts $d.	Reduced distance at which target will attack.					
+84630	spellbook	375	Soothe Elemental	Rank 3	Soothes the target elemental, reducing the range at which it will attack you by $s1 yards.  Only affects Elemental targets level 70 or lower.  Lasts $d.	Reduced distance at which target will attack.					
+84631	all		Rockbiter Weapon (Passive)								
+84632	all		Spirit Weapons	Passive							
+84633	all		Flametongue Weapon (Passive)	Rank 1							
+84634	all		Flametongue Weapon (Passive)	Rank 1							
+84635	all		Flametongue Weapon (Passive)	Rank 1							
+84636	all		Flametongue Weapon (Passive)	Rank 1							
+84637	all		Sentry Totem			Stealth detection slightly increased.					
+84638	all		Sentry Totem Effects								
+84639	all		Sentry Totem		Summons an immobile Sentry Totem with $s1 health at your feet for $d that allows vision of nearby area and warns of enemies that attack it.  Right-Click on buff to switch back and forth between totem sight and shaman sight.	Allows vision through Sentry Totem.  Right-Click on buff to switch back and forth between totem sight and shaman sight.					
+84640	all		Earth's Grasp								
+84641	all		Fulmination			Firing Lightning Shield orbs at the target.					
+84642	spellbook	375	Rolling Thunder		If you have an active Lightning Shield, your critical hits with Lightning Bolt and Chain Lightning have a $h% chance to cause your Lightning Shield to gain an additional charges, up to 9. When you reach 9 charges, any attempt to gain another charge will instead launch a Lightning Shield ball at your target.\n\nWhen you have more than 3 Lightning Shield charges active, your Earth Shock spell will consume up to 1 surplus charge after 2 seconds, sending it at your target.						
+84643	all		Fulmination			Firing Lightning Shield orbs at the target.					
+84644	spellbook	375	Rolling Thunder		If you have an active Lightning Shield, your critical hits with Lightning Bolt and Chain Lightning have a $h% chance to cause your Lightning Shield to gain an additional charges, up to 9. When you reach 9 charges, any attempt to gain another charge will instead launch a Lightning Shield ball at your target.\n\nWhen you have more than 3 Lightning Shield charges active, your Earth Shock spell will consume up to 2 surplus charges every 2 seconds for up to 4 seconds, sending them at your target.						
+84645	all		Fulmination			Firing Lightning Shield orbs at the target.					
+84646	spellbook	375	Rolling Thunder		If you have an active Lightning Shield, your critical hits with Lightning Bolt and Chain Lightning have a $h% chance to cause your Lightning Shield to gain an additional charges, up to 9. When you reach 9 charges, any attempt to gain another charge will instead launch a Lightning Shield ball at your target.\n\nWhen you have more than 3 Lightning Shield charges active, your Earth Shock spell will consume up to 3 surplus charges every 2 seconds for up to 6 seconds, sending them at your target.						
+84647	all		Primal Wielding			Lightning Bolt and Molten Blast deal $s1% less damage.					
+84648	spellbook	237	Arcane Blast	Rank 1	Blasts the target with energy, dealing $s1 Arcane damage.  Each time you cast Arcane Blast, the casting time is reduced while mana cost is increased.  Effect stacks up to $36032u times and lasts $36032d.						
+84649	spellbook	237	Arcane Blast	Rank 2	Blasts the target with energy, dealing $s1 Arcane damage.  Each time you cast Arcane Blast, the casting time is reduced while mana cost is increased.  Effect stacks up to $36032u times and lasts $36032d.						
+84650	spellbook	237	Arcane Blast	Rank 3	Blasts the target with energy, dealing $s1 Arcane damage.  Each time you cast Arcane Blast, the casting time is reduced while mana cost is increased.  Effect stacks up to $36032u times and lasts $36032d.						
+84651	spellbook	237	Arcane Blast	Rank 4	Blasts the target with energy, dealing $s1 Arcane damage.  Each time you cast Arcane Blast, the casting time is reduced while mana cost is increased.  Effect stacks up to $36032u times and lasts $36032d.						
+84652	spellbook	237	Arcane Blast	Rank 5	Blasts the target with energy, dealing $s1 Arcane damage.  Each time you cast Arcane Blast, the casting time is reduced while mana cost is increased.  Effect stacks up to $36032u times and lasts $36032d.						
+84653	spellbook	237	Arcane Blast	Rank 6	Blasts the target with energy, dealing $s1 Arcane damage.  Each time you cast Arcane Blast, the casting time is reduced while mana cost is increased.  Effect stacks up to $36032u times and lasts $36032d.						
+84654	spellbook	237	Arcane Blast	Rank 7	Blasts the target with energy, dealing $s1 Arcane damage.  Each time you cast Arcane Blast, the casting time is reduced while mana cost is increased.  Effect stacks up to $36032u times and lasts $36032d.						
+84655	all		Fire Ward	Rank 1	Absorbs $s1 Fire damage.  Lasts $d.	Reflects Fire Damage					
+84656	all		Frost Ward	Rank 1	Absorbs $s1 Frost damage.  Lasts $d.	Reflects Frost Damage					
+84657	all		Rune of Power		Places a Rune of Power on the ground for $d which increases your spell damage by $s1% while you stand within $a1 yards.	Spell damage increased by $s1%.					
+84658	spellbook	237	Rune of Power		Places a Rune of Power on the ground for $d which increases your spell damage by $84657s1% while you stand within $84657a1 yards.						
+84659	all		Barrage of Missiles			Increases the damage of your Arcane Missiles by $s1%.					
+84660	spellbook	237	Arcane Barrage	Rank 1	Launches several missiles at the enemy target, causing $s1 Arcane damage and consuming any of your Arcane Blast stacks.  Each stack of Arcane Blast consumed increases this damage by $36032s3% and it increases the damage of your Arcane Missiles by $84659s1% for $84659d.						
+84661	spellbook	237	Arcane Barrage	Rank 2	Launches several missiles at the enemy target, causing $s1 Arcane damage and consuming any of your Arcane Blast stacks.  Each stack of Arcane Blast consumed increases this damage by $36032s3% and it increases the damage of your Arcane Missiles by $84659s1% for $84659d.						
+84662	spellbook	237	Arcane Barrage	Rank 3	Launches several missiles at the enemy target, causing $s1 Arcane damage and consuming any of your Arcane Blast stacks.  Each stack of Arcane Blast consumed increases this damage by $36032s3% and it increases the damage of your Arcane Missiles by $84659s1% for $84659d.						
+84663	spellbook	237	Arcane Barrage	Rank 4	Launches several missiles at the enemy target, causing $s1 Arcane damage and consuming any of your Arcane Blast stacks.  Each stack of Arcane Blast consumed increases this damage by $36032s3% and it increases the damage of your Arcane Missiles by $84659s1% for $84659d.						
+84664	spellbook	237	Arcane Power		When activated, your spells deal $s1% more damage while costing $s2% more mana to cast.  This effect lasts $D.	Increased damage and mana cost for your spells.					
+84665	all		Slow		Reduces target's movement speed by $s1%, increases the time between ranged attacks by $s2% and increases casting time by $s3%. If the target is immune to movement speed reductions this spell enters a 2 minute cooldown and still applies the other effects.  Lasts $d.  Slow can only affect one target at a time.	Movement speed reduced by $s1%.  Time between ranged attacks increased by $s2%.  Casting time increased by $s3%.					
+84666	all		Slow		Increases the time between ranged attacks by $s2% and increases casting time by $s3%. If the target is immune to movement speed reductions this spell enters a 2 minute cooldown and still applies the other effects.  Lasts $d.  Slow can only affect one target at a time.	Time between ranged attacks increased by $s2%.  Casting time increased by $s3%.					
+84667	spellbook	237	Conjure Weapon	Rank 1	Conjures a dagger with 50 durability which can be equipped by anyone that can use that weapon type.  The damage dealt by the dagger is based on the level of the mage.\n            \nConjured items disappear if logged out for more than 15 minutes.						
+84668	spellbook	237	Conjure Weapon	Rank 2	Conjures a shortsword with 50 durability which can be equipped by anyone that can use that weapon type.  The damage dealt by the shortsword is based on the level of the mage.\n            \nConjured items disappear if logged out for more than 15 minutes.						
+84669	spellbook	237	Conjure Weapon	Rank 3	Conjures a greatsword with 50 durability which can be equipped by anyone that can use that weapon type.  The damage dealt by the greatsword is based on the level of the mage.\n            \nConjured items disappear if logged out for more than 15 minutes.						
+84670	spellbook	237	Conjure Weapon	Rank 4	Conjures a hammer with 50 durability which can be equipped by anyone that can use that weapon type.  The damage dealt by the hammer is based on the level of the mage.\n            \nConjured items disappear if logged out for more than 15 minutes.						
+84671	spellbook	237	Conjure Weapon	Rank 5	Conjures a mace with 50 durability which can be equipped by anyone that can use that weapon type.  The damage dealt by the mace is based on the level of the mage.\n            \nConjured items disappear if logged out for more than 15 minutes.						
+84672	spellbook	237	Conjure Weapon	Rank 6	Conjures an axe with 50 durability which can be equipped by anyone that can use that weapon type.  The damage dealt by the axe is based on the level of the mage.\n            \nConjured items disappear if logged out for more than 15 minutes.						
+84673	spellbook	237	Conjure Weapon	Rank 7	Conjures a battle axe with 50 durability which can be equipped by anyone that can use that weapon type.  The damage dealt by the battle axe is based on the level of the mage.\n            \nConjured items disappear if logged out for more than 15 minutes.						
+84674	all		Pyroblast!								
+84675	all		Pyroclastic Burst			Damage dealt by your next Pyroblast increased by $s1%, its chance to critically strike is increased by $s3%, and its cast time is reduced by $/1000;S2 sec.					
+84676	all		Pyroclastic Burst	Rank 1	Your Fire spell criticals have a $h% chance to increase the damage of your next Pyroblast by $84675s1%, stacking up to $84675u times.  You cannot cast Presence of Mind while this effect is active.						
+84677	all		Pyroclastic Burst	Rank 2	Your Fire spell criticals have a $h% chance to increase the damage of your next Pyroblast by $84675s1%, stacking up to $84675u times.  You cannot cast Presence of Mind while this effect is active.						
+84678	all		Frostbite			Considered frozen.					
+84679	all		Ritual Assist								
+84680	all		Create Soulwell								
+84681	all		Create Soulwell								
+84682	all		Create Soulwell								
+84683	all		Fearless								
+84684	all		Spellstone			Absorbs damage.					
+84685	all		Aftermath	Rank 5	Gives your Destruction spells a $h% chance to daze the target for $18118d.						
+84686	all		Aftermath	Rank 5	Gives your Destruction spells a $h% chance to daze the target for $18118d.						
+84687	all		Aftermath	Rank 5	Gives your Destruction spells a $h% chance to daze the target for $18118d.						
+84688	all		Aftermath	Rank 5	Gives your Destruction spells a $h% chance to daze the target for $18118d.						
+84689	all		Aftermath	Rank 5	Gives your Destruction spells a $h% chance to daze the target for $18118d.						
+84690	all		Pyroclasm Proc								
+84691	all		Pyroclasm	Rank 1	Gives your Rain of Fire, Hellfire, and Soul Fire spells a $s1% chance to stun the target for $18093d. This chance is spread across the duration of Hellfire and Rain of Fire.						
+84692	all		Pyroclasm	Rank 1	Gives your Rain of Fire, Hellfire, and Soul Fire spells a $s1% chance to stun the target for $18093d. This chance is spread across the duration of Hellfire and Rain of Fire.						
+84693	all		Empowered Firebolt			Your Imp's Firebolts have a 100% chance to critically hit, and cost no mana.					
+84694	all		Empowered Defenses		Summon demonic plating onto your voidwalker, increasing its armor by $s1% and improving its threat generation by $s2%. Lasts $d.	Armor increased by $s1%. Threat generation increased by $s2%.					
+84695	all		Partial Invisibility		Your Succubus casts Partial Invisibility, causing all melee and ranged attacks made against it to have a $s1% chance to miss.	Faded from sight, reducing the chance to be hit by melee and ranged attacks by $s1%. Damage dealt increased by $s3%.					
+84696	all		Empowered Spell Lock		Sacrifice 10% to 20% of your maximum health to empower your Felhunter's Spell Lock ability, reducing its cooldown by $/1000;s1 seconds for $d. Must be above 20% health to cast.	Cooldown of Spell Lock reduced by $/1000;s1 sec.					
+84697	all		Empowered Fury		Your felguard hurls their weapon at the target and enrages, stunning the target for $d and making your felguard deal more damage for $[object Object]d.	Stunned.					
+84698	all		Infernal Protection		Your Infernal becomes immune to all attacks and spells for $d.	Immune to all attacks and spells.					
+84699	all		Shadow Bolt Volley		Your Doomguard casts Shadow Bolt Volley, dealing Shadow damage to all nearby enemies.	Your Imp's Firebolts have a 100% chance to critically hit, and cost no mana.					
+84700	all		Demonic Frenzy		Apply Demonic Frenzy to your Enslaved Demon, causing it to take damage and attack faster for a few seconds.	Frenzied, attack speed increased by $s1% and casting speed increased by $s2%.  Taking $s3 damage every $t3 seconds.					
+84701	spellbook	354	Demonic Empowerment		Grants the Warlock's summoned demon Empowerment.\n        \nImp: Your Imp's Firebolts have a 100% chance to critically hit and cost no mana for $84693d.\n        \nVoidwalker: Summon demonic plating onto your Voidwalker, increasing its armor by $84694s1% and improving its threat generation by $84694s2%. Lasts $84694d.\n        \nSuccubus: Your Succubus casts Partial Invisibility, causing all melee and ranged attacks made against it to have a 75% chance to miss and increasing its damage by $84695s3%.\n        \nFelhunter: Sacrifice 10% to 20% of your maximum health to empower your Felhunter's Spell Lock ability, reducing its cooldown by $/1000;84696s1 seconds for $84696d. Must be above 20% health to cast.\n\nFelguard: Your Felguard hurls their weapon at the target and enrages, stunning the target for $84697d and increasing its damage dealt by $54508s1% for $54508d.\n\nInfernal: Your Infernal becomes immune to all attacks and spells for $84698d.\n\nDoomguard: Your Doomguard casts Shadow Bolt Volley, dealing $84699s1 Shadow damage to all nearby enemies within $84699a yards.\n\nEnslaved Demon: Apply Demonic Frenzy to your Enslaved Demon, causing it to take $84700s3 damage every $84700t3 seconds and increasing its attack speed by $84700s1% and casting speed by $84700s2% for $84700d.	Empowered.					
+84702	all		Create Soul Shard		Creates a Soul Shard.						
+84703	all		Soul Pact		Enter a pact with a raid or party members soul. If the target dies while under this pact you gain 1 Soul Shard and your Spell Damage is increased by $s1 for $d.	Spell Damage increased by $s1.					
+84704	spellbook	354	Soul Pact		Enter a pact with a raid or party members soul. If the target dies while under this pact you gain 1 Soul Shard and your Spell Damage is increased by $84703s1 for $84703d.	Soul bonded with a nearby Warlock.					
+84705	all		Curse of Doom Effect		Summons a Doomguard.						
+84706	all		Healthstone Crumbs		Healed from a party member's Healthstone.						
+84707	all		Demon Portal								
+84708	spellbook	354	Demon Portal		Tears open a portal to the twisting nether for $d, which periodically releases a demon under your control. These demons do not replace your currently active demon. The final demon summoned by the portal is always a Felguard, which stuns your current target for 4 seconds when it appears.  Moving more than 45 yards from the portal causes it to close.						
+84709	all		Demon Portal Scaling								
+84710	all		Demon Portal - Imp								
+84711	all		Demon Portal - Voidwalker								
+84712	all		Demon Portal - Succubus								
+84713	all		Demon Portal - Felhunter								
+84714	all		Demon Portal - Felsteed								
+84715	all		Demon Portal - Dreadsteed								
+84716	all		Demon Portal - Felguard								
+84717	all		Demon Portal - Infernal								
+84718	all		Dark Pact	Rank 1	Drains $s1 of your pet's Mana, returning 100% to you.						
+84719	all		Shadow Bite	Rank 1	Teaches Felhunter Shadow Bite (Rank 1).						
+84720	all		Shadow Bite	Rank 2	Teaches Felhunter Shadow Bite (Rank 2).						
+84721	all		Shadow Bite	Rank 3	Teaches Felhunter Shadow Bite (Rank 3).						
+84722	spellbook	355	Improved Shadow Bite	Rank 1	Your Felhunter regains 5% of its maximum mana each time it hits with its Shadow Bite ability.						
+84723	spellbook	355	Improved Shadow Bite	Rank 2	Your Felhunter regains 10% of its maximum mana each time it hits with its Shadow Bite ability.						
+84724	spellbook	593	Shadowfury	Rank 2	Shadowfury is unleashed, causing $s1 Shadow damage and stunning all enemies within $a1 yds for $d.	Stunned.					
+84725	spellbook	593	Shadowfury	Rank 3	Shadowfury is unleashed, causing $s1 Shadow damage and stunning all enemies within $a1 yds for $d.	Stunned.					
+84726	all		Impish Fire			Your next single target Fire spell deals $s1% more damage.					
+84727	all		Immolation Aura								
+84728	spellbook	206	Immolation Aura		Enemies around the Infernal take $84727s1 Fire damage every $t1 seconds.	Inflicting $84727s1 Fire damage every $t1 seconds to enemies nearby.					
+84729	all		Faerie Fire (Passive)								
+84730	spellbook	134	Feral Attack	Passive	All equipable Weapons will receive additional Feral Attack Power based on Weapon DPS. Only a Druid may see this bonus stat.						
+84731	all		Celestial Focus	Rank 1	Gives your Starfire spell a $h% chance to stun the target for $16922d and increases the chance you'll resist spell interruption when casting your Wrath spell by $s2%.						
+84732	all		Celestial Focus	Rank 2	Gives your Starfire spell a $h% chance to stun the target for $16922d and increases the chance you'll resist spell interruption when casting your Wrath spell by $s2%.						
+84733	all		Celestial Focus	Rank 3	Gives your Starfire spell a $h% chance to stun the target for $16922d and increases the chance you'll resist spell interruption when casting your Wrath spell by $s2%.						
+84734	all		Wildkin Frenzy			Magical damage increased by $s1%, attack power increased by $s2%.  Damaging attacks against you will not cause spellcasting delays.					
+84735	all		Wildkin Frenzy Passive								
+84736	all		Tiger's Fury	Rank 1	Increases damage done by $s1 for $d.	Increases damage done by $s1.					
+84737	all		Tiger's Fury	Rank 2	Increases damage done by $s1 for $d.	Increases damage done by $s1.					
+84738	all		Tiger's Fury	Rank 3	Increases damage done by $s1 for $d.	Increases damage done by $s1.					
+84739	all		Tiger's Fury	Rank 4	Increases damage done by $s1 for $d.	Increases damage done by $s1.					
+84740	spellbook	573	Overgrowth	Rank 1	Applies Rejuvenation (Rank 3) to your friendly target and that target's party members within 25 yards.						
+84741	spellbook	573	Overgrowth	Rank 2	Applies Rejuvenation (Rank 4) to your friendly target and that target's party members within 25 yards.						
+84742	spellbook	573	Overgrowth	Rank 3	Applies Rejuvenation (Rank 5) to your friendly target and that target's party members within 25 yards.						
+84743	spellbook	573	Overgrowth	Rank 4	Applies Rejuvenation (Rank 6) to your friendly target and that target's party members within 25 yards.						
+84744	spellbook	573	Overgrowth	Rank 5	Applies Rejuvenation (Rank 7) to your friendly target and that target's party members within 25 yards.						
+84745	spellbook	573	Overgrowth	Rank 6	Applies Rejuvenation (Rank 8) to your friendly target and that target's party members within 25 yards.						
+84746	spellbook	573	Overgrowth	Rank 7	Applies Rejuvenation (Rank 9) to your friendly target and that target's party members within 25 yards.						
+84747	spellbook	573	Overgrowth	Rank 8	Applies Rejuvenation (Rank 10) to your friendly target and that target's party members within 25 yards.						
+84748	spellbook	613	Levitate	Rank 2	Allows the caster to levitate, floating a few feet above the ground.  While levitating, you will fall at a reduced speed and travel over water.  Any damage will cancel the effect.  Lasts $d.	Levitating.					
+84749	all		Levitate		Teaches Levitate (Rank 2).						
+84750	spellbook	373	Water Walking	Rank 2	Allows the friendly target to walk across water for $d.  Any damage will cancel the effect.	Allows walking over water.  Damage will cancel this effect.					
+84751	all		Naga Frost Arrows		Your ranged attacks have a high chance to reduce your target's movement speed and attack speed by $s1% for $d.	Movement speed and attack speed reduced by $s1%.					
+84752	all		Increase Defense 4		Increased Defense +$s1.						
+84753	all		Increase Healing 30		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84754	all		Increase Spell Dam Arcane 14		Increases damage done by Arcane spells and effects by up to $s1.						
+84755	all		Increase Spell Dam Holy 12		Increases damage done by Holy spells and effects by up to $s1.						
+84756	all		Increase Spell Dam 6		Increases damage and healing done by magical spells and effects by up to $s1.						
+84757	all		Increase Spell Dam 14		Increases damage and healing done by magical spells and effects by up to $s1.						
+84758	all		Increase Spell Dam Fire 17		Increases damage done by Fire spells and effects by up to $s1.						
+84759	all		Increase Spell Dam Nature 15		Increases damage done by Nature spells and effects by up to $s1.						
+84760	all		Increase Spell Dam Nature 20		Increases damage done by Nature spells and effects by up to $s1.						
+84761	all		Increase Spell Dam Holy 15		Increases damage done by Holy spells and effects by up to $s1.						
+84762	all		Increase Healing 20		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84763	all		Increase Spell Dam Frost 33		Increases damage done by Frost spells and effects by up to $s1.						
+84764	all		Increase Healing 22		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84765	all		Increase Spell Dam 11		Increases damage and healing done by magical spells and effects by up to $s1.						
+84766	all		Increase Spell Dam Nature 40		Increases damage done by Nature spells and effects by up to $s1.						
+84767	all		Increase Spell Dam Fire 18		Increases damage done by Fire spells and effects by up to $s1.						
+84768	all		Increase Healing 23		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84769	all		Increase Block 1		Increases your chance to block attacks with a shield by $s1%.						
+84770	all		Increase Healing 24		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84771	all		Increase Defense 7		Increased Defense +$s1.						
+84772	all		Increase Healing 19		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84773	all		Increase Spell Dam Fire 35		Increases damage done by Fire spells and effects by up to $s1.						
+84774	all		Increase Spell Dam Arcane 40		Increases damage done by Arcane spells and effects by up to $s1.						
+84775	all		Increase Spell Dam Holy 14		Increases damage done by Holy spells and effects by up to $s1.						
+84776	all		Increase Spell Dam Holy 7		Increases damage done by Holy spells and effects by up to $s1.						
+84777	all		Fiery Burst		Inflicts Fire damage to all enemies in a selected area.						
+84778	all		War Stomp		Inflicts $s3% of weapon damage to nearby enemies, knocking them back and stunning them for $d.	Stunned.					
+84779	all		Burning Blaze		The Patch of Fire Inflicts $s1 Fire damage every $t1 sec. for $d.	Inflicts $s1 Fire damage every $t1 sec.					
+84780	all		Eye Peck		Blinds the target, causing it to wander disoriented for up to $d.  Any damage caused will remove the effect.	Disoriented.					
+84781	all		Peck		Strikes at an enemy, inflicting weapon damage plus additional damage.						
+84782	all		The Poultryizer		Transforms all nearby enemies into mechanical chicken, forcing them to wander around for up to 10 sec. Fire damage may remove this effect.	Transformed into mechanical chicken, forcing them to wander around for up to 10 sec. Fire damage may remove this effect.					
+84783	all		Guided Rocket Destruction		Fires a rocket full of napalm towards the targeted location. The napalm burns all enemies within $66542a1 yards of that location for $66542s1 damage per second for $66542d.	Deals $s1 Fire damage per second.					
+84784	all		Guided Rockets		Shoots a volley of rockets at the target and anyone within range of the target.						
+84785	all		Guided Rockets		Shoots a volley of rockets at the target and anyone within range of the target.						
+84786	all		Aura of Rot								
+84787	all		Aura of Rot		Causes the caster to automatically inflict $25819s1 Nature damage every $t1 sec. to nearby enemies. The aura lasts until cancelled.	Automatically inflicting $25819s1 Nature damage every $t1 sec. to nearby enemies.					
+84788	all		Mortal Strike		Inflicts $s1% weapon damage and leaves the target wounded, reducing the effectiveness of any healing by $s2% for $d.	Healing effects reduced by $s2%.					
+84789	all		Chain Lash		Twitches pulls an enemy towards him slowing their movement.	Get over here!					
+84790	all		Punt		Charges at an enemy, knocking it back and inflicting normal damage plus $s3.						
+84791	all		Dominate Mind		Takes control of a humanoid enemy up to level $s1 for $d.	Charmed.					
+84792	all		Slimed		Nature damage inflicted every 3 sec. Chance to spread to nearby allies.	Nature damage inflicted every 3 sec. Chance to spread to nearby allies.					
+84793	all		Slimy Bite		Bite the target, dealing 125% weapon damage and infecting them with a disease called Slimed that deals 25 to 48 Nature damage every second for 10 seconds. Every time a player casts a spell or uses an ability while they are diseased, there is a 50% chance to spread the disease to another player within 30 yards. Stacks up to 5 times.	Healing effects reduced by $s2%.					
+84794	all		Increase Spell Dam Holy 17		Increases damage done by Holy spells and effects by up to $s1.						
+84795	all		Increase Spell Dam Shadow 5		Increases damage done by Shadow spells and effects by up to $s1.						
+84796	all		Firebolt		Deals $s1 damage to a target.						
+84797	all		Summon Imp		Summon a random demon from the Twisting Nether who will assist you in combat for a short time.						
+84798	all		Tormenting Strike		Deals $s1% Weapon Damage and generates extra threat.						
+84799	all		Sacrifice		Grants the owner a shield absorbing $s1 damage.	Absorbing damage.					
+84800	all		Summon Voidwalker		Summon a random demon from the Twisting Nether who will assist you in combat for a short time.						
+84801	all		Counterspell		Counters an enemy's spell, preventing the enemy from casting that spell again for $d. Generates a high amount of threat.						
+84802	all		Summon Felhunter		Summon a random demon from the Twisting Nether who will assist you in combat for a short time.						
+84803	all		Fire Blast		Inflicts Fire damage to an enemy.						
+84804	all		Summon Infernal		Summon a random demon from the Twisting Nether who will assist you in combat for a short time.						
+84805	all		Summon Demon		Summon a random demon from the Twisting Nether who will assist you in combat for a short time.						
+84806	all		Vengeance of the Brotherhood		Deals $s1 damage, doubled if the target is stunned.	Deals $s1 damage, doubled if the target is stunned.					
+84807	all		Vengeance of the Brotherhood		Your attacks and ranged attacks have a chance to embed a knife into your target, dealing $84806s1 damage, doubled if the target is stunned.						
+84808	all		5% Leather Armor Contribution		Increases your armor contribution from items by 5%.						
+84809	all		Winding Cannon...		Begin winding up the cannon, building up $s1 damage per second, up to ${$m1*6} damage. When you move or stop winding you release the cannon ball, dealing its damage to all targets in front of you, with the damage split evenly.						
+84810	all		Winding...			Storing $84809s1 damage.					
+84811	all		Cannon Blast		Release the built up damage of the Wind-Up Cannon.						
+84812	all		Increase Spell Dam 9		Increases damage and healing done by magical spells and effects by up to $s1.						
+84813	spellbook	164	Black Diamond Ring								
+84814	spellbook	164	Pristine Black Diamond Amulet								
+84815	all		Increased Spell Penetration 10		Decreases the magical resistances of your spell targets by $s1.						
+84816	all		Increase Spell Dam 20		Increases damage and healing done by magical spells and effects by up to $s1.						
+84817	all		Increase Spell Dam 27		Increases damage and healing done by magical spells and effects by up to $s1.						
+84818	all		Increase Spell Hit 2		Improves your chance to hit with spells by $s1%.						
+84819	all		Featherfire			Your next Starfire costs $s1% less mana and casts $/1000;S2 seconds faster.					
+84820	all		Featherheart 8pc		Each time Moonfire deals periodic damage, your next Starfire costs 5% less mana and casts 0.1 seconds faster, stacking up to 20 times.						
+84821	all		Minor Innervate			Spirit based mana regeneration increased by $s2%.  Allows $s1% of your mana regeneration while casting.					
+84822	all		Bonus Innervate		Using Innervate on another target also grants you Innervate at 15% effectiveness.						
+84823	all		Hurricane Cooldown Reduc		Every time your Hurricane spell deals damage its cooldown is reduced by 0.5 sec.						
+84824	all		Increase Healing 33		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84825	all		Increase Healing 39		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84826	all		Increase Healing 28		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84827	all		Increase Healing 55		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84828	all		Increase Healing 66		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84829	all		Increase Healing 37		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84830	all		Tree Form Mana reduc		Reduces the mana cost of Tree of Life by $s1%.						
+84831	all		Natures Swiftness cooldown reduc		Cooldown of Nature's Swiftness and Overgrowth reduced by $s1%.						
+84832	all		Tranquility duration increase		Tranquility now channels for an additional $/1000;s1 seconds.						
+84833	all		Increase Defense 8		Increased Defense +$s1.						
+84834	all		Increase Defense 10		Increased Defense +$s1.						
+84835	all		Ursal Might	Passive	Your increased armor value from Dire Bear Form is kept upon leaving the form for $d. This effect is lost early if you enter another animal form.	Armor contribution from items by $s1%					
+84836	all		Feralheart 4pc		Your increased armor value from Dire Bear Form is kept upon leaving the form for $84835d. This effect is lost early if you enter another animal form.\nReduces the energy cost of Mangle (Cat) by $s2.						
+84837	all		Feralheart 6pc		The duration of your Rip is increased by $/1000;s1 seconds and the critical strike chance of Shred is increased by $s3%.\nCooldown of Challenging Roar reduced by $s2%.						
+84838	all		Feralheart 8pc		Swipe generates an additional $s1 threat on each target it hits.\nIncreases your maximum energy by $s2 in Cat Form.						
+84839	all		Beastmasters 6pc		Aspect of the Viper gains an additional $s1% of your current level.						
+84840	all		Increase Spell Dam 28		Increases damage and healing done by magical spells and effects by up to $s1.						
+84841	all		Increase Spell Dam 30		Increases damage and healing done by magical spells and effects by up to $s1.						
+84842	all		Sorcerers 4pc		Increases the critical strike chance of Fire Blast, Ice Lance, and Arcane Missiles by $s1%.						
+84843	all		Sorcerer's Arcanice			Your next Ice Lance treats the target as if it were Frozen.					
+84844	all		Sorcerer's Pyrocane			Your next Arcane Barrage is guaranteed to be a critical hit.					
+84845	all		Sorcerer's Frostfire			Your next Fire Blast deals $s1% increased damage.					
+84846	all		Sorcerers 8pc		Arcane Blast has a $h% chance to make your next Ice Lance act as if the target is frozen.\nFireball has a $h% chance to make your next Arcane Barrage a guaranteed critical strike.\nFrostbolt has a $h% chance to make your next Fire Blast deal 100% increased damage.						
+84847	all		Sorcerers 8pc		Arcane Blast has a $h% chance to make your next Ice Lance act as if the target is frozen.\nFireball has a $h% chance to make your next Arcane Barrage a guaranteed critical strike.\nFrostbolt has a $h% chance to make your next Fire Blast deal 100% increased damage.						
+84848	all		Sorcerers 8pc		Arcane Blast has a $h% chance to make your next Ice Lance act as if the target is frozen.\nFireball has a $h% chance to make your next Arcane Barrage a guaranteed critical strike.\nFrostbolt has a $h% chance to make your next Fire Blast deal 100% increased damage.						
+84849	all		Sorcerers 6pc		Arcane Explosion generates $s1% less threat.						
+84850	all		Increase Block 2		Increases your chance to block attacks with a shield by $s1%.						
+84851	all		Increase Defense 5		Increased Defense +$s1.						
+84852	all		Vigilant Avenger		Hitting an enemy with Avenger's Shield now grants you an absorption effect equal to some of the damage dealt.	Absorbs damage.					
+84853	all		Vigilforge 8pc		The first time Avenger's Shield deals damage, it now grants you an absorption effect equal to $s1% of the damage dealt.						
+84854	all		Increase Spell Dam Holy 16		Increases damage done by Holy spells and effects by up to $s1.						
+84855	all		Increase Spell Dam Holy 28		Increases damage done by Holy spells and effects by up to $s1.						
+84856	all		Increase Spell Dam 33		Increases damage and healing done by magical spells and effects by up to $s1.						
+84857	all		Attack Power VS Demons 20		Attack Power increased by $s1 when fighting Demons.						
+84858	all		Attack Power VS Undead 20		Attack Power increased by $s1 when fighting Undead.						
+84859	all		Increase Critical 2		Improves your chance to get a critical strike with melee and ranged attacks by $s1%.						
+84860	all		Increase Spell Dam Holy 11		Increases damage done by Holy spells and effects by up to $s1.						
+84861	all		Soulforge 4pc		Increases the critical strike chance of your Seal spells that are capable of critically striking by $s1%.						
+84862	all		Soulforged Wrath			You may now use Hammer of Wrath regardless of target's health.					
+84863	all		Soulforge 8pc		Verdict now has a $h% chance to make your next Hammer of Wrath usable on any target regardless of their health.						
+84864	all		Empowered Consecration		Damaging an enemy with Hammer of Wrath empowers your Consecration, reducing its mana cost by $s1% for $d.	Your Consecration is empowered, reducing its mana cost by $s1%.					
+84865	all		Soulforge 6pc		Damaging an enemy with Hammer of Wrath empowers your Consecration, reducing its mana cost by $84864s1% for $84864d.						
+84866	all		Increase Healing 25		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84867	all		Increase Healing 38		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84868	all		Increase Healing 32		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84869	all		Holyforge 4pc		Increases the damage and healing of Holy Shock by $s1%.						
+84870	all		Holyforge 6pc		Reduces the cooldown of your Divine Illumination by $/1000;s1 seconds.						
+84871	all		Divine Aura		Divine Protection and Divine Shield now also bless nearby party members, reducing their damage taken by $s1% for as long as you are shielded from harm.	Damage taken reduced by $s1%					
+84872	all		Holyforge 8pc		Divine Protection and Divine Shield now also bless nearby party members, reducing their damage taken by $84871s1% for as long as you are shielded from harm.						
+84873	all		Increase Spell Dam Shadow 24		Increases damage done by Shadow spells and effects by up to $s1.						
+84874	all		Increase Spell Dam 29		Increases damage and healing done by magical spells and effects by up to $s1.						
+84875	all		Increase Spell Dam 25		Increases damage and healing done by magical spells and effects by up to $s1.						
+84876	all		Pious 4pc		Increases the damage dealt by your Priest periodic effects by $s1%.						
+84877	all		Pious 6pc		Killing a target with Shadow Word: Death now also decreases the cooldown of Shadowfiend by $s1 seconds.						
+84878	all		Mind Blown			Mind Blast has a $s1% increased chance to critically strike.					
+84879	all		Pious 8pc		Causing damage to an enemy with or taking damage from Shadow Word: Death now gives your Mind Blast a $84878s1% increased chance to critically strike. Lasts $84878d. Stacks up to $84878u times.						
+84880	all		Increase Healing 10		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84881	all		Increase Healing 29		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84882	all		Increase Healing 31		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84883	all		Increase Healing 59		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						
+84884	all		Increase Healing 17		Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.						

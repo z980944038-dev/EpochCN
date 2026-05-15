@@ -2722,7 +2722,7 @@ function LoadEpochCNTooltipLineData()
     ["Use: The sword must be reforged before it can be used. Reforging the sword requires 4 Steel Bars, 4 Strong Flux , 2 Elemental Fire and 2 Heavy Grinding Stones."] = "使用：剑必须经过重铸才能使用。重铸剑需要 4 根钢棒、4 颗强力助熔剂、2 颗元素之火和 2 颗重磨石。",
     ["Use: These boots significantly increase your run speed for 20 sec. WARNING: Their power supply and gyros do not always function as intended. (30 Min Cooldown)"] = "使用: 这些靴子可以显着提高你的奔跑速度，持续 20 秒。警告：它们的电源和陀螺仪并不总是按预期工作。 （30 分钟冷却时间）",
     ["Use: These dangerous looking boots significantly increase your run speed for 20 sec. They are prone to explode however, so use with caution. (5 Min Cooldown)"] = "使用：这双看起来很危险的靴子会显著提高你的奔跑速度，持续 20 秒。不过它们容易爆炸，请谨慎使用。（5分钟冷却）",
-    ["Use: This Sealed Title grants you \"Of Epoch\" Title. (1 Min Cooldown)"] = "使用: 这个封印头衔授予你“纪元”头衔。 （1 分钟冷却时间）",
+    ["Use: This Sealed Title grants you \"Of Epoch\" Title. (1 Min Cooldown)"] = "使用：此密封称号授予你纪元之称号。（1分钟冷却）",
     ["Use: This container needs to be filled with water from the fissure beneath the Venture Co. settlement in Stonetalon Mountains."] = "使用：这个容器需要从石爪山脉风险投资公司定居点下方的裂缝中注入水。",
     ["Use: This container needs to be filled with water from the fissure near Girna's dock in the Wetlands."] = "使用：这个容器需要从湿地吉纳码头附近的裂缝中注入水。",
     ["Use: This container needs to be filled with water from the watering hole near Brine's hut in the Barrens."] = "使用：这个容器需要从贫瘠之地布赖恩小屋附近的水坑里装满水。",

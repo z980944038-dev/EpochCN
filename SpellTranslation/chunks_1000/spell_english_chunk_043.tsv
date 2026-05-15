@@ -1,0 +1,1001 @@
+﻿spell_id	priority	skill_line_ids	name_en	rank_en	description_en	tooltip_en	name_zh	rank_zh	description_zh	tooltip_zh	notes
+57804	all		Control Crystal Activation		Activate the Violet Hold's defenses.						
+57805	all		Summon Defense Control Crystal								
+57806	all		Sprinkle Holy Water		Sanctifies the bones of the fallen, allowing their spirits to ascend.						
+57807	all		Sunder Armor		Hacks at an enemy's armor, reducing it more per Sunder Armor. Can be applied up to $u times. Lasts $d.	Armor reduced by $s1.					
+57808	all		Freed Crusader Soul								
+57809	all		Vrykul Drakerider Death								
+57810	spellbook	574	Genesis	Rank 1	Increases the damage and healing done by your periodic spell damage and healing effects by $s1%.						
+57811	spellbook	574	Genesis	Rank 2	Increases the damage and healing done by your periodic spell damage and healing effects by $s1%.						
+57812	spellbook	574	Genesis	Rank 3	Increases the damage and healing done by your periodic spell damage and healing effects by $s1%.						
+57813	spellbook	574	Genesis	Rank 4	Increases the damage and healing done by your periodic spell damage and healing effects by $s1%.						
+57814	spellbook	574	Genesis	Rank 5	Increases the damage and healing done by your periodic spell damage and healing effects by $s1%.						
+57815	all		Piercing Screech		Inflicts $s1 Shadow damage to nearby enemies.						
+57816	all		Icecrown Airship - N - Attack - Target Fire Aura								
+57818	all		Has Tabard								
+57819	all		Argent Champion		You champion the cause of the Argent Crusade.  All reputation gains while in level 80 dungeons will be applied to your standing with them.	All reputation gains while in level 80 dungeons are applied to your Argent Crusade standing.					
+57820	all		Ebon Champion		You champion the cause of the Knights of the Ebon Blade.  All reputation gains while in level 80 dungeons will be applied to your standing with them.	All reputation gains while in level 80 dungeons are applied to your Knights of the Ebon Blade standing.					
+57821	all		Champion of the Kirin Tor		You champion the cause of the Kirin Tor.  All reputation gains while in level 80 dungeons will be applied to your standing with them.	All reputation gains while in level 80 dungeons are applied to your Kirin Tor standing.					
+57822	all		Wyrmrest Champion		You champion the cause of the Wyrmrest Accord.  All reputation gains while in level 80 dungeons will be applied to your standing with them.	All reputation gains while in level 80 dungeons are applied to your Wyrmrest Accord standing.					
+57823	spellbook	257	Revenge	Rank 9	Instantly counterattack an enemy for ${$m1+$AP*0.310} to ${$M1+$AP*0.310} damage.   Revenge is only usable after the warrior blocks, dodges or parries an attack.						
+57824	all		Icecrown Airship - N - Attack - Cannoneer - Work on Cannon								
+57825	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+57827	all		LeCraft Visual Test								
+57828	all		Icecrown Airship - H - Attack - Forward Cannon Fire								
+57829	all		Increase Healing 216		Increases spell power by $s1.						
+57832	all		Thunder Clap		Blasts nearby enemies increasing the time between their attacks by $s2% for $d and doing $s1 damage to them.  Damage increased by attack power.  This ability causes additonal threat and will affect up to $i targets.	Attack speed reduced by $s2%.					
+57833	all		Frost Spit		Inflicts $55072s1 Frost damage every $t1 sec.	Inflicts $55072s1 Frost damage every $t1 sec.					
+57834	all		Frost Spit		Frost damage inflicted every $55071t sec for $55071d.	Frost damage inflicted every $55071t sec.					
+57835	all		Gift of Twilight		Increases the targets Shadow damage by $s1% and reduces damage taken by $s2%.	Increases Shadow damage by $s1%.\nReduces damage taken by $s2%.					
+57836	all		Summoning Channel								
+57837	all		Succubus Transform								
+57838	all		Force Cast Summon Skeletal Constructor								
+57839	all		Summon Skeletal Constructor								
+57840	all		Killing Spree		Step through the shadows from enemy to enemy within 10 yards, attacking an enemy every .5 secs with both weapons until 5 assaults are made.  Can hit the same target multiple times.						
+57841	all		Killing Spree		Step through the shadows from enemy to enemy within 10 yards, attacking an enemy every .5 secs with both weapons until 5 assaults are made.  Can hit the same target multiple times.						
+57842	all		Killing Spree		Step through the shadows from enemy to enemy within 10 yards, attacking an enemy every .5 secs with both weapons until 5 assaults are made.  Can hit the same target multiple times.						
+57843	all		Mojo Empowered Fire Ward		Surrounds the caster with a shield that lasts $d. Increases damage dealt by $s2% and can absorb a fixed amount of Fire damage.	Shielded against Fire damage.\nIncreases Magic damage done by $s2%					
+57844	all		Darkwater Clam		Open the clam!						
+57845	all		Ringing Slap		Slap an enemy in the face, inflicting Physical damage and interrupting the spell being cast for $d.						
+57846	all		Heroic Strike		A strong attack that increases melee damage by 10% and causes a high amount of threat.						
+57848	all		Icecrown Airship - A - Attack - Cannon Ball Drop								
+57849	spellbook	574	Improved Insect Swarm	Rank 1	Increases your damage done by your Wrath spell to targets afflicted by your Insect Swarm by $s1%, and increases the critical strike chance of your Starfire spell by $s2% on targets afflicted by your Moonfire spell.						
+57850	spellbook	574	Improved Insect Swarm	Rank 2	Increases your damage done by your Wrath spell to targets afflicted by your Insect Swarm by $s1%, and increases the critical strike chance of your Starfire spell by $s2% on targets afflicted by your Moonfire spell.						
+57851	spellbook	574	Improved Insect Swarm	Rank 3	Increases your damage done by your Wrath spell to targets afflicted by your Insect Swarm by $s1%, and increases the critical strike chance of your Starfire spell by $s2% on targets afflicted by your Moonfire spell.						
+57852	all		Destroy Altar								
+57853	all		Master Summoner's Staff		Destroy a nearby summoning altar. (15 yard range.)						
+57854	all		Raging Shadows		The unleashed shadows Inflict $s1 Shadow damage stunning all nearby enemies.	Stunned.					
+57855	all		Glyph of the Wild		Mana cost of your Mark of the Wild and Gift of the Wild spells reduced by $57855s1%.						
+57856	all		Glyph of Aquatic Form		Increases your swim speed by $57856s1% while in Aquatic Form.						
+57857	all		Glyph of Unburdened Rebirth		Your Rebirth spell no longer requires a reagent.						
+57858	all		Glyph of Challenging Roar		Reduces the cooldown of your Challenging Roar ability by ${$57858m1/-1000} sec.						
+57859	all		Teleport to the Halls of Lightning		Teleport player to Halls of Stone.						
+57860	all		Teleport to the Halls of Lightning		Teleport player to Halls of Lightning.	Teleport player to Halls of Lightning.					
+57861	all		Roar of Rhunok		Lets loose a roar, Increaseing damage taken by $s1% for $.	Increases damage taken by $s1%.					
+57862	all		Glyph of Thorns		Increases the duration of your Thorns ability by $57862s1 min when cast on yourself.						
+57863	all		Siphon Power		Drawing the power of the target.	Drawing Power.					
+57864	all		Siphoned Power		Decreases the caster's attack and cast speed by $s1% for $d.	Attack and cast speed decreased by $s1%.					
+57865	spellbook	574	Nature's Splendor	Rank 1	Increases the duration of your Moonfire and Rejuvenation spells by ${$m1/1000} sec, your Regrowth spell by ${$m2/1000} sec, and your Insect Swarm and Lifebloom spells by ${$m3/1000} sec.						
+57866	all		Glyph of Revive Pet		Reduces the pushback suffered from damaging attacks while casting Revive Pet by $57866s1%.						
+57867	all		zzOLDNature's Splendor								
+57868	all		zzOLDNature's Splendor								
+57869	all		Blink		Teleports the caster 20 yd. forward unless something is in the way. Also frees the caster from any bonds.	Blinking...					
+57870	all		Glyph of Mend Pet		Your Mend Pet spell increases your pet's happiness slightly.						
+57871	all		Icecrown Airship - H - Attack - 02 Cannon Fire at Shield								
+57872	all		Portal Visual								
+57873	spellbook	134	Protector of the Pack	Rank 1	Increases your attack power by $s1% and reduces the damage you take by $s2%, while in Bear or Dire Bear Form.						
+57874	all		Twilight Shift		Reduces the target's damage by $s1%.\nInflicts $s2 Shadow damage every $t2 sec.	Damage reduced by $s1%.\n$s2 Shadow damage inflicted every $t2 sec.					
+57876	spellbook	134	Protector of the Pack	Rank 2	Increases your attack power by $s1% and reduces the damage you take by $s2%, while in Bear or Dire Bear Form.						
+57877	spellbook	134	Protector of the Pack	Rank 3	Increases your attack power by $s1% and reduces the damage you take by $s2%, while in Bear or Dire Bear Form.						
+57878	spellbook	134	Natural Reaction	Rank 1	Increases your dodge while in Bear Form or Dire Bear Form by $s1%, and you regenerate $s2 rage every time you dodge while in Bear Form or Dire Bear Form.						
+57879	all		Snake Trap Effect	Rank 1							
+57880	spellbook	134	Natural Reaction	Rank 2	Increases your dodge while in Bear Form or Dire Bear Form by $s1%, and you regenerate $s2 rage every time you dodge while in Bear Form or Dire Bear Form.						
+57881	spellbook	134	Natural Reaction	Rank 3	Increases your dodge while in Bear Form or Dire Bear Form by $s1%, and you regenerate $s2 rage every time you dodge while in Bear Form or Dire Bear Form.						
+57882	all		Leap		Leaps at an indicated destination between 5 and 45 yards distance. This action will cause the Lithe Stalker to leave combat.						
+57883	all		Leap Effect								
+57884	all		Through the Eye: Kill Credit to Master								
+57885	all		Through the Eye: Summon Image of a Shadow Cultist								
+57886	all		Defense System Spawn Effect		Spawn in effect.	Conjuring...					
+57887	all		Defense System Visual								
+57888	all		Through the Eye: Eye of the Lich King Gossip Force Cast								
+57889	all		Using the Eye of the Lich King			Scrying for information that The Bone Witch can use.					
+57890	all		Death Gate								
+57891	all		Through the Eye: Summon Image of Vardmadra								
+57892	all		Death Gate								
+57893	all		Natural Reaction		Increases your dodge while in Bear Form or Dire Bear Form, and you regenerate rage every time you dodge while in Bear Form or Dire Bear Form.						
+57894	all		Glyph of Mend Pet		Restores a small amount of happiness.						
+57895	all		Dummy Gate								
+57896	all		Portal: Valley of Echoes								
+57897	all		Portal: Valley of Echoes								
+57899	all		Portal to the Valley of Echoes								
+57900	all		Glyph of Possessed Strength		Increases the damage your pet inflicts while using Eyes of the Beast by $57900s1%.						
+57901	all		Gift of the Naaru Visual								
+57902	all		Glyph of Scare Beast		Reduces the pushback suffered from damaging attacks while casting Scare Beast by $57902s1%.						
+57903	all		Glyph of Feign Death		Reduces the cooldown of your Feign Death spell by ${$57903m1/-1000} sec.						
+57904	all		Glyph of the Pack		Increases the range of your Aspect of the Pack ability by $57904s1 yards.						
+57906	all		War Horn of Acherus		Calls forth a knight of the Ebon Blade.						
+57907	all		Increased Spirit		Chance on Moonfire to increase your Spirit by $57909s1.						
+57908	all		Stain Cloth		Dips Kurzel's Blouse Scrap in the remains of Novos the Summoner.						
+57909	all		Venture Might		Increases your Spirit by $s1.	Increases your Spirit by $s1.					
+57910	all		Death Gate								
+57911	all		Death Gate								
+57912	all		Arcane Lightning		The Violet Hold's defense systems deals $s1 Arcane damage to unauthorized life forms.						
+57913	all		Summon Ghoul								
+57914	all		Create Cloth AICast								
+57915	all		Create Cloth								
+57916	all		Death Gate								
+57917	all		Death Gate								
+57918	all		Increased Healing		Increases the periodic healing of Rejuvenation by $s1.						
+57921	all		Machine Gun		Focuses the machine guns on the enemy. The machine gun will continue to track the enemy for $d, even while moving.						
+57922	all		Homing Rocket		Deals $s1 damage to the current target. Requires a flying target.						
+57923	all		Attune Lorehammer		Attempt to attune the Lorehammer to an artifact from the time of Stormhoof.						
+57924	all		Glyph of Arcane Intellect		Reduces the mana cost of your Arcane Intellect and Arcane Brilliance spells by $57924s1%.						
+57925	all		Glyph of Slow Fall		Your Slow Fall spell no longer requires a reagent.						
+57926	all		Glyph of Fire Ward		You have an additional $57926s1% chance to reflect Fire spells while your Fire Ward is active.						
+57927	all		Glyph of Frost Ward		You have an additional $57927s1% chance to reflect Frost spells while your Frost Ward is active.						
+57928	all		Glyph of Frost Armor		Increases the duration of your Frost Armor and Ice Armor spells by ${$57928m1/60000} min.						
+57930	all		Arcane Lightning								
+57931	all		Cosmetic - Low Poly Fire								
+57932	all		Ghost Visual								
+57933	spellbook	39	Tricks of the Trade		The current party or raid member becomes the target of your Tricks of the Trade.  The threat caused by your next attack and all actions taken for $57933d afterwards will be transferred to the target.  In addition, all damage caused by the target is increased by $57933s1% during this time.	All damage caused increased by $s1%.  All threat transferred from rogue to target.					
+57934	spellbook	39	Tricks of the Trade		The current party or raid member becomes the target of your Tricks of the Trade.  The threat caused by your next damaging attack and all actions taken for $57933d afterwards will be transferred to the target.  In addition, all damage caused by the target is increased by $57933s1% during this time.	The threat caused by your next damaging attack and all actions taken for $57933d afterwards will be transferred to the target.  In addition, all damage caused by the target is increased by $57933s1% during this time.					
+57935	all		Twilight Torment		Increases the target's Shadow damage taken by $s1% and deals Shadow damage when target attacks.	Increases Shadow damage taken by $s1%.\nShadow damage taken upon attacking.					
+57936	all		Attack Violet Hold Guard								
+57937	all		Glyph of Blessing of Kings		Reduces the mana cost of your Blessing of Kings and Greater Blessing of Kings spells by $57937s1%.						
+57938	all		Twilight Torment								
+57939	all		Attune Lorehammer		Attempt to attune the Lorehammer to the time of a Taunka Artifact in Howling Hollow.						
+57940	all		Essence of Wintergrasp		Allows the bearer to see and loot Stone Keeper's Shards. Also increases their focus in combat, improving the experience they gain.	Experience gain from monsters increased by $s1%.\nAllows the collection of Stone Keeper's Shards.					
+57941	all		Mind Flay		Inflicts Shadow damage to an enemy and reduces its movement speed for $d.	Shadow damage inflicted over $d.\nReduced movement speed.					
+57942	all		Shadow Bolt Volley		Hurls missiles of dark magic, inflicting Shadow damage to nearby enemies.						
+57943	all		Increased Damage 1		Increases your damage against undead by $s1%.						
+57944	all		Increased Damage 3		Increases your damage against undead by $s1%.						
+57945	all		Icecrown Airship - A - Attack - 03 Cannon Fire								
+57946	spellbook	355	Life Tap	Rank 8	Converts ${$m1+$SPI*1.5} health into ${$m1*$<mult>+$SPS*.5*$<mult>} mana.  Spell power increases the amount of mana returned.						
+57947	all		Glyph of Sense Undead		Damage against Undead increased by $57947s1% while your Sense Undead ability is active.						
+57948	all		Twilight Torment		Shadow damage taken when target attacks.	Shadow damage taken upon attacking.					
+57949	all		Shiver		Deals $57952s1 shadow damage when damaged. Jumps to nearby raid member.	Deals $57952s1 shadow damage when damaged. Jumps to nearby raid member.					
+57951	all		Shiver		Deals $57952s1 shadow damage when damaged. Jumps to nearby raid member.	Deals $57952s1 shadow damage when damaged. Jumps to nearby raid member.					
+57952	all		Shiver		Deals $57952s1 shadow damage when damaged. Jumps to nearby raid member.	Deals $57952s1 shadow damage when damaged. Jumps to nearby raid member.					
+57953	all		Icecrown Airship - N - Attack - 03b Cannon Explosion								
+57954	all		Glyph of the Wise		Reduces the mana cost of your Seal of Wisdom spell by $57954s1%.						
+57955	all		Glyph of Lay on Hands		Reduces the cooldown of your Lay on Hands spell by ${$57955m1/-60000} min.						
+57957	all		Place Death's Gaze Orb		Place a Death's Gaze Orb on the Abomination Lab Orb Stand, the Flesh Giant Lab Orb Stand, or the Cauldron Area Orb Stand.						
+57958	all		Glyph of Blessing of Might		Increases the duration of your Blessing of Might spell by $57958s1 min when cast on yourself.						
+57959	all		Planar Anomalies								
+57960	spellbook	374	Water Shield	Rank 9	The caster is surrounded by $57960n globes of water, granting $57960s2 mana per 5 sec.  When a spell, melee or ranged attack hits the caster, $57961s1 mana is restored to the caster. This expends one water globe.  Only one globe will activate every few seconds.  Lasts $57960d.  Only one Elemental Shield can be active on the Shaman at any one time.	$s2 mana per 5 sec.  Attacks and spells used against you restore $57961s1 mana.  $n charges.					
+57961	all		Water Shield		The caster is surrounded by $57960n globes of water, granting $57960s2 mana per 5 sec.  When a spell, melee or ranged attack hits the caster, $57961s1 mana is restored to the caster. This expends one water globe.  Only one globe will activate every few seconds.  Lasts $57960d.  Only one Elemental Shield can be active on the Shaman at any one time.						
+57962	all		Icecrown Airship - A - Attack - 01 Target Check								
+57963	all		Planar Anomalies		Summons a Planar Anomaly.						
+57964	all		Instant Poison VIII	Rank 8	Coats a weapon with poison that lasts for 1 hour.\nEach strike has a $57967h% chance of poisoning the enemy which instantly inflicts ${$57964m1+0.10*$AP} Nature damage.						
+57965	all		Instant Poison IX	Rank 9	Coats a weapon with poison that lasts for 1 hour.\nEach strike has a $57968h% chance of poisoning the enemy which instantly inflicts ${$57965m1+0.10*$AP} Nature damage.						
+57967	all		Instant Poison VIII	Rank 8	Coats a weapon with poison that lasts for 1 hour.\nEach strike has a chance of poisoning the enemy which instantly inflicts ${$57964m1+0.10*$AP} Nature damage.						
+57968	all		Instant Poison IX	Rank 9	Coats a weapon with poison that lasts for 1 hour.\nEach strike has a chance of poisoning the enemy which instantly inflicts ${$57965m1+0.10*$AP} Nature damage.						
+57969	all		Deadly Poison VIII	Rank 8	Coats a weapon with poison that lasts for 1 hour.\nEach strike has a $57972h% chance of poisoning the enemy for ${$57969m1*4+0.12*$AP} Nature damage over $57969d.  Stacks up to 5 times on a single target.	Target takes $s1 Nature damage every $t1 seconds.					
+57970	all		Deadly Poison IX	Rank 9	Coats a weapon with poison that lasts for 1 hour.\nEach strike has a $57973h% chance of poisoning the enemy for ${$57970m1*4+0.12*$AP} Nature damage over $57970d.  Stacks up to 5 times on a single target.	Target takes $s1 Nature damage every $t1 seconds.					
+57971	all		Planar Anomaly Aggro								
+57972	all		Deadly Poison VIII	Rank 8	Coats a weapon with poison that lasts for 1 hour.\nEach strike has a $57972h% chance of poisoning the enemy for ${$57969m1*4+0.12*$AP} Nature damage over $57969d.  Stacks up to 5 times on a single target.   Once stacked to 5 times, each application of Deadly Poison also causes the poison on the Rogue's other weapon to apply.						
+57973	all		Deadly Poison IX	Rank 9	Coats a weapon with poison that lasts for 1 hour.\nEach strike has a $57973h% chance of poisoning the enemy for ${$57970m1*4+0.12*$AP} Nature damage over $57970d.  Stacks up to 5 times on a single target.   Once stacked to 5 times, each application of Deadly Poison also causes the poison on the Rogue's other weapon to apply.						
+57974	all		Wound Poison VI	Rank 6	Coats a weapon with poison that lasts for 1 hour.\nEach strike has a $57977h% chance of poisoning the enemy, causing ${$57974m2+0.04*$AP} Nature damage and reducing all healing effects used on them by $57974s1% for $57974d.	All healing effects reduced by $s1%.					
+57975	all		Wound Poison VII	Rank 7	Coats a weapon with poison that lasts for 1 hour.\nEach strike has a $57978h% chance of poisoning the enemy, causing ${$57975m2+0.04*$AP} Nature damage and reducing all healing effects used on them by $57975s1% for $57975d.	All healing effects reduced by $s1%.					
+57976	all		Planar Blast		Sends out a blast wave of magic, inflicting Arcane damage to nearby enemies.						
+57977	all		Wound Poison VI	Rank 6	Coats a weapon with poison that lasts for 1 hour.\nEach strike has a chance of poisoning the enemy, causing ${$57974m2+0.04*$AP} Nature damage and reducing all healing effects used on them by $57974s1% for $57974d.						
+57978	all		Wound Poison VII	Rank 7	Coats a weapon with poison that lasts for 1 hour.\nEach strike has a chance of poisoning the enemy, causing ${$57975m2+0.04*$AP} Nature damage and reducing all healing effects used on them by $57975s1% for $57975d.						
+57979	all		Glyph of Blessing of Wisdom		Increases the duration of your Blessing of Wisdom spell by $57979s1 min when cast on yourself.						
+57980	all		Left Hand Chains								
+57981	all		Anesthetic Poison II	Rank 2	Coats a weapon with poison that lasts for 1 hour.  Each strike has a $57982h% chance of poisoning the enemy which instantly inflicts $57981s1 Nature damage and dispels $57981s2 Enrage effect, but causes no additional threat.						
+57982	all		Anesthetic Poison II	Rank 2	Coats a weapon with poison that lasts for 1 hour.  Each strike has a $57982h% chance of poisoning the enemy which instantly inflicts $57981s1 Nature damage and dispels $57981s2 Enrage effect, but causes no additional threat.						
+57983	all		Right Hand Chains								
+57984	all		Fire Blast		Inflicts Fire damage to an enemy.						
+57985	all		Glyph of Fading		Reduces the mana cost of your Fade spell by $57985s1%.						
+57986	all		Glyph of Shackle Undead		Increases the range of your Shackle Undead spell by $57986s1 yards.						
+57987	all		Glyph of Levitate		Your Levitate spell no longer requires a reagent.						
+57988	all		Twilight Torment		Shadow damage taken when target attacks.	$s1 Shadow damage taken upon attacking.					
+57989	all		Shadowfiend Death								
+57992	spellbook	253	Envenom	Rank 3	Finishing move that consumes your Deadly Poison doses on the target and deals instant poison damage.  Following the Envenom attack you have an additional $s3% chance to apply Deadly Poison and a $s2% increased frequency of applying Instant Poison for 1 sec plus an additional 1 sec per combo point.  One dose is consumed for each combo point:\n  1 dose:  ${($m1-1)*1+$AP*0.09} damage\n  2 doses: ${($m1-1)*2+$AP*0.18} damage\n  3 doses: ${($m1-1)*3+$AP*0.27} damage\n  4 doses: ${($m1-1)*4+$AP*0.36} damage\n  5 doses: ${($m1-1)*5+$AP*0.45} damage	Chance to apply Deadly Poison increased by $s3% and frequency of applying Instant Poison increased by $s2%.					
+57993	spellbook	253	Envenom	Rank 4	Finishing move that consumes your Deadly Poison doses on the target and deals instant poison damage.  Following the Envenom attack you have an additional $s3% chance to apply Deadly Poison and a $s2% increased frequency of applying Instant Poison for 1 sec plus an additional 1 sec per combo point.  One dose is consumed for each combo point:\n  1 dose:  ${($m1-1)*1+$AP*0.09} damage\n  2 doses: ${($m1-1)*2+$AP*0.18} damage\n  3 doses: ${($m1-1)*3+$AP*0.27} damage\n  4 doses: ${($m1-1)*4+$AP*0.36} damage\n  5 doses: ${($m1-1)*5+$AP*0.45} damage	Chance to apply Deadly Poison increased by $s3% and frequency of applying Instant Poison increased by $s2%.					
+57994	spellbook	375	Wind Shear		Instantly blasts the target with a gust of wind, causing no damage but interrupting spellcasting and preventing any spell in that school from being cast for $d. Also lowers your threat, making the enemy less likely to attack you.						
+57995	all		Portal 1 Ready								
+57996	all		Portal 2 Ready								
+57997	all		Portal 3 Ready								
+57998	all		Portal 4 Ready								
+57999	all		Portal 5 Ready								
+58000	all		Holy Shock Bonus		Increases the healing of your Holy Shock spell by $m%.						
+58001	all		Shadowform								
+58002	all		Summon Portal								
+58003	all		Summon Portal Effect (1)								
+58004	all		Summon Portal Effect (2)								
+58005	all		Summon Portal Effect (3)								
+58006	all		Summon Portal Effect (4)								
+58007	all		Summon Portal Effect (5)								
+58008	all		Portal Periodic								
+58009	all		Glyph of Fortitude		Reduces the mana cost of your Power Word: Fortitude and Prayer of Fortitude spells by $58009s1%.						
+58011	all		Portal Channel Trigger								
+58012	all		Portal Channel								
+58013	all		Plant Blessed Banner		Plants Blessed Banner of the Crusade at the pile of crusader skulls located atop Crusader's Spire.						
+58014	all		Close Portal Trigger								
+58015	all		Glyph of Shadow Protection		Increases the duration of your Shadow Protection and Prayer of Shadow Protection spells by ${$58015m1/60000} min.						
+58016	all		Scourge Package Visual								
+58017	all		Glyph of Pick Pocket		Increases the range of your Pick Pocket ability by $58017s1 yards.						
+58018	all		Close Portal Effect								
+58019	all		Portal Ready Primer								
+58020	all		Scourge Package Visual								
+58021	all		Icecrown Airship - A - Attack - 02 Cannon Shield Fire								
+58022	all		Scourge Package Visual								
+58023	all		Scourge Package Visual								
+58024	all		Icecrown Airship - A - Attack - 02b Cannon Explosion, Shield								
+58025	all		Frost Buffet		Increases the Frost damage the target takes for $d.	Frost damage taken is increased by $s1.					
+58026	all		Blessing of the Crusade			Your power versus the Scourge is significantly increased! Mana and health regeneration increased while standing and defending the banner.					
+58027	all		Glyph of Pick Lock		Reduces the cast time of your Pick Lock ability by $58027s1%.						
+58028	all		Summon Portal Guardian								
+58029	all		Summon Portal Guardian Alt								
+58030	all		Summon Portal Keeper								
+58031	all		Summon Portal Keeper								
+58032	all		Glyph of Distract		Increases the range of your Distract ability by $58032s1 yards.						
+58033	all		Glyph of Safe Fall		Increases the distance your Safe Fall ability allows you to fall without taking damage.						
+58034	all		Summon Azure Binder								
+58035	all		Summon Twilight Whelp								
+58036	all		Vile Geist Rope								
+58037	all		Control Lithe Stalker								
+58038	all		Glyph of Vanish		Increases your movement speed by $58038s1% while the Vanish effect is active.						
+58039	all		Glyph of Blurred Speed		Enables you to walk on water while your Sprint ability is active.						
+58040	all		Destroy Door Seal		Weakens the seal on the prison door.						
+58041	all		Prison Door Seal Weaken								
+58042	all		Treasure Sparkle								
+58043	all		Door Broken								
+58044	all		Dummy Nuke								
+58045	all		Essence of Wintergrasp		Allows the bearer to see Greater Elemental Spirits and loot Stone Keeper's Shards. Also increases their focus in combat, improving the experience they gain.	"Experience gain from monsters increased by $s1%\nAllows the collection of Stone Keeper's Shards.\n\n|cFFFFAA00""The close proximity to the attuned Titan relic also lets the bearer see greater elemental spirits.""|r"					
+58046	all		Summon Crew								
+58047	all		Summon Mason								
+58048	all		Summon Mason								
+58049	all		Summon Mason								
+58050	all		Summon Mason								
+58051	all		Summon Scourge Package								
+58052	all		Summon Squire								
+58053	all		Holy Light	Rank 13	Heals a friendly target for $s1.						
+58054	all		Blessing of Kings		Places a Blessing on the friendly target, increasing total stats by $s1% for $d.  Players may only have one Blessing on them per Paladin at any one time.	Increases stats by $s1%.					
+58055	all		Glyph of Water Breathing		Your Water Breathing spell no longer requires a reagent.						
+58057	all		Glyph of Water Walking		Your Water Walking spell no longer requires a reagent.						
+58058	all		Glyph of Astral Recall		Cooldown of your Astral Recall spell reduced by ${$58058m1/-60000}.1 min.						
+58059	all		Glyph of Renewed Life		Your Reincarnation spell no longer requires a reagent.						
+58060	all		Glyph of Renewed Life		All stats increased by $58060s1% for $58060d when you Reincarnate.	All stats increased by $s1%.					
+58061	all		Forcecast Summon Rocket (Alliance)								
+58062	all		Forcecast Summon Rocket (Horde)								
+58063	all		Glyph of Water Shield		Increases the number of charges on your Water Shield spell by $58063s1.						
+58064	all		Despawn Crew								
+58065	spellbook	185	Dalaran Clam Chowder								
+58067	all		Refreshment		Restores $45548o1 health and ${$57073m2/5*30} mana over $45548d.  If you spend at least 10 seconds eating you will become well fed and gain $57294s1 Attack Power, $57294s3 Spell Power and $57294s2 Stamina for $57294d.	Restores $45548/5;s1 health and ${$57073m2/5} mana per second.					
+58068	all		Glyph of Drain Soul								
+58069	all		Blood Jade Amulet		Craft a Blood Jade Amulet by combining the Vrykul Amulet with a Dark Jade and a Bloodstone.						
+58070	all		Glyph of Drain Soul		Your Drain Soul ability occasionally creates an additional soul shard.						
+58071	all		Summoning Circle								
+58072	all		Summoning Circle								
+58073	all		Glowing Ivory Figurine		Craft a Glowing Ivory Figurine by combining Northern Ivory with Chalcedony and a Shadow Crystal.						
+58074	all		Wicked Sun Brooch		Craft a Wicked Sun Brooch by combining the Iron Dwarf Brooch with a Huge Citrine and a Sun Crystal.						
+58075	all		Intricate Bone Figurine		Craft an Intricate Bone Figurine by combining the Proto Dragon Bone with a Sun Crystal and a Dark Jade.						
+58076	all		Bright Armor Relic		Craft a Bright Armor Relic by combining the Elemental Armor Scrap with a Bloodstone and a Huge Citrine.						
+58077	all		Shifting Sun Curio		Craft a Shifting Sun Curio by combining the Scourge Curio with a Sun Crystal and a Shadow Crystal.						
+58079	all		Glyph of Unending Breath		Increases the swim speed of targets affected by your Unending Breath spell by $58079s1%.						
+58080	all		Glyph of Curse of Exhausion		Increases the range of your Curse of Exhaustion spell by $58080s1 yards.						
+58081	all		Glyph of Kilrogg		Increases the movement speed of your Eye of Kilrogg by $s1% and allows it to fly in areas where flying mounts are enabled.						
+58082	all		Not-So-Honorable Combat: Despawn All Units								
+58083	all		Eye of Kilrogg Passive (DND)								
+58084	all		Crusader's Spire Victory								
+58085	all		Smelt Jagged Shards		Smelt your jagged shards at a Malykriss Furnace on the bottom level of Malykriss.						
+58086	all		Summon Azure Binder								
+58087	all		Summon Azure Invader								
+58088	all		Summon Azure Invader Alt								
+58089	all		Summon Azure Spellbreaker								
+58090	all		Summon Azure Spellbreaker Alt								
+58091	all		Summon Azure Mage Slayer								
+58092	all		Summon Azure Mage Slayer Alt								
+58093	all		Summon Veteran Mage Hunter								
+58094	all		Glyph of Souls		Reduces the mana cost of your Ritual of Souls spell by $58094s1%.						
+58095	all		Glyph of Battle		Increases the duration of your Battle Shout ability by ${$58095m1/60000} min.						
+58096	all		Glyph of Bloodrage		Reduces the health cost of your Bloodrage ability by $s1%.						
+58097	all		Glyph of Charge		Increases the range of your Charge ability by $58097s1 yards.						
+58098	all		Glyph of Thunder Clap		Increases the radius of your Thunder Clap ability by $58098s1 yards.						
+58099	all		Glyph of Mocking Blow		Increases the damage of your Mocking Blow ability by $58099s1%.						
+58100	all		No Man's Land -> Moa'ki Harbor, Dragonblight								
+58101	all		No Man's Land			You are where you should not be...					
+58102	all		Possession			Possessed by Lady Nightswood.					
+58103	all		Geist Chain								
+58104	all		Glyph of Enduring Victory		Increases the window of opportunity in which you can use Victory Rush by ${$58104m1/1000} sec.						
+58105	all		Power of Shadron		Shadron's presence increases Fire damage taken by all enemies by $s1%.	Fire damage taken increased by $s1%.					
+58106	all		Forcecast: Control Lithe Stalker								
+58107	all		Glyph of Enslave Demon		Reduces the cast time of your Enslave Demon spell by $58107s1%.						
+58108	all		Patches Chain		Chains Flamebringer to his stake.						
+58109	all		Crates Kill Credit								
+58110	all		Threat Pulse								
+58111	all		Threat Pulse								
+58112	all		Icecrown Airship - H - Attack - 01 Target Check								
+58113	all		Threat Pulse								
+58114	all		Threat Pulse								
+58115	all		Beautiful Chalcedony Necklace		Repair this necklace by replacing the missing Chalcedony.						
+58117	all		Force Reaction: Scourge								
+58118	all		Patches' Revenge								
+58119	all		Geist Control End								
+58120	all		Geist Control Start								
+58121	all		Torch								
+58122	all		Summon Player Mirror								
+58123	all		Despawn Player Mirror								
+58124	all		Mal'Ganis Kill Credit								
+58125	all		Torch								
+58126	all		Inscription of High Discipline		Permanently adds 30 spell power and 15 critical strike rating to a shoulder slot item.\n\nEnchanting the item causes it to become soulbound.						
+58127	all		Divine Storm		An instant weapon attack that causes Holy damage to up to ${$i-1} enemies within $a1 yards.						
+58128	all		Inscription of the Frostblade		Permanently adds 45 spell power and 15 critical strike rating to a shoulder slot item.\n\nEnchanting the item causes it to become soulbound.						
+58129	all		Inscription of Kings		Permanently adds 20 defense rating and 15 dodge rating to a shoulder slot item.\n\nEnchanting the item causes it to become soulbound.						
+58130	all		Icebound Fortitude		The Death Knight freezes $Ghis:her; blood to become immune to Stun effects and reduce all damage taken by $s3% for $d.  Does not remove existing Stun effects.	Damage taken reduced by $s3%.\nImmune to Stun effects.					
+58131	all		Cleave		Inflicts $s1% of normal melee damage to an enemy and its nearest allies, affecting up to $x1 targets.						
+58132	all		Glyph of the Black Bear		Your bear and dire bear forms take on the appearance of a black bear.						
+58133	all		Glyph of the Forest Lynx		You appear as a forest lynx while in Cat Form.						
+58134	all		Glyph of the Black Wolf		You appears as a black wolf when using your Ghost Wolf spell.						
+58135	all		Glyph of the Arctic Wolf		You appears as an arctic wolf when using your Ghost Wolf spell.						
+58136	all		Glyph of the Bear Cub		Your Polymorph: Sheep spell polymorphs the target into a polar bear cub instead.						
+58137	all		Ghoulplosion		The Ghoul detonates itself inflicting $s1 Shadow damage in an area around the caster.	The Ghoul detonates itself inflicting $s1 Shadow damage in an area around the caster.					
+58138	all		Disarm Test								
+58139	all		Fleshwerks Phase								
+58140	all		Glyph of Aquatic Form		Increases your swim speed by $57856s1% while in Aquatic Form.						
+58141	spellbook	755	Crystal Citrine Necklace								
+58142	spellbook	755	Crystal Chalcedony Amulet								
+58143	spellbook	755	Earthshadow Ring								
+58144	spellbook	755	Jade Ring of Slaying								
+58145	spellbook	755	Stoneguard Band								
+58146	spellbook	755	Shadowmight Ring								
+58147	spellbook	755	Ring of Earthen Might								
+58148	spellbook	755	Ring of Scarlet Shadows								
+58149	spellbook	755	Windfire Band								
+58150	spellbook	755	Ring of Northern Tears								
+58151	all		Subdued Lithe Stalker		Display to a weakened Lithe Stalker to demand its obedience.	Bring the Subdued Lithe Stalker back to the rocks northeast of the Rise of Suffering before the charm breaks.					
+58152	all		Arcane Lightning								
+58153	all		Unholy Light	Rank 13	Heals a friendly target for $s1.						
+58154	all		Hammer of Injustice	Rank 4	Stuns the target for $d.	Stunned.					
+58155	all		Hunger For Blood		Enrages you, increasing all damage caused by $s1%.  If used while a physical effect is afflicting you, it will attempt to remove it and refund the energy cost.  This effect can be stacked up to $u times.  Lasts $d.	All damage caused increased by $s1%.					
+58156	all		Wintergrasp PvP Drop - 2 Stack								
+58157	all		Solarian's Grace		Battle Shout grants you up to $s1 additional attack power.	Battle Shout grants you up to $s1 additional attack power.					
+58158	all		Glyph of Challenging Roar		Reduces the cooldown of your Challenging Roar ability by ${$57858m1/-1000} sec.						
+58159	all		Glyph of the Wild		Mana cost of your Mark of the Wild and Gift of the Wild spells reduced by $57855s1%.						
+58160	all		Jaggal Clam		Open the clam!						
+58161	all		Glyph of Unburdened Rebirth		Your Rebirth spell no longer requires a reagent.						
+58162	all		Wintergrasp PvP Drop - 3 Stack								
+58163	all		Glyph of Thorns		Increases the duration of your Thorns ability by $57862s1 min when cast on yourself.						
+58164	all		Wintergrasp PvP Drop - 4 Stack								
+58165	all		Big-Mouth Clam		Open the clam!						
+58166	all		Glyph of the Forest Lynx		You appear as a forest lynx while in Cat Form.						
+58167	all		Wintergrasp PvP Drop - 5 Stack			Carrying eternal Embers.					
+58168	all		Thick Shell Clam		Open the clam!						
+58169	all		Wintergrasp PvP Drop - 6 Stack			Carrying eternal Embers.					
+58172	all		Small Barnacled Clam		Open the clam!						
+58173	all		Glyph of the Black Bear		Changes the appearance of your bear and dire bear forms to that of a black bear.						
+58174	all		Wintergrasp PvP Drop - 7 Stack			Carrying eternal Embers.					
+58175	all		Wintergrasp PvP Drop - 8 Stack			Carrying eternal Embers.					
+58176	all		Wintergrasp PvP Drop - 9 Stack			Carrying eternal Embers.					
+58177	all		Wintergrasp PvP Drop - 10 Stack			Carrying eternal Embers.					
+58178	all		CSA Dummy Effect (25 yards)								
+58179	all		Infected Wounds		Your Shred, Maul, and Mangle attacks cause an Infected Wound in the target. The Infected Wound reduces the movement speed of the target by $58179s1% and the attack speed by $58179s2%. Lasts $58179d.	Movement speed slowed by $s1% and attack speed slowed by $s2%.					
+58180	all		Infected Wounds		Your Shred, Maul, and Mangle attacks cause an Infected Wound in the target. The Infected Wound reduces the movement speed of the target by $58180s1% and the attack speed by $58180s2%. Lasts $58180d.	Movement speed slowed by $s1% and attack speed slowed by $s2%.					
+58181	all		Infected Wounds		Your Shred, Maul, and Mangle attacks cause an Infected Wound in the target. The Infected Wound reduces the movement speed of the target by $58181s1% and the attack speed by $58181s2%. Lasts $58181d.	Movement speed slowed by $s1% and attack speed slowed by $s2%.					
+58183	all		Frostworg Kill Credit 02								
+58184	all		Frost Giant Kill Credit 02								
+58185	all		Draw Magic		Drawing upon the magic of the ruptured ley line.	Drawing ley energy.					
+58186	all		Glyph of Revive Pet		Reduces the pushback suffered from damaging attacks while casting Revive Pet by $57866s1%.						
+58187	all		Transferred Power		Increases an ally's attack speed by $s1% for $d.	Attack speed increased by $s1%.					
+58188	all		Glyph of Mend Pet		Your Mend Pet spell increases your pet's happiness slightly.						
+58190	all		Geist Return Kill Credit								
+58194	all		Create Loremaster's Colors								
+58195	all		Malykriss Icy Lookout Pulse								
+58196	all		Malykriss Altar of Sacrifice Pulse								
+58197	all		Malykriss Runeworks Pulse								
+58198	all		Malykriss Blood Forge Pulse								
+58199	all		Flame Kill								
+58200	all		Water Kill								
+58201	all		Life Kill								
+58202	all		Shadow Kill								
+58203	all		Iron Chain		Attaches a chain to a Scourge Bomb for the purposes of dragging it to a nearby Lumbering Atrocity. No other actions will be possible while the chain is attached.	Dragging a Scourge Bomb. The heavy exertion slows movement speed significantly and prevents all other actions.					
+58204	all		LK Intro VO								
+58205	all		LK Intro VO								
+58206	all		Scourge Bomb Dragging Aura								
+58207	all		Lich King VO Blocker								
+58208	all		LichKingDK001								
+58209	all		LichKingDK002								
+58210	all		LichKingDK003								
+58211	all		LichKingDK004								
+58212	all		LichKingDK005								
+58213	all		LichKingDK006								
+58214	all		LichKingDK007								
+58215	all		LichKingDK008								
+58216	all		LichKingDK009								
+58217	all		LichKingDK010								
+58218	all		LichKingDK011								
+58219	all		LichKingDK012								
+58220	all		LichKingDK013								
+58221	all		LichKingDK014								
+58222	all		LichKingDK015								
+58223	all		LichKingDK016								
+58224	all		Create Tabard of the Explorer								
+58225	all		Scourge Bomb Trigger								
+58226	all		Scourge Bomb Aura								
+58227	all		Glyph of Shadowfiend		Receive $58227s1% of your maximum mana if your Shadowfiend dies from damage.	$s1 mana restored.					
+58228	all		Glyph of Shadowfiend		Receive $58227s1% of your maximum mana if your Shadowfiend dies from damage.						
+58229	all		Glyph of Feign Death		Reduces the cooldown of your Feign Death spell by ${$57903m1/-1000} sec.						
+58230	all		Create Tabard of Brute Force								
+58231	all		Exploding Abomination		Boom.	Boom.					
+58232	all		Glyph of the Pack		Increases the range of your Aspect of the Pack ability by $57904s1 yards.						
+58233	all		Glyph of Possessed Strength		Increases the damage your pet inflicts while using Eyes of the Beast by $57900s1%.						
+58234	all		Glyph of Scare Beast		Reduces the pushback suffered from damaging attacks while casting Scare Beast by $57902s1%.						
+58235	all		Glyph of Arcane Intellect		Reduces the mana cost of your Arcane Intellect and Arcane Brilliance spells by $57924s1%.						
+58236	all		Glyph of Fire Ward		You have an additional $57926s1% chance to reflect Fire spells while your Fire Ward is active.						
+58237	all		Glyph of Frost Ward		You have an additional $57927s1% chance to reflect Frost spells while your Frost Ward is active.						
+58238	all		Glyph of Frost Armor		Increases the duration of your Frost Armor and Ice Armor spells by ${$57928m1/60000} min.						
+58239	all		Glyph of the Penguin		Your Polymorph: Sheep spell polymorphs the target into a penguin instead.						
+58240	all		Glyph of the Bear Cub		Your Polymorph: Sheep spell polymorphs the target into a polar bear cub instead.						
+58241	all		Glyph of Slow Fall		Your Slow Fall spell no longer requires a reagent.						
+58242	all		Glyph of Blessing of Kings		Reduces the mana cost of your Blessing of Kings and Greater Blessing of Kings spells by $57937s1%.						
+58243	all		Glyph of Blessing of Might		Increases the duration of your Blessing of Might spell by $57958s1 min when cast on yourself.						
+58244	all		Glyph of Blessing of Wisdom		Increases the duration of your Blessing of Wisdom spell by $57979s1 min when cast on yourself.						
+58245	all		Glyph of Lay on Hands		Reduces the cooldown of your Lay on Hands spell by ${$57955m1/-60000} min.						
+58246	all		Glyph of Sense Undead		Damage against Undead increased by $57947s1% while your Sense Undead ability is active.						
+58247	all		Glyph of the Wise		Reduces the mana cost of your Seal of Wisdom spell by $57954s1%.						
+58248	all		Glyph of Fading		Reduces the mana cost of your Fade spell by $57985s1%.						
+58249	all		Glyph of Levitate		Your Levitate spell no longer requires a reagent.						
+58250	all		Glyph of Fortitude		Reduces the mana cost of your Power Word: Fortitude and Prayer of Fortitude spells by $58009s1%.						
+58251	all		Glyph of Shackle Undead		Increases the range of your Shackle Undead spell by $57986s1 yards.						
+58252	all		Glyph of Shadow Protection		Increases the duration of your Shadow Protection and Prayer of Shadow Protection spells by ${$58015m1/60000} min.						
+58253	all		Glyph of Shadowfiend		Receive $58227s1% of your maximum mana if your Shadowfiend dies from damage.						
+58254	all		Glyph of Distract		Increases the range of your Distract ability by $58032s1 yards.						
+58255	all		Glyph of Pick Lock		Reduces the cast time of your Pick Lock ability by $58027s1%.						
+58256	all		Glyph of Pick Pocket		Increases the range of your Pick Pocket ability by $58017s1 yards.						
+58257	all		Glyph of Safe Fall		Increases the distance your Safe Fall ability allows you to fall without taking damage.						
+58258	all		Glyph of Blurred Speed		Enables you to walk on water while your Sprint ability is active.						
+58259	all		Glyph of Vanish		Increases your movement speed by $58038s1% while the Vanish effect is active.						
+58260	all		Glyph of Astral Recall		Cooldown of your Astral Recall spell reduced by ${$58058m1/-60000}.1 min.						
+58261	all		Glyph of the Arctic Wolf		You appears as an arctic wolf when using your Ghost Wolf spell.						
+58262	all		Glyph of the Black Wolf		You appears as a black wolf when using your Ghost Wolf spell.						
+58263	all		Glyph of Renewed Life		Your Reincarnation spell no longer requires a reagent.						
+58264	all		Glyph of Water Breathing		Your Water Breathing spell no longer requires a reagent.						
+58265	all		Glyph of Water Walking		Your Water Walking spell no longer requires a reagent.						
+58266	all		Glyph of Water Shield		Increases the number of charges on your Water Shield spell by $58063s1.						
+58267	all		Glyph of Unending Breath		Increases the swim speed of targets affected by your Unending Breath spell by $58079s1%.						
+58268	all		Siphoned Magic		Increases the caster's attack and cast speed by $s1% for $d.	Attack and cast speed increased by $s1%.					
+58269	all		Iceskin Stoneform		Frozen in stone.	Frozen in stone.					
+58270	all		Transferred Power		Increases an ally's attack and casting speed by $s1% for $d.	Attack and casting speed increased by $s1%.					
+58271	all		Glyph of Drain Soul		Your Drain Soul ability occasionally creates an additional soul shard.						
+58272	all		Glyph of Kilrogg		Increases the movement speed of your Eye of Kilrogg by $58081s1% and allows it to fly in areas where flying mounts are enabled.						
+58273	all		Glyph of Curse of Exhaustion		Increases the range of your Curse of Exhaustion spell by $58080s1 yards.						
+58274	all		Glyph of Enslave Demon		Reduces the cast time of your Enslave Demon spell by $58107s1%.						
+58275	all		Glyph of Souls		Reduces the mana cost of your Ritual of Souls spell by $58094s1%.						
+58276	all		Glyph of Battle		Increases the duration of your Battle Shout ability by ${$58095m1/60000} min.						
+58277	all		Glyph of Bloodrage		Reduces the health cost of your Bloodrage ability by $58096s1%.						
+58278	all		Glyph of Charge		Increases the range of your Charge ability by $58097s1 yards.						
+58279	all		Glyph of Mocking Blow		Increases the damage of your Mocking Blow ability by $58099s1%.						
+58280	all		Glyph of Thunder Clap		Increases the radius of your Thunder Clap ability by $58098s1 yards.						
+58281	all		Glyph of Enduring Victory		Increases the window of opportunity in which you can use Victory Rush by ${$58104m1/1000} sec.						
+58282	all		Heave		Heaves the target away, dealing $s1 damage. This attack has devastating effects on gargoyles in stone form.						
+58283	all		Throw Rock		Hurls a rock at an enemy, inflicting $s1 damage and disorienting the target for $d. It is unlikely that enemies will notice who threw the rock.	Disoriented.					
+58284	spellbook	593	Chaos Bolt Passive								
+58285	all		Gargoyle Explosion								
+58286	spellbook	773	Glyph of Aquatic Form								
+58287	spellbook	773	Glyph of Challenging Roar								
+58288	spellbook	773	Glyph of Unburdened Rebirth								
+58289	spellbook	773	Glyph of Thorns								
+58290	all		Glyph of the Black Bear								
+58291	all		Shield Disruption		Weakens the magic keeping a prisoner at bay.						
+58292	all		Icecrown Airship - H - Shield Caster Aura								
+58293	all		Glyph of the Forest Lynx								
+58294	all		Glyph of the Red Lynx								
+58295	all		Glyph of the White Bear								
+58296	spellbook	773	Glyph of the Wild								
+58297	spellbook	773	Glyph of the Pack								
+58298	spellbook	773	Glyph of Scare Beast								
+58299	spellbook	773	Glyph of Revive Pet								
+58300	spellbook	773	Glyph of Possessed Strength								
+58301	spellbook	773	Glyph of Mend Pet								
+58302	spellbook	773	Glyph of Feign Death								
+58303	spellbook	773	Glyph of Arcane Intellect								
+58305	spellbook	773	Glyph of Fire Ward								
+58306	spellbook	773	Glyph of Frost Armor								
+58307	spellbook	773	Glyph of Frost Ward								
+58308	spellbook	773	Glyph of Slow Fall								
+58309	all		Glyph of the Bear Cub								
+58310	spellbook	773	Glyph of the Penguin								
+58311	spellbook	773	Glyph of Blessing of Kings								
+58312	spellbook	773	Glyph of Blessing of Wisdom								
+58313	spellbook	773	Glyph of Lay on Hands								
+58314	spellbook	773	Glyph of Blessing of Might								
+58315	spellbook	773	Glyph of Sense Undead								
+58316	spellbook	773	Glyph of the Wise								
+58317	spellbook	773	Glyph of Fading								
+58318	spellbook	773	Glyph of Fortitude								
+58319	spellbook	773	Glyph of Levitate								
+58320	spellbook	773	Glyph of Shackle Undead								
+58321	spellbook	773	Glyph of Shadow Protection								
+58322	spellbook	773	Glyph of Shadowfiend								
+58323	spellbook	773	Glyph of Blurred Speed								
+58324	spellbook	773	Glyph of Distract								
+58325	spellbook	773	Glyph of Pick Lock								
+58326	spellbook	773	Glyph of Pick Pocket								
+58327	spellbook	773	Glyph of Safe Fall								
+58328	spellbook	773	Glyph of Vanish								
+58329	spellbook	773	Glyph of Astral Recall								
+58330	spellbook	773	Glyph of Renewed Life								
+58331	spellbook	773	Glyph of Water Breathing								
+58332	spellbook	773	Glyph of Water Shield								
+58333	spellbook	773	Glyph of Water Walking								
+58334	all		Glyph of the Arctic Wolf								
+58335	all		Glyph of the Black Wolf								
+58336	spellbook	773	Glyph of Unending Breath								
+58337	spellbook	773	Glyph of Drain Soul								
+58338	spellbook	773	Glyph of Curse of Exhaustion								
+58339	spellbook	773	Glyph of Enslave Demon								
+58340	spellbook	773	Glyph of Kilrogg								
+58341	spellbook	773	Glyph of Souls								
+58342	spellbook	773	Glyph of Battle								
+58343	spellbook	773	Glyph of Bloodrage								
+58344	spellbook	773	Glyph of Charge								
+58345	spellbook	773	Glyph of Mocking Blow								
+58346	spellbook	773	Glyph of Thunder Clap								
+58347	spellbook	773	Glyph of Enduring Victory								
+58348	all		Mana Shield								
+58349	all		Flight - To Icecrown Airship (A) - Force Cast - Summon Vehicle								
+58350	all		To Icecrown Airship (N) - Force Response - Salute (1. Target)								
+58351	all		Teach: Death Gate		You will learn how to open a gateway to Acherus: The Ebon Hold.						
+58352	all		Flight - To Icecrown Airship (H) - Force Cast - Summon Vehicle								
+58353	all		Glyph of Taunt		Increases the chance for your Taunt ability to succeed by $58353m1%.						
+58354	all		Chapter V		Chapter V	Chapter V					
+58355	all		Glyph of Rapid Charge		Reduces the cooldown of your Charge ability by $58355s1%.						
+58356	all		Glyph of Resonating Power		Reduces the rage cost of your Thunder Clap ability by ${$58356m1/-10}.						
+58357	all		Glyph of Heroic Strike		You gain ${$58357m1/10} rage when you critically strike with your Heroic Strike ability.						
+58358	all		Kill								
+58359	all		Banshee's Revenge: Summon Lady Nightswood								
+58360	all		Banshee's Revenge: Lady Nightswood to Possessed Vardmadra								
+58361	all		The Might of Mograine		Empowered by the might of Highlord Darion Mograine. Your damage, health and health regeneration are greatly increased. You are an unstoppable force of darkness!	Empowered by the might of Highlord Darion Mograine. Your damage, health and health regeneration are greatly increased. You are an unstoppable force of darkness!					
+58362	all		Glyph of Heroic Strike		Gain ${$m1/10} rage.						
+58363	all		Glyph of Revenge		Reduces the rage cost of your next Heroic Strike ability by $s1%.  Lasts $d.	Rage cost of your next Heroic Strike reduced by $s1%.					
+58364	all		Glyph of Revenge		After using Revenge, your next Heroic Strike costs no rage.						
+58365	all		Glyph of Barbaric Insults		Your Mocking Blow ability generates $58365s1% additional threat.						
+58366	all		Glyph of Cleaving		Increases the number of targets your Cleave hits by 1.						
+58367	all		Glyph of Execution		Your Execute ability deals damage as if you had $58367s1 additional rage.						
+58368	all		Glyph of Mortal Strike		Increases the damage of your Mortal Strike ability by $58368s2%.						
+58369	all		Glyph of Bloodthirst		Increases the healing you receive from your Bloodthirst ability by $58369s1%.						
+58370	all		Glyph of Whirlwind		Reduces the cooldown of your Whirlwind by ${$58370m1/-1000} sec.						
+58371	all		Recently Slain		Prevents the bearer from granting credit if slain again by the same attacker.	Will not grant you credit for a short time.					
+58372	all		Glyph of Hamstring		Gives your Hamstring ability a $58372h% chance to immobilize the target for $58373d.						
+58373	all		Glyph of Hamstring		Gives your Hamstring ability a chance to immobilize the target.	Immobilized.					
+58374	all		Glyph of Blocking		Increases shield block value by $s1%.	Shield block value increased by $s1%.					
+58375	all		Glyph of Blocking		Increases your block value by $58374s1% for $58374d after using your Shield Slam ability.						
+58376	all		Glyph of Last Stand		Reduces the cooldown of your Last Stand ability by ${$58376m1/-60000} min.						
+58377	all		Glyph of Intervene		Increases the number attacks you intercept for your Intervene target by $58377s1.						
+58378	all		Melted Mind	Rank 1	Increases the damage of your Mind Blast, Mind Flay and Mind Sear spells by an amount equal to $s1% of your spell power.						
+58379	all		Melted Mind	Rank 2	Increases the damage of your Mind Blast, Mind Flay and Mind Sear spells by an amount equal to $s1% of your spell power.						
+58381	spellbook	78	Mind Flay	Rank 9	Assault the target's mind with Shadow energy, causing Shadow damage over $48156d and slowing the target to $15407s2% of their movement speed.	Movement speed slowed to $15407s2% of normal.					
+58382	all		Glyph of Victory Rush		Your Victory Rush ability has a $58382s1% increased critical strike chance.						
+58383	all		Glyph of Sweeping Strikes		Generates ${$m1*3/10} rage over $d.	Generating ${$m1/10} rage every $t1 sec.					
+58384	all		Glyph of Sweeping Strikes		Reduces the rage cost of your Sweeping Strikes ability by $58384s1%.						
+58385	all		Glyph of Rending		Increases the duration of your Rend ability by ${$58385m1/1000} sec.						
+58386	all		Glyph of Overpower		Adds a $58386m1% chance to enable your Overpower when your attacks are parried.						
+58387	all		Glyph of Sunder Armor		Your Sunder Armor ability affects a second nearby target.						
+58388	all		Glyph of Devastate		Your Devastate ability now applies two stacks of Sunder Armor.						
+58389	all		Glyph of Mortal Strike		Increases the damage of your Mortal Strike ability by $58368s2%.						
+58390	all		Glyph of Whirlwind		Reduces the cooldown of your Whirlwind by ${$58370m1/-1000} sec.						
+58391	all		Glyph of Victory Rush		Your Victory Rush ability has a $58382s1% increased critical strike chance.						
+58392	all		Glyph of Resonating Power		Reduces the rage cost of your Thunder Clap ability by ${$58356m1/-10}.						
+58393	all		Glyph of Taunt		Increases the chance for your Taunt ability to succeed by $58353m1%.						
+58394	all		Glyph of Sweeping Strikes		Reduces the rage cost of your Sweeping Strikes ability by $58384s1%.						
+58395	all		Glyph of Sunder Armor		Your Sunder Armor ability affects a second nearby target.						
+58396	all		Glyph of Last Stand		Reduces the cooldown of your Last Stand ability by ${$58376m1/-60000} min.						
+58397	all		Glyph of Shield Slam		Increases your block value by $58374s1% for $58374d after using your Shield Slam ability.						
+58398	all		Glyph of Revenge		After using Revenge, your next Heroic Strike costs no rage.						
+58399	all		Glyph of Rending		Increases the duration of your Rend ability by ${$58385m1/1000} sec.						
+58400	all		Glyph of Overpower		Adds a $58386m1% chance to enable your Overpower when your attacks are parried.						
+58401	all		Glyph of Barbaric Insults		Your Mocking Blow ability generates $58365s1% additional threat.						
+58402	all		Glyph of Intervene		Increases the number attacks you intercept for your Intervene target by $58377s1.						
+58403	all		Glyph of Heroic Strike		You gain ${$58357m1/10} rage when you critically strike with your Heroic Strike ability.						
+58404	all		Glyph of Hamstring		Gives your Hamstring ability a $58372h% chance to immobilize the target for $58373d.						
+58405	all		Glyph of Execution		Your Execute ability deals damage as if you had $58367s1 additional rage.						
+58406	all		Glyph of Devastate		Your Devastate ability now applies two stacks of Sunder Armor.						
+58407	all		Glyph of Cleaving		Increases the number of targets your Cleave hits by 1.						
+58408	all		Glyph of Bloodthirst		Increases the healing you receive from your Bloodthirst ability by $58369s1%.						
+58409	all		Glyph of Rapid Charge		Reduces the cooldown of your Charge ability by $58355s1%.						
+58410	spellbook	253	Master Poisoner	Rank 3	Increases the critical hit chance of all attacks made against any target you have poisoned by $s1%, reduces the duration of all Poison effects applied to you by $s2%, and gives Envenom a $s3% chance not to consume Deadly Poison.						
+58411	all		Hateful Strike Primer								
+58412	all		Hateful Strike		Deals $s1 damage to a threatening target with the highest health within melee range.						
+58413	spellbook	38	Savage Combat	Rank 2	Increases your total attack power by $s2% and all physical damage caused to enemies you have poisoned is increased by $58683s1%.						
+58414	spellbook	39	Filthy Tricks	Rank 1	Reduces the cooldown by $/1000;s1 sec and energy cost by $s3 of your Tricks of the Trade, Distract and Shadowstep abilities and reduces the cooldown of Preparation by $/60000;S2 min.						
+58415	spellbook	39	Filthy Tricks	Rank 2	Reduces the cooldown by $/1000;s1 sec and energy cost by $s3 of your Tricks of the Trade, Distract and Shadowstep abilities and reduces the cooldown of Preparation by $/60000;S2 min.						
+58416	all		Patchwerk Credit								
+58418	all		Portal to Orgrimmar								
+58419	all		Portal to Orgrimmar								
+58420	all		Portal to Stormwind								
+58421	all		Portal to Stormwind								
+58422	spellbook	39	Relentless Strikes	Rank 2	Your finishing moves have a $b1% chance per combo point to restore $14181s1 energy.						
+58423	spellbook	39	Relentless Strikes	Rank 3	Your finishing moves have a $b1% chance per combo point to restore $14181s1 energy.						
+58424	spellbook	39	Relentless Strikes	Rank 4	Your finishing moves have a $b1% chance per combo point to restore $14181s1 energy.						
+58425	spellbook	39	Relentless Strikes	Rank 5	Your finishing moves have a $b1% chance per combo point to restore $14181s1 energy.						
+58426	spellbook	253	Overkill		While stealthed, and for 20 seconds after breaking stealth, you regenerate $58427s1% additional energy.	While stealthed, and for 20 seconds after breaking stealth, you regenerate $58427s1% additional energy.					
+58427	spellbook	253	Overkill		While stealthed, and for 20 seconds after breaking stealth, you regenerate $58427s1% additional energy.	Regenerating $s1% additional energy.					
+58428	spellbook	253	Overkill - aura remove spell								
+58429	all		Shandaral Visual State								
+58431	spellbook	163	Volley	Rank 5	Continuously fires a volley of ammo at the target area, causing ${$RAP*0.083700+$58432m1} Arcane damage to enemy targets within $a1 yards every ${$1510d/6}.2 $Lsecond:seconds; for $1510d.						
+58432	spellbook	163	Volley	Rank 5	Continuously fires a volley of ammo at the target area, causing ${$RAP*0.083700+$58432m1} Arcane damage to enemy targets within $a1 yards every ${$1510d/6}.2 $Lsecond:seconds; for $1510d.						
+58433	spellbook	163	Volley	Rank 6	Continuously fires a volley of ammo at the target area, causing ${$RAP*0.083700+$58433m1} Arcane damage to enemy targets within $a1 yards every ${$1510d/6}.2 $Lsecond:seconds; for $1510d.						
+58434	spellbook	163	Volley	Rank 6	Continuously fires a volley of ammo at the target area, causing ${$RAP*0.083700+$58433m1} Arcane damage to enemy targets within $a1 yards every ${$1510d/6}.2 $Lsecond:seconds; for $1510d.						
+58435	spellbook	355	Pandemic	Rank 1	Grants the periodic damage from your Corruption and Unstable Affliction spells the ability to critically hit for $s1% increased damage, and increases the critical strike damage bonus of your Haunt spell by $s2%.						
+58438	all		Ignite		Maliciously sets a peaceful ent ablaze.	Burning!					
+58440	all		Rork Red Ribbon		Increases experience earned and reputation gained by $s1%.  Lasts $d.  This effect will only work within Storm Peaks.	Increases experience earned and reputation gained by $s1%. This effect will only work within Storm Peaks.					
+58441	all		Snowfall Lager		Slows falling speed significantly for $d.  This effect will only work within Storm Peaks.	Slows falling speed significantly.  This effect will only work within Storm Peaks.					
+58442	all		Airy Pale Ale		Chance on successful spellcast to restore $58443s1 mana. Lasts for $d. This effect will only work within Storm Peaks.	Chance on successful spellcast to restore $58443s1 mana. This effect will only work within Storm Peaks.					
+58443	all		Airy Pale Ale		Chance on successful spellcast to restore $58443s1 mana. Lasts for $d. This effect will only work within Storm Peaks.	Chance on successful spellcast to restore $58443s1 mana.  This effect will only work within Storm Peaks.					
+58444	all		Worg Tooth Oatmeal Stout		Chance on melee swing to restore $58445s1 health. Lasts for $d. This effect will only work within Storm Peaks.	Chance on melee swing to restore $58445s1 health. This effect will only work within Storm Peaks.					
+58445	all		Worg Tooth Oatmeal Stout		Chance on melee swing to restore $58445s1 health. This effect will only work within Storm Peaks.	Chance on melee swing to restore $58445s1 health. This effect will only work within Storm Peaks.					
+58446	all		Drakefire Chile Ale		Causes the imbiber to belch fire, dealing $58446s1 damage per sec for $58447d. This effect will only work within Storm Peaks.	Causes the imbiber to belch fire, dealing $58446s1 damage per sec for $58447d. This effect will only work within Storm Peaks.					
+58447	all		Drakefire Chile Ale		Causes the imbiber to belch fire, dealing $58446s1 damage per sec for $58447d. This effect will only work within Storm Peaks.	Causes the imbiber to belch fire, dealing $58446s1 damage per sec for $58447d. This effect will only work within Storm Peaks.					
+58448	all		Strength	Rank 7	Increases the target's Strength by $s1 for $d.	Strength increased by $s1.					
+58449	all		Strength	Rank 8	Increases the target's Strength by $s1 for $d.	Strength increased by $s1.					
+58450	all		Agility	Rank 7	Increases the target's Agility by $s1 for $d.	Agility increased by $s1.					
+58451	all		Agility	Rank 8	Increases the target's Agility by $s1 for $d.	Agility increased by $s1.					
+58452	all		Armor	Rank 7	Increases the target's Armor by $s1 for $d.	Armor increased by $s1.					
+58453	all		Armor	Rank 8	Increases the target's Armor by $s1 for $d.	Armor increased by $s1.					
+58454	all		Drakefire Chile Ale		Causes the imbiber to belch fire, dealing $58446s1 damage per sec for $58447d. This effect will only work within Storm Peaks.	Causes the imbiber to belch fire, dealing $58446s1 damage per sec for $58447d. This effect will only work within Storm Peaks.					
+58455	all		Arcane Explosion		Sends out a blast wave of magic, inflicting $s1 Arcane damage to nearby enemies.						
+58456	all		Arcane Barrage		Launches several missiles at the enemy target, causing $s1 Arcane damage.						
+58457	all		Frostbolt		Inflicts $s1 Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+58458	all		Frost Nova		Inflicts $s1 Frost damage to nearby enemies, immobilizing them for up to $d.	Immobilized.					
+58459	all		Impale		Inflicts $s1 Physical damage to an enemy every $t1 sec. for $d.	$s1 Physical damage inflicted every $t1 sec.					
+58460	all		Brutal Strike		Inflicts $s1% weapon damage.						
+58461	all		Sunder Armor		Hacks at an enemy's armor, reducing it $s1% per Sunder Armor. Can be applied up to 5 times. Lasts $d.	Armor reduced by $s1%.					
+58462	all		Arcane Blast		Blasts the target with energy, dealing $s1 Arcane damage.  Each time you cast Arcane Blast, the casting time is reduced.  Effect stacks up to $u times and lasts $d.	Arcane Blast casting time reduced by $S2%.					
+58463	all		Cone of Cold		Inflicts $s1 Frost damage to enemies in a cone in front of the caster, reducing their movement speed for $d.	Reduced movement speed.					
+58464	all		Chains of Ice		Forms icy chains around the enemy, locking the target in place for $d.	Immobilized.					
+58465	all		Gigantic Feast		Set out a great feast that will feed your party! Restores $45548o1 health and ${$57073m2/5*30} mana over $45548d. If you spend at least 10 seconds eating you will become larger!						
+58466	all		Gigantic Feast		Restores $45548o1 health and ${$57073m1/5*30} mana over $45548d.  If you spend at least 10 seconds eating you will become well fed and gain $57079s1 Attack Power and $57079s2 Stamina for $57079d.	Restores $45548/5;s1 health and ${$57073m1/5} mana per second.					
+58467	all		Refreshment								
+58468	all		Hugely Well Fed		Size increased by $s1%  Lasts $d.	Size increased by $s1%					
+58469	all		Arcane Empowerment		Increases melee, movement, ranged, and casting speeds by $s1% for $d.	Melee, movement, ranged, and casting speeds increased by $s1%.					
+58470	all		Tactical Blink		Teleports the caster behind the target. Also frees the caster from any bonds.	Immune to immobilization.					
+58471	all		Backstab		Inflicts $s1% weapon damage to an enemy, but only if attacking from behind.						
+58472	spellbook	773	Scroll of Agility								
+58473	spellbook	773	Scroll of Agility II								
+58474	all		Small Feast		Set out a great feast that will feed your party!   Restores $45548o1 health and ${$57073m2/5*30} mana over $45548d.  If you spend at least 10 seconds eating you will become smaller.						
+58475	all		Small Feast		Restores $45548o1 health and ${$57073m1/5*30} mana over $45548d.  If you spend at least 10 seconds eating you will become well fed and gain $57079s1 Attack Power and $57079s2 Stamina for $57079d.	Restores $45548/5;s1 health and ${$57073m1/5} mana per second.					
+58476	spellbook	773	Scroll of Agility III								
+58477	all		Refreshment								
+58478	spellbook	773	Scroll of Agility IV								
+58479	all		Nearly Well Fed		Size decreased by $s1%  Lasts $d.	Size decreased by $s1%					
+58480	spellbook	773	Scroll of Agility V								
+58481	spellbook	773	Scroll of Agility VI								
+58482	spellbook	773	Scroll of Agility VII								
+58483	spellbook	773	Scroll of Agility VIII								
+58484	spellbook	773	Scroll of Strength								
+58485	spellbook	773	Scroll of Strength II								
+58486	spellbook	773	Scroll of Strength III								
+58487	spellbook	773	Scroll of Strength IV								
+58488	spellbook	773	Scroll of Strength V								
+58489	spellbook	773	Scroll of Strength VI								
+58490	spellbook	773	Scroll of Strength VII								
+58491	spellbook	773	Scroll of Strength VIII								
+58492	spellbook	755	Savage Titanium Ring								
+58493	all		Mohawked!		Right Click to throw and pity some fools!	You pity the fool.					
+58494	all		Wintergrasp Defeat		Grants the losing team $s honor for participating in Wintergrasp.						
+58495	all		Copy of Party G.R.E.N.A.D.E.		Right Click to throw and start the party.	Party G.R.E.N.A.D.E.					
+58496	all		Sad		Eating Old Mammoth makes you sad.	Things are not going terribly well.					
+58498	all		Beating on Heb'Jin's Drum								
+58499	all		Happy		Cupcakes make you happy.	Having a fantastic day!					
+58500	all		Angry		Bad Clams make you angry.	Be nice or stay clear.					
+58501	all		Iron Boot Flask		Assume the form of an Iron Dwarf for $d.	Shocking.					
+58502	all		Scared		Haunted Herring makes you scared.	No loud noises please.					
+58503	all		Refreshment		Restores $45548o1 health and ${$57073m1/5*30} mana over $45548d.  If you spend at least 10 seconds eating you will become well fed and appear human for $57111d or until you are in combat.	Restores $45548/5;s1 health and ${$57073m1/5} mana per second.					
+58504	all		Agonizing Strike		Inflicts $s1% weapon damage and leaves the target in pain, increasing damage dealt to the target by $s2% for $d.	Damage taken increased by $s2%.					
+58505	all		Electric Discharge		Discharge an arc of lightning towards an attacker.						
+58506	all		Stealth		Puts the caster in stealth mode. Lasts until cancelled.	Stealthed.					
+58507	spellbook	755	Savage Titanium Band								
+58508	all		Side Swipe		Inflicts $s1% weapon damage on a nearby target.						
+58509	all		Rotten Apple Toss								
+58510	all		Magic Impedence		Reducing the enemy's casting speed by $s1% for $d.	Casting speed reduced by $s1%.					
+58511	all		Rotten Apple Aroma		You smell pretty bad.	You smell pretty bad.					
+58512	spellbook	185	Tasty Cupcake								
+58513	all		Rotten Banana Toss								
+58514	all		Rotten Banana Aroma		The scent is a mix between ghoul foot and a pig rump.	The scent is a mix between ghoul foot and a pig rump.					
+58515	all		Burn Corpse		Lays a Watcher's Corpse on the Ahn'kahet Brazier.						
+58516	all		Overpower		Instantly overpowers an enemy, causing $s1% weapon damage. Can only be used after the target dodges. Overpower cannot be blocked, dodged, or parried.						
+58517	all		Grievous Wound		A vicious attack that deals $s2% weapon damage and causes the target to bleed profusely until fully healed.  Deals $s1 damage every $t1 seconds until healed.	$s1 Physical damage inflicted every $t1 sec.\nYou will bleed until fully healed.					
+58518	all		Ahn'kahet Brazier Kill Credit								
+58519	all		Spit		Spat on. Nobody likes you.	Spat on. Nobody likes you.					
+58520	all		Spit								
+58521	spellbook	185	Last Week's Mammoth								
+58522	all		Ahn'kahet Brazier Effect								
+58523	spellbook	185	Bad Clams								
+58524	all		Control Eidolon Watcher								
+58525	spellbook	185	Haunted Herring								
+58526	all		Azure Bindings		Binds an enemy in tendrils of magic, preventing the enemy from attacking or casting spells for $d.	Silenced and unable to attack.					
+58527	spellbook	185	Gigantic Feast								
+58528	spellbook	185	Small Feast								
+58529	all		Arcane Missiles		Launches magical missiles at an enemy, inflicting Arcane damage each second for $d.						
+58530	all		Return to Stormwind		Chapter V	Chapter V					
+58531	all		Arcane Missiles		Launches a magical missile at an enemy, inflicting Arcane damage.						
+58532	all		Frostbolt Volley		Inflicts $s1 Frost damage to nearby enemies, reducing their movement speed for $d.	Reduced movement speed.					
+58533	all		Return to Stormwind								
+58534	all		Deep Freeze	Rank 4	Causes $s2 Frost damage and stuns the target for $d.	Stunned and Frozen.					
+58535	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+58536	all		Arcane Volley		Hurls magical bolt at nearby enemies, inflicting $s1 Arcane damage.						
+58537	all		Polymorph		Transforms an enemy into a sheep, forcing it to wander around for up to $d. While wandering, the sheep cannot attack or cast spells. Any damage will transform the target back into its normal form. Only one target can be polymorphed at a time. Only works on beasts, dragons, giants, humanoids, and critters.	Cannot attack or cast spells.					
+58538	all		Arcane Explosion Visual								
+58539	all		Watcher's Corpse			Time remaining until the Watcher's Corpse deteriorates.					
+58540	all		Eidolon Prison			Imprisoned.					
+58541	all		Phase Jump		Phases the shade 30 yd. forward unless something is in the way. Also frees the shade from any bonds.	Phased.					
+58542	all		Hatch Eggs		Hatch Twilight Eggs...						
+58543	all		Dephase		Shift out of the normal world temporarily, exiting combat and increasing movement speed for $d.	Dephased.					
+58544	all		Blood Siphon		Drains health from an enemy over $d, transferring it to the shade. This effect is extremely weak, as the shade is not accustomed to direct combat.	$o1 health leeched over $d.					
+58546	all		Fear Self								
+58547	all		Egg Marker								
+58548	all		Ethereal		Extremely difficult for enemies to detect.	Extremely difficult for enemies to detect.					
+58549	all		Tenacity		Being outnumbered has increased your tenacity, improving your health, healing and health regen by $s1% and increasing your damage dealt by $s2%.	Health increased by $s1%.\nHealing taken increased by $s1%.\nHealth regen increased by $s1%.\nDamage dealt increased by $s2%.					
+58550	all		Wintergrasp Calculation								
+58551	all		Return to Orgrimmar		Chapter V	Chapter V					
+58552	all		Return to Orgrimmar								
+58553	all		Honorable		Honor gain increased by $s1%\nFinal Reward Honor increased by $s1% for Corporal Rank and above.	Honor gain increased by $s1%\nFinal Reward Honor increased by $s1% for Corporal Rank and above.					
+58554	all		Lok-Regar		Honor gain increased by $s1%\nFinal Reward Honor increased by $s1% for Corporal Rank and above.	"Honor gain increased by $s1%\nFinal Reward Honor increased by $s1% for Corporal Rank and above.\n\n|cFFFFAA00""Ready for orders!""|r"					
+58555	all		Great Honor		Honor gain increased by $s1%.\nFinal Reward Honor increased by $s1% for Corporal Rank and above.	Honor gain increased by $s1%\nFinal Reward Honor increased by $s1% for Corporal Rank and above					
+58556	all		Greater Honor		Honor gain increased by $s1%\nFinal Reward Honor increased by $s1% for Corporal Rank and above.	Honor gain increased by $s1%\nFinal Reward Honor increased by $s1% for Corporal Rank and above.					
+58557	all		Greatest Honor		Honor gain increased by $s1%\nFinal Reward Honor increased by $s1% for Corporal Rank and above.	Honor gain increased by $s1%\nFinal Reward Honor increased by $s1% for Corporal Rank and above.					
+58558	all		Lok-Narash!		Honor gain increased by $s1%\nFinal Reward Honor increased by $s1% for Corporal Rank and above.	"Honor gain increased by $s1%\nFinal Reward Honor increased by $s1% for Corporal Rank and above.\n\n|cFFFFAA00""Arm yourselves!""|r"					
+58559	all		Lok'tar		Honor gain increased by $s1%\nFinal Reward Honor increased by $s1% for Corporal Rank and above.	"Honor gain increased by $s1%\nFinal Reward Honor increased by $s1% for Corporal Rank and above.\n\n|cFFFFAA00""Victory!""|r"					
+58560	all		Lok'tar ogar!		Honor gain increased by $s1%\nFinal Reward Honor increased by $s1% for Corporal Rank and above.	"Honor gain increased by $s1%\nFinal Reward Honor increased by $s1% for Corporal Rank and above.\n\n|cFFFFAA00""Victory or Death!""|r"					
+58561	all		Pride Breaker		It's just that bad.						
+58562	all		Feed Hungering Plaguehound		Throw meat to a Hungering Plaguehound to occupy it's attention and make it less aggressive.						
+58563	all		Assassinate Restless Lookout		Assassinate a Restless lookout. Must be behind the target.	Too late.					
+58564	all		Feed Hungering Plaguehound Credit								
+58565	spellbook	773	Mystic Tome								
+58566	all		Force Cast Summon Burning Skeleton								
+58567	all		Sunder Armor	Rank 1	Sunders the target's armor, reducing it by $s1% per Sunder Armor and causes a high amount of threat.  Threat increased by attack power.  Can be applied up to 5 times.  Lasts $d.	Armor decreased by $s1%.					
+58568	all		Sunder Armor								
+58569	all		Burning Skeleton								
+58575	all		Icy Talons		You leech heat from victims of your Frost Fever, so that when their melee attack speed is reduced, yours increases by $s1% for the next $d.	Increases melee haste by $s1%.					
+58576	all		Icy Talons		You leech heat from victims of your Frost Fever, so that when their melee attack speed is reduced, yours increases by $s1% for the next $d.	Increases melee haste by $s1%.					
+58577	all		Icy Talons		You leech heat from victims of your Frost Fever, so that when their melee attack speed is reduced, yours increases by $s1% for the next $d.	Increases melee haste by $s1%.					
+58578	all		Icy Talons		You leech heat from victims of your Frost Fever, so that when their melee attack speed is reduced, yours increases by $s1% for the next $d.	Increases melee haste by $s1%.					
+58579	all		Burning Blaze		The Patch of Fire Inflicts $s1 Fire damage every $t1 sec. for $d.	Inflicts $s1 Fire damage every $t1 sec.					
+58580	spellbook	375	Stoneclaw Totem	Rank 8	Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $25512a1 yards to attack it.  Enemies attacking the Stoneclaw Totem have a $25513h% chance to be stunned for $39796d.  Stoneclaw totem also protects all your totems, causing them to absorb $58589s1 damage.	Taunting creatures.					
+58581	spellbook	375	Stoneclaw Totem	Rank 9	Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $25512a1 yards to attack it.  Enemies attacking the Stoneclaw Totem have a $25513h% chance to be stunned for $39796d. Stoneclaw totem also protects all your totems, causing them to absorb $58590s1 damage.	Taunting creatures.					
+58582	spellbook	375	Stoneclaw Totem	Rank 10	Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $25512a1 yards to attack it.  Enemies attacking the Stoneclaw Totem have a $25513h% chance to be stunned for $39796d. Stoneclaw totem also protects all your totems, causing them to absorb $58591s1 damage.	Taunting creatures.					
+58583	all		Stoneclaw Totem Passive	Rank 8							
+58584	all		Stoneclaw Totem Passive	Rank 9							
+58585	all		Stoneclaw Totem Passive	Rank 10							
+58586	all		Stoneclaw Totem Effect	Rank 8							
+58587	all		Stoneclaw Totem Effect	Rank 9							
+58588	all		Stoneclaw Totem Effect	Rank 10							
+58589	all		Stoneclaw Totem			Taunting creatures.					
+58590	all		Stoneclaw Totem			Taunting creatures.					
+58591	all		Stoneclaw Totem			Taunting creatures.					
+58592	all		Drawn Magic		Increases the caster's attack and cast speed by $s1% for $d.	Attack and cast speed increased by $s1%.					
+58593	all		Skeleton Check								
+58594	all		Skeleton Check Master								
+58595	all		zzOLDChimera Shot - Scorpid Sting Marker								
+58596	all		Abomination Explosion								
+58597	all		Sacred Shield	Rank 1	Each time the target takes damage they gain a Sacred Shield, absorbing $58597s1 damage and increasing the paladin's chance to critically hit with Flash of Light by $58597s2% for up to $58597d.  They cannot gain this effect more than once every 6 sec.  Lasts $d.	Absorbs damage and increases the casting paladin's chance to critically hit with Flash of Light by $s2%.					
+58598	all		DEPRECATED PET SCALING		If you see this, report this!						
+58599	all		Abom Credit								
+58600	all		Restricted Flight Area		The air over Dalaran is protected. You will be ejected in $t1 sec.	Warning, you've entered an area where there is a magical no-fly zone in effect.					
+58601	all		Remove Flight Auras		Removes all flight auras when cast.						
+58602	all		Trigger Abom Credit to Master								
+58603	all		Copy of Double Breath		Inflicts Fire damage to enemies in a cone in front of the caster.						
+58604	all		Lava Breath	Rank 1	Your pet breathes a double gout of molten lava at the target for $s1 Fire damage and reduces the target's casting speed by $s3% for $d.	Casting speed slowed by $s3%.					
+58605	all		Lava Breath								
+58606	all		Self Snare		Increases the caster's movement speed by $s1% for $d.  Does not break stealth.	Movement speed decreased by $s1%.					
+58607	all		Lava Breath	Rank 2	Your pet breathes a double gout of molten lava at the target for $s1 Fire damage and reduces the target's casting speed by $s3% for $d.	Casting speed slowed by $s3%.					
+58608	all		Lava Breath	Rank 3	Your pet breathes a double gout of molten lava at the target for $s1 Fire damage and reduces the target's casting speed by $s3% for $d.	Casting speed slowed by $s3%.					
+58609	all		Lava Breath	Rank 4	Your pet breathes a double gout of molten lava at the target for $s1 Fire damage and reduces the target's casting speed by $s3% for $d.	Casting speed slowed by $s3%.					
+58610	all		Lava Breath	Rank 5	Your pet breathes a double gout of molten lava at the target for $s1 Fire damage and reduces the target's casting speed by $s3% for $d.	Casting speed slowed by $s3%.					
+58611	all		Lava Breath	Rank 6	Your pet breathes a double gout of molten lava at the target for $s1 Fire damage and reduces the target's casting speed by $s3% for $d.	Casting speed slowed by $s3%.					
+58612	all		Powerful Blow		Infilicts $s1% weapon damage to an enemy.						
+58613	all		Glyph of Dark Command		Increases the chance for your Dark Command ability to work successfully by $s1%.						
+58614	all		Glyph of Dark Command		Increases the chance for your Dark Command ability to work successfully by $58613s1%.						
+58615	spellbook	777	Brutal Nether Drake		Summons and dismisses a rideable Brutal Nether Drake mount.  This is an extremely fast mount.  This mount can only be summoned in Outland or Northrend. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+58616	all		Glyph of Heart Strike		Your Heart Strike also reduces the movement speed of your target by $58617s1% for $58617d.						
+58617	all		Glyph of Heart Strike		Reduces movement speed by $s1% for $d.	Movement speed reduced by $s1%.					
+58618	all		Glyph of Strangulate		Reduces the cooldown of your Strangulate by ${$58618m1/-1000} sec.						
+58619	all		Charge		Charges an enemy, inflicting normal damage plus $s3 knocking the enemy back.						
+58620	all		Glyph of Chains of Ice		Your Chains of Ice also causes $58621s1 Frost damage, increased by your attack power.						
+58621	all		Glyph of Chains of Ice		Your Chains of Ice also causes $58621s1 Frost damage, increased by your attack power.						
+58622	all		Teleport to Lake Wintergrasp								
+58623	all		Glyph of Anti-Magic Shell		Increases the duration of your Anti-Magic Shell by ${$58623m1/1000} sec.						
+58624	all		Corrupted Rejuvenation		Places corrupted ley energy on an enemy, causing $s1 Arcane damage every $t seconds for $d.	Afflicted with corrupted ley energy, causing $s1 Arcane damage every $t seconds.					
+58625	all		Glyph of Icebound Fortitude		Your Icebound Fortitude now always grants at least $58625s1% damage reduction, regardless of your defense skill.						
+58626	all		Glyph of Death Grip		Increases the cooldown of Death Grip by ${$58626m1/1000} sec but stuns targets for $58628d.						
+58627	all		Immolation								
+58628	all		Glyph of Death Grip		Increases the cooldown of Death Grip by ${$58626m1/1000} sec but stuns targets for $58628d.	Stunned.					
+58629	all		Glyph of Death and Decay		Damage of your Death and Decay spell increased by $58629s1%.						
+58630	all		Mal'ganis credit marker								
+58631	all		Glyph of Icy Touch		Your Frost Fever disease deals $58631s1% additional damage.						
+58632	all		Teleport to Lake Wintergrasp		Teleported recently. \nCannot teleport again for a short time.	Teleported recently. \nCannot teleport again for a short time.					
+58633	all		Teleport to Lake Wintergrasp								
+58635	all		Glyph of Unbreakable Armor		Increases the total armor granted by Unbreakable Armor to $58635m2%.						
+58639	all		Stoneclaw Totem Effect	Rank 10							
+58640	all		Glyph of Blood Tap		Your Blood Tap no longer causes damage to you.						
+58641	all		Olakin's Torch		Burn a Festering Corpse at the Fleshwerks.						
+58642	all		Glyph of Scourge Strike		Your Scourge Strike increases the duration of your diseases on the target by $58642m1 sec, up to a maximum of $58642m2 additional seconds.						
+58643	spellbook	373	Strength of Earth Totem	Rank 8	Summons a Strength of Earth Totem with $s1 health at the feet of the caster.  The totem increases the strength and agility of all party and raid members within $58646a1 yards by $58646s2.  Lasts $d.						
+58644	all		Glyph of Frost Strike		Reduces the cost of your Frost Strike by ${58644m1/-10}.						
+58645	all		Refreshment		Restores $43180o1 health and ${$43182m2/5*30} mana over $43180d.  Must remain seated while eating.	Restores $43180/5;s1 health and ${$43182m2/5} mana per second.					
+58646	all		Strength of Earth	Rank 8		Increases Strength and Agility by $s1.					
+58647	all		Glyph of Frost Strike		Reduces the cost of your Frost Strike by ${$58647m1/-10} Runic Power.						
+58648	all		Refreshment		Restores $45548o1 health and ${$57073m2/5*30} mana over $45548d.  Must remain seated while eating.	Restores $45548/5;s1 health and ${$57073m2/5} mana per second.					
+58649	spellbook	373	Flametongue Totem	Rank 6	Summons a Flametongue Totem with $s1 health at the feet of the caster.  Party and raid members within $58651a1 yards of the totem have their spell damage and healing increased by up to $58651s1.  Lasts $d.						
+58650	all		Summon Void Sentry Ball								
+58651	all		Flametongue Totem	Rank 6		Magical damage and healing from spells and effects increased by up to $s1.					
+58652	spellbook	373	Flametongue Totem	Rank 7	Summons a Flametongue Totem with $s1 health at the feet of the caster.  Party and raid members within $58654a1 yards of the totem have their spell damage and healing increased by up to $58654s1.  Lasts $d.						
+58654	all		Flametongue Totem	Rank 7		Magical damage and healing from spells and effects increased by up to $s1.					
+58655	all		Flametongue Totem	Rank 8		Magical damage and healing from spells and effects increased by up to $s1.					
+58656	spellbook	373	Flametongue Totem	Rank 8	Summons a Flametongue Totem with $s1 health at the feet of the caster.  Party and raid members within $58655a1 yards of the totem have their spell damage and healing increased by up to $58655s1.  Lasts $d.						
+58657	all		Glyph of Plague Strike		Your Plague Strike does $s1% additional damage.						
+58658	all		Banish Scourge Crystal		Banishes a Scourge crystal back to the realm it was summoned from.	Banishing Scourge crystal.					
+58659	spellbook	237	Ritual of Refreshment	Rank 2	Begins a ritual that creates a refreshment table.  Raid members can click the table to acquire Conjured Mana Strudels.  The tables lasts for $58661d or 50 charges.  Requires the caster and 2 additional party members to complete the ritual.  In order to participate, all players must right-click the refreshment portal and not move until the ritual is complete.						
+58660	all		Conjure Refreshment								
+58661	all		Conjure Refreshment Table								
+58662	all		Banish Scourge Crystal Trigger		Banishes a Scourge crystal back to the realm it was summoned from.	Banishing Scourge crystal.					
+58663	all		Stomp		Stomps on an enemy, inflicting $s3 Physical damage and knocking him down for $d.	Stunned.					
+58664	all		Shade Control End								
+58665	all		Forcecast: Control Eidolon Watcher								
+58666	all		Impale		Lifts an enemy off the ground with a spiked fist, inflicting $s1 Physical damage.	Stunned.					
+58667	all		Ley Curse		Channels the surrounding ley energies to curse an enemy, inflicting $s1 damage every $t1 seconds and increasing all magic damage taken by $s2%, for $d.	$s1 damage every $t1 seconds.\nMagic damage taken increased by $s2%.					
+58668	all		Cyanigosa Transform								
+58669	all		Glyph of Rune Strike		Increases the critical strike chance of your Rune Strike by $58669s2%.						
+58670	all		Prey on the Weak		Your critical strike damage is increased by $s1% when the target has less health than you (as a percentage of total health).						
+58671	all		Glyph of Obliterate		Increases the damage of your Obliterate ability by $m3%.						
+58672	all		Impale								
+58673	all		Glyph of Bone Shield		Adds $58673s1 additional $Lcharge:charges; to your Bone Shield.						
+58674	all		Feed Hungering Plaguehound Credit Trigger								
+58675	all		Glyph of Vampiric Blood		Heals you for 3% of your total health.						
+58676	all		Glyph of Vampiric Blood		Increases  the duration of your Vampiric Blood by ${$58676m1/1000} sec.						
+58677	all		Glyph of Death's Embrace		Your Death Coil refunds $s1 runic power when used to heal.						
+58678	all		Rock Shards		Unleashes a hail of jagged rock, striking target enemy every $58678t1 sec for $58678d, and damaging any additional enemies within $58695a1 of the target.						
+58679	all		Glyph of Death's Embrace								
+58680	all		Glyph of Horn of Winter		Increases the duration of your Horn of Winter ability by ${$58680m1/60000} min.						
+58681	all		Teleport to Lake Wintergrasp		Teleported recently. \nCannot teleport again for a short time.\nYour body feels lighter.	Teleported recently. \nCannot teleport again for a short time.\nYour body feels lighter.					
+58682	all		Red Portal State								
+58683	all		Savage Combat	Rank 2		Increases physical damage taken by $s1%.					
+58684	all		Savage Combat	Rank 1		Increases physical damage taken by $s1%.					
+58685	all		Hatch Eggs Effect								
+58686	all		Glyph of the Ghoul		Your Ghoul receives an additional $58686s1% of your Strength and $58686s1% of your Stamina.						
+58688	all		Uncontrollable Energy		A torrent of Arcane energy is released, dealing $s1 Arcane damage to enemies in front of caster. Enemy targets also take $s2 Arcane damage every $t2 sec. for $d.	$s2 Arcane damage every $t2 sec.					
+58689	all		Rock Shards								
+58690	all		Tail Sweep		Inflicts $s1 damage on enemies in a cone behind the caster, interrupting spell casting for $d.						
+58691	all		Pandemic		Sends a shadowy bolt at the enemy, causing $s1 Shadow damage.						
+58692	all		Rock Shards								
+58693	all		Blizzard		Calls down a blizzard that lasts $d., inflicting $s1 Frost damage every $t1 sec. and slowing the movement speed of all enemies in a selected area by $s2%.	Movement speed reduced by $s2%.					
+58694	all		Arcane Vacuum		Summons all nearby enemy targets to the location of the caster.						
+58695	all		Rock Shards		Hurls a jagged rock shard, inflicting $s1 Physical damage to any enemies within $a1 yards of the target.						
+58696	all		Rock Shards		Hurls a jagged rock shard, inflicting $s1 Physical damage to any enemies within $a1 yards of the target.						
+58698	all		Possessed Skeletal Assault Gryphon								
+58699	spellbook	375	Searing Totem	Rank 8	Summons a Searing Totem with $s1 health at your feet for $d that repeatedly attacks an enemy within $58700r1 yards for $58700s1 Fire damage.						
+58700	all		Attack	Rank 8	Deals Fire damage to the target.						
+58701	all		Attack	Rank 9	Deals Fire damage to the target.						
+58702	all		Attack	Rank 10	Deals Fire damage to the target.						
+58703	spellbook	375	Searing Totem	Rank 9	Summons a Searing Totem with $s1 health at your feet for $d that repeatedly attacks an enemy within $58701r1 yards for $58701s1 Fire damage.						
+58704	spellbook	375	Searing Totem	Rank 10	Summons a Searing Totem with $s1 health at your feet for $d that repeatedly attacks an enemy within $58702r1 yards for $58702s1 Fire damage.						
+58705	all		Glyph of Anti-Magic Shell		Increases the duration of your Anti-Magic Shell by ${$58623m1/1000} sec.						
+58706	all		Glyph of Heart Strike		Your Heart Strike also reduces the movement speed of your target by $58617s1% for $58617d.						
+58707	all		Glyph of Blood Tap		Your Blood Tap no longer causes damage to you.						
+58708	all		Glyph of Bone Shield		Adds $58673s1 additional $Lcharge:charges; to your Bone Shield.						
+58709	all		Glyph of Chains of Ice		Your Chains of Ice also causes $58621s1 Frost damage, increased by your attack power.						
+58710	all		Glyph of Death and Decay		Damage of your Death and Decay spell increased by $58629s1%.						
+58711	all		Glyph of Death's Embrace		Your Death Coil refunds 20 runic power when used to heal.						
+58712	all		Shield Visual								
+58713	all		Glyph of Death Grip		When you deal a killing blow that grants honor or experience, the cooldown of your Death Grip is refreshed.						
+58715	all		Glyph of Frost Strike		Reduces the cost of your Frost Strike by ${$58647m1/-10} Runic Power.						
+58716	all		Glyph of Horn of Winter		Increases the duration of your Horn of Winter ability by ${$58680m1/60000} min.						
+58717	all		Glyph of Icebound Fortitude		Your Icebound Fortitude now always grants at least $58625s1% damage reduction, regardless of your defense skill.						
+58718	all		Glyph of Icy Touch		Your Frost Fever disease deals $58631s1% additional damage.						
+58719	all		Glyph of Obliterate		Increases the damage of your Obliterate ability by $m1%.						
+58720	all		Glyph of Plague Strike		Your Plague Strike does $58657s1% additional damage.						
+58721	all		Glyph of the Ghoul		Your Ghoul receives an additional $58686s1% of your Strength and $58686s1% of your Stamina.						
+58722	all		Glyph of Rune Strike		Increases the critical strike chance of your Rune Strike by $58669s2%.						
+58723	all		Glyph of Scourge Strike		Your Scourge Strike increases the duration of your diseases on the target by $58642m1 sec, up to a maximum of $58642m2 additional seconds.						
+58724	all		Glyph of Strangulate		Reduces the cooldown of your Strangulate by ${$58618m1/-1000} sec.						
+58725	all		Glyph of Unbreakable Armor		Increases the total armor granted by Unbreakable Armor to $58635m2%.						
+58726	all		Glyph of Vampiric Blood		Increases  the duration of your Vampiric Blood by ${$58676m1/1000} sec.						
+58727	all		Dalaran Restricted Flight Zone								
+58728	all		Wintergrasp Restricted Flight Zone								
+58729	all		Spiritual Immunity		Your recent return from the grave has granted you temporary protection.	Your recent return from the dead has granted you temporary protection.					
+58730	all		Restricted Flight Area		The air is too thin in Wintergrasp for normal flight. You will be ejected in $d.	Warning, you've entered an area where the air is too thin for normal flight.					
+58731	spellbook	375	Magma Totem	Rank 6	Summons a Magma Totem with $s1 health at the feet of the caster for ${$d-1} sec that causes $58732s1 Fire damage to creatures within $58732a1 yards every $58733t1 seconds.						
+58732	all		Magma Totem	Rank 6	Summons a Magma Totem with $58731s1 health at the feet of the caster for ${$58731d-1} sec that causes $58732s1 Fire damage to creatures within $58732a1 yards every $58733t1 seconds.						
+58733	all		Magma Totem Passive	Rank 6							
+58734	spellbook	375	Magma Totem	Rank 7	Summons a Magma Totem with $s1 health at the feet of the caster for ${$58734d-1} sec that causes $58735s1 Fire damage to creatures within $58735a1 yards every $58736t1 seconds.						
+58735	all		Magma Totem	Rank 7	Summons a Magma Totem with $58734s1 health at the feet of the caster for ${$58734d-1} sec that causes $58735s1 Fire damage to creatures within $58735a1 yards every $58736t1 seconds.						
+58736	all		Magma Totem Passive	Rank 7							
+58737	spellbook	373	Fire Resistance Totem	Rank 5	Summons a Fire Resistance Totem with $s1 health at the feet of the caster for $d that increases the fire resistance of party and raid members within $58738a1 yards by $58738s1.						
+58738	all		Fire Resistance	Rank 5		Fire Resistance increased by $s1.					
+58739	spellbook	373	Fire Resistance Totem	Rank 6	Summons a Fire Resistance Totem with $s1 health at the feet of the caster for $d that increases the fire resistance of party and raid members within $58740a1 yards by $58740s1.						
+58740	all		Fire Resistance	Rank 6		Fire Resistance increased by $s1.					
+58741	spellbook	373	Frost Resistance Totem	Rank 5	Summons a Frost Resistance Totem with $s1 health at the feet of the caster for $d.  The totem increases party and raid members' frost resistance by $58742s1, if within $58742a1 yards.						
+58742	all		Frost Resistance	Rank 5		Frost Resistance increased by $s1					
+58743	all		Intercept	Rank 3	Charge an enemy, causing $58747s2 damage and stunning it for $58747d.						
+58744	all		Frost Resistance	Rank 6		Frost Resistance increased by $s1					
+58745	spellbook	373	Frost Resistance Totem	Rank 6	Summons a Frost Resistance Totem with $s1 health at the feet of the caster for $d.  The totem increases party and raid members' frost resistance by $58744s1, if within $58744a1 yards.						
+58746	spellbook	373	Nature Resistance Totem	Rank 5	Summons a Nature Resistance Totem with $s1 health at the feet of the caster for $d that increases the nature resistance of party and raid members within $58748a1 yards by $58748s1.						
+58747	all		Intercept	Rank 3	Charge an enemy, causing $s2 damage and stunning it for $d.	Stunned.					
+58748	all		Nature Resistance	Rank 5		Nature Resistance increased by $s1.					
+58749	spellbook	373	Nature Resistance Totem	Rank 6	Summons a Nature Resistance Totem with $s1 health at the feet of the caster for $d that increases the nature resistance of party and raid members within $58750a1 yards by $58750s1.						
+58750	all		Nature Resistance	Rank 6		Nature Resistance increased by $s1.					
+58751	spellbook	373	Stoneskin Totem	Rank 9	Summons a Stoneskin Totem with $s1 health at the feet of the caster.  The totem protects party and raid members within $58752a1 yards, increasing armor by $58752s1.  Lasts $d.						
+58752	all		Stoneskin	Rank 9		Increases armor by $s1.					
+58753	spellbook	373	Stoneskin Totem	Rank 10	Summons a Stoneskin Totem with $s1 health at the feet of the caster.  The totem protects party and raid members within $58754a1 yards, increasing armor by $58754s1.  Lasts $d.						
+58754	all		Stoneskin	Rank 10		Increases armor by $s1.					
+58755	spellbook	374	Healing Stream Totem	Rank 7	Summons a Healing Stream Totem with $s1 health at the feet of the caster for $d that heals group members within $58759a1 yards for $58763s1 every $58763t1 seconds.						
+58756	spellbook	374	Healing Stream Totem	Rank 8	Summons a Healing Stream Totem with $s1 health at the feet of the caster for $d that heals group members within $58760a1 yards for $58764s1 every $58764t1 seconds.						
+58757	spellbook	374	Healing Stream Totem	Rank 9	Summons a Healing Stream Totem with $s1 health at the feet of the caster for $d that heals group members within $58761a1 yards for $58765s1 every $58765t1 seconds.						
+58758	all		Devour Flesh		Drains $s1 health and $s2% Stamina from an enemy, transferring it to the caster.	Stamina drained by $s2%.					
+58759	all		Healing Stream Totem								
+58760	all		Healing Stream Totem								
+58761	all		Healing Stream Totem								
+58762	all		Devour Flesh		Drains $52352s1 health and $52352s2% stats from an enemy, transferring it to the caster.	Stamina increased by $52352s2%.					
+58763	all		Healing Stream	Rank 7	Heals $s1 every $t1 seconds.	Heals $s1 every $t1 seconds.					
+58764	all		Healing Stream	Rank 8	Heals $s1 every $t1 seconds.	Heals $s1 every $t1 seconds.					
+58765	all		Healing Stream	Rank 9	Heals $s1 every $t1 seconds.	Heals $s1 every $t1 seconds.					
+58766	all		Gift of Twilight		Increases the target's Fire damage by $s1% and reduces damage taken by $s2%.	Increases Fire damage by $s1%.\nReduces damage taken by $s2%.					
+58768	all		Permanent Feign Death (Freeze Jumpend)								
+58769	all		Intercept	Rank 3	Charge an enemy, causing $58747s2 damage and stunning it for $58747d.						
+58770	all		Drain Mana		Drains up to $o1 mana from an enemy over $d. and transfers it to the caster.	$o1 mana leeched over $d.					
+58771	spellbook	374	Mana Spring Totem	Rank 6	Summons a Mana Spring Totem with $s1 health at the feet of the caster for $d that restores $58775s1 mana every 5 seconds to all party and raid members within $58778a1 yards.						
+58772	all		Drain Mana		Drains up to $o1 mana from an enemy over $d. and transfers it to the caster.	$o1 mana leeched over $d.					
+58773	spellbook	374	Mana Spring Totem	Rank 7	Summons a Mana Spring Totem with $s1 health at the feet of the caster for $d that restores $58776s1 mana every 5 seconds to all party and raid members within $58779a1 yards.						
+58774	spellbook	374	Mana Spring Totem	Rank 8	Summons a Mana Spring Totem with $s1 health at the feet of the caster for $d that restores $58777s1 mana every 5 seconds to all party and raid members within $58780a1 yards.						
+58775	all		Mana Spring	Rank 6	Gain $s1 mana every 5 seconds.	Gain $s1 mana every 5 seconds.					
+58776	all		Mana Spring	Rank 7	Gain $s1 mana every 5 seconds.	Gain $s1 mana every 5 seconds.					
+58777	all		Mana Spring	Rank 8	Restores $s1 mana every 5 seconds.	Gain $s1 mana every 5 seconds.					
+58778	all		Mana Spring Totem		Gain $s1 mana every $t1 seconds.						
+58779	all		Mana Spring Totem		Gain $s1 mana every $t1 seconds.						
+58780	all		Mana Spring Totem		Gain $s1 mana every $t1 seconds.						
+58781	all		Hemotoxin								
+58782	all		Hemotoxin		Poisons the target, dealing $s1% of the target's health every $t1 sec.	$s1% of maximum health inflicted as Nature damage every $t1 sec.					
+58783	all		Pure Awesome		Everyone sees just how awesome you are.	Everyone sees just how awesome you are, because you're Just. That. Amazing.					
+58784	all		Flametongue Weapon (Passive)	Rank 8							
+58785	spellbook	373	Flametongue Weapon	Rank 8	Imbue the Shaman's weapon with fire, increasing total spell damage by $58784s2$?s55451[ and increasing spell critical strike chance by $55451s1%.][.] Each hit causes $/77;58786m1 to $/25;58786M1 additional Fire damage, based on the speed of the weapon.  Slower weapons cause more fire damage per swing.  Lasts 30 minutes.						
+58786	all		Flametongue Weapon Proc	Rank 8							
+58787	all		Flametongue Weapon Proc	Rank 9							
+58788	all		Flametongue Weapon Proc	Rank 10							
+58789	spellbook	373	Flametongue Weapon	Rank 9	Imbue the Shaman's weapon with fire, increasing total spell damage by $58791s2$?s55451[ and increasing spell critical strike chance by $55451s1%.][.] Each hit causes $/77;58787m1 to $/25;58787M1 additional Fire damage, based on the speed of the weapon.  Slower weapons cause more fire damage per swing.  Lasts 30 minutes.						
+58790	spellbook	373	Flametongue Weapon	Rank 10	Imbue the Shaman's weapon with fire, increasing total spell damage by $58792s2$?s55451[ and increasing spell critical strike chance by $55451s1%.][.] Each hit causes $/77;58788m1 to $/25;58788M1 additional Fire damage, based on the speed of the weapon.  Slower weapons cause more fire damage per swing.  Lasts 30 minutes.						
+58791	all		Flametongue Weapon (Passive)	Rank 9							
+58792	all		Flametongue Weapon (Passive)	Rank 10							
+58793	all		Hatch Eggs		Hatch Twilight Eggs...						
+58794	spellbook	373	Frostbrand Weapon	Rank 7	Imbue the Shaman's weapon with frost.  Each hit has a chance of causing $58797s2 additional Frost damage and slowing the target's movement speed by $58797s1% for $58797d.  Lasts 30 minutes.						
+58795	spellbook	373	Frostbrand Weapon	Rank 8	Imbue the Shaman's weapon with frost.  Each hit has a chance of causing $58798s2 additional Frost damage and slowing the target's movement speed by $58798s1% for $58798d.  Lasts 30 minutes.						
+58796	spellbook	373	Frostbrand Weapon	Rank 9	Imbue the Shaman's weapon with frost.  Each hit has a chance of causing $58799s1 additional Frost damage and slowing the target's movement speed by $58799s2% for $58799d.  Lasts 30 minutes.						
+58797	all		Frostbrand Attack	Rank 7	Imbue the Shaman's weapon with frost.  Each hit has a chance of causing $58797s2 additional Frost damage and slowing the target's movement speed by $58797s1% for $58797d.  Lasts 30 minutes.	Movement slowed by $s1%.					
+58798	all		Frostbrand Attack	Rank 8	Imbue the Shaman's weapon with frost.  Each hit has a chance of causing $58798s2 additional Frost damage and slowing the target's movement speed by $58798s1% for $58798d.  Lasts 30 minutes.	Movement slowed by $s1%.					
+58799	all		Frostbrand Attack	Rank 9	Imbue the Shaman's weapon with frost.  Each hit has a chance of causing $58799s1 additional Frost damage and slowing the target's movement speed by $58799s2% for $58799d.  Lasts 30 minutes.	Movement slowed by $s2%.					
+58801	spellbook	373	Windfury Weapon	Rank 6	Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of dealing additional damage equal to two extra attacks with $s2 extra attack power.  Lasts 30 minutes.						
+58803	spellbook	373	Windfury Weapon	Rank 7	Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of dealing additional damage equal to two extra attacks with $s2 extra attack power.  Lasts 30 minutes.						
+58804	spellbook	373	Windfury Weapon	Rank 8	Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of dealing additional damage equal to two extra attacks with $s2 extra attack power.  Lasts 30 minutes.						
+58806	all		Permanent Feign Death (Drowned Anim)								
+58807	all		Ignite Corpse								
+58808	all		Disease Cloud		A putrid cloud of disease surrounds the caster, dealing $58809s1 Nature damage to nearby enemies every $t1 sec.	Damaging nearby enemies every $t1 sec.					
+58809	all		Disease Cloud		A putrid cloud of disease surrounds the caster, dealing $s1 Nature damage to nearby enemies every $58808t1 sec.						
+58810	all		Wretching Bile		Coats the target in a disgusting film of bile, reducing damage and healing done by that target by $s2% and dealing $s1 Nature damage every $t1 for $d.	All damage and healing dealt is reduced by $s2%.\n$s1 Nature damage inflicted every $t1 sec.					
+58811	all		Corruption		Corrupts nearby enemies, inflicting Shadow damage every $t1 sec. for $d.	Shadow damage every $t1 sec.					
+58812	all		Ghoul Aura								
+58813	all		Void Shield		A protective void bubble emanates from the caster's shield, reducing all damage taken by $s1% for $d.	Reduces damage taken by $s1%.					
+58814	all		Raise Dead								
+58815	all		Raise Dead								
+58816	all		Temporal Vortex		Channels a vortex on the enemy, dealing $s1 Arcane damage every $t1 sec. and slowing movement, attack, and casting speed by $s2% for $d.	Attack, casting, and movement speed reduced by $s2%.\n$s1 Arcane damage dealt every $t1 sec.					
+58817	all		Arcane Wave		Launches wave of magical energy at the enemy target, causing $s1 Arcane damage.						
+58818	all		Orphan Out								
+58819	all		Swift Brown Steed		Summons and dismisses a rideable Swift Brown Steed.   This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+58820	all		Accelerate		Increases the melee attack and casting speed of the caster by $s1%. Stacks up to 20 times.	Melee attack and casting speed increased by $s1%.					
+58822	all		Exorcism		Inflicts $s1 Holy damage to an undead or demon enemy.						
+58823	all		Constricting Chains		Encases the targets in chains, dealing $s1 Physical damage every $t sec. and stunning the target for $d.	$s1 Physical damage dealt every $t sec.\nStunned.					
+58824	all		Disease Expulsion		Meathook belches out a cloud of disease, dealing $s1 Nature damage and interrupting the spell casting of nearby enemy targets for $d.						
+58825	all		Explode Ghoul		Explodes a nearby ghoul, dealing $s3 Fire damage to enemy targets within $a3 yds.						
+58826	all		Summon Sartharion Twilight Whelp								
+58827	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting $s1 Shadow damage.						
+58829	all		Time Step		Charges an enemy, dealing $s2 Physical damage.						
+58830	all		Wounding Strike		Savagely wounds the target, dealing $s1% weapon damage, reducing healing effects by $s2%, and $s3 Physical damage every $t3 sec. for $d.	$s3 Physical damage every $t3 sec.\nHealing effects reduced by $s2%.					
+58831	all		Mirror Image		Creates $<images> copies of the caster nearby, which cast spells and attack the mage's enemies.  Lasts $55342d.						
+58832	all		Mirror Image		Creates $55342s2 copies of the caster nearby, which cast spells and attack the mage's enemies.  Lasts $55342d.						
+58833	all		Mirror Image		Creates $<images> copies of the caster nearby, which cast spells and attack the mage's enemies.  Lasts $55342d.						
+58834	all		Mirror Image		Creates $<images> copies of the caster nearby, which cast spells and attack the mage's enemies.  Lasts $55342d.						
+58835	all		Twilight Torment		Increases the target's Fire and Shadow damage taken by $s1% and deals Shadow damage when target attacks.	Increases Fire and Shadow damage taken by $s1%.\nShadow damage taken upon attacking.					
+58836	all		Initialize Images								
+58837	all		Icebound Fortitude								
+58838	all		Inherit Master's Threat List								
+58839	all		Plague Strike		A vicious strike that deals $s2% weapon damage plus ${$m1*$m2/100} and infects the target with Blood Plague, a disease dealing Shadow damage over time.  The strike removes one heal over time effect from the target.						
+58840	all		Blood Plague		A disease dealing Shadow damage over $d.  Has a 50% chance to remove one heal over time effect whenever it does damage.	Deals Shadow damage over $d.\nCan remove heal over time effects.					
+58841	all		Frenzy		Increases the caster's Physical damage by $s2% for $d.	Physical damage dealt is increased by $s2%.					
+58842	all		Destroy Platform Channel								
+58843	all		Plague Strike		A vicious strike that deals $s2% weapon damage plus ${$m1*$m2/100} and infects the target with Blood Plague, a disease dealing Shadow damage over time.  The strike removes one heal over time effect from the target.						
+58844	all		Blood Plague		A disease dealing Shadow damage over $d.  Has a 50% chance to remove one heal over time effect whenever it does damage.	Deals Shadow damage over $d.\nCan remove heal over time effects.					
+58845	all		Curse of Twisted Flesh		Reduces the enemy target's maximum health by $s2%, and inflicts $s1 Shadow damage every $t1 sec. for $d.	Maximum health reduced by $s2%.\n$s1 Shadow damage inflicted every $t1 sec.					
+58846	all		Summon Red Dragon Buddy								
+58847	all		Green Cultist Beam								
+58848	all		Time Stop		Stops time in a $a1 yard sphere for $d.	Stunned.					
+58849	all		Sleep		Puts an enemy to sleep for up to $d. Any damage caused will awaken the target.	Asleep.					
+58850	all		Mind Blast		Inflicts $s1 Shadow damage to an enemy.						
+58852	all		Carrion Swarm		A cresting wave of chaotic magic splashes over enemies in front of the caster, dealing $s1 Shadow damage and $s2 Shadow damage every $t2 sec. for $d.	$s2 Shadow damage every $t2 sec.					
+58853	all		Twilight Torment								
+58854	all		Resurrection								
+58855	all		Growl		Your Spirit Wolves taunt their targets into attacking them.						
+58856	all		Reanimate Crusader Olakin		Attempt to reanimate Crusader Olakin Sainrith. Requires you to be standing near the Sanctum of Reanimation Slab, and have a Spool of Thread and the Doctor's Cleaver. (10 sec. cooldown)						
+58857	all		Twin Howl		Your Spirit Wolves howl, forcing all enemies to attack them for $d.	Taunted.					
+58858	all		Boulder Assault								
+58859	all		Spirit Bite		Your Spirit Wolves bite the enemy, causing $s1 Nature damage.						
+58860	all		Icecrown Airship - A - Shield Caster Aura								

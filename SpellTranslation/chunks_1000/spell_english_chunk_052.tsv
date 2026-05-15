@@ -1,0 +1,1001 @@
+﻿spell_id	priority	skill_line_ids	name_en	rank_en	description_en	tooltip_en	name_zh	rank_zh	description_zh	tooltip_zh	notes
+69058	all		Shadow Lance		Deals $s1 Shadowfrost damage to an enemy target.						
+69060	all		Frost Nova		Inflicts $s1 Frost damage to nearby enemies, immobilizing them for up to $d.	Immobilized.					
+69061	all		Impaled Removal								
+69062	all		Impale		Impaled upon a bone spike.	Stunned.\nBleeding.					
+69063	all		Ride Vehicle								
+69065	all		Impaled		Impaled upon a bone spike.	Stunned.\nBleeding.					
+69066	all		Drain Life		Drains $o1 health from an enemy over $d., transferring it to the caster.	$o1 health leeched over $d.					
+69067	all		Drain Mana		Drains up to $o1 mana from an enemy over $d. and transfers it to the caster.	$o1 mana leeched over $d.					
+69068	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+69069	all		Shield of Bones		Absorbs $s1 damage. If the bones absorb the full amount they will shatter, inflicting $69642s1 damage on enemy targets within $69642a1 yards.	Absorbs $s1 damage.					
+69071	all		Approved!								
+69072	all		Approved!								
+69073	all		Approved!								
+69075	all		Bone Storm		Attacks nearby enemies in a whirlwind of bone.						
+69076	all		Bone Storm		Attacks nearby enemies in a whirlwind of bone.	Attacking all nearby enemies in a whirlwind of bone.					
+69080	all		Bone Volley		Hurls a volley of bones at nearby enemies, inflicting $s1 damage.						
+69082	all		Precious Cargo: Quest Complete								
+69083	all		Video Card Winner								
+69087	all		Shadowstep								
+69088	all		Soul Strike		Pierces the soul, inflicting $s1 damage.						
+69090	all		Ice Sphere								
+69091	all		Ice Pulse								
+69092	all		Ice Pulse								
+69093	all		Create Blizzcon Ticket								
+69095	all		[DND] Argent Tournament - Event Controller Tirion - Alliance								
+69096	all		[DND] Argent Tournament - Event Controller Tirion - Horde								
+69097	all		[DND] Valentine Boss Register Aggro								
+69098	all		[DND] Valentine Boss Remove Aggro								
+69099	all		Ice Pulse		Deals $s1 Frost damage to all enemies within $a1 yards of the target.						
+69101	all		[DND] Valentine Boss Trigger Add Spawn								
+69102	all		Awe								
+69103	all		Summon Ice Sphere								
+69104	all		Summon Ice Sphere								
+69105	all		Soul Horror Visual								
+69106	all		Killing Spree Aura								
+69107	all		Killing Spree Invis Aura								
+69108	all		Ice Burst		Deals $s2 Frost damage to all enemies within $a1 yards, knocking them back.						
+69109	all		Ice Burst Target Search								
+69110	all		Ice Burst Target Search								
+69116	all		Shadowstep Trigger								
+69117	all		Random Aggro								
+69121	all		Ride Vehicle								
+69124	all		Seeping Darkness		Shrouds the enemy in darkness, inflicting Shadow damage, then additional damage every $t2 sec. for $d.	$s2 Shadow damage inflicted every $t2 sec.					
+69125	all		Gaseous Blight								
+69126	all		Gaseous Blight								
+69127	all		Chill of the Throne		The chilling presence of the Frozen Throne reduces the chance of an enemy to dodge melee attacks by $s1%.	Chance to dodge reduced by $s1%.					
+69128	all		Soul Siphon		Deals $s1 Shadow damage to an enemy target, decreasing their damage done by $69130s1%.	Deals $s1 Shadow damage to an enemy target, decreasing their damage done by $69130s1%.					
+69130	all		Soul Siphon		Drains the soul from an enemy, decreasing damage done by $s1%.	Damage decreased by $s1%.					
+69131	all		Soul Sickness		Saps the will from an enemy target, slowing their actions. If this effect is not removed, the target will be stunned for 5 seconds.	Actions slowed by $s2%.					
+69133	all		Lethargy		Stunned.	Stunned.					
+69134	all		Ice Spike		A spike of ice entraps the caster.	Frozen.					
+69136	all		Spiteful Apparition Visual								
+69137	all		Ignored		Ignores an enemy, forcing the caster to not attack it unless there is no other target nearby. When the effect wears off, the creature will attack the most threatening target.	Ignored.					
+69138	all		Coldflame		Summons a line of frost that hits enemies in the way.						
+69140	all		Coldflame		Summons a line of frost that hits enemies in the way.						
+69142	all		Loaned Gryphon								
+69144	all		Shadowform								
+69145	all		Coldflame								
+69146	all		Coldflame		Inflicts $s1 Frost damage every $t1 sec for $d.	Deals $s1 Frost damage every $t1 sec.					
+69147	all		Coldflame								
+69148	all		Wail of Souls		Inflicts $s1 Shadow damage to enemies within $r yards of the caster.						
+69152	all		Gaseous Blight								
+69153	all		Complete Arathi Basin Daily quest								
+69154	all		Gaseous Blight								
+69155	all		Forceful Smash		Knocks an enemy back with a powerful blow, inflicting $s1 Physical damage.						
+69156	all		Complete Eye of the Storm Daily quest								
+69157	all		Gaseous Blight								
+69158	all		Complete Warsong Gulch Daily quest								
+69159	all		Gaseous Blight		The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.	The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.					
+69160	all		Complete Alterac Valley Daily quest								
+69161	all		Gaseous Blight		The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.	The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.					
+69162	all		Gaseous Blight								
+69163	all		Gaseous Blight		The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.	The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.					
+69164	all		Gaseous Blight								
+69165	all		Inhale Blight		Inhales the Gaseous Blight in the room, increasing damage dealt by $69166s1%.						
+69166	all		Inhaled Blight		Inhaling the Gaseous Blight increases damage dealt by $s1% and attack speed by $s3%.	Increases Physical damage dealt by $s1%.\nIncreases attack speed by $s3%.					
+69167	all		Unholy Power		Empowers the caster with dark might, increasing physical damage by $s1% but reducing movement speed by $s3% for $d.	Physical damage increased by $s1%.\nMovement speed decreased by $s3%.					
+69171	all		Low Plague Blight Visual Cancel								
+69172	all		Overlord's Brand		Brands an enemy with the mark of Tyrannus, causing all damage dealt by the Branded foe to be mirrored to the caster's primary target, and all healing done by the Branded foe to be amplified and mirrored to the caster.	Damage dealt also hurts Tyrannus's target.\nHealing done also heals Tyrannus.					
+69173	all		Overlord's Brand								
+69174	all		Reflection Window Beam Visual								
+69175	all		Food								
+69176	all		Drink								
+69180	all		Gutgore Ripper		Sends a shadowy bolt at the enemy causing $s1 Shadow damage and lowering all stats by $s2 for $d.	Lowers all stats by $s2.					
+69181	all		Gutgore Ripper		Sends a shadowy bolt at the enemy causing $s1 Shadow damage and lowering all stats by $s2 for $d.	Lowers all stats by $s2.					
+69183	all		Overlord's Brand								
+69184	all		Ice Spikes		Ice spikes pierce the floor and then rise up, dealing $s1 Frost damage and knocking up enemy targets within $a1 yards.						
+69187	all		Frost Spiked Armor		The caster's armor sprouts frozen spikes, reflecting $s Frost damage to attackers.	Inflicts $s1 Frost damage to attackers.					
+69188	all		Rocket Pack			Allows the wearer to fly through the air. Inflicts damage and slows the attack and movement speeds of enemy units upon landing. Effects increase with flight time.					
+69189	all		Overlord's Brand		Caused all damage dealt by one with the Overlord's Brand to also be dealt to Overlord Tyrannus's target.						
+69190	all		Overlord's Brand		Caused all healing done by one with the Overlord's Brand to also heal Overlord Tyrannus.						
+69192	all		Rocket Burst		Inflicts damage and slows the attack and casting speeds of enemy units by $s1% upon landing. Damage increases with flight time.	Attack and casting speeds reduced by $s1%.					
+69193	all		Rocket Pack		Inflicts damage and slows the attack and casting speeds of enemy units by $69192s1% upon landing. Damage increases with flight time.						
+69195	all		Pungent Blight		Violently releases the Gaseous Blight, dealing $s1 Shadow damage to all enemy players, releasing the deadly Blight back into the room.	Violently releases the Gaseous Blight, dealing $s1 Shadow damage to all enemy players, releasing the deadly Blight back into the room.					
+69197	all		Raging Spirit Visual								
+69198	all		Raging Spirit Visual								
+69199	all		Ice Spikes Trigger		Ice spikes pierce the floor and then rise up, dealing $69184s1 Frost damage and knocking up enemy targets within $r yards.						
+69200	all		Raging Spirit		Rips out a piece of the target's spirit, causing it to attack them.						
+69201	all		Raging Spirit								
+69204	all		Sleepy Pet								
+69205	all		Sleepy Pet								
+69206	all		Summon Skeleton		Summons a Skeleton that will protect you for $d.						
+69207	all		Sanctuary		Grants the wielder $s1 defense rating and $s2 armor for $d.	Increases armor by $s2.\nIncreases defense rating by $s1.					
+69208	all		Sanctuary		Grants the wielder $s1 defense rating and $s2 armor for $d.	Increases armor by $s2.\nIncreases defense rating by $s1.					
+69209	all		Fatal Wound		Delivers a fatal wound for $s1 damage.						
+69210	all		Fatal Wound		Delivers a fatal wound for $s1 damage.						
+69211	all		Shadow Bolt		Sends a shadowy bolt at the enemy causing $s1 Shadow damage.						
+69212	all		Shadow Bolt		Sends a shadowy bolt at the enemy causing $s1 Shadow damage.						
+69216	all		[DND] Holdiay - Valentine - Boss - Table Appear								
+69218	all		[DND] Holiday - Valentine - Summon Table								
+69222	all		Throw Shield		Hurl your shield at the enemy, dealing $s1 damage and stunning them for $d.	Stunned.					
+69223	all		Summon Reflections		A shout of command that silences all nearby enemies for $d.	Silenced.					
+69229	all		Krasus Quel'Delar Credit								
+69231	all		Icy Blast Targeting								
+69232	all		Icy Blast								
+69233	all		Icy Blast		Deals $s1 Frost damage to enemies within $a1 yards of the point of impact.						
+69234	all		Summon Icy Blast								
+69235	all		Camera Shake - Tremor								
+69238	all		Icy Blast		Reduces movement speed by $s1% and inflicts $s2 Frost damage per $t2 sec on those caught within the lingering icy chill.	Movement speed reduced by $s1%.\nSuffering $s2 Frost damage per $t2 sec.					
+69239	all		Create Blizzcon Ticket								
+69240	all		Vile Gas		Inflicts a Vile plague in targeted area, inflicting $s1 damage every $t1 sec for $d. The plague causes the infected targets to vomit uncontrollably inflicting $69244s1 damage to nearby allies.	Inflicts $s1 damage every $t1 sec.\nDisoriented.					
+69241	all		Throw Shield								
+69242	all		Soul Shriek		Deals $s1 Shadow damage to all enemies in a $a1 yard cone in front of the caster, silencing them for $d.	Silenced.					
+69243	all		Create Mohawk Grenade								
+69244	all		Vile Gas		Deals $s1 damage to all friends within $a1 yards.						
+69245	all		Hoarfrost		Deals $s1 Frost damage to enemies within $a1 yards of the point of impact and stuns them for $d.	Stunned.					
+69246	all		Hoarfrost		Deals $69245s1 Frost damage to enemies within $69245a1 yards of the point of impact and stuns them for $69245d.						
+69248	all		Vile Gas		Inflicts a Vile plague in targeted area, inflicting $s1 damage every $t1 sec for $d. The plague causes the infected targets to vomit uncontrollably inflicting $12345s1 damage to nearby allies.	Inflicts $s1 damage every $t1 sec.\nDisoriented.					
+69263	all		Explosive Barrage		Launches explosive missiles at every nearby target.	Summoning explosive mines near all nearby enemies.					
+69264	all		Flurry		Increases the caster's attack speed by $s1% for $d, affecting up to 6 swings.	Attack speed increased by $s1%.					
+69273	all		Frostbolt Volley		Hurls bolts of frost, inflicting $s1 damage to nearby enemies.						
+69274	all		Frostbolt		Inflicts $s1 Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+69275	all		Mark of Rimefang		Marks a target for attack by Overlord Tyrannus's frostwyrm, Rimefang.	Marked for attack.					
+69276	all		Shoot		Shoots at an enemy, inflicting Frost damage.						
+69277	all		Rapid Fire		Increases ranged attack speed by $s1% for $d.	Increases ranged attack speed by $s1%.					
+69278	all		Gas Spore		Unleashes a Gas Spore, inflicting 2 random targets with a gaseous spore.  The Spore will explode after 12 seconds, inflicting $69290s1 damage to all nearby friends.  The damage from the Gas Spore builds the targets immune system, giving them a resistance to the blight.						
+69279	all		Gas Spore		You have the Gas Spore! You will explode and infect all nearby friendly players, dealing $69290s1 Shadow damage and increasing their resistance to the Blight.	You have the Gas Spore! You will explode and infect all nearby friendly players, dealing $69290s1 Shadow damage and increasing their resistance to the Blight.					
+69285	all		Mohawked!		Right Click to throw and pity some fools!	You pity the fool.					
+69286	all		Tail Sweep		Inflicts $s1 damage on enemies in a cone behind the caster, knocking them back.						
+69287	all		Hoarfrost Targeting								
+69290	all		Blighted Spores		Inflicts $s1 Shadow damage every $t1 sec for $d.	Inflicts $s1 Shadow damage every $t1 sec.					
+69291	all		Inoculated		You have become resistant to the blight, decreasing Shadow damage taken by $s1% for $d. Stacks up to 3 times.	Decreases Shadow damage taken by $s1%.					
+69293	all		Wing Buffet		Inflicts $s2 damage to enemies in a cone in front of the caster, knocking them back. This effect ignores armor.						
+69294	all		Eruption		Lava errupts from the cracks in the floor, dealing $s1 Fire damage.						
+69298	all		Cancel Resistant to Blight								
+69299	all		Frozen Prison Shatter								
+69308	all		Flame Lash		Burns an enemy for $s1 damage and reduces its Fire resistance by $s2 for $d.	Fire resistance reduced by $s2.					
+69319	all		Health to Half								
+69325	all		Lay Waste		Surrounds the caster in flames for $69325d1, pulsing $69326s1 Fire damage to all enemies every $69325t1 sec.	Deals $69326s1 Fire damage to all enemies every $t1 sec.					
+69326	all		Lay Waste		Surrounds the caster in flames for $69325d1, pulsing $69326s1 Fire damage to all enemies every $69325t1 sec.						
+69327	all		Dream Fog								
+69341	all		Love Boat								
+69342	all		Ride Vehicle								
+69347	all		Necromantic Power		Slaughter the slaves in front of you.						
+69350	all		Raise Dead		Return from life into undeath.						
+69351	all		Icy Blast Periodic Trigger								
+69352	all		Romantic								
+69355	all		Shadow Nova		Let forth a burst of energy, dealing $s1 Shadow damage to enemy targets within $a1 yards.						
+69357	all		Pursuit Confusion								
+69365	all		Choose Close Target								
+69366	all		Moonkin Form (Passive)	Passive							
+69369	all		Predator's Swiftness		When activated, your next Nature spell with a base casting time less than 10 sec. becomes an instant cast spell.	Your next Nature spell will be an instant cast spell.					
+69371	all		Love Boat Summon								
+69372	all		Path Picker								
+69377	all		Fortitude		Increases Stamina by $s1 for all party and raid members for $72590d.	Stamina increased by $s1.					
+69378	all		Blessing of Forgotten Kings		Gives all members of the raid or group the Blessing of Forgotten Kings, increasing total stats by $s1% for $72586d.	Increases stats by $s1%.					
+69381	all		Gift of the Wild		Gives the Gift of the Wild to all party and raid members, increasing armor by $s1, all attributes by $s2 and all resistances by $s3 for $72588d.	Increases armor by $s1, all attributes by $s2 and all resistances by $s3.					
+69382	all		Light's Favor		Heals the caster for $s1 every second and increases damage dealt proportional to health.	Healing $s1 every second.\nDamage dealt increased proportional to health.					
+69383	all		Dark Hunger		Heals the caster for half of any damage dealt.	Heals the caster for half of any damage dealt.					
+69384	all		Dark Hunger		Heals the caster for half of any damage dealt.						
+69385	spellbook	773	Runescroll of Fortitude								
+69386	spellbook	165	Drums of Forgotten Kings								
+69387	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+69388	spellbook	165	Drums of the Wild								
+69389	all		Shadow Mend		Heals friendly target for $s1.						
+69391	all		Dark Blessing		Increases an ally's attack and casting speed by $s1% for $d.	Attack and casting speed increased by $s1%.					
+69395	spellbook	777	Onyxian Drake		Summons and dismisses a rideable Onyxian Drake.    This mount can only be summoned in Outland or Northrend. This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+69397	all		Soul Rip		Deals increasing Shadow damage to your target every second for $69397d.	Deals increasing Shadow damage per second.					
+69398	all		Soul Rip		Deals increasing Shadow damage to your target every second for $69397d.						
+69399	all		Cannon Blast		Launches a cannonball at the target. Inflicts $69400s1 Siege damage and generates $s2 Heat.						
+69400	all		Cannon Blast		Launches a cannonball at the target. Inflicts $s1 Siege damage and generates $69399s2 Heat.						
+69401	all		Incinerating Blast		Consumes all of the cannon's Heat to launch a massive ball of fire at the target. Inflicts $69402s1 Siege damage plus additional damage per point of Heat.						
+69402	all		Incinerating Blast		Consumes all of the cannon's Heat to launch a massive ball of fire at the target. Inflicts $s1 Siege damage plus additional damage per point of Heat.						
+69403	all		Seal of Command		All melee attacks deal ${0.36*$mw} to ${0.36*$MW} additional Holy damage.  When used with attacks or abilities that strike a single target, this additional Holy damage will strike up to 2 additional targets.  Lasts $d.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing ${0.19*$mw+0.08*$AP+0.13*$SPH} to ${0.19*$MW+0.08*$AP+0.13*$SPH} Holy damage.						
+69404	all		Curse of Agony		Curses the target with agony, causing $o1 Shadow damage over $d.  This damage is dealt slowly at first, and builds up as the Curse reaches its full duration.	$o1 Shadow damage over $d.					
+69405	all		Consuming Shadows		Reduces the attack and casting speeds of an enemy target by $s1% and slows its movement by $s2%.  Lasts $d.	Attack and casting speeds reduced by $s1%.\nMovement speed reduced by $s2%.					
+69406	all		Ron's Test Buff 3		No reagent cost for Other Arcane Spells. Test of spell power: ${$sp} arcane: ${$spa} fire: ${$spfi} frost: ${$spfr} holy: ${$sph} nature: ${$spn} shadow: ${$sps} healing: ${$bh}.\n\nTest of %arcane: ${$pa}.2 %fire: ${$pfi}.2 %frost: ${$pfr}.2 %holy: ${$ph}.2 %nature: ${$pn}.2 %shadow: ${$ps}.2 %heal: ${$pbh}.2 %heal done: ${$pbhd}.2 bc2: ${$bc2}.4	No reagent cost for Other Arcane Spells.					
+69409	all		Soul Reaper		Strikes the target for $s1% weapon damage and afflicts the target with Soul Reaper. This effect deals $s2 Shadow damage after $d and increases the caster's haste by $69410s1% for $69410d.	Deals $s2 Shadow damage and the caster gains $69410s1% bonus physical damage after $d.					
+69410	all		Soul Reaper			Haste increased by $s1%.					
+69412	spellbook	333	Abyssal Shatter		Disenchants an Abyss Crystal into Greater Cosmic Essence or Infinite Dust.						
+69413	all		Strangulating		Being strangulated.	Silenced.					
+69416	all		Ron's Test Buff 3		No reagent cost for Other Arcane Spells. Test of spell power: ${$sp} arcane: ${$spa} fire: ${$spfi} frost: ${$spfr} holy: ${$sph} nature: ${$spn} shadow: ${$sps} healing: ${$bh}.\n\nTest of %arcane: ${$pa}.2 %fire: ${$pfi}.2 %frost: ${$pfr}.2 %holy: ${$ph}.2 %nature: ${$pn}.2 %shadow: ${$ps}.2 %heal: ${$pbh}.2 %heal done: ${$pbhd}.2 bc2: ${$bc2}.4	No reagent cost for Other Arcane Spells.					
+69419	all		Summon Reinforced Thunderstrike		Summons a new Reinforced Thunderstrike.						
+69420	all		Ron's Test Buff 4		Absorbs $s1 healing. This is a conditional: $?(s25306|!((!a48165)|a66109))[something returned true, $ghe:she; didn't do anything with $48165s3]?!a66109[something false else something true] [something false else something false, did $s2 mod damage to $ghim:her;] and lasts $d.\n\nfunny = $<funny> $lfunny:funnies;\nmaybe = $<maybe> $lmaybe:maybes;\nstorm = ${$<storm>}.2 $lstorm:storms;	Absorbs $s1 healing.					
+69422	all		Void Zone Visual								
+69424	all		Icicle		Summons a packed icicle.						
+69425	all		Ice Shards		Deals $s1 Frost damage on impact.						
+69426	all		Icicle		Deals damage to nearby enemies.						
+69427	all		Ron's Test Buff 4		Absorbs $s1 healing. This is a conditional: $?(s25306|!((!a48165)|a66109))[something returned true, $ghe:she; didn't do anything with $48165s3]?!a66109[something false else something true] [something false else something false, did $s2 mod damage to $ghim:her;] and lasts $d.\n\nfunny = $<funny> $lfunny:funnies;\nmaybe = $<maybe> $lmaybe:maybes;\nstorm = ${$<storm>}.2 $lstorm:storms;	Absorbs $s1 healing.					
+69428	all		Icicle		Deals Frost damage on impact.						
+69429	all		Servant Summon Stalker								
+69430	all		Stalker summon Risen Servant								
+69431	all		Raise Dead								
+69438	all		Sample Satisfaction		You've sampled one of the Crown Chemical Company's many fine holiday products.  Disclaimer:  Satisfaction not guaranteed to last the full duration.	You've sampled one of the Crown Chemical Company's many fine holiday products.  Disclaimer:  Satisfaction not guaranteed to last the full duration.					
+69445	all		Perfume Spritz		Spritzes the target with a puff of Crown perfume.						
+69452	spellbook	778	Core Hound Pup		Right Click to summon and dismiss your core hound pup.						
+69455	all		Avalanche		Inflicts $s1 Frost damage.	Inflicts $s1 Frost damage.					
+69458	all		Spawn Skeleton								
+69470	all		Heat Drain								
+69471	all		Heat Drain								
+69482	all		Dark Reckoning		Steals $69483s1 health from all nearby enemies.						
+69483	all		Dark Reckoning		Siphons $s1 health from the target and nearby enemies within $69482a yards after $d.	Siphons health from the target and nearby enemies after $d.					
+69487	all		Overheat		The cannon has overheated!\nFire controls temporarily offline.	The cannon has overheated!\nFire controls temporarily offline.					
+69488	all		Overheat								
+69489	all		Chocolate Sample		Offers a Crown chocolate sample to the target.						
+69490	all		Aura of Darkness		Deals $s1 Shadow damage to all enemies within $a1 yards.						
+69491	all		Aura of Darkness		Causes the caster to automatically inflict $69490s1 Shadow damage every $t1 sec. to nearby enemies. The aura lasts until cancelled.	Automatically inflicting $69490s1 Shadow damage every $t1 sec. to nearby enemies.					
+69492	all		Shadow Cleave		Inflicts 150% weapon damage to an enemy and its nearest allies, affecting up to $x1 targets.						
+69495	all		Airship Cannon		Launches a ball of fire, dealing $67436s1 Fire damage and $67436s2 seige damage to all enemies within $67436a1 yards of the impact.						
+69496	all		Complete Warsong Gulch Daily quest								
+69497	all		Complete Warsong Gulch Daily quest								
+69498	all		Complete Warsong Gulch Daily quest								
+69499	all		Complete Arathi Basin Daily quest								
+69500	all		Complete Arathi Basin Daily quest								
+69501	all		Complete Alterac Valley Daily quest								
+69502	all		Steam Rush		Put the steam engine into overdrive for a short duration, rushing forward and dealing $67815s3 damage to players, knocking them back. Also deals $67815s2 siege damage to buildings.						
+69503	all		Devour Humanoid		$s2% damage every $t2 seconds.	$s2% damage every $t2 seconds.					
+69504	all		Leaping Face Maul		Leaping attack to the face. Painful!						
+69505	all		Fire Cannon		Fires a cannon blast, dealing up to $67459s1 Fire damage and $67459s2 siege damage to nearby structures.						
+69507	all		Slime Spray		Deals $s1 damage to enemies in a cone infront of the enemy.						
+69508	all		Slime Spray		Raining Green Ooze. Deals $69507s1 Nature to enemies in cone.	Inflicts Nature damage periodically.					
+69510	all		Charm Collector								
+69511	all		Lucky Charm								
+69512	all		Loaned Flying Mound Linked Aura (DND)		 This mount increases speed depending on your Riding Skill.	Increases speed depending on your Riding Skill.					
+69514	all		zzOLDShoot Gun								
+69515	all		Blade Salvo		Fires a volley of smaller blades towards the target area. Each blade deals $67450s1 damage in a $67450a1 yard radius. Lasts $67450d.	Launching blades					
+69516	all		Summon Undead		Summons Ymirjar undead to accompany the caster until dismissed.						
+69520	all		Gargoyle Strike		Inflicts Nature damage to an enemy.						
+69521	all		Saronite		Carrying saronite rocks.	Carrying saronite rocks.					
+69527	all		Frost Breath		Inflicts $s1 Frost damage to enemies in a $a1 yard cone in front of the caster. In addition, the targets' attack speed is decreased by $s2% for $d.	Attack speed decreased by $s2%.					
+69528	all		Empowered Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting $s1 Shadow damage to the target and an additional nearby enemy.						
+69530	all		Grom's Blood Elf Tribute		Places a tribute upon Grom's monument.	Places a tribute upon Grom's monument.					
+69531	all		Create Lovely Charm Bracelet		Turn 10 charms into a Lovely Charm Bracelet.						
+69533	all		Uther's Draenei Tribute		Places a tribute within Uther's tomb.	Places a tribute within Uther's tomb.					
+69535	spellbook	778	Gryphon Hatchling		Right Click to summon and dismiss your gryphon hatchling.						
+69536	spellbook	778	Wind Rider Cub		Right Click to summon and dismiss your wind rider cub.						
+69537	all		Small Ooze Combine								
+69538	all		Small Ooze Combine								
+69539	spellbook	778	Zipao Tiger		Right Click to summon and dismiss your zipao tiger.						
+69540	all		Summon Large Ooze								
+69541	spellbook	778	Pandaren Monk		Right Click to call or say goodbye to your pandaren monk friend.						
+69542	all		Trigger Throw Pants								
+69543	all		Trigger Throw Shirt								
+69544	all		Trigger Throw Unmentionables								
+69547	all		100% Health								
+69548	all		Trigger Throw Water								
+69552	all		Large Ooze Combine								
+69553	all		Large Ooze Combine								
+69558	all		Unstable Ooze		Increases damage dealt by $s1%.	Increases damage dealt by $s1%.					
+69559	all		"""Well Fed"""		Resilience rating and Stamina increased by $s1. Brewfest beers: Great taste, extra-filling! Lasts $d.	Resilience rating and Stamina increased by $s1. Brewfest beers: Great taste, extra-filling!					
+69560	all		Brewfest Drink		"Restores $o1 mana over $d.  Must remain seated while drinking.  If you spend at least 10 seconds drinking you will become ""well fed"" and gain $69559s1 Stamina and resilience rating for $69559d. Standard alcohol."	Restores $/5;s1 mana per second.					
+69561	all		Brewfest Drink		"Restores $o1 mana over $d.  Must remain seated while drinking.  If you spend at least 10 seconds drinking you will become ""well fed"" and gain $65365s1 critical strike rating for $65365d. Standard alcohol."	Restores $/5;s1 mana per second.					
+69562	all		Raise Dead		Summons a Ghoul Minion near the caster.						
+69563	all		Cologne Spritz		Spritzes the target with a puff of Crown cologne.						
+69564	all		Shadow Mend		Heals friendly target for $s1.						
+69565	all		Demoralizing Shout		Reduces the melee attack power of nearby enemies for $d.	Melee attack power reduced by $s1.					
+69566	all		Heroic Strike		A strong attack that deals $s1% of weapon damage.						
+69567	all		Lightning Bolt		Blasts an enemy with lightning, inflicting Nature damage.						
+69568	all		Earth Shield		Protects the target with an earthen shield, causing melee attacks to heal the shielded target.  This effect can only occur once every few seconds.  $69569n charges.  Lasts $69569d.						
+69569	all		Earth Shield		Protects the target with an earthen shield, causing melee attacks to heal the shielded target.  This effect can only occur once every few seconds.  $n charges.  Lasts $d.	Melee attacks heal the shielded target.					
+69570	all		Fireball		Inflicts Fire damage to an enemy.						
+69571	all		Frost Nova		Inflicts Frost damage to nearby enemies, immobilizing them for up to $d.	Immobilized.					
+69572	all		Shovelled!		Smacks a nearby enemy upside the head with his shovel, dealing $s1% weapon damage and stunning them for $d.	Stunned.					
+69573	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+69574	all		Freezing Circle		Summons a circle of ice that freezes enemies.						
+69575	all		Stoneform		The Gargoyle transforms to stone, reducing damage by $s1% for $d.	Damage taken reduced by $s1%.					
+69576	all		Chaos Bolt		Sends a bolt of chaotic fire at the enemy, dealing $s1 Fire damage. Chaos Bolt cannot be resisted, and pierces through all absorption effects.						
+69577	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+69578	all		Conversion Beam		Inflicts $s1 Shadow damage to an enemy every $t1 sec and causes Weakened Resolve.	Inflicts $s1 Shadow damage to an enemy every $t1 sec and causes Weakened Resolve.					
+69579	all		Arcing Slice		Hacks at an enemy's armor, reducing it $s2% per Arcing Slice. Can be applied up to 5 times. Lasts $d.	Armor reduced by $s2%.					
+69580	all		Shield Block		Increases the caster's chance to block by $s1% for $d., but will only block $n $lattack:attacks;.	Chance to block increased by $s1%.					
+69581	all		Pustulant Flesh		Shoots poison at an enemy, inflicting Nature damage, then additional damage every $t2 sec. for $d.	Nature damage inflicted every $t2 sec.					
+69582	all		Blight Bomb		Sacrifices the caster's life in order to inflict $s1 Fire damage to nearby enemies.						
+69583	all		Fireball		Inflicts $s1 Fire damage to the target.	$s3 Fire damage every $t3 sec.					
+69584	all		Tactical Blink		Teleports the caster behind the target. Also frees the caster from any bonds.	Immune to immobilization.					
+69585	all		Hellfire Effect		Ignites the area surrounding the caster, causing $69586s2 Fire damage to $ghimself:herself; and $69585s1 Fire damage to all nearby enemies every $69586t2 sec.  Lasts $69586d.						
+69586	all		Hellfire		Ignites the area surrounding the caster, causing $69586s2 Fire damage to $ghimself:herself; and $69585s1 Fire damage to all nearby enemies every $69586t2 sec.  Lasts $69586d.	Damages self and all nearby enemies.					
+69593	all		Toss Shirt								
+69599	all		Increase Spell Dam 222		Increases damage and healing done by magical spells and effects by up to $s1.						
+69600	all		Toss Pants								
+69601	all		Toss Unmentionables								
+69603	all		Blight		An unholy affliction blights the target, dealing Nature damage every $t1 sec. If not removed in $d, it will jump to another target.	Dealing Nature damage every $t1 sec.\nSpreads to a nearby target after $d.					
+69604	all		Blight		An unholy affliction blights the target, dealing Nature damage every $t1 sec. If not removed in $d, it will jump to another target.	Dealing Nature damage every $t1 sec.					
+69609	all		Frozen Position								
+69610	all		Large Ooze Buff Combine								
+69611	all		Large Ooze Buff Combine								
+69614	all		Toss Water								
+69617	all		Large Ooze Buff Combine								
+69623	all		Player Voluntarily Ejects From Craft								
+69625	all		Child Vehicle to Parent Vehicle on Voluntary Player Eject								
+69627	all		Forceful Smash		Knocks an enemy back with a powerful blow, inflicting $s1 Physical damage.						
+69628	all		Icy Blast		Reduces movement speed by $s1% and inflicts $s2 Frost damage per $t2 sec on those caught within the lingering icy chill.	Movement speed reduced by $s1%.\nSuffering $s2 Frost damage per $t2 sec.					
+69629	all		Unholy Power		Empowers the caster with dark might, increasing physical damage by $s1% for $d.	Physical damage increased by $s1%.					
+69631	all		Summon Spotlight								
+69632	all		[DND] Summon								
+69633	all		Veil of Shadow		Reduces healing effects for an enemy by $s1% for $d.	Healing effects reduced by $s1%.					
+69634	all		Taste of Blood		The taste of his own blood empowers the warrior, causing him to take $s2% reduced damage from all attacks and regenerate $s1% of his total health every $t1 sec. for $d.	Regenerating health.\nAll damage taken reduced by $s2%.					
+69636	all		Raging Ghoul Spawn								
+69637	all		Battle Fury								
+69638	all		Battle Fury		Increases all damage done by $s1%.	All damage done increased by $s1%.					
+69639	all		Risen Witch Doctor Spawn								
+69641	all		Gryphon/Wyvern Pet - Mounting Check Aura								
+69642	all		Shield of Bones		Absorbs $s1 damage. If the bones absorb the full amount they will shatter, inflicting $s1 damage on enemy targets within $a1 yards.	Absorbs $s1 damage.					
+69643	all		Get Targets								
+69644	all		Unstable Ooze Trigger		Increases damage dealt by $s1%.	Increases damage dealt by $s1%.					
+69645	all		Hoarfrost		Deals $s1 Frost damage to enemies within $a1 yards of the point of impact and stuns them for $d.	Stunned.					
+69646	all		Icy Blast		Deals $s1 Frost damage to enemies within $a1 yards of the point of impact.						
+69647	all		Desperate Resolve		Increases armor by $s1% and attack speed by $s2%.	Armor increased by $s1%\nAttack speed increased by $s2%.					
+69649	all		Frost Breath		Inflicts $s1 Frost damage to enemies in a $a1 yard cone in front of the caster. In addition, the targets' attack speed is decreased by $s2% and movement decreased by $s3% for $d.	Attack speed decreased by $s2%.\nMovement speed decreased by $s3%.					
+69650	all		[DND] Scale								
+69651	all		Wounding Strike		Inflicts $s1% weapon damage and leaves the target wounded, reducing the effectiveness of any healing by $s2% for $d.	Healing effects reduced by $s2%.					
+69652	all		Bladestorm		Instantly Whirlwind all nearby targets and for the next $d you will perform a whirlwind attack every $t1 sec.  While under the effects of Bladestorm, you can move but cannot perform any other abilities but you do not feel pity or remorse or fear and you cannot be stopped unless killed.	You cannot be stopped and perform a Whirlwind every $t1 sec.  No other abilities can be used.					
+69653	all		Bladestorm		In a whirlwind of steel you attack all enemies within 8 yards, causing weapon damage from both melee weapons to each enemy.						
+69654	all		[DND] Summon								
+69655	all		[DND] Summon								
+69656	all		[DND] Summon								
+69657	all		Water Splash (Self)								
+69658	all		Spiteful Apparition Visual								
+69659	all		Evocation (Visual Only)								
+69660	all		Burning Pitch		Throws gob of burning pitch that sets the target area aflame, inflicting $o1 Fire damage over $d.	$s1 Fire damage inflicted every $t1 sec.					
+69663	all		Soul Horror Visual								
+69664	all		Aquanos Laundry								
+69665	all		[DND] Water Visual								
+69666	all		Summon								
+69667	all		Fire Nova								
+69668	all		Fireball								
+69669	all		Explode								
+69670	all		Rain of Fire		Calls down a fiery rain to burn enemies in the area of effect for ${$69670m1*4} Fire damage over $69670d.						
+69671	all		Flame Patch		Calls down a fiery rain to burn enemies in the area of effect for ${$69670m1*4} Fire damage over $69670d.	$69670s1 Fire damage every $69670t1 seconds.					
+69672	all		Sunreaver Disguise		Wearing an enchanted Sunreaver Tabard. This disguise will only work in Dalaran.	Wearing an enchanted Sunreaver Tabard. This disguise will only work in Dalaran.					
+69673	all		Silver Covenant Disguise		Wearing an enchanted Silver Covenant Tabard. This disguise only works in Dalaran.	Wearing an enchanted Silver Covenant Tabard. This disguise only works in Dalaran.					
+69674	all		Mutated Infection		The Mutated Infection inflicts $s1 damage every $t1 sec and reduces healing received by $s2% for $d.  After the Infection is removed a small ooze is created at the target's location.	Inflicts $s1 damage every $t1 sec.\nReduces healing received by $s2%.\nWhen the Infection is removed a Small Ooze is created.					
+69675	all		Ice Tomb								
+69677	spellbook	778	Lil' K.T.		Right Click to summon or dismiss Lil' K.T.						
+69678	all		Rocket Artillery		Launches a rocket at the enemy airship that explodes on impact.						
+69679	all		Rocket Artillery		Launches a rocket that explodes on impact, inflicting Fire damage to nearby enemies and Siege damage to the enemy gunship.						
+69680	all		Explosion		The rocket explodes, inflicting $s1 Fire damage to nearby enemies and Siege damage to the enemy gunship.						
+69681	all		Lil' Frost Blast								
+69682	all		Lil' K.T. Focus								
+69683	all		Lil' K.T. Passive								
+69686	all		Summon Ice Tomb								
+69687	all		Explosion		The rocket explodes, inflicting $s1 Fire damage to nearby enemies and knocking them back.						
+69688	all		Explosion		The rocket explodes, inflicting $s1 Fire damage to nearby enemies and Siege damage to the enemy gunship.						
+69689	all		Explosion		The rocket explodes, inflicting $s1 Fire damage to nearby enemies and knocking them back.						
+69690	all		Summon Scourge Package								
+69691	all		Fire Nova Heal								
+69692	all		Ride Vehicle								
+69693	all		Full Heal		Fully restores the health of an ally.						
+69694	all		Summon Ice Tomb								
+69695	all		Transform								
+69696	all		Chain Lightning								
+69697	all		Rising Squall								
+69698	all		Lightning Shield		Surrounds the caster with $n balls of lightning that have a $h% chance of striking melee or ranged attackers for Nature damage. Each time the lightning shield strikes, a ball of lightning dissipates. Thus, the shield expires after $d. or after it has struck $n times.	$h% chance of inflicting $s1 Nature damage on hit.					
+69699	all		Cyclone		Inflicts $s2 Nature damage and stuns an enemy for $d.	Stunned.					
+69700	all		Ice Tomb								
+69701	all		Rope								
+69702	all		Rope								
+69703	all		Scourge Package Visual								
+69705	all		Below Zero		Freezes the target in a block of ice by concentrating and freezing moisture in the air. The caster must channel to maintain the ice block.	Frozen in a block of ice. Unusable.					
+69706	all		Mutated Infection								
+69708	all		Ice Prison		Stuns the target, preventing all action but making it invulnerable.	Imprisoned in ice, unable to attack, move or use spells. Immune to all attacks and spells.					
+69709	all		Increase Spell Dam 250		Increases damage and healing done by magical spells and effects by up to $s1.						
+69710	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+69711	all		Transform 01a								
+69712	all		Ice Tomb		Conjures spheres of icy energy to entomb enemies in blocks of ice.						
+69713	all		Transform 01								
+69714	all		Transform 01b								
+69715	all		Transform 01c								
+69716	all		Transform Master 00								
+69717	all		Transform 02a								
+69718	all		Transform 02b								
+69719	all		Transform 02c								
+69720	all		Transform 02								
+69722	all		Create Ancient Dragonforged Blades								
+69724	all		Surge		Charges an enemy, inflicting $s3 damage to the target and any of its nearby allies, as well as knocking them all back.						
+69726	all		Cleansing Wave		Cleanses a friendly target, removing $s1 poison effect, $s2 disease effect, and $s3 magic effect.						
+69727	all		Water Spurt								
+69728	all		Water Spurt								
+69729	all		Searing Flames		Causes $o1 Fire damage over $d.	$s1 Fire damage every $t1 seconds.					
+69730	all		Searing Flames		Causes $o1 Fire damage over $d.	$s1 Fire damage every $t1 seconds.					
+69731	all		Lich Pet Aura OnKill								
+69732	all		Lich Pet Aura								
+69733	all		Cauterizing Heal		Heals for $s1.	Heals for $s1.					
+69734	all		Cauterizing Heal		Heals for $s1.	Heals for $s1.					
+69735	all		Lich Pet OnSummon								
+69736	all		Lich Pet Aura Remove								
+69737	all		CP Test Spell 2								
+69738	all		CP Test Spell								
+69739	all		Shiny Shard of the Scale - Equip Effect		Your direct heals have a chance to cause Cauterizing Heal. Your direct damage spells have a chance to cause Searing Flame.						
+69740	all		Transform X2								
+69741	all		[DND] Die								
+69742	all		[DND] Port								
+69745	all		General Trigger 2 to Vehicle								
+69746	all		Backlash		Designer Note: This aura is a dummy aura to track if Backlash has been recently used.						
+69748	all		General Trigger 1 From Passenger 2								
+69749	all		Shiny Shard of the Scale Heal Targeter								
+69750	all		Weak Radiating Ooze		The Radiating Ooze inflicts $69751s1 damage to enemies within $69751a1 yards, it will also cause the Little Ooze to merge with other nearby Ooze.	Inflicts $69751s1 damage to enemies within $69751a1 yards.\nCauses the Little Ooze to merge with other nearby Ooze.					
+69751	all		Weak Radiating Ooze		Inflicts $s1 damage to enemies within $a1 yards.	Inflicts $s1 damage to enemies within $a1 yards.					
+69753	all		Necromantic Power		Slaughter the slaves in front of you.						
+69754	all		Purified Shard of the Scale Heal Targeter								
+69755	all		Purified Shard of the Scale - Equip Effect		Your direct heals have a chance to cause Cauterizing Heal. Your direct damage spells have a chance to cause Searing Flame.						
+69757	all		Sons of Hodir Commendation Badge		Increases your Sons of Hodir reputation by ${$m1*1.3}.						
+69759	all		Spirit Heal								
+69760	all		Radiating Ooze		The Radiating Ooze inflicts $69761s1 damage to enemies within $69761a1 yards, it will also cause the Big Ooze to merge with other nearby Ooze.	Inflicts $69761s1 damage to enemies within $69761a1 yards.\nCauses the Big Ooze to merge with other nearby Ooze.					
+69761	all		Radiating Ooze		Inflicts $s1 damage to enemies within $a1 yards.	Inflicts $s1 damage to enemies within $a1 yards.					
+69762	all		Unchained Magic		Inflicts an arcane malediction on the target, causing any spells cast to result in a backlash of Arcane power after $69766d.  Multiple spellcasts by the afflicted target will intensify the backlash.	Magical spells cast will cause a delayed backlash.					
+69763	all		Stun Break								
+69764	all		Stun Break								
+69765	all		Stun Break								
+69766	all		Instability		Using magic while afflicted with Unchained Magic will build up unstable energy, dealing $s1 Arcane damage to the caster per spell cast, $d after spellcasting ends.	Deals $s1 Arcane damage after $d.					
+69767	all		Summon Ice Wall								
+69768	all		Summon Ice Wall								
+69769	all		Ice Prison			Movement speed slowed.					
+69770	all		Backlash		Deals Arcane damage for each magical spell cast while afflicted with Unchained Magic.						
+69771	all		Frost Breath		Inflicts $s1 Frost damage to an enemy.						
+69772	all		Frost Breath		Inflicts $s1 Frost damage to an enemy.						
+69773	all		Create Perpetual Purple Firework		Creates a new, permanent Perpetual Purple Firework item in your inventory while consuming this trinket.						
+69774	all		Sticky Ooze		The Ooze sprays a puddle of Green Goo near the target. The Green Goo inflicts $69778s1 damage every $69776t1 sec and decreases move speed by $69778s2%.	The Ooze sprays a puddle of Green Goo near the target. The Green Goo inflicts $69778s1 damage every $69776t1 sec and decreases move speed by $69778s2%.					
+69775	all		Sticky Ooze								
+69776	all		Sticky Ooze		The Green Goo inflicts $69778s1 damage every $t1 sec and reduces move speed by $69778s2%.	The Green Goo inflicts $69778s1 damage every $t1 sec and reduces move speed by $69778s2%.					
+69777	all		Create Carved Ogre Idol		Creates a new, permanent Carved Ogre Idol item in your inventory while consuming this trinket.						
+69778	all		Sticky Ooze		The Green Goo inflicts $s1 damage every $69776t1 sec and reduces move speed by $s2%.	Inflicts $s1 damage every $69776t1 sec.\nReduces move speed by $s2%.					
+69779	all		[DND] Teleport Unit								
+69780	all		Remorseless Winter		Slows movement speed by $s2%.	Movement slowed by $s2%.					
+69781	all		Remorseless Winter		Deals $m to $M Frost damage every 1 sec.	Deals $m to $M Frost damage every 1 sec.					
+69782	all		Ooze Flood								
+69783	all		Ooze Flood								
+69784	all		Destroy Wall								
+69785	all		Ooze Flood								
+69786	all		Immune All								
+69787	all		Ice Barrier		Instantly shields the caster, absorbing $s1 damage.  Lasts $d.  While the shield holds, spells will not be interrupted.	Absorbs damage.					
+69788	all		Ooze Flood								
+69789	all		Ooze Flood		The Ooze Flood inflicts $s1 damage every $69788t1 sec and reduces move speed by $s2% for $d	Inflicts $s1 damage every $69788t1 sec.\nReduces move speed by $s2%.					
+69795	all		Ooze Flood Trigger								
+69796	all		Ooze Flood								
+69797	all		Ooze Flood								
+69798	all		Ooze Flood								
+69799	all		Ooze Flood								
+69800	all		Pandaren Monk								
+69801	all		Ooze Flood								
+69802	all		Ooze Flood								
+69806	all		[DND] Ground Cover								
+69807	all		Saber Lash								
+69808	all		Skybreaker Battle Standard		Increases maximum health by $s3% and increases melee, ranged, and spell casting speed by $s1% for all friendly targets within $a1 for $d.	Melee, ranged, and spell casting speed increased by $s1%. Health increased by $s3%.					
+69809	all		Kor'kron Battle Standard		Increases maximum health by $s3% and increases melee, ranged, and spell casting speed by $s1% for all friendly targets within $a1 for $d.	Melee, ranged, and spell casting speed increased by $s1%. Health increased by $s3%.					
+69810	all		Summon Skybreaker Battle Standard		Summons $s1 $lSuccubus:Succubi; to accompany the caster until dismissed.						
+69811	all		Summon Kor'kron Battle Standard		Summons $s1 $lSuccubus:Succubi; to accompany the caster until dismissed.						
+69817	all		Summon Raging Ghoul								
+69818	all		Summon Raging Ghoul		Summons 6 Raging Ghouls over $d.						
+69819	all		SW Phase			You feel at peace with the world.					
+69822	all		[DND] Periodic Typhoon								
+69823	all		Typhoon		You summon a violent Typhoon that does $s2 Nature damage when in contact with hostile targets, knocking them back 5 yards.						
+69824	all		Typhoon		You summon a violent Typhoon that does $s2 Nature damage when in contact with hostile targets, knocking them back 5 yards.						
+69828	all		Halls of Reflection Clone		Cause the target to become a clone of the caster.						
+69832	all		Unstable Ooze Explosion		Inflicts $69833s1 damage to enemies within $69833a1 yards.	Inflicts $69833s1 damage to enemies within $69833a1 yards.					
+69833	all		Unstable Ooze Explosion		Inflicts $s1 damage to enemies within $a1 yards.	Inflicts $s1 damage to enemies within $a1 yards.					
+69835	all		Summon Lumbering Abomination								
+69836	all		Summon Risen Witch Doctor								
+69837	all		Halls of Reflection Clone		Cause the target to become a clone of the caster.						
+69838	all		Re-forge Quel'Delar		Combine 5 Infused Saronite Bars with the Remnants of Quel'Delar to re-forge Quel'Delar. You must be standing at one of the Forgemaster's Anvils.						
+69839	all		Unstable Ooze Explosion		Inflicts $69833s1 damage to enemies within $69833a1 yards.	Inflicts $69833s1 damage to enemies within $69833a1 yards.					
+69840	all		Unstable Ooze Explosion Summon		Inflicts $69833s1 damage to enemies within $69833a1 yards.	Inflicts $69833s1 damage to enemies within $69833a1 yards.					
+69843	all		Halls of Reflection Targeting								
+69844	all		Vertex Color Bright Red								
+69845	all		Frost Bomb		Deals $s1 Frost damage to all nearby targets.						
+69846	all		Frost Bomb								
+69848	all		Omar's Seal of Approval		Approves your target for greatness	You have Omar's 25 Man Normal Seal of Approval!					
+69849	all		Omar's Seal of Approval		Approves your target for greatness	You have Omar's 10 Man Heroic Seal of Approval!					
+69850	all		Omar's Seal of Approval		Approves your target for greatness	You have Omar's 25 Man Heroic Seal of Approval!					
+69856	all		Conversion Beam		Inflicts $s1 Shadow damage to an enemy every $t1 sec and causes Weakened Resolve.	Inflicts $s1 Shadow damage to an enemy every $t1 sec and causes Weakened Resolve.					
+69857	all		Taunt Arthas								
+69859	all		Crucible of Souls Visual								
+69861	all		Halls of Reflection Ghost Visual		Cause the target to become a clone of the caster.						
+69864	all		PRK Test								
+69866	all		Harvest Soul								
+69868	all		Carrying Beer Barrels [TEST]								
+69869	all		Frostfire Bolt		Launches a bolt of frostfire at the enemy, causing $s1 Frost-Fire damage, slowing movement speed by $s2% and causing an additional $o3 Fire damage over $d.  If the target is more vulnerable to Frost damage, this spell will cause Frost instead of Fire damage.	Movement slowed by $s2%.  $s3 Fire damage every $t3 sec.					
+69871	all		Plague Stream		Infuses the target with plague, increasing damage dealt by 100% for $d.	Damage increased by $s1%.					
+69875	all		Warbringer NPC Appearance - Orgrimmar								
+69876	all		Greater Invis		Turns the caster invisible until the effect is cancelled.	Invisible.					
+69877	all		Alliance Brigadier General Transform (Stormwind)								
+69882	all		Regrowth		Heals a friendly target for $s1 and another $o2 over $d.	Heals $s2 every $t2 seconds.					
+69886	all		Jump to Unit								
+69887	all		Web Beam								
+69889	all		Merge		The two Little Ooze merge into a Big Ooze!	The two Little Ooze merge into a Big Ooze!					
+69891	all		Copy Weapon (No Threat)		Copies an enemy's weapon, weilding it.						
+69892	all		Copy Off-hand Weapon (No Threat)		Copies an enemy's off-hand weapon, weilding it.						
+69893	all		Copy Weapon (No Threat)		Wields a copied weapon.	Wielding a copied weapon.					
+69895	all		Periodic Trigger Dummy (No Threat)								
+69896	all		Copy Offhand Weapon (No Threat)		Wields an off-hand weapon.	Wielding a copied off-hand weapon.					
+69898	all		Rejuvenation		Heals the target for $o1 over $d.	Heals $s1 damage every $t1 seconds.					
+69899	all		Healing Touch		Heals a friendly target for $s1.						
+69900	all		Spirit Burst		Deals $s1 Shadow damage to all enemies within $a1 yards.						
+69901	all		Spell Reflect		Raise your shield, reflecting the next spell cast on you.  Lasts $d.	Reflects the next spell cast on you.					
+69902	all		Devastate		Sunder the target's armor causing the Sunder Armor effect.  In addition, causes $s2% of weapon damage plus $s3 for each application of Sunder Armor on the target.  The Sunder Armor effect can stack up to $u times.	Armor decreased by $s1.					
+69903	all		Shield Slam		Inflicts damage to an enemy, stunning it for $d.	Stunned.					
+69904	all		Blink		Teleports the caster 20 yd and frees the caster from any bonds.	Blinking...					
+69905	all		Penance		Launches a volley of holy light at the target, causing $s1 healing to an ally instantly and every $69906t2 sec for $69906d.						
+69906	all		Penance								
+69907	all		Arcane Chain Channel								
+69908	all		Suicide (No Log) - Halls of Reflection								
+69910	all		Pain Suppression		Reduces all damage taken by $s1%.	All damage taken reduced by $s1%.					
+69911	all		Blood Plague		The Blood Plague inflicts $s1 Shadow damage every $t1 sec for $d.	Deals $s1 Shadow damage every $t1 sec.					
+69912	all		Plague Strike		A vicious strike that deals weapon damage  and plagues the target with Blood Plague, dealing Shadow damage over time.						
+69916	all		Icy Touch		Inflicts $s1 Frost damage and causes Frost Fever.	Inflicts $s1 Frost damage and causes Frost Fever.					
+69917	all		Frost Fever		A disease dealing Frost damage every $t1 sec and reducing the target's melee and ranged attack speed by $s2% for $d.	Deals Frost damage over $d.\nReduces melee and ranged attack speed.					
+69918	all		Greater Invis		Turns the caster invisible until the effect is cancelled.	Invisible.					
+69920	all		Sinister Strike		Inflicts normal damage plus $s1 to an enemy.						
+69921	all		Fan of Knives		Finishing move that causes damage.						
+69922	all		Temper Quel'Delar		Temper Quel'Delar in the Crucible of Souls. Only works inside the Forge of Souls.						
+69923	all		Chain Heal		Infuses a wounded ally with healing energy that spreads to another nearby ally. The spell affects up to $x1 targets.						
+69924	all		Ice Block		Encased in ice.	Encased in ice.					
+69925	all		Earth Shield		Protects the target with an earthen shield, causing melee attacks to heal the shielded target.  This effect can only occur once every few seconds.  $69926n charges.  Lasts $69926d.						
+69926	all		Earth Shield		Protects the target with an earthen shield, causing melee attacks to heal the shielded target.  This effect can only occur once every few seconds.  $n charges.  Lasts $d.	Melee attacks heal the shielded target.					
+69927	all		Avenger's Shield		Hurls a holy shield at the enemy, dealing $s1 Holy damage, Dazing them and then jumping to additional nearby enemies.  Affects $x1 total targets.	Dazed.					
+69929	all		Spirit Stream		Infuses the destination with spirit power.	Damage increased by $s1%.					
+69930	all		Consecration		Consecrates the land beneath Paladin, doing $o1 Holy damage over $d to enemies who enter the area.	$s1 damage every $t1 $lsecond:seconds;.					
+69932	all		zzOldAncestral Swiftness								
+69933	all		Baleful Strike		Pierces the soul, inflicting $s1 damage.						
+69934	all		Holy Wrath		Sends bolt of holy power in all directions, causing $s1  damage to targets within $a1 yds.						
+69936	all		Mirror Image								
+69939	all		Mirror Image								
+69940	all		Mirror Image								
+69941	all		Mirror Image								
+69942	all		Phase Normal + Dungeon Encounter 1								
+69956	all		Return Tempered Quel'Delar								
+69958	all		Healing Wave	Rank 9	Heals a friendly target for $s1.						
+69959	all		[DND] Trigger Spawn								
+69960	all		Mirror Image								
+69961	all		Glyph of Scourge Strike		Your Scourge Strike increases the duration of your diseases on the target by $58642m1 sec, up to a maximum of $58642m2 additional seconds.						
+69962	all		Dead								
+69963	all		Greater Heal		Heals a friendly target for $s1.						
+69965	all		Thunderclap		Damages all nearby enemies for $s1 Nature damage						
+69966	all		Summon Evil Quel'Delar								
+69967	all		Smite		Smites an enemy, inflicting $s1 Holy damage.						
+69968	all		Wrath		Blasts an enemy with lightning, inflicting Nature damage.						
+69969	all		Curse of Doom		Dooms the target, inflicting $s1 Shadow damage after $d.	$s1 Shadow damage inflicted after $d.					
+69970	all		Lightning Bolt		Blasts an enemy with lightning, inflicting Nature damage.						
+69972	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting $s1 Shadow damage.						
+69973	all		Incinerate		Deals $s1 Fire damage to your target.						
+69974	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+69975	all		Explosive Shot		You fire an explosive charge into the enemy target, dealing $s1 Fire damage. The charge will blast the target every second for an additional $d.	Taking Fire damage every second.					
+69983	all		Necessary Roughness: Summon Master								
+69984	all		Frostfire Bolt		Launches a bolt of frostfire at the enemy, causing $s1 Frost-Fire damage, slowing movement speed by $s2% and causing an additional $o3 Fire damage over $d.  If the target is more vulnerable to Frost damage, this spell will cause Frost instead of Fire damage.	Movement slowed by $s2%.  $s3 Fire damage every $t3 sec.					
+69985	all		[DND] Summon								
+69986	all		Web Beam								
+69989	all		Arcane Shot		An instant shot that causes $s1 Arcane damage.						
+69994	all		Brilliance		Increases Intellect by $s1 for all party and raid members for $d.	Intellect increased by $s1.					
+69996	all		Runescroll of Brilliance								
+69999	all		[DND] Swap IDs								
+70000	all		Morgan Test Spell								
+70001	all		Green Abomination Hittin' Ya Proc								
+70002	all		Green Abomination Hittin' Ya Effect								
+70003	all		Mutated Infection								
+70004	all		Mutated Infection								
+70005	all		Mutated Infection								
+70006	all		Mutated Infection								
+70013	all		Quel'Delar's Compulsion		Quel'Delar pulses with darkness and seems to be pulling you toward the Halls of Reflection in Icecrown Citadel.	Quel'Delar pulses with darkness and seems to be pulling you toward the Halls of Reflection in Icecrown Citadel.					
+70017	all		Gunship Cannon Fire								
+70021	all		Gunship Cannon Fire								
+70022	all		Frost Bomb Targeting Visual								
+70023	all		Necessary Roughness: Shredder Blade Controller								
+70028	all		[DND] Summon								
+70029	all		The Beast Within		Removes all movement impairing effects and all effects which cause loss of control of your character.						
+70030	all		Necessary Roughness: Force Cast on Abandon Vehicle								
+70031	all		Necessary Roughness: Quest Abandon								
+70033	all		Necessary Roughness: Summoned Bilgewater Buccaneer Invisibility								
+70034	all		Necessary Roughness: Steamwheedle Shark See Invisibility								
+70037	all		[DND] Summon								
+70040	all		[DND] Trigger Spawn								
+70041	all		[DND] Trigger Spawn								
+70043	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+70049	all		[DND] Lich Pet								
+70050	all		[DND] Lich Pet								
+70053	all		Revive Champion		Revives a Captain of the Argent Dawn to fight for you.						
+70055	all		Create Rocket Pack								
+70056	all		Faction ID: Horde								
+70057	all		Faction ID: Alliance								
+70058	all		Faction ID: Alliance								
+70059	all		Faction ID: Horde								
+70060	all		Faction ID: Horde								
+70061	all		Faction ID: Alliance								
+70063	all		Fury of Frostmourne		Deals $M Shadow damage to all enemies.						
+70067	all		Fourth and Goal: Bilgewater Buccaneer Invisibility								
+70068	all		Fourth and Goal: Force Cast on Abandon Vehicle								
+70069	all		Ooze Flood Periodic Trigger								
+70070	all		Harvest Soul			Held in the grip of Frostmourne.					
+70073	all		Frost Bomb Trigger								
+70074	all		Spray Chemical		Shoots at an enemy, inflicting Nature damage.						
+70076	all		Fourth and Goal: On Summon Force Cast								
+70077	all		Fourth and Goal: Quest Accept - A								
+70078	all		Caress of Death		Overwhelms a target imbued with the Light, instantly killing them.						
+70079	all		Ooze Flood Periodic Trigger Cancel								
+70080	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+70084	all		Frost Aura		Deals $s1 Frost damage to all nearby enemies every $t1 sec.	Suffering $s1 Frost damage every $t1 sec.					
+70088	all		SetHealth (100%)		Reincarnates the caster.						
+70089	all		Undeath		Reincarnates the target as Undead.	Undead.					
+70090	all		Mutated Infection								
+70094	all		Fourth and Goal: Kill Credit to Player								
+70096	all		zzOLDGive Sassy the News: Quest Complete								
+70098	all		Slave Trigger								
+70099	all		Slave Trigger Aura								
+70100	all		Slave Formation Trigger								
+70104	all		Teleport to Enemy Ship								
+70105	all		Phase - Quest Zone-Specific 5								
+70106	all		Chilled to the Bone		Deals $s1 Frost damage per $t1 sec. for each application.	Suffering $s1 Frost damage every $t1 sec.					
+70107	all		Permeating Chill		Causes those who attack Sindragosa with physical attacks to be chilled to the bone, dealing $70106s1 Frost damage per $70106t1 sec. for each application.	Melee and physical attacks to Sindragosa have a chance to chill you to the bone.					
+70108	all		Acid Ground Cloud Visual (Purple)								
+70109	all		Permeating Chill		Causes those who attack Sindragosa with physical attacks to be chilled to the bone, dealing $70106s1 Frost damage per $70106t1 sec for each application.	Melee and physical attacks to Sindragosa have a chance to chill you to the bone.					
+70110	all		Mistress Kiss Script Effect								
+70114	all		Threat (5k) - player only		Adds a large amount of threat to the target.						
+70115	all		1% Threat Aura		Reduces the amount of all threat generated by $s1%.  Passive.						
+70116	all		Frost Breath		Inflicts $s1 Frost damage to enemies in a $a1 yard cone in front of the caster. In addition, the targets' attack speed is decreased by $s2% for $d.	Attack speed decreased by $s2%.					
+70117	all		Icy Grip		Extend tendrils of frigid wind to pull all nearby enemies to the caster.						
+70119	all		AFK Check								
+70120	all		On Skybreaker Deck								
+70121	all		On Orgrim's Hammer Deck								
+70122	all		Icy Grip								
+70123	all		Blistering Cold		Deals $s1 Frost damage to enemies within $a1 yards.						
+70125	all		Despawn Ice Tomb								
+70126	all		Frost Beacon		Marks a target for imprisonment in an Ice Tomb.	Being tracked by Sindragosa's magical orbs.					
+70127	all		Mystic Buffet		Buffets all nearby foes with Arcane energy, increasing all magic damage taken by $s1% per application.	Damage taken from magical sources increased by $s1%.					
+70128	all		Mystic Buffet		Buffets all nearby foes with magic every $t1 sec., increasing magical damage taken by $70127s1% per application.	Pulsing waves of arcane magic every $t1 sec.					
+70130	all		Empowered Blizzard		Freezes all targets to the ground for an inane amount of time.	Frozen to the ground.					
+70131	all		Empowered Blizzard		Freezes all targets to the ground for an inane amount of time.						
+70132	all		Empowered Blizzard		Freezes all targets to the ground for an inane amount of time.						
+70135	all		Gaseous Blight		The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.	The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.					
+70136	all		Gaseous Blight		The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.	The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.					
+70137	all		Gaseous Blight		The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.	The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.					
+70138	all		Gaseous Blight		The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.	The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.					
+70139	all		Gaseous Blight		The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.	The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.					
+70140	all		Gaseous Blight		The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.	The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.					
+70141	all		Bug 164364 Immunity		Immune to 70142 debuff.	Immune to 70142 debuff.					
+70142	all		Bug 164364 Effect								
+70143	all		Vehicle Test								
+70144	all		Curse of Doom		Dooms the target, inflicting $s1 Shadow damage after $d.	$s1 Shadow damage inflicted after $d.					
+70145	all		Shadow Bolt Volley		Hurls missiles of dark magic, inflicting Shadow damage to nearby enemies.						
+70150	all		Leap		Leap behind the targeted friend or enemy.						
+70153	all		Rope Beam								
+70157	all		Ice Tomb		Entombs the targeted foe and all enemies within $a1 yards in ice, dealing $s1 Frost damage.	Entombed in ice.					
+70158	all		Green Bottle								
+70159	all		Ice Tomb								
+70160	all		Orange Bottle								
+70161	all		Hurl Axe		Hurl an axe at the target, inflicting $s1 Physical damage.						
+70162	all		Shoot		Shoot at the target, inflicting $s1 Physical damage.						
+70163	all		MINOR DEFENSE								
+70164	spellbook	776	Rune of the Nerubian Carapace		Affixes your rune weapon with a rune that increases Defense by $70163s1 and total Stamina by $70163s2%.  Modifying your rune weapon requires a Rune Forge in Ebon Hold.						
+70169	all		Vomit Spray		Inflicts $70169s1 Nature damage and increases damage taken by $70169s2% for $d.	Increases damage taken by $s2%.					
+70170	all		Clear Ice Tomb								
+70172	all		Cannon Blast		Launches a cannonball at the target. Inflicts $70173s1 Siege damage and generates $s2 Heat.						
+70173	all		Cannon Blast		Launches a cannonball at the target. Inflicts $s1 Siege damage and generates $70172s2 Heat.						
+70174	all		Incinerating Blast		Consumes all of the cannon's Heat to launch a massive ball of fire at the target. Inflicts $69402s1 Siege damage plus additional damage per point of Heat.						
+70175	all		Incinerating Blast		Consumes all of the cannon's Heat to launch a massive ball of fire at the target. Inflicts $s1 Siege damage plus additional damage per point of Heat.						
+70176	all		Vomit Spray		Inflicts $s1 Nature damage and increases damage taken by $s2% for $d.	Increases damage taken by $s2%.					
+70177	all		[DND] Summon Collision								
+70179	all		[DND] Dustfall								
+70180	all		Vomit Spray		Inflicts $70181s1 Nature damage and increases damage taken by $70181s2% for $d.	Increases damage taken by $s2%.					
+70181	all		Vomit Spray		Inflicts $s1 Nature damage and increases damage taken by $s2% for $d.	Increases damage taken by $s2%.					
+70182	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+70183	all		Curse of Doom		Dooms the target, inflicting $s1 Shadow damage after $d.	$s1 Shadow damage inflicted after $d.					
+70184	all		Shadow Bolt Volley		Hurls missiles of dark magic, inflicting Shadow damage to nearby enemies.						
+70187	all		Friendly NPC Defensive Spell								
+70188	all		Cloak of Darkness		Increases the rogue's dodge chance by $s1%.  Lasts $d.	Dodge chance increased by $s1%.\nImmune to magic schools.					
+70189	all		Poison Spit		Inflicts $s1 Nature damage and then $s2 damage to an enemy every $t2 sec. for $d. This effect will also hit targets within $a1 yards.	$s2 Nature damage inflicted every $t2 sec.					
+70190	all		Evasion		Increases the rogue's dodge chance by $s1%.  Lasts $d.	Dodge chance increased by $s1%.					
+70191	all		Cleave		Inflicts normal damage to an enemy and its nearest allies, affecting up to $x1 targets.						
+70192	all		Fragrant Air Analysis		Analyze the air around a heavily perfumed guard.	Analyzing...					
+70193	all		Quel'Delar Phase Shift								
+70194	all		Dark Binding		Stuns the target, preventing all action but making it invulnerable.	Unable to attack, move or use spells. Immune to all attacks and spells.					
+70195	all		[PH] Portable Hole		Returns you to $z.  Speak to an Innkeeper in a different place to change your home location.						
+70196	all		Impaling Spear		Impales a target from afar with your weapon, instantly killing them.						
+70199	all		Blinding Retreat			Stunned.					
+70200	all		Stun Break								
+70202	all		Remove Hate								
+70203	all		Is Val'kyr		Marker spell for Sister Svalna.	Is Svalna.					
+70204	all		Shield of Bones		Absorbs $s1 damage. If the bones absorb the full amount they will shatter, inflicting $s1 damage on enemy targets within $a1 yards.	Absorbs $s1 damage.					
+70205	all		Shadow Mend		Heals friendly target for $s1.						
+70206	all		Bone Volley		Hurls a volley of bones at nearby enemies, inflicting $s1 damage.						
+70207	all		Shield of Bones		Absorbs $s1 damage. If the bones absorb the full amount they will shatter, inflicting $69642s1 damage on enemy targets within $69642a1 yards.	Absorbs $s1 damage.					
+70208	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+70209	all		Frost Nova		Inflicts $s1 Frost damage to nearby enemies, immobilizing them for up to $d.	Immobilized.					
+70210	all		Wail of Souls		Inflicts $s1 Shadow damage to enemies within $r yards of the caster.						
+70211	all		Soul Strike		Pierces the soul, inflicting $s1 damage.						
+70212	all		Spite		Deals $s1 Shadow damage to enemies within $a yards.						
+70213	all		Drain Life		Drains $o1 health from an enemy over $d., transferring it to the caster.	$o1 health leeched over $d.					
+70215	all		Gaseous Bloat		The Gas Cloud is fixated on the player with Gaseous Bloat.  If he catches him it will cause him to cast Expunge Gas, inflicting damage to nearby players based on how bloated the player is.	Fixated on the player with Gaseous Bloat.\nMelee attacks cause Expunged Gas which deals damage based on how bloated the player is.					
+70219	all		Melee Targeting								
+70222	all		Melee Targeting								
+70224	all		Destroy Wall								
+70225	all		Destroy Wall								
+70227	all		Empowered Blood		Damage done increased by $s1%.\nSpells have no cost and are instant.\nMelee and ranged attack speed increased 100%.	Damage done increased by $s1%.\nSpells have no cost and are instant.\nMelee and ranged attack speed increased 100%.					
+70232	all		Empowered Blood		Damage done increased by $s1%.\nHealth increased by $s2%. \nSpells have no cost and are instant.\nMelee and ranged attack speed increased 100%.	Damage done increased by $s1%.\nHealth increased by $s2%. \nSpells have no cost and are instant.\nMelee and ranged attack speed increased 100%.					
+70233	all		"""VICTORY"" Perfume"		Increases Attack Power by $s1 and attracts those wearing cologne. Lasts $d.	Attack Power increased by $s1.					
+70234	all		"""Enchantress"" Perfume"		Increases Spell Power by $s1 and attracts those wearing cologne. Lasts $d.	Spell Power increased by $s1.					
+70235	all		"""Forever"" Perfume"		Increases Defense Rating by $s1 and attracts those wearing cologne. Lasts $d.	Defense Rating increased by $s1.					
+70242	all		"""Bravado"" Cologne"		Increases Attack Power by $s1 and attracts those wearing perfume. Lasts $d.	Attack Power increased by $s1.					
+70243	all		"""STALWART"" Cologne"		Increases Defense Rating by $s1 and attracts those wearing perfume. Lasts $d.	Defense Rating increased by $s1.					
+70244	all		"""Wizardry"" Cologne"		Increases Spell Power by $s1 and attracts those wearing perfume. Lasts $d.	Spell Power increased by $s1.					
+70246	all		Gunship Cannon Fire								
+70257	all		Despawn Ice Blocks								
+70258	all		Throw Saronite								
+70264	all		447: Character See Quest Invis 1 from Gasbot								
+70265	all		Thalorien Dawnseeker Credit								
+70266	all		Taunt Ghoul Invaders								
+70267	all		Taunt Crypt Raiders								
+70269	all		Conversion Beam		Inflicts $s1 Shadow damage to an enemy every $t1 sec and causes Weakened Resolve.	Inflicts $s1 Shadow damage to an enemy every $t1 sec and causes Weakened Resolve.					
+70270	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+70271	all		Leaping Face Maul		Leaping attack to the face. Painful!						
+70272	all		Frost Breath		Inflicts $s1 Frost damage to enemies in a $a1 yard cone in front of the caster. In addition, the targets' attack speed is decreased by $s2% for $d.	Attack speed decreased by $s2%.					
+70273	all		Pustulant Flesh		Shoots poison at an enemy, inflicting Nature damage, then additional damage every $t2 sec. for $d.	Nature damage inflicted every $t2 sec.					
+70274	all		Toxic Waste		Deals Nature damage to all enemies within the acid. Lasts $d.	Deals Nature damage every $t1 sec.					
+70275	all		Gargoyle Strike		Inflicts Nature damage to an enemy.						
+70276	all		Freezing Circle		Summons a circle of ice that freezes enemies.						
+70277	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+70278	all		Puncture Wound		Inflicts $s1 Physical damage to an enemy every $t1 sec. for $d.	$s1 damage inflicted every $t1 sec.					
+70279	all		Puncture Wound		Inflicts $s1 Physical damage to an enemy every $t1 sec. for $d.	$s1 damage inflicted every $t1 sec.					
+70280	all		Shovelled!		Smacks a nearby enemy upside the head with his shovel, dealing $s1% weapon damage and stunning them for $d.	Stunned.					
+70281	all		Empowered Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting $s1 Shadow damage to the target and an additional nearby enemy.						
+70282	all		Fireball		Inflicts $s1 Fire damage to the target.	$s3 Fire damage every $t3 sec.					
+70283	all		Hellfire		Ignites the area surrounding the caster, causing $69586s2 Fire damage to $ghimself:herself; and $69585s1 Fire damage to all nearby enemies every $69586t2 sec.  Lasts $69586d.	Damages self and all nearby enemies.					
+70284	all		Hellfire Effect		Ignites the area surrounding the caster, causing $69586s2 Fire damage to $ghimself:herself; and $69585s1 Fire damage to all nearby enemies every $69586t2 sec.  Lasts $69586d.						
+70285	all		Blight		An unholy affliction blights the target, dealing Nature damage every $t1 sec. If not removed in $d, it will jump to another target.	Dealing Nature damage every $t1 sec.\nSpreads to a nearby target after $d.					
+70286	all		Blight		An unholy affliction blights the target, dealing Nature damage every $t1 sec. If not removed in $d, it will jump to another target.	Dealing Nature damage every $t1 sec.					
+70287	all		Snagglebolt's Cloak		This device will cloak you when you're near the stockpile of Crown Chemical Company's goods. Be careful!	Cloaked.					
+70289	all		Crown Thug Repel Trap								
+70290	all		Crown Thug Repel Call								
+70291	all		Frostblade		Infuses your weapon with the power of Icecrown, causing it to emit Frost damage for $d.	Disarmed.					
+70292	all		Glacial Strike		A vicious, chilling attack that causes the target to bleed profusely until fully healed.  Deals $s3% Frost damage every $t3 seconds until fully healed.	Dealing Frost damage every $t3 sec.\nDamage ceases when the target is fully healed.					
+70293	all		Orb Controller - Activate								
+70294	all		Melee Targeting								
+70295	all		Melee Targeting								
+70296	all		Caught!		The Crown Chemical Company guards spotted you!	The Crown Chemical Company guards spotted you!					
+70299	all		Siphon Essence								
+70300	all		Whirlwind Visual (Quel'Delar)								
+70302	all		Blinding Dirt		Blinds the target, causing it to wander confused for up to $d.  Any damage caused will remove the effect.	Confused.					
+70304	all		Empowered Blood		Damage done increased by $s1%.\nSpells have no cost and are instant.\nMelee and ranged attack speed increased 100%.	Damage done increased by $s1%. \nSpells have no cost and are instant.\nMelee and ranged attack speed increased 100%.					
+70305	all		Frostblade		Attacks nearby enemies in a whirlwind of steel and magic that inflicts damage.						
+70306	all		Frostblade		Attacks nearby enemies in a whirlwind of steel that lasts $d. and inflicts double damage.	Attacking all nearby enemies for double damage.					
+70308	all		Mutated Transformation		You begin to mutate!	You begin to mutate!					
+70309	all		Rending Throw		Throws your weapon at the enemy causing $s1% weapon damage and an additional $s2 Physical damage every $t2 sec for $d.	$s2 Physical damage inflicted every $t2 sec.					
+70311	all		Mutated Transformation		You have been mutated!	You have been mutated!					
+70313	all		Braincage								
+70317	all		Life Savings: Quest Accept								
+70320	all		Empowered Blood		Damage done increased by $s1%.\nHealth increased by $s2%. \nSpells have no cost and are instant.\nMelee and ranged attack speed increased 100%.	Damage done increased by $s1%.\nHealth increased by $s2%. \nSpells have no cost and are instant.\nMelee and ranged attack speed increased 100%.					
+70322	all		Phantom Blast		Inflicts $s1 Shadow damage.						
+70323	all		Well of Souls		Inflicts $s1 Shadow damage.	Inflicts $s1 Shadow damage.					
+70324	all		Wailing Souls		Lets loose Wailing Souls, inflicting $68873s1 Shadow damage to anyone infront of her.	Inflicts $s1 Shadow damage.					
+70326	all		Permafrost		A permanent air of cold surrounds the Forgemaster, causing all nearby living creatures to take Frost damage.	Dealing Frost damage to all nearby enemies.					
+70327	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+70328	all		Life Savings: Hot Rod - Activate Knockback Trigger								
+70331	all		Check for Players								
+70332	all		Check for Players								
+70333	all		Chilling Wave		A cascade of frozen water splashes over enemies in a $a1 yd cone in front of the caster, dealing Frost damage.	Deals Frost damage every $t2 sec.					
+70334	all		Forge Frozen Blade		Forging an icebound weapon, which will increase Frost damage by $s2%.	Frost damage increased by $s2%.					
+70335	all		Forge Frostborn Mace		Forging an icebound weapon to trump all others.	Frost damage increased by $s1%.					
+70336	all		Permafrost		Deals $s1 Frost damage to all enemies nearby, increasing Frost damage taken by $s2%.	Frost damage taken increased by $s2%.					
+70337	all		Necrotic Plague		Infests the target with a deadly plague, causing $s1 Shadow damage every $t1 sec for $d. If the target dies while afflicted or the effect ends, this effect will gain an additional stack and jump to a nearby unit. If this effect is dispeled, it will lose a stack and jump to a nearby unit. Whenever this effect jumps, The Lich King's power will increase.	Deals $s1 Shadow damage every $t1 sec.\nJumps to nearby target when removed or host dies.					
+70338	all		Necrotic Plague		Infests the target with a deadly plague, causing $s1 Shadow damage every $t1 sec for $d. If the target dies while afflicted or the effect ends, this effect will gain an additional stack and jump to a nearby unit. If this effect is dispeled, it will lose a stack and jump to a nearby unit. Whenever this effect jumps, The Lich King's power will increase.	Deals $s1 Shadow damage every $t1 sec.\nJumps to nearby target when removed or host dies.					
+70339	all		Friendly Boss Damage Mod								
+70341	all		Slime Puddle		Throws a vial of Mutated Slime, creating a puddle of slime at the targets location.	Throws a vial of Mutated Slime, creating a puddle of slime at the targets location.					
+70342	all		Slime Puddle		Creates a puddle of mutated slime.	Creates a puddle of mutated slime.					
+70343	all		Slime Puddle		The Mutated Slime grows continuously, inflicting $70346s1 damage every $t1 sec until it is consumed by a Mutated creature!	The Mutated Slime grows continuously, inflicting $70346s1 damage every $t1 sec until it is consumed by a Mutated creature!					
+70344	all		Caught!		The Crown Chemical Company guards spotted you!	The Crown Chemical Company guards spotted you!					
+70345	all		Grow Stacker								
+70346	all		Slime Puddle		Inflicts $s1 damage to targets in the Slime Puddle.	Inflicts $s1 damage to targets in the Slime Puddle.					
+70347	all		Grow		Size increased by $s1%.	Size increased by $s1%.					
+70348	all		Rocket Pack Useable								
+70351	all		Unstable Experiment		Professor Putricide begins to peform a wicked experiment on you all!	Professor Putricide begins to peform a wicked experiment on you all!					
+70352	all		Ooze Variable		You have the Ooze Variable! You will be targeted with things that also have the Ooze trait alsoyou are unable to harm Gaseous creatures.	You will be targeted with things that also have the Ooze trait.\nYou are unable to harm Gaseous creatures.					
+70353	all		Gas Variable		You have the Gas Variable! You will be targeted with things that also have the Gas trait and are unable to harm Ooze creatures.	You will be targeted with things that also have the Gas trait.\nYou are also unable to harm Ooze creatures.					
+70355	all		Caught!		Harness the unholy energy that surrounds and binds all matter, drawing the target toward the death knight and forcing the enemy to attack the death knight for $49560d.						
+70358	all		Summon Drudge Ghouls		Summons 3 Drudge Ghouls over $d.						
+70359	all		Summon Drudge Ghouls Effect								
+70360	all		Eat Ooze		Eats nearby Mutated Slime decreasing the size of the pool, giving you $s2 Ooze energy!						
+70361	all		Cleave		Inflicts 120% weapon damage damage to an enemy and its nearest allies, affecting up to $x1 targets.						
+70362	all		Blizzard		Calls down a blizzard that lasts $d., inflicting $s1 Frost damage every $t1 sec. and slowing the movement speed of all enemies in a selected area by $s2%.	Movement speed reduced by $s2%.					
+70363	all		Cannibalize		Regenerates health over time.  Lasts $d.	Regenerating health every $t2 sec.					
+70366	all		Mograine Forge								
+70367	all		Forge Flame Blue								
+70368	all		Underwater Walking Effect		Underwater Walking TEST MECHANIC.						
+70369	all		[DND] Scale								
+70370	all		Life Savings: General Trigger from Hot Rod to Sassy 01								
+70371	all		Enrage		Decreases the time between your attacks by $s1% for $d.	Attack speed increased by $s1%.\nDamage increased by $s2%.					
+70372	all		Summon Shambling Horror		Summons a Shambling Horror.						
+70373	all		Life Savings: Say Only To A Player from Sassy 01								
+70374	all		Burning Pitch		Inflicts $s1 Siege damage.						
+70375	all		Life Savings: General Trigger from Hot Rod to Sassy 02								
+70376	all		Life Savings: Say Only To A Player from Sassy 02								
+70377	all		Life Savings: Yell Only To A Player from Sassy 01								
+70378	all		Life Savings: General Trigger from Hot Rod to Sassy 03								
+70379	all		Life Savings: Say Only To A Player from Sassy 03								
+70380	all		Deep Freeze		Deals $s1 Frost damage to the target after a short time.	Stunned.					
+70381	all		Deep Freeze		Chills a random target, reducing movement speed by $s3% and dealing significant Frost damage after $t2 sec.	Deals $s2 Frost damage after $t2 sec.\nMovement speed reduced by $s3%.					
+70383	all		Burning Pitch		Inflicts $s1 Siege damage.						
+70384	all		Deep Freeze		Deals $s1 Frost damage to the target after a short time.	Stunned.					
+70385	all		Abomination Vehicle Power Drain								
+70386	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+70387	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+70388	all		Seed of Corruption		Imbeds a demon seed in the enemy target, causing $o1 Shadow damage over $d.  When the target takes $s2 total damage, the seed will detonate, inflicting Shadow damage to all enemies within $32865a1 yards of the target.	Causes $s1 Shadow damage every $t1.  After taking $s2 total damage, Seed of Corruption detonates, dealing Shadow damage to the caster's enemies within $32865a1 yards.					
+70391	all		Curse of Agony		Curses the target with agony, causing $o1 Shadow damage over $d.  This damage is dealt slowly at first, and builds up as the Curse reaches its full duration.  Only one Curse per Warlock can be active on any one target.	$o1 Shadow damage over $d.					
+70392	all		Black Brand		Inflicts $s1 Shadow damage to an enemy and increases the Shadow damage it takes by $s2% for $d.	Shadow damage taken is increased by $s2%.					
+70393	all		Devour Flesh		Drains $s1 health and $s2% Stamina from an enemy, transferring it to the caster.	Stamina drained by $s2%.					
+70394	all		Disease Cloud		A putrid cloud of disease surrounds the caster, dealing Nature damage to nearby enemies.	Damaging nearby enemies every $t1 sec.					
+70395	all		Disease Cloud		A putrid cloud of disease surrounds the caster, dealing Nature damage to nearby enemies.						
+70396	all		Ghoul Slash		A strong attack that deals $s1 additional Physical damage.						
+70397	all		Burning Pitch								
+70398	all		Ice Spikes Trigger		Ice spikes pierce the floor and then rise up, dealing $69184s1 Frost damage and knocking up enemy targets within $r yards.						
+70399	all		Ice Spikes		Ice spikes pierce the floor and then rise up, dealing $s1 Frost damage and knocking up enemy targets within $a1 yards.						
+70400	all		Baleful Strike		Pierces the soul, inflicting $s1 damage.						
+70402	all		Mutated Transformation		The diseases from the Mutated Abomination is inflicting damage to nearby players!	The diseases from the Mutated Abomination is inflicting damage to nearby players!					
+70403	all		Burning Pitch								
+70404	all		Precious's Ribbon		A ribbon of affection.	"|cFF00AA99""Best in Show""|r"					
+70405	all		Mutated Transformation		The diseases from the Mutated Abomination is inflicting damage to nearby players!	Inflicts $70402s1 damage to nearby players every $t1 sec.\nCuring the disease will revert the player to their form.					
+70407	all		Blast Wave		Unleashes a wave of flame, inflicting Fire damage to nearby enemies and reducing their movement speed for $d.	Reduced movement speed.					
+70408	all		Amplify Magic		Amplifies magic used against an enemy, increasing damage taken from spells by up to $s1 and healing spells by up to $s2.  Lasts $d.	Increases magic damage taken by up to $s1 and healing by up to $s2.					
+70409	all		Fireball		Inflicts $s1 Fire damage to the target.	$s3 Fire damage every $t3 sec.					
+70410	all		Polymorph: Spider		Transforms an enemy into a spider, forcing it to wander around for up to $d. While wandering, the spider cannot attack or cast spells. Any damage will transform the target back into its normal form. Only one target can be polymorphed at a time. Only works on beasts, dragons, giants, humanoids, and critters.	Cannot attack or cast spells.					
+70418	all		Ranged Targeting								
+70419	all		Ranged Targeting								
+70421	all		Blizzard		Calls down a blizzard that lasts $d., inflicting $s1 Frost damage every $t1 sec. to all enemies in a selected area.						
+70423	all		Vampiric Curse		Receiving direct heals will cause Corrupted Blood. Lasts $d.	Receiving direct heals will cause Corrupted Blood.					
+70425	all		Chain Heal		Infuses a wounded ally with healing energy that spreads to another nearby ally. The spell affects up to $x1 targets.						
+70426	all		Corrupted Blood		$s1 Shadow damage inflicted every $t1 sec.	$s1 Shadow damage inflicted every $t1 sec.					
+70428	all		Taunt		Taunts the target to attack you, but has no effect if the target is already attacking you.	Taunts the target to attack you, but has no effect if the target is already attacking you.					
+70429	all		Ride Vehicle								
+70431	all		Shadowstep		Attempts to step through the shadows and reappear behind your enemy.						
+70432	all		Blood Sap		Incapacitated. Deals $s2 bleed damage every $t2 seconds.	Incapacitated. Deals $s2 bleed damage every $t2 seconds.					
+70433	all		Explosive Barrage		Launches a barrage of explosive orbs at all enemies. Explosive orbs deal $s1 Arcane damage when they detonate.						
+70434	all		Poison Nova		Gushes a massive volley of poison, harming all nearby enemies. Lasts $d.	Dealing Nature damage every $t2 sec.					
+70435	all		Rend Flesh		Inflicts $s1% of weapon damage to an enemy and causes it to bleed for $s2 damage per application every $t2 sec. for $d.	$s2 damage inflicted every $t2 sec.					
+70436	all		Toxic Waste		Deals Nature damage to all enemies within the acid. Lasts $d.	Deals Nature damage every $t1 sec.					
+70437	all		Unholy Strike		A brutal attack that instantly strikes the enemy, causing $s1% weapon damage.						
+70438	all		Mutated Transformation Raid Whisper								
+70439	all		Warning!								
+70440	all		Warning!								
+70443	all		Explosion		An explosion rocks the ship, inflicting $s1 Fire damage in a large area.						
+70444	all		Explosion		An explosion rocks the ship, inflicting $s1 Fire damage in a large area.						
+70445	all		Blood Mirror		$s1% of damage done to you is dealt to linked source as Shadow damage.	$s1% of damage done to you is dealt to linked source.					
+70446	all		Teleport Players on Reset								
+70447	all		Volatile Ooze Adhesive		The Volatile Ooze Adhesive bonds the target to the Volatile Ooze, inflicting $s1 damage every $t1 sec and rooting the target. The Volatile Ooze will move towards the target, exploding for $70492s1 damage, split among all nearby targets.	Rooted.\nInflicts $s1 damage every $t1 sec.\nWhen the Volatile Ooze reaches you, it will explode for $70492s1 damage, split among all nearby targets.					
+70449	all		Vampire Rush		Charges an enemy, inflicting $s3 damage to the target and any of its nearby allies, as well as knocking them all back.						
+70450	all		Blood Mirror		$s1% of damage done to linked source is reflected to you as Shadow damage.	$s1% of damage done to linked source is reflected to you.					
+70451	all		Blood Mirror		$70445s1% of damage done to linked source is reflected to you.	$70445s1% of damage done to linked source is reflected to you					
+70452	all		Frost Cast		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+70453	all		Ooze Eruption Linked Aura								
+70457	all		Ooze Eruption Search Periodic								
+70459	all		Ooze Eruption Search Effect								
+70460	all		Coldflame Jets		Deals Frost damage to anyone in the way.	Deals Frost damage to anyone in the way.					
+70461	all		Coldflame Trap		Deals massive Frost damage to enemies hit by the trap.						
+70463	all		[DND] Spawn								
+70464	all		Ice Lance Volley		Deals $s1 damage to all enemies within 80 yards. Deals triple damage to frozen targets.						
+70466	all		Sunwell Light Ray								
+70467	all		Waltz Right In: Disguise AoE Pulse								
+70468	all		Gaseous Blight		The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.	The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.					
+70469	all		Gaseous Blight		The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.	The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.					
+70470	all		Gaseous Blight		The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.	The Gaseous Plague inflicts $s1 Shadow damage to all nearby players.					
+70471	all		Mograine Forge Beam								
+70474	all		Sunwell Light Ray Aura								
+70475	all		Giant Insect Swarm		A massive insect swarm fills the area, dealing $s1% of maximum health every $t1 sec.	Deals $s1% of maximum health every $t1 sec.					
+70477	all		Cleanse Quel'Delar		Immerse Quel'Delar in the Sunwell.						
+70484	all		Summon Plagued Insects		Summons a swarm of plague insects.						
+70485	all		Leap to a Random Location								
+70487	all		[DND] Summon								
+70488	all		[DND] Set Path								
+70489	all		Stun Self (Sitting)								
+70490	all		Set Health								
+70491	all		Sacred Shield Visual								
+70492	all		Ooze Eruption		Inflicts $s1 damage shared with nearby targets, knocking them back in all directions!	Inflicts $s1 damage shared with nearby targets, knocking them back in all directions!					
+70493	all		Quel'Delar's Wrath		Inflicts $s1 Fire damage.	Inflicts $s1 Fire damage.					
+70495	all		Intimidation								
+70496	all		[DND] Choose Summon								
+70497	all		Summon Vile Spirits Effect								
+70498	all		Vile Spirits		Creates 10 Vile Spirits which will attack enemies after 30 seconds.						
+70499	all		Summon Vile Spirits Effect								
+70500	all		Summon Vile Spirits Visual Periodic								
+70501	all		Vile Spirit Move Target Search								
+70502	all		Vile Spirit Damage Target Search								
+70503	all		Spirit Burst		Sacrifices the caster, dealing $s1 Shadow damage to all enemies within $a1 yards.						
+70504	all		Shadow's Edge Aura								
+70507	all		Halion - Combustion & Consumption Scale Aura								
+70508	all		Summon Shadow's Edge Bunny								
+70509	all		Blue Explosion								
+70510	all		Ride Vehicle								
+70512	all		Shriek of the Highborne		Shrieks with anguish, inflicting $s1 Shadow damage to all enemies in a cone in front of the caster.						
+70513	all		Multi-Shot		Fires a volley of missiles at an enemy and its nearby allies, striking up to 3 targets for normal damage plus $s1.						
+70515	all		Aggro Closest								
+70516	all		Pyroblast		Inflicts Fire damage to an enemy.	Taking periodic Fire damage.					
+70517	all		Healing Stream Totem		Summons a Healing Stream Totem with $s1 health at the feet of the caster for $d that heals group members within $5672a1 yards for $5672s1 every $5672t1 seconds.						
+70518	all		Frozen Aftermath								
+70520	all		Frozen Aftermath 2								
+70521	all		Frost Bomb		Deals $s1 Frost damage to all nearby targets.						
+70522	all		Test Spell								
+70523	all		Test Spell								
+70524	spellbook	186	Enchanted Thorium								
+70525	all		Jaina's Call		Sumons allies to Jaina.	You feel disoriented from being forcefully teleported.					
+70526	all		Summon Axe Bunny								
+70527	all		Jaina's Call								
+70528	all		Master Summon Axe								
+70529	all		Summon Shadow's Edge Axe								
+70530	all		Volatile Ooze Beam Protection								
+70534	all		Vile Spirit Damage Target Search								
+70536	all		Spirit Alarm		"Movement speed reduced by $s1%.\n\n|cFFFFAA00""Do you think they noticed that?""|r"	"Movement speed reduced by $s1%.\n\n|cFFFFAA00""Do you think they noticed that?""|r"					
+70537	all		Energize		Restores 30 Rage.						
+70538	all		Rejuvenation Avoidance	Rank 1	Your Rejuvenation spell now also grants $s1 dodge rating.	Dodge is increased by $s1 rating.					
+70539	all		Regurgitated Ooze		The Regurgitated Ooze has a surprising effect on the target, slowing its movement speed by $s1% and dealing $s2 damage every $t2 sec for $d.	Movemend speed decreased by $s1%.\nInflicts $s2 damage every $t2 sec.					
+70540	all		Icy Prison		Imprison an enemy of Grand Magister Rommath.	Imprisoned in ice.					
+70541	all		Infest		Deals $s2 Shadow damage to all enemy players within $a1 yards. In addition, the targets will take increasing Shadow damage per second. This effect is removed when the target has more than 90% health.	Deals increasing Shadow damage per second.\nRemoved when target has more than 90% health.					
+70542	all		Mutated Slash		Inflicts $s1% weapon damage instantly and reduces the target's resistance to physical damage by $s2% for $d. Stacks up to 5 times.	Reduces armor by $s2%.					
+70545	all		Spirit Alarm		"Movement speed reduced by $s1%.\n\n|cFFFFAA00""Do you think they noticed that?""|r"	"Movement speed reduced by $s1%.\n\n|cFFFFAA00""Do you think they noticed that?""|r"					
+70546	all		Spirit Alarm		"Movement speed reduced by $s1%.\n\n|cFFFFAA00""Do you think they noticed that?""|r"	"Movement speed reduced by $s1%.\n\n|cFFFFAA00""Do you think they noticed that?""|r"					
+70547	all		Spirit Alarm		"Movement speed reduced by $s1%.\n\n|cFFFFAA00""Do you think they noticed that?""|r"	"Movement speed reduced by $s1%.\n\n|cFFFFAA00""Do you think they noticed that?""|r"					
+70548	all		Cleanse Quel'Delar		Immerse Quel'Delar in the Sunwell.						
+70550	spellbook	197	Leggings of Woven Death								
+70551	spellbook	197	Deathfrost Boots								
+70552	spellbook	197	Lightweave Leggings								
+70553	spellbook	197	Sandals of Consecration								
+70554	spellbook	165	Legwraps of Unleashed Nature								
+70555	spellbook	165	Blessed Cenarion Boots								
+70556	spellbook	165	Bladeborn Leggings								
+70557	spellbook	165	Footpads of Impending Death								
+70558	spellbook	165	Lightning-Infused Leggings								
+70559	spellbook	165	Earthsoul Boots								
+70560	spellbook	165	Draconic Bonesplinter Legguards								
+70561	spellbook	165	Rock-Steady Treads								
+70562	spellbook	164	Puresteel Legplates								
+70563	spellbook	164	Protectors of Life								
+70564	all		Death Grip		Harness the unholy energy that surrounds and binds all matter, drawing the target toward the Death Knight and forcing the enemy to attack the Death Knight for $49560d.						
+70565	spellbook	164	Legplates of Painful Death								
+70566	spellbook	164	Hellfrozen Bonegrinders								
+70567	spellbook	164	Pillars of Might								
+70568	spellbook	164	Boots of Kingly Upheaval								
+70569	all		Strangulating		Being strangulated.	Silenced.					
+70571	all		Holy Zone Visual								
+70572	all		Grip of Agony			Writhing in agony.					
+70573	all		Arcane Form								
+70574	all		Heart Candy		A sweet (and chalky) treat.	Hot lips.					
+70575	all		Heart Candy		A sweet (and chalky) treat.	You're mine!					
+70576	all		Heart Candy		A sweet (and chalky) treat.	You're the best!					
+70577	all		Heart Candy		A sweet (and chalky) treat.	Be mine!					
+70578	all		Heart Candy		A sweet (and chalky) treat.	All yours.					
+70579	all		Heart Candy		A sweet (and chalky) treat.	I'll follow you all around Azeroth.					
+70580	all		Heart Candy		A sweet (and chalky) treat.	I LOVE YOU					
+70581	all		Heart Candy		A sweet (and chalky) treat.	I'm all yours!					
+70583	all		Lich King Stun			Stunned					
+70586	all		Throw Quel'Delar								
+70588	all		Suppression		Reduces healing received by the target by $s1%. Lasts $d.	Healing reduced by $s1%.					
+70589	all		Icy Touch		Deals $s1 Frost damage and reduces the target's ranged, melee attack, and casting speed by $s2% for $d.	Attack speed reduced by $s2%.					
+70590	all		Lich King Repel Hammer								
+70591	all		Icy Touch		Deals $s1 Frost damage and reduces the target's ranged, melee attack, and casting speed by $s2% for $d.	Attack speed reduced by $s2%.					
+70592	all		Permanent Feign Death								
+70594	all		Deathchill Bolt		Deals $s1 Shadowfrost damage to an enemy target.						
+70595	all		Light's Vengeance Throw								
+70598	all		Sindragosa's Fury		Deals $s2 Frost damage, split between all enemies struck. This spell is highly susceptible to Frost resistance.						
+70599	all		Deathchill Bolt								
+70602	all		Corruption		Slowly feeds corruption into the mind of the target, attempting to subvert them to the will of the Lich King.						
+70603	all		Summon Light's Vengeance								
+70606	all		Light's Vengeance								
+70608	all		Sindragosa's Fury		Deals massive Frost damage, split between all enemies struck. This spell is highly susceptible to Frost resistance.						
+70609	all		Rocket Artillery		Launches a rocket at the enemy airship that explodes on impact.						
+70610	all		Periodic Event Fail Check								
+70611	all		Event Fail Check								
+70612	all		Summon Ghouls								
+70613	spellbook	778	Perky Pug		Right Click to summon and dismiss your pug.						
+70614	all		AoD Special								
+70616	all		Frostfire Bolt		Launches a bolt of frostfire at the enemy, causing $s1 Frost-Fire damage, slowing movement speed by $s2% and causing an additional $o3 Fire damage over $d.  If the target is more vulnerable to Frost damage, this spell will cause Frost instead of Fire damage.	Movement slowed by $s2%.  $s3 Fire damage every $t3 sec.					
+70617	all		Summon Ghoul								
+70618	all		Simple Teleport		This creates an effect on the casting NPC that makes it appear as though they just arrived.						
+70619	all		Divine Hymn								
+70623	all		Jaina's Call		Sumons allies to Jaina.	Sumons allies to Jaina.					
+70626	all		[DND] Inc Engaged								
+70627	all		[DND] Reset								
+70628	all		Permanent Feign Death								
+70630	all		Frozen Aftermath - Feign Death								
+70632	all		[DND] Emote								
+70633	all		Gut Spray		Deals $s2 Nature damage per second and increases Physical damage taken by $s3% for $d.	Deals $s2 Nature damage per second.\nIncreases Physical damage taken by $s3%.					
+70634	all		Arcane Channeling								
+70635	all		[DND] Unlock								
+70636	all		Call of Sylvanas								
+70637	all		Make Uninteractible								
+70638	all		Call of Sylvanas								
+70639	all		Call of Sylvanas		Sumons allies to Sylvanas instantly.	You feel disoriented from being forcefully teleported.					
+70640	all		Ride Vehicle								
+70642	all		Call of Sylvanas		"This is a dummy aura that Lady Sylvanas Windrunner applies to herself when she begins the song, Lament of the Highborne""."						
+70643	all		Zap Vegard Bunny								
+70644	all		Summon Vegard								
+70645	all		Chains of Shadow		Banishes an enemy, preventing all action but making it invulnerable for up to $d. Only one target can be banished at a time.	Immune to all attacks and spells, but unable to act.					
+70646	all		Love - Create Snivel's Ledger								
+70647	all		Summon Vampiric Fiend								
+70648	all		Create Lovely Charm Collector's Kit								
+70650	all		Item - Death Knight T10 Tank 2P Bonus		Increases the damage done by your Death and Decay ability by $s1%.						

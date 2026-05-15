@@ -8,6 +8,37 @@ CACHE = ROOT / "Tools" / "cache" / "epochhead_consumables" / "items.json"
 OUT = ROOT / "Data" / "EpochConsumableData.lua"
 ITEM_DATA = ROOT / "Data" / "ItemData.lua"
 OBJECTIVE_DATA = ROOT / "Data" / "ObjectiveNameData.lua"
+TOOLTIP_LINE_DATA = ROOT / "Data" / "TooltipLineData.lua"
+TOOLTIP_OVERRIDE = ROOT / "Tools" / "tooltip_line_overrides.json"
+
+
+def load_tooltip_line_translations():
+    """Load existing green text translations from TooltipLineData.lua and overrides JSON."""
+    result = {}
+    if TOOLTIP_LINE_DATA.exists():
+        content = TOOLTIP_LINE_DATA.read_text(encoding="utf-8")
+        for m in re.finditer(r'\["((?:[^"\\]|\\.)*)"\]\s*=\s*"((?:[^"\\]|\\.)*)"', content):
+            key = m.group(1).replace(r'\"', '"').replace(r'\\', '\\')
+            val = m.group(2).replace(r'\"', '"').replace(r'\\', '\\').replace(r'\n', '\n')
+            result[key] = val
+    if TOOLTIP_OVERRIDE.exists():
+        overrides = json.loads(TOOLTIP_OVERRIDE.read_text(encoding="utf-8"))
+        for k, v in overrides.items():
+            if v and not re.search(r'[A-Za-z]{3,}', v):
+                result[k] = v
+    return result
+
+
+_TOOLTIP_LINE_CACHE = None
+
+
+def get_tooltip_line_translation(text):
+    """Look up a green text line in the pre-loaded TooltipLineData cache."""
+    global _TOOLTIP_LINE_CACHE
+    if _TOOLTIP_LINE_CACHE is None:
+        _TOOLTIP_LINE_CACHE = load_tooltip_line_translations()
+    return _TOOLTIP_LINE_CACHE.get(text)
+
 
 
 def has_cn(text):
@@ -231,7 +262,6 @@ def replace_terms(text):
         ("physical attacks", "物理攻击"),
         ("poisons", "毒药效果"),
         ("diseases", "疾病效果"),
-        (" and ", "和"),
         ("the target's", "目标的"),
         ("target's", "目标的"),
         ("the player's", "玩家的"),
@@ -241,6 +271,43 @@ def replace_terms(text):
         ("Guardian Elixir", "守护药剂"),
         ("Conjured Item", "魔法制造的物品"),
         ("Quest Item", "任务物品"),
+        # --- Additional common terms ---
+        ("Level", "等级"),
+        ("Spells", "法术"),
+        ("spells", "法术"),
+        ("Spell", "法术"),
+        ("spell", "法术"),
+        ("Set:", "套装："),
+        ("Equip:", "装备："),
+        ("Chance on hit:", "击中时可能："),
+        ("Chance on melee attack", "近战攻击时有几率"),
+        ("melee attack", "近战攻击"),
+        ("melee attacks", "近战攻击"),
+        ("ranged attacks", "远程攻击"),
+        ("ranged attack", "远程攻击"),
+        ("normal ranged attacks", "普通远程攻击"),
+        ("magical spells and effects", "魔法法术和效果"),
+        ("Increases damage and healing done by", "使伤害和治疗效果提高"),
+        ("Increases damage done by", "使伤害提高"),
+        ("Increases healing done by", "使治疗效果提高"),
+        ("Improves your chance to get a critical strike", "使你的暴击几率提高"),
+        ("Improves your chance to hit", "使你的命中几率提高"),
+        ("critical strike", "暴击"),
+        ("critical strikes", "暴击"),
+        ("Decreases", "降低"),
+        ("Increases", "提高"),
+        ("Equipped", "装备后"),
+        ("chance", "几率"),
+        ("restore", "恢复"),
+        ("restoring", "恢复"),
+        ("heal you for", "为你治疗"),
+        ("heals you for", "为你治疗"),
+        (" up to ", "最多"),
+        ("Begins a quest", "开始一个任务"),
+        ("This item begins a quest", "这件物品开始一个任务"),
+        ("Held In Off-Hand", "副手物品"),
+        ("Held In Off-hand", "副手物品"),
+        (" and ", "和"),
     ]
     for en, cn in replacements:
         text = re.sub(rf"\b{re.escape(en)}\b", cn, text, flags=re.I)
@@ -416,6 +483,11 @@ def translate_line(line, objective_names):
     original = line.strip()
     text = original.strip()
 
+    # --- Early return from TooltipLineData (2,848 pre-translated green text lines) ---
+    tooltip_translation = get_tooltip_line_translation(text)
+    if tooltip_translation and not re.search(r'[A-Za-z]{3,}', tooltip_translation):
+        return tooltip_translation
+
     quoted = re.match(r'^"(.*)"$', text)
     if quoted:
         return translate_flavor(quoted.group(1), objective_names)
@@ -435,6 +507,32 @@ def translate_line(line, objective_names):
         "Conjured Item": "魔法制造的物品",
         "Quest Item": "任务物品",
         "Gillijim's Isle": "吉利吉姆岛",
+        # --- 装备栏位 ---
+        "Main Hand": "主手",
+        "Off Hand": "副手",
+        "One-Hand": "单手",
+        "Two-Hand": "双手",
+        "Ranged": "远程",
+        "Thrown": "投掷",
+        "Head": "头部",
+        "Shoulder": "肩部",
+        "Chest": "胸部",
+        "Legs": "腿部",
+        "Hands": "手",
+        "Feet": "脚",
+        "Waist": "腰部",
+        "Wrist": "手腕",
+        "Back": "背部",
+        "Finger": "手指",
+        "Neck": "颈部",
+        "Shirt": "衬衣",
+        "Tabard": "战袍",
+        "Trinket": "饰品",
+        "Relic": "圣物",
+        "Held In Off-hand": "副手物品",
+        "Held In Off-Hand": "副手物品",
+        "Random Enchantment": "随机附魔",
+        "Retrieving item information": "正在获取物品信息",
     }
     if text in direct:
         return direct[text]
@@ -442,12 +540,75 @@ def translate_line(line, objective_names):
     match = re.match(r"^Unique \((\d+)\)$", text)
     if match:
         return f"唯一（{match.group(1)}）"
+    # --- 物品等级 ---
+    match = re.match(r"^Item Level (\d+)$", text)
+    if match:
+        return f"物品等级 {match.group(1)}"
+    # --- 速度 ---
+    match = re.match(r"^Speed ([\d.]+)$", text)
+    if match:
+        return f"速度 {match.group(1)}"
+    # --- 伤害 ---
+    match = re.match(r"^(\d+) - (\d+) Damage$", text)
+    if match:
+        return f"{match.group(1)} - {match.group(2)} 伤害"
+    # --- 每秒伤害 ---
+    match = re.match(r"^\(([\d.]+) damage per second\)$", text)
+    if match:
+        return f"（每秒造成 {match.group(1)} 点伤害）"
+    # --- 护甲值 ---
+    match = re.match(r"^(\d+) Armor$", text)
+    if match:
+        return f"{match.group(1)} 护甲"
+    # --- 格挡值 ---
+    match = re.match(r"^(\d+) Block$", text)
+    if match:
+        return f"{match.group(1)} 格挡"
+    # --- 基础属性 ---
+    match = re.match(r"^\+(\d+) (Strength|Agility|Stamina|Intellect|Spirit)$", text)
+    if match:
+        stat_map = {"Strength": "力量", "Agility": "敏捷", "Stamina": "耐力", "Intellect": "智力", "Spirit": "精神"}
+        return f"+{match.group(1)} {stat_map[match.group(2)]}"
+    # --- 耐久度 ---
+    match = re.match(r"^Durability (\d+) / (\d+)$", text)
+    if match:
+        return f"耐久度 {match.group(1)} / {match.group(2)}"
+    # --- 开始任务 ---
+    match = re.match(r"^Begins a quest$", text, re.I)
+    if match:
+        return "开始一个任务"
+    # --- 额外伤害 ---
+    match = re.match(r"^\+(\d+) - (\d+) (Fire|Frost|Nature|Shadow|Arcane|Holy) Damage$", text)
+    if match:
+        school_map = {"Fire": "火焰", "Frost": "冰霜", "Nature": "自然", "Shadow": "暗影", "Arcane": "奥术", "Holy": "神圣"}
+        return f"+{match.group(1)} - {match.group(2)} {school_map[match.group(3)]}伤害"
+    # --- 唯一装备 ---
+    match = re.match(r"^Unique-Equipped$", text)
+    if match:
+        return "唯一装备"
+    match = re.match(r"^Unique-Equipped \((\d+)\)$", text)
+    if match:
+        return f"唯一装备（{match.group(1)}）"
     match = re.match(r"^Requires Level (\d+)$", text)
     if match:
         return f"需要等级 {match.group(1)}"
     match = re.match(r"^Requires a level (\d+) or higher item\.?$", text, re.I)
     if match:
         return f"需要等级 {match.group(1)} 或更高的物品。"
+    # --- 骑术要求 ---
+    match = re.match(r"^Requires (.+?) Riding \((\d+)\)$", text)
+    if match:
+        riding_map = {
+            "Ram": "山羊骑术", "Horse": "马骑术", "Wolf": "狼骑术",
+            "Raptor": "迅猛龙骑术", "Mechanostrider": "机械陆行鸟骑术",
+            "Kodo": "科多兽骑术", "Undead": "亡灵骑术", "Tiger": "虎骑术",
+            "Hawkstrider": "陆行鸟骑术", "Elekk": "雷象骑术",
+        }
+        name = riding_map.get(match.group(1), match.group(1) + "骑术")
+        return f"需要 {name}（{match.group(2)}）"
+    match = re.match(r"^Requires Riding \((\d+)\)$", text)
+    if match:
+        return f"需要骑术（{match.group(1)}）"
     match = re.match(r"^Requires (.+)$", text)
     if match:
         req = match.group(1)
@@ -467,6 +628,11 @@ def translate_line(line, objective_names):
             "Blacksmithing": "锻造",
             "Tailoring": "裁缝",
             "Fishing": "钓鱼",
+            "Herbalism": "草药学",
+            "Mining": "采矿",
+            "Skinning": "剥皮",
+            "Jewelcrafting": "珠宝加工",
+            "Inscription": "铭文",
         }
         for en, cn in profession.items():
             req = req.replace(en, cn)
@@ -903,7 +1069,82 @@ def translate_line(line, objective_names):
     if match:
         return f"{prefix}在 {translate_time(match.group(2))} 内恢复 {match.group(1)} 点生命值。进食时必须保持坐姿。如果进食至少 10 秒，你会获得充分进食效果，移动速度提高 {match.group(3)}%，但每 {translate_time(match.group(5))} 受到 {match.group(4)} 点火焰伤害。持续 {translate_time(match.group(6))}。{cooldown}"
 
-    translated = normalize_mixed_consumable_text(replace_terms(translate_time(body)).strip(), objective_names)
+    # --- Comprehensive fallback: translate all known terms in composite lines ---
+    translated = replace_terms(translate_time(body)).strip()
+
+    # Slot names that may appear inline
+    slot_replacements = [
+        ("Main Hand", "主手"), ("Off Hand", "副手"), ("One-Hand", "单手"),
+        ("Two-Hand", "双手"), ("Ranged", "远程"), ("Thrown", "投掷"),
+        ("Head", "头部"), ("Shoulder", "肩部"), ("Chest", "胸部"),
+        ("Legs", "腿部"), ("Hands", "手"), ("Feet", "脚"),
+        ("Waist", "腰部"), ("Wrist", "手腕"), ("Back", "背部"),
+        ("Finger", "手指"), ("Neck", "颈部"), ("Shirt", "衬衣"),
+        ("Tabard", "战袍"), ("Trinket", "饰品"), ("Relic", "圣物"),
+    ]
+    for en, cn in slot_replacements:
+        translated = re.sub(rf"\b{re.escape(en)}\b", cn, translated)
+
+    # Common tooltip terms
+    tooltip_terms = [
+        ("Item Level", "物品等级"),
+        ("Requires Level", "需要等级"),
+        ("damage per second", "每秒伤害"),
+        ("Damage", "伤害"),
+        ("Speed", "速度"),
+        ("Armor", "护甲"),
+        ("Block", "格挡"),
+        ("Durability", "耐久度"),
+        ("Begins a quest", "开始一个任务"),
+        ("Unique-Equipped", "唯一装备"),
+        ("Random Enchantment", "随机附魔"),
+        ("Retrieving item information", "正在获取物品信息"),
+        ("Binds when equipped", "装备后绑定"),
+        ("Binds when picked up", "拾取后绑定"),
+        ("Binds when used", "使用后绑定"),
+        ("Binds to account", "账号绑定"),
+        ("Quest Item", "任务物品"),
+        ("Conjured Item", "魔法制造的物品"),
+        ("per second", "每秒"),
+        ("per 5 sec", "每 5 秒"),
+        ("Improves your chance to get a critical strike with spells by", "法术爆击几率提高"),
+        ("Improves your chance to get a critical strike with melee and ranged attacks by", "近战和远程攻击爆击几率提高"),
+        ("Improves your chance to get a critical strike with all spells and attacks by", "所有法术和攻击的爆击几率提高"),
+        ("Improves your chance to hit with spells by", "法术命中几率提高"),
+        ("Improves your chance to hit with melee and ranged attacks by", "近战和远程攻击命中几率提高"),
+        ("Improves your chance to hit with all spells and attacks by", "所有法术和攻击的命中几率提高"),
+        ("Improves your casting speed and causes periodic effects to occur more frequently with spells by", "法术施放速度提高，且周期性法术效果触发频率提高"),
+        ("Increases damage and healing done by magical spells and effects by up to", "魔法法术和效果造成的伤害与治疗效果最多提高"),
+        ("Increases damage done by Arcane spells and effects by up to", "奥术法术和效果造成的伤害最多提高"),
+        ("Increases damage done by Fire spells and effects by up to", "火焰法术和效果造成的伤害最多提高"),
+        ("Increases damage done by Frost spells and effects by up to", "冰霜法术和效果造成的伤害最多提高"),
+        ("Increases damage done by Holy spells and effects by up to", "神圣法术和效果造成的伤害最多提高"),
+        ("Increases damage done by Nature spells and effects by up to", "自然法术和效果造成的伤害最多提高"),
+        ("Increases damage done by Shadow spells and effects by up to", "暗影法术和效果造成的伤害最多提高"),
+        ("Increases damage done by magical spells and effects by up to", "魔法法术和效果造成的伤害最多提高"),
+        ("Increases healing done by up to", "治疗效果最多提高"),
+        ("damage done by up to", "伤害最多提高"),
+        ("for all magical spells and effects", "（所有魔法法术和效果）"),
+        ("Increases your chance to dodge an attack by", "躲闪几率提高"),
+        ("Increases your chance to block attacks with a shield by", "盾牌格挡几率提高"),
+        ("Increases your chance to parry an attack by", "招架几率提高"),
+        ("Increased Defense", "防御等级提高"),
+        ("Increased Fishing", "钓鱼技能提高"),
+        ("Increases attack power by", "攻击强度提高"),
+        ("Increases ranged attack power by", "远程攻击强度提高"),
+        ("Increases ranged attack speed by", "远程攻击速度提高"),
+        ("Decreases the magical resistances of your spell targets by", "你的法术目标的魔法抗性降低"),
+        ("Restores", "恢复"),
+        ("health per 5 sec", "生命值/每5秒"),
+        ("mana per 5 sec", "法力值/每5秒"),
+        ("Run speed increased slightly", "奔跑速度略微提高"),
+        ("Reduces the chance movement impairing effects will be resisted by", "移动减速效果被抵抗的几率降低"),
+        ("your chance to be dodged or parried by", "你的攻击被躲闪或招架的几率降低"),
+    ]
+    for en, cn in tooltip_terms:
+        translated = translated.replace(en, cn)
+
+    translated = normalize_mixed_consumable_text(translated.strip(), objective_names)
     translated = re.sub(r"\bDrink up!\b", "一饮而尽！", translated)
     translated = re.sub(r"\bOnly one instance of this 效果 can be active at a time\b", "同一时间只能激活一个该效果", translated, flags=re.I)
     translated = re.sub(r"\bRequires a level (\d+) or higher 物品\b", r"需要等级 \1 或更高的物品", translated, flags=re.I)

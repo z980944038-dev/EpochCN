@@ -1,0 +1,1001 @@
+﻿spell_id	priority	skill_line_ids	name_en	rank_en	description_en	tooltip_en	name_zh	rank_zh	description_zh	tooltip_zh	notes
+14189	all		Seal Fate								
+14190	spellbook	253	Seal Fate	Rank 2	Your critical strikes from abilities that add combo points have a $h% chance to add an additional combo point.						
+14193	spellbook	253	Seal Fate	Rank 3	Your critical strikes from abilities that add combo points have a $h% chance to add an additional combo point.						
+14194	spellbook	253	Seal Fate	Rank 4	Your critical strikes from abilities that add combo points have a $h% chance to add an additional combo point.						
+14195	spellbook	253	Seal Fate	Rank 5	Your critical strikes from abilities that add combo points have a $h% chance to add an additional combo point.						
+14198	all		Beast Slaying 27		Increases attack power by $s1 when fighting Beasts.						
+14199	all		Create Samophlange Manual		Join the cover and 5 pages to create the Samophlange Manual.						
+14200	all		Chained Bolt		Strikes an enemy with a lightning bolt that arcs to another nearby enemy. The spell affects up to $x1 targets, causing Nature damage to each.						
+14201	all		Enrage	Rank 2		Melee damage increased by $s1%.					
+14202	all		Enrage	Rank 3		Melee damage increased by $s1%.					
+14203	all		Enrage	Rank 4		Melee damage increased by $s1%.					
+14204	all		Enrage	Rank 5		Melee damage increased by $s1%.					
+14205	all		Gorishi Egg								
+14206	all		Summon Gorishi Grub								
+14208	all		JD Explosion								
+14209	all		Signing		Sign the pledge, swearing to Nixx Sprocketspring that you will keep the knowledge of Goblin Engineering in eternal secrecy.						
+14210	all		Signing		Sign the pledge, swearing to Oglethorpe Obnoticus that you will keep the knowledge of Gnome Engineering in eternal secrecy.						
+14227	all		Signing		Sign the pledge, swearing to Tinkmaster Overspark that you will keep the knowledge of Gnome Engineering in eternal secrecy.						
+14247	all		Blazerunner Dispel		Dispels Blazerunner's Aura.						
+14248	all		Increase Spell Dam 21		Increases damage and healing done by magical spells and effects by up to $s1.						
+14249	all		Increased Defense		Increased Defense +$s1.						
+14250	all		Capture Grark		Use on Grark when the time is right!						
+14251	spellbook	38	Riposte		A strike that becomes active after parrying an opponent's attack.  This attack deals $s1% weapon damage and disarms the target for $d.	Disarmed.					
+14252	all		Summon Enraged Felbat								
+14253	all		Abolish Poison	Rank 1	Attempts to cure $s2 poison $leffect:effects; on the target, and $3137s1 more poison $leffect:effects; every $t1 seconds for $d.	Attempts to cure $3137s1 poison every $t1 seconds.					
+14254	all		Increase Spell Dam 19		Increases damage and healing done by magical spells and effects by up to $s1.						
+14260	spellbook	51	Raptor Strike	Rank 2	A strong attack that increases melee damage by $s1.						
+14261	spellbook	51	Raptor Strike	Rank 3	A strong attack that increases melee damage by $s1.						
+14262	spellbook	51	Raptor Strike	Rank 4	A strong attack that increases melee damage by $s1.						
+14263	spellbook	51	Raptor Strike	Rank 5	A strong attack that increases melee damage by $s1.						
+14264	spellbook	51	Raptor Strike	Rank 6	A strong attack that increases melee damage by $s1.						
+14265	spellbook	51	Raptor Strike	Rank 7	A strong attack that increases melee damage by $s1.						
+14266	spellbook	51	Raptor Strike	Rank 8	A strong attack that increases melee damage by $s1.						
+14267	spellbook	51	Wing Clip	Rank 2	Inflicts $s2 damage and reduces the enemy target's movement speed by $s1% for $d.	Movement speed reduced by $s1%.					
+14268	spellbook	51	Wing Clip	Rank 3	Inflicts $s2 damage and reduces the enemy target's movement speed by $s1% for $d.	Movement speed reduced by $s1%.					
+14269	spellbook	51	Mongoose Bite	Rank 2	Counterattack the enemy for ${$AP*0.2+$m1} damage.  Can only be performed after you dodge.						
+14270	spellbook	51	Mongoose Bite	Rank 3	Counterattack the enemy for ${$AP*0.2+$m1} damage.  Can only be performed after you dodge.						
+14271	spellbook	51	Mongoose Bite	Rank 4	Counterattack the enemy for ${$AP*0.2+$m1} damage.  Can only be performed after you dodge.						
+14272	spellbook	51	Disengage	Rank 2	While in combat attempts to disengage from the target, reducing threat and leaping backwards. Must be grounded.						
+14273	spellbook	51	Disengage	Rank 3	While in combat attempts to disengage from the target, reducing threat and leaping backwards. Must be grounded.						
+14274	spellbook	163	Distracting Shot	Rank 2	Distract the target, causing threat.  More effective than Distracting Shot (Rank 1).						
+14278	spellbook	39	Ghostly Strike		A strike that deals $s1% weapon damage and increases your chance to dodge by $s2% for $d.  Awards $s3 combo $lpoint:points;.	Dodge chance increased by $s2%.					
+14279	spellbook	163	Viper Sting	Rank 2	Stings the target, draining $o1 mana over $d.  Only one Sting per Hunter can be active on any one target.	Drains $s1 mana every $t1 seconds.					
+14280	spellbook	163	Viper Sting	Rank 3	Stings the target, draining $o1 mana over $d.  Only one Sting per Hunter can be active on any one target.	Drains $s1 mana every $t1 seconds.					
+14281	spellbook	163	Arcane Shot	Rank 2	An instant shot that causes ${$rap*0.15+$m1} Arcane damage.						
+14282	spellbook	163	Arcane Shot	Rank 3	An instant shot that causes ${$rap*0.15+$m1} Arcane damage.						
+14283	spellbook	163	Arcane Shot	Rank 4	An instant shot that causes ${$rap*0.15+$m1} Arcane damage.						
+14284	spellbook	163	Arcane Shot	Rank 5	An instant shot that causes ${$rap*0.15+$m1} Arcane damage.						
+14285	spellbook	163	Arcane Shot	Rank 6	An instant shot that causes ${$rap*0.15+$m2} Arcane damage and dispels $s1 Magic effect.						
+14286	spellbook	163	Arcane Shot	Rank 7	An instant shot that causes ${$rap*0.15+$m2} Arcane damage and dispels $s1 Magic effect.						
+14287	spellbook	163	Arcane Shot	Rank 8	An instant shot that causes ${$rap*0.15+$m2} Arcane damage and dispels $s1 Magic effect.						
+14288	spellbook	163	Multi-Shot	Rank 2	Fires several missiles, hitting $x1 targets for an additional $s1 damage.						
+14289	spellbook	163	Multi-Shot	Rank 3	Fires several missiles, hitting $x1 targets for an additional $s1 damage.						
+14290	spellbook	163	Multi-Shot	Rank 4	Fires several missiles, hitting $x1 targets for an additional $s1 damage.						
+14291	all		Anubisath Guardian Targeted								
+14292	all		Fling Torch								
+14293	spellbook	333	Lesser Magic Wand		Creates a lesser magic wand.						
+14294	spellbook	163	Volley	Rank 2	Continuously fires a volley of ammo at the target area, causing $42244s1 Arcane damage to enemy targets within $a1 yards every second for $d.						
+14295	spellbook	163	Volley	Rank 3	Continuously fires a volley of ammo at the target area, causing $42245s1 Arcane damage to enemy targets within $a1 yards every second for $d.						
+14297	all		Shadow Storm		Throws shadowbolts at any enemies between 25 and 45 feet						
+14298	spellbook	51	Immolation Trap Effect	Rank 2		$s1 Fire damage every $t1 seconds.					
+14299	spellbook	51	Immolation Trap Effect	Rank 3		$s1 Fire damage every $t1 seconds.					
+14300	spellbook	51	Immolation Trap Effect	Rank 4		$s1 Fire damage every $t1 seconds.					
+14301	spellbook	51	Immolation Trap Effect	Rank 5		$s1 Fire damage every $t1 seconds.					
+14302	spellbook	51	Immolation Trap	Rank 2	Place a fire trap that will burn the first enemy to approach for ${$RAP*0.1+$14298m1*5} Fire damage over $14298d.  Trap will exist for $d.  Only one trap can be active at a time.						
+14303	spellbook	51	Immolation Trap	Rank 3	Place a fire trap that will burn the first enemy to approach for ${$RAP*0.1+$14299m1*5} Fire damage over $14299d.  Trap will exist for $d.  Only one trap can be active at a time.						
+14304	spellbook	51	Immolation Trap	Rank 4	Place a fire trap that will burn the first enemy to approach for ${$RAP*0.1+$14300m1*5} Fire damage over $14300d.  Trap will exist for $d.  Only one trap can be active at a time.						
+14305	spellbook	51	Immolation Trap	Rank 5	Place a fire trap that will burn the first enemy to approach for ${$RAP*0.1+$14301m1*5} Fire damage over $14301d.  Trap will exist for $d.  Only one trap can be active at a time.						
+14307	all		Summon Enraged Wyvern								
+14308	all		Freezing Trap Effect	Rank 2		Frozen.					
+14309	all		Freezing Trap Effect	Rank 3		Frozen.					
+14310	spellbook	51	Freezing Trap	Rank 2	Place a frost trap that freezes the first enemy that approaches, preventing all action for up to $14308d.  Any damage caused will break the ice.  Trap will exist for $d.  Only one trap can be active at a time.						
+14311	spellbook	51	Freezing Trap	Rank 3	Place a frost trap that freezes the first enemy that approaches, preventing all action for up to $14309d.  Any damage caused will break the ice.  Trap will exist for $d.  Only one trap can be active at a time.						
+14313	all		Summon Enraged Gryphon								
+14314	spellbook	51	Explosive Trap Effect	Rank 2		$s2 Fire damage every $t2 seconds.					
+14315	spellbook	51	Explosive Trap Effect	Rank 3		$s2 Fire damage every $t2 seconds.					
+14316	spellbook	51	Explosive Trap	Rank 2	Place a fire trap that explodes when an enemy approaches, causing ${$RAP*0.1+$14314m1} to ${$RAP*0.1+$14314M1} Fire damage and burning all enemies for $14314o2 additional Fire damage over $14314d to all within $14314a1 yards.  Trap will exist for $d.  Only one trap can be active at a time.						
+14317	spellbook	51	Explosive Trap	Rank 3	Place a fire trap that explodes when an enemy approaches, causing ${$RAP*0.1+$14315m1} to ${$RAP*0.1+$14315M1} Fire damage and burning all enemies for $14315o2 additional Fire damage over $14315d to all within $14315a1 yards.  Trap will exist for $d.  Only one trap can be active at a time.						
+14318	spellbook	50	Aspect of the Hawk	Rank 2	The hunter takes on the aspects of a hawk, increasing ranged attack power by $s1.  Only one Aspect can be active at a time.	Increases ranged attack power by $s1.					
+14319	spellbook	50	Aspect of the Hawk	Rank 3	The hunter takes on the aspects of a hawk, increasing ranged attack power by $s1.  Only one Aspect can be active at a time.	Increases ranged attack power by $s1.					
+14320	spellbook	50	Aspect of the Hawk	Rank 4	The hunter takes on the aspects of a hawk, increasing ranged attack power by $s1.  Only one Aspect can be active at a time.	Increases ranged attack power by $s1.					
+14321	spellbook	50	Aspect of the Hawk	Rank 5	The hunter takes on the aspects of a hawk, increasing ranged attack power by $s1.  Only one Aspect can be active at a time.	Increases ranged attack power by $s1.					
+14322	spellbook	50	Aspect of the Hawk	Rank 6	The hunter takes on the aspects of a hawk, increasing ranged attack power by $s1.  Only one Aspect can be active at a time.	Increases ranged attack power by $s1.					
+14323	spellbook	163	Hunter's Mark	Rank 2	Places the Hunter's Mark on the target, increasing the ranged attack power of all attackers against that target by $84536m2 and by an additional $m2 each time they are struck by a ranged attack, up to a maximum of ${$84536m2+($m2*30)}.  In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible.  The target also appears on the mini-map.  Lasts for $d.	All attackers gain 45 plus $m2 ranged attack power against this target.					
+14324	spellbook	163	Hunter's Mark	Rank 3	Places the Hunter's Mark on the target, increasing the ranged attack power of all attackers against that target by $84537m2 and by an additional $m2 each time they are struck by a ranged attack, up to a maximum of ${$84537m2+($m2*30)}.  In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible.  The target also appears on the mini-map.  Lasts for $d.	All attackers gain 75 plus $m2 ranged attack power against this target.					
+14325	spellbook	163	Hunter's Mark	Rank 4	Places the Hunter's Mark on the target, increasing the ranged attack power of all attackers against that target by $84538m2 and by an additional $m2 each time they are struck by a ranged attack, up to a maximum of ${$84538m2+($m2*30)}.  In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible.  The target also appears on the mini-map.  Lasts for $d.	All attackers gain 110 plus $m2 ranged attack power against this target.					
+14326	spellbook	50	Scare Beast	Rank 2	Scares a beast, causing it to run in fear for up to $d.  Damage caused may interrupt the effect.  Only one beast can be feared at a time.	Feared.					
+14327	spellbook	50	Scare Beast	Rank 3	Scares a beast, causing it to run in fear for up to $d.  Damage caused may interrupt the effect.  Only one beast can be feared at a time.	Feared.					
+14329	all		Summon Enraged Hippogryph								
+14330	all		Increased Agility 16		+$s1 Agility.						
+14331	all		Vicious Rend		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+14369	all		Increased Agility 17		+$s1 Agility.						
+14371	all		Increased Agility 18		+$s1 Agility.						
+14379	spellbook	164	Golden Rod								
+14380	spellbook	164	Truesilver Rod								
+14383	all		Increased Agility 19		+$s1 Agility.						
+14384	all		Increased Agility 20		+$s1 Agility.						
+14385	all		Increased Agility 21		+$s1 Agility.						
+14386	all		Increased Agility 22		+$s1 Agility.						
+14387	all		Increased Agility 23		+$s1 Agility.						
+14388	all		Increased Agility 24		+$s1 Agility.						
+14389	all		Increased Agility 25		+$s1 Agility.						
+14390	all		Increased Agility 26		+$s1 Agility.						
+14391	all		Increased Agility 27		+$s1 Agility.						
+14392	all		Increased Agility 28		+$s1 Agility.						
+14393	all		Increased Agility 29		+$s1 Agility.						
+14394	all		Increased Agility 30		+$s1 Agility.						
+14395	all		Increased Agility 31		+$s1 Agility.						
+14396	all		Increased Agility 32		+$s1 Agility.						
+14397	all		Increased Agility 33		+$s1 Agility.						
+14398	all		Increased Agility 34		+$s1 Agility.						
+14399	all		Increased Agility 35		+$s1 Agility.						
+14400	all		Increased Agility 36		+$s1 Agility.						
+14401	all		Increased Agility 37		+$s1 Agility.						
+14402	all		Increased Agility 38		+$s1 Agility.						
+14403	all		Increased Agility 39		+$s1 Agility.						
+14404	all		Increased Agility 40		+$s1 Agility.						
+14405	all		Increased Intellect 15		+$s1 Intellect.						
+14406	all		Increased Intellect 16		+$s1 Intellect.						
+14407	all		Increased Intellect 17		+$s1 Intellect.						
+14408	all		Increased Intellect 18		+$s1 Intellect.						
+14409	all		Increased Intellect 19		+$s1 Intellect.						
+14410	all		Increased Intellect 20		+$s1 Intellect.						
+14411	all		Increased Intellect 21		+$s1 Intellect.						
+14412	all		Increased Intellect 22		+$s1 Intellect.						
+14413	all		Increased Intellect 23		+$s1 Intellect.						
+14414	all		Increased Intellect 24		+$s1 Intellect.						
+14415	all		Increased Intellect 25		+$s1 Intellect.						
+14416	all		Increased Intellect 26		+$s1 Intellect.						
+14417	all		Increased Intellect 27		+$s1 Intellect.						
+14418	all		Increased Intellect 28		+$s1 Intellect.						
+14419	all		Increased Intellect 29		+$s1 Intellect.						
+14420	all		Increased Intellect 30		+$s1 Intellect.						
+14421	all		Increased Intellect 31		+$s1 Intellect.						
+14422	all		Increased Intellect 32		+$s1 Intellect.						
+14423	all		Increased Intellect 33		+$s1 Intellect.						
+14424	all		Increased Intellect 34		+$s1 Intellect.						
+14425	all		Increased Intellect 35		+$s1 Intellect.						
+14426	all		Increased Intellect 36		+$s1 Intellect.						
+14427	all		Increased Intellect 37		+$s1 Intellect.						
+14428	all		Increased Intellect 38		+$s1 Intellect.						
+14429	all		Increased Intellect 39		+$s1 Intellect.						
+14430	all		Increased Intellect 40		+$s1 Intellect.						
+14433	all		Increased Spirit 15		+$s1 Spirit.						
+14435	all		Increased Spirit 16		+$s1 Spirit.						
+14436	all		Increased Spirit 17		+$s1 Spirit.						
+14437	all		Increased Spirit 18		+$s1 Spirit.						
+14438	all		Increased Spirit 19		+$s1 Spirit.						
+14439	all		Increased Spirit 20		+$s1 Spirit.						
+14440	all		Increased Spirit 21		+$s1 Spirit.						
+14441	all		Increased Spirit 22		+$s1 Spirit.						
+14442	all		Increased Spirit 23		+$s1 Spirit.						
+14443	all		Multi-Shot		Fires a volley of missiles at an enemy and its nearby allies, striking up to $x1 targets for normal damage plus $s1.						
+14444	all		Increased Spirit 24		+$s1 Spirit.						
+14447	all		Increased Spirit 25		+$s1 Spirit.						
+14448	all		Increased Spirit 26		+$s1 Spirit.						
+14449	all		Increased Spirit 27		+$s1 Spirit.						
+14450	all		Increased Spirit 28		+$s1 Spirit.						
+14451	all		Increased Spirit 29		+$s1 Spirit.						
+14452	all		Increased Spirit 30		+$s1 Spirit.						
+14453	all		Increased Spirit 31		+$s1 Spirit.						
+14454	all		Increased Spirit 32		+$s1 Spirit.						
+14455	all		Increased Spirit 33		+$s1 Spirit.						
+14456	all		Increased Spirit 34		+$s1 Spirit.						
+14457	all		Increased Spirit 36		+$s1 Spirit.						
+14458	all		Increased Spirit 37		+$s1 Spirit.						
+14459	all		Increased Spirit 38		+$s1 Spirit.						
+14460	all		Increased Spirit 39		+$s1 Spirit.						
+14461	all		Increased Spirit 40		+$s1 Spirit.						
+14462	all		Increased Stamina 15		+$s1 Stamina.						
+14463	all		Increased Stamina 16		+$s1 Stamina.						
+14464	all		Increased Stamina 17		+$s1 Stamina.						
+14465	all		Increased Stamina 18		+$s1 Stamina.						
+14466	all		Increased Stamina 19		+$s1 Stamina.						
+14467	all		Increased Stamina 20		+$s1 Stamina.						
+14468	all		Increased Stamina 21		+$s1 Stamina.						
+14469	all		Increased Stamina 22		+$s1 Stamina.						
+14470	all		Increased Stamina 23		+$s1 Stamina.						
+14471	all		Increased Stamina 24		+$s1 Stamina.						
+14472	all		Increased Stamina 25		+$s1 Stamina.						
+14473	all		Increased Stamina 26		+$s1 Stamina.						
+14474	all		Increased Stamina 27		+$s1 Stamina.						
+14475	all		Increased Stamina 28		+$s1 Stamina.						
+14476	all		Increased Stamina 29		+$s1 Stamina.						
+14477	all		Increased Stamina 30		+$s1 Stamina.						
+14478	all		Increased Stamina 31		+$s1 Stamina.						
+14479	all		Increased Stamina 32		+$s1 Stamina.						
+14480	all		Increased Stamina 33		+$s1 Stamina.						
+14481	all		Increased Stamina 34		+$s1 Stamina.						
+14482	all		Increased Stamina 35		+$s1 Stamina.						
+14483	all		Increased Stamina 36		+$s1 Stamina.						
+14484	all		Increased Stamina 37		+$s1 Stamina.						
+14485	all		Increased Stamina 38		+$s1 Stamina.						
+14486	all		Increased Stamina 39		+$s1 Stamina.						
+14487	all		Increased Stamina 40		+$s1 Stamina.						
+14488	all		Increased Strength 16		+$s1 Strength.						
+14489	all		Increased Strength 17		+$s1 Strength.						
+14490	all		Increased Strength 18		+$s1 Strength.						
+14491	all		Increased Strength 19		+$s1 Strength.						
+14492	all		Increased Strength 20		+$s1 Strength.						
+14493	all		Increased Strength 21		+$s1 Strength.						
+14494	all		Increased Strength 22		+$s1 Strength.						
+14495	all		Increased Strength 23		+$s1 Strength.						
+14496	all		Increased Strength 24		+$s1 Strength.						
+14497	all		Increased Strength 25		+$s1 Strength.						
+14498	all		Increased Strength 26		+$s1 Strength.						
+14499	all		Increased Strength 27		+$s1 Strength.						
+14500	all		Increased Strength 28		+$s1 Strength.						
+14501	all		Increased Strength 29		+$s1 Strength.						
+14502	all		Increased Strength 30		+$s1 Strength.						
+14503	all		Increased Strength 31		+$s1 Strength.						
+14504	all		Increased Strength 32		+$s1 Strength.						
+14505	all		Increased Strength 33		+$s1 Strength.						
+14506	all		Increased Strength 34		+$s1 Strength.						
+14507	all		Increased Strength 35		+$s1 Strength.						
+14508	all		Increased Strength 36		+$s1 Strength.						
+14509	all		Increased Strength 37		+$s1 Strength.						
+14510	all		Increased Strength 38		+$s1 Strength.						
+14511	all		Increased Strength 39		+$s1 Strength.						
+14512	all		Increased Strength 40		+$s1 Strength.						
+14514	all		Blink		Teleports the caster 20 yd. forward unless something is in the way. Also frees the caster from any bonds.	Blinking...					
+14515	all		Dominate Mind		Takes control of a humanoid enemy up to level $s1 for $d.	Charmed.					
+14516	all		Strike		Strikes at an enemy, inflicting increased melee damage.						
+14517	all		Crusader Strike		Inflicts $s1 damage to an enemy and increases the Holy damage it takes by $s2 per Crusader Strike. Can be applied up to 5 times. Lasts $d.	Holy damage taken is increased.					
+14518	all		Crusader Strike		Inflicts $s1 damage to an enemy and increases the Holy damage it takes by $s2 per Crusader Strike. Can be applied up to 5 times. Lasts $d.	Holy damage taken is increased.					
+14520	spellbook	613	Mental Agility	Rank 1	Reduces the mana cost of your instant cast spells by $s1%.						
+14521	spellbook	613	Meditation	Rank 1	Allows $s1% of your mana regeneration to continue while casting.						
+14522	spellbook	613	Unbreakable Will	Rank 1	Increases your chance to resist Stun, Fear, and Silence effects by an additional $s1%.						
+14523	spellbook	613	Silent Resolve	Rank 1	Reduces the threat generated by your Holy and Discipline spells by $s1% and reduces the chance your spells will be dispelled by $s2%.						
+14524	spellbook	613	Wand Specialization	Rank 1	Increases your damage with Wands by $s1%.						
+14525	spellbook	613	Wand Specialization	Rank 2	Increases your damage with Wands by $s1%.						
+14526	spellbook	613	Wand Specialization	Rank 3	Increases your damage with Wands by $s1%.						
+14527	spellbook	613	Wand Specialization	Rank 4	Increases your damage with Wands by $s1%.						
+14528	spellbook	613	Wand Specialization	Rank 5	Increases your damage with Wands by $s1%.						
+14530	all		Speed		Increases run speed by $s1% for $d1.	Increases run speed by $s1%.					
+14531	spellbook	613	Martyrdom	Rank 1	Gives you a $h% chance to gain the Focused Casting effect that lasts for $14743d after being the victim of a melee or ranged critical strike.  The Focused Casting effect prevents you from losing casting time when taking damage while casting Priest spells and increases resistance to Interrupt effects by $14743s2%.						
+14532	all		Creeper Venom		Increases the Physical damage taken by nearby enemies by $s1% for $d.	Physical damage taken is increased by $s1%.					
+14533	all		Disjunction		Increases the Fire, Frost, and Arcane damage that nearby enemies take by $s1% for $d.	Fire, Frost, and Arcane damage taken is increased by $s1%.					
+14534	all		Barbed Sting		Increases the time between nearby enemies' attacks by $s1% for $d.	Time between attacks increased by $s1%.					
+14535	all		Dredge Sickness		Reduces all attributes of nearby enemies by $s1% for $d.	All attributes reduced by $s1%.					
+14537	all		Six Demon Bag		Blasts enemies in front of you with the power of wind, fire, all that kind of thing!						
+14538	all		Aural Shock		Reduces the casting speed of nearby enemies by $s1% for $d.	Casting speed reduced by $s1%.					
+14539	all		Putrid Enzyme		Increases the Nature damage taken by nearby enemies by $s1% and increases the Shadow damage they take by $s2%. Lasts $d.	Nature damage taken is increased by $s1%.\nShadow damage taken is increased by $s2%.					
+14540	all		Increased Fire Resist 01		+$s1 Fire Resistance.						
+14541	all		Increased Frost Resist 01		+$s1 Frost Resistance.						
+14542	all		Increased Frost Resist 02		+$s1 Frost Resistance.						
+14543	all		Increased Frost Resist 06		+$s1 Frost Resistance.						
+14544	all		Increased Frost Resist 03		+$s1 Frost Resistance.						
+14545	all		Increased Frost Resist 04		+$s1 Frost Resistance.						
+14546	all		Increased Frost Resist 05		+$s1 Frost Resistance.						
+14547	all		Increased Frost Resist 07		+$s1 Frost Resistance.						
+14548	all		Increased Frost Resist 08		+$s1 Frost Resistance.						
+14549	all		Increased Frost Resist 09		+$s1 Frost Resistance.						
+14550	all		Increased Frost Resist 10		+$s1 Frost Resistance.						
+14551	all		Increased Frost Resist 11		+$s1 Frost Resistance.						
+14552	all		Increased Frost Resist 12		+$s1 Frost Resistance.						
+14553	all		Increased Frost Resist 14		+$s1 Frost Resistance.						
+14554	all		Increased Frost Resist 13		+$s1 Frost Resistance.						
+14555	all		Increased Frost Resist 15		+$s1 Frost Resistance.						
+14556	all		Increased Frost Resist 16		+$s1 Frost Resistance.						
+14557	all		Increased Frost Resist 17		+$s1 Frost Resistance.						
+14558	all		Increased Frost Resist 19		+$s1 Frost Resistance.						
+14559	all		Increased Frost Resist 20		+$s1 Frost Resistance.						
+14560	all		Increased Frost Resist 21		+$s1 Frost Resistance.						
+14561	all		Increased Frost Resist 22		+$s1 Frost Resistance.						
+14562	all		Increased Frost Resist 23		+$s1 Frost Resistance.						
+14563	all		Increased Frost Resist 25		+$s1 Frost Resistance.						
+14564	all		Increased Frost Resist 26		+$s1 Frost Resistance.						
+14565	all		Beast Slaying 30		+$s1 Attack Power when fighting Beasts.						
+14566	all		Increased Frost Resist 27		+$s1 Frost Resistance.						
+14567	all		Increased Frost Resist 28		+$s1 Frost Resistance.						
+14568	all		Increased Frost Resist 29		+$s1 Frost Resistance.						
+14569	all		Increased Frost Resist 30		+$s1 Frost Resistance.						
+14570	all		Increased Frost Resist 31		+$s1 Frost Resistance.						
+14571	all		Increased Frost Resist 32		+$s1 Frost Resistance.						
+14572	all		Increased Frost Resist 33		+$s1 Frost Resistance.						
+14573	all		Increased Frost Resist 34		+$s1 Frost Resistance.						
+14574	all		Increased Frost Resist 35		+$s1 Frost Resistance.						
+14575	all		Increased Frost Resist 36		+$s1 Frost Resistance.						
+14576	all		Increased Frost Resist 37		+$s1 Frost Resistance.						
+14577	all		Increased Frost Resist 38		+$s1 Frost Resistance.						
+14578	all		Increased Frost Resist 39		+$s1 Frost Resistance.						
+14579	all		Increased Frost Resist 40		+$s1 Frost Resistance.						
+14580	all		Increased Frost Resist 18		+$s1 Frost Resistance.						
+14581	all		Increased Frost Resist 24		+$s1 Frost Resistance.						
+14582	all		Increased Fire Resist 02		+$s1 Fire Resistance.						
+14583	all		Increased Fire Resist 03		+$s1 Fire Resistance.						
+14584	all		Increased Fire Resist 04		+$s1 Fire Resistance.						
+14585	all		Increased Fire Resist 05		+$s1 Fire Resistance.						
+14586	all		Increased Fire Resist 06		+$s1 Fire Resistance.						
+14587	all		Increased Fire Resist 07		+$s1 Fire Resistance.						
+14588	all		Increased Fire Resist 08		+$s1 Fire Resistance.						
+14589	all		Increased Fire Resist 09		+$s1 Fire Resistance.						
+14590	all		Increased Fire Resist 10		+$s1 Fire Resistance.						
+14591	all		Increased Fire Resist 11		+$s1 Fire Resistance.						
+14592	all		Increased Fire Resist 12		+$s1 Fire Resistance.						
+14593	all		Increased Fire Resist 13		+$s1 Fire Resistance.						
+14594	all		Increased Fire Resist 14		+$s1 Fire Resistance.						
+14595	all		Increased Fire Resist 15		+$s1 Fire Resistance.						
+14596	all		Increased Fire Resist 16		+$s1 Fire Resistance.						
+14597	all		Increased Fire Resist 17		+$s1 Fire Resistance.						
+14598	all		Increased Fire Resist 18		+$s1 Fire Resistance.						
+14599	all		Increased Fire Resist 19		+$s1 Fire Resistance.						
+14600	all		Increased Fire Resist 20		+$s1 Fire Resistance.						
+14601	all		Increased Fire Resist 21		+$s1 Fire Resistance.						
+14602	all		Increased Fire Resist 22		+$s1 Fire Resistance.						
+14603	all		Increased Fire Resist 23		+$s1 Fire Resistance.						
+14604	all		Increased Fire Resist 24		+$s1 Fire Resistance.						
+14605	all		Increased Fire Resist 25		+$s1 Fire Resistance.						
+14606	all		Increased Fire Resist 26		+$s1 Fire Resistance.						
+14607	all		Increased Fire Resist 27		+$s1 Fire Resistance.						
+14608	all		Increased Fire Resist 28		+$s1 Fire Resistance.						
+14609	all		Increased Fire Resist 29		+$s1 Fire Resistance.						
+14610	all		Increased Fire Resist 30		+$s1 Fire Resistance.						
+14611	all		Increased Fire Resist 31		+$s1 Fire Resistance.						
+14612	all		Increased Fire Resist 32		+$s1 Fire Resistance.						
+14613	all		Increased Fire Resist 33		+$s1 Fire Resistance.						
+14614	all		Increased Fire Resist 34		+$s1 Fire Resistance.						
+14615	all		Increased Fire Resist 35		+$s1 Fire Resistance.						
+14616	all		Increased Fire Resist 36		+$s1 Fire Resistance.						
+14617	all		Increased Fire Resist 37		+$s1 Fire Resistance.						
+14618	all		Increased Fire Resist 38		+$s1 Fire Resistance.						
+14619	all		Increased Fire Resist 39		+$s1 Fire Resistance.						
+14620	all		Increased Fire Resist 40		+$s1 Fire Resistance.						
+14621	all		Polymorph		Transforms you into a sheep, forcing you to wander around for up to $d.  While wandering, you cannot attack or cast spells and any damage will transform you back into your normal form.	Cannot attack or cast spells.					
+14622	all		Increased Nature Resist 01		+$s1 Nature Resistance.						
+14623	all		Increased Nature Resist 02		+$s1 Nature Resistance.						
+14624	all		Increased Nature Resist 03		+$s1 Nature Resistance.						
+14625	all		Increased Nature Resist 04		+$s1 Nature Resistance.						
+14626	all		Increased Nature Resist 05		+$s1 Nature Resistance.						
+14627	all		Increased Nature Resist 07		+$s1 Nature Resistance.						
+14628	all		Increased Nature Resist 08		+$s1 Nature Resistance.						
+14629	all		Increased Nature Resist 09		+$s1 Nature Resistance.						
+14630	all		Increased Nature Resist 10		+$s1 Nature Resistance.						
+14631	all		Increased Nature Resist 06		+$s1 Nature Resistance.						
+14632	all		Increased Nature Resist 11		+$s1 Nature Resistance.						
+14633	all		Increased Nature Resist 12		+$s1 Nature Resistance.						
+14634	all		Increased Nature Resist 13		+$s1 Nature Resistance.						
+14635	all		Increased Nature Resist 14		+$s1 Nature Resistance.						
+14636	all		Increased Nature Resist 15		+$s1 Nature Resistance.						
+14637	all		Increased Nature Resist 16		+$s1 Nature Resistance.						
+14638	all		Increased Nature Resist 17		+$s1 Nature Resistance.						
+14639	all		Increased Nature Resist 18		+$s1 Nature Resistance.						
+14640	all		Increased Nature Resist 19		+$s1 Nature Resistance.						
+14641	all		Increased Nature Resist 20		+$s1 Nature Resistance.						
+14642	all		Summon Felhound Minion								
+14643	all		Increased Nature Resist 21		+$s1 Nature Resistance.						
+14644	all		Increased Nature Resist 22		+$s1 Nature Resistance.						
+14645	all		Increased Nature Resist 23		+$s1 Nature Resistance.						
+14646	all		Increased Nature Resist 24		+$s1 Nature Resistance.						
+14647	all		Increased Nature Resist 25		+$s1 Nature Resistance.						
+14648	all		Increased Nature Resist 26		+$s1 Nature Resistance.						
+14649	all		Increased Nature Resist 27		+$s1 Nature Resistance.						
+14650	all		Increased Nature Resist 28		+$s1 Nature Resistance.						
+14651	all		Increased Nature Resist 29		+$s1 Nature Resistance.						
+14652	all		Increased Nature Resist 30		+$s1 Nature Resistance.						
+14653	all		Increased Nature Resist 31		+$s1 Nature Resistance.						
+14654	all		Increased Nature Resist 32		+$s1 Nature Resistance.						
+14655	all		Increased Nature Resist 33		+$s1 Nature Resistance.						
+14656	all		Increased Nature Resist 34		+$s1 Nature Resistance.						
+14657	all		Increased Nature Resist 35		+$s1 Nature Resistance.						
+14658	all		Increased Nature Resist 36		+$s1 Nature Resistance.						
+14659	all		Increased Nature Resist 37		+$s1 Nature Resistance.						
+14660	all		Increased Nature Resist 38		+$s1 Nature Resistance.						
+14661	all		Increased Nature Resist 39		+$s1 Nature Resistance.						
+14662	all		Increased Nature Resist 40		+$s1 Nature Resistance.						
+14663	all		Increased Shadow Resist 01		+$s1 Shadow Resistance.						
+14664	all		Increased Arcane Resist 01		+$s1 Arcane Resistance.						
+14665	all		Increased Shadow Resist 02		+$s1 Shadow Resistance.						
+14666	all		Increased Shadow Resist 03		+$s1 Shadow Resistance.						
+14667	all		Increased Shadow Resist 04		+$s1 Shadow Resistance.						
+14668	all		Increased Shadow Resist 05		+$s1 Shadow Resistance.						
+14669	all		Increased Shadow Resist 06		+$s1 Shadow Resistance.						
+14670	all		Increased Shadow Resist 07		+$s1 Shadow Resistance.						
+14671	all		Increased Shadow Resist 08		+$s1 Shadow Resistance.						
+14672	all		Increased Shadow Resist 09		+$s1 Shadow Resistance.						
+14673	all		Increased Shadow Resist 10		+$s1 Shadow Resistance.						
+14674	all		Increased Shadow Resist 11		+$s1 Shadow Resistance.						
+14675	all		Increased Shadow Resist 12		+$s1 Shadow Resistance.						
+14676	all		Increased Shadow Resist 13		+$s1 Shadow Resistance.						
+14677	all		Increased Shadow Resist 14		+$s1 Shadow Resistance.						
+14678	all		Increased Shadow Resist 15		+$s1 Shadow Resistance.						
+14679	all		Increased Shadow Resist 16		+$s1 Shadow Resistance.						
+14680	all		Increased Shadow Resist 17		+$s1 Shadow Resistance.						
+14681	all		Increased Shadow Resist 18		+$s1 Shadow Resistance.						
+14682	all		Increased Shadow Resist 19		+$s1 Shadow Resistance.						
+14683	all		Increased Shadow Resist 20		+$s1 Shadow Resistance.						
+14684	all		Increased Shadow Resist 21		+$s1 Shadow Resistance.						
+14685	all		Increased Shadow Resist 22		+$s1 Shadow Resistance.						
+14686	all		Increased Shadow Resist 23		+$s1 Shadow Resistance.						
+14687	all		Increased Shadow Resist 24		+$s1 Shadow Resistance.						
+14688	all		Increased Shadow Resist 25		+$s1 Shadow Resistance.						
+14689	all		Increased Shadow Resist 26		+$s1 Shadow Resistance.						
+14690	all		Increased Shadow Resist 27		+$s1 Shadow Resistance.						
+14691	all		Increased Shadow Resist 28		+$s1 Shadow Resistance.						
+14692	all		Increased Shadow Resist 29		+$s1 Shadow Resistance.						
+14693	all		Increased Shadow Resist 30		+$s1 Shadow Resistance.						
+14694	all		Increased Shadow Resist 31		+$s1 Shadow Resistance.						
+14695	all		Increased Shadow Resist 32		+$s1 Shadow Resistance.						
+14696	all		Increased Shadow Resist 33		+$s1 Shadow Resistance.						
+14697	all		Increased Shadow Resist 35		+$s1 Shadow Resistance.						
+14698	all		Increased Shadow Resist 36		+$s1 Shadow Resistance.						
+14699	all		Increased Shadow Resist 37		+$s1 Shadow Resistance.						
+14700	all		Increased Shadow Resist 38		+$s1 Shadow Resistance.						
+14701	all		Increased Shadow Resist 39		+$s1 Shadow Resistance.						
+14702	all		Increased Shadow Resist 40		+$s1 Shadow Resistance.						
+14703	all		Increased Shadow Resist 34		+$s1 Shadow Resistance.						
+14704	all		Increased Arcane Resist 02		+$s1 Arcane Resistance.						
+14705	all		Increased Arcane Resist 03		+$s1 Arcane Resistance.						
+14706	all		Increased Arcane Resist 04		+$s1 Arcane Resistance.						
+14707	all		Increased Arcane Resist 05		+$s1 Arcane Resistance.						
+14708	all		Increased Arcane Resist 06		+$s1 Arcane Resistance.						
+14709	all		Increased Arcane Resist 07		+$s1 Arcane Resistance.						
+14710	all		Increased Arcane Resist 08		+$s1 Arcane Resistance.						
+14711	all		Increased Arcane Resist 09		+$s1 Arcane Resistance.						
+14712	all		Increased Arcane Resist 10		+$s1 Arcane Resistance.						
+14713	all		Increased Arcane Resist 11		+$s1 Arcane Resistance.						
+14714	all		Increased Arcane Resist 12		+$s1 Arcane Resistance.						
+14715	all		Increased Arcane Resist 13		+$s1 Arcane Resistance.						
+14716	all		Increased Arcane Resist 14		+$s1 Arcane Resistance.						
+14717	all		Increased Arcane Resist 15		+$s1 Arcane Resistance.						
+14718	all		Increased Arcane Resist 16		+$s1 Arcane Resistance.						
+14719	all		Increased Arcane Resist 17		+$s1 Arcane Resistance.						
+14720	all		Increased Arcane Resist 18		+$s1 Arcane Resistance.						
+14721	all		Increased Arcane Resist 19		+$s1 Arcane Resistance.						
+14722	all		Increased Arcane Resist 20		+$s1 Arcane Resistance.						
+14723	all		Increased Arcane Resist 21		+$s1 Arcane Resistance.						
+14724	all		Increased Arcane Resist 22		+$s1 Arcane Resistance.						
+14725	all		Increased Arcane Resist 23		+$s1 Arcane Resistance.						
+14726	all		Increased Arcane Resist 24		+$s1 Arcane Resistance.						
+14727	all		Increased Arcane Resist 25		+$s1 Arcane Resistance.						
+14728	all		Increased Arcane Resist 26		+$s1 Arcane Resistance.						
+14729	all		Increased Arcane Resist 27		+$s1 Arcane Resistance.						
+14730	all		Increased Arcane Resist 28		+$s1 Arcane Resistance.						
+14731	all		Increased Arcane Resist 29		+$s1 Arcane Resistance.						
+14732	all		Increased Arcane Resist 30		+$s1 Arcane Resistance.						
+14733	all		Increased Arcane Resist 31		+$s1 Arcane Resistance.						
+14734	all		Increased Arcane Resist 32		+$s1 Arcane Resistance.						
+14735	all		Increased Arcane Resist 33		+$s1 Arcane Resistance.						
+14736	all		Increased Arcane Resist 34		+$s1 Arcane Resistance.						
+14737	all		Increased Arcane Resist 35		+$s1 Arcane Resistance.						
+14738	all		Increased Arcane Resist 36		+$s1 Arcane Resistance.						
+14739	all		Increased Arcane Resist 37		+$s1 Arcane Resistance.						
+14740	all		Increased Arcane Resist 38		+$s1 Arcane Resistance.						
+14741	all		Increased Arcane Resist 39		+$s1 Arcane Resistance.						
+14742	all		Increased Arcane Resist 40		+$s1 Arcane Resistance.						
+14743	spellbook	613	Focused Casting	Rank 1	When cast, you no longer lose casting time due to taking damage.  Lasts $d.	Cannot lose casting time from taking damage while casting Priest spells and increases chance to resist Interrupt effects by $s2%.					
+14744	all		Burning Spirit		Increases the damage dealt by the caster by $s1 for $d.	Damage dealt is increased by $s1.					
+14747	spellbook	613	Improved Inner Fire	Rank 1	Increases the armor bonus of your Inner Fire spell by $s1% and increases the number of charges by $s2.						
+14748	spellbook	613	Improved Power Word: Shield	Rank 1	Increases the damage absorbed by your Power Word: Shield by $s1%.						
+14749	spellbook	613	Improved Power Word: Fortitude	Rank 1	Increases the effect of your Power Word: Fortitude and Prayer of Fortitude spells by $s1%.						
+14750	spellbook	613	Improved Mana Burn	Rank 1	Reduces the casting time of your Mana Burn spell by $/1000;S1 sec.						
+14751	spellbook	613	Inner Focus		When activated, reduces the mana cost of your next spell by $s1% and increases its critical effect chance by $s2% if it is capable of a critical effect.	The mana cost of your next spell is reduced by $s1%.					
+14752	spellbook	613	Divine Spirit	Rank 1	Holy power infuses the target, increasing their Spirit by $s1 for $d.	Increases Spirit by $s1.					
+14767	spellbook	613	Improved Power Word: Fortitude	Rank 2	Increases the effect of your Power Word: Fortitude and Prayer of Fortitude spells by $s1%.						
+14768	spellbook	613	Improved Power Word: Shield	Rank 2	Increases the damage absorbed by your Power Word: Shield by $s1%.						
+14769	spellbook	613	Improved Power Word: Shield	Rank 3	Increases the damage absorbed by your Power Word: Shield by $s1%.						
+14770	spellbook	613	Improved Inner Fire	Rank 2	Increases the armor bonus of your Inner Fire spell by $s1% and increases the number of charges by $s2.						
+14771	spellbook	613	Improved Inner Fire	Rank 3	Increases the armor bonus of your Inner Fire spell by $s1% and increases the number of charges by $s2.						
+14772	spellbook	613	Improved Mana Burn	Rank 2	Reduces the casting time of your Mana Burn spell by $/1000;S1 sec.						
+14774	spellbook	613	Martyrdom	Rank 2	Gives you a $h% chance to gain the Focused Casting effect that lasts for $27828d after being the victim of a melee or ranged critical strike.  The Focused Casting effect prevents you from losing casting time when taking damage while casting Priest spells and increases resistance to Interrupt effects by $27828s2%.						
+14775	all		Stilled								
+14776	spellbook	613	Meditation	Rank 2	Allows $s1% of your mana regeneration to continue while casting.						
+14777	spellbook	613	Meditation	Rank 3	Allows $s1% of your mana regeneration to continue while casting.						
+14780	spellbook	613	Mental Agility	Rank 2	Reduces the mana cost of your instant cast spells by $s1%.						
+14781	spellbook	613	Mental Agility	Rank 3	Reduces the mana cost of your instant cast spells by $s1%.						
+14782	spellbook	613	Mental Agility	Rank 4	Reduces the mana cost of your instant cast spells by $s1%.						
+14783	spellbook	613	Mental Agility	Rank 5	Reduces the mana cost of your instant cast spells by $s1%.						
+14784	spellbook	613	Silent Resolve	Rank 2	Reduces the threat generated by your Holy and Discipline spells by $s1% and reduces the chance your spells will be dispelled by $s2%.						
+14785	spellbook	613	Silent Resolve	Rank 3	Reduces the threat generated by your Holy and Discipline spells by $s1% and reduces the chance your spells will be dispelled by $s2%.						
+14786	spellbook	613	Silent Resolve	Rank 4	Reduces the threat generated by your Holy and Discipline spells by $s1% and reduces the chance your spells will be dispelled by $s2%.						
+14787	spellbook	613	Silent Resolve	Rank 5	Reduces the threat generated by your Holy and Discipline spells by $s1% and reduces the chance your spells will be dispelled by $s2%.						
+14788	spellbook	613	Unbreakable Will	Rank 2	Increases your chance to resist Stun, Fear, and Silence effects by an additional $s1%.						
+14789	spellbook	613	Unbreakable Will	Rank 3	Increases your chance to resist Stun, Fear, and Silence effects by an additional $s1%.						
+14790	spellbook	613	Unbreakable Will	Rank 4	Increases your chance to resist Stun, Fear, and Silence effects by an additional $s1%.						
+14791	spellbook	613	Unbreakable Will	Rank 5	Increases your chance to resist Stun, Fear, and Silence effects by an additional $s1%.						
+14792	all		Venomhide Poison		Poisons an attacking enemy, also potentially splashing venom on its weapon.	Nature damage inflicted every $t1 sec.					
+14793	all		Increase Shadow Dam 23		Increases damage done by Shadow spells and effects by up to $s1.						
+14794	all		Increase Shadow Dam 24		Increases damage done by Shadow spells and effects by up to $s1.						
+14795	all		Venomhide Poison			Target takes $s1 nature damage every $t1 seconds.					
+14796	all		Burning Tar								
+14797	all		Burning Tar			$s1 Fire damage inflicted every $t1 sec.					
+14798	all		Increase Spell Dam 30		Increases damage and healing done by magical spells and effects by up to $s1.						
+14799	all		Increase Spell Dam 20		Increases damage and healing done by magical spells and effects by up to $s1.						
+14801	all		Idol Room Spawn C								
+14802	all		Idol Room Spawn B								
+14803	all		Increased Armor 200		+$s1 Armor.						
+14806	all		Bloodpetal Zapper		Zaps pests dead.						
+14807	spellbook	333	Greater Magic Wand		Creates a greater magic wand.						
+14809	spellbook	333	Lesser Mystic Wand		Creates a lesser mystic wand.						
+14810	spellbook	333	Greater Mystic Wand		Creates a greater mystic wand.						
+14813	all		Dark Iron Drunk Mug								
+14814	all		Throw Dark Iron Ale		Throw near a patron of the Grim Guzzler						
+14816	all		Empathy								
+14817	all		Increased 2H Axe		Increases two-handed axes skill rating by $s1.						
+14818	spellbook	613	Divine Spirit	Rank 2	Holy power infuses the target, increasing their Spirit by $s1 for $d.	Increases Spirit by $s1.					
+14819	spellbook	613	Divine Spirit	Rank 3	Holy power infuses the target, increasing their Spirit by $s1 for $d.	Increases Spirit by $s1.					
+14821	all		Self Stun - 15 seconds								
+14822	all		Drunken Rage			Attack speed increased by $s1%.					
+14823	all		Drinking								
+14824	all		Haste		Increases ranged attack speed by $s1%.						
+14825	all		Haste		Increases ranged attack speed by $s1%.						
+14826	all		Haste		Increases ranged attack speed by $s1%.						
+14827	all		Haste		Increases ranged attack speed by $s1%.						
+14828	all		Haste		Increases ranged attack speed by $s1%.						
+14829	all		Haste		Increases ranged attack speed by $s1%.						
+14847	all		Test Enchant Fire Weapon		Permanently enchant a melee weapon to do 8 additional points of fire damage.						
+14867	all		Untalent Visual Effect								
+14868	all		Curse of Agony		Curses an enemy with agony, inflicting Shadow damage every $t1 sec. over $d.	Shadow damage inflicted every $t1 sec.					
+14869	all		Drunken Stupor								
+14870	all		Drunken Stupor			Stunned.					
+14871	all		Shadow Bolt Misfire			Stunned.					
+14872	all		Drunken Rage		Increases the caster's attack speed by $s1% and increases the Physical damage it deals by $s2 for $d.	Attack speed increased by $s1%.\nPhysical damage dealt is increased by $s2.					
+14873	all		Sinister Strike		Inflicts normal damage plus $s1 to an enemy.						
+14874	all		Rupture		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+14875	all		Curse of Agony		Curses an enemy with agony, inflicting Shadow damage every $t1 sec. over $d. Only one curse per warlock can be active on any one target.	Shadow damage inflicted every $t1 sec.					
+14887	all		Shadow Bolt Volley		Hurls missiles of dark magic, inflicting Shadow damage to nearby enemies.						
+14888	all		Arei Transform		Transforms you into a real ancient!						
+14889	spellbook	56	Holy Specialization	Rank 1	Increases the critical effect chance of your Holy spells by $s1%.						
+14890	all		Dismounting Blow		Forces an enemy to dismount.	Forced to dismount.					
+14891	spellbook	186	Smelt Dark Iron		Allows the miner to smelt chunks of dark iron ore into a dark iron bar.  Smelting Dark Iron can only be done at the Black Forge in Blackrock Depths.						
+14892	spellbook	56	Inspiration	Rank 1	Increases your target's armor by $14893s1% for $14893d after getting a critical effect from your Flash Heal, Heal, Greater Heal, Binding Heal, Prayer of Healing, or Circle of Healing spell.						
+14893	all		Inspiration	Rank 1		Increases armor by $s1%.					
+14894	all		Smelt Dark Iron								
+14895	all		Overpower		Instantly overpowers an enemy, causing weapon damage plus $s1. Can only be used after the target dodges. Overpower cannot be blocked, dodged, or parried.						
+14897	all		Slowing Poison		Increases the time between an enemy's attacks by $s1% and slows its movement by $s2% for $d.	Time between attacks increased by $s1%.\nMovement speed reduced by $s2%.					
+14898	spellbook	56	Spiritual Healing	Rank 1	Increases the amount healed by your healing spells by $s1%.						
+14900	all		Chain Heal		Infuses a wounded ally with healing energy that spreads to another nearby ally. The spell affects up to $x1 targets, but the healing energy is diminished by 50% for each successive target.						
+14901	spellbook	56	Spiritual Guidance	Rank 1	Increases spell damage and healing by up to $s1% of your total Spirit.						
+14902	all		Cheap Shot		Stuns an enemy for $d. Must be stealthed. Awards $s2 combo $lpoint:points;.	Stunned.					
+14903	all		Rupture		Inflicts Physical damage to an enemy every $t1 sec. Additional combo points increase the periodic damage inflicted and the total duration.	Physical damage inflicted every $t1 sec.					
+14904	all		Master Healer	Rank 1	Reduces the casting time of your Heal and Greater Heal spells by $/1000;S1 sec.						
+14907	all		Frost Nova		Inflicts Frost damage to nearby enemies, immobilizing them for up to $d.	Immobilized.					
+14908	spellbook	56	Improved Renew	Rank 1	Increases the amount healed by your Renew spell by $s1%.						
+14909	spellbook	56	Searing Light	Rank 1	Increases the damage of your Smite and Holy Fire spells by $s1%.						
+14910	spellbook	78	Shadow Resilience	Rank 1	Reduces the chance you'll be critically hit by all spells by $s1%.						
+14911	spellbook	56	Healing Prayers	Rank 1	Reduces the mana cost of your Prayer of Healing and Prayer of Mending spell by $s1%.						
+14912	spellbook	56	Improved Healing	Rank 1	Reduces the mana cost of your Lesser Heal, Heal, and Greater Heal spells by $s1%.						
+14913	spellbook	56	Holy Focus	Rank 1	Gives you a $s1% chance to avoid interruption caused by damage while casting any Holy spell.						
+14914	spellbook	56	Holy Fire	Rank 1	Consumes the enemy in Holy flames that cause $s1 Holy damage and an additional $o2 Holy damage over $d.	$s2 Holy damage every $t2 seconds.					
+14915	all		Self Visual - Sleep Until Cancelled (DND)								
+14916	spellbook	270	Growl	Rank 2	Taunt the target, increasing the likelihood the creature will focus attacks on you.						
+14917	spellbook	270	Growl	Rank 3	Taunt the target, increasing the likelihood the creature will focus attacks on you.						
+14918	spellbook	270	Growl	Rank 4	Taunt the target, increasing the likelihood the creature will focus attacks on you.						
+14919	spellbook	270	Growl	Rank 5	Taunt the target, increasing the likelihood the creature will focus attacks on you.						
+14920	spellbook	270	Growl	Rank 6	Taunt the target, increasing the likelihood the creature will focus attacks on you.						
+14921	spellbook	270	Growl	Rank 7	Taunt the target, increasing the likelihood the creature will focus attacks on you.						
+14922	all		Growl	Rank 2	Taunt the target, increasing the likelihood the creature will focus attacks on you.						
+14923	all		Growl	Rank 3	Taunt the target, increasing the likelihood the creature will focus attacks on you.						
+14924	all		Growl	Rank 4	Taunt the target, increasing the likelihood the creature will focus attacks on you.						
+14925	all		Growl	Rank 5	Taunt the target, increasing the likelihood the creature will focus attacks on you.						
+14926	all		Growl	Rank 6	Taunt the target, increasing the likelihood the creature will focus attacks on you.						
+14927	all		Growl	Rank 7	Taunt the target, increasing the likelihood the creature will focus attacks on you.						
+14928	all		Nagmara's Love Potion								
+14929	all		Fill Nagmara's Vial		Fill at the Golakka crater in Un'Goro.						
+14930	spellbook	165	Quickdraw Quiver								
+14932	spellbook	165	Thick Leather Ammo Pouch								
+14934	all		Increased Spirit 35		+$s1 Spirit.						
+14935	all		Increased Agility 41		+$s1 Agility.						
+14936	all		Increased Agility 42		+$s1 Agility.						
+14937	all		Increased Agility 43		+$s1 Agility.						
+14938	all		Increased Agility 44		+$s1 Agility.						
+14939	all		Increased Agility 45		+$s1 Agility.						
+14940	all		Increased Agility 46		+$s1 Agility.						
+14941	all		Increased Intellect 41		+$s1 Intellect.						
+14942	all		Increased Intellect 42		+$s1 Intellect.						
+14943	all		Increased Intellect 43		+$s1 Intellect.						
+14944	all		Increased Intellect 44		+$s1 Intellect.						
+14945	all		Increased Intellect 45		+$s1 Intellect.						
+14946	all		Increased Intellect 46		+$s1 Intellect.						
+14947	all		Increased Spirit 41		+$s1 Spirit.						
+14948	all		Increased Spirit 42		+$s1 Spirit.						
+14949	all		Increased Spirit 43		+$s1 Spirit.						
+14950	all		Increased Spirit 44		+$s1 Spirit.						
+14951	all		Increased Spirit 45		+$s1 Spirit.						
+14952	all		Increased Spirit 46		+$s1 Spirit.						
+14953	all		Increased Stamina 41		+$s1 Stamina.						
+14954	all		Increased Stamina 42		+$s1 Stamina.						
+14955	all		Increased Stamina 43		+$s1 Stamina.						
+14956	all		Increased Stamina 44		+$s1 Stamina.						
+14957	all		Increased Stamina 45		+$s1 Stamina.						
+14958	all		Increased Stamina 46		+$s1 Stamina.						
+14959	all		Increased Strength 41		+$s1 Strength.						
+14960	all		Increased Strength 42		+$s1 Strength.						
+14961	all		Increased Strength 43		+$s1 Strength.						
+14962	all		Increased Strength 44		+$s1 Strength.						
+14963	all		Increased Strength 45		+$s1 Strength.						
+14964	all		Increased Strength 46		+$s1 Strength.						
+14965	all		Increased Arcane Resist 41		+$s1 Arcane Resistance.						
+14966	all		Increased Arcane Resist 42		+$s1 Arcane Resistance.						
+14967	all		Increased Arcane Resist 43		+$s1 Arcane Resistance.						
+14968	all		Increased Arcane Resist 44		+$s1 Arcane Resistance.						
+14969	all		Increased Arcane Resist 45		+$s1 Arcane Resistance.						
+14970	all		Increased Arcane Resist 46		+$s1 Arcane Resistance.						
+14971	all		Increased Fire Resist 41		+$s1 Fire Resistance.						
+14972	all		Increased Fire Resist 42		+$s1 Fire Resistance.						
+14973	all		Increased Fire Resist 43		+$s1 Fire Resistance.						
+14974	all		Increased Fire Resist 44		+$s1 Fire Resistance.						
+14975	all		Increased Fire Resist 45		+$s1 Fire Resistance.						
+14976	all		Increased Fire Resist 46		+$s1 Fire Resistance.						
+14977	all		Increased Frost Resist 41		+$s1 Frost Resistance.						
+14978	all		Increased Frost Resist 42		+$s1 Frost Resistance.						
+14979	all		Increased Frost Resist 43		+$s1 Frost Resistance.						
+14980	all		Increased Frost Resist 44		+$s1 Frost Resistance.						
+14981	all		Increased Frost Resist 45		+$s1 Frost Resistance.						
+14982	all		Increased Frost Resist 46		+$s1 Frost Resistance.						
+14983	spellbook	253	Vigor		Increases your maximum Energy by $s1 and your Energy regeneration by $s2%.						
+14984	all		Increased Nature Resist 41		+$s1 Nature Resistance.						
+14985	all		Increased Nature Resist 42		+$s1 Nature Resistance.						
+14986	all		Increased Nature Resist 43		+$s1 Nature Resistance.						
+14987	all		Increased Nature Resist 44		+$s1 Nature Resistance.						
+14988	all		Increased Nature Resist 45		+$s1 Nature Resistance.						
+14989	all		Increased Nature Resist 46		+$s1 Nature Resistance.						
+14990	all		Increased Shadow Resist 41		+$s1 Shadow Resistance.						
+14991	all		Increased Shadow Resist 42		+$s1 Shadow Resistance.						
+14992	all		Increased Shadow Resist 43		+$s1 Shadow Resistance.						
+14993	all		Increased Shadow Resist 44		+$s1 Shadow Resistance.						
+14994	all		Increased Shadow Resist 45		+$s1 Shadow Resistance.						
+14995	all		Increased Shadow Resist 46		+$s1 Shadow Resistance.						
+15007	all		Resurrection Sickness			Decreases all attributes by $s1% and all damage caused by $s2%.  You are currently worth no honor points to the enemy.					
+15008	spellbook	56	Holy Specialization	Rank 2	Increases the critical effect chance of your Holy spells by $s1%.						
+15009	spellbook	56	Holy Specialization	Rank 3	Increases the critical effect chance of your Holy spells by $s1%.						
+15010	spellbook	56	Holy Specialization	Rank 4	Increases the critical effect chance of your Holy spells by $s1%.						
+15011	spellbook	56	Holy Specialization	Rank 5	Increases the critical effect chance of your Holy spells by $s1%.						
+15012	spellbook	56	Holy Focus	Rank 2	Gives you a $s1% chance to avoid interruption caused by damage while casting any Holy spell.						
+15013	spellbook	56	Improved Healing	Rank 2	Reduces the mana cost of your Lesser Heal, Heal, and Greater Heal spells by $s1%.						
+15014	spellbook	56	Improved Healing	Rank 3	Reduces the mana cost of your Lesser Heal, Heal, and Greater Heal spells by $s1%.						
+15017	spellbook	56	Searing Light	Rank 2	Increases the damage of your Smite and Holy Fire spells by $s1%.						
+15018	spellbook	56	Healing Prayers	Rank 2	Reduces the mana cost of your Prayer of Healing and Prayer of Mending spell by $s1%.						
+15020	spellbook	56	Improved Renew	Rank 2	Increases the amount healed by your Renew spell by $s1%.						
+15024	all		Master Healer	Rank 2	Reduces the casting time of your Heal and Greater Heal spells by $/1000;S1 sec.						
+15025	all		Master Healer	Rank 3	Reduces the casting time of your Heal and Greater Heal spells by $/1000;S1 sec.						
+15026	all		Master Healer	Rank 4	Reduces the casting time of your Heal and Greater Heal spells by $/1000;S1 sec.						
+15027	all		Master Healer	Rank 5	Reduces the casting time of your Heal and Greater Heal spells by $/1000;S1 sec.						
+15028	spellbook	56	Spiritual Guidance	Rank 2	Increases spell damage and healing by up to $s1% of your total Spirit.						
+15029	spellbook	56	Spiritual Guidance	Rank 3	Increases spell damage and healing by up to $s1% of your total Spirit.						
+15030	spellbook	56	Spiritual Guidance	Rank 4	Increases spell damage and healing by up to $s1% of your total Spirit.						
+15031	spellbook	56	Spiritual Guidance	Rank 5	Increases spell damage and healing by up to $s1% of your total Spirit.						
+15033	all		Summon Ancient Spirits		Summons ancient spirits in the Irontree Woods.						
+15036	all		Flametongue Totem Effect	Rank 4							
+15037	all		Attack		Deals Fire damage to the target.						
+15038	all		Scorching Totem		Summons a Scorching Totem at the caster's feet. Totem lasts $d. and attacks a nearby enemy every 2 sec.						
+15039	all		Flame Shock		Instantly burns an enemy, then inflicts additional Fire damage every $t2 sec. for $d.	Fire damage inflicted every $t2 sec.					
+15040	all		Molten Blast		Burns an enemy, inflicting Fire damage.						
+15041	all		Fire Ward		Surrounds the caster with a shield that lasts $d. and can absorb a fixed amount of Fire damage.	Shielded against Fire damage.					
+15042	all		Curse of Blood		Increases the Physical damage taken by an enemy for $d.	Physical damage taken is increased.					
+15043	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+15044	all		Frost Ward		Surrounds the caster with a shield that lasts $d. and can absorb a fixed amount of Frost damage.	Shielded against Frost damage.					
+15047	spellbook	6	Ice Shards	Rank 3	Increases the critical strike damage bonus of your Frost spells by $s1%.						
+15048	spellbook	778	Pet Bombling		Right Click to summon and dismiss your bomb.						
+15049	spellbook	778	Lil' Smoky		Right Click to summon and dismiss your robot.						
+15050	all		Psychometry								
+15051	all		Distract Move								
+15052	spellbook	6	Ice Shards	Rank 4	Increases the critical strike damage bonus of your Frost spells by $s1%.						
+15053	spellbook	6	Ice Shards	Rank 5	Increases the critical strike damage bonus of your Frost spells by $s1%.						
+15054	all		Distract Test		Throws a distraction, attracting the attention of all nearby monsters for $s1 seconds.  Does not break stealth.						
+15055	all		Distract Test		Throws a distraction, attracting the attention of all nearby monsters for $s1 seconds.  Does not break stealth.						
+15056	all		Distract Move								
+15057	all		Mechanical Patch Kit		Restores $s1 health to a friendly mechanical target						
+15058	spellbook	237	Arcane Instability	Rank 1	Increases your spell damage and critical strike chance by $s1%.						
+15059	spellbook	237	Arcane Instability	Rank 2	Increases your spell damage and critical strike chance by $s1%.						
+15060	spellbook	237	Arcane Instability	Rank 3	Increases your spell damage and critical strike chance by $s1%.						
+15061	all		Enrage			Physical damage dealt is increased by $s1.\nAttack speed increased by $s2%.					
+15062	all		Shield Wall		Reduces the Physical and magical damage taken by the caster by $s1% for $d.	Physical and magical damage taken is reduced by $s1%.					
+15063	all		Frost Nova		Inflicts Frost damage to nearby enemies, immobilizing them for up to $d.	Immobilized.					
+15064	all		Nagmara + Rocknot								
+15065	all		Create Tablet Transcript								
+15066	all		Create PX83-Enigmatron		Use in the Tomb of the Seven in Blackrock Depths.						
+15067	spellbook	778	Sprite Darter Hatchling		Right Click to summon and dismiss your sprite darter hatchling.						
+15068	all		TEST Heal Self		Heal yourself for $s1.						
+15087	all		Evasion		Increases the rogue's chance to dodge by $s1% for $d.	Chance to dodge increased by $s1%.					
+15088	all		Flurry		Increases your attack speed by 30% for your next 3 swings after dealing a critical strike.						
+15089	all		Frost Shock		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+15090	all		Dispel Magic		Dispels magic on the target, removing $s1 harmful $lspell:spells; from an ally or $s1 beneficial $lspell:spells; from an enemy.						
+15091	all		Blast Wave		Unleashes a wave of flame, inflicting Fire damage to nearby enemies and reducing their movement speed for $d.	Reduced movement speed.					
+15092	all		Summon Voidwalkers		Summons Voidwalker Minions.						
+15093	all		Summon Voidwalkers		Summons Voidwalker Minions.						
+15094	all		Summon Voidwalkers		Summons Voidwalker Minions.						
+15095	all		Molten Blast		Burns an enemy, inflicting Fire damage.						
+15096	all		Flame Shock		Instantly burns an enemy, then inflicts additional Fire damage every $t2 sec. for $d.	Fire damage inflicted every $t2 sec.					
+15097	all		Enrage								
+15107	spellbook	373	Windwall Totem	Rank 1	Summons a Windwall Totem with $s1 health at the feet of the caster.  The totem protects party members within $15108a1 yards, reducing ranged damage taken by $15108s1.  Lasts $d.						
+15108	all		Windwall	Rank 1		Reduces ranged damage taken by $s1.					
+15109	all		Windwall	Rank 2		Reduces ranged damage taken by $s1.					
+15110	all		Windwall	Rank 3		Reduces ranged damage taken by $s1.					
+15111	spellbook	373	Windwall Totem	Rank 2	Summons a Windwall Totem with $s1 health at the feet of the caster.  The totem protects party members within $15109a1 yards, reducing ranged damage taken by $15109s1.  Lasts $d.						
+15112	spellbook	373	Windwall Totem	Rank 3	Summons a Windwall Totem with $s1 health at the feet of the caster.  The totem protects party members within $15110a1 yards, reducing ranged damage taken by $15110s1.  Lasts $d.						
+15114	all		Summon Illusionary Dreamwatchers		Summons $s1 $lIllusionary Dreamwatcher:Illusionary Dreamwatchers; to aid the caster in battle for $d.						
+15117	all		Chain Lightning		Strikes an enemy with a lightning bolt that arcs to another nearby enemy. The spell affects up to $x1 targets, causing Nature damage to each.						
+15118	all		Place Threshadon Carcass		Place upon the Flat Un'Goro Rock.						
+15119	all		Apply Seduction Gland		Apply to the Preserved Threshadon Carcass.						
+15120	all		Cenarion Beacon								
+15122	all		Counterspell		Counters an enemy's spell, preventing the enemy from casting that spell again for $d. Generates a high amount of threat.						
+15123	all		Resist Fire		Increases an ally's Fire resistance by $s1 for $d.	Fire resistance increased by $s1.\n\nRemoved in Raid Instances.					
+15124	all		Arcane Bolt		Hurls a magical bolt at an enemy, inflicting Arcane damage.						
+15125	all		Scarshield Portal		Opens a portal into the Twisting Nether that periodically summons demonic minions to aid the caster in battle for $d.						
+15126	all		Summon Burning Imp		Summons a Burning Imp for $d.						
+15127	all		Summon Burning Imp								
+15128	all		Mark of Flames		Increases the Fire damage taken by an enemy by $s1 for $d.	Fire damage dealt is increased by $s1.					
+15167	all		Windsor's Frenzy		Causes friendly units within a $a1 yard radius to attack $m1% faster.	Friendly units within a $a1 yard radius to attack $m1% faster.					
+15187	all		Create Sparkling Stone								
+15207	spellbook	375	Lightning Bolt	Rank 9	Casts a bolt of lightning at the target for $s1 Nature damage.						
+15208	spellbook	375	Lightning Bolt	Rank 10	Casts a bolt of lightning at the target for $s1 Nature damage.						
+15211	all		Create Pylon User's Manual								
+15227	all		Clear Boom Bot Aura								
+15228	all		Fireball		Inflicts Fire damage to an enemy.						
+15229	all		Crystal Restore		Heals the target of $o1 damage over $d.	Healing $s1 damage every $t1 seconds.					
+15230	all		Arcane Bolt		Hurls a magical bolt at an enemy, inflicting Arcane damage.						
+15231	all		Crystal Force		Increases the target's Spirit by $s1 for $d. Guardian Elixir.	Spirit increased by $s1. Guardian Elixir.					
+15232	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+15233	all		Crystal Ward		Increases the target's Armor by $s1 for $d. Guardian Elixir.	Increases armor by $s1. Guardian Elixir.					
+15234	all		Lightning Bolt		Blasts an enemy with lightning, inflicting Nature damage.						
+15235	all		Crystal Yield		Decreases an enemy target's Armor by $s1 for $d.	Armor decreased by $s1 for $d.					
+15236	all		Shock		Instantly throws a bolt of lightning at an enemy, inflicting Nature damage.						
+15237	spellbook	56	Holy Nova	Rank 1	Causes an explosion of holy light around the caster, causing $s1 Holy damage to all enemy targets within $a1 yards and healing all party members within $23455a1 yards for $23455s1.  These effects cause no threat.						
+15238	all		Holy Smite		Smites an enemy, inflicting Holy damage.						
+15239	all		Crystal Charge		Inflicts $s1 fire damage to targets in a 3 yard radius.						
+15241	all		Scorch		Scorches an enemy for Fire damage.						
+15242	all		Fireball		Inflicts Fire damage to an enemy.						
+15243	all		Fireball Volley		Inflicts Fire damage to nearby enemies.						
+15244	all		Cone of Cold		Inflicts Frost damage to enemies in a cone in front of the caster, reducing their movement speed for $d.	Reduced movement speed.					
+15245	all		Shadow Bolt Volley		Hurls missiles of dark magic, inflicting Shadow damage to nearby enemies.						
+15247	all		Conjure Fel Salve								
+15248	all		Shank		Inflicts normal damage plus $s1 to an enemy when attacking from behind.						
+15249	all		Machine Gun		Fires at an enemy, inflicting Physical damage.						
+15250	all		Setup								
+15252	all		Keg Trap								
+15253	all		Arcane Explosion		Sends out a blast wave of magic, inflicting Arcane damage to nearby enemies.						
+15254	all		Arcane Bolt		Hurls a magical bolt at an enemy, inflicting Arcane damage.						
+15255	spellbook	202	Mechanical Repair Kit								
+15257	spellbook	78	Shadow Weaving	Rank 1	Your Shadow damage spells have a $s1% chance to cause your target to be vulnerable to Shadow damage.  This vulnerability increases the Shadow damage dealt to your target by $15258s1% and lasts $15258d.  Stacks up to $15258u times.						
+15258	all		Shadow Vulnerability	Rank 1		Increases Shadow damage taken by $s1%.					
+15259	spellbook	78	Darkness	Rank 1	Increases your Shadow spell damage by $s1%.						
+15260	spellbook	78	Shadow Focus	Rank 1	Reduces your target's chance to resist your Shadow spells by $s1%.						
+15261	spellbook	56	Holy Fire	Rank 8	Consumes the enemy in Holy flames that cause $s1 Holy damage and an additional $o2 Holy damage over $d.	$s2 Holy damage every $t2 seconds.					
+15262	spellbook	56	Holy Fire	Rank 2	Consumes the enemy in Holy flames that cause $s1 Holy damage and an additional $o2 Holy damage over $d.	$s2 Holy damage every $t2 seconds.					
+15263	spellbook	56	Holy Fire	Rank 3	Consumes the enemy in Holy flames that cause $s1 Holy damage and an additional $o2 Holy damage over $d.	$s2 Holy damage every $t2 seconds.					
+15264	spellbook	56	Holy Fire	Rank 4	Consumes the enemy in Holy flames that cause $s1 Holy damage and an additional $o2 Holy damage over $d.	$s2 Holy damage every $t2 seconds.					
+15265	spellbook	56	Holy Fire	Rank 5	Consumes the enemy in Holy flames that cause $s1 Holy damage and an additional $o2 Holy damage over $d.	$s2 Holy damage every $t2 seconds.					
+15266	spellbook	56	Holy Fire	Rank 6	Consumes the enemy in Holy flames that cause $s1 Holy damage and an additional $o2 Holy damage over $d.	$s2 Holy damage every $t2 seconds.					
+15267	spellbook	56	Holy Fire	Rank 7	Consumes the enemy in Holy flames that cause $s1 Holy damage and an additional $o2 Holy damage over $d.	$s2 Holy damage every $t2 seconds.					
+15268	spellbook	78	Blackout	Rank 1	Gives your Shadow damage spells a $h% chance to stun the target for $15269d.						
+15269	all		Blackout	Rank 1		Stunned.					
+15270	spellbook	78	Spirit Tap	Rank 1	Gives you a $h% chance to gain a $15271s1% bonus to your Spirit after killing a target that yields experience or honor.  For the duration, your mana will regenerate at a $15271s2% rate while casting.  Lasts $15271d.						
+15271	all		Spirit Tap	Rank 1		Spirit increased by $s1% and allows $s2% of mana regeneration while casting.					
+15272	spellbook	78	Shadow Affinity	Rank 2	Reduces the threat generated by your Shadow spells by $s1%.						
+15273	spellbook	78	Improved Mind Blast	Rank 1	Reduces the cooldown of your Mind Blast spell by $/1000;S1 sec.						
+15274	spellbook	78	Improved Fade	Rank 1	Decreases the cooldown of your Fade ability by 3 sec.						
+15275	spellbook	78	Improved Shadow Word: Pain	Rank 1	Increases the duration of your Shadow Word: Pain spell by $/1000;s1 sec.						
+15276	all		Opening Bar Door		Open locked bar door.						
+15277	all		Seal of Reckoning		Surrounds an ally with a seal that lasts $d. Every time the sealed character strikes an enemy, the sealed character gains health.	Gaining health every time an enemy is struck.					
+15278	all		Seal of Reckoning Effect								
+15279	all		Crystal Spire		A crystal shield surrounds the friendly target, doing $s1 damage to anyone who hits $ghim:her;.  Lasts $d.	Causes $s1 nature damage to attackers.					
+15280	all		Cleave Armor		Reduces targets armor by $s1 for $d.	Armor reduced by $s1.					
+15281	all		Encage Emberseer								
+15282	all		Encaged Emberseer								
+15283	all		Stunning Blow		Stuns target for $d.	Stunned.					
+15284	all		Cleave		Inflicts $s1% of normal melee damage to an enemy and its nearest allies, affecting up to $x1 targets.						
+15285	all		Fireball Volley		Inflicts Fire damage to nearby enemies.						
+15286	spellbook	78	Vampiric Embrace		Afflicts your target with Shadow energy that causes all party members to be healed for $s1% of any Shadow spell damage you deal for $d.	$s1% of Shadow spell damage caused by casting priest heals the priest's group.					
+15288	all		Fury of Ragnaros		Increases the magical damage dealt by an ally by $s1 for $d.	Magical damage dealt is increased by $s1.					
+15290	all		Vampiric Embrace		Fills you with the embrace of Shadow energy, causing you to be healed for $15286s1% and other party members to be healed for $/5;15286s1% of any Shadow spell damage you deal for $15286d.	$15286s1% of Shadow spell damage caused by casting priest heals the priest and $/5;15286s1% heals the group.					
+15292	spellbook	164	Dark Iron Pulverizer								
+15293	spellbook	164	Dark Iron Mail								
+15294	spellbook	164	Dark Iron Sunderer								
+15295	spellbook	164	Dark Iron Shoulders								
+15296	spellbook	164	Dark Iron Plate								
+15303	all		DEBUG Create Samophlange Manual		Join the cover and 5 pages to create the Samophlange Manual.						
+15304	all		DEBUG Create Samophlange Manual		Join the cover and 5 pages to create the Samophlange Manual.						
+15305	all		Chain Lightning		Strikes an enemy with a lightning bolt that arcs to another nearby enemy. The spell affects up to $x1 targets, inflicting greater Nature damage to each successive target.						
+15306	all		Shock		Instantly throws a bolt of lightning at an enemy, inflicting Nature damage.						
+15307	spellbook	78	Darkness	Rank 2	Increases your Shadow spell damage by $s1%.						
+15308	spellbook	78	Darkness	Rank 3	Increases your Shadow spell damage by $s1%.						
+15309	spellbook	78	Darkness	Rank 4	Increases your Shadow spell damage by $s1%.						
+15310	spellbook	78	Darkness	Rank 5	Increases your Shadow spell damage by $s1%.						
+15311	spellbook	78	Improved Fade	Rank 2	Decreases the cooldown of your Fade ability by 6 sec.						
+15312	spellbook	78	Improved Mind Blast	Rank 2	Reduces the cooldown of your Mind Blast spell by $/1000;S1 sec.						
+15313	spellbook	78	Improved Mind Blast	Rank 3	Reduces the cooldown of your Mind Blast spell by $/1000;S1 sec.						
+15314	spellbook	78	Improved Mind Blast	Rank 4	Reduces the cooldown of your Mind Blast spell by $/1000;S1 sec.						
+15316	spellbook	78	Improved Mind Blast	Rank 5	Reduces the cooldown of your Mind Blast spell by $/1000;S1 sec.						
+15317	spellbook	78	Improved Shadow Word: Pain	Rank 2	Increases the duration of your Shadow Word: Pain spell by $/1000;s1 sec.						
+15318	spellbook	78	Shadow Affinity	Rank 1	Reduces the threat generated by your Shadow spells by $s1%.						
+15320	spellbook	78	Shadow Affinity	Rank 3	Reduces the threat generated by your Shadow spells by $s1%.						
+15323	spellbook	78	Blackout	Rank 2	Gives your Shadow damage spells a $h% chance to stun the target for $15269d.						
+15324	spellbook	78	Blackout	Rank 3	Gives your Shadow damage spells a $h% chance to stun the target for $15269d.						
+15325	spellbook	78	Blackout	Rank 4	Gives your Shadow damage spells a $h% chance to stun the target for $15269d.						
+15326	spellbook	78	Blackout	Rank 5	Gives your Shadow damage spells a $h% chance to stun the target for $15269d.						
+15327	spellbook	78	Shadow Focus	Rank 2	Reduces your target's chance to resist your Shadow spells by $s1%.						
+15328	spellbook	78	Shadow Focus	Rank 3	Reduces your target's chance to resist your Shadow spells by $s1%.						
+15329	spellbook	78	Shadow Focus	Rank 4	Reduces your target's chance to resist your Shadow spells by $s1%.						
+15330	spellbook	78	Shadow Focus	Rank 5	Reduces your target's chance to resist your Shadow spells by $s1%.						
+15331	spellbook	78	Shadow Weaving	Rank 2	Your Shadow damage spells have a $s1% chance to cause your target to be vulnerable to Shadow damage.  This vulnerability increases the Shadow damage dealt to your target by $15258s1% and lasts $15258d.  Stacks up to $15258u times.						
+15332	spellbook	78	Shadow Weaving	Rank 3	Your Shadow damage spells have a $s1% chance to cause your target to be vulnerable to Shadow damage.  This vulnerability increases the Shadow damage dealt to your target by $15258s1% and lasts $15258d.  Stacks up to $15258u times.						
+15333	all		Shadow Weaving	Rank 4	Your Shadow damage spells have a $s1% chance to cause your target to be vulnerable to Shadow damage.  This vulnerability increases the Shadow damage dealt to your target by $15258s1% and lasts $15258d.  Stacks up to $15258u times.						
+15334	all		Shadow Weaving	Rank 5	Your Shadow damage spells have a $s1% chance to cause your target to be vulnerable to Shadow damage.  This vulnerability increases the Shadow damage dealt to your target by $15258s1% and lasts $15258d.  Stacks up to $15258u times.						
+15335	spellbook	78	Spirit Tap	Rank 2	Gives you a $h% chance to gain a $15271s1% bonus to your Spirit after killing a target that yields experience or honor.  For the duration, your mana will regenerate at a $15271s2% rate while casting.  Lasts $15271d.						
+15336	spellbook	78	Spirit Tap	Rank 3	Gives you a $h% chance to gain a $15271s1% bonus to your Spirit after killing a target that yields experience or honor.  For the duration, your mana will regenerate at a $15271s2% rate while casting.  Lasts $15271d.						
+15337	spellbook	78	Spirit Tap	Rank 4	Gives you a $h% chance to gain a $15271s1% bonus to your Spirit after killing a target that yields experience or honor.  For the duration, your mana will regenerate at a $15271s2% rate while casting.  Lasts $15271d.						
+15338	spellbook	78	Spirit Tap	Rank 5	Gives you a $h% chance to gain a $15271s1% bonus to your Spirit after killing a target that yields experience or honor.  For the duration, your mana will regenerate at a $15271s2% rate while casting.  Lasts $15271d.						
+15340	all		Lesser Arcane Amalgamation		Permanently adds 150 mana to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.						
+15341	all		Nagmara's Vanish								
+15342	all		Create Windblossom Berries								
+15343	all		Create Whipper Root Tubers								
+15344	all		Create Night Dragon's Breath								
+15345	all		Item +Mana Leg R1								
+15346	all		Seal of Reckoning		Surrounds an ally with a seal that lasts $d. Every time the sealed character strikes an enemy, the sealed character gains health.	Gaining health every time an enemy is struck.					
+15347	all		Seal of Reckoning Effect		Heals the caster for a small amount.						
+15349	spellbook	56	Spiritual Healing	Rank 2	Increases the amount healed by your healing spells by $s1%.						
+15354	spellbook	56	Spiritual Healing	Rank 3	Increases the amount healed by your healing spells by $s1%.						
+15355	spellbook	56	Spiritual Healing	Rank 4	Increases the amount healed by your healing spells by $s1%.						
+15356	spellbook	56	Spiritual Healing	Rank 5	Increases the amount healed by your healing spells by $s1%.						
+15357	all		Inspiration	Rank 2		Increases armor by $s1%.					
+15359	all		Inspiration	Rank 3		Increases armor by $s1%.					
+15362	spellbook	56	Inspiration	Rank 2	Increases your target's armor by $15357s1% for $15357d after getting a critical effect from your Flash Heal, Heal, Greater Heal, Binding Heal, Prayer of Healing, or Circle of Healing spell.						
+15363	spellbook	56	Inspiration	Rank 3	Increases your target's armor by $15359s1% for $15359d after getting a critical effect from your Flash Heal, Heal, Greater Heal, Binding Heal, Prayer of Healing, or Circle of Healing spell.						
+15366	all		Songflower Serenade		Increases critical strike rating by $s1 and all attributes by $s2 for $d.	Increases critical strike rating by $s1 and all attributes by $s2.\n\nRemoved in Raid Instances.					
+15367	all		Increased Armor 130		+$s1 Armor.						
+15388	all		Item +HP Leg R1								
+15389	all		Lesser Arcane Amalgamation		Permanently adds 100 hit points to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.						
+15390	all		Item +AC Leg R1								
+15391	all		Lesser Arcane Amalgamation		Permanently adds 125 armor to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.						
+15392	spellbook	78	Improved Psychic Scream	Rank 1	Reduces the cooldown of your Psychic Scream spell by $/1000;s1 sec.						
+15393	all		Item +FR Leg R1								
+15394	all		Lesser Arcane Amalgamation		Permanently adds 20 fire resistance to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.						
+15396	all		Item +STR Leg R1								
+15397	all		Lesser Arcane Amalgamation		Permanently adds 8 strength to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.						
+15398	all		Psychic Scream		The caster lets out a psychic scream, causing an enemy to be frozen in fear for $d.	Frozen in Fear.					
+15399	all		Item +STA Leg R1								
+15400	all		Lesser Arcane Amalgamation		Permanently adds 8 stamina to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.						
+15401	all		Item +AGI Leg R1								
+15402	all		Lesser Arcane Amalgamation		Permanently adds 8 agility to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.						
+15403	all		Item +INT Leg R1								
+15404	all		Lesser Arcane Amalgamation		Permanently adds 8 intellect to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.						
+15405	all		Item +SPI Leg R1								
+15406	all		Lesser Arcane Amalgamation		Permanently adds 8 spirit to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.						
+15407	spellbook	78	Mind Flay	Rank 1	Assault the target's mind with Shadow energy, causing $o1 Shadow damage over $d and slowing their movement speed by $s2%.	Movement speed slowed by $s2%.					
+15408	all		Item +MANA/FR Leg R2								
+15427	all		Greater Arcane Amalgamation								
+15428	all		Item +HP/FR Leg R2								
+15429	all		Greater Arcane Amalgamation								
+15430	spellbook	56	Holy Nova	Rank 2	Causes an explosion of holy light around the caster, causing $s1 Holy damage to all enemy targets within $a1 yards and healing all party members within $23458a1 yards for $23458s1.  These effects cause no threat.						
+15431	spellbook	56	Holy Nova	Rank 3	Causes an explosion of holy light around the caster, causing $s1 Holy damage to all enemy targets within $a1 yards and healing all party members within $23459a1 yards for $23459s1.  These effects cause no threat.						
+15437	all		Item +AC/FR Leg R2								
+15438	all		Thorns	Rank 1	When struck in combat inflicts $s1 Arcane damage to the attacker.						
+15439	all		Greater Arcane Amalgamation								
+15440	all		Item +STR/FR Leg R2								
+15441	all		Greater Arcane Amalgamation								
+15442	all		Item +STA/FR Leg R2								
+15444	all		Greater Arcane Amalgamation								
+15445	all		Item +AGI/FR Leg R2								
+15446	all		Greater Arcane Amalgamation								
+15447	all		Item +INT/FR Leg R2								
+15448	spellbook	78	Improved Psychic Scream	Rank 2	Reduces the cooldown of your Psychic Scream spell by $/1000;s1 sec.						
+15449	all		Greater Arcane Amalgamation								
+15450	all		Improved Psychic Scream	Rank 3	Decreases an enemy's chance to resist your Psychic Scream spell by $s1%.						
+15451	all		Arcane Bolt		Hurls a magical bolt at an enemy, inflicting Arcane damage.						
+15453	all		Arcane Explosion		Sends out a blast wave of magic, inflicting Arcane damage to nearby enemies.						
+15456	all		Item +SPI/FR Leg R2								
+15458	all		Greater Arcane Amalgamation								
+15461	all		Item +STR/STA Leg R3								
+15462	all		Item +AC/FR Leg R3								
+15463	all		Legendary Arcane Amalgamation								
+15464	all		Increased Hit Chance 1		Improves your chance to hit with melee and ranged attacks by $s1%.						
+15465	all		Increased Hit Chance 2		Improves your chance to hit with melee and ranged attacks by $s1%.						
+15466	all		Increased Hit Chance 3		Improves your chance to hit with melee and ranged attacks by $s1%.						
+15467	all		Increased Hit Rating 40		Increases your hit rating by $s1.						
+15468	all		Increased Hit Rating 50		Increases your hit rating by $s1.						
+15470	all		Curse of Tongues		Forces nearby enemies to speak in Demonic, reducing their casting speed by $s1% for $d. Only one curse per warlock can be active on any one target.	Casting speed reduced by $s1%.					
+15471	all		Enveloping Web		Immobilizes an enemy, increases the time between its attacks by $s2%, and prevents it from casting spells for $d.	Unable to move or cast spells.\nTime between attacks increased by $s2%.					
+15472	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+15473	spellbook	78	Shadowform		Assume a Shadowform, increasing your Shadow damage by $s2% and reducing Physical damage done to you by $s3%.  However, you may not cast Holy spells while in this form.	Shadow damage you deal increased by $s2%.  Physical damage you take reduced by $s3%.  You may not cast Holy spells.					
+15474	all		Web Explosion		Immobilizes nearby enemies for $d.	Immobilized.					
+15475	all		Baneful Poison		Inflicts $s2 Nature damage and additional Nature damage every $t1 sec. to nearby enemies for $d.	Nature damage inflicted every $t1 sec.					
+15487	spellbook	78	Silence		Silences the target, preventing them from casting spells for $d.	Silenced.					
+15488	all		Item +MANA/FR Leg R3								
+15489	all		Item +INT/SPI Leg R3								
+15490	all		Legendary Arcane Amalgamation								
+15491	all		Collect Blessed Water		Fill in the Temple of the Moon.						
+15493	all		Holy Light		Calls upon Holy magic to heal an ally.						
+15494	all		Fury of Forgewright		Grants $s2 extra attacks on your next swing.	Infused with the spirit of Franclorn Forgewright. You may only speak in Dwarvish.					
+15495	all		Explosive Shot		Inflicts weapon damage and $s1 additional Fire damage to an enemy and any of its nearby allies.						
+15496	all		Cleave		Inflicts $s1% of normal melee damage to an enemy and its nearest ally.						
+15497	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+15498	all		Holy Smite		Smites an enemy, inflicting Holy damage.						
+15499	all		Frost Shock		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+15500	all		Shock		Instantly throws a bolt of lightning at an enemy, inflicting Nature damage.						
+15501	all		Earth Shock		Shocks an enemy with concussive force, inflicting Nature damage and interrupting the spell being cast for $d.						
+15502	all		Sunder Armor		Hacks at nearby enemies, reducing their armor by $s1 per Sunder Armor. Can be applied up to 5 times. Lasts $d.	Reduced armor.					
+15503	all		Drink Healing Potion		Uses a Holy elixir to heal the caster.						
+15504	all		Drink Healing Potion		Uses a Holy elixir to heal the caster.						
+15505	all		Immolate		Burns an enemy, then inflicts additional Fire damage every $t1 sec. for $d.	Fire damage inflicted every $t1 sec.					
+15506	all		Immolate								
+15507	all		Lightning Shield		Surrounds the caster with $n balls of lightning that have a $h% chance of striking melee or ranged attackers for Nature damage. Each time the lightning shield strikes, a ball of lightning dissipates. Thus, the shield expires after $d. or after it has struck $n times.	$h% chance of inflicting $s1 Nature damage on hit.					
+15508	all		Increased Armor 120		+$s1 Armor.						
+15529	all		Gout of Flame		Periodically inflicting $15538s1 Fire damage to enemies in a cone in front of the caster.	Periodically inflicting $15538s1 Fire damage to enemies in a cone in front of the caster.					
+15530	all		Frostbolt		Inflicts Frost damage to an enemy and reduces its movement speed for $d.	Reduced movement speed.					
+15531	all		Frost Nova		Inflicts Frost damage to nearby enemies, immobilizing them for up to $d.	Immobilized.					
+15532	all		Frost Nova		Inflicts Frost damage to nearby enemies, immobilizing them for up to $d.	Immobilized.					
+15533	all		Stoned - Channel Cast Visual								
+15534	all		Polymorph		Transforms an enemy into a sheep, forcing it to wander around for up to $d. While wandering, the sheep cannot attack or cast spells. Any damage will transform the target back into its normal form. Only one target can be polymorphed at a time. Only works on beasts, dragons, giants, humanoids, and critters.	Cannot attack or cast spells.					
+15535	all		Enveloping Winds	Rank 1	Surrounds an enemy with a cyclone for up to $d. If the target takes any damage, it will break free of the imprisoning winds.	Stunned.					
+15536	all		Fireball		Inflicts Fire damage to an enemy.						
+15537	all		Shadow Bolt		Hurls a bolt of dark magic at an enemy, inflicting Shadow damage.						
+15538	all		Gout of Flame		Periodically inflicting $15538s1 Fire damage to enemies in a cone in front of the caster.						
+15539	all		Conjure Staff of Command								
+15547	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+15548	all		Thunderclap		Inflicts Nature damage to nearby enemies, increasing the time between their attacks and slowing their movement for $d.	Time between attacks increased by $s3%.\nMovement speed reduced by $s2%.					
+15549	all		Chained Bolt		Strikes an enemy with a lightning bolt that arcs to another nearby enemy. The spell affects up to $x1 targets, causing Nature damage to each.						
+15550	all		Trample		Inflicts Physical damage to nearby enemies.						
+15567	all		Flametongue Weapon (Passive)	Rank 2							
+15568	all		Flametongue Weapon (Passive)	Rank 3							
+15569	all		Flametongue Weapon (Passive)	Rank 4							
+15570	all		Immolate		Burns an enemy, then inflicts additional Fire damage every $t1 sec. for $d.	Fire damage inflicted every $t1 sec.					
+15571	all		Dazed		A concussive strike that reduces movement speed by $s1%.	Dazed.					
+15572	all		Sunder Armor		Hacks at an enemy's armor, reducing it more per Sunder Armor. Can be applied up to 5 times. Lasts $d.	Reduced armor.					
+15573	all		Fire Blast								
+15574	all		Fire Blast		Inflicts Fire damage to an enemy.						
+15575	all		Flame Cannon		Inflicts Fire damage to an enemy.						
+15576	all		Whirlwind		Attacks nearby enemies in a whirlwind of steel that inflicts normal damage plus $s1.						
+15577	all		Whirlwind		Attacks nearby enemies in a whirlwind of steel that inflicts normal damage plus $s1.						
+15578	all		Whirlwind		Attacks nearby enemies in a whirlwind of steel that inflicts normal damage plus $s1.						
+15580	all		Strike		Strikes at an enemy, inflicting increased melee damage.						
+15581	all		Sinister Strike		Inflicts normal damage plus a bonus to an enemy.						
+15582	all		Backstab		Inflicts normal damage plus $s1 to an enemy, but only if attacking from behind.						
+15583	all		Rupture		Inflicts Physical damage to an enemy every $t1 sec. for $d.	Physical damage inflicted every $t1 sec.					
+15585	all		Prayer of Healing		Invokes Holy magic to heal nearby party members.						
+15586	all		Heal		Calls upon Holy magic to heal an ally.						
+15587	all		Mind Blast		Inflicts Shadow damage to an enemy.						
+15588	all		Thunderclap		Inflicts Nature damage to nearby enemies, increasing the time between their attacks and slowing their movement for $d.	Time between attacks increased by $s3%.\nMovement speed reduced by $s2%.					
+15589	all		Whirlwind		Attacks nearby enemies in a whirlwind of steel that inflicts normal damage plus a bonus.						
+15590	spellbook	473	Fist Weapons								
+15591	all		Revive Ringo		Revive Ringo with water.						
+15592	all		Firebolt		Blasts a target for $s1 Fire damage.						
+15593	all		War Stomp		Inflicts Physical damage to nearby enemies, knocking them back and stunning them for $d.	Stunned.					
+15594	all		Force of Will		When struck in combat has a 1% chance of reducing all melee damage taken by 25 for 10 sec.						
+15595	all		Force of Will		Melee damage taken reduced by 25.	Melee damage taken reduced by 25.					
+15596	spellbook	333	Smoking Heart of the Mountain		This item binds to you upon being crafted.						
+15598	all		Firebolt	Rank 1	Blasts the enemy for $s1 Fire damage.						
+15599	all		Firebolt		Has a 5% chance on striking the enemy for $9057s1 Fire damage.						
+15600	all		Hand of Justice		2% chance on melee hit to gain 1 extra attack.						
+15601	all		Hand of Justice		An extra attack.	An extra attack.					
+15602	all		Lord General's Sword		Increases attack power by $s1 for $d.	Attack power increased by $s1.					
+15603	all		Healer Trinket		When struck in combat has a 2% chance of gaining 260 mana.						
+15604	all		Second Wind		Restores $s1 mana every $t1 sec for $d.	Restores $s1 mana every $t1 sec.					
+15605	all		Shock		Instantly throws a bolt of lightning at an enemy, inflicting Nature damage.						
+15607	all		Throw		Throws a weapon at an enemy, inflicting Physical damage.						
+15608	all		Ravenous Claw		Drains $s1 health from an enemy, transferring it to the caster.						
+15609	all		Hooked Net		Immobilizes nearby enemies for $d. and inflicts Physical damage.	Immobilized.					
+15610	all		Kick		Kicks an enemy for $s1 damage, interrupting the spell being cast for $d.						
+15611	all		Lizard Bolt		Inflicts Nature damage to an enemy.						
+15612	all		Lizard Bolt		Inflicts Nature damage to an enemy.						
+15614	all		Kick		Kicks an enemy dealing damage, interrupting the spell being cast for $d.						
+15615	all		Pummel		Pummels an enemy for $s1 damage and interrupts the spell being cast for $d.						
+15616	all		Flame Shock		Instantly burns an enemy, then inflicts additional Fire damage every $t2 sec. for $d.	Fire damage inflicted every $t2 sec.					
+15617	all		Shank		Inflicts normal damage plus $s1 to an enemy when attacking from behind.						
+15618	all		Snap Kick		Inflicts $s2 damage to an enemy, stunning it for $d.	Stunned.					
+15619	all		Throw Wrench		Throws a wrench at an enemy, inflicting Physical damage.						
+15620	all		Shoot		Shoots at an enemy, inflicting Physical damage.						
+15621	all		Skull Crack		Inflicts weapon damage plus additional damage to an enemy, stunning it for $d.	Stunned.					
+15627	all		Applying the Lure		Lures out the queen of the Gorishi hive when used on a Gorishi Silithid Crystal.						
+15628	spellbook	202	Pet Bombling		This item binds to you upon being crafted.						
+15629	spellbook	163	Distracting Shot	Rank 3	Distract the target, causing threat.  More effective than Distracting Shot (Rank 2).						
+15630	spellbook	163	Distracting Shot	Rank 4	Distract the target, causing threat.  More effective than Distracting Shot (Rank 3).						
+15631	spellbook	163	Distracting Shot	Rank 5	Distract the target, causing threat.  More effective than Distracting Shot (Rank 4).						
+15632	spellbook	163	Distracting Shot	Rank 6	Distract the target, causing threat.  More effective than Distracting Shot (Rank 5).						
+15633	spellbook	202	Lil' Smoky		This item binds to you upon being crafted.						
+15636	all		Avatar of Flame		Surrounds the caster in flames for $d., giving the caster magic immunity and the ability to inflict $15643s1 Fire damage to an enemy on attack.	Immune to magic.\nInflicting $15643s1 Fire damage on attack.					
+15641	all		Ironfoe		Melee critical-hit chance increased by $s1%.						
+15642	all		Ironfoe		Melee critical-hit chance increased by $s1%.	Melee critical-hit chance increased by $s1%.					
+15643	all		Flames		Deals Fire damage to the current target.						
+15646	all		Burst of Knowledge	Rank 1	Reduces mana cost of all spells by 100 for $d.	Reduced mana cost.					
+15647	all		Summon Common Kitten		Release the kitten near the Jadefire Satyrs' corrupted moonwell.						
+15648	spellbook	778	Corrupted Kitten		Right Click to summon and dismiss your cat.						
+15649	all		Collect Corrupted Water		Fill at the Jadefire Satyrs' corrupted moonwell.						
+15650	all		Flame Attack Visual								
+15651	all		Flame Attack Visual Effect								
+15652	all		Head Smash		Inflicts normal damage plus $s1 on an enemy, stunning it for $d.	Stunned.					
+15653	all		Acid Spit		Inflicts Nature damage to an enemy.						
+15654	all		Shadow Word: Pain		Utters a word of darkness, inflicting Shadow damage to an enemy every $t1 sec. for $d.	Shadow damage inflicted every $t1 sec.					
+15655	all		Shield Slam		Inflicts damage to an enemy, stunning it for $d.	Stunned.					
+15656	all		Poisonous Stab		Inflicts $s3 Nature damage to an enemy every $t3 sec., increasing the time between its attacks by $s1% and its movement by $s2% for $d.	$s3 Nature damage inflicted every $t3 sec.\nTime between attacks increased by $s1%.\nMovement speed reduced by $s2%.					
+15657	all		Backstab		Inflicts normal damage plus $s1 to an enemy, but only if attacking from behind.						
+15658	all		Wake Up Princess								
+15659	all		Chain Lightning		Strikes an enemy with a lightning bolt that arcs to another nearby enemy. The spell affects up to $x1 targets, causing Nature damage to each.						
+15660	all		Princess Saved								
+15661	all		Immolate		Burns an enemy, then inflicts additional Fire damage every $t1 sec. for $d.	Fire damage inflicted every $t1 sec.					
+15662	all		Fireball		Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.	$s2 Fire damage every $t2 sec.					
+15664	all		Venom Spit		Spits poison at an enemy, inflicting Nature damage, then additional damage every $t2 sec. for $d.	Nature damage inflicted every $t2 sec.					
+15665	all		Fireball		Inflicts Fire damage to an enemy.						
+15666	all		Increased Armor 100		+$s1 Armor.						
+15667	all		Sinister Strike		Inflicts normal damage plus $s1 to an enemy.						
+15668	all		Fiery Burst		Inflicts Fire damage to all enemies in a selected area.						
+15687	all		Increased Armor 250		+$s1 Armor.						
+15688	all		Beast Slaying 42		Increases attack power by $s1 when fighting Beasts.						
+15689	all		Beast Slaying 105		Increases attack power by $s1 when fighting Beasts.						
+15690	all		Mind Control								
+15691	all		Eviscerate		Finishing move that causes damage.						
+15692	all		Eviscerate		Eviscerates an enemy, inflicting $s1 Physical damage.						
+15693	all		Increased Armor 150		+$s1 Armor.						
+15694	all		Increased 1H Mace		Increases mace skill rating by $s1.						
