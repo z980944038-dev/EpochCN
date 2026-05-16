@@ -536,16 +536,6 @@ EpochCN 是永久免费的开源项目，但持续维护需要成本：
 
 如果 EpochCN 让你的游戏体验更好了，欢迎请开发者喝杯咖啡 ☕
 
-### 💚 微信 / 支付宝
-
-收款码图片可放入 `docs/donate_wechat.png` 与 `docs/donate_alipay.png`。上传后 GitHub README 会自动展示二维码。
-
-<!--
-<p align="center">
-  <img src="docs/donate_wechat.png" alt="微信支付" width="240" />
-  <img src="docs/donate_alipay.png" alt="支付宝" width="240" />
-</p>
--->
 
 ### 🧡 爱发电
 
