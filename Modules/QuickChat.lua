@@ -217,6 +217,28 @@ EpochCN:RegisterModule("QuickChat", function(E)
     return "SAY"
   end
 
+  local VALID_CHAT_TYPES = {
+    SAY = true,
+    PARTY = true,
+    RAID = true,
+    GUILD = true,
+    YELL = true,
+    WHISPER = true,
+    CHANNEL = true,
+  }
+
+  local function ResolveChatType(channel)
+    if not channel or channel == "" or channel == "AUTO" then
+      return GetChatTarget()
+    end
+    channel = string.upper(tostring(channel))
+    if VALID_CHAT_TYPES[channel] then
+      return channel
+    end
+    E:Debug("QuickChat 未知聊天类型，已回退到 SAY: " .. tostring(channel))
+    return "SAY"
+  end
+
   local function SubstituteParam(text, param)
     if param and param ~= "" then
       text = string.gsub(text, "%%s", param)
@@ -245,7 +267,7 @@ EpochCN:RegisterModule("QuickChat", function(E)
   local function SendPhrase(phrase, channel, target, param)
     local cn = SubstituteParam(phrase[2], param)
     local en = SubstituteParam(phrase[3], param)
-    channel = channel or GetChatTarget()
+    channel = ResolveChatType(channel)
 
     local toSend
     if EpochCNDB.social.quickChatBilingual then
@@ -261,7 +283,11 @@ EpochCN:RegisterModule("QuickChat", function(E)
       end
     end
 
-    if channel == "WHISPER" and target then
+    if channel == "WHISPER" then
+      if not target or target == "" then
+        E:Print("|cffff6666请先选中一个玩家目标。|r")
+        return
+      end
       SendChatMessage(toSend, "WHISPER", nil, target)
     elseif channel == "CHANNEL" then
       local n = E.GetChineseChannelNumber and E:GetChineseChannelNumber()
