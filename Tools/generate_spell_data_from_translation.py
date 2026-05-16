@@ -591,6 +591,16 @@ def localize_description(
     tip_en = normalize_text(row.get("tooltip_en"))
     desc_zh = normalize_text(row.get("description_zh"))
     tip_zh = normalize_text(row.get("tooltip_zh"))
+    skill_line_ids = set((row.get("skill_line_ids") or "").split(","))
+
+    if skill_line_ids & {"38", "39", "253"}:
+        desc = sanitize_display_text(desc_zh)
+        tip = sanitize_display_text(tip_zh)
+        if not desc:
+            return tip
+        if not tip or tip == desc or tip in desc:
+            return desc
+        return desc + "\n\n效果：" + tip
 
     if spell_id in MANUAL_ID_DESCRIPTIONS:
         desc = MANUAL_ID_DESCRIPTIONS[spell_id]

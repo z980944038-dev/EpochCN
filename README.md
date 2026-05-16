@@ -52,7 +52,7 @@
 - 世界地图显示队友的任务标记状态
 - Auto-sync quest progress within party
 
-### � 社交系统 Social System (NEW)
+###   社交系统 Social System (NEW)
 - **华人玩家发现**：自动发现同样安装了 EpochCN 的中文玩家，目标框和 Tooltip 标记
 - **中文公共频道**：自动加入 EpochCN 频道，`/cn` 快捷发送消息
 - **组队招募板**：中文玩家专属 LFG 系统，发布/浏览/申请一站式组队
@@ -61,7 +61,7 @@
 - **用户反馈**：游戏内提交翻译错误/建议，导出到 GitHub Issues
 - Auto-discover Chinese players, LFG board, quick phrases, contact book
 
-### �🔔 自动更新提醒 Update Notifications
+###  🔔 自动更新提醒 Update Notifications
 - 公会/队伍内自动广播版本号
 - 发现新版本时在游戏内弹窗提醒
 - In-game update notifications via guild/party version broadcasting
@@ -146,6 +146,65 @@ EpochCN 现已支持通过命令行参数或环境变量覆盖本地数据源路
 ---
 
 ## 🏷️ 版本记录 / Changelog
+
+### v0.7.2 — 2026-05-17 界面与技能文本精修
+
+- **设置中心重构**
+  - 设置面板改为左侧分类导航 + 右侧分页内容，减少长列表堆叠
+  - 按 `基础汉化`、`地图任务`、`社交协作`、`工具维护` 四类重新组织功能
+  - 保留全部原有开关、快捷入口和维护工具，不改变配置字段
+- **盗贼法术文本精修**
+  - 精修盗贼技能线 `38 / 39 / 253` 共 408 条法术书数据
+  - 将 `$s1`、`${...}` 等客户端变量改写为可读的具体数值描述
+  - 重新生成 `SpellData_Epoch.lua` 与 `SpellRaw_Epoch.lua`
+- **组队招募板修复**
+  - 修复滚动条模板默认脚本调用 `SetVerticalScroll` 导致的报错
+  - 打开 LFG 面板时不再触发滚动框兼容性错误
+- **小地图按钮修复**
+  - 将按钮主图标改为旧客户端稳定存在的书本图标，并增加文字兜底
+  - 设置面板改为打开时按需创建，避免初始化异常阻断小地图按钮创建
+
+### v0.7.1 — 社交系统重写
+
+- **修复多个社交模块的功能 bug**
+  - `QuickChat` 致命闭包 bug：`StripRealmName` 定义在 `/qcw` 处理函数之后，导致 `/qcw <玩家> <快捷码>` 调用时崩溃
+  - `Settings` 社交配置污染顶层：`social_enabled_ui` 等键被写入 `EpochCNDB` 顶层而非嵌套在 `social` 子表
+  - `Social.BlockPlayer` 计数器可能变负数；`HELLO` 消息被广播给所有人而非定向通知目标
+  - `ChineseChannel.JoinCNChannel` 泄漏到全局；玩家手动 `/leave` 后 `joined` 标志不复位
+  - `LFGBoard.newEntryNotified` 永不清理导致内存泄漏；`OK` 与 `DTK` 副本代码冲突
+  - `LFGBoard` 列表只显示前 8 条无滚动；`QuickChat` `string.find("^list")` 误命中 `liste`
+- **Social 模块完整重写**
+  - 心跳协议 v2：`HB2:版本|等级|职业|种族|阵营|公会|区域|状态` 携带完整社交信息（向下兼容 v1）
+  - 通讯录数据结构升级：`firstSeen`、`encounterCount`、`tags[]`、`note`、`source` 多维标签
+  - 状态广播：AFK/DND 状态变化、公会变更、跨区时立即重发心跳（5 秒冷却）
+  - 上线提醒节流：每分钟最多 6 条，避免登录潮刷屏
+  - 心跳抖动：±30 秒随机偏移避免广播洪峰
+  - 三标签页面板（在线 / 通讯录 / 黑名单）+ 分页 + 搜索栏 + 主动 PING
+- **ChineseChannel 模块完整重写**
+  - 用 `ListChannelByName` + `CHAT_MSG_CHANNEL_LIST` 拉取真实成员快照（`/cn refresh`），不再只显示发过言的人
+  - 用 `channelNumber` 而非 `channelName` 比对（3.3.5 后者经常为空）
+  - 加入失败有限重试（4 次）+ 指数退避，不再无限循环
+  - 周期性自动刷新成员列表（每 60 秒）
+- **LFGBoard 模块完整重写**
+  - 协议 v2：`POST2:` 携带发布者等级/职业，列表里显示职业颜色
+  - UI 重做：滚动列表（最多 80 条）+ 类型/角色/搜索过滤栏 + 详细发布表单
+  - 申请追踪：24 小时内不重复发送申请密语
+   - 副本数据库扩充：经典/TBC/WotLK 全副本含中文名、类型、推荐等级
+- **QuickChat 模块完整重写**
+  - 短语库扩充到 **130+ 条**，9 大类：组队/交易/战斗/副本/团本/PvP/社交/趣味/专业
+  - 修复闭包 bug；`/qc list` 改为精确匹配
+  - 新增 `/qc find <关键词>` 关键字搜索短语
+  - 新增 `/qcr` 重发上一条、`/qcc` 在中文频道发送
+  - 面板重做：左侧分类列 + 右侧短语网格 + 搜索栏 + 频道选择 + 双语切换
+  - 新增「最近使用」与「自定义」标签页
+- **Settings 社交配置区扩展**
+  - 新增 `CreateNestedCheck` 帮助器，社交开关存储在 `EpochCNDB.social` 子表，不再污染顶层
+  - 社交设置区从 4 项扩展到 13 项：目标图标、Tooltip 标签、上线通知、呼吸灯、密语自动入册、智能密语翻译、自动公会标签、双语模式、只提醒一次
+  - 新增 4 个面板快捷按钮：中文玩家 / 组队招募 / 快捷短语 / 反馈建议
+  - 一次性清理老版本污染顶层的 `social_*_ui` 残留键
+- **新增独立社交模块测试 `Tools/test_social.lua`**
+  - 不依赖完整 `test_load.lua`，加载 stub 后单独跑 50+ 项断言
+  - 覆盖：所有公开 API、所有斜杠命令、所有面板 Toggle、协议编码/解码
 
 ### v0.7.0 — 社交系统
 
@@ -434,7 +493,7 @@ EpochCN/
 │   ├── QuickChat.lua      # 快捷短语系统
 │   ├── Feedback.lua       # 用户反馈收集
 │   └── ...
-├── docs/                # 文档资源（收款码等）
+├── docs/                # 文档资源
 └── Tools/               # 数据生成与审计工具
     ├── build_epochcn.py
     ├── extract_feedback.py
