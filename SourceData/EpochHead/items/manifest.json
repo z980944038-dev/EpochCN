@@ -10,9 +10,9 @@
   "details": {
     "file": "items.json",
     "count": 16706,
-    "greenItemCount": 6492,
+    "greenItemCount": 6632,
     "errorCount": 0,
-    "sha256": "d10e02e3a57342e2d57b09747160d2811723c9d89e7c16f067f6ca261b2754fb"
+    "sha256": "c9a0d21d35a549515f37cbcdd661ecfdc97625609d903207b9d68809998aed67"
   },
   "schema": {
     "list": [

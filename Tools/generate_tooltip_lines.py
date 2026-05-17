@@ -14,6 +14,7 @@ SNAPSHOT = ROOT / "SourceData" / "EpochHead" / "items" / "items.json"
 OUT = ROOT / "Data" / "TooltipLineData.lua"
 ITEM_GENERATOR = ROOT / "Tools" / "generate_epoch_items.py"
 OVERRIDES = ROOT / "Tools" / "tooltip_line_overrides.json"
+EFFECT_LINE_RE = re.compile(r"^(?:Equip|Use|Chance on hit|Set):|^\(\d+\)\s*Set:", re.I)
 
 
 spec = importlib.util.spec_from_file_location("generate_epoch_items", ITEM_GENERATOR)
@@ -227,6 +228,31 @@ RECIPE_PREFIXES = (
 
 def has_ascii_letters(text: str) -> bool:
     return bool(re.search(r"[A-Za-z]", text or ""))
+
+
+def iter_effect_lines(item: dict) -> list[str]:
+    """Return all lines that can appear as green/effect tooltip text in game."""
+    lines: list[str] = []
+    seen: set[str] = set()
+
+    for raw in item.get("green") or []:
+        raw = str(raw or "").strip()
+        if raw and raw not in seen:
+            seen.add(raw)
+            lines.append(raw)
+
+    for row in item.get("tooltip") or []:
+        if not isinstance(row, dict):
+            continue
+        raw = str(row.get("text") or "").strip()
+        if not raw or raw in seen:
+            continue
+        color = str(row.get("color") or "")
+        if color == "green" or EFFECT_LINE_RE.search(raw):
+            seen.add(raw)
+            lines.append(raw)
+
+    return lines
 
 
 def lua_escape(text: str) -> str:
@@ -588,6 +614,16 @@ def translate_contextual(line: str, item: dict, cn_name: str, objective_names: d
     if exact and not has_ascii_letters(exact):
         return exact
 
+    numbered_set = re.match(r"^\((\d+)\)\s*Set:\s*(.+)$", line, re.I)
+    if numbered_set:
+        unnumbered = "Set: " + numbered_set.group(2).strip()
+        base_set = items_gen.translate_tooltip_line(unnumbered, objective_names)
+        if base_set and not has_ascii_letters(base_set):
+            return f"({numbered_set.group(1)}) {base_set}"
+        custom_set = translate_effect_with_prefix(unnumbered)
+        if custom_set and not has_ascii_letters(custom_set):
+            return f"({numbered_set.group(1)}) {finish(custom_set)}"
+
     base = items_gen.translate_tooltip_line(line, objective_names)
     if base and not has_ascii_letters(base):
         return base
@@ -614,7 +650,7 @@ def main() -> None:
     owners: dict[str, int] = {}
     for item in sorted(items, key=lambda row: int(row["id"])):
         cn_name = context_item_name(item, existing_items, name_map, objective_names)
-        for raw in item.get("green") or []:
+        for raw in iter_effect_lines(item):
             raw = (raw or "").strip()
             if not raw or raw in translations:
                 continue
@@ -623,7 +659,7 @@ def main() -> None:
                 translations[raw] = translated
                 owners[raw] = int(item["id"])
 
-    all_green = sorted({line.strip() for item in items for line in item.get("green") or [] if line and line.strip()})
+    all_green = sorted({line.strip() for item in items for line in iter_effect_lines(item) if line and line.strip()})
     missing = [line for line in all_green if line not in translations]
 
     lines = [

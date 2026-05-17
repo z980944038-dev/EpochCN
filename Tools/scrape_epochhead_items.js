@@ -233,6 +233,7 @@ function loadExistingDetails() {
 }
 
 function classifyTooltipText(text) {
+  if (/^\(\d+\)\s*Set:/.test(text)) return "green";
   if (/^(Use|Equip|Chance on hit):/.test(text)) return "green";
   if (/^"[^"]+"$/.test(text)) return "yellow";
   return "normal";
@@ -313,7 +314,7 @@ async function fetchDetail(item) {
     name: title,
     description,
     tooltip,
-    green: tooltip.filter(line => line.color === "green").map(line => line.text).concat(parseGreenLines(html))
+    green: tooltip.filter(line => line.color === "green" || classifyTooltipText(line.text) === "green").map(line => line.text).concat(parseGreenLines(html))
       .filter((line, index, lines) => line && lines.indexOf(line) === index),
   };
 }
