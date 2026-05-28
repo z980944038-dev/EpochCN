@@ -253,18 +253,24 @@ EpochCN:RegisterModule("UpdateChecker", function(E)
         -- Check embedded version file
         CheckEmbeddedVersion()
 
-        -- Start periodic broadcast timer
+        -- Start periodic broadcast timer — 广播后自动 Hide 停止 OnUpdate
         local broadcaster = CreateFrame("Frame")
+        local function DoBroadcast()
+          if IsInGuild() then BroadcastVersion("GUILD") end
+          local pn = GetNumPartyMembers and GetNumPartyMembers() or 0
+          if pn > 0 then BroadcastVersion("PARTY") end
+          local rn = GetNumRaidMembers and GetNumRaidMembers() or 0
+          if rn > 0 then BroadcastVersion("RAID") end
+        end
         broadcaster.elapsed = 0
         broadcaster:SetScript("OnUpdate", function(self, elapsed)
           self.elapsed = self.elapsed + elapsed
           if self.elapsed >= BROADCAST_INTERVAL then
             self.elapsed = 0
-            if IsInGuild() then BroadcastVersion("GUILD") end
-            local n = GetNumPartyMembers and GetNumPartyMembers() or 0
-            if n > 0 then BroadcastVersion("PARTY") end
-            local r = GetNumRaidMembers and GetNumRaidMembers() or 0
-            if r > 0 then BroadcastVersion("RAID") end
+            DoBroadcast()
+            -- 广播完成后 Hide 停止 OnUpdate，短暂 Show 重新开始计时
+            self:Hide()
+            self:Show()
           end
         end)
 

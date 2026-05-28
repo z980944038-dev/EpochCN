@@ -1,4 +1,4 @@
-﻿-- Test SanitizeDBCTokens
+-- Test SanitizeDBCTokens
 local function SanitizeDBCTokens(text)
     if type(text) ~= "string" or text == "" then return text end
     text = string.gsub(text, "%$%b{}", "")

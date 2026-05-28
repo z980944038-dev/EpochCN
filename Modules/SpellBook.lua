@@ -89,7 +89,7 @@ EpochCN:RegisterModule("SpellBook", function(E)
       local tab = getglobal("SpellBookSkillLineTab" .. i)
       if tab and not tab.EpochCNTooltipPatched then
         tab.EpochCNTooltipPatched = true
-        tab:SetScript("OnEnter", function(self)
+        tab:HookScript("OnEnter", function(self)
           local text = self.tooltip
 
           if (not text or text == "") and GetSpellTabInfo and self.GetID then
@@ -104,7 +104,7 @@ EpochCN:RegisterModule("SpellBook", function(E)
           GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
           GameTooltip:SetText(text)
         end)
-        tab:SetScript("OnLeave", function()
+        tab:HookScript("OnLeave", function()
           GameTooltip:Hide()
         end)
       end
@@ -114,7 +114,7 @@ EpochCN:RegisterModule("SpellBook", function(E)
       local tab = getglobal("SpellBookFrameTabButton" .. i)
       if tab and not tab.EpochCNTooltipPatched then
         tab.EpochCNTooltipPatched = true
-        tab:SetScript("OnEnter", function(self)
+        tab:HookScript("OnEnter", function(self)
           local label = self.GetText and self:GetText()
           local text
 
@@ -133,7 +133,7 @@ EpochCN:RegisterModule("SpellBook", function(E)
           GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
           GameTooltip:SetText(text, 1.0, 1.0, 1.0)
         end)
-        tab:SetScript("OnLeave", function()
+        tab:HookScript("OnLeave", function()
           GameTooltip:Hide()
         end)
       end

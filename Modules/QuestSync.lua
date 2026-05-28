@@ -154,15 +154,15 @@ EpochCN:RegisterModule("QuestSync", function(E)
     lastLocalState = state
 
     local stamp = tostring(time()) .. tostring(math.random(1000, 9999))
-    SendAddonMessage(prefix, "BEGIN:" .. stamp, channel)
+    pcall(SendAddonMessage, prefix, "BEGIN:" .. stamp, channel)
     for questID, quest in pairs(state) do
       local objectiveParts = {}
       for index, objective in ipairs(quest.objectives or {}) do
         objectiveParts[index] = string.format("%d/%d/%d", objective.current or 0, objective.total or 0, objective.finished and 1 or 0)
       end
-      SendAddonMessage(prefix, string.format("Q:%s:%d:%d:%s", stamp, questID, quest.complete and 1 or 0, table.concat(objectiveParts, ",")), channel)
+      pcall(SendAddonMessage, prefix, string.format("Q:%s:%d:%d:%s", stamp, questID, quest.complete and 1 or 0, table.concat(objectiveParts, ",")), channel)
     end
-    SendAddonMessage(prefix, "END:" .. stamp, channel)
+    pcall(SendAddonMessage, prefix, "END:" .. stamp, channel)
   end
 
   local function QueueBroadcast(force)
@@ -272,7 +272,7 @@ EpochCN:RegisterModule("QuestSync", function(E)
 
       local stamp = string.match(message, "^BEGIN:(.+)$")
       if stamp then
-        incoming[sender] = { stamp = stamp, quests = {} }
+        incoming[sender] = { stamp = stamp, quests = {}, startTime = time() }
         return
       end
 
@@ -331,7 +331,7 @@ EpochCN:RegisterModule("QuestSync", function(E)
       pendingRequest = false
       local channel = GetGroupChannel()
       if channel and SendAddonMessage then
-        SendAddonMessage(prefix, "REQ", channel)
+        pcall(SendAddonMessage, prefix, "REQ", channel)
       end
     end
 
@@ -342,5 +342,13 @@ EpochCN:RegisterModule("QuestSync", function(E)
     end
 
     syncTimer = 0
+
+    -- 清理超时的 incoming 条目（BEGIN 后 30 秒未收到 END 则丢弃）
+    local now = time()
+    for sender, data in pairs(incoming) do
+      if data.startTime and (now - data.startTime) > 30 then
+        incoming[sender] = nil
+      end
+    end
   end)
 end)

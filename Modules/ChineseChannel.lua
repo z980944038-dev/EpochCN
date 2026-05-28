@@ -1,5 +1,5 @@
 -- ChineseChannel.lua  v2  (EpochCN 0.7.1)
--- 中文公共聊天频道：自动加入 EpochCN 频道，提供 /cn 快捷发送、真实成员列表、加入退出事件追踪
+-- 中文公共聊天频道：自动加入 china 频道，提供 /cn 快捷发送、真实成员列表、加入退出事件追踪
 --
 -- 修复点：
 --   * 老版用 channel name 字段比对，但 3.3.5 的 CHAT_MSG_CHANNEL_JOIN/LEAVE 的 channelName
@@ -17,7 +17,7 @@ EpochCN:RegisterModule("ChineseChannel", function(E)
   ---------------------------------------------------------------------------
   -- 常量
   ---------------------------------------------------------------------------
-  local CHANNEL_NAME      = "EpochCN"
+  local CHANNEL_NAME      = "china"
   local INITIAL_DELAY     = 8         -- 登录后延迟（秒）
   local JOIN_RETRY_MAX    = 4         -- 加入失败重试次数
   local LIST_REFRESH_INTV = 60        -- 主动拉取成员快照间隔（秒）
@@ -42,6 +42,9 @@ EpochCN:RegisterModule("ChineseChannel", function(E)
   local initialized   = false
 
   local frame = CreateFrame("Frame")
+  -- 共享一次性定时器 frame，避免每次重试都创建新 frame
+  local timerFrame = CreateFrame("Frame")
+  timerFrame:Hide()
 
   ---------------------------------------------------------------------------
   -- 工具
@@ -71,7 +74,7 @@ EpochCN:RegisterModule("ChineseChannel", function(E)
   end
 
   ---------------------------------------------------------------------------
-  -- 频道窗口可见性（确保 EpochCN 频道消息显示在聊天窗口里）
+  -- 频道窗口可见性（确保中文频道消息显示在聊天窗口里）
   ---------------------------------------------------------------------------
   local function EnableChannelForChatWindow(windowID)
     if not windowID then return end
@@ -119,14 +122,16 @@ EpochCN:RegisterModule("ChineseChannel", function(E)
 
   local function ScheduleJoinRetry(delay)
     delay = delay or 2
-    local retry = CreateFrame("Frame")
-    retry.elapsed = 0
-    retry:SetScript("OnUpdate", function(self, e)
+    timerFrame.elapsed = 0
+    timerFrame.timerDelay = delay
+    timerFrame.timerCallback = JoinCNChannel
+    timerFrame:SetScript("OnUpdate", function(self, e)
       self.elapsed = self.elapsed + e
-      if self.elapsed < delay then return end
-      self:SetScript("OnUpdate", nil)
-      JoinCNChannel()
+      if self.elapsed < self.timerDelay then return end
+      self:Hide()  -- 停止 OnUpdate
+      if self.timerCallback then self.timerCallback() end
     end)
+    timerFrame:Show()  -- 启动 OnUpdate
   end
 
   function JoinCNChannel()
@@ -149,26 +154,33 @@ EpochCN:RegisterModule("ChineseChannel", function(E)
     if not JoinChannelByName then return end
     pcall(JoinChannelByName, CHANNEL_NAME)
 
-    -- 1.5 秒后检查是否成功
-    local checker = CreateFrame("Frame")
-    checker.elapsed = 0
-    checker:SetScript("OnUpdate", function(self, e)
-      self.elapsed = self.elapsed + e
-      if self.elapsed < 1.5 then return end
-      self:SetScript("OnUpdate", nil)
+    -- 1.5 秒后检查是否成功（复用共享定时器）
+    timerFrame.elapsed = 0
+    timerFrame.timerDelay = 1.5
+    timerFrame.timerCallback = function()
       local result = ResolveChannelNumber()
       if result > 0 then
         channelNum = result
         joined = true
         EnsureChannelVisible()
         RequestMemberList()
+        if E.BroadcastSocialHeartbeat then E:BroadcastSocialHeartbeat() end
+        -- 加入成功后启动周期刷新
+        if refreshFrame then refreshFrame:Show() end
         E:Print("|cff33ffcc已加入中文频道|r [" .. CHANNEL_NAME .. "] (/" .. result .. ")")
         E:Print("|cff888888使用 /cn <消息> 或 /" .. result .. " <消息> 发送到中文频道。|r")
       else
         E:Debug("ChineseChannel: 第 " .. joinAttempts .. " 次加入失败，将重试。")
         ScheduleJoinRetry(2 * joinAttempts)  -- 退避
       end
+    end
+    timerFrame:SetScript("OnUpdate", function(self, e)
+      self.elapsed = self.elapsed + e
+      if self.elapsed < self.timerDelay then return end
+      self:Hide()
+      if self.timerCallback then self.timerCallback() end
     end)
+    timerFrame:Show()
   end
 
   ---------------------------------------------------------------------------
@@ -453,7 +465,7 @@ EpochCN:RegisterModule("ChineseChannel", function(E)
     if event == "PLAYER_ENTERING_WORLD" then
       if initialized then return end
       initialized = true
-      -- 延迟加入
+      -- 延迟加入（使用主 frame 的 OnUpdate，加入后自动切换到 nil）
       self.joinDelay = 0
       self:SetScript("OnUpdate", function(s, e)
         s.joinDelay = (s.joinDelay or 0) + e
@@ -501,14 +513,17 @@ EpochCN:RegisterModule("ChineseChannel", function(E)
     end
   end)
 
-  -- 周期刷新成员列表（轻量）
+  -- 周期刷新成员列表（轻量）—— 初始隐藏，加入频道后才启动
   local refreshFrame = CreateFrame("Frame")
-  refreshFrame:SetScript("OnUpdate", function(_, e)
+  refreshFrame:Hide()  -- 初始隐藏，加入频道成功后 Show()
+  refreshFrame:SetScript("OnUpdate", function(self, e)
     listRefreshTimer = listRefreshTimer + e
     if listRefreshTimer < LIST_REFRESH_INTV then return end
     listRefreshTimer = 0
     if joined and ResolveChannelNumber() > 0 then
       RequestMemberList()
+    else
+      self:Hide()  -- 未加入频道时停止 OnUpdate
     end
   end)
 

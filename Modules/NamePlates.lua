@@ -1,4 +1,9 @@
 EpochCN:RegisterModule("NamePlates", function(E)
+  EpochCNDB.nameplates = EpochCNDB.nameplates or {}
+  if EpochCNDB.nameplates.keepFriendlyAndEnemyNames == nil then
+    EpochCNDB.nameplates.keepFriendlyAndEnemyNames = true
+  end
+
   local nameMap = {}
   local nameMapBuilt = false
   local elvHooked = false
@@ -206,7 +211,32 @@ EpochCN:RegisterModule("NamePlates", function(E)
   local elapsedSinceScan = 0
   local worldFrameScanTimer = 0
   local elvRefreshTimer = 0
+  local cvarGuardTimer = 0
   local cachedElvNP  -- 缓存 ElvUI NamePlates 模块引用，避免每帧 pcall
+
+  local nameDisplayCVars = {
+    "nameplateShowEnemies",
+    "nameplateShowFriends",
+    "UnitNameEnemyPlayerName",
+    "UnitNameFriendlyPlayerName",
+    "UnitNameEnemyPetName",
+    "UnitNameFriendlyPetName",
+    "UnitNameEnemyGuardianName",
+    "UnitNameFriendlyGuardianName",
+    "UnitNameEnemyTotemName",
+    "UnitNameFriendlyTotemName",
+  }
+
+  local function EnsureFriendlyAndEnemyNames()
+    if not EpochCNDB.nameplates or EpochCNDB.nameplates.keepFriendlyAndEnemyNames == false then return end
+    if not SetCVar then return end
+
+    for _, cvar in ipairs(nameDisplayCVars) do
+      if not GetCVar or tostring(GetCVar(cvar)) ~= "1" then
+        pcall(SetCVar, cvar, "1")
+      end
+    end
+  end
 
   -- 判断一个 WorldFrame 子 frame 是否为姓名板（3.3.5 原版姓名板结构检测）
   -- 姓名板特征：有 GetRegions 返回的第一个 region 是 StatusBar 或含有 HealthBar 子 frame
@@ -227,7 +257,18 @@ EpochCN:RegisterModule("NamePlates", function(E)
   scanner:RegisterEvent("PLAYER_ENTERING_WORLD")
   scanner:RegisterEvent("UPDATE_MOUSEOVER_UNIT")
   scanner:RegisterEvent("PLAYER_TARGET_CHANGED")
-  scanner:SetScript("OnEvent", function()
+  scanner:RegisterEvent("PLAYER_REGEN_ENABLED")
+  scanner:RegisterEvent("PLAYER_REGEN_DISABLED")
+  scanner:RegisterEvent("ZONE_CHANGED_NEW_AREA")
+  scanner:RegisterEvent("CVAR_UPDATE")
+  scanner:SetScript("OnEvent", function(_, event)
+    if event == "PLAYER_ENTERING_WORLD"
+      or event == "PLAYER_REGEN_ENABLED"
+      or event == "PLAYER_REGEN_DISABLED"
+      or event == "ZONE_CHANGED_NEW_AREA"
+      or event == "CVAR_UPDATE" then
+      EnsureFriendlyAndEnemyNames()
+    end
     LearnUnit("mouseover")
     LearnUnit("target")
     LearnUnit("focus")
@@ -237,6 +278,12 @@ EpochCN:RegisterModule("NamePlates", function(E)
     elapsedSinceScan = elapsedSinceScan + elapsed
     if elapsedSinceScan < 0.5 then return end
     elapsedSinceScan = 0
+
+    cvarGuardTimer = cvarGuardTimer + 0.5
+    if cvarGuardTimer >= 5.0 then
+      cvarGuardTimer = 0
+      EnsureFriendlyAndEnemyNames()
+    end
 
     -- ElvUI hook 尝试（仅在未成功且尝试次数合理时）
     if not elvHooked and elvHookAttempts < 20 then

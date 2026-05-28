@@ -37,6 +37,7 @@
 - **物品**：物品名称、物品绿字效果（装备/使用/击中触发）全面翻译
 - **NPC / 怪物**：名称与描述
 - **法术 / 技能**：Epoch 天赋与技能数据
+- **Buff / Debuff**：鼠标悬停增益、减益图标时翻译名称与说明
 - **装备属性**：力量、敏捷、耐力等基础属性及套装效果
 - **消耗品**：治疗/法力药水、食物饮品等使用效果
 - Items, NPCs, spells, talents, set bonuses, and consumable effects
@@ -88,6 +89,7 @@ git clone https://github.com/z980944038-dev/EpochCN.git
 
 - 建议关闭旧的 `QuestCN`、`Tooltips_Chinese`、`pfQuest-epoch`，避免重复 Hook 或重复绘制地图标记
 - 如果同时安装了 pfQuest 系列插件，`EpochCN` 会尽量保持兼容，但独立功能不再要求它们存在
+- 默认会将客户端插件环境的 `GAME_LOCALE` 设为 `zhCN`，用于让旧客户端和相关插件优先走中文文本路径；可在设置中关闭“强制中文客户端语言”。
 
 ---
 
@@ -137,6 +139,16 @@ EpochCN 现已支持通过命令行参数或环境变量覆盖本地数据源路
 
 可选环境变量：`EPOCHCN_QUESTCN_ROOT`、`EPOCHCN_TOOLTIPS_ROOT`、`EPOCHCN_FRAMEXML_GLOBAL_STRINGS`、`EPOCHCN_LUA_BIN`、`EPOCHCN_DESKTOP_ROOT`。
 
+### 发布打包 / Release Packaging
+
+仓库包含翻译工作区、源数据和维护工具；发布给玩家时建议使用白名单打包脚本，只打入运行时插件文件：
+
+```bash
+python3 Tools/package_release.py
+```
+
+默认输出到 `dist/EpochCN-v<版本号>.zip`，压缩包内目录结构为 `EpochCN/EpochCN.toc`。
+
 ---
 
 ## 📸 截图 / Screenshots
@@ -146,6 +158,15 @@ EpochCN 现已支持通过命令行参数或环境变量覆盖本地数据源路
 ---
 
 ## 🏷️ 版本记录 / Changelog
+
+### v0.7.4 — 2026-05-25 Buff / Debuff Tooltip 修复
+
+- **增益/减益 Tooltip 汉化**
+  - 新增 `SetUnitBuff`、`SetUnitDebuff`、`SetUnitAura` 的安全 Hook
+  - 鼠标悬停 buff / debuff 图标时，按 spellID 优先匹配 `SpellData` 并替换标题与说明行
+  - 兼容无法取得 spellID 的情况，自动回退到法术英文名反查
+- **测试覆盖**
+  - 新增真言术：韧 buff 与腐蚀 debuff 的 Tooltip 回归测试
 
 ### v0.7.3 — 2026-05-17 Tooltip 绿字覆盖补强
 

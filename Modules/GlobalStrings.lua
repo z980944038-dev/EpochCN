@@ -31,7 +31,7 @@ EpochCN:RegisterModule("GlobalStrings", function(E)
     local rawSig = FormatSignature(raw)
     if rawSig == "" then return true end
     local localizedSig = FormatSignature(localized)
-    return string.sub(rawSig, 1, string.len(localizedSig)) == localizedSig
+    return rawSig == localizedSig
   end
 
   for key, localized in pairs(EpochCN_FrameXMLStrings or {}) do

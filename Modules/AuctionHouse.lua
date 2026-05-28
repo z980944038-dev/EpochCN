@@ -666,8 +666,15 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
 
     -- 写缓存（result 可能为 nil，存 false 表示"没翻译"）
     if itemNameTranslateCacheSize >= ITEM_NAME_TRANSLATE_CACHE_MAX then
-      itemNameTranslateCache = {}
-      itemNameTranslateCacheSize = 0
+      -- 淘汰约一半条目而非全清，减少冷启动性能抖动
+      local evictTarget = math.floor(ITEM_NAME_TRANSLATE_CACHE_MAX / 2)
+      local evicted = 0
+      for k in pairs(itemNameTranslateCache) do
+        itemNameTranslateCache[k] = nil
+        evicted = evicted + 1
+        if evicted >= evictTarget then break end
+      end
+      itemNameTranslateCacheSize = itemNameTranslateCacheSize - evicted
     end
     itemNameTranslateCache[text] = result or false
     itemNameTranslateCacheSize = itemNameTranslateCacheSize + 1
@@ -809,6 +816,8 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
     end
   end
 
+  -- ⚠️ TAINT: 直接替换 QueryAuctionItems（需修改第一个参数），hooksecurefunc 不支持。
+  -- 如果不替换，中文搜索词会被直接发到服务器导致 0 结果。
   local function PatchQueryAuctionItems()
     if EpochCNRawQueryAuctionItems or not QueryAuctionItems then return end
     EpochCNRawQueryAuctionItems = QueryAuctionItems
@@ -885,6 +894,8 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
       if Atr_BuildList then hooksecurefunc("Atr_BuildList", TranslateAuctionItems) end
     end
 
+    -- ⚠️ TAINT: 直接替换 AuctionFrameFilter_OnClick（需在调用前临时恢复英文文本），
+    -- hooksecurefunc 无法在调用前修改参数。
     if AuctionFrameFilter_OnClick and not EpochCNRawAuctionFrameFilter_OnClick then
       EpochCNRawAuctionFrameFilter_OnClick = AuctionFrameFilter_OnClick
       AuctionFrameFilter_OnClick = function(self, button)

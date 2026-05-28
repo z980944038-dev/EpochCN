@@ -149,8 +149,15 @@ EpochCN:RegisterModule("UI", function(E)
 
     -- 存入缓存
     if translateTextCacheSize >= TRANSLATE_TEXT_CACHE_MAX then
-      translateTextCache = {}
-      translateTextCacheSize = 0
+      -- 淘汰约一半的条目而非全清，减少冷启动性能抖动
+      local evictTarget = math.floor(TRANSLATE_TEXT_CACHE_MAX / 2)
+      local evicted = 0
+      for k in pairs(translateTextCache) do
+        translateTextCache[k] = nil
+        evicted = evicted + 1
+        if evicted >= evictTarget then break end
+      end
+      translateTextCacheSize = translateTextCacheSize - evicted
     end
     translateTextCache[text] = result or false
     translateTextCacheSize = translateTextCacheSize + 1
@@ -164,7 +171,12 @@ EpochCN:RegisterModule("UI", function(E)
   end
 
   local function ResetTranslateCache()
-    translateTextCache = {}
+    -- 复用同一表对象（减少 GC 碎片），WoW 3.3.5 提供全局 table.wipe
+    if table.wipe then
+      table.wipe(translateTextCache)
+    else
+      translateTextCache = {}
+    end
     translateTextCacheSize = 0
   end
 

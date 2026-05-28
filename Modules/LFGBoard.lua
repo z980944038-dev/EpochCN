@@ -22,6 +22,7 @@ EpochCN:RegisterModule("LFGBoard", function(E)
   -- 常量
   ---------------------------------------------------------------------------
   local LFG_PREFIX           = "EPOCHCN_LFG"
+  local CHANNEL_NAME         = "china"
   local LFG_PROTOCOL         = 2
   local LFG_EXPIRE_TIME      = 600       -- 招募过期（秒）— 提升到 10 分钟
   local LFG_BROADCAST_CD     = 30
@@ -180,6 +181,12 @@ EpochCN:RegisterModule("LFGBoard", function(E)
 
   local function GetMyName()
     return StripRealmName(UnitName("player"))
+  end
+
+  local function IsPlayerInGuild()
+    if IsInGuild and IsInGuild() then return true end
+    local guild = GetGuildInfo and GetGuildInfo("player")
+    return guild and guild ~= ""
   end
 
   local function MyClass()
@@ -356,10 +363,10 @@ EpochCN:RegisterModule("LFGBoard", function(E)
     end
     lastBroadcast = now
     local msg = EncodePost(entry)
-    if IsInGuild and IsInGuild() then
+    if IsPlayerInGuild() then
       pcall(SendAddonMessage, LFG_PREFIX, msg, "GUILD")
     end
-    local channelNum = GetChannelName and GetChannelName("EpochCN")
+    local channelNum = GetChannelName and GetChannelName(CHANNEL_NAME)
     if channelNum and channelNum > 0 then
       pcall(SendAddonMessage, LFG_PREFIX, msg, "CHANNEL", channelNum)
     end
@@ -373,10 +380,10 @@ EpochCN:RegisterModule("LFGBoard", function(E)
       return
     end
     local msg = "CANCEL2:" .. (GetMyName() or "")
-    if IsInGuild and IsInGuild() then
+    if IsPlayerInGuild() then
       pcall(SendAddonMessage, LFG_PREFIX, msg, "GUILD")
     end
-    local channelNum = GetChannelName and GetChannelName("EpochCN")
+    local channelNum = GetChannelName and GetChannelName(CHANNEL_NAME)
     if channelNum and channelNum > 0 then
       pcall(SendAddonMessage, LFG_PREFIX, msg, "CHANNEL", channelNum)
     end

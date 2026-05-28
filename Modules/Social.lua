@@ -16,6 +16,7 @@ EpochCN:RegisterModule("Social", function(E)
   -- 常量
   ---------------------------------------------------------------------------
   local SOCIAL_PREFIX        = "EPOCHCN_SOC"
+  local CHANNEL_NAME         = "china"
   local PROTOCOL_VERSION     = 2
   local HEARTBEAT_INTERVAL   = 120         -- 心跳广播间隔（秒）
   local HEARTBEAT_JITTER     = 30          -- 心跳抖动 ±N 秒，避免广播洪峰
@@ -170,6 +171,11 @@ EpochCN:RegisterModule("Social", function(E)
     me.guild   = (GetGuildInfo and GetGuildInfo("player")) or ""
   end
 
+  local function IsPlayerInGuild()
+    if IsInGuild and IsInGuild() then return true end
+    return me.guild and me.guild ~= ""
+  end
+
   local function GetGroupChannel()
     if GetNumRaidMembers and GetNumRaidMembers() > 0 then return "RAID" end
     if GetNumPartyMembers and GetNumPartyMembers() > 0 then return "PARTY" end
@@ -273,7 +279,7 @@ EpochCN:RegisterModule("Social", function(E)
     c.lastSeen = time()
     c.encounterCount = (c.encounterCount or 0) + 1
     -- 自动标签
-    if DB.autoTagGuildmate and IsInGuild and IsInGuild() and fields and fields.guild and me.guild ~= "" and fields.guild == me.guild then
+    if DB.autoTagGuildmate and IsPlayerInGuild() and fields and fields.guild and me.guild ~= "" and fields.guild == me.guild then
       DB.tags[name] = DB.tags[name] or {}
       DB.tags[name]["公会"] = true
     end
@@ -377,17 +383,21 @@ EpochCN:RegisterModule("Social", function(E)
     local zone = GetZoneText and GetZoneText() or ""
     local msg = EncodeFields(E.version or "0", me.level, me.classEn, me.race, me.faction, me.guild, zone, PlayerStatus())
 
-    if IsInGuild and IsInGuild() then
+    if IsPlayerInGuild() then
       SafeSend(msg, "GUILD")
     end
     local groupChannel = GetGroupChannel()
     if groupChannel then
       SafeSend(msg, groupChannel)
     end
-    local channelNum = GetChannelName and GetChannelName("EpochCN")
+    local channelNum = GetChannelName and GetChannelName(CHANNEL_NAME)
     if channelNum and channelNum > 0 then
       SafeSend(msg, "CHANNEL", channelNum)  -- 3.3.5 频道地址需要数字
     end
+  end
+
+  function E:BroadcastSocialHeartbeat()
+    BroadcastHeartbeat()
   end
 
   ---------------------------------------------------------------------------
@@ -425,6 +435,11 @@ EpochCN:RegisterModule("Social", function(E)
         SafeSend(reply, "GUILD")
       elseif channel == "PARTY" or channel == "RAID" then
         SafeSend(reply, GetGroupChannel() or "PARTY")
+      elseif channel == "CHANNEL" then
+        local channelNum = GetChannelName and GetChannelName(CHANNEL_NAME)
+        if channelNum and channelNum > 0 then
+          SafeSend(reply, "CHANNEL", channelNum)
+        end
       end
       return
     end
@@ -636,7 +651,8 @@ EpochCN:RegisterModule("Social", function(E)
       table.insert(channels, { ch = "WHISPER", target = name })
     end
     -- 备份：公会和队伍
-    if IsInGuild and IsInGuild() then
+    RefreshPlayerInfo()
+    if IsPlayerInGuild() then
       table.insert(channels, { ch = "GUILD" })
     end
     local groupChannel = GetGroupChannel()
@@ -856,10 +872,11 @@ EpochCN:RegisterModule("Social", function(E)
     pingBtn:SetPoint("TOPRIGHT", socialPanel, "TOPRIGHT", -16, -74)
     pingBtn:SetText("PING")
     pingBtn:SetScript("OnClick", function()
-      if IsInGuild and IsInGuild() then E:RequestPing("GUILD") end
+      RefreshPlayerInfo()
+      if IsPlayerInGuild() then E:RequestPing("GUILD") end
       local gc = GetGroupChannel()
       if gc then E:RequestPing(gc) end
-      local ch = GetChannelName and GetChannelName("EpochCN")
+      local ch = GetChannelName and GetChannelName(CHANNEL_NAME)
       if ch and ch > 0 then SafeSend("PING:" .. PROTOCOL_VERSION, "CHANNEL", ch) end
       E:Print("已向公会/队伍/频道发送 PING，等待响应...")
     end)
@@ -1188,10 +1205,11 @@ EpochCN:RegisterModule("Social", function(E)
     end
 
     if msg == "social ping" then
-      if IsInGuild and IsInGuild() then E:RequestPing("GUILD") end
+      RefreshPlayerInfo()
+      if IsPlayerInGuild() then E:RequestPing("GUILD") end
       local gc = GetGroupChannel()
       if gc then E:RequestPing(gc) end
-      local ch = GetChannelName and GetChannelName("EpochCN")
+      local ch = GetChannelName and GetChannelName(CHANNEL_NAME)
       if ch and ch > 0 then SafeSend("PING:" .. PROTOCOL_VERSION, "CHANNEL", ch) end
       E:Print("已主动 PING 公会/队伍/中文频道。")
       return true
@@ -1322,7 +1340,7 @@ EpochCN:RegisterModule("Social", function(E)
         self.elapsed = self.elapsed + elapsed
         if self.elapsed < 5 then return end
         self:SetScript("OnUpdate", nil)
-        if IsInGuild and IsInGuild() then SafeSend("PING:" .. PROTOCOL_VERSION, "GUILD") end
+        if IsPlayerInGuild() then SafeSend("PING:" .. PROTOCOL_VERSION, "GUILD") end
         local gc = GetGroupChannel()
         if gc then SafeSend("PING:" .. PROTOCOL_VERSION, gc) end
         BroadcastHeartbeat()

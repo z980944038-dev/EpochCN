@@ -1,3 +1,11 @@
+-- ⚠️ TAINT WARNING
+-- 本模块直接替换了以下 11 个全局 WoW API 函数（需要修改返回值，hooksecurefunc 无法实现）：
+--   GetQuestLogTitle, GetQuestLogQuestText, GetQuestLogLeaderBoard,
+--   GetQuestLogCompletionText, GetAbandonQuestName, GetTitleText,
+--   GetQuestText, GetObjectiveText, GetProgressText, GetRewardText, GetGreetingText
+-- 这些替换会产生 taint，理论上可能影响受保护 UI 操作（如任务面板打开时施法）。
+-- WoW 3.3.5 的 taint 检测较宽松，Project Epoch 私服环境目前未报告实际问题。
+-- 原始函数引用保存在 E.raw.* 中，如需恢复可直接赋回全局。
 EpochCN:RegisterModule("QuestLog", function(E)
   if not EpochCNDB.questLog then return end
 
@@ -13,15 +21,22 @@ EpochCN:RegisterModule("QuestLog", function(E)
   myGetProgressText = myGetProgressText or E.raw.GetProgressText
   myGetGreetingText = myGetGreetingText or E.raw.GetGreetingText
 
-  -- 目标缓存大小限制：超出时清空（每次最多存储约 512 条目标文本翻译）
+  -- 目标缓存大小限制：超出时淘汰一半条目（避免全清导致周期性冷启动）
   local OBJECTIVE_CACHE_MAX = 512
   local objectiveCacheSize = 0
 
   local function SafeSetObjectiveCache(key, value)
     if E.cache.objective[key] ~= nil then return end
     if objectiveCacheSize >= OBJECTIVE_CACHE_MAX then
-      E.cache.objective = {}
-      objectiveCacheSize = 0
+      -- 淘汰约一半的条目而非全清
+      local evictTarget = math.floor(OBJECTIVE_CACHE_MAX / 2)
+      local evicted = 0
+      for k in pairs(E.cache.objective) do
+        E.cache.objective[k] = nil
+        evicted = evicted + 1
+        if evicted >= evictTarget then break end
+      end
+      objectiveCacheSize = objectiveCacheSize - evicted
     end
     E.cache.objective[key] = value
     objectiveCacheSize = objectiveCacheSize + 1
