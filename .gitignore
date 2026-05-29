@@ -26,6 +26,9 @@ Desktop.ini
 Data/*.MPQ
 Data/*.mpq
 
+# Release artifacts
+dist/
+
 # Misc stray files
 *.bak
 *.orig

@@ -10,6 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 TRANSLATION_DIR = ROOT / "SpellTranslation"
 SOURCE = TRANSLATION_DIR / "spell_english_spellbook_priority.tsv"
+FULL_SOURCE = TRANSLATION_DIR / "spell_english_full_for_translation.tsv"
 DICT_NAMES = TRANSLATION_DIR / "dict_names.tsv"
 DESC_DICT = TRANSLATION_DIR / "desc_dict.tsv"
 TIP_DICT = TRANSLATION_DIR / "trans_tip_all.tsv"
@@ -436,8 +437,8 @@ def lua_quote(value: str) -> str:
     return f'"{value}"'
 
 
-def read_source_rows() -> list[dict[str, str]]:
-    with SOURCE.open("r", encoding="utf-8", newline="") as handle:
+def read_tsv_rows(path: Path) -> list[dict[str, str]]:
+    with path.open("r", encoding="utf-8", newline="") as handle:
         reader = csv.DictReader(handle, delimiter="\t")
         rows = []
         for row in reader:
@@ -445,6 +446,22 @@ def read_source_rows() -> list[dict[str, str]]:
             if spell_id.isdigit() and normalize_text(row.get("name_en")):
                 rows.append(row)
         return rows
+
+
+def read_source_rows() -> list[dict[str, str]]:
+    rows = read_tsv_rows(SOURCE)
+    seen = {row["spell_id"] for row in rows}
+    for row in read_tsv_rows(FULL_SOURCE):
+        if row["spell_id"] in seen:
+            continue
+        if normalize_text(row.get("tooltip_en")) and (
+            is_good_translation(row.get("tooltip_zh"), row.get("tooltip_en"))
+            or is_good_name_translation(row.get("name_zh"), row.get("name_en"))
+            or is_good_translation(row.get("description_zh"), row.get("description_en"))
+        ):
+            rows.append(row)
+            seen.add(row["spell_id"])
+    return rows
 
 
 def build_translation_maps(rows: list[dict[str, str]]) -> tuple[dict[str, str], dict[str, str], dict[str, str]]:
@@ -557,6 +574,11 @@ def repair_mixed_name(value: str, name_map: dict[str, str]) -> str:
 def localize_name(row: dict[str, str], name_map: dict[str, str]) -> str:
     name_en = normalize_text(row.get("name_en"))
     name_zh = sanitize_display_text(row.get("name_zh"))
+    skill_line_ids = set((row.get("skill_line_ids") or "").split(","))
+
+    if ((skill_line_ids & {"6", "8", "26", "50", "51", "56", "78", "134", "163", "184", "237", "256", "257", "267", "354", "355", "373", "374", "375", "573", "574", "593", "594", "613"})
+            or (name_en == "Devouring Plague" and "792" in skill_line_ids)) and is_good_name_translation(name_zh, name_en):
+        return name_zh
 
     if name_en in MANUAL_NAME_OVERRIDES:
         return MANUAL_NAME_OVERRIDES[name_en]
@@ -593,7 +615,7 @@ def localize_description(
     tip_zh = normalize_text(row.get("tooltip_zh"))
     skill_line_ids = set((row.get("skill_line_ids") or "").split(","))
 
-    if skill_line_ids & {"38", "39", "253"}:
+    if (skill_line_ids & {"6", "8", "26", "50", "51", "56", "78", "134", "163", "184", "237", "256", "257", "267", "354", "355", "373", "374", "375", "573", "574", "593", "594", "613", "38", "39", "253"}) or (name_en == "Devouring Plague" and "792" in skill_line_ids):
         desc = sanitize_display_text(desc_zh)
         tip = sanitize_display_text(tip_zh)
         if not desc:

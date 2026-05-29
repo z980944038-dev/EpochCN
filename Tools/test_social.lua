@@ -133,7 +133,7 @@ _G.UnitGUID = function() return "0xF13000000A" end
 _G.UnitIsPlayer = function() return false end
 _G.UnitIsAFK = function() return false end
 _G.UnitIsDND = function() return false end
-_G.GetGuildInfo = function() return nil end
+_G.GetGuildInfo = function() return "TestGuild" end
 _G.IsInGuild = function() return false end
 _G.GetGameTime = function() return 12, 30 end
 _G.GetZoneText = function() return "暴风城" end
@@ -149,18 +149,30 @@ _G.GetRaidRosterInfo = function() return "Member1" end
 _G.InviteUnit = function() end
 
 -- 频道
-_G.GetChannelName = function() return 0 end
-_G.JoinChannelByName = function() end
-_G.LeaveChannelByName = function() end
+local joinedChannel = false
+local lastJoinedChannel
+local lastLeftChannel
+local lastListedChannel
+local lastAddonMessage
+local addonMessages = {}
+_G.GetChannelName = function(name)
+  if name == "china" and joinedChannel then return 7 end
+  return 0
+end
+_G.JoinChannelByName = function(name) lastJoinedChannel = name; joinedChannel = true end
+_G.LeaveChannelByName = function(name) lastLeftChannel = name; joinedChannel = false end
 _G.AddChatWindowChannel = function() end
 _G.ChatFrame_AddChannel = function() end
 _G.ChatFrame_OpenChat = function() end
-_G.ListChannelByName = function() end
+_G.ListChannelByName = function(name) lastListedChannel = name end
 _G.FCF_SavePositionAndDimensions = function() end
 _G.SendChatMessage = function(msg, ch, lang, target)
   table.insert(chatMessages, "CHAT[" .. tostring(ch) .. "]: " .. tostring(msg))
 end
-_G.SendAddonMessage = function() end
+_G.SendAddonMessage = function(prefix, message, channel, target)
+  lastAddonMessage = { prefix = prefix, message = message, channel = channel, target = target }
+  table.insert(addonMessages, lastAddonMessage)
+end
 _G.RegisterAddonMessagePrefix = function() end
 
 -- 任务
@@ -304,6 +316,15 @@ local function assert_(name, cond)
   end
 end
 
+local function hasAddonChannel(channel, target)
+  for _, msg in ipairs(addonMessages) do
+    if msg.channel == channel and (target == nil or msg.target == target) then
+      return true
+    end
+  end
+  return false
+end
+
 assert_("E:GetChinesePlayerCount() == 0", E:GetChinesePlayerCount() == 0)
 assert_("E:IsChinesePlayer('Foo') == false", E:IsChinesePlayer("Foo") == false)
 assert_("E:GetAllContacts() 是 table", type(E:GetAllContacts()) == "table")
@@ -398,8 +419,10 @@ pcall_slash("EPOCHCN_CN", "who")
 pcall_slash("EPOCHCN_CN", "refresh")
 pcall_slash("EPOCHCN_CN", "leave")
 pcall_slash("EPOCHCN_CN", "join")
+assert_("/cn join 使用 china 频道", lastJoinedChannel == "china")
 pcall_slash("EPOCHCN_CN", "help")
 pcall_slash("EPOCHCN_CN", "你好世界")  -- 发送
+assert_("/cn refresh 使用 china 频道", lastListedChannel == "china")
 print("  OK   全部斜杠命令调用无报错")
 
 -- /ecn 子命令
@@ -415,7 +438,10 @@ local function pcall_ecn(msg)
 end
 pcall_ecn("social")
 pcall_ecn("social list")
+addonMessages = {}
 pcall_ecn("social ping")
+assert_("/ecn social ping 补充公会频道", hasAddonChannel("GUILD"))
+assert_("/ecn social ping 使用 china 频道", hasAddonChannel("CHANNEL", 7))
 pcall_ecn("contacts")
 pcall_ecn("note Foo 这是一个测试备注")
 pcall_ecn("note Foo")

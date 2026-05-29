@@ -215,8 +215,6 @@ EpochCN:RegisterModule("NamePlates", function(E)
   local cachedElvNP  -- 缓存 ElvUI NamePlates 模块引用，避免每帧 pcall
 
   local nameDisplayCVars = {
-    "nameplateShowEnemies",
-    "nameplateShowFriends",
     "UnitNameEnemyPlayerName",
     "UnitNameFriendlyPlayerName",
     "UnitNameEnemyPetName",

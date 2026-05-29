@@ -60,7 +60,10 @@ _G.CreateFrame = function(frameType, name, parent, template)
   f.SetHighlightTexture = function() end
   f.SetAllPoints = function() end
   f.SetOwner = function() end
-  f.AddLine = function() end
+  f.AddLine = function(self, text)
+    self.__addedLines = self.__addedLines or {}
+    table.insert(self.__addedLines, text or "")
+  end
   f.AddDoubleLine = function() end
   f.NumLines = function() return 0 end
   f.GetWidth = function() return 100 end
@@ -114,12 +117,22 @@ _G.GetNumPartyMembers = function() return 0 end
 _G.IsInGuild = function() return false end
 _G.IsShiftKeyDown = function() return false end
 _G.SlashCmdList = {}
-_G.hooksecurefunc = function(target, hook)
-  if type(target) ~= "string" or type(hook) ~= "function" then return end
+_G.hooksecurefunc = function(target, methodOrHook, maybeHook)
+  if type(target) == "table" and type(methodOrHook) == "string" and type(maybeHook) == "function" then
+    local original = target[methodOrHook] or function() end
+    target[methodOrHook] = function(self, ...)
+      local results = { original(self, ...) }
+      maybeHook(self, ...)
+      return unpack(results)
+    end
+    return
+  end
+
+  if type(target) ~= "string" or type(methodOrHook) ~= "function" then return end
   local original = _G[target] or function() end
   _G[target] = function(...)
     local results = { original(...) }
-    hook(...)
+    methodOrHook(...)
     return unpack(results)
   end
 end
@@ -205,6 +218,21 @@ local function assertEq(desc, got, want)
   end
 end
 
+local function resetTooltipTranslation()
+  GameTooltip.EpochCNTranslationAdded = nil
+  GameTooltip.__addedLines = {}
+end
+
+local function assertTooltipAdded(desc, expected)
+  local lines = table.concat(GameTooltip.__addedLines or {}, "\n")
+  if string.find(lines, expected, 1, true) then
+    print("  OK   " .. desc)
+  else
+    print("  FAIL " .. desc .. " got=" .. tostring(lines) .. " want contains=" .. tostring(expected))
+    os.exit(1)
+  end
+end
+
 assertEq("Overrides.maps[Dustwallow Marsh]", EpochCN_Overrides.maps["Dustwallow Marsh"], "尘泥沼泽")
 assertEq("Overrides.maps[The Barrens]", EpochCN_Overrides.maps["The Barrens"], "贫瘠之地")
 assertEq("Overrides.maps[Badlands]", EpochCN_Overrides.maps["Badlands"], "荒芜之地")
@@ -267,6 +295,103 @@ assertEq("TranslateEnglishObjectName[Quest Credit Marker]", EpochCN:TranslateEng
 GameTooltipTextLeft1:SetText("Forest Troll Berserker")
 GameTooltip:FireScript("OnShow")
 assertEq("tooltip title fallback on show", GameTooltipTextLeft1:GetText(), "森林巨魔狂战士")
+
+_G.UnitBuff = function()
+  return "Power Word: Fortitude", "Rank 1", nil, nil, nil, nil, nil, nil, nil, nil, 1243
+end
+resetTooltipTranslation()
+GameTooltip.NumLines = function() return 2 end
+GameTooltipTextLeft1:SetText("Power Word: Fortitude")
+GameTooltipTextLeft2:SetText("Increases Stamina by 3 for 30 min.")
+GameTooltip:SetUnitBuff("player", 1)
+assertEq("buff tooltip title translated", GameTooltipTextLeft1:GetText(), "真言术：韧")
+assertEq("buff tooltip description translated", GameTooltipTextLeft2:GetText(), "耐力提高 3 点，持续30分钟。")
+
+_G.UnitBuff = function()
+  return "Blood Fury", "Racial", nil, nil, nil, nil, nil, nil, nil, nil, 20572
+end
+resetTooltipTranslation()
+GameTooltipTextLeft1:SetText("Blood Fury")
+GameTooltipTextLeft2:SetText("Increases attack power by 282 and spell power by 162, but reduces healing effects on you by 50%.")
+GameTooltip:SetUnitBuff("player", 1)
+assertEq("buff tooltip keeps numeric values", GameTooltipTextLeft2:GetText(), "攻击强度提高 282 点，法术强度提高 162 点，但你受到的治疗效果降低 50%。")
+
+_G.UnitBuff = function()
+  return "Blood Fury", "Racial", nil, nil, nil, nil, nil, nil, nil, nil, 20572
+end
+resetTooltipTranslation()
+GameTooltipTextLeft1:SetText("Blood Fury")
+GameTooltipTextLeft2:SetText("Healing effects reduced by 50%.")
+GameTooltip:SetUnitBuff("player", 1)
+assertEq("buff compact title translated", GameTooltipTextLeft1:GetText(), "血怒")
+assertEq("buff compact effect translated in place", GameTooltipTextLeft2:GetText(), "治疗效果降低 50%。")
+
+_G.UnitBuff = function()
+  return "Renew", "Rank 1", nil, nil, nil, nil, nil, nil, nil, nil, 139
+end
+resetTooltipTranslation()
+GameTooltipTextLeft1:SetText("Renew")
+GameTooltipTextLeft2:SetText("Healing 9 damage every 3 seconds.")
+GameTooltip:SetUnitBuff("player", 1)
+assertEq("buff periodic heal translated", GameTooltipTextLeft2:GetText(), "每 3 秒恢复 9 点生命值。")
+
+_G.UnitBuff = function()
+  return "Aspect of the Hawk", "Rank 5", nil, nil, nil, nil, nil, nil, nil, nil, 14321
+end
+resetTooltipTranslation()
+GameTooltipTextLeft1:SetText("Aspect of the Hawk")
+GameTooltipTextLeft2:SetText("Increases ranged attack power by 110.")
+GameTooltip:SetUnitBuff("player", 1)
+assertEq("aspect title translated in place", GameTooltipTextLeft1:GetText(), "雄鹰守护")
+assertEq("aspect ranged attack translated in place", GameTooltipTextLeft2:GetText(), "远程攻击强度提高 110 点。")
+
+_G.UnitBuff = function()
+  return "Aspect of the Viper", "", nil, nil, nil, nil, nil, nil, nil, nil, 34074
+end
+resetTooltipTranslation()
+GameTooltipTextLeft1:SetText("Aspect of the Viper")
+GameTooltipTextLeft2:SetText("Regenerating mana.")
+GameTooltip:SetUnitBuff("player", 1)
+assertEq("viper title translated in place", GameTooltipTextLeft1:GetText(), "蝰蛇守护")
+assertEq("viper mana translated in place", GameTooltipTextLeft2:GetText(), "正在恢复法力值。")
+
+_G.UnitBuff = function()
+  return "The Beast Within", "", nil, nil, nil, nil, nil, nil, nil, nil, 34471
+end
+resetTooltipTranslation()
+GameTooltipTextLeft1:SetText("The Beast Within")
+GameTooltipTextLeft2:SetText("Enraged.")
+GameTooltip:SetUnitBuff("player", 1)
+assertEq("beast within title translated in place", GameTooltipTextLeft1:GetText(), "野兽之心")
+assertEq("beast within effect translated in place", GameTooltipTextLeft2:GetText(), "激怒。")
+
+_G.UnitDebuff = function()
+  return "Corruption", "Rank 1", nil, nil, "Magic", nil, nil, nil, nil, nil, 172
+end
+resetTooltipTranslation()
+GameTooltipTextLeft1:SetText("Corruption")
+GameTooltipTextLeft2:SetText("Corrupts the target, causing Shadow damage over time.")
+GameTooltip:SetUnitDebuff("target", 1)
+assertEq("debuff tooltip title translated", GameTooltipTextLeft1:GetText(), "腐蚀术")
+assertEq("debuff tooltip description translated", GameTooltipTextLeft2:GetText(), "腐蚀目标，持续造成暗影伤害。")
+
+_G.UnitDebuff = function()
+  return "Screech", "Rank 1", nil, nil, nil, nil, nil, nil, nil, nil, 24423
+end
+resetTooltipTranslation()
+GameTooltipTextLeft1:SetText("Screech")
+GameTooltipTextLeft2:SetText("Melee attack power reduced by 25.")
+GameTooltip:SetUnitDebuff("target", 1)
+assertEq("debuff attack power reduction translated", GameTooltipTextLeft2:GetText(), "近战攻击强度降低 25 点。")
+
+_G.UnitDebuff = function()
+  return "Frostbolt", "Rank 1", nil, nil, "Magic", nil, nil, nil, nil, nil, 116
+end
+resetTooltipTranslation()
+GameTooltipTextLeft1:SetText("Frostbolt")
+GameTooltipTextLeft2:SetText("Movement slowed by 40%.")
+GameTooltip:SetUnitDebuff("target", 1)
+assertEq("debuff movement slow translated", GameTooltipTextLeft2:GetText(), "移动速度降低 40%。")
 
 GameTooltipTextLeft1:SetText("Wooden Cage")
 GameTooltip:FireScript("OnShow")
@@ -479,12 +604,12 @@ if string.find(spell64382, "64382s2", 1, true) then
   print("  FAIL spell 64382 还包含法术ID token 64382s2: " .. tostring(spell64382))
   os.exit(1)
 end
-if not string.find(spell64382, "一定量伤害", 1, true) then
-  print("  FAIL spell 64382 未保留伤害占位: " .. tostring(spell64382))
+if not string.find(spell64382, "护甲降低", 1, true) then
+  print("  FAIL spell 64382 未保留护甲降低文本: " .. tostring(spell64382))
   os.exit(1)
 end
-if not string.find(spell64382, "一定比例", 1, true) then
-  print("  FAIL spell 64382 未保留百分比占位: " .. tostring(spell64382))
+if not string.find(spell64382, "20%%") then
+  print("  FAIL spell 64382 未替换为真实百分比数值: " .. tostring(spell64382))
   os.exit(1)
 end
 print("  OK   SpellData_Epoch[64382] DBC tokens cleaned: " .. tostring(spell64382))
