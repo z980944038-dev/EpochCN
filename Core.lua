@@ -3,7 +3,7 @@ local E = EpochCN or {}
 EpochCN = E
 
 E.name = addonName or "EpochCN"
-E.version = "0.7.4"
+E.version = "0.8.0-core"
 E.designLabel = "汉化组"
 E.modules = E.modules or {}
 E.moduleOrder = E.moduleOrder or {}
@@ -19,7 +19,6 @@ local defaults = {
   tooltip = true,
   auctionHouse = true,
   ui = true,
-  globalStrings = true,
   settingsPanel = true,
   pfQuestBridge = false,
   worldMap = false,      -- 默认关闭 EpochCN 自带世界地图任务标记
@@ -38,9 +37,6 @@ local defaults = {
   availableQuestLevelRange = 3,
   hideLowLevelAvailableQuestPins = true,
   availableQuestLowLevelRange = 4,
-  questAutoSync = true,
-  questProgressNotify = true,
-  questProgressPartyChat = false,
   questTracker = true,   -- 任务追踪 UI 汉化
   disablePFQuestTracker = true,
   forcePFQuestMap = false,
@@ -50,7 +46,6 @@ local defaults = {
   minimapButtonHide = false,
   minimapButtonAngle = 225,
   forceChineseClientLocale = true,
-  updateCheck = true,  -- 自动检查新版本（通过公会/队伍广播）
   debug = false,
   mapIconDefaultsVersion = "",
   tooltipPlacementVersion = "",
@@ -146,7 +141,7 @@ function E:RegisterSlashCommands()
 
     if msg == "status" then
       E:Print("已加载 " .. tostring(E.version) .. "，界面=" .. tostring(EpochCNDB.ui) .. "，任务=" .. tostring(EpochCNDB.questLog) .. "，Tooltip=" .. tostring(EpochCNDB.tooltip))
-      E:Print("数据：任务=" .. tostring(QustCN_Data_CN and "QuestCN" or "无") .. "，技能=" .. tostring(TPCN_SpellData_Epoch and "Epoch" or "无") .. "，物品=" .. tostring(TPCN_ItemData and "已加载" or "无"))
+      E:Print("数据：任务=" .. tostring(QustCN_Data_CN and "QuestCN" or "无") .. "，技能=patch-Z.MPQ，物品=" .. tostring(TPCN_ItemData and "已加载" or "无"))
       return
     end
 
@@ -192,6 +187,32 @@ function E:RegisterSlashHandler(handler)
   table.insert(self.slashHandlers, handler)
 end
 
+-- WoW 3.3.5a 没有 C_Timer。短延迟任务共用一个按需显示的计时帧；
+-- 队列为空时自动隐藏，不产生常驻 OnUpdate 开销。
+function E:After(delay, callback)
+  if type(callback) ~= "function" then return end
+  self.timers = self.timers or {}
+  table.insert(self.timers, { remaining = tonumber(delay) or 0, callback = callback })
+  if not self.timerFrame then
+    local owner = self
+    self.timerFrame = CreateFrame("Frame")
+    self.timerFrame:Hide()
+    self.timerFrame:SetScript("OnUpdate", function(frame, elapsed)
+      for index = #owner.timers, 1, -1 do
+        local timer = owner.timers[index]
+        timer.remaining = timer.remaining - elapsed
+        if timer.remaining <= 0 then
+          table.remove(owner.timers, index)
+          local ok, err = pcall(timer.callback)
+          if not ok then owner:Debug("延迟任务执行失败: " .. tostring(err)) end
+        end
+      end
+      if #owner.timers == 0 then frame:Hide() end
+    end)
+  end
+  self.timerFrame:Show()
+end
+
 function E:RegisterModule(name, init)
   if not self.modules[name] then
     table.insert(self.moduleOrder, name)
@@ -215,21 +236,20 @@ function E:CaptureRawAPI()
 end
 
 function E:LoadSeedData()
-  if LoadTPCNSpellDataSeason then LoadTPCNSpellDataSeason() end
-  if LoadTPCNSpellDataEpoch then LoadTPCNSpellDataEpoch() end
-  if LoadEpochCNSpellRawData then LoadEpochCNSpellRawData() end
   if LoadTPCNGlobalData then LoadTPCNGlobalData() end
-  if LoadTPCNCallBoardData then LoadTPCNCallBoardData() end
   if LoadTPCNItemData then LoadTPCNItemData() end
   if LoadEpochCNItemNameMap then LoadEpochCNItemNameMap() end
-  if LoadEpochCNConsumableData then LoadEpochCNConsumableData() end
   if LoadEpochCNItemOverlayData then LoadEpochCNItemOverlayData() end
   if LoadEpochCNTooltipLineData then LoadEpochCNTooltipLineData() end
   if LoadTPCNUnitData then LoadTPCNUnitData() end
   if LoadEpochCNObjectiveNameData then LoadEpochCNObjectiveNameData() end
   if LoadEpochCNQuestData then LoadEpochCNQuestData() end
-  if LoadEpochCNMapData then LoadEpochCNMapData() end
+  if LoadEpochCNQuestTitleIndex then LoadEpochCNQuestTitleIndex() end
+  if (EpochCNDB.worldMap or EpochCNDB.minimapQuestPins) and LoadEpochCNMapData then
+    LoadEpochCNMapData()
+  end
   if LoadEpochCNEpochHeadData then LoadEpochCNEpochHeadData() end
+  if LoadEpochCNEpochDBSupplementData then LoadEpochCNEpochDBSupplementData() end
 end
 
 function E:BuildLookupTables()
@@ -392,6 +412,18 @@ function E:BuildLookupTables()
     end
   end
 
+  if EpochCN_QuestTitleIndex then
+    for title, id in pairs(EpochCN_QuestTitleIndex) do
+      RegisterQuestTitle(id, title)
+    end
+  end
+
+  if EpochCN_EpochDBQuestAliases then
+    for title, id in pairs(EpochCN_EpochDBQuestAliases) do
+      RegisterQuestTitle(id, title)
+    end
+  end
+
   -- 注册 pfDB 英文任务标题，以支持无 pfQuest 时对话框英文标题 → 任务 ID 的反查
   if pfDB and pfDB["quests"] then
     local function RegPfEnglish(src)
@@ -411,54 +443,36 @@ function E:BuildLookupTables()
     if type(source) ~= "table" then return end
     for _, entry in pairs(source) do
       local name = entry and entry[1]
-      if type(name) == "string" and name ~= "" then
+      if type(name) == "string" and name ~= ""
+        and string.find(name, "[A-Za-z]")
+        and not string.find(name, "[\128-\255]") then
         self.itemNameCounts[name] = (self.itemNameCounts[name] or 0) + 1
       end
     end
   end
   CountItemNames(TPCN_ItemData)
   CountItemNames(EpochCN_ItemOverlayData)
-  CountItemNames(EpochCN_ConsumableData)
 
-  -- 统计数据收集（供设置面板显示）
-  self.stats.spellCount = 0
-  self.stats.spellWithDesc = 0
-  if TPCN_SpellData_Epoch then
-    for id, data in pairs(TPCN_SpellData_Epoch) do
-      self.stats.spellCount = self.stats.spellCount + 1
-      if data[2] and data[2] ~= "" then self.stats.spellWithDesc = self.stats.spellWithDesc + 1 end
-    end
-  end
-  if TPCN_SpellData_Season then
-    for id, data in pairs(TPCN_SpellData_Season) do
-      self.stats.spellCount = self.stats.spellCount + 1
-      if data[2] and data[2] ~= "" then self.stats.spellWithDesc = self.stats.spellWithDesc + 1 end
-    end
-  end
+end
 
-  self.stats.unitTotal = 0
-  self.stats.unitChinese = 0
+-- 覆盖统计只在设置页首次打开时计算，避免每次登录扫描大型数据表。
+function E:BuildStats()
+  if self.statsBuilt then return self.stats or {} end
+  self.statsBuilt = true
+  local stats = {
+    unitTotal = 0, unitChinese = 0, questTotal = 0, itemNameMapTotal = 0,
+  }
   if TPCN_UnitData then
-    for id, data in pairs(TPCN_UnitData) do
-      self.stats.unitTotal = self.stats.unitTotal + 1
-      if data[1] and string.find(data[1], "[\128-\255]") then
-        self.stats.unitChinese = self.stats.unitChinese + 1
-      end
+    for _, data in pairs(TPCN_UnitData) do
+      stats.unitTotal = stats.unitTotal + 1
+      if data[1] and string.find(data[1], "[\128-\255]") then stats.unitChinese = stats.unitChinese + 1 end
     end
   end
-
-  self.stats.questTotal = 0
-  if QustCN_Data_CN then
-    for _ in pairs(QustCN_Data_CN) do self.stats.questTotal = self.stats.questTotal + 1 end
-  end
-  if EpochCN_EpochQuestData then
-    for _ in pairs(EpochCN_EpochQuestData) do self.stats.questTotal = self.stats.questTotal + 1 end
-  end
-
-  self.stats.itemNameMapTotal = 0
-  if EpochCN_ItemNameMap then
-    for _ in pairs(EpochCN_ItemNameMap) do self.stats.itemNameMapTotal = self.stats.itemNameMapTotal + 1 end
-  end
+  if QustCN_Data_CN then for _ in pairs(QustCN_Data_CN) do stats.questTotal = stats.questTotal + 1 end end
+  if EpochCN_EpochQuestData then for _ in pairs(EpochCN_EpochQuestData) do stats.questTotal = stats.questTotal + 1 end end
+  if EpochCN_ItemNameMap then for _ in pairs(EpochCN_ItemNameMap) do stats.itemNameMapTotal = stats.itemNameMapTotal + 1 end end
+  self.stats = stats
+  return stats
 end
 
 function E:NormalizeDisplayText(text)
@@ -532,12 +546,12 @@ function E:GetQuestData(id)
   id = tonumber(id)
   if not id then return nil end
 
-  if QustCN_Data_CN and type(QustCN_Data_CN[id]) == "table" then
-    return QustCN_Data_CN[id]
-  end
-
   if EpochCN_EpochQuestData and type(EpochCN_EpochQuestData[id]) == "table" then
     return EpochCN_EpochQuestData[id]
+  end
+
+  if QustCN_Data_CN and type(QustCN_Data_CN[id]) == "table" then
+    return QustCN_Data_CN[id]
   end
 
   if pfDB and pfDB["quests"] and pfDB["quests"]["loc"] and pfDB["quests"]["loc"][id] then
@@ -580,32 +594,8 @@ function E:GetItemData(id)
     return self.cache.itemData[id]
   end
 
-  local consumable = EpochCN_ConsumableData and EpochCN_ConsumableData[id]
   local overlay = EpochCN_ItemOverlayData and EpochCN_ItemOverlayData[id]
   local base = TPCN_ItemData and TPCN_ItemData[id]
-  if consumable and overlay then
-    local mergedLineMap = {}
-    if type(overlay[5]) == "table" then
-      for raw, translated in pairs(overlay[5]) do
-        mergedLineMap[raw] = translated
-      end
-    end
-    if type(consumable[5]) == "table" then
-      for raw, translated in pairs(consumable[5]) do
-        mergedLineMap[raw] = translated
-      end
-    end
-    overlay = {
-      consumable[1] and consumable[1] ~= "" and consumable[1] or overlay[1],
-      overlay[2] and overlay[2] ~= "" and overlay[2] or consumable[2],
-      consumable[3] and consumable[3] ~= "" and consumable[3] or overlay[3],
-      consumable[4] or overlay[4],
-      mergedLineMap,
-      consumable[6] or overlay[6],
-    }
-  else
-    overlay = consumable or overlay
-  end
   if overlay and base then
     overlay = {
       overlay[1] and overlay[1] ~= "" and overlay[1] or base[1],
@@ -822,13 +812,18 @@ function E:RegisterEnglishUnitName(english, chinese)
   self.nameMap[english] = chinese
 end
 
-function E:GetCallBoardData(id)
-  id = tonumber(id)
-  return id and TPCN_CallBoardData and TPCN_CallBoardData[id]
-end
-
 function E:Initialize()
   EpochCNDB = MergeDefaults(EpochCNDB, defaults)
+  EpochCNDB.social = nil
+  EpochCNDB.social_enabled_ui = nil
+  EpochCNDB.social_channel_ui = nil
+  EpochCNDB.social_lfg_ui = nil
+  EpochCNDB.social_qc_ui = nil
+  EpochCNDB.questAutoSync = nil
+  EpochCNDB.questProgressNotify = nil
+  EpochCNDB.questProgressPartyChat = nil
+  EpochCNDB.updateCheck = nil
+  EpochCNDB.globalStrings = nil
   self:ApplyClientLocalePreference()
   DisableMapIconDefaults(EpochCNDB)
   DisableAppendedTooltipDefaults(EpochCNDB)

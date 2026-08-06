@@ -9,6 +9,9 @@
 
 **Standalone Chinese (Simplified) Localization Addon for Project Epoch (WoW 3.3.5a)**
 
+> **当前版本：0.8.0-core**<br>
+> 本版本需搭配 `Data/patch-Z.MPQ` 使用：MPQ 负责客户端静态文本，EpochCN 负责服务器动态下发的任务、物品、NPC 与 Tooltip。为避免重复汉化，core 版不再加载静态法术、天赋、技能书和 FrameXML 文本，也不加载社交、中文频道、LFG、快捷短语、反馈、版本广播及队伍任务同步模块。详见 [`README-core.md`](README-core.md)。
+
 > 社区驱动开源整合插件 · Community-driven open-source localization
 >
 > 数据来源：[epochhead.com](https://epochhead.com/) · 社区贡献-天涯路漫
@@ -158,6 +161,13 @@ python3 Tools/package_release.py
 ---
 
 ## 🏷️ 版本记录 / Changelog
+
+### v0.8.0-core — 2026-08-06 MPQ + 插件分层汉化
+
+- 将字体、FrameXML、GlobalStrings、Spell.dbc、法术、技能书与天赋等静态汉化交由 `patch-Z.MPQ` 负责，避免插件重复覆盖。
+- EpochCN 保留动态任务、物品、NPC、Tooltip、拍卖行、姓名板及可选地图任务标记。
+- 精简社交、频道、LFG、快捷短语、反馈、更新广播与队伍任务同步模块的默认加载。
+- 新增轻量任务标题索引和 EpochDB 补充数据，降低常驻内存并补足 Project Epoch 专属内容。
 
 ### v0.7.4 — 2026-05-25 Buff / Debuff Tooltip 修复
 

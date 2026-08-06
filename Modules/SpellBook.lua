@@ -289,22 +289,18 @@ EpochCN:RegisterModule("SpellBook", function(E)
 
   local function PatchSpellButtonsSoon()
     PatchSpellButtons()
-    if C_Timer and C_Timer.After then
-      C_Timer.After(0.05, PatchSpellButtons)
-    end
+    E:After(0.05, PatchSpellButtons)
   end
 
   local function LocalizeLater()
     PatchAllSpellBookTabs()
     PatchSkillLineTabTooltip()
     PatchSpellButtons()
-    if C_Timer and C_Timer.After then
-      C_Timer.After(0.05, function()
-        PatchAllSpellBookTabs()
-        PatchSkillLineTabTooltip()
-        PatchSpellButtons()
-      end)
-    end
+    E:After(0.05, function()
+      PatchAllSpellBookTabs()
+      PatchSkillLineTabTooltip()
+      PatchSpellButtons()
+    end)
   end
 
   local frame = CreateFrame("Frame")
