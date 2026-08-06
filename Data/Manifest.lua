@@ -1,12 +1,17 @@
 EpochCN_DataManifest = {
-  version = "0.7.4",
-  generated = "2026-05-25",
+  version = "0.8.0-core",
+  generated = "2026-08-06",
   designer = "EpochCN",
   sources = {
     {
       name = "local FrameXML",
       path = "FrameXML/GlobalStrings.lua",
       role = "Chinese client global strings for settings and base UI",
+    },
+    {
+      name = "EpochDB",
+      url = "https://epochdb.net/",
+      role = "Current Project Epoch item, quest, NPC, loot, and vendor verification source",
     },
     {
       name = "EpochHead",

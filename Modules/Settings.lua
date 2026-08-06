@@ -6,7 +6,6 @@ EpochCN:RegisterModule("Settings", function(E)
   local minimapButton
   local minimapMenu
   local reloadNotice
-  local loginBroadcastDone = false
 
   local function TranslateText(text)
     if not text or text == "" then return text end
@@ -123,40 +122,6 @@ EpochCN:RegisterModule("Settings", function(E)
     return check
   end
 
-  -- 嵌套设置：状态存储在 EpochCNDB[parentKey][childKey]，避免污染顶层
-  local function CreateNestedCheck(parent, label, parentKey, childKey, tooltip, x, y, onChanged, defaultTrue)
-    local check = CreateFrame("CheckButton", nil, parent, "OptionsCheckButtonTemplate")
-    check:SetPoint("TOPLEFT", parent, "TOPLEFT", x, y)
-    EpochCNDB[parentKey] = EpochCNDB[parentKey] or {}
-    local current = EpochCNDB[parentKey][childKey]
-    if current == nil and defaultTrue then current = true end
-    check:SetChecked(current and true or false)
-    check.parentKey = parentKey
-    check.childKey = childKey
-
-    local text = check:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    text:SetPoint("LEFT", check, "RIGHT", 2, 1)
-    text:SetText(label)
-    check.label = text
-
-    check:SetScript("OnClick", function(self)
-      EpochCNDB[self.parentKey] = EpochCNDB[self.parentKey] or {}
-      local enabled = self:GetChecked() and true or false
-      EpochCNDB[self.parentKey][self.childKey] = enabled
-      if onChanged then onChanged(enabled) end
-      MarkReload()
-    end)
-
-    check:SetScript("OnEnter", function(self)
-      GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
-      GameTooltip:SetText(label, 1, 0.82, 0)
-      if tooltip then GameTooltip:AddLine(tooltip, 1, 1, 1, true) end
-      GameTooltip:Show()
-    end)
-    check:SetScript("OnLeave", function() GameTooltip:Hide() end)
-    return check
-  end
-
   local function CreateButton(parent, label, width, x, y, onClick)
     local button = CreateFrame("Button", nil, parent, "UIPanelButtonTemplate")
     button:SetSize(width, 24)
@@ -242,7 +207,7 @@ EpochCN:RegisterModule("Settings", function(E)
 
     local subtitle = panel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
     subtitle:SetPoint("TOPLEFT", panel, "TOPLEFT", 28, -42)
-    subtitle:SetText("按模块管理汉化、地图标记、社交协作与维护工具。")
+    subtitle:SetText("按模块管理核心汉化、可选地图标记与维护工具。")
 
     local close = CreateFrame("Button", nil, panel, "UIPanelCloseButton")
     close:SetPoint("TOPRIGHT", panel, "TOPRIGHT", -5, -5)
@@ -274,7 +239,6 @@ EpochCN:RegisterModule("Settings", function(E)
     local pages = {}
     pages.basic = CreatePage(panel)
     pages.map = CreatePage(panel)
-    pages.social = CreatePage(panel)
     pages.tools = CreatePage(panel)
 
     local navButtons = {}
@@ -295,9 +259,7 @@ EpochCN:RegisterModule("Settings", function(E)
     navButtons.basic.rawLabel = "基础汉化"
     navButtons.map = CreateNavButton(navBg, "地图任务", 4, -78, function() ShowPage("map") end)
     navButtons.map.rawLabel = "地图任务"
-    navButtons.social = CreateNavButton(navBg, "社交协作", 4, -112, function() ShowPage("social") end)
-    navButtons.social.rawLabel = "社交协作"
-    navButtons.tools = CreateNavButton(navBg, "工具维护", 4, -146, function() ShowPage("tools") end)
+    navButtons.tools = CreateNavButton(navBg, "工具维护", 4, -112, function() ShowPage("tools") end)
     navButtons.tools.rawLabel = "工具维护"
 
     local basicCore = CreateSection(pages.basic, "基础汉化", 0, 0, 448, 190)
@@ -305,7 +267,6 @@ EpochCN:RegisterModule("Settings", function(E)
     CreateCheck(basicCore, "Tooltip 汉化", "tooltip", "物品、NPC、技能、任务目标等鼠标提示。", 224, -34)
     CreateCheck(basicCore, "拍卖行中文搜索/显示", "auctionHouse", "拍卖行物品名中文显示与中文搜索映射。", 12, -66)
     CreateCheck(basicCore, "常规界面文本", "ui", "普通窗口显示层文本汉化，避开动作条和法术按钮。", 224, -66)
-    CreateCheck(basicCore, "FrameXML 显示层映射", "globalStrings", "只建立安全文本映射，不写 Blizzard 全局变量。", 12, -98)
     CreateCheck(basicCore, "独立任务追踪 UI", "questTracker", "EpochCN 的任务追踪文本增强。", 224, -98)
     CreateCheck(basicCore, "客户端语言环境 zhCN", "forceChineseClientLocale", "参考 AddonLocale 写入 GAME_LOCALE=zhCN；支持该变量的插件会优先使用简体中文。关闭后清除 EpochCN 写入的 zhCN。", 12, -130, function(enabled)
       if E.ApplyClientLocalePreference then E:ApplyClientLocalePreference() end
@@ -323,75 +284,7 @@ EpochCN:RegisterModule("Settings", function(E)
     CreateCheck(mapWorld, "隐藏低等级可接任务", "hideLowLevelAvailableQuestPins", "隐藏低于角色等级一定范围的可接任务标记（参考 pfQuest）。", 224, -68)
     CreateCheck(mapWorld, "小地图任务目标", "minimapQuestPins", "在小地图显示当前区域附近的任务目标。", 12, -100)
     CreateCheck(mapWorld, "小地图只显示目标", "minimapQuestObjectivesOnly", "小地图默认只显示当前任务目标/交还点，减少干扰。", 224, -100)
-    CreateCheck(mapWorld, "任务自动同步", "questAutoSync", "尽量同步当前任务 ID 与任务追踪数据。", 12, -132)
-
-    -- 一次性清理老版本污染顶层的 social_*_ui 残留键
-    EpochCNDB.social = EpochCNDB.social or {}
-    EpochCNDB.social_enabled_ui = nil
-    EpochCNDB.social_channel_ui = nil
-    EpochCNDB.social_lfg_ui = nil
-    EpochCNDB.social_qc_ui = nil
-
-    local socialCore = CreateSection(pages.social, "社交功能", 0, 0, 448, 272)
-    CreateNestedCheck(socialCore, "华人玩家发现", "social", "enabled",
-      "通过 addon 消息自动发现安装了 EpochCN 的中文玩家。关闭后所有社交功能都会停用。",
-      12, -36, nil, true)
-    CreateNestedCheck(socialCore, "自动加入中文频道", "social", "autoJoinChannel",
-      "登录时自动加入 EpochCN 公共频道。",
-      224, -36, nil, true)
-
-    CreateNestedCheck(socialCore, "组队招募板", "social", "lfgEnabled",
-      "启用中文玩家专属 LFG 系统。",
-      12, -66, nil, true)
-    CreateNestedCheck(socialCore, "快捷短语 (/qc)", "social", "quickChatEnabled",
-      "启用中英双语快捷短语系统。",
-      224, -66, nil, true)
-
-    CreateNestedCheck(socialCore, "目标框中文玩家图标", "social", "showTargetIcon",
-      "选中中文玩家时在目标框显示标记图标。",
-      12, -96, nil, true)
-    CreateNestedCheck(socialCore, "Tooltip 中文玩家标签", "social", "showTooltipTag",
-      "鼠标悬停中文玩家时在 Tooltip 显示版本/区域/备注。",
-      224, -96, nil, true)
-
-    CreateNestedCheck(socialCore, "上线通知", "social", "onlineNotify",
-      "首次发现新中文玩家时在聊天框提示。",
-      12, -126, nil, true)
-    CreateNestedCheck(socialCore, "上线呼吸灯", "social", "flashMinimap",
-      "新玩家上线/招募到达时小地图按钮闪烁。",
-      224, -126, nil, true)
-
-    CreateNestedCheck(socialCore, "记录密语为联系人", "social", "recordWhisper",
-      "收到中文密语时自动加入通讯录。",
-      12, -156, nil, true)
-    CreateNestedCheck(socialCore, "智能密语翻译", "social", "quickChatSmartWhisper",
-      "/qcw 向中文玩家发中文，向外国人发英文。",
-      224, -156, nil, true)
-
-    CreateNestedCheck(socialCore, "自动公会标签", "social", "autoTagGuildmate",
-      "心跳广播识别到同公会成员时自动添加「公会」标签。",
-      12, -186, nil, true)
-    CreateNestedCheck(socialCore, "短语双语模式", "social", "quickChatBilingual",
-      "/qc 默认同时发送中英文，例如「谢谢 (Thank you)」。",
-      224, -186, nil, false)
-
-    CreateNestedCheck(socialCore, "上线只提醒一次", "social", "onlineNotifyOnceOnly",
-      "本次登录后同一玩家上线只提示第一次（避免重连刷屏）。",
-      12, -216, nil, false)
-
-    local socialActions = CreateSection(pages.social, "快捷入口", 0, -288, 448, 74)
-    CreateButton(socialActions, "中文玩家", 92, 12, -36, function()
-      if E.ToggleSocialPanel then E:ToggleSocialPanel() end
-    end)
-    CreateButton(socialActions, "组队招募", 92, 116, -36, function()
-      if E.ToggleLFGPanel then E:ToggleLFGPanel() end
-    end)
-    CreateButton(socialActions, "快捷短语", 92, 220, -36, function()
-      if E.ToggleQuickChatPanel then E:ToggleQuickChatPanel() end
-    end)
-    CreateButton(socialActions, "反馈建议", 92, 324, -36, function()
-      if E.ToggleFeedbackPanel then E:ToggleFeedbackPanel() end
-    end)
+    CreateCheck(mapWorld, "显示任务目标点", "worldMapShowObjectivePins", "在内置地图上显示任务目标位置。", 12, -132)
 
     local maintenance = CreateSection(pages.tools, "调试与维护", 0, 0, 448, 122)
     CreateCheck(maintenance, "调试输出", "debug", "在聊天框输出 EpochCN 调试信息。", 12, -36)
@@ -415,14 +308,13 @@ EpochCN:RegisterModule("Settings", function(E)
     statsText:SetPoint("TOPLEFT", statsSection, "TOPLEFT", 14, -38)
     statsText:SetWidth(412)
     statsText:SetJustifyH("LEFT")
-    local stats = E.stats or {}
+    local stats = E.BuildStats and E:BuildStats() or E.stats or {}
     local unitPct = stats.unitTotal and stats.unitTotal > 0 and string.format("%.1f%%", stats.unitChinese / stats.unitTotal * 100) or "N/A"
-    local spellPct = stats.spellCount and stats.spellCount > 0 and string.format("%.1f%%", stats.spellWithDesc / stats.spellCount * 100) or "N/A"
     statsText:SetText(
       "|cff88ccff任务数据：|r" .. tostring(stats.questTotal or 0) .. " 条" ..
       "    |cff88ccff物品映射：|r" .. tostring(stats.itemNameMapTotal or 0) .. " 条\n" ..
       "|cff88ccff单位名称：|r" .. tostring(stats.unitChinese or 0) .. "/" .. tostring(stats.unitTotal or 0) .. " (" .. unitPct .. ")" ..
-      "    |cff88ccff法术数据：|r" .. tostring(stats.spellWithDesc or 0) .. "/" .. tostring(stats.spellCount or 0) .. " (" .. spellPct .. ")"
+      "    |cff88ccff法术与天赋：|rpatch-Z.MPQ"
     )
 
     reloadNotice = panel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
@@ -505,7 +397,7 @@ EpochCN:RegisterModule("Settings", function(E)
     dataLine:SetPoint("TOPLEFT", aboutPanel, "TOPLEFT", 28, -150)
     dataLine:SetWidth(384)
     dataLine:SetJustifyH("LEFT")
-    dataLine:SetText("EpochHead: https://epochhead.com/\npfQuest-epoch · QuestCN · Tooltips_Chinese 社区数据")
+    dataLine:SetText("EpochDB: https://epochdb.net/\n官方 zhCN · EpochCN · pfQuest-epoch · EpochHead 社区数据")
 
     -- Donors
     local donorHeader = aboutPanel:CreateFontString(nil, "OVERLAY", "GameFontNormal")
@@ -544,7 +436,7 @@ EpochCN:RegisterModule("Settings", function(E)
     contactLine:SetPoint("TOPLEFT", aboutPanel, "TOPLEFT", 28, -356)
     contactLine:SetWidth(384)
     contactLine:SetJustifyH("LEFT")
-    contactLine:SetText("数据源：https://epochhead.com/\nQQ 交流群：1097800503\n游戏内输入 /ecn 打开设置面板")
+    contactLine:SetText("数据源：https://epochdb.net/\nQQ 交流群：1097800503\n游戏内输入 /ecn 打开设置面板")
 
     -- Close button at bottom
     local closeBtn = CreateFrame("Button", nil, aboutPanel, "UIPanelButtonTemplate")
@@ -633,54 +525,6 @@ EpochCN:RegisterModule("Settings", function(E)
     UIDropDownMenu_AddButton(info)
 
     info = UIDropDownMenu_CreateInfo()
-    info.text = "|cff88ccff社交功能|r"
-    info.isTitle = true
-    info.notCheckable = true
-    UIDropDownMenu_AddButton(info)
-
-    info = UIDropDownMenu_CreateInfo()
-    info.text = "中文玩家列表"
-    info.notCheckable = true
-    info.func = function()
-      CloseDropDownMenus()
-      if E.ToggleSocialPanel then E:ToggleSocialPanel() end
-    end
-    UIDropDownMenu_AddButton(info)
-
-    info = UIDropDownMenu_CreateInfo()
-    info.text = "组队招募板"
-    info.notCheckable = true
-    info.func = function()
-      CloseDropDownMenus()
-      if E.ToggleLFGPanel then E:ToggleLFGPanel() end
-    end
-    UIDropDownMenu_AddButton(info)
-
-    info = UIDropDownMenu_CreateInfo()
-    info.text = "快捷短语"
-    info.notCheckable = true
-    info.func = function()
-      CloseDropDownMenus()
-      if E.ToggleQuickChatPanel then E:ToggleQuickChatPanel() end
-    end
-    UIDropDownMenu_AddButton(info)
-
-    info = UIDropDownMenu_CreateInfo()
-    info.text = "反馈建议"
-    info.notCheckable = true
-    info.func = function()
-      CloseDropDownMenus()
-      if E.ToggleFeedbackPanel then E:ToggleFeedbackPanel() end
-    end
-    UIDropDownMenu_AddButton(info)
-
-    info = UIDropDownMenu_CreateInfo()
-    info.text = " "
-    info.notClickable = true
-    info.notCheckable = true
-    UIDropDownMenu_AddButton(info)
-
-    info = UIDropDownMenu_CreateInfo()
     info.text = "隐藏图标"
     info.notCheckable = true
     info.func = function()
@@ -737,13 +581,6 @@ EpochCN:RegisterModule("Settings", function(E)
     -- border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
     -- minimapButton.border = border
 
-    -- 在线中文玩家数量角标
-    local badge = minimapButton:CreateFontString(nil, "OVERLAY", "NumberFontNormalSmall")
-    badge:SetPoint("BOTTOMRIGHT", minimapButton, "BOTTOMRIGHT", 2, -2)
-    badge:SetText("")
-    badge:SetTextColor(0.2, 1, 0.6)
-    minimapButton.badge = badge
-
     -- 高亮效果
     local highlight = minimapButton:CreateTexture(nil, "HIGHLIGHT")
     highlight:SetSize(26, 26)
@@ -752,72 +589,22 @@ EpochCN:RegisterModule("Settings", function(E)
     highlight:SetVertexColor(0.2, 1, 0.8, 0.3)
     highlight:SetBlendMode("ADD")
 
-    -- 呼吸灯动画（有新消息/新玩家时闪烁）
-    minimapButton.glowAlpha = 0
-    minimapButton.glowDir = 1
-    minimapButton.glowActive = false
-
-    local glow = minimapButton:CreateTexture(nil, "ARTWORK", nil, 1)
-    glow:SetSize(30, 30)
-    glow:SetPoint("CENTER", 0, 0)
-    glow:SetTexture("Interface\\CHARACTERFRAME\\TempPortraitAlphaMask")
-    glow:SetVertexColor(0.2, 1, 0.8, 0)
-    glow:SetBlendMode("ADD")
-    minimapButton.glow = glow
-
-    -- 定时更新角标和呼吸灯
-    minimapButton:SetScript("OnUpdate", function(self, elapsed)
-      -- 拖拽位置更新（仅拖拽时执行）
-      if self.isDragging then
-        local mx, my = Minimap:GetCenter()
-        local px, py = GetCursorPosition()
-        local scale = Minimap:GetEffectiveScale()
-        px, py = px / scale, py / scale
-        local dx, dy = px - mx, py - my
-        local angle
-        if math.atan2 then
-          angle = math.deg(math.atan2(dy, dx))
-        elseif dx == 0 then
-          angle = dy >= 0 and 90 or -90
-        else
-          angle = math.deg(math.atan(dy / dx))
-          if dx < 0 then angle = angle + 180 end
-        end
-        EpochCNDB.minimapButtonAngle = angle
-        UpdateMinimapButtonPosition()
-        return  -- 拖拽时跳过其他逻辑，减少开销
+    local function UpdateDrag(self)
+      local mx, my = Minimap:GetCenter()
+      local px, py = GetCursorPosition()
+      local scale = Minimap:GetEffectiveScale()
+      px, py = px / scale, py / scale
+      local dx, dy = px - mx, py - my
+      local angle
+      if math.atan2 then angle = math.deg(math.atan2(dy, dx))
+      elseif dx == 0 then angle = dy >= 0 and 90 or -90
+      else
+        angle = math.deg(math.atan(dy / dx))
+        if dx < 0 then angle = angle + 180 end
       end
-
-      -- 更新在线人数角标（每 10 秒）
-      self.badgeTimer = (self.badgeTimer or 0) + elapsed
-      if self.badgeTimer >= 10 then
-        self.badgeTimer = 0
-        local count = E.GetChinesePlayerCount and E:GetChinesePlayerCount() or 0
-        if count > 0 then
-          self.badge:SetText(tostring(count))
-        else
-          self.badge:SetText("")
-        end
-      end
-
-      -- 呼吸灯动画（仅激活时执行）
-      if self.glowActive then
-        self.glowAlpha = self.glowAlpha + self.glowDir * elapsed * 1.5
-        if self.glowAlpha >= 0.6 then
-          self.glowAlpha = 0.6
-          self.glowDir = -1
-        elseif self.glowAlpha <= 0 then
-          self.glowAlpha = 0
-          self.glowDir = 1
-          self.glowCycles = (self.glowCycles or 0) + 1
-          if self.glowCycles >= 3 then
-            self.glowActive = false
-            self.glowCycles = 0
-          end
-        end
-        self.glow:SetAlpha(self.glowAlpha)
-      end
-    end)
+      EpochCNDB.minimapButtonAngle = angle
+      UpdateMinimapButtonPosition()
+    end
 
     minimapButton:SetScript("OnClick", function(_, button)
       if button == "RightButton" then
@@ -827,12 +614,7 @@ EpochCN:RegisterModule("Settings", function(E)
         UIDropDownMenu_Initialize(minimapMenu, BuildMinimapMenu, "MENU")
         ToggleDropDownMenu(1, nil, minimapMenu, "cursor", 0, 0)
       elseif button == "MiddleButton" then
-        -- 中键打开社交面板
-        if E.ToggleSocialPanel then
-          E:ToggleSocialPanel()
-        else
-          E:ToggleAboutPanel()
-        end
+        E:ToggleAboutPanel()
       else
         E:ToggleSettingsPanel()
       end
@@ -844,20 +626,8 @@ EpochCN:RegisterModule("Settings", function(E)
       GameTooltip:AddLine("v" .. tostring(E.version) .. "  " .. tostring(E.designLabel), 0.6, 0.6, 0.6)
       GameTooltip:AddLine(" ")
 
-      -- 显示在线中文玩家数
-      local count = E.GetChinesePlayerCount and E:GetChinesePlayerCount() or 0
-      if count > 0 then
-        GameTooltip:AddLine("|cff33ffcc" .. count .. "|r 名中文玩家在线", 0.2, 1, 0.6)
-      end
-
-      -- 显示频道状态
-      local chNum = E.GetChineseChannelNumber and E:GetChineseChannelNumber() or 0
-      if chNum > 0 then
-        GameTooltip:AddLine("|cff88ccff中文频道|r 已连接 (/" .. chNum .. ")", 0.5, 0.8, 1)
-      end
-
       GameTooltip:AddLine(" ")
-      GameTooltip:AddLine("|cffffffffL键|r 设置  |cffffffffM键|r 社交  |cffffffffR键|r 菜单", 0.7, 0.7, 0.7)
+      GameTooltip:AddLine("|cffffffff左键|r 设置  |cffffffff中键|r 关于  |cffffffff右键|r 菜单", 0.7, 0.7, 0.7)
       GameTooltip:AddLine("|cff666666拖动移动位置|r", 0.4, 0.4, 0.4)
       GameTooltip:Show()
     end)
@@ -865,23 +635,15 @@ EpochCN:RegisterModule("Settings", function(E)
 
     minimapButton:SetScript("OnDragStart", function(self)
       self.isDragging = true
+      self:SetScript("OnUpdate", UpdateDrag)
     end)
     minimapButton:SetScript("OnDragStop", function(self)
       self.isDragging = false
+      self:SetScript("OnUpdate", nil)
       UpdateMinimapButtonPosition()
     end)
 
     UpdateMinimapButtonPosition()
-  end
-
-  -- 触发小地图按钮呼吸灯（供其他模块调用）
-  function E:FlashMinimapButton()
-    if minimapButton then
-      minimapButton.glowActive = true
-      minimapButton.glowCycles = 0
-      minimapButton.glowAlpha = 0
-      minimapButton.glowDir = 1
-    end
   end
 
   function E:ShowMinimapButton()
@@ -917,11 +679,5 @@ EpochCN:RegisterModule("Settings", function(E)
       E:Print("你仍可输入 |cffffd200/ecn|r 打开设置。")
     end
 
-    -- Login broadcast (once per session)
-    if not loginBroadcastDone then
-      loginBroadcastDone = true
-      E:Print("|cff33ffccEpochCN|r v" .. tostring(E.version) .. " 已加载，/ecn 打开设置。")
-      E:Print("|cffffd200汉化捐赠者|r: |cffff8000erha|r、|cff33ff99ethon|r、|cff33ff99王大强|r、|cff33ff99manmanain|r、|cff33ff99xiongbaobao|r、|cff33ff99Shizuka|r、|cff33ff99Soulwisp|r、|cff33ff99Jynxen|r、|cff33ff99hcafei|r、|cff33ff99Sylyss|r、|cff33ff99卡萨丁|r、|cff33ff99Sixthoo|r、还有未留名兄弟")
-    end
   end)
 end)

@@ -32,18 +32,6 @@ EpochCN:RegisterModule("NamePlates", function(E)
       end
     end
 
-    if E.nameMap then
-      for english, chinese in pairs(E.nameMap) do
-        AddName(english, chinese)
-      end
-    end
-
-    if EpochCN_ObjectiveNameData then
-      for english, chinese in pairs(EpochCN_ObjectiveNameData) do
-        AddName(english, chinese)
-      end
-    end
-
     if pfDB and pfDB.units then
       AddCatalog(pfDB.units.enUS, pfDB.units.loc)
       AddCatalog(pfDB.units["enUS-epoch"], pfDB.units["zhCN-epoch"])
@@ -55,6 +43,8 @@ EpochCN:RegisterModule("NamePlates", function(E)
     BuildNameMap()
 
     local direct = nameMap[text]
+      or (E.nameMap and E.nameMap[text])
+      or (EpochCN_ObjectiveNameData and EpochCN_ObjectiveNameData[text])
     if direct then return direct end
     if E.nameMap and E.nameMap[text] then
       AddName(text, E.nameMap[text])
@@ -63,8 +53,11 @@ EpochCN:RegisterModule("NamePlates", function(E)
 
     -- Nameplates sometimes append level/classification text or spaces.
     local trimmed = string.gsub(string.gsub(text, "^%s+", ""), "%s+$", "")
-    if trimmed ~= text and nameMap[trimmed] then
-      return nameMap[trimmed]
+    if trimmed ~= text then
+      direct = nameMap[trimmed]
+        or (E.nameMap and E.nameMap[trimmed])
+        or (EpochCN_ObjectiveNameData and EpochCN_ObjectiveNameData[trimmed])
+      if direct then return direct end
     end
 
     if E.TranslateEnglishUnitName then

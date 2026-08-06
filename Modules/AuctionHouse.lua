@@ -450,14 +450,6 @@ EpochCN:RegisterModule("AuctionHouse", function(E)
       end
     end
 
-    if EpochCN_ConsumableData then
-      for _, data in pairs(EpochCN_ConsumableData) do
-        if type(data) == "table" then
-          AddItemName(data[6], data[1])
-        end
-      end
-    end
-
     -- 不在拍卖行加载 ObjectiveNameData。那张表包含大量任务目标/通用文本。
     -- 这里也不构建模糊搜索索引：显示翻译只需要 O(1) 英文→中文映射，
     -- 搜索候选在用户输入中文时按需扫描，避免打开/刷新拍卖行时卡顿。
